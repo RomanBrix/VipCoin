@@ -4,7 +4,10 @@
     "pages":{},
     "layouts":{
       "header":{
-        "buttonOne": "ГЛАВНАЯ"
+        "btnOne": "ГЛАВНАЯ",
+        "btnTwo": "О НАС",
+        "btnThree": "Помощь",
+        "btnFour": "Новости"
       }
     }
   }

@@ -1,9 +1,12 @@
 import React, {Component} from 'react';
 import translate from "../../data/translate.json";
+import css from '../../css/scss/layouts/header.scss';
+import { LOGO } from '../../data/links';
 
 export default class Header extends Component {
     constructor(props){
         super(props);
+        this.setCookie('language', 'ru',{expires: 350});
         this.state = {
             language: this.getCookie("language") || "ru"
         }
@@ -15,11 +18,8 @@ export default class Header extends Component {
         let expires = options.expires;
         if( typeof expires === 'number' && expires){
             let date = new Date();
-                    console.log(date.getTime());
-            date.setTime(date.getTime() + expires * 1000);
-                    // console.log(date.getTime() + expires * 1000);
-                    console.log(date.getTime());
-            expires = options.expires = d;
+            date.setTime(date.getTime() + expires * 1000 * 60 * 60);
+            expires = options.expires = date;
         }
         if(expires && expires.toUTCString()){
             options.expires = expires.toUTCString();
@@ -48,18 +48,24 @@ export default class Header extends Component {
            return item.language === this.state.language;
         });
         const { layouts } = lang[0];
-        console.log(layouts);
         return(
             <div className="header">
-                <div className="logo"/>
+                <div className="logo"><img src={ LOGO } alt="Logo"/></div>
                 <div className="menu">
                     <ul>
-                        <li><a href="index.html">{ layouts.header.buttonOne }</a></li>
+                        <li><a href="index.html">{ layouts.header.btnOne }</a></li>
+                        <li><a href="#">{ layouts.header.btnTwo }</a></li>
+                        <li><a href="#">{ layouts.header.btnThree }</a></li>
+                        <li><a href="#">{ layouts.header.btnFour }</a></li>
                     </ul>
                 </div>
+                <div className="login"/>
                 <div className="lang">
                     <ul>
-                        <li>RU</li>
+                        <li onClick={()=>{
+                            this.setCookie('language', 'ru',{expires: 350});
+                            this.setState({language: 'ru'});
+                        }}>RU</li>
                     </ul>
                 </div>
             </div>

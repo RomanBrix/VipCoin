@@ -1,0 +1,36 @@
+.header{
+  display: flex;
+  position: fixed;
+  align-items: center;
+  justify-content: space-around;
+  min-width: 100%;
+
+  .logo{
+    img{
+      max-width: 150px;
+    }
+  }
+  .menu{
+    min-width: 500px;
+    ul{
+      display: flex;
+      flex-direction: row;
+      flex-wrap: nowrap;
+      justify-content: space-around;
+      list-style: none;
+
+      li{
+
+      }
+    }
+  }
+
+  .login{
+
+  }
+  .lang{
+    ul{
+      list-style: none;
+    }
+  }
+}
