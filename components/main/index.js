@@ -1,0 +1,12 @@
+import React, {Component} from 'react';
+import Header from '../layouts/Header';
+
+export default class App extends Component {
+    render(){
+        return (
+            <div className="Main">
+                <Header/>
+            </div>
+        )
+    }
+}

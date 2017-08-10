@@ -1,0 +1,11 @@
+[
+  {
+    "language": "ru",
+    "pages":{},
+    "layouts":{
+      "header":{
+        "buttonOne": "ГЛАВНАЯ"
+      }
+    }
+  }
+]
