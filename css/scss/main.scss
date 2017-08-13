@@ -1,0 +1,9 @@
+@import 'vars';
+@import "Fonts";
+
+body{
+  font-family: HelveticaLight;
+  padding: 0;
+  margin: 0;
+  background: $Main;
+}

@@ -1,0 +1,108 @@
+@import "../vars";
+.Main {
+  width: 100%;
+  height: 100%;
+  .bg{
+    width: 500px;
+    height: 500px;
+    border-radius: 50%;
+    position: fixed;
+    left: 50%;
+    top: 20%;
+    margin-left: -250px;
+    background-size: cover;
+    opacity: .2;
+    /*
+    img{
+      width: 500px;
+      height: 500px;
+    }
+    div{
+      background: rgba(87, 87, 87, .9);
+      width: 100%;
+      height: 100%;
+      //width: 500px;
+      position: absolute;
+      top: 0;
+      border-radius: 50%;
+    }
+    */
+  }
+  .container {
+    height: 1000px;
+    width: 100%;
+    .content {
+      h1 {
+        color: $BrightGold;
+        margin-left: 15px;
+      }
+      .top {
+        //width: 100%;
+        //height: 450px;
+        padding-top: 70px;
+        padding-left: 15px;
+        padding-right: 15px;
+        color: white;
+        text-align: center;
+
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: stretch;
+
+        background: #808080;
+        background: -webkit-linear-gradient(45deg, #808080, #575757 55%);
+        background: -o-linear-gradient(45deg, #808080, #575757 55%);
+        background: -moz-linear-gradient(45deg, #808080, #575757 55%);
+        background: linear-gradient(45deg, #808080, #575757 55%);
+
+        .left {
+          min-width: 49%;
+          img {
+            max-width: 500px;
+            //padding-left: 50px;
+            padding-top: 40px;
+          }
+        }
+        .right {
+
+          z-index: 10;
+          flex-direction: row;
+          display: flex;
+          justify-content: space-around;
+
+
+          min-width: 49%;
+          .text {
+            max-width:49%;
+            align-self: center;
+            p {
+              line-height: 1.2;
+            }
+          }
+          .video {
+            min-height: 250px;
+            min-width: 49%;
+            //height: 300px;
+            margin: 25px 15px;
+            margin-top: 55px;
+            border: 2px solid #b29600;
+            border-right: 3px solid #b29600;
+            box-shadow: 0 0 10px #b29600;
+          }
+        }
+      }
+
+      .progress{
+        min-height: 350px;
+
+        background: #808080;
+        background: -webkit-linear-gradient(45deg,  #575757 55%, #808080 );
+        background: -o-linear-gradient(45deg,  #575757 55%, #808080 );
+        background: -moz-linear-gradient(45deg,  #575757 55%, #808080 );
+        background: linear-gradient(45deg,  #575757 55%, #808080 );
+
+      }
+    }
+  }
+}

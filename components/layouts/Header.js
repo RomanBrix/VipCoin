@@ -1,7 +1,15 @@
 import React, {Component} from 'react';
 import translate from "../../data/translate.json";
+import FontEnter from "../../public/src/header/FontEnter/styles.css";
+// import FontNewUser from "../../public/src/header/FontNewUser/styles.css";
 import css from '../../css/scss/layouts/header.scss';
-import { LOGO } from '../../data/links';
+import {
+    LOGO,
+    FLAG_RU,
+    FLAG_ENG,
+    FLAG_JAP,
+    FLAG_USA
+} from '../../data/links';
 
 export default class Header extends Component {
     constructor(props){
@@ -48,27 +56,49 @@ export default class Header extends Component {
            return item.language === this.state.language;
         });
         const { layouts } = lang[0];
-        return(
+        return (
             <div className="header">
-                <div className="logo"><img src={ LOGO } alt="Logo"/></div>
+                <div className="logo"><img src={LOGO} alt="Logo"/></div>
                 <div className="menu">
                     <ul>
-                        <li><a href="index.html">{ layouts.header.btnOne }</a></li>
-                        <li><a href="#">{ layouts.header.btnTwo }</a></li>
-                        <li><a href="#">{ layouts.header.btnThree }</a></li>
-                        <li><a href="#">{ layouts.header.btnFour }</a></li>
+                        <li><a href="index.html">{layouts.header.btnOne}</a></li>
+                        <li><a href="#">{layouts.header.btnTwo}</a></li>
+                        <li><a href="#">{layouts.header.btnThree}</a></li>
+                        <li><a href="#">{layouts.header.btnFour}</a></li>
                     </ul>
                 </div>
-                <div className="login"/>
-                <div className="lang">
-                    <ul>
-                        <li onClick={()=>{
-                            this.setCookie('language', 'ru',{expires: 350});
+                <div className="login">
+                    <div className="registration">
+                        <span className="icon-log-in"/> {layouts.header.login.log}</div>
+
+                </div>
+                <div className="lang dropdown">
+                    <span id="active_lang">
+                        <img src={`./src/header/${this.state.language}.svg`} alt="active_lang"/>
+
+                    </span>
+                    <div className="dropdown-content dropdown-main">
+                        <span onClick={() => {
+                            this.setCookie('language', 'ru', {expires: 350});
                             this.setState({language: 'ru'});
-                        }}>RU</li>
-                    </ul>
+                        }}><img src={FLAG_RU} alt="ru"/>
+                        </span>
+                        <span onClick={() => {}}>
+                            <img src={FLAG_ENG} alt="eng"/>
+                        </span>
+                        <span onClick={() => {}}>
+                            <img src={FLAG_JAP} alt="japan"/>
+                        </span>
+                        <span onClick={() => {}}>
+                            <img src={FLAG_USA} alt="usa"/>
+                        </span>
+                    </div>
                 </div>
             </div>
-        )
+        );
     }
 }
+
+/*
+<div className="login"> {layouts.header.login.login }</div>
+ */
