@@ -1,7 +1,6 @@
 import React, {Component} from 'react';
 import translate from "../../data/translate.json";
 import FontEnter from "../../public/src/header/FontEnter/styles.css";
-// import FontNewUser from "../../public/src/header/FontNewUser/styles.css";
 import css from '../../css/scss/layouts/header.scss';
 import {
     LOGO,

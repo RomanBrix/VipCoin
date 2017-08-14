@@ -95,6 +95,12 @@
 
       .progress{
         min-height: 350px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        cursor: default;
+        z-index:2;
 
         background: #808080;
         background: -webkit-linear-gradient(45deg,  #575757 55%, #808080 );
@@ -102,6 +108,141 @@
         background: -moz-linear-gradient(45deg,  #575757 55%, #808080 );
         background: linear-gradient(45deg,  #575757 55%, #808080 );
 
+        h1{
+          margin: 0;
+          margin-bottom: 15px;
+          position: relative;
+          letter-spacing: 5px;
+
+          &::after{
+            content: "";
+            position: absolute;
+            width: 50%;
+            height: 2px;
+            background: $LightGold;
+            /* border: 1px solid red; */
+            box-shadow: 0 0 10px $LightGold;
+            bottom: -15px;
+            left: 50%;
+            margin-left: calc(-50% / 2);
+          }
+        }
+        h2{
+          color: white;
+          letter-spacing: 3px;
+          position: relative;
+          margin-bottom: 30px;
+          &::after{
+            content: "";
+            position: absolute;
+            width: 50%;
+            height: 2px;
+            background: $LightGold;
+            box-shadow: 0 0 10px $LightGold;
+            bottom: -15px;
+            left: 50%;
+            margin-left: calc(-50% / 2);
+          }
+        }
+        .coins_left{
+          color: $BrightGold;
+          font-size: 3em;
+          position: relative;
+          cursor: default;
+          margin-left: calc(3em - 100px);
+          i{
+            position: absolute;
+            top: 0;
+            color: $LightGold;
+            right: 105%;
+          }
+        }
+
+        //.progressBar{
+        //  width: 90%;
+        //  &::-webkit-progress-value {
+        //    height: 20px;
+        //  }
+        //}
+        progress {
+          width: 90%;
+          margin: 2em auto;
+          margin-bottom: 0;
+          display: block;
+          border-radius : 3px;
+          padding: 0;
+          border: 1px solid gold;
+          text-align: center;
+          height: 20px;
+          box-shadow: 0 0 7px gold;
+          overflow:hidden;
+          transition: .3s;
+          z-index:2;
+          cursor: pointer;
+          background: rgba(255, 255, 255, .4);
+          position: relative;
+            &:before{
+              content: "30%";
+              height: 100%;
+              color: brown;
+              text-align: center;
+              background: greenyellow;
+              position: absolute;
+              left: 30%;
+              padding: 0 5px;
+              line-height: 1.3em;
+            }
+          &::-moz-progress-bar {
+            background: gold;
+            border-radius: 3px;
+          }
+
+          &::-webkit-progress-bar {
+            background: rgba(255, 255, 255, .4);
+            box-shadow: 0 0 10px gold;
+            transition: .3s;
+
+
+
+            &:hover{
+              box-shadow: 0 0 20px gold;
+
+            }
+          }
+
+          &::-webkit-progress-value {
+            background: gold;
+            //border-radius: 3px;
+
+          }
+
+          &:hover{
+            box-shadow: 0 0 10px gold;
+
+          }
+        }
+        progress::-webkit-progress-value::before {
+          content: '80%';
+          position: absolute;
+          right: 0;
+          top: -125%;
+        }
+      }
+      .afterProgress{
+        margin-top: 5px;
+        color: white;
+        position: relative;
+        width: 90%;
+        .left, .right{
+          position: absolute;
+        }
+        .left{
+          //left: -10px;
+          margin-left: -4%;
+        }
+        .right{
+          right: -10px;
+        }
       }
     }
   }
