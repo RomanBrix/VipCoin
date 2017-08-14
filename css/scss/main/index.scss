@@ -29,7 +29,7 @@
     */
   }
   .container {
-    height: 1000px;
+    //height: 1000px;
     width: 100%;
     .content {
       h1 {
@@ -242,6 +242,83 @@
         }
         .right{
           right: -10px;
+        }
+      }
+
+
+      .packages {
+        z-index: 2;
+        padding: 15px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+
+        background: #808080;
+        background: -webkit-linear-gradient(45deg, #808080, #575757 55%);
+        background: -o-linear-gradient(45deg, #808080, #575757 55%);
+        background: -moz-linear-gradient(45deg, #808080, #575757 55%);
+        background: linear-gradient(45deg, #808080, #575757 55%);
+
+        .all_packages {
+          display: flex;
+          justify-content: space-around;
+          align-items: center;
+          flex-wrap: wrap;
+          z-index: 2;
+
+
+          .package {
+            margin: 25px 40px;
+            z-index: 2;
+            min-height: 200px;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-around;
+            align-items: center;
+            border: 1px solid gold;
+            padding: 15px;
+            min-width: 210px;
+            box-shadow: 0 0 10px 1px sandybrown;
+            color: $BrightGold;
+            font-size: 1.2em;
+            letter-spacing: 2px;
+            background: $MainOpacity;
+            .package_logo {
+              font-size: 3em;
+              text-align: center;
+              i {
+
+                &:not(:nth-child(1)){
+                //margin-left: -25%;
+                  margin: 0;
+              }
+                &:nth-child(1) {
+                  //color: #64b7e1;
+                }
+
+                &:nth-child(2) {
+                  //color: #016508;
+                }
+
+                &:nth-child(3) {
+                  //color: #e5c100;
+                }
+
+                &:nth-child(4) {
+                  //color: #b10404;
+                }
+
+                &:nth-child(5) {
+                  //color: #a72cc3;
+                }
+                &:nth-child(6) {
+                  //color: #000000;
+                }
+              }
+            }
+
+          }
         }
       }
     }

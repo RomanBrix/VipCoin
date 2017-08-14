@@ -10188,7 +10188,7 @@ module.exports = getHostComponentFromComposite;
 /* 84 */
 /***/ (function(module, exports) {
 
-module.exports = [{"language":"ru","pages":{"main":{"top":{"head":"Ваш шедевр готов!","text":"С другой стороны консультация с широким активом способствует подготовки и реализации модели развития. Задача организации, в особенности же консультация с широким активом в значительной степени обуславливает создание системы обучения кадров, соответствует насущным потребностям. Задача организации, в особенности же постоянный количественный рост и сфера нашей активности обеспечивает широкому кругу"},"progress":{"head":"ЦЕЛЬ Vip Coin","title":"Официальный запуск сети после продажи "}}},"layouts":{"header":{"btnOne":"ГЛАВНАЯ","btnTwo":"О НАС","btnThree":"Помощь","btnFour":"Новости","login":{"log":"Личный кабинет"}}}}]
+module.exports = [{"language":"ru","pages":{"main":{"top":{"head":"Ваш шедевр готов!","text":"С другой стороны консультация с широким активом способствует подготовки и реализации модели развития. Задача организации, в особенности же консультация с широким активом в значительной степени обуславливает создание системы обучения кадров, соответствует насущным потребностям. Задача организации, в особенности же постоянный количественный рост и сфера нашей активности обеспечивает широкому кругу"},"progress":{"head":"ЦЕЛЬ Vip Coin","title":"Официальный запуск сети после продажи "},"packages":[[{"title":"Минимальный","price":99.99,"option":{"coins":1000}},{"title":"Средний","price":149.99,"option":{"coins":2000}},{"title":"Максимальный","price":219.99,"option":{"coins":3399}},{"title":"Топовый","price":299.99,"option":{"coins":4499}},{"title":"Оптимальный","price":299.99,"option":{"coins":4499}},{"title":"Каой-то","price":1500,"option":{"coins":4499}}],[{"title":"ПАКЕТЫ"}]]}},"layouts":{"header":{"btnOne":"ГЛАВНАЯ","btnTwo":"О НАС","btnThree":"Помощь","btnFour":"Новости","login":{"log":"Личный кабинет"}}}}]
 
 /***/ }),
 /* 85 */
@@ -23424,6 +23424,10 @@ var _react = __webpack_require__(16);
 
 var _react2 = _interopRequireDefault(_react);
 
+var _styles = __webpack_require__(208);
+
+var _styles2 = _interopRequireDefault(_styles);
+
 var _Top = __webpack_require__(206);
 
 var _Top2 = _interopRequireDefault(_Top);
@@ -23431,6 +23435,10 @@ var _Top2 = _interopRequireDefault(_Top);
 var _Progress = __webpack_require__(207);
 
 var _Progress2 = _interopRequireDefault(_Progress);
+
+var _Package = __webpack_require__(217);
+
+var _Package2 = _interopRequireDefault(_Package);
 
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
@@ -23459,7 +23467,8 @@ var Container = function (_Component) {
                 'div',
                 { className: 'content' },
                 _react2.default.createElement(_Top2.default, { pages: pages.top }),
-                _react2.default.createElement(_Progress2.default, { pages: pages.progress })
+                _react2.default.createElement(_Progress2.default, { pages: pages.progress }),
+                _react2.default.createElement(_Package2.default, { packages: pages.packages })
             );
         }
     }]);
@@ -23559,10 +23568,6 @@ var _createClass = function () { function defineProperties(target, props) { for 
 var _react = __webpack_require__(16);
 
 var _react2 = _interopRequireDefault(_react);
-
-var _styles = __webpack_require__(208);
-
-var _styles2 = _interopRequireDefault(_styles);
 
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
@@ -23793,10 +23798,108 @@ exports = module.exports = __webpack_require__(25)(undefined);
 
 
 // module
-exports.push([module.i, ".Main {\n  width: 100%;\n  height: 100%; }\n  .Main .bg {\n    width: 500px;\n    height: 500px;\n    border-radius: 50%;\n    position: fixed;\n    left: 50%;\n    top: 20%;\n    margin-left: -250px;\n    background-size: cover;\n    opacity: .2;\n    /*\n    img{\n      width: 500px;\n      height: 500px;\n    }\n    div{\n      background: rgba(87, 87, 87, .9);\n      width: 100%;\n      height: 100%;\n      //width: 500px;\n      position: absolute;\n      top: 0;\n      border-radius: 50%;\n    }\n    */ }\n  .Main .container {\n    height: 1000px;\n    width: 100%; }\n    .Main .container .content h1 {\n      color: #ccac02;\n      margin-left: 15px; }\n    .Main .container .content .top {\n      padding-top: 70px;\n      padding-left: 15px;\n      padding-right: 15px;\n      color: white;\n      text-align: center;\n      display: flex;\n      flex-direction: row;\n      justify-content: space-between;\n      align-items: stretch;\n      background: #808080;\n      background: -webkit-linear-gradient(45deg, #808080, #575757 55%);\n      background: -o-linear-gradient(45deg, #808080, #575757 55%);\n      background: -moz-linear-gradient(45deg, #808080, #575757 55%);\n      background: linear-gradient(45deg, #808080, #575757 55%); }\n      .Main .container .content .top .left {\n        min-width: 49%; }\n        .Main .container .content .top .left img {\n          max-width: 500px;\n          padding-top: 40px; }\n      .Main .container .content .top .right {\n        z-index: 10;\n        flex-direction: row;\n        display: flex;\n        justify-content: space-around;\n        min-width: 49%; }\n        .Main .container .content .top .right .text {\n          max-width: 49%;\n          align-self: center; }\n          .Main .container .content .top .right .text p {\n            line-height: 1.2; }\n        .Main .container .content .top .right .video {\n          min-height: 250px;\n          min-width: 49%;\n          margin: 25px 15px;\n          margin-top: 55px;\n          border: 2px solid #b29600;\n          border-right: 3px solid #b29600;\n          box-shadow: 0 0 10px #b29600; }\n    .Main .container .content .progress {\n      min-height: 350px;\n      display: flex;\n      flex-direction: column;\n      justify-content: center;\n      align-items: center;\n      cursor: default;\n      z-index: 2;\n      background: #808080;\n      background: -webkit-linear-gradient(45deg, #575757 55%, #808080);\n      background: -o-linear-gradient(45deg, #575757 55%, #808080);\n      background: -moz-linear-gradient(45deg, #575757 55%, #808080);\n      background: linear-gradient(45deg, #575757 55%, #808080); }\n      .Main .container .content .progress h1 {\n        margin: 0;\n        margin-bottom: 15px;\n        position: relative;\n        letter-spacing: 5px; }\n        .Main .container .content .progress h1::after {\n          content: \"\";\n          position: absolute;\n          width: 50%;\n          height: 2px;\n          background: #e5c100;\n          /* border: 1px solid red; */\n          box-shadow: 0 0 10px #e5c100;\n          bottom: -15px;\n          left: 50%;\n          margin-left: calc(-50% / 2); }\n      .Main .container .content .progress h2 {\n        color: white;\n        letter-spacing: 3px;\n        position: relative;\n        margin-bottom: 30px; }\n        .Main .container .content .progress h2::after {\n          content: \"\";\n          position: absolute;\n          width: 50%;\n          height: 2px;\n          background: #e5c100;\n          box-shadow: 0 0 10px #e5c100;\n          bottom: -15px;\n          left: 50%;\n          margin-left: calc(-50% / 2); }\n      .Main .container .content .progress .coins_left {\n        color: #ccac02;\n        font-size: 3em;\n        position: relative;\n        cursor: default;\n        margin-left: calc(3em - 100px); }\n        .Main .container .content .progress .coins_left i {\n          position: absolute;\n          top: 0;\n          color: #e5c100;\n          right: 105%; }\n      .Main .container .content .progress progress {\n        width: 90%;\n        margin: 2em auto;\n        margin-bottom: 0;\n        display: block;\n        border-radius: 3px;\n        padding: 0;\n        border: 1px solid gold;\n        text-align: center;\n        height: 20px;\n        box-shadow: 0 0 7px gold;\n        overflow: hidden;\n        transition: .3s;\n        z-index: 2;\n        cursor: pointer;\n        background: rgba(255, 255, 255, 0.4);\n        position: relative; }\n        .Main .container .content .progress progress:before {\n          content: \"30%\";\n          height: 100%;\n          color: brown;\n          text-align: center;\n          background: greenyellow;\n          position: absolute;\n          left: 30%;\n          padding: 0 5px;\n          line-height: 1.3em; }\n        .Main .container .content .progress progress::-moz-progress-bar {\n          background: gold;\n          border-radius: 3px; }\n        .Main .container .content .progress progress::-webkit-progress-bar {\n          background: rgba(255, 255, 255, 0.4);\n          box-shadow: 0 0 10px gold;\n          transition: .3s; }\n          .Main .container .content .progress progress::-webkit-progress-bar:hover {\n            box-shadow: 0 0 20px gold; }\n        .Main .container .content .progress progress::-webkit-progress-value {\n          background: gold; }\n        .Main .container .content .progress progress:hover {\n          box-shadow: 0 0 10px gold; }\n      .Main .container .content .progress progress::-webkit-progress-value::before {\n        content: '80%';\n        position: absolute;\n        right: 0;\n        top: -125%; }\n    .Main .container .content .afterProgress {\n      margin-top: 5px;\n      color: white;\n      position: relative;\n      width: 90%; }\n      .Main .container .content .afterProgress .left, .Main .container .content .afterProgress .right {\n        position: absolute; }\n      .Main .container .content .afterProgress .left {\n        margin-left: -4%; }\n      .Main .container .content .afterProgress .right {\n        right: -10px; }\n", ""]);
+exports.push([module.i, ".Main {\n  width: 100%;\n  height: 100%; }\n  .Main .bg {\n    width: 500px;\n    height: 500px;\n    border-radius: 50%;\n    position: fixed;\n    left: 50%;\n    top: 20%;\n    margin-left: -250px;\n    background-size: cover;\n    opacity: .2;\n    /*\n    img{\n      width: 500px;\n      height: 500px;\n    }\n    div{\n      background: rgba(87, 87, 87, .9);\n      width: 100%;\n      height: 100%;\n      //width: 500px;\n      position: absolute;\n      top: 0;\n      border-radius: 50%;\n    }\n    */ }\n  .Main .container {\n    width: 100%; }\n    .Main .container .content h1 {\n      color: #ccac02;\n      margin-left: 15px; }\n    .Main .container .content .top {\n      padding-top: 70px;\n      padding-left: 15px;\n      padding-right: 15px;\n      color: white;\n      text-align: center;\n      display: flex;\n      flex-direction: row;\n      justify-content: space-between;\n      align-items: stretch;\n      background: #808080;\n      background: -webkit-linear-gradient(45deg, #808080, #575757 55%);\n      background: -o-linear-gradient(45deg, #808080, #575757 55%);\n      background: -moz-linear-gradient(45deg, #808080, #575757 55%);\n      background: linear-gradient(45deg, #808080, #575757 55%); }\n      .Main .container .content .top .left {\n        min-width: 49%; }\n        .Main .container .content .top .left img {\n          max-width: 500px;\n          padding-top: 40px; }\n      .Main .container .content .top .right {\n        z-index: 10;\n        flex-direction: row;\n        display: flex;\n        justify-content: space-around;\n        min-width: 49%; }\n        .Main .container .content .top .right .text {\n          max-width: 49%;\n          align-self: center; }\n          .Main .container .content .top .right .text p {\n            line-height: 1.2; }\n        .Main .container .content .top .right .video {\n          min-height: 250px;\n          min-width: 49%;\n          margin: 25px 15px;\n          margin-top: 55px;\n          border: 2px solid #b29600;\n          border-right: 3px solid #b29600;\n          box-shadow: 0 0 10px #b29600; }\n    .Main .container .content .progress {\n      min-height: 350px;\n      display: flex;\n      flex-direction: column;\n      justify-content: center;\n      align-items: center;\n      cursor: default;\n      z-index: 2;\n      background: #808080;\n      background: -webkit-linear-gradient(45deg, #575757 55%, #808080);\n      background: -o-linear-gradient(45deg, #575757 55%, #808080);\n      background: -moz-linear-gradient(45deg, #575757 55%, #808080);\n      background: linear-gradient(45deg, #575757 55%, #808080); }\n      .Main .container .content .progress h1 {\n        margin: 0;\n        margin-bottom: 15px;\n        position: relative;\n        letter-spacing: 5px; }\n        .Main .container .content .progress h1::after {\n          content: \"\";\n          position: absolute;\n          width: 50%;\n          height: 2px;\n          background: #e5c100;\n          /* border: 1px solid red; */\n          box-shadow: 0 0 10px #e5c100;\n          bottom: -15px;\n          left: 50%;\n          margin-left: calc(-50% / 2); }\n      .Main .container .content .progress h2 {\n        color: white;\n        letter-spacing: 3px;\n        position: relative;\n        margin-bottom: 30px; }\n        .Main .container .content .progress h2::after {\n          content: \"\";\n          position: absolute;\n          width: 50%;\n          height: 2px;\n          background: #e5c100;\n          box-shadow: 0 0 10px #e5c100;\n          bottom: -15px;\n          left: 50%;\n          margin-left: calc(-50% / 2); }\n      .Main .container .content .progress .coins_left {\n        color: #ccac02;\n        font-size: 3em;\n        position: relative;\n        cursor: default;\n        margin-left: calc(3em - 100px); }\n        .Main .container .content .progress .coins_left i {\n          position: absolute;\n          top: 0;\n          color: #e5c100;\n          right: 105%; }\n      .Main .container .content .progress progress {\n        width: 90%;\n        margin: 2em auto;\n        margin-bottom: 0;\n        display: block;\n        border-radius: 3px;\n        padding: 0;\n        border: 1px solid gold;\n        text-align: center;\n        height: 20px;\n        box-shadow: 0 0 7px gold;\n        overflow: hidden;\n        transition: .3s;\n        z-index: 2;\n        cursor: pointer;\n        background: rgba(255, 255, 255, 0.4);\n        position: relative; }\n        .Main .container .content .progress progress:before {\n          content: \"30%\";\n          height: 100%;\n          color: brown;\n          text-align: center;\n          background: greenyellow;\n          position: absolute;\n          left: 30%;\n          padding: 0 5px;\n          line-height: 1.3em; }\n        .Main .container .content .progress progress::-moz-progress-bar {\n          background: gold;\n          border-radius: 3px; }\n        .Main .container .content .progress progress::-webkit-progress-bar {\n          background: rgba(255, 255, 255, 0.4);\n          box-shadow: 0 0 10px gold;\n          transition: .3s; }\n          .Main .container .content .progress progress::-webkit-progress-bar:hover {\n            box-shadow: 0 0 20px gold; }\n        .Main .container .content .progress progress::-webkit-progress-value {\n          background: gold; }\n        .Main .container .content .progress progress:hover {\n          box-shadow: 0 0 10px gold; }\n      .Main .container .content .progress progress::-webkit-progress-value::before {\n        content: '80%';\n        position: absolute;\n        right: 0;\n        top: -125%; }\n    .Main .container .content .afterProgress {\n      margin-top: 5px;\n      color: white;\n      position: relative;\n      width: 90%; }\n      .Main .container .content .afterProgress .left, .Main .container .content .afterProgress .right {\n        position: absolute; }\n      .Main .container .content .afterProgress .left {\n        margin-left: -4%; }\n      .Main .container .content .afterProgress .right {\n        right: -10px; }\n    .Main .container .content .packages {\n      z-index: 2;\n      padding: 15px;\n      display: flex;\n      flex-direction: column;\n      justify-content: center;\n      align-items: center;\n      background: #808080;\n      background: -webkit-linear-gradient(45deg, #808080, #575757 55%);\n      background: -o-linear-gradient(45deg, #808080, #575757 55%);\n      background: -moz-linear-gradient(45deg, #808080, #575757 55%);\n      background: linear-gradient(45deg, #808080, #575757 55%); }\n      .Main .container .content .packages .all_packages {\n        display: flex;\n        justify-content: space-around;\n        align-items: center;\n        flex-wrap: wrap;\n        z-index: 2; }\n        .Main .container .content .packages .all_packages .package {\n          margin: 25px 40px;\n          z-index: 2;\n          min-height: 200px;\n          display: flex;\n          flex-direction: column;\n          justify-content: space-around;\n          align-items: center;\n          border: 1px solid gold;\n          padding: 15px;\n          min-width: 210px;\n          box-shadow: 0 0 10px 1px sandybrown;\n          color: #ccac02;\n          font-size: 1.2em;\n          letter-spacing: 2px;\n          background: rgba(87, 87, 87, 0.8); }\n          .Main .container .content .packages .all_packages .package .package_logo {\n            font-size: 3em;\n            text-align: center; }\n            .Main .container .content .packages .all_packages .package .package_logo i:not(:nth-child(1)) {\n              margin: 0; }\n", ""]);
 
 // exports
 
+
+/***/ }),
+/* 217 */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+
+
+Object.defineProperty(exports, "__esModule", {
+    value: true
+});
+
+var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
+
+var _react = __webpack_require__(16);
+
+var _react2 = _interopRequireDefault(_react);
+
+function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
+
+function _possibleConstructorReturn(self, call) { if (!self) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return call && (typeof call === "object" || typeof call === "function") ? call : self; }
+
+function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
+
+var Package = function (_Component) {
+    _inherits(Package, _Component);
+
+    function Package() {
+        _classCallCheck(this, Package);
+
+        return _possibleConstructorReturn(this, (Package.__proto__ || Object.getPrototypeOf(Package)).apply(this, arguments));
+    }
+
+    _createClass(Package, [{
+        key: "render",
+        value: function render() {
+            var packages = this.props.packages;
+
+            var colors = ["#fafad2", "#ee82ee", "#64b7e1", "#f4a460", "#d3d3d3", "#e5c100"];
+            var packageContainer = packages[0].map(function (item, index) {
+                var logos = [];
+                for (var i = 0; i <= index; i++) {
+                    logos.push(_react2.default.createElement("i", { className: "icon-bitcoin-circle", key: i * Math.random(100) }));
+                }
+                return _react2.default.createElement(
+                    "div",
+                    { className: "package", key: index, style: { boxShadow: "0 0 10px 1px" + colors[index], borderColor: "" + colors[index], color: "" + colors[index] } },
+                    _react2.default.createElement(
+                        "div",
+                        { className: "package_logo", style: { color: "" + colors[index] } },
+                        _react2.default.createElement("i", { className: "icon-bitcoin-circle" })
+                    ),
+                    _react2.default.createElement(
+                        "h3",
+                        null,
+                        item.title
+                    ),
+                    _react2.default.createElement(
+                        "div",
+                        { className: "options" },
+                        _react2.default.createElement(
+                            "span",
+                            { className: "getCoins" },
+                            _react2.default.createElement("i", { className: "icon-bitcoin-circle" }),
+                            "  ",
+                            item.option.coins
+                        )
+                    ),
+                    _react2.default.createElement(
+                        "div",
+                        { className: "btn btn_buy" },
+                        item.price
+                    )
+                );
+            });
+            return _react2.default.createElement(
+                "div",
+                { className: "packages" },
+                _react2.default.createElement(
+                    "h1",
+                    null,
+                    packages[1][0].title
+                ),
+                _react2.default.createElement(
+                    "div",
+                    { className: "all_packages" },
+                    packageContainer
+                )
+            );
+        }
+    }]);
+
+    return Package;
+}(_react.Component);
+
+exports.default = Package;
 
 /***/ })
 /******/ ]);

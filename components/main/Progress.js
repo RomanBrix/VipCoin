@@ -1,5 +1,4 @@
 import React, {Component} from 'react';
-import FontBitCoin from "../../public/src/main/FontBitcoin/styles.css";
 
 export default class Progress extends Component {
     constructor(props){
