@@ -1,4 +1,6 @@
 // import axios from 'axios';
+import translate from "../../data/translate.json";
+
 
 // export function getNews () {
 //     return dispatch =>{

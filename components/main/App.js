@@ -5,20 +5,20 @@ import FooterIcons from "../../public/src/Fonts/FontsIcons/styles.css";
 import { BG_COIN } from '../../data/links';
 import Header from '../layouts/Header';
 import Footer from '../layouts/Footer';
+import Auth from '../layouts/auth'
 import Container from './Container';
 
 export default class App extends Component {
     constructor(props){
         super(props);
         this.state = {
-            language: props.language || "ru"
+            language: props.language || "ru",
         }
     }
 
     render(){
         const { setLanguage } = this.props;
         const { language } = this.state;
-
         const lang = translate.filter(item =>{
             return item.language === language;
         });
@@ -27,12 +27,9 @@ export default class App extends Component {
 
         return (
             <div className="Main">
-
+                <Auth auth={ layouts.auth }/>
                 <Header setLanguage={setLanguage}/>
-                <div className="bg" style={ {backgroundImage: `url(${BG_COIN})`} }>
-                    {/*<img src="./src/main/bitcoin1.png" className="bg" alt=""/>*/}
-                    {/*<div/>*/}
-                </div>
+                <div className="bg" style={ {backgroundImage: `url(${BG_COIN})`} }/>
                 <div className="container">
                     <Container pages={pages.main}/>
                 </div>

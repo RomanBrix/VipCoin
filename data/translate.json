@@ -81,6 +81,26 @@
           "contractOffer": "Предложение по Контракту"
         },
         "feedback": "Обратная связь"
+      },
+      "auth":{
+        "header":{
+          "btnLogin": "Войти",
+          "underLogin": "Для участников",
+          "btnRegistration": "Регестрация",
+          "underRegistration": "Для новых участников"
+        },
+        "login":{
+          "inputLogin": "Логин",
+          "inputPassword": "Пароль",
+          "btnEnter": "Войти"
+        },
+        "registration":{
+          "inputLogin": "Логин",
+          "inputEmail": "E-Mail",
+          "inputPassword": "Пароль",
+          "inputRepeatPassword": "Повторите пароль",
+          "btnRegistration": "Регестрация"
+        }
       }
     }
   }

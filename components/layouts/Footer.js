@@ -7,8 +7,6 @@ import { CONTACTS, PAGES } from '../../data/links';
 export default class Footer extends Component {
     render(){
         const { footer } = this.props;
-        console.log(footer);
-
         return(
             <div className="footer">
                 <div className="cont">
