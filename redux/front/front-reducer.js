@@ -1,9 +1,6 @@
 const InitialState = {
     request: false,
-    albums: [],
-    images: [],
-    news: [],
-    events: []
+    language: "",
 }
 
 const frontReducers = (state = InitialState, action) => {
@@ -12,37 +9,15 @@ const frontReducers = (state = InitialState, action) => {
         case 'REQUEST':
             return{
                 request: true,
-                albums: state.albums,
-                images: state.images,
-                news:state.news,
-                events: state.events
-
-            }
-        case 'ALBUMS_REQUEST':
-            return {
-                request: false,
-                albums: action.payload,
-                images: [],
-                news:state.news,
-                events: state.events
-
+                language: state.language
 
             };
-        case 'IMAGES_REQUEST':
+        case 'SET_LANGUAGE':
             return {
                 request: false,
-                albums: state.albums,
-                images: action.payload,
-                news:state.news,
-                events: state.events
-            };
-        case 'NEWS_REQUEST':
-            return {
-                request: false,
-                albums: state.albums,
-                images: state.images,
-                news:action.payload[0],
-                events: action.payload[1]
+                language: action.lang
+
+
             };
         default: return state;
     }

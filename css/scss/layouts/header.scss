@@ -8,7 +8,7 @@
   justify-content: space-around;
   min-width: 100%;
   background: $Main;
-  box-shadow: 0 0 6px black;
+  box-shadow: 0 0 10px 1px black;
   color: white;
   text-transform: uppercase;
   z-index: 100;
@@ -33,10 +33,17 @@
       list-style: none;
 
       li{
+        margin-right: 5%;
         a{
           //color:black;
           color: white;
           text-decoration: none;
+          &:hover{
+            color: $LightGold;
+          }
+        }
+        &:last-child{
+          margin-right: 0;
         }
       }
     }
@@ -47,7 +54,7 @@
       font-family: HelveticaHeavy;
       display: inline-block;
       cursor: pointer;
-      padding: 10px 20px;
+      padding: 6px 10px 3px 10px;
       border-radius: 5px;
       background-color: $BrightGold;
       box-shadow: inset 0 0 6px black;
@@ -59,27 +66,17 @@
       }
     }
     .registration{
-      margin-right: 25px;
-      position: relative;
-      padding-left: 35px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
 
       span{
-        position: absolute;
-        left: 7px;
-        top: 8px;
-        font-size: 21px;
+        //position: absolute;
+        //left: 7px;
+        //top: 8px;
+        margin-right: 5px;
+        font-size: 1.5em;
       }
-    }
-    .login{
-      position: relative;
-      padding-left: 35px;
-
-      span{
-          position: absolute;
-          left: 7px;
-        top: 8px;
-        font-size: 21px;
-        }
     }
   }
 

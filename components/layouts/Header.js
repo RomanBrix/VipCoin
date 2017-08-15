@@ -1,13 +1,15 @@
 import React, {Component} from 'react';
 import translate from "../../data/translate.json";
-import FontEnter from "../../public/src/header/FontEnter/styles.css";
+// import FontEnter from "../../public/src/header/FontEnter/styles.css";
+import FooterIcons from "../../public/src/Fonts/FontsIcons/styles.css";
 import css from '../../css/scss/layouts/header.scss';
 import {
     LOGO,
     FLAG_RU,
     FLAG_ENG,
     FLAG_JAP,
-    FLAG_USA
+    FLAG_USA,
+    PAGES
 } from '../../data/links';
 
 export default class Header extends Component {
@@ -16,7 +18,8 @@ export default class Header extends Component {
         this.setCookie('language', 'ru',{expires: 350});
         this.state = {
             language: this.getCookie("language") || "ru"
-        }
+        };
+        props.setLanguage(this.state.language);
     }
 
     setCookie(name, value, options){
@@ -60,16 +63,37 @@ export default class Header extends Component {
                 <div className="logo"><img src={LOGO} alt="Logo"/></div>
                 <div className="menu">
                     <ul>
-                        <li><a href="index.html">{layouts.header.btnOne}</a></li>
-                        <li><a href="#">{layouts.header.btnTwo}</a></li>
-                        <li><a href="#">{layouts.header.btnThree}</a></li>
-                        <li><a href="#">{layouts.header.btnFour}</a></li>
+                        <li>
+                            <a href={PAGES.MAIN}>
+                                {layouts.header.btnMain}
+                            </a>
+                        </li>
+                        <li>
+                            <a href={PAGES.ABOUT_US}>
+                                {layouts.header.btnAbout}
+                            </a>
+                        </li>
+                        <li>
+                            <a href={PAGES.FAQ}>
+                                {layouts.header.btnFAQ}
+                            </a>
+                        </li>
+                        <li>
+                            <a href={PAGES.NEWS}>
+                                {layouts.header.btnNews}
+                            </a>
+                        </li>
+                        <li>
+                            <a href={PAGES.CONTACT_US}>
+                                {layouts.header.btnContacts}
+                            </a>
+                        </li>
                     </ul>
                 </div>
                 <div className="login">
                     <div className="registration">
-                        <span className="icon-log-in"/> {layouts.header.login.log}</div>
-
+                        <span className="icon-sign-in"/> {layouts.header.login.log}
+                    </div>
                 </div>
                 <div className="lang dropdown">
                     <span id="active_lang">

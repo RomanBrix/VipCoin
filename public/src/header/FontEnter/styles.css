@@ -1,7 +1,7 @@
 @charset "UTF-8";
 
 @font-face {
-  font-family: "untitled-font-3";
+  font-family: "enter";
   src:url("fonts/untitled-font-3.eot");
   src:url("fonts/untitled-font-3.eot?#iefix") format("embedded-opentype"),
     url("fonts/untitled-font-3.woff") format("woff"),
@@ -13,7 +13,7 @@
 }
 
 [data-icon]:before {
-  font-family: "untitled-font-3" !important;
+  font-family: "enter" !important;
   content: attr(data-icon);
   font-style: normal !important;
   font-weight: normal !important;
@@ -25,9 +25,9 @@
   -moz-osx-font-smoothing: grayscale;
 }
 
-[class^="icon-"]:before,
-[class*=" icon-"]:before {
-  font-family: "untitled-font-3" !important;
+[class^="icon-log"]:before,
+[class*=" icon-log"]:before {
+  font-family: "enter" !important;
   font-style: normal !important;
   font-weight: normal !important;
   font-variant: normal !important;

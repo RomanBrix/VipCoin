@@ -12,8 +12,7 @@ export default class Progress extends Component {
     render(){
         const { pages } = this.props;
         const { coinsLeft, maxCoins, soldCoins } = this.state;
-        const width = (soldCoins*100)/maxCoins;
-        console.log(width.toFixed(1));
+        const width = ((soldCoins*100)/maxCoins).toFixed(1);
         return (
             <div className="progress">
                 <h1> {pages.head}</h1>

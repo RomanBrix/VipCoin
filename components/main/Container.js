@@ -1,5 +1,4 @@
 import React, {Component} from 'react';
-import FontBitCoin from "../../public/src/main/FontBitcoin/styles.css";
 import Top from './Top';
 import Progress from './Progress';
 import Package from "./Package";

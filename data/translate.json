@@ -65,13 +65,22 @@
     },
     "layouts":{
       "header":{
-        "btnOne": "ГЛАВНАЯ",
-        "btnTwo": "О НАС",
-        "btnThree": "Помощь",
-        "btnFour": "Новости",
+        "btnMain": "ГЛАВНАЯ",
+        "btnAbout": "О НАС",
+        "btnFAQ": "Помощь",
+        "btnNews": "Новости",
+        "btnContacts": "Контакты",
         "login":{
           "log": "Личный кабинет"
         }
+      },
+      "footer":{
+        "pages":{
+          "whitePage":"Белая Бумага",
+          "legalPage":"Юридические Страницы",
+          "contractOffer": "Предложение по Контракту"
+        },
+        "feedback": "Обратная связь"
       }
     }
   }
