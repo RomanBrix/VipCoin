@@ -6,7 +6,7 @@ export default class Progress extends Component {
         this.state = {
             coinsLeft: 500000,
             maxCoins: 1000000,
-            soldCoins: 239999
+            soldCoins: 539999
         }
     }
     render(){

@@ -10,7 +10,9 @@
         "progress": {
           "head": "ЦЕЛЬ Vip Coin",
           "title": "Официальный запуск сети после продажи "
-        },
+        }
+      },
+      "packages":{
         "packages":[[
           {
             "title": "Минимальный",
@@ -67,6 +69,7 @@
       "header":{
         "btnMain": "ГЛАВНАЯ",
         "btnAbout": "О НАС",
+        "btnPackages": "ПАКЕТЫ",
         "btnFAQ": "Помощь",
         "btnNews": "Новости",
         "btnContacts": "Контакты",
@@ -85,9 +88,8 @@
       "auth":{
         "header":{
           "btnLogin": "Войти",
-          "underLogin": "Для участников",
           "btnRegistration": "Регестрация",
-          "underRegistration": "Для новых участников"
+          "btnForgotPass": "Забыли пароль?"
         },
         "login":{
           "inputLogin": "Логин",
@@ -100,6 +102,13 @@
           "inputPassword": "Пароль",
           "inputRepeatPassword": "Повторите пароль",
           "btnRegistration": "Регестрация"
+        },
+        "forgot": {
+          "text": "Отправить пароль на почту",
+          "inputEmail": "E-Mail",
+          "btnSend": "Отправить",
+          "success": "E-mail отправлен!",
+          "error": "E-mail не найден"
         }
       }
     }

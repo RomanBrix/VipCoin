@@ -65,24 +65,3 @@
 .icon-usd:before {
   content: "\e008";
 }
-.icon-user:before {
-  content: "\e009";
-}
-.icon-user-plus:before {
-  content: "\e00a";
-}
-.icon-unlock-alt:before {
-  content: "\e00b";
-}
-.icon-unlock:before {
-  content: "\e00c";
-}
-.icon-at:before {
-  content: "\e00d";
-}
-.icon-times-circle:before {
-  content: "\e00e";
-}
-.icon-times-circle-o:before {
-  content: "\e00f";
-}

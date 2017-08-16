@@ -1,0 +1,106 @@
+@import "../vars";
+.packages {
+  z-index: 2;
+  padding: 15px;
+  padding-top: 70px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  background: #808080;
+  background: -webkit-linear-gradient(45deg, #808080, #575757 55%);
+  background: -o-linear-gradient(45deg, #808080, #575757 55%);
+  background: -moz-linear-gradient(45deg, #808080, #575757 55%);
+  background: linear-gradient(45deg, #808080, #575757 55%);
+
+  .all_packages {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+    z-index: 2;
+    .package {
+      margin: 25px 40px;
+      z-index: 2;
+      min-height: 200px;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-around;
+      align-items: center;
+      border: 1px solid gold;
+      padding: 15px;
+      min-width: 210px;
+      box-shadow: 0 0 10px 1px sandybrown;
+      color: $BrightGold;
+      font-size: 1.2em;
+      letter-spacing: 2px;
+      background: $MainOpacity;
+      .package_logo {
+        font-size: 3em;
+        text-align: center;
+        i {
+
+          &:not(:nth-child(1)) {
+            //margin-left: -25%;
+            margin: 0;
+          }
+        }
+      }
+
+      h3 {
+        width: 100%;
+        text-align: center;
+        margin-bottom: 10px;
+        margin-top: -10px;
+        position: relative;
+        &:before {
+          content: '';
+          position: absolute;
+          width: 80%;
+          height: 1px;
+          border-top: 1px solid;
+          bottom: -5px;
+          left: 50%;
+          margin-left: calc(-80% / 2);
+        }
+        &:after {
+          content: '';
+          position: absolute;
+          width: 100%;
+          height: 1px;
+          border-top: 1px solid;
+          bottom: -10px;
+          left: 0;
+        }
+      }
+      .options {
+        .getCoins {
+          display: flex;
+          align-items: center;
+          i {
+            font-size: 1.3em;
+          }
+        }
+      }
+
+      .btn {
+        border: 1px solid;
+        padding: 6px 9px 2px;
+        border-radius: 3px;
+        cursor: pointer;
+        transition: .2s;
+        display: flex;
+        align-items: center;
+        .icon-usd:before {
+          content: "\e008";
+        }
+        &:hover {
+          background-color: $LightGold;
+          color: white;
+        }
+      }
+    }
+  }
+}
+

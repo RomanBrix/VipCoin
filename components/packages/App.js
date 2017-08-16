@@ -61,13 +61,14 @@ export default class App extends Component {
                     style={ style }
                 />
                 <Header
-                    main={true}
+                    packages={true}
                     setLanguage={ setLanguage }
                     toggleAuth={ this.toggleAuth.bind(this) }
                 />
                 <div className="bg" style={ {backgroundImage: `url(${BG_COIN})`} }/>
                 <div className="container">
-                    <Container pages={pages.main}/>
+                    <Container pages={pages.packages}/>
+                    {/*PACKAGES*/}
                 </div>
                 <Footer footer={ layouts.footer } />
             </div>

@@ -5,6 +5,7 @@ const NODE_ENV = process.env.NODE_ENV || 'dev';
 module.exports= {
     entry: {
         main: "./points/Main.js",
+        packages: "./points/Packages.js"
     },
     output: {
         path: path.join(__dirname, 'public'),

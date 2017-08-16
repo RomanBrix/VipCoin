@@ -21,6 +21,33 @@ export default class Header extends Component {
         };
         props.setLanguage(this.state.language);
     }
+    componentDidMount(){
+        const {main, about, packages} = this.props;
+        const arr = [main, about, packages];
+        let ask = 0;
+        for (let i = 0; i < arr.length; i++){
+            if(arr[i] === true ){
+                ask = i;
+            }
+        }
+        const header = document.getElementsByClassName('header')[0];
+        const listArray = header.children[1].children[0].children;
+        console.log(listArray);
+        switch(ask) {
+            case 0 :
+                listArray[0].classList.add('active');
+                break;
+
+            case 1:
+                listArray[1].classList.add('active');
+                break;
+            case 2:
+                listArray[2].classList.add('active');
+                break;
+
+            default : console.log('op'); break;
+        }
+    }
 
     setCookie(name, value, options){
         options = options || {};
@@ -54,6 +81,7 @@ export default class Header extends Component {
     }
 
     render(){
+        const { toggleAuth } = this.props;
         const lang = translate.filter(item =>{
            return item.language === this.state.language;
         });
@@ -74,6 +102,11 @@ export default class Header extends Component {
                             </a>
                         </li>
                         <li>
+                            <a href={PAGES.PACKAGES}>
+                                {layouts.header.btnPackages}
+                            </a>
+                        </li>
+                        <li>
                             <a href={PAGES.FAQ}>
                                 {layouts.header.btnFAQ}
                             </a>
@@ -90,7 +123,7 @@ export default class Header extends Component {
                         </li>
                     </ul>
                 </div>
-                <div className="login">
+                <div className="login" onClick={()=>{ toggleAuth(true) }}>
                     <div className="registration">
                         <span className="icon-sign-in"/> {layouts.header.login.log}
                     </div>

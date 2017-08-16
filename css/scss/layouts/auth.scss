@@ -1,11 +1,152 @@
+@import "../vars";
 .auth{
-  position: absolute;
+  position: fixed;
   z-index: 101;
   width: 100%;
   height: 100%;
-  background: rgba(242, 242, 242, .8);
+  background: rgba(242, 242, 242, .9);
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  .close{
+    position: absolute;
+    right: -60px;
+    top: -60px;
+    font-size: 4em;
+    cursor: pointer;
+    color: $LightGold;
+  }
+  .auth-container{
+    position: relative;
+    min-width: 400px;
+    //min-height: 450px;
+    padding-bottom: 50px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background: rgba(242, 242, 242, 1);
+    color: white;
+    box-shadow: 0 0 10px black;
+
+
+    .auth-head{
+      width: 100%;
+      /* padding: 9px 0; */
+      border-bottom: 2px solid $LightGold;
+      box-shadow: 0 2px 10px black;
+      display: flex;
+      justify-content: space-between;
+      background: rgb(216, 216, 216);
+      font-size: 1.3em;
+      margin-bottom: 50px;
+      .btn{
+        padding: 10px 15px;
+        min-height: 100%;
+        cursor: pointer;
+        color: black;
+        -webkit-user-select: none;
+        -moz-user-select: none;
+        -ms-user-select: none;
+        user-select: none;
+        transition: .3s;
+        &:hover{
+          background-color: $LightGold;
+          color: white;
+        }
+      }
+      .btn-active{
+        background: $LightGold;
+        color: white;
+      }
+
+      .btn-login.btn-active{
+        box-shadow: 7px 0 8px 0 #aaa;
+      }
+      .btn-forgotPass.btn-active{
+        box-shadow: -7px 0 8px 0 #aaa;
+      }
+      .btn-registration.btn-active{
+        box-shadow: 0 0 0 0 transparent, 0 0 0 0 transparent, 7px 0 8px 0 #aaa, -7px 0 8px 0px #aaa;
+      }
+    }
+    .auth-body{
+      color: black;
+      width: 100%;
+      min-height: calc(100% - 45px);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      .rendered-container{
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        .text{
+          font-size: 1.3em;
+          margin-bottom: 30px;
+          letter-spacing: 2px;
+        }
+        .inputs{
+          display: flex;
+          width: 100%;
+          align-items: center;
+          justify-content: center;
+          &:not(:last-child) {
+            margin-bottom: 25px;
+          }
+          label{
+            //background:$LightGold;
+            //font-size: 1.3em;
+            //padding: 5px 4px 0;
+            //border-top-left-radius: 5px;
+            //border-bottom-left-radius: 5px;
+            //color: white;
+            //max-height: 28px;
+
+            font-size: 1.3em;
+            padding: 0 5px;
+            color: #e5c100;
+            max-height: 28px;
+            margin-bottom: -15px;
+            margin-right: 5px;
+            cursor: pointer;
+          }
+          input{
+            height: 25px;
+            width: 80%;
+            border: none;
+            border-bottom: 2px solid $LightGold;
+            background-color: rgba(242, 242, 242, 1);
+            transition: .2s ease;
+            font-size: 1.2em;
+            padding-left: 4px;
+            &:focus {
+              outline: none;
+              border-bottom-color: #287685;
+              box-shadow: 0 4px 2px -2px grey;
+              //box-shadow: 0 20px 25px -19px #287685;;
+              //font-size: 2.1em;
+            }
+          }
+        }
+        .btn-ok{
+          text-transform: uppercase;
+          cursor: pointer;
+          padding: 7px 15px 2px;
+          border-radius: 5px;
+          background-color: $BrightGold;
+          box-shadow: inset 0 0 4px black;
+          transition: .3s;
+          //min-width: 150px;
+          color: white;
+          &:hover{
+            background-color: $LightGold;
+            box-shadow: inset 0 0 2px black;
+          }
+        }
+      }
+    }
+  }
 }

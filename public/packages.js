@@ -60,7 +60,7 @@
 /******/ 	__webpack_require__.p = "";
 /******/
 /******/ 	// Load entry module and return exports
-/******/ 	return __webpack_require__(__webpack_require__.s = 258);
+/******/ 	return __webpack_require__(__webpack_require__.s = 266);
 /******/ })
 /************************************************************************/
 /******/ ([
@@ -26547,7 +26547,15 @@ exports.push([module.i, "@font-face {\n  font-family: 'Brusher';\n  src: url(" +
 
 
 /***/ }),
-/* 258 */
+/* 258 */,
+/* 259 */,
+/* 260 */,
+/* 261 */,
+/* 262 */,
+/* 263 */,
+/* 264 */,
+/* 265 */,
+/* 266 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -26571,15 +26579,15 @@ var _reducers = __webpack_require__(236);
 
 var _reducers2 = _interopRequireDefault(_reducers);
 
-var _main = __webpack_require__(259);
+var _packages = __webpack_require__(267);
+
+var _packages2 = _interopRequireDefault(_packages);
+
+var _main = __webpack_require__(256);
 
 var _main2 = _interopRequireDefault(_main);
 
-var _main3 = __webpack_require__(256);
-
-var _main4 = _interopRequireDefault(_main3);
-
-var _index = __webpack_require__(264);
+var _index = __webpack_require__(269);
 
 var _index2 = _interopRequireDefault(_index);
 
@@ -26591,11 +26599,11 @@ var store = (0, _redux.createStore)(_reducers2.default, (0, _redux.applyMiddlewa
 (0, _reactDom.render)(_react2.default.createElement(
     _reactRedux.Provider,
     { store: store },
-    _react2.default.createElement(_main2.default, null)
+    _react2.default.createElement(_packages2.default, null)
 ), init);
 
 /***/ }),
-/* 259 */
+/* 267 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -26613,7 +26621,7 @@ var _reactRedux = __webpack_require__(96);
 
 var _frontActions = __webpack_require__(238);
 
-var _App = __webpack_require__(260);
+var _App = __webpack_require__(268);
 
 var _App2 = _interopRequireDefault(_App);
 
@@ -26629,7 +26637,7 @@ exports.default = (0, _reactRedux.connect)(mapStateToProps, {
 })(_App2.default);
 
 /***/ }),
-/* 260 */
+/* 268 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -26667,7 +26675,7 @@ var _auth = __webpack_require__(250);
 
 var _auth2 = _interopRequireDefault(_auth);
 
-var _Container = __webpack_require__(261);
+var _Container = __webpack_require__(271);
 
 var _Container2 = _interopRequireDefault(_Container);
 
@@ -26745,7 +26753,7 @@ var App = function (_Component) {
                     style: style
                 }),
                 _react2.default.createElement(_Header2.default, {
-                    main: true,
+                    packages: true,
                     setLanguage: setLanguage,
                     toggleAuth: this.toggleAuth.bind(this)
                 }),
@@ -26753,7 +26761,7 @@ var App = function (_Component) {
                 _react2.default.createElement(
                     "div",
                     { className: "container" },
-                    _react2.default.createElement(_Container2.default, { pages: pages.main })
+                    _react2.default.createElement(_Container2.default, { pages: pages.packages })
                 ),
                 _react2.default.createElement(_Footer2.default, { footer: layouts.footer })
             );
@@ -26766,248 +26774,13 @@ var App = function (_Component) {
 exports.default = App;
 
 /***/ }),
-/* 261 */
-/***/ (function(module, exports, __webpack_require__) {
-
-"use strict";
-
-
-Object.defineProperty(exports, "__esModule", {
-    value: true
-});
-
-var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
-
-var _react = __webpack_require__(8);
-
-var _react2 = _interopRequireDefault(_react);
-
-var _Top = __webpack_require__(262);
-
-var _Top2 = _interopRequireDefault(_Top);
-
-var _Progress = __webpack_require__(263);
-
-var _Progress2 = _interopRequireDefault(_Progress);
-
-function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
-
-function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
-
-function _possibleConstructorReturn(self, call) { if (!self) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return call && (typeof call === "object" || typeof call === "function") ? call : self; }
-
-function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
-
-// import Package from "./Package";
-
-var Container = function (_Component) {
-    _inherits(Container, _Component);
-
-    function Container() {
-        _classCallCheck(this, Container);
-
-        return _possibleConstructorReturn(this, (Container.__proto__ || Object.getPrototypeOf(Container)).apply(this, arguments));
-    }
-
-    _createClass(Container, [{
-        key: 'render',
-        value: function render() {
-            var pages = this.props.pages;
-
-
-            return _react2.default.createElement(
-                'div',
-                { className: 'content' },
-                _react2.default.createElement(_Top2.default, { pages: pages.top }),
-                _react2.default.createElement(_Progress2.default, { pages: pages.progress })
-            );
-        }
-    }]);
-
-    return Container;
-}(_react.Component);
-
-exports.default = Container;
-
-/***/ }),
-/* 262 */
-/***/ (function(module, exports, __webpack_require__) {
-
-"use strict";
-
-
-Object.defineProperty(exports, "__esModule", {
-    value: true
-});
-
-var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
-
-var _react = __webpack_require__(8);
-
-var _react2 = _interopRequireDefault(_react);
-
-function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
-
-function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
-
-function _possibleConstructorReturn(self, call) { if (!self) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return call && (typeof call === "object" || typeof call === "function") ? call : self; }
-
-function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
-
-var Top = function (_Component) {
-    _inherits(Top, _Component);
-
-    function Top() {
-        _classCallCheck(this, Top);
-
-        return _possibleConstructorReturn(this, (Top.__proto__ || Object.getPrototypeOf(Top)).apply(this, arguments));
-    }
-
-    _createClass(Top, [{
-        key: "render",
-        value: function render() {
-            var pages = this.props.pages;
-
-            return _react2.default.createElement(
-                "div",
-                { className: "top" },
-                _react2.default.createElement(
-                    "div",
-                    { className: "right" },
-                    _react2.default.createElement(
-                        "div",
-                        { className: "text" },
-                        _react2.default.createElement(
-                            "h1",
-                            null,
-                            pages.head
-                        ),
-                        _react2.default.createElement(
-                            "p",
-                            null,
-                            pages.text
-                        )
-                    ),
-                    _react2.default.createElement(
-                        "div",
-                        { className: "video" },
-                        _react2.default.createElement("iframe", { src: "https://www.youtube.com/embed/RuZ80TPUF_A", height: "100%", width: "100%", frameBorder: "0", allowFullScreen: true })
-                    )
-                )
-            );
-        }
-    }]);
-
-    return Top;
-}(_react.Component);
-
-exports.default = Top;
-
-/***/ }),
-/* 263 */
-/***/ (function(module, exports, __webpack_require__) {
-
-"use strict";
-
-
-Object.defineProperty(exports, "__esModule", {
-    value: true
-});
-
-var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
-
-var _react = __webpack_require__(8);
-
-var _react2 = _interopRequireDefault(_react);
-
-function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
-
-function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
-
-function _possibleConstructorReturn(self, call) { if (!self) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return call && (typeof call === "object" || typeof call === "function") ? call : self; }
-
-function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
-
-var Progress = function (_Component) {
-    _inherits(Progress, _Component);
-
-    function Progress(props) {
-        _classCallCheck(this, Progress);
-
-        var _this = _possibleConstructorReturn(this, (Progress.__proto__ || Object.getPrototypeOf(Progress)).call(this, props));
-
-        _this.state = {
-            coinsLeft: 500000,
-            maxCoins: 1000000,
-            soldCoins: 539999
-        };
-        return _this;
-    }
-
-    _createClass(Progress, [{
-        key: "render",
-        value: function render() {
-            var pages = this.props.pages;
-            var _state = this.state,
-                coinsLeft = _state.coinsLeft,
-                maxCoins = _state.maxCoins,
-                soldCoins = _state.soldCoins;
-
-            var width = (soldCoins * 100 / maxCoins).toFixed(1);
-            return _react2.default.createElement(
-                "div",
-                { className: "progress" },
-                _react2.default.createElement(
-                    "h1",
-                    null,
-                    " ",
-                    pages.head
-                ),
-                _react2.default.createElement(
-                    "h2",
-                    null,
-                    " ",
-                    pages.title
-                ),
-                _react2.default.createElement(
-                    "div",
-                    { className: "coins_left" },
-                    coinsLeft,
-                    " ",
-                    _react2.default.createElement("i", { className: "icon-bitcoin-circle" })
-                ),
-                _react2.default.createElement("progress", { className: "progressBar", value: soldCoins, max: maxCoins }),
-                _react2.default.createElement(
-                    "div",
-                    { className: "afterProgress" },
-                    _react2.default.createElement(
-                        "span",
-                        { className: "left", style: { left: width + "%" } },
-                        soldCoins
-                    ),
-                    _react2.default.createElement(
-                        "span",
-                        { className: "right" },
-                        maxCoins
-                    )
-                )
-            );
-        }
-    }]);
-
-    return Progress;
-}(_react.Component);
-
-exports.default = Progress;
-
-/***/ }),
-/* 264 */
+/* 269 */
 /***/ (function(module, exports, __webpack_require__) {
 
 // style-loader: Adds some css to the DOM by adding a <style> tag
 
 // load the styles
-var content = __webpack_require__(265);
+var content = __webpack_require__(270);
 if(typeof content === 'string') content = [[module.i, content, '']];
 // Prepare cssTransformation
 var transform;
@@ -27032,7 +26805,7 @@ if(false) {
 }
 
 /***/ }),
-/* 265 */
+/* 270 */
 /***/ (function(module, exports, __webpack_require__) {
 
 exports = module.exports = __webpack_require__(21)(undefined);
@@ -27040,11 +26813,174 @@ exports = module.exports = __webpack_require__(21)(undefined);
 
 
 // module
-exports.push([module.i, ".top {\n  padding-top: 70px;\n  padding-left: 15px;\n  padding-right: 15px;\n  color: white;\n  text-align: center;\n  display: flex;\n  flex-direction: row;\n  justify-content: space-between;\n  align-items: stretch;\n  background: #808080;\n  background: -webkit-linear-gradient(45deg, #808080, #575757 55%);\n  background: -o-linear-gradient(45deg, #808080, #575757 55%);\n  background: -moz-linear-gradient(45deg, #808080, #575757 55%);\n  background: linear-gradient(45deg, #808080, #575757 55%); }\n  .top .left {\n    min-width: 49%; }\n    .top .left img {\n      max-width: 500px;\n      padding-top: 40px; }\n  .top .right {\n    z-index: 10;\n    flex-direction: row;\n    display: flex;\n    justify-content: space-around;\n    min-width: 49%; }\n    .top .right .text {\n      max-width: 49%;\n      align-self: center; }\n      .top .right .text p {\n        line-height: 1.2; }\n    .top .right .video {\n      min-height: 250px;\n      min-width: 49%;\n      margin: 25px 15px;\n      margin-top: 55px;\n      border: 2px solid #b29600;\n      border-right: 3px solid #b29600;\n      box-shadow: 0 0 10px #b29600; }\n\n.progress {\n  min-height: 350px;\n  display: flex;\n  flex-direction: column;\n  justify-content: center;\n  align-items: center;\n  cursor: default;\n  z-index: 2;\n  background: #808080;\n  background: -webkit-linear-gradient(45deg, #575757 55%, #808080);\n  background: -o-linear-gradient(45deg, #575757 55%, #808080);\n  background: -moz-linear-gradient(45deg, #575757 55%, #808080);\n  background: linear-gradient(45deg, #575757 55%, #808080); }\n  .progress h1 {\n    margin: 0;\n    margin-bottom: 15px;\n    position: relative;\n    letter-spacing: 5px; }\n    .progress h1::after {\n      content: \"\";\n      position: absolute;\n      width: 50%;\n      height: 2px;\n      background: #e5c100;\n      /* border: 1px solid red; */\n      box-shadow: 0 0 10px #e5c100;\n      bottom: -15px;\n      left: 50%;\n      margin-left: calc(-50% / 2); }\n  .progress h2 {\n    color: white;\n    letter-spacing: 3px;\n    position: relative;\n    margin-bottom: 30px; }\n    .progress h2::after {\n      content: \"\";\n      position: absolute;\n      width: 50%;\n      height: 2px;\n      background: #e5c100;\n      box-shadow: 0 0 10px #e5c100;\n      bottom: -15px;\n      left: 50%;\n      margin-left: calc(-50% / 2); }\n  .progress .coins_left {\n    color: #ccac02;\n    font-size: 3em;\n    position: relative;\n    cursor: default;\n    margin-left: calc(3em - 100px); }\n    .progress .coins_left i {\n      position: absolute;\n      top: 0;\n      color: #e5c100;\n      right: 105%; }\n  .progress progress {\n    width: 90%;\n    margin: 2em auto;\n    margin-bottom: 0;\n    display: block;\n    border-radius: 3px;\n    padding: 0;\n    border: 1px solid gold;\n    text-align: center;\n    height: 20px;\n    box-shadow: 0 0 7px gold;\n    overflow: hidden;\n    transition: .3s;\n    z-index: 2;\n    cursor: pointer;\n    background: rgba(255, 255, 255, 0.4);\n    position: relative; }\n    .progress progress:before {\n      content: \"30%\";\n      height: 100%;\n      color: brown;\n      text-align: center;\n      background: greenyellow;\n      position: absolute;\n      left: 30%;\n      padding: 0 5px;\n      line-height: 1.3em; }\n    .progress progress::-moz-progress-bar {\n      background: gold;\n      border-radius: 3px; }\n    .progress progress::-webkit-progress-bar {\n      background: rgba(255, 255, 255, 0.4);\n      box-shadow: 0 0 10px gold;\n      transition: .3s; }\n      .progress progress::-webkit-progress-bar:hover {\n        box-shadow: 0 0 20px gold; }\n    .progress progress::-webkit-progress-value {\n      background: gold; }\n    .progress progress:hover {\n      box-shadow: 0 0 10px gold; }\n  .progress progress::-webkit-progress-value::before {\n    content: '80%';\n    position: absolute;\n    right: 0;\n    top: -125%; }\n\n.afterProgress {\n  margin-top: 5px;\n  color: white;\n  position: relative;\n  width: 90%; }\n  .afterProgress .left, .afterProgress .right {\n    position: absolute; }\n  .afterProgress .left {\n    margin-left: -4%; }\n  .afterProgress .right {\n    right: -10px; }\n\n.packages {\n  z-index: 2;\n  padding: 15px;\n  display: flex;\n  flex-direction: column;\n  justify-content: center;\n  align-items: center;\n  background: #808080;\n  background: -webkit-linear-gradient(45deg, #808080, #575757 55%);\n  background: -o-linear-gradient(45deg, #808080, #575757 55%);\n  background: -moz-linear-gradient(45deg, #808080, #575757 55%);\n  background: linear-gradient(45deg, #808080, #575757 55%); }\n  .packages .all_packages {\n    display: flex;\n    justify-content: space-around;\n    align-items: center;\n    flex-wrap: wrap;\n    z-index: 2; }\n    .packages .all_packages .package {\n      margin: 25px 40px;\n      z-index: 2;\n      min-height: 200px;\n      display: flex;\n      flex-direction: column;\n      justify-content: space-around;\n      align-items: center;\n      border: 1px solid gold;\n      padding: 15px;\n      min-width: 210px;\n      box-shadow: 0 0 10px 1px sandybrown;\n      color: #ccac02;\n      font-size: 1.2em;\n      letter-spacing: 2px;\n      background: rgba(87, 87, 87, 0.8); }\n      .packages .all_packages .package .package_logo {\n        font-size: 3em;\n        text-align: center; }\n        .packages .all_packages .package .package_logo i:not(:nth-child(1)) {\n          margin: 0; }\n      .packages .all_packages .package h3 {\n        width: 100%;\n        text-align: center;\n        margin-bottom: 10px;\n        margin-top: -10px;\n        position: relative; }\n        .packages .all_packages .package h3:before {\n          content: '';\n          position: absolute;\n          width: 80%;\n          height: 1px;\n          border-top: 1px solid;\n          bottom: -5px;\n          left: 50%;\n          margin-left: calc(-80% / 2); }\n        .packages .all_packages .package h3:after {\n          content: '';\n          position: absolute;\n          width: 100%;\n          height: 1px;\n          border-top: 1px solid;\n          bottom: -10px;\n          left: 0; }\n      .packages .all_packages .package .options .getCoins {\n        display: flex;\n        align-items: center; }\n        .packages .all_packages .package .options .getCoins i {\n          font-size: 1.3em; }\n      .packages .all_packages .package .btn {\n        border: 1px solid;\n        padding: 6px 9px 2px;\n        border-radius: 3px;\n        cursor: pointer;\n        transition: .2s;\n        display: flex;\n        align-items: center; }\n        .packages .all_packages .package .btn .icon-usd:before {\n          content: \"\\E008\"; }\n        .packages .all_packages .package .btn:hover {\n          background-color: #e5c100;\n          color: white; }\n", ""]);
+exports.push([module.i, ".packages {\n  z-index: 2;\n  padding: 15px;\n  padding-top: 70px;\n  display: flex;\n  flex-direction: column;\n  justify-content: center;\n  align-items: center;\n  background: #808080;\n  background: -webkit-linear-gradient(45deg, #808080, #575757 55%);\n  background: -o-linear-gradient(45deg, #808080, #575757 55%);\n  background: -moz-linear-gradient(45deg, #808080, #575757 55%);\n  background: linear-gradient(45deg, #808080, #575757 55%); }\n  .packages .all_packages {\n    display: flex;\n    justify-content: space-around;\n    align-items: center;\n    flex-wrap: wrap;\n    z-index: 2; }\n    .packages .all_packages .package {\n      margin: 25px 40px;\n      z-index: 2;\n      min-height: 200px;\n      display: flex;\n      flex-direction: column;\n      justify-content: space-around;\n      align-items: center;\n      border: 1px solid gold;\n      padding: 15px;\n      min-width: 210px;\n      box-shadow: 0 0 10px 1px sandybrown;\n      color: #ccac02;\n      font-size: 1.2em;\n      letter-spacing: 2px;\n      background: rgba(87, 87, 87, 0.8); }\n      .packages .all_packages .package .package_logo {\n        font-size: 3em;\n        text-align: center; }\n        .packages .all_packages .package .package_logo i:not(:nth-child(1)) {\n          margin: 0; }\n      .packages .all_packages .package h3 {\n        width: 100%;\n        text-align: center;\n        margin-bottom: 10px;\n        margin-top: -10px;\n        position: relative; }\n        .packages .all_packages .package h3:before {\n          content: '';\n          position: absolute;\n          width: 80%;\n          height: 1px;\n          border-top: 1px solid;\n          bottom: -5px;\n          left: 50%;\n          margin-left: calc(-80% / 2); }\n        .packages .all_packages .package h3:after {\n          content: '';\n          position: absolute;\n          width: 100%;\n          height: 1px;\n          border-top: 1px solid;\n          bottom: -10px;\n          left: 0; }\n      .packages .all_packages .package .options .getCoins {\n        display: flex;\n        align-items: center; }\n        .packages .all_packages .package .options .getCoins i {\n          font-size: 1.3em; }\n      .packages .all_packages .package .btn {\n        border: 1px solid;\n        padding: 6px 9px 2px;\n        border-radius: 3px;\n        cursor: pointer;\n        transition: .2s;\n        display: flex;\n        align-items: center; }\n        .packages .all_packages .package .btn .icon-usd:before {\n          content: \"\\E008\"; }\n        .packages .all_packages .package .btn:hover {\n          background-color: #e5c100;\n          color: white; }\n", ""]);
 
 // exports
 
 
+/***/ }),
+/* 271 */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+
+
+Object.defineProperty(exports, "__esModule", {
+    value: true
+});
+
+var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
+
+var _react = __webpack_require__(8);
+
+var _react2 = _interopRequireDefault(_react);
+
+var _Package = __webpack_require__(272);
+
+var _Package2 = _interopRequireDefault(_Package);
+
+function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
+
+function _possibleConstructorReturn(self, call) { if (!self) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return call && (typeof call === "object" || typeof call === "function") ? call : self; }
+
+function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
+// import Top from './Top';
+// import Progress from './Progress';
+
+
+var Container = function (_Component) {
+    _inherits(Container, _Component);
+
+    function Container() {
+        _classCallCheck(this, Container);
+
+        return _possibleConstructorReturn(this, (Container.__proto__ || Object.getPrototypeOf(Container)).apply(this, arguments));
+    }
+
+    _createClass(Container, [{
+        key: "render",
+        value: function render() {
+            var pages = this.props.pages;
+
+
+            return _react2.default.createElement(
+                "div",
+                { className: "content" },
+                _react2.default.createElement(_Package2.default, { packages: pages.packages })
+            );
+        }
+    }]);
+
+    return Container;
+}(_react.Component);
+
+exports.default = Container;
+
+/***/ }),
+/* 272 */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+
+
+Object.defineProperty(exports, "__esModule", {
+    value: true
+});
+
+var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
+
+var _react = __webpack_require__(8);
+
+var _react2 = _interopRequireDefault(_react);
+
+var _styles = __webpack_require__(57);
+
+var _styles2 = _interopRequireDefault(_styles);
+
+function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
+
+function _possibleConstructorReturn(self, call) { if (!self) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return call && (typeof call === "object" || typeof call === "function") ? call : self; }
+
+function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
+
+var Package = function (_Component) {
+    _inherits(Package, _Component);
+
+    function Package() {
+        _classCallCheck(this, Package);
+
+        return _possibleConstructorReturn(this, (Package.__proto__ || Object.getPrototypeOf(Package)).apply(this, arguments));
+    }
+
+    _createClass(Package, [{
+        key: "render",
+        value: function render() {
+            var packages = this.props.packages;
+
+            var colors = ["#fafad2", "#ee82ee", "#64b7e1", "#f4a460", "#d3d3d3", "#e5c100"];
+            var packageContainer = packages[0].map(function (item, index) {
+                var logos = [];
+                for (var i = 0; i <= index; i++) {
+                    logos.push(_react2.default.createElement("i", { className: "icon-bitcoin-circle", key: i * Math.random(100) }));
+                }
+                return _react2.default.createElement(
+                    "div",
+                    { className: "package", key: index, style: { boxShadow: "0 0 10px 1px" + colors[index], borderColor: "" + colors[index], color: "" + colors[index] } },
+                    _react2.default.createElement(
+                        "div",
+                        { className: "package_logo", style: { color: "" + colors[index] } },
+                        _react2.default.createElement("i", { className: "icon-bitcoin-circle" })
+                    ),
+                    _react2.default.createElement(
+                        "h3",
+                        null,
+                        item.title
+                    ),
+                    _react2.default.createElement(
+                        "div",
+                        { className: "options" },
+                        _react2.default.createElement(
+                            "span",
+                            { className: "getCoins" },
+                            _react2.default.createElement("i", { className: "icon-bitcoin-circle" }),
+                            "  ",
+                            item.option.coins
+                        )
+                    ),
+                    _react2.default.createElement(
+                        "div",
+                        { className: "btn btn_buy", style: { boxShadow: "0 0 10px 1px" + colors[index] } },
+                        _react2.default.createElement("i", { className: "icon-usd" }),
+                        item.price
+                    )
+                );
+            });
+            return _react2.default.createElement(
+                "div",
+                { className: "packages" },
+                _react2.default.createElement(
+                    "h1",
+                    null,
+                    packages[1][0].title
+                ),
+                _react2.default.createElement(
+                    "div",
+                    { className: "all_packages" },
+                    packageContainer
+                )
+            );
+        }
+    }]);
+
+    return Package;
+}(_react.Component);
+
+exports.default = Package;
+
 /***/ })
 /******/ ]);
-//# sourceMappingURL=main.js.map
+//# sourceMappingURL=packages.js.map
