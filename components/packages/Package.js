@@ -21,7 +21,7 @@ export default class Package extends Component {
                            <i className="icon-bitcoin-circle"/>  { item.option.coins }
                         </span>
                     </div>
-                    <div className="btn btn_buy" style={{boxShadow : `0 0 10px 1px${colors[index]}`}}>
+                    <div className="btn btn_buy" style={{}}>
                         <i className="icon-usd"/>
                         {item.price}
                     </div>

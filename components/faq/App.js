@@ -1,7 +1,6 @@
 import React, {Component} from 'react';
 import translate from "../../data/translate.json";
 import FooterIcons from "../../public/src/Fonts/FontsIcons/styles.css";
-// import FontBitCoin from "../../public/src/main/FontBitcoin/styles.css";
 import { BG_COIN } from '../../data/links';
 import Header from '../layouts/Header';
 import Footer from '../layouts/Footer';
@@ -11,7 +10,6 @@ import Container from './Container';
 export default class App extends Component {
     constructor(props){
         super(props);
-        props.getBitcoinCost();
         this.state = {
             language: props.language || "ru",
             auth: false,
@@ -25,10 +23,8 @@ export default class App extends Component {
     }
 
     render(){
-        const { setLanguage, bitcoinCost, vipcoinCost} = this.props;
+        const { setLanguage } = this.props;
         const { language, auth } = this.state;
-        console.log(bitcoinCost);
-        // console.log(this.props);
 
         const lang = translate.filter(item =>{
             return item.language === language;
@@ -64,17 +60,13 @@ export default class App extends Component {
                     style={ style }
                 />
                 <Header
-                    packages={true}
+                    faq={true}
                     setLanguage={ setLanguage }
                     toggleAuth={ this.toggleAuth.bind(this) }
                 />
                 <div className="bg" style={ {backgroundImage: `url(${BG_COIN})`} }/>
-                <div className="container" >
-                    <Container
-                        pages={ pages.packages }
-                        vipcoinCost={ vipcoinCost }
-                        bitcoinCost={ bitcoinCost }
-                    />
+                <div className="container">
+                    <Container pages={pages.packages}/>
                 </div>
                 <Footer footer={ layouts.footer } />
             </div>

@@ -292,8 +292,9 @@
       }
 
       .btn {
-        border: 1px solid;
+        //border: 1px solid;
         padding: 6px 9px 2px;
+        text-align: center;
         border-radius: 3px;
         cursor: pointer;
         transition: .2s;
@@ -305,6 +306,23 @@
         &:hover {
           background-color: $LightGold;
           color: white;
+        }
+        &:after, &:before{
+          content: "";
+          position: absolute;
+          width: 100%;
+          height: 1px;
+          border-bottom: 1px solid;
+          //bottom: -5px;
+          left: 50%;
+          margin-left: calc(-50%);
+          box-shadow: 0 0 10px 1px;
+        }
+        &:after{
+          bottom: -5px;
+        }
+        &:before{
+          top: -5px;
         }
       }
 

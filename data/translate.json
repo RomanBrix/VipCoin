@@ -2,6 +2,7 @@
   {
     "language": "ru",
     "pages":{
+
       "main": {
         "top": {
           "head": "Ваш шедевр готов!",
@@ -12,57 +13,80 @@
           "title": "Официальный запуск сети после продажи "
         }
       },
+
+      "help":{},
+
       "packages":{
-        "packages":[[
-          {
-            "title": "Минимальный",
-            "price": 99.99,
-            "option":{
-              "coins": 1000
+        "packages":[
+          [
+            {
+              "title": "Минимальный",
+              "price": 99.99,
+              "option":{
+                "coins": 1000
+              }
+            },
+            {
+              "title": "Средний",
+              "price": 149.99,
+              "option":{
+                "coins": 2000
+              }
+            },
+            {
+              "title": "Максимальный",
+              "price": 219.99,
+              "option":{
+                "coins": 3399
+              }
+            },
+            {
+              "title": "Топовый",
+              "price": 299.99,
+              "option":{
+                "coins": 4499
+              }
+            },
+            {
+              "title": "Оптимальный",
+              "price": 299.99,
+              "option":{
+                "coins": 4499
+              }
+            },
+            {
+              "title": "Каой-то",
+              "price": 1500,
+              "option":{
+                "coins": 4499
+              }
             }
-          },
-          {
-            "title": "Средний",
-            "price": 149.99,
-            "option":{
-              "coins": 2000
-            }
-          },
-          {
-            "title": "Максимальный",
-            "price": 219.99,
-            "option":{
-              "coins": 3399
-            }
-          },
-          {
-            "title": "Топовый",
-            "price": 299.99,
-            "option":{
-              "coins": 4499
-            }
-          },
-          {
-            "title": "Оптимальный",
-            "price": 299.99,
-            "option":{
-              "coins": 4499
-            }
-          },
-          {
-            "title": "Каой-то",
-            "price": 1500,
-            "option":{
-              "coins": 4499
-            }
-          }
-        ],
+          ],
           [
             {
               "title": "ПАКЕТЫ"
             }
-          ]
+          ],
+          {
+            "title": "Калькулятор выгоды",
+            "inputGive": "Затрата",
+            "inputGet": "VipCoin",
+            "inputProfit": "Прибыль",
+            "inputYear1": "на",
+            "inputYear2": "год(а)",
+            "text": "Подсчитайте свою прибыль с учетом прогнозов курса VipCoin на последующие года"
+          }
         ]
+      },
+
+      "FAQ":{},
+
+      "news":{},
+
+      "contacts":{
+        "top":{
+          "head": "Обращайтесь по телефону, почте или в соц. сети"
+        }
       }
     },
     "layouts":{

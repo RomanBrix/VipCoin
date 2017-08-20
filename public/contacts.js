@@ -60,7 +60,7 @@
 /******/ 	__webpack_require__.p = "";
 /******/
 /******/ 	// Load entry module and return exports
-/******/ 	return __webpack_require__(__webpack_require__.s = 266);
+/******/ 	return __webpack_require__(__webpack_require__.s = 281);
 /******/ })
 /************************************************************************/
 /******/ ([
@@ -26608,7 +26608,22 @@ exports.push([module.i, "@font-face {\n  font-family: 'Brusher';\n  src: url(" +
 /* 263 */,
 /* 264 */,
 /* 265 */,
-/* 266 */
+/* 266 */,
+/* 267 */,
+/* 268 */,
+/* 269 */,
+/* 270 */,
+/* 271 */,
+/* 272 */,
+/* 273 */,
+/* 274 */,
+/* 275 */,
+/* 276 */,
+/* 277 */,
+/* 278 */,
+/* 279 */,
+/* 280 */,
+/* 281 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -26632,15 +26647,15 @@ var _reducers = __webpack_require__(236);
 
 var _reducers2 = _interopRequireDefault(_reducers);
 
-var _packages = __webpack_require__(267);
+var _contacts = __webpack_require__(282);
 
-var _packages2 = _interopRequireDefault(_packages);
+var _contacts2 = _interopRequireDefault(_contacts);
 
 var _main = __webpack_require__(256);
 
 var _main2 = _interopRequireDefault(_main);
 
-var _index = __webpack_require__(272);
+var _index = __webpack_require__(286);
 
 var _index2 = _interopRequireDefault(_index);
 
@@ -26652,11 +26667,11 @@ var store = (0, _redux.createStore)(_reducers2.default, (0, _redux.applyMiddlewa
 (0, _reactDom.render)(_react2.default.createElement(
     _reactRedux.Provider,
     { store: store },
-    _react2.default.createElement(_packages2.default, null)
+    _react2.default.createElement(_contacts2.default, null)
 ), init);
 
 /***/ }),
-/* 267 */
+/* 282 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -26674,7 +26689,7 @@ var _reactRedux = __webpack_require__(96);
 
 var _frontActions = __webpack_require__(238);
 
-var _App = __webpack_require__(268);
+var _App = __webpack_require__(283);
 
 var _App2 = _interopRequireDefault(_App);
 
@@ -26685,13 +26700,12 @@ var mapStateToProps = function mapStateToProps(state) {
 };
 
 exports.default = (0, _reactRedux.connect)(mapStateToProps, {
-    setLanguage: _frontActions.setLanguage,
-    getBitcoinCost: _frontActions.getBitcoinCost
+    setLanguage: _frontActions.setLanguage
 
 })(_App2.default);
 
 /***/ }),
-/* 268 */
+/* 283 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -26729,7 +26743,7 @@ var _auth = __webpack_require__(250);
 
 var _auth2 = _interopRequireDefault(_auth);
 
-var _Container = __webpack_require__(269);
+var _Container = __webpack_require__(284);
 
 var _Container2 = _interopRequireDefault(_Container);
 
@@ -26740,8 +26754,6 @@ function _classCallCheck(instance, Constructor) { if (!(instance instanceof Cons
 function _possibleConstructorReturn(self, call) { if (!self) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return call && (typeof call === "object" || typeof call === "function") ? call : self; }
 
 function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
-// import FontBitCoin from "../../public/src/main/FontBitcoin/styles.css";
-
 
 var App = function (_Component) {
     _inherits(App, _Component);
@@ -26751,7 +26763,6 @@ var App = function (_Component) {
 
         var _this = _possibleConstructorReturn(this, (App.__proto__ || Object.getPrototypeOf(App)).call(this, props));
 
-        props.getBitcoinCost();
         _this.state = {
             language: props.language || "ru",
             auth: false
@@ -26769,16 +26780,11 @@ var App = function (_Component) {
     }, {
         key: "render",
         value: function render() {
-            var _props = this.props,
-                setLanguage = _props.setLanguage,
-                bitcoinCost = _props.bitcoinCost,
-                vipcoinCost = _props.vipcoinCost;
+            var setLanguage = this.props.setLanguage;
             var _state = this.state,
                 language = _state.language,
                 auth = _state.auth;
 
-            console.log(bitcoinCost);
-            // console.log(this.props);
 
             var lang = _translate2.default.filter(function (item) {
                 return item.language === language;
@@ -26813,7 +26819,7 @@ var App = function (_Component) {
                     style: style
                 }),
                 _react2.default.createElement(_Header2.default, {
-                    packages: true,
+                    contacts: true,
                     setLanguage: setLanguage,
                     toggleAuth: this.toggleAuth.bind(this)
                 }),
@@ -26821,11 +26827,7 @@ var App = function (_Component) {
                 _react2.default.createElement(
                     "div",
                     { className: "container" },
-                    _react2.default.createElement(_Container2.default, {
-                        pages: pages.packages,
-                        vipcoinCost: vipcoinCost,
-                        bitcoinCost: bitcoinCost
-                    })
+                    _react2.default.createElement(_Container2.default, { pages: pages.contacts })
                 ),
                 _react2.default.createElement(_Footer2.default, { footer: layouts.footer })
             );
@@ -26838,7 +26840,7 @@ var App = function (_Component) {
 exports.default = App;
 
 /***/ }),
-/* 269 */
+/* 284 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -26854,13 +26856,13 @@ var _react = __webpack_require__(7);
 
 var _react2 = _interopRequireDefault(_react);
 
-var _Package = __webpack_require__(270);
+var _FeedBack = __webpack_require__(285);
 
-var _Package2 = _interopRequireDefault(_Package);
+var _FeedBack2 = _interopRequireDefault(_FeedBack);
 
-var _Calculate = __webpack_require__(271);
+var _Top = __webpack_require__(314);
 
-var _Calculate2 = _interopRequireDefault(_Calculate);
+var _Top2 = _interopRequireDefault(_Top);
 
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
@@ -26882,39 +26884,14 @@ var Container = function (_Component) {
     _createClass(Container, [{
         key: 'render',
         value: function render() {
-            var _props = this.props,
-                pages = _props.pages,
-                vipcoinCost = _props.vipcoinCost,
-                bitcoinCost = _props.bitcoinCost;
+            var pages = this.props.pages;
 
 
             return _react2.default.createElement(
                 'div',
                 { className: 'content' },
-                _react2.default.createElement(
-                    'div',
-                    { className: 'currency' },
-                    _react2.default.createElement(
-                        'div',
-                        { className: 'currency-vipcoin' },
-                        '1',
-                        _react2.default.createElement('i', { className: 'icon-bitcoin-circle' }),
-                        _react2.default.createElement('i', { className: 'icon-arrow-swap' }),
-                        _react2.default.createElement('i', { className: 'icon-usd' }),
-                        vipcoinCost
-                    ),
-                    _react2.default.createElement(
-                        'div',
-                        { className: 'currency-bitcoin' },
-                        '1',
-                        _react2.default.createElement('i', { className: 'icon-bitcoin-circle' }),
-                        _react2.default.createElement('i', { className: 'icon-arrow-swap' }),
-                        _react2.default.createElement('i', { className: 'icon-usd' }),
-                        bitcoinCost
-                    )
-                ),
-                _react2.default.createElement(_Package2.default, { packages: pages.packages }),
-                _react2.default.createElement(_Calculate2.default, { calculate: pages.packages[2] })
+                _react2.default.createElement(_Top2.default, { top: pages.top }),
+                _react2.default.createElement(_FeedBack2.default, null)
             );
         }
     }]);
@@ -26925,110 +26902,7 @@ var Container = function (_Component) {
 exports.default = Container;
 
 /***/ }),
-/* 270 */
-/***/ (function(module, exports, __webpack_require__) {
-
-"use strict";
-
-
-Object.defineProperty(exports, "__esModule", {
-    value: true
-});
-
-var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
-
-var _react = __webpack_require__(7);
-
-var _react2 = _interopRequireDefault(_react);
-
-var _styles = __webpack_require__(35);
-
-var _styles2 = _interopRequireDefault(_styles);
-
-function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
-
-function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
-
-function _possibleConstructorReturn(self, call) { if (!self) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return call && (typeof call === "object" || typeof call === "function") ? call : self; }
-
-function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
-
-var Package = function (_Component) {
-    _inherits(Package, _Component);
-
-    function Package() {
-        _classCallCheck(this, Package);
-
-        return _possibleConstructorReturn(this, (Package.__proto__ || Object.getPrototypeOf(Package)).apply(this, arguments));
-    }
-
-    _createClass(Package, [{
-        key: "render",
-        value: function render() {
-            var packages = this.props.packages;
-
-            var colors = ["#fafad2", "#ee82ee", "#64b7e1", "#f4a460", "#d3d3d3", "#e5c100"];
-            var packageContainer = packages[0].map(function (item, index) {
-                var logos = [];
-                for (var i = 0; i <= index; i++) {
-                    logos.push(_react2.default.createElement("i", { className: "icon-bitcoin-circle", key: i * Math.random(100) }));
-                }
-                return _react2.default.createElement(
-                    "div",
-                    { className: "package", key: index, style: { boxShadow: "0 0 10px 1px" + colors[index], borderColor: "" + colors[index], color: "" + colors[index] } },
-                    _react2.default.createElement(
-                        "div",
-                        { className: "package_logo", style: { color: "" + colors[index] } },
-                        _react2.default.createElement("i", { className: "icon-bitcoin-circle" })
-                    ),
-                    _react2.default.createElement(
-                        "h3",
-                        null,
-                        item.title
-                    ),
-                    _react2.default.createElement(
-                        "div",
-                        { className: "options" },
-                        _react2.default.createElement(
-                            "span",
-                            { className: "getCoins" },
-                            _react2.default.createElement("i", { className: "icon-bitcoin-circle" }),
-                            "  ",
-                            item.option.coins
-                        )
-                    ),
-                    _react2.default.createElement(
-                        "div",
-                        { className: "btn btn_buy", style: {} },
-                        _react2.default.createElement("i", { className: "icon-usd" }),
-                        item.price
-                    )
-                );
-            });
-            return _react2.default.createElement(
-                "div",
-                { className: "packages" },
-                _react2.default.createElement(
-                    "h1",
-                    null,
-                    packages[1][0].title
-                ),
-                _react2.default.createElement(
-                    "div",
-                    { className: "all_packages" },
-                    packageContainer
-                )
-            );
-        }
-    }]);
-
-    return Package;
-}(_react.Component);
-
-exports.default = Package;
-
-/***/ }),
-/* 271 */
+/* 285 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -27052,172 +26926,43 @@ function _possibleConstructorReturn(self, call) { if (!self) { throw new Referen
 
 function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
 
-var Calculate = function (_Component) {
-    _inherits(Calculate, _Component);
+var FeedBack = function (_Component) {
+    _inherits(FeedBack, _Component);
 
-    function Calculate(props) {
-        _classCallCheck(this, Calculate);
+    function FeedBack() {
+        _classCallCheck(this, FeedBack);
 
-        var _this = _possibleConstructorReturn(this, (Calculate.__proto__ || Object.getPrototypeOf(Calculate)).call(this, props));
-
-        _this.state = {
-            coinPrice: 0.1,
-            valOfRange: 1
-        };
-        return _this;
+        return _possibleConstructorReturn(this, (FeedBack.__proto__ || Object.getPrototypeOf(FeedBack)).apply(this, arguments));
     }
 
-    _createClass(Calculate, [{
-        key: "calc",
-        value: function calc() {
-            var _refs = this.refs,
-                give = _refs.give,
-                get = _refs.get,
-                profit = _refs.profit,
-                rangeYear = _refs.rangeYear;
-            var coinPrice = this.state.coinPrice;
-
-            var futureCoinPrice = 10;
-            switch (+rangeYear.value) {
-                case 1:
-                    futureCoinPrice = 9;
-                    break;
-                case 2:
-                    futureCoinPrice = 49;
-                    break;
-                case 3:
-                    futureCoinPrice = 99;
-                    break;
-                case 4:
-                    futureCoinPrice = 149;
-                    break;
-                case 5:
-                    futureCoinPrice = 201;
-                    break;
-
-            }
-            var giveDoll = give.value;
-
-            if (giveDoll > 0) {
-                var getAnsw = give.value / coinPrice;
-                var profitAnsw = getAnsw * futureCoinPrice;
-
-                get.value = getAnsw;
-                profit.value = profitAnsw;
-            }
-            this.setState({
-                valOfRange: +rangeYear.value
-            });
-        }
-    }, {
+    _createClass(FeedBack, [{
         key: "render",
         value: function render() {
-            var _this2 = this;
-
-            var calculate = this.props.calculate;
-            var valOfRange = this.state.valOfRange;
-
             return _react2.default.createElement(
                 "div",
-                { className: "calculate-container" },
+                { className: "FeedBack" },
                 _react2.default.createElement(
                     "h1",
                     null,
-                    calculate.title
-                ),
-                _react2.default.createElement(
-                    "p",
-                    null,
-                    calculate.text
-                ),
-                _react2.default.createElement(
-                    "div",
-                    { className: "calculate" },
-                    _react2.default.createElement(
-                        "div",
-                        { className: "top-block" },
-                        _react2.default.createElement(
-                            "label",
-                            { htmlFor: "give" },
-                            _react2.default.createElement("i", { className: "icon-usd" })
-                        ),
-                        _react2.default.createElement("input", {
-                            type: "number",
-                            step: "10",
-                            id: "give",
-                            placeholder: calculate.inputGive,
-                            ref: "give",
-                            onChange: function onChange() {
-                                _this2.calc();
-                            }
-                        }),
-                        _react2.default.createElement("i", { className: "icon-arrow-swap" }),
-                        _react2.default.createElement(
-                            "label",
-                            { htmlFor: "vipcoin" },
-                            _react2.default.createElement("i", { className: "icon-bitcoin-circle" })
-                        ),
-                        _react2.default.createElement("input", {
-                            type: "number",
-                            className: "notActive",
-                            id: "vipcoin",
-                            ref: "get",
-                            disabled: "disabled",
-                            placeholder: calculate.inputGet
-                        }),
-                        _react2.default.createElement("i", { className: "icon-arrow-graph-up-right" }),
-                        _react2.default.createElement(
-                            "label",
-                            { htmlFor: "profit" },
-                            _react2.default.createElement("i", { className: "icon-usd" })
-                        ),
-                        _react2.default.createElement("input", {
-                            type: "number",
-                            className: "notActive",
-                            id: "profit",
-                            ref: "profit",
-                            disabled: "disabled",
-                            placeholder: calculate.inputProfit
-                        })
-                    ),
-                    _react2.default.createElement(
-                        "div",
-                        { className: "bottom" },
-                        _react2.default.createElement("input", {
-                            type: "range",
-                            min: "1",
-                            max: "5",
-                            ref: "rangeYear",
-                            defaultValue: "1",
-                            className: "range-year",
-                            onChange: function onChange() {
-                                _this2.calc();
-                            }
-                        }),
-                        _react2.default.createElement(
-                            "h3",
-                            null,
-                            calculate.inputYear1 + " " + valOfRange + " " + calculate.inputYear2
-                        )
-                    )
+                    "FeedBack"
                 )
             );
         }
     }]);
 
-    return Calculate;
+    return FeedBack;
 }(_react.Component);
 
-exports.default = Calculate;
+exports.default = FeedBack;
 
 /***/ }),
-/* 272 */
+/* 286 */
 /***/ (function(module, exports, __webpack_require__) {
 
 // style-loader: Adds some css to the DOM by adding a <style> tag
 
 // load the styles
-var content = __webpack_require__(273);
+var content = __webpack_require__(287);
 if(typeof content === 'string') content = [[module.i, content, '']];
 // Prepare cssTransformation
 var transform;
@@ -27242,7 +26987,7 @@ if(false) {
 }
 
 /***/ }),
-/* 273 */
+/* 287 */
 /***/ (function(module, exports, __webpack_require__) {
 
 exports = module.exports = __webpack_require__(21)(undefined);
@@ -27250,26 +26995,12 @@ exports = module.exports = __webpack_require__(21)(undefined);
 
 
 // module
-exports.push([module.i, ".currency {\n  position: fixed;\n  top: 70px;\n  color: white;\n  padding: 5px;\n  padding-left: 10px;\n  z-index: 101;\n  background-color: rgba(87, 87, 87, 0.7);\n  border-bottom-right-radius: 5px; }\n  .currency div {\n    display: flex;\n    justify-content: flex-start;\n    align-items: center; }\n    .currency div i {\n      font-size: 1.2em;\n      margin: 0 3px; }\n\n.packages {\n  z-index: 2;\n  padding: 15px;\n  padding-top: 70px;\n  display: flex;\n  flex-direction: column;\n  justify-content: center;\n  align-items: center;\n  background: #808080;\n  background: -webkit-linear-gradient(45deg, #808080, #575757 55%);\n  background: -o-linear-gradient(45deg, #808080, #575757 55%);\n  background: -moz-linear-gradient(45deg, #808080, #575757 55%);\n  background: linear-gradient(45deg, #808080, #575757 55%); }\n  .packages .all_packages {\n    display: flex;\n    justify-content: space-around;\n    align-items: center;\n    flex-wrap: wrap;\n    z-index: 2; }\n    .packages .all_packages .package {\n      margin: 25px 40px;\n      z-index: 2;\n      min-height: 200px;\n      display: flex;\n      flex-direction: column;\n      justify-content: space-around;\n      align-items: center;\n      border: 1px solid gold;\n      padding: 15px;\n      min-width: 210px;\n      box-shadow: 0 0 10px 1px sandybrown;\n      color: #ccac02;\n      font-size: 1.2em;\n      letter-spacing: 2px;\n      background: rgba(87, 87, 87, 0.8); }\n      .packages .all_packages .package .package_logo {\n        font-size: 3em;\n        text-align: center; }\n        .packages .all_packages .package .package_logo i:not(:nth-child(1)) {\n          margin: 0; }\n      .packages .all_packages .package h3 {\n        width: 100%;\n        text-align: center;\n        margin-bottom: 10px;\n        margin-top: -10px;\n        position: relative; }\n        .packages .all_packages .package h3:before {\n          content: '';\n          position: absolute;\n          width: 80%;\n          height: 1px;\n          border-top: 1px solid;\n          bottom: -5px;\n          left: 50%;\n          margin-left: calc(-80% / 2); }\n        .packages .all_packages .package h3:after {\n          content: '';\n          position: absolute;\n          width: 100%;\n          height: 1px;\n          border-top: 1px solid;\n          bottom: -10px;\n          left: 0; }\n      .packages .all_packages .package .options .getCoins {\n        display: flex;\n        align-items: center; }\n        .packages .all_packages .package .options .getCoins i {\n          font-size: 1.3em; }\n      .packages .all_packages .package .btn {\n        padding: 6px 9px 2px;\n        border-radius: 3px;\n        cursor: pointer;\n        transition: .2s;\n        display: flex;\n        align-items: center;\n        justify-content: center;\n        position: relative;\n        width: 100%; }\n        .packages .all_packages .package .btn .icon-usd:before {\n          content: \"\\E008\"; }\n        .packages .all_packages .package .btn:hover {\n          color: #e5c100; }\n        .packages .all_packages .package .btn:after, .packages .all_packages .package .btn:before {\n          content: \"\";\n          position: absolute;\n          width: 100%;\n          height: 1px;\n          border-bottom: 1px solid;\n          left: 50%;\n          margin-left: calc(-50%);\n          box-shadow: 0 0 10px 1px; }\n        .packages .all_packages .package .btn:after {\n          bottom: -5px; }\n        .packages .all_packages .package .btn:before {\n          top: -5px; }\n\n.calculate-container {\n  background: #808080;\n  background: -webkit-linear-gradient(45deg, #575757 55%, #808080);\n  background: -o-linear-gradient(45deg, #575757 55%, #808080);\n  background: -moz-linear-gradient(45deg, #575757 55%, #808080);\n  background: linear-gradient(45deg, #575757 55%, #808080);\n  display: flex;\n  flex-direction: column;\n  justify-content: center;\n  align-items: center;\n  padding-bottom: 25px; }\n  .calculate-container h1 {\n    margin-bottom: 0; }\n  .calculate-container p {\n    margin-bottom: 25px;\n    color: white;\n    font-size: 1.1em;\n    letter-spacing: 2px; }\n  .calculate-container .calculate {\n    z-index: 2; }\n    .calculate-container .calculate .top-block {\n      color: white;\n      margin-bottom: 15px; }\n      .calculate-container .calculate .top-block label {\n        padding: 15px 0 5px;\n        background: #e5c100;\n        border-bottom-left-radius: 5px;\n        border-top-left-radius: 5px;\n        cursor: pointer; }\n        .calculate-container .calculate .top-block label i {\n          font-size: 1.4em; }\n      .calculate-container .calculate .top-block input {\n        font-size: 1.5em;\n        background-color: rgba(87, 87, 87, 0.8);\n        padding-left: 10px;\n        border: 2px solid;\n        border-color: #e5c100;\n        color: White;\n        z-index: 2;\n        transition: .3s; }\n        .calculate-container .calculate .top-block input:focus {\n          outline: none;\n          box-shadow: 5px 0 10px 1px #e5c100; }\n        .calculate-container .calculate .top-block input::placeholder {\n          color: white;\n          opacity: .8; }\n      .calculate-container .calculate .top-block .notActive {\n        cursor: not-allowed; }\n        .calculate-container .calculate .top-block .notActive:focus {\n          outline: none;\n          box-shadow: none; }\n      .calculate-container .calculate .top-block i {\n        font-size: 1.7em;\n        margin: 0 5px; }\n    .calculate-container .calculate .bottom input[type=range].range-year {\n      -webkit-appearance: none;\n      width: 100%;\n      margin: 14px 0;\n      position: relative; }\n      .calculate-container .calculate .bottom input[type=range].range-year:before, .calculate-container .calculate .bottom input[type=range].range-year:after {\n        position: absolute;\n        color: white;\n        bottom: -1.8em;\n        font-size: 1.7em; }\n      .calculate-container .calculate .bottom input[type=range].range-year:before {\n        content: \"1\";\n        left: 0; }\n      .calculate-container .calculate .bottom input[type=range].range-year:after {\n        content: \"5\";\n        right: 0; }\n    .calculate-container .calculate .bottom input[type=range].range-year:focus {\n      outline: none; }\n    .calculate-container .calculate .bottom input[type=range].range-year::-webkit-slider-runnable-track {\n      width: 100%;\n      height: 8px;\n      cursor: pointer;\n      box-shadow: 1px 1px 1px #000000, 0px 0px 1px #0d0d0d;\n      background: #e5c100;\n      border-radius: 7px;\n      border: 1px solid #010101; }\n    .calculate-container .calculate .bottom input[type=range].range-year::-webkit-slider-thumb {\n      box-shadow: 1px 1px 1px #000000, 0px 0px 1px #0d0d0d;\n      border: 1.2px solid #000000;\n      height: 36px;\n      width: 16px;\n      border-radius: 3px;\n      background: #ffffff;\n      cursor: pointer;\n      -webkit-appearance: none;\n      margin-top: -15px; }\n    .calculate-container .calculate .bottom input[type=range].range-year:focus::-webkit-slider-runnable-track {\n      background: #ffdf32; }\n    .calculate-container .calculate .bottom input[type=range].range-year::-moz-range-track {\n      width: 100%;\n      height: 8px;\n      cursor: pointer;\n      box-shadow: 1px 1px 1px #000000, 0px 0px 1px #0d0d0d;\n      background: #e5c100;\n      border-radius: 7px;\n      border: 1px solid #010101; }\n    .calculate-container .calculate .bottom input[type=range].range-year::-moz-range-thumb {\n      box-shadow: 1px 1px 1px #000000, 0px 0px 1px #0d0d0d;\n      border: 1.2px solid #000000;\n      height: 36px;\n      width: 16px;\n      border-radius: 3px;\n      background: #ffffff;\n      cursor: pointer; }\n    .calculate-container .calculate .bottom input[type=range].range-year::-ms-track {\n      width: 100%;\n      height: 8px;\n      cursor: pointer;\n      background: transparent;\n      border-color: transparent;\n      color: transparent; }\n    .calculate-container .calculate .bottom input[type=range].range-year::-ms-fill-lower {\n      background: #998100;\n      border: 1px solid #010101;\n      border-radius: 14px;\n      box-shadow: 1px 1px 1px #000000, 0px 0px 1px #0d0d0d; }\n    .calculate-container .calculate .bottom input[type=range].range-year::-ms-fill-upper {\n      background: #e5c100;\n      border: 1px solid #010101;\n      border-radius: 14px;\n      box-shadow: 1px 1px 1px #000000, 0px 0px 1px #0d0d0d; }\n    .calculate-container .calculate .bottom input[type=range].range-year::-ms-thumb {\n      box-shadow: 1px 1px 1px #000000, 0px 0px 1px #0d0d0d;\n      border: 1.2px solid #000000;\n      height: 36px;\n      width: 16px;\n      border-radius: 3px;\n      background: #ffffff;\n      cursor: pointer;\n      height: 8px; }\n    .calculate-container .calculate .bottom input[type=range].range-year:focus::-ms-fill-lower {\n      background: #e5c100; }\n    .calculate-container .calculate .bottom input[type=range].range-year:focus::-ms-fill-upper {\n      background: #ffdf32; }\n    .calculate-container .calculate .bottom h3 {\n      text-align: center;\n      font-size: 1.4em;\n      margin-top: 0;\n      color: white; }\n", ""]);
+exports.push([module.i, ".services {\n  padding-top: 75px;\n  display: flex;\n  flex-direction: row;\n  z-index: 10;\n  justify-content: space-around;\n  align-items: center; }\n  .services div a {\n    color: white;\n    text-decoration: none; }\n    .services div a i {\n      font-size: 2em; }\n  .services .left {\n    display: flex;\n    flex-direction: column;\n    padding-top: 2%;\n    z-index: 10;\n    margin-top: 4%; }\n    .services .left a {\n      display: flex;\n      align-items: center;\n      transition: .4s; }\n      .services .left a i {\n        margin-right: 15px; }\n      .services .left a:hover {\n        color: #e5c100; }\n      .services .left a:nth-child(2) {\n        margin: 10px 0;\n        position: relative; }\n        .services .left a:nth-child(2):after, .services .left a:nth-child(2):before {\n          content: \"\";\n          position: absolute;\n          width: 100%;\n          height: 2px; }\n        .services .left a:nth-child(2):after {\n          bottom: -5px;\n          left: 0;\n          border-top: 1px solid #e5c100;\n          border-bottom: 2px solid #e5c100; }\n        .services .left a:nth-child(2):before {\n          top: -10px;\n          left: 0;\n          border-top: 2px solid #e5c100;\n          border-bottom: 1px solid #e5c100; }\n  .services .center {\n    letter-spacing: 2px;\n    color: white;\n    margin: -10% -10% 0;\n    z-index: 10; }\n  .services .right {\n    position: relative;\n    padding-top: 2%;\n    margin-top: 5%; }\n    .services .right div {\n      font-size: 1.5em; }\n      .services .right div a {\n        transition: .4s; }\n      .services .right div a:first-child {\n        margin-right: 15px; }\n      .services .right div a:hover {\n        color: #e5c100; }\n    .services .right .right-top {\n      margin-bottom: 15px; }\n    .services .right:after, .services .right:before {\n      content: \"\";\n      position: absolute;\n      background-color: #e5c100;\n      border-radius: 6px; }\n    .services .right:after {\n      top: 5px;\n      left: calc(50% - 1px);\n      height: 100%;\n      width: 3px; }\n    .services .right:before {\n      top: calc(50% + 7px);\n      height: 3px;\n      width: 140%;\n      left: 50%;\n      margin-left: calc(-140%/2); }\n\n.FeedBack {\n  padding-top: 75px; }\n", ""]);
 
 // exports
 
 
 /***/ }),
-/* 274 */,
-/* 275 */,
-/* 276 */,
-/* 277 */,
-/* 278 */,
-/* 279 */,
-/* 280 */,
-/* 281 */,
-/* 282 */,
-/* 283 */,
-/* 284 */,
-/* 285 */,
-/* 286 */,
-/* 287 */,
 /* 288 */
 /***/ (function(module, exports, __webpack_require__) {
 
@@ -28822,6 +28553,122 @@ module.exports = function spread(callback) {
 };
 
 
+/***/ }),
+/* 314 */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+
+
+Object.defineProperty(exports, "__esModule", {
+    value: true
+});
+
+var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
+
+var _react = __webpack_require__(7);
+
+var _react2 = _interopRequireDefault(_react);
+
+var _links = __webpack_require__(36);
+
+function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
+
+function _possibleConstructorReturn(self, call) { if (!self) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return call && (typeof call === "object" || typeof call === "function") ? call : self; }
+
+function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
+
+var Top = function (_Component) {
+    _inherits(Top, _Component);
+
+    function Top() {
+        _classCallCheck(this, Top);
+
+        return _possibleConstructorReturn(this, (Top.__proto__ || Object.getPrototypeOf(Top)).apply(this, arguments));
+    }
+
+    _createClass(Top, [{
+        key: 'render',
+        value: function render() {
+            var top = this.props.top;
+
+            return _react2.default.createElement(
+                'div',
+                { className: 'services' },
+                _react2.default.createElement(
+                    'div',
+                    { className: 'left' },
+                    _react2.default.createElement(
+                        'a',
+                        { href: 'tel:' + _links.CONTACTS.TELEPHONE },
+                        _react2.default.createElement('i', { className: 'icon-phone-square' }),
+                        '+380-73-007-003-2'
+                    ),
+                    _react2.default.createElement(
+                        'a',
+                        { href: 'skype:' + _links.CONTACTS.SKYPE },
+                        _react2.default.createElement('i', { className: 'icon-skype' }),
+                        'Roma4Rock'
+                    ),
+                    _react2.default.createElement(
+                        'a',
+                        { href: 'mailto:' + _links.CONTACTS.MAIL },
+                        _react2.default.createElement('i', { className: 'icon-envelope' }),
+                        'StetcukRoman@gmail.com'
+                    )
+                ),
+                _react2.default.createElement(
+                    'div',
+                    { className: 'center' },
+                    _react2.default.createElement(
+                        'h2',
+                        null,
+                        top.head
+                    )
+                ),
+                _react2.default.createElement(
+                    'div',
+                    { className: 'right' },
+                    _react2.default.createElement(
+                        'div',
+                        { className: 'right-top' },
+                        _react2.default.createElement(
+                            'a',
+                            { href: _links.CONTACTS.FACEBOOK },
+                            _react2.default.createElement('i', { className: 'icon-facebook-alt' })
+                        ),
+                        _react2.default.createElement(
+                            'a',
+                            { href: _links.CONTACTS.YOUTUBE },
+                            _react2.default.createElement('i', { className: 'icon-youtube' })
+                        )
+                    ),
+                    _react2.default.createElement(
+                        'div',
+                        { className: 'right-bottom' },
+                        _react2.default.createElement(
+                            'a',
+                            { href: _links.CONTACTS.INSTA },
+                            _react2.default.createElement('i', { className: 'icon-instagrem' })
+                        ),
+                        _react2.default.createElement(
+                            'a',
+                            { href: _links.CONTACTS.TWITTER },
+                            _react2.default.createElement('i', { className: 'icon-twitter-square' })
+                        )
+                    )
+                )
+            );
+        }
+    }]);
+
+    return Top;
+}(_react.Component);
+
+exports.default = Top;
+
 /***/ })
 /******/ ]);
-//# sourceMappingURL=packages.js.map
+//# sourceMappingURL=contacts.js.map

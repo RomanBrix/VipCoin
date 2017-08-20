@@ -1,7 +1,8 @@
 const InitialState = {
     request: false,
     language: "",
-    // translate: [[]]
+    vipcoinCost: 0.10,
+    bitcoinCost: 0,
 }
 
 const frontReducers = (state = InitialState, action) => {
@@ -11,16 +12,32 @@ const frontReducers = (state = InitialState, action) => {
             return{
                 request: true,
                 language: state.language,
-                // translate: state.translate
+                vipcoinCost: state.vipcoinCost
 
             };
         case 'SET_LANGUAGE':
             return {
                 request: false,
                 language: action.lang,
-                // translate: action.translates
+                vipcoinCost: state.vipcoinCost,
 
 
+            };
+        case 'GET_COST_VIPCOIN':
+            return {
+                request: false,
+                language: state.language,
+                vipcoinCost: action.vipcoinCost,
+
+
+            };
+        case 'GET_COST_BITCOIN':
+            console.log(action.bitcoinCost);
+            return {
+                request: false,
+                language: state.language,
+                vipcoinCost: state.vipcoinCost,
+                bitcoinCost: action.bitcoinCost,
             };
         default: return state;
     }

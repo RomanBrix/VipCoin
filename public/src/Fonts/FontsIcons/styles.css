@@ -86,3 +86,15 @@
 .icon-times-circle-o:before {
   content: "\e00f";
 }
+.icon-youtube:before {
+  content: "\e010";
+}
+.icon-youtube-square:before {
+  content: "\e011";
+}
+.icon-arrow-graph-up-right:before {
+  content: "\e012";
+}
+.icon-arrow-swap:before {
+  content: "\e013";
+}

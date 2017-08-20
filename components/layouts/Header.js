@@ -22,8 +22,8 @@ export default class Header extends Component {
         props.setLanguage(this.state.language);
     }
     componentDidMount(){
-        const {main, about, packages} = this.props;
-        const arr = [main, about, packages];
+        const {main, about, packages, faq, news, contacts} = this.props;
+        const arr = [main, about, packages, faq, news, contacts];
         let ask = 0;
         for (let i = 0; i < arr.length; i++){
             if(arr[i] === true ){
@@ -32,7 +32,6 @@ export default class Header extends Component {
         }
         const header = document.getElementsByClassName('header')[0];
         const listArray = header.children[1].children[0].children;
-        console.log(listArray);
         switch(ask) {
             case 0 :
                 listArray[0].classList.add('active');
@@ -43,6 +42,15 @@ export default class Header extends Component {
                 break;
             case 2:
                 listArray[2].classList.add('active');
+                break;
+            case 3:
+                listArray[3].classList.add('active');
+                break;
+            case 4:
+                listArray[4].classList.add('active');
+                break;
+            case 5:
+                listArray[5].classList.add('active');
                 break;
 
             default : console.log('op'); break;

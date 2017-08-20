@@ -1,8 +1,7 @@
-import React, {Component} from 'react';
+import React from 'react';
 import { connect } from 'react-redux';
 import {
-    setLanguage,
-    getBitcoinCost
+    setLanguage
 } from '../../redux/front/front-actions.js';
 import App from './App';
 
@@ -13,7 +12,6 @@ const mapStateToProps = ( state ) => {
 export default connect(
     mapStateToProps,
     {
-        setLanguage,
-        getBitcoinCost
+        setLanguage
 
     })(App);

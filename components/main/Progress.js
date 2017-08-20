@@ -4,14 +4,19 @@ export default class Progress extends Component {
     constructor(props){
         super(props);
         this.state = {
-            coinsLeft: 500000,
-            maxCoins: 1000000,
-            soldCoins: 539999
+            maxCoins: 10000000,
+            soldCoins: 234567
         }
     }
     render(){
         const { pages } = this.props;
-        const { coinsLeft, maxCoins, soldCoins } = this.state;
+        const {maxCoins, soldCoins } = this.state;
+
+        let coinsLeft = ((maxCoins*30)/100)-soldCoins;
+        // console.log(coinsLeft);
+            if(coinsLeft <= 0 ){
+                coinsLeft = "FINISH";
+            };
         const width = ((soldCoins*100)/maxCoins).toFixed(1);
         return (
             <div className="progress">

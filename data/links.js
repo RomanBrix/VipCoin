@@ -7,15 +7,16 @@ export const FLAG_JAP = "./src/header/japan.svg";
 export const FLAG_USA = "./src/header/usa.svg";
 
 
-export const BG_COIN = "./src/main/bitcoin1.png";
+export const BG_COIN = "./src/vipcoin.png";
+export const MAIN_TOP_VIDEO = "https://www.youtube.com/embed/FRTOlFwpMX8";
 
 export const PAGES = {
     MAIN: "index.html",
     ABOUT_US: "#",
     PACKAGES: "packages.html",
-    FAQ: "#",
+    FAQ: "faq.html",
     NEWS: "#",
-    CONTACT_US:"#",
+    CONTACT_US:"contacts.html",
     WHITE_PAGE: "#",
     LEGAL_PAGE: "#",
     CONTRACT_OFFER: "#",
@@ -27,5 +28,6 @@ export const CONTACTS = {
     MAIL: 'stetcukroman@gmail.com',
     FACEBOOK: "#",
     TWITTER: "#",
-    INSTA: "#"
+    INSTA: "#",
+    YOUTUBE: "#"
 }

@@ -68,6 +68,7 @@ export default class Footer extends Component {
                             <a href={CONTACTS.FACEBOOK}><i className="icon-facebook-alt"/></a>
                             <a href={CONTACTS.TWITTER}><i className="icon-twitter-square"/></a>
                             <a href={CONTACTS.INSTA}><i className="icon-instagrem"/></a>
+                            <a href={CONTACTS.YOUTUBE}><i className="icon-youtube"/></a>
                         </div>
                     </div>
                 </div>
