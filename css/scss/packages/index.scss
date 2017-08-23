@@ -116,6 +116,7 @@
       //background-position: center top / 50px;
       transition: .25s all;
       margin-bottom: 15px;
+      cursor: pointer;
       &:hover{
         transform: scale(1.02);
         box-shadow: rgba(229, 193, 0, .3) 0 15px 50px;
@@ -295,5 +296,5 @@
   }
 }
 
-@import "calculate";
+@import "calculator";
 

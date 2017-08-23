@@ -1,6 +1,6 @@
 import React, {Component} from 'react';
 import Package from "./Package";
-import Calculate from './Calculate';
+import Calculator from './Calculator';
 
 export default class Container extends Component {
     render(){
@@ -26,7 +26,10 @@ export default class Container extends Component {
                     </div>
                 </div>
                 <Package packages={ pages.packages}/>
-                <Calculate calculate={ pages.packages[2]}/>
+                <Calculator
+                    calculate={ pages.packages[2]}
+                    packages={ pages.packages[0]}
+                />
             </div>
         )
     }

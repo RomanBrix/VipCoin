@@ -139,21 +139,21 @@ export default class Header extends Component {
                 <div className="lang dropdown">
                     <span id="active_lang">
                         <img src={`./src/header/${this.state.language}.svg`} alt="active_lang"/>
-
                     </span>
                     <div className="dropdown-content dropdown-main">
                         <span onClick={() => {
                             this.setCookie('language', 'ru', {expires: 350});
                             this.setState({language: 'ru'});
+                            console.log("1")
                         }}><img src={FLAG_RU} alt="ru"/>
                         </span>
-                        <span onClick={() => {}}>
+                        <span onClick={() => { console.log("2") }}>
                             <img src={FLAG_ENG} alt="eng"/>
                         </span>
-                        <span onClick={() => {}}>
+                        <span onClick={() => { console.log("3") }}>
                             <img src={FLAG_JAP} alt="japan"/>
                         </span>
-                        <span onClick={() => {}}>
+                        <span onClick={() => { console.log("4") }}>
                             <img src={FLAG_USA} alt="usa"/>
                         </span>
                     </div>

@@ -2825,7 +2825,7 @@ var createFactory = ReactElement.createFactory;
 var cloneElement = ReactElement.cloneElement;
 
 if (process.env.NODE_ENV !== 'production') {
-  var lowPriorityWarning = __webpack_require__(39);
+  var lowPriorityWarning = __webpack_require__(38);
   var canDefineProperty = __webpack_require__(29);
   var ReactElementValidator = __webpack_require__(80);
   var didWarnPropTypesDeprecated = false;
@@ -3162,10 +3162,10 @@ module.exports = ReactReconciler;
 
 
 
-var DOMNamespaces = __webpack_require__(47);
+var DOMNamespaces = __webpack_require__(46);
 var setInnerHTML = __webpack_require__(34);
 
-var createMicrosoftUnsafeLocalFunction = __webpack_require__(48);
+var createMicrosoftUnsafeLocalFunction = __webpack_require__(47);
 var setTextContent = __webpack_require__(92);
 
 var ELEMENT_NODE_TYPE = 1;
@@ -3764,7 +3764,7 @@ if (process.env.NODE_ENV !== 'production') {
 
 
 var EventPluginHub = __webpack_require__(26);
-var EventPluginUtils = __webpack_require__(41);
+var EventPluginUtils = __webpack_require__(40);
 
 var accumulateInto = __webpack_require__(84);
 var forEachAccumulated = __webpack_require__(85);
@@ -3906,8 +3906,8 @@ module.exports = EventPropagators;
 var _prodInvariant = __webpack_require__(3);
 
 var EventPluginRegistry = __webpack_require__(31);
-var EventPluginUtils = __webpack_require__(41);
-var ReactErrorUtils = __webpack_require__(42);
+var EventPluginUtils = __webpack_require__(40);
+var ReactErrorUtils = __webpack_require__(41);
 
 var accumulateInto = __webpack_require__(84);
 var forEachAccumulated = __webpack_require__(85);
@@ -4185,7 +4185,7 @@ module.exports = EventPluginHub;
 
 var SyntheticEvent = __webpack_require__(14);
 
-var getEventTarget = __webpack_require__(43);
+var getEventTarget = __webpack_require__(42);
 
 /**
  * @interface UIEvent
@@ -4852,7 +4852,7 @@ module.exports = TransactionImpl;
 var SyntheticUIEvent = __webpack_require__(27);
 var ViewportMetrics = __webpack_require__(91);
 
-var getEventModifierState = __webpack_require__(45);
+var getEventModifierState = __webpack_require__(44);
 
 /**
  * @interface MouseEvent
@@ -4927,12 +4927,12 @@ module.exports = SyntheticMouseEvent;
 
 
 var ExecutionEnvironment = __webpack_require__(6);
-var DOMNamespaces = __webpack_require__(47);
+var DOMNamespaces = __webpack_require__(46);
 
 var WHITESPACE_TEST = /^[ \r\n\t\f]/;
 var NONVISIBLE_TEST = /<(!--|link|noscript|meta|script|style)[ \r\n\t\f\/>]/;
 
-var createMicrosoftUnsafeLocalFunction = __webpack_require__(48);
+var createMicrosoftUnsafeLocalFunction = __webpack_require__(47);
 
 // SVG temp container for IE lacking innerHTML
 var reusableSVGContainer;
@@ -5163,7 +5163,7 @@ var ReactEventEmitterMixin = __webpack_require__(179);
 var ViewportMetrics = __webpack_require__(91);
 
 var getVendorPrefixedEventName = __webpack_require__(180);
-var isEventSupported = __webpack_require__(44);
+var isEventSupported = __webpack_require__(43);
 
 /**
  * Summary of `ReactBrowserEventEmitter` event handling:
@@ -5514,37 +5514,6 @@ var CONTACTS = exports.CONTACTS = {
 /* 38 */
 /***/ (function(module, exports, __webpack_require__) {
 
-// style-loader: Adds some css to the DOM by adding a <style> tag
-
-// load the styles
-var content = __webpack_require__(278);
-if(typeof content === 'string') content = [[module.i, content, '']];
-// Prepare cssTransformation
-var transform;
-
-var options = {}
-options.transform = transform
-// add the styles to the DOM
-var update = __webpack_require__(23)(content, options);
-if(content.locals) module.exports = content.locals;
-// Hot Module Replacement
-if(false) {
-	// When the styles change, update the <style> tags
-	if(!content.locals) {
-		module.hot.accept("!!../../../../node_modules/css-loader/index.js!./styles.css", function() {
-			var newContent = require("!!../../../../node_modules/css-loader/index.js!./styles.css");
-			if(typeof newContent === 'string') newContent = [[module.id, newContent, '']];
-			update(newContent);
-		});
-	}
-	// When the module is disposed, remove the <style> tags
-	module.hot.dispose(function() { update(); });
-}
-
-/***/ }),
-/* 39 */
-/***/ (function(module, exports, __webpack_require__) {
-
 "use strict";
 /* WEBPACK VAR INJECTION */(function(process) {/**
  * Copyright 2014-2015, Facebook, Inc.
@@ -5613,7 +5582,7 @@ module.exports = lowPriorityWarning;
 /* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(0)))
 
 /***/ }),
-/* 40 */
+/* 39 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -5634,7 +5603,7 @@ module.exports = ReactPropTypesSecret;
 
 
 /***/ }),
-/* 41 */
+/* 40 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -5652,7 +5621,7 @@ module.exports = ReactPropTypesSecret;
 
 var _prodInvariant = __webpack_require__(3);
 
-var ReactErrorUtils = __webpack_require__(42);
+var ReactErrorUtils = __webpack_require__(41);
 
 var invariant = __webpack_require__(1);
 var warning = __webpack_require__(2);
@@ -5866,7 +5835,7 @@ module.exports = EventPluginUtils;
 /* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(0)))
 
 /***/ }),
-/* 42 */
+/* 41 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -5948,7 +5917,7 @@ module.exports = ReactErrorUtils;
 /* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(0)))
 
 /***/ }),
-/* 43 */
+/* 42 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -5988,7 +5957,7 @@ function getEventTarget(nativeEvent) {
 module.exports = getEventTarget;
 
 /***/ }),
-/* 44 */
+/* 43 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -6053,7 +6022,7 @@ function isEventSupported(eventNameSuffix, capture) {
 module.exports = isEventSupported;
 
 /***/ }),
-/* 45 */
+/* 44 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -6101,7 +6070,7 @@ function getEventModifierState(nativeEvent) {
 module.exports = getEventModifierState;
 
 /***/ }),
-/* 46 */
+/* 45 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -6122,7 +6091,7 @@ var Danger = __webpack_require__(164);
 var ReactDOMComponentTree = __webpack_require__(5);
 var ReactInstrumentation = __webpack_require__(10);
 
-var createMicrosoftUnsafeLocalFunction = __webpack_require__(48);
+var createMicrosoftUnsafeLocalFunction = __webpack_require__(47);
 var setInnerHTML = __webpack_require__(34);
 var setTextContent = __webpack_require__(92);
 
@@ -6333,7 +6302,7 @@ module.exports = DOMChildrenOperations;
 /* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(0)))
 
 /***/ }),
-/* 47 */
+/* 46 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -6358,7 +6327,7 @@ var DOMNamespaces = {
 module.exports = DOMNamespaces;
 
 /***/ }),
-/* 48 */
+/* 47 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -6395,7 +6364,7 @@ var createMicrosoftUnsafeLocalFunction = function (func) {
 module.exports = createMicrosoftUnsafeLocalFunction;
 
 /***/ }),
-/* 49 */
+/* 48 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -6539,7 +6508,7 @@ module.exports = LinkedValueUtils;
 /* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(0)))
 
 /***/ }),
-/* 50 */
+/* 49 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -6589,7 +6558,7 @@ module.exports = ReactComponentEnvironment;
 /* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(0)))
 
 /***/ }),
-/* 51 */
+/* 50 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -6662,7 +6631,7 @@ function shallowEqual(objA, objB) {
 module.exports = shallowEqual;
 
 /***/ }),
-/* 52 */
+/* 51 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -6709,7 +6678,7 @@ function shouldUpdateReactComponent(prevElement, nextElement) {
 module.exports = shouldUpdateReactComponent;
 
 /***/ }),
-/* 53 */
+/* 52 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -6773,7 +6742,7 @@ var KeyEscapeUtils = {
 module.exports = KeyEscapeUtils;
 
 /***/ }),
-/* 54 */
+/* 53 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -7013,7 +6982,7 @@ module.exports = ReactUpdateQueue;
 /* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(0)))
 
 /***/ }),
-/* 55 */
+/* 54 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -7390,7 +7359,7 @@ module.exports = validateDOMNesting;
 /* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(0)))
 
 /***/ }),
-/* 56 */
+/* 55 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -7445,7 +7414,7 @@ function getEventCharCode(nativeEvent) {
 module.exports = getEventCharCode;
 
 /***/ }),
-/* 57 */
+/* 56 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -7473,7 +7442,7 @@ function warning(message) {
 }
 
 /***/ }),
-/* 58 */
+/* 57 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -7510,7 +7479,7 @@ if (process.env.NODE_ENV !== 'production' && typeof isCrushed.name === 'string' 
 /* WEBPACK VAR INJECTION */}.call(__webpack_exports__, __webpack_require__(0)))
 
 /***/ }),
-/* 59 */
+/* 58 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -7582,7 +7551,7 @@ function isPlainObject(value) {
 
 
 /***/ }),
-/* 60 */
+/* 59 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -7682,10 +7651,41 @@ module.exports = defaults;
 /* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(0)))
 
 /***/ }),
-/* 61 */
+/* 60 */
 /***/ (function(module, exports) {
 
-module.exports = [{"language":"ru","pages":{"main":{"top":{"head":"Ваш шедевр готов!","text":"С другой стороны консультация с широким активом способствует подготовки и реализации модели развития. Задача организации, в особенности же консультация с широким активом в значительной степени обуславливает создание системы обучения кадров, соответствует насущным потребностям. Задача организации, в особенности же постоянный количественный рост и сфера нашей активности обеспечивает широкому кругу"},"progress":{"head":"ЦЕЛЬ Vip Coin","title":"Официальный запуск сети после продажи "}},"help":{},"packages":{"packages":[[{"title":"Standart","price":0.15,"option":{"coinsMin":1,"coinsMax":999}},{"title":"Medium","price":0.14,"option":{"coinsMin":1000,"coinsMax":4999}},{"title":"Full","price":0.13,"option":{"coinsMin":5000,"coinsMax":9999}},{"title":"Premium","price":0.12,"option":{"coinsMin":10000,"coinsMax":14999}},{"title":"VIP","price":0.1,"option":{"coinsMin":15000,"coinsMax":10000000}}],[{"title":"ПАКЕТЫ"}],{"title":"Калькулятор выгоды","inputGive":"Затрата","inputGet":"VipCoin","inputProfit":"Прибыль","inputYear1":"на","inputYear2":"год(а)","text":"Подсчитайте свою прибыль с учетом прогнозов курса VipCoin на последующие года"}]},"FAQ":{},"news":{},"contacts":{"top":{"head":"Контакты"},"feedback":{"head":"центр поддержки клиентов","inputName":"Имя","inputLName":"Фамилия","inputEmail":"E-mail","inputMsg":"Ваше сообщение","btnSend":"Отправить"}}},"layouts":{"header":{"btnMain":"ГЛАВНАЯ","btnAbout":"О НАС","btnPackages":"ПАКЕТЫ","btnFAQ":"Помощь","btnNews":"Новости","btnContacts":"Контакты","login":{"log":"Личный кабинет"}},"footer":{"pages":{"whitePage":"Белая Бумага","legalPage":"Юридические Страницы","contractOffer":"Предложение по Контракту"},"feedback":"Обратная связь"},"auth":{"header":{"btnLogin":"Войти","btnRegistration":"Регестрация","btnForgotPass":"Забыли пароль?"},"login":{"inputLogin":"Логин","inputPassword":"Пароль","btnEnter":"Войти"},"registration":{"inputLogin":"Логин","inputEmail":"E-Mail","inputPassword":"Пароль","inputRepeatPassword":"Повторите пароль","btnRegistration":"Регестрация"},"forgot":{"text":"Отправить пароль на почту","inputEmail":"E-Mail","btnSend":"Отправить","success":"E-mail отправлен!","error":"E-mail не найден"}}}}]
+module.exports = [{"language":"ru","pages":{"main":{"top":{"head":"Ваш шедевр готов!","text":"С другой стороны консультация с широким активом способствует подготовки и реализации модели развития. Задача организации, в особенности же консультация с широким активом в значительной степени обуславливает создание системы обучения кадров, соответствует насущным потребностям. Задача организации, в особенности же постоянный количественный рост и сфера нашей активности обеспечивает широкому кругу"},"progress":{"head":"ЦЕЛЬ Vip Coin","title":"Официальный запуск сети после продажи "}},"help":{},"packages":{"packages":[[{"title":"Standart","price":0.15,"option":{"coinsMin":1,"coinsMax":999}},{"title":"Medium","price":0.14,"option":{"coinsMin":1000,"coinsMax":4999}},{"title":"Full","price":0.13,"option":{"coinsMin":5000,"coinsMax":9999}},{"title":"Premium","price":0.12,"option":{"coinsMin":10000,"coinsMax":14999}},{"title":"VIP","price":0.1,"option":{"coinsMin":15000,"coinsMax":10000000}}],[{"title":"ПАКЕТЫ"}],{"title":"Калькулятор выгоды","inputCoins":"VipCoin","text":"Подсчитайте свою прибыль с учетом прогнозов курса VipCoin на последующие года"}]},"FAQ":{},"news":{},"contacts":{"top":{"head":"Контакты"},"feedback":{"head":"центр поддержки клиентов","inputName":"Имя","inputLName":"Фамилия","inputEmail":"E-mail","inputMsg":"Ваше сообщение","btnSend":"Отправить"}}},"layouts":{"header":{"btnMain":"ГЛАВНАЯ","btnAbout":"О НАС","btnPackages":"ПАКЕТЫ","btnFAQ":"Помощь","btnNews":"Новости","btnContacts":"Контакты","login":{"log":"Личный кабинет"}},"footer":{"pages":{"whitePage":"Белая Бумага","legalPage":"Юридические Страницы","contractOffer":"Предложение по Контракту"},"feedback":"Обратная связь"},"auth":{"header":{"btnLogin":"Войти","btnRegistration":"Регестрация","btnForgotPass":"Забыли пароль?"},"login":{"inputLogin":"Логин","inputPassword":"Пароль","btnEnter":"Войти"},"registration":{"inputLogin":"Логин","inputEmail":"E-Mail","inputPassword":"Пароль","inputRepeatPassword":"Повторите пароль","btnRegistration":"Регестрация"},"forgot":{"text":"Отправить пароль на почту","inputEmail":"E-Mail","btnSend":"Отправить","success":"E-mail отправлен!","error":"E-mail не найден"}}}}]
+
+/***/ }),
+/* 61 */
+/***/ (function(module, exports, __webpack_require__) {
+
+// style-loader: Adds some css to the DOM by adding a <style> tag
+
+// load the styles
+var content = __webpack_require__(278);
+if(typeof content === 'string') content = [[module.i, content, '']];
+// Prepare cssTransformation
+var transform;
+
+var options = {}
+options.transform = transform
+// add the styles to the DOM
+var update = __webpack_require__(23)(content, options);
+if(content.locals) module.exports = content.locals;
+// Hot Module Replacement
+if(false) {
+	// When the styles change, update the <style> tags
+	if(!content.locals) {
+		module.hot.accept("!!../../../../node_modules/css-loader/index.js!./styles.css", function() {
+			var newContent = require("!!../../../../node_modules/css-loader/index.js!./styles.css");
+			if(typeof newContent === 'string') newContent = [[module.id, newContent, '']];
+			update(newContent);
+		});
+	}
+	// When the module is disposed, remove the <style> tags
+	module.hot.dispose(function() { update(); });
+}
 
 /***/ }),
 /* 62 */
@@ -7777,7 +7777,7 @@ var ReactNoopUpdateQueue = __webpack_require__(77);
 var canDefineProperty = __webpack_require__(29);
 var emptyObject = __webpack_require__(30);
 var invariant = __webpack_require__(1);
-var lowPriorityWarning = __webpack_require__(39);
+var lowPriorityWarning = __webpack_require__(38);
 
 /**
  * Base class helpers for the updating state of a component.
@@ -8106,7 +8106,7 @@ var checkReactTypeSpec = __webpack_require__(137);
 var canDefineProperty = __webpack_require__(29);
 var getIteratorFn = __webpack_require__(79);
 var warning = __webpack_require__(2);
-var lowPriorityWarning = __webpack_require__(39);
+var lowPriorityWarning = __webpack_require__(38);
 
 function getDeclarationErrorAddendum() {
   if (ReactCurrentOwner.current) {
@@ -8382,7 +8382,7 @@ var emptyFunction = __webpack_require__(9);
 var invariant = __webpack_require__(1);
 var warning = __webpack_require__(2);
 
-var ReactPropTypesSecret = __webpack_require__(40);
+var ReactPropTypesSecret = __webpack_require__(39);
 var checkPropTypes = __webpack_require__(141);
 
 module.exports = function(isValidElement, throwOnDirectAccess) {
@@ -9939,7 +9939,7 @@ module.exports = ReactPropTypesSecret;
 
 var _assign = __webpack_require__(4);
 
-var LinkedValueUtils = __webpack_require__(49);
+var LinkedValueUtils = __webpack_require__(48);
 var ReactDOMComponentTree = __webpack_require__(5);
 var ReactUpdates = __webpack_require__(13);
 
@@ -10440,7 +10440,7 @@ var REACT_ELEMENT_TYPE = __webpack_require__(190);
 
 var getIteratorFn = __webpack_require__(191);
 var invariant = __webpack_require__(1);
-var KeyEscapeUtils = __webpack_require__(53);
+var KeyEscapeUtils = __webpack_require__(52);
 var warning = __webpack_require__(2);
 
 var SEPARATOR = '.';
@@ -10885,14 +10885,14 @@ var ReactInstanceMap = __webpack_require__(28);
 var ReactInstrumentation = __webpack_require__(10);
 var ReactMarkupChecksum = __webpack_require__(222);
 var ReactReconciler = __webpack_require__(20);
-var ReactUpdateQueue = __webpack_require__(54);
+var ReactUpdateQueue = __webpack_require__(53);
 var ReactUpdates = __webpack_require__(13);
 
 var emptyObject = __webpack_require__(30);
 var instantiateReactComponent = __webpack_require__(98);
 var invariant = __webpack_require__(1);
 var setInnerHTML = __webpack_require__(34);
-var shouldUpdateReactComponent = __webpack_require__(52);
+var shouldUpdateReactComponent = __webpack_require__(51);
 var warning = __webpack_require__(2);
 
 var ATTR_NAME = DOMProperty.ID_ATTRIBUTE_NAME;
@@ -11846,7 +11846,7 @@ module.exports = invariant;
 "use strict";
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return ActionTypes; });
 /* harmony export (immutable) */ __webpack_exports__["b"] = createStore;
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_lodash_es_isPlainObject__ = __webpack_require__(59);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_lodash_es_isPlainObject__ = __webpack_require__(58);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_symbol_observable__ = __webpack_require__(245);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_symbol_observable___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_1_symbol_observable__);
 
@@ -12263,8 +12263,8 @@ function wrapMapToPropsFunc(mapToProps, methodName) {
 
 "use strict";
 /* harmony export (immutable) */ __webpack_exports__["a"] = verifyPlainObject;
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_lodash_es_isPlainObject__ = __webpack_require__(59);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__warning__ = __webpack_require__(57);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_lodash_es_isPlainObject__ = __webpack_require__(58);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__warning__ = __webpack_require__(56);
 
 
 
@@ -14396,7 +14396,7 @@ module.exports = factory(isValidElement);
 if (process.env.NODE_ENV !== 'production') {
   var invariant = __webpack_require__(1);
   var warning = __webpack_require__(2);
-  var ReactPropTypesSecret = __webpack_require__(40);
+  var ReactPropTypesSecret = __webpack_require__(39);
   var loggedTypeFailures = {};
 }
 
@@ -15421,8 +15421,8 @@ var ReactUpdates = __webpack_require__(13);
 var SyntheticEvent = __webpack_require__(14);
 
 var inputValueTracking = __webpack_require__(89);
-var getEventTarget = __webpack_require__(43);
-var isEventSupported = __webpack_require__(44);
+var getEventTarget = __webpack_require__(42);
+var isEventSupported = __webpack_require__(43);
 var isTextInputElement = __webpack_require__(90);
 
 var eventTypes = {
@@ -16814,7 +16814,7 @@ module.exports = HTMLDOMPropertyConfig;
 
 
 
-var DOMChildrenOperations = __webpack_require__(46);
+var DOMChildrenOperations = __webpack_require__(45);
 var ReactDOMIDOperations = __webpack_require__(168);
 
 /**
@@ -17223,7 +17223,7 @@ module.exports = getMarkupWrap;
 
 
 
-var DOMChildrenOperations = __webpack_require__(46);
+var DOMChildrenOperations = __webpack_require__(45);
 var ReactDOMComponentTree = __webpack_require__(5);
 
 /**
@@ -17269,7 +17269,7 @@ var _prodInvariant = __webpack_require__(3),
 var AutoFocusUtils = __webpack_require__(170);
 var CSSPropertyOperations = __webpack_require__(171);
 var DOMLazyTree = __webpack_require__(21);
-var DOMNamespaces = __webpack_require__(47);
+var DOMNamespaces = __webpack_require__(46);
 var DOMProperty = __webpack_require__(15);
 var DOMPropertyOperations = __webpack_require__(95);
 var EventPluginHub = __webpack_require__(26);
@@ -17288,10 +17288,10 @@ var ReactServerRenderingTransaction = __webpack_require__(193);
 var emptyFunction = __webpack_require__(9);
 var escapeTextContentForBrowser = __webpack_require__(35);
 var invariant = __webpack_require__(1);
-var isEventSupported = __webpack_require__(44);
-var shallowEqual = __webpack_require__(51);
+var isEventSupported = __webpack_require__(43);
+var shallowEqual = __webpack_require__(50);
 var inputValueTracking = __webpack_require__(89);
-var validateDOMNesting = __webpack_require__(55);
+var validateDOMNesting = __webpack_require__(54);
 var warning = __webpack_require__(2);
 
 var Flags = ReactDOMComponentFlags;
@@ -18989,7 +18989,7 @@ var _prodInvariant = __webpack_require__(3),
     _assign = __webpack_require__(4);
 
 var DOMPropertyOperations = __webpack_require__(95);
-var LinkedValueUtils = __webpack_require__(49);
+var LinkedValueUtils = __webpack_require__(48);
 var ReactDOMComponentTree = __webpack_require__(5);
 var ReactUpdates = __webpack_require__(13);
 
@@ -19409,7 +19409,7 @@ module.exports = ReactDOMOption;
 var _prodInvariant = __webpack_require__(3),
     _assign = __webpack_require__(4);
 
-var LinkedValueUtils = __webpack_require__(49);
+var LinkedValueUtils = __webpack_require__(48);
 var ReactDOMComponentTree = __webpack_require__(5);
 var ReactUpdates = __webpack_require__(13);
 
@@ -19574,7 +19574,7 @@ module.exports = ReactDOMTextarea;
 
 var _prodInvariant = __webpack_require__(3);
 
-var ReactComponentEnvironment = __webpack_require__(50);
+var ReactComponentEnvironment = __webpack_require__(49);
 var ReactInstanceMap = __webpack_require__(28);
 var ReactInstrumentation = __webpack_require__(10);
 
@@ -20027,8 +20027,8 @@ module.exports = ReactMultiChild;
 var ReactReconciler = __webpack_require__(20);
 
 var instantiateReactComponent = __webpack_require__(98);
-var KeyEscapeUtils = __webpack_require__(53);
-var shouldUpdateReactComponent = __webpack_require__(52);
+var KeyEscapeUtils = __webpack_require__(52);
+var shouldUpdateReactComponent = __webpack_require__(51);
 var traverseAllChildren = __webpack_require__(102);
 var warning = __webpack_require__(2);
 
@@ -20187,9 +20187,9 @@ var _prodInvariant = __webpack_require__(3),
     _assign = __webpack_require__(4);
 
 var React = __webpack_require__(18);
-var ReactComponentEnvironment = __webpack_require__(50);
+var ReactComponentEnvironment = __webpack_require__(49);
 var ReactCurrentOwner = __webpack_require__(12);
-var ReactErrorUtils = __webpack_require__(42);
+var ReactErrorUtils = __webpack_require__(41);
 var ReactInstanceMap = __webpack_require__(28);
 var ReactInstrumentation = __webpack_require__(10);
 var ReactNodeTypes = __webpack_require__(99);
@@ -20201,8 +20201,8 @@ if (process.env.NODE_ENV !== 'production') {
 
 var emptyObject = __webpack_require__(30);
 var invariant = __webpack_require__(1);
-var shallowEqual = __webpack_require__(51);
-var shouldUpdateReactComponent = __webpack_require__(52);
+var shallowEqual = __webpack_require__(50);
+var shouldUpdateReactComponent = __webpack_require__(51);
 var warning = __webpack_require__(2);
 
 var CompositeTypes = {
@@ -21311,7 +21311,7 @@ module.exports = getIteratorFn;
 
 
 
-var KeyEscapeUtils = __webpack_require__(53);
+var KeyEscapeUtils = __webpack_require__(52);
 var traverseAllChildren = __webpack_require__(102);
 var warning = __webpack_require__(2);
 
@@ -21491,7 +21491,7 @@ module.exports = ReactServerRenderingTransaction;
 
 function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
 
-var ReactUpdateQueue = __webpack_require__(54);
+var ReactUpdateQueue = __webpack_require__(53);
 
 var warning = __webpack_require__(2);
 
@@ -21843,13 +21843,13 @@ module.exports = {
 var _prodInvariant = __webpack_require__(3),
     _assign = __webpack_require__(4);
 
-var DOMChildrenOperations = __webpack_require__(46);
+var DOMChildrenOperations = __webpack_require__(45);
 var DOMLazyTree = __webpack_require__(21);
 var ReactDOMComponentTree = __webpack_require__(5);
 
 var escapeTextContentForBrowser = __webpack_require__(35);
 var invariant = __webpack_require__(1);
-var validateDOMNesting = __webpack_require__(55);
+var validateDOMNesting = __webpack_require__(54);
 
 /**
  * Text nodes violate a couple assumptions that React makes about components:
@@ -22089,7 +22089,7 @@ var PooledClass = __webpack_require__(17);
 var ReactDOMComponentTree = __webpack_require__(5);
 var ReactUpdates = __webpack_require__(13);
 
-var getEventTarget = __webpack_require__(43);
+var getEventTarget = __webpack_require__(42);
 var getUnboundedScrollPosition = __webpack_require__(200);
 
 /**
@@ -22287,8 +22287,8 @@ module.exports = getUnboundedScrollPosition;
 
 var DOMProperty = __webpack_require__(15);
 var EventPluginHub = __webpack_require__(26);
-var EventPluginUtils = __webpack_require__(41);
-var ReactComponentEnvironment = __webpack_require__(50);
+var EventPluginUtils = __webpack_require__(40);
+var ReactComponentEnvironment = __webpack_require__(49);
 var ReactEmptyComponent = __webpack_require__(100);
 var ReactBrowserEventEmitter = __webpack_require__(36);
 var ReactHostComponent = __webpack_require__(101);
@@ -22332,7 +22332,7 @@ var ReactBrowserEventEmitter = __webpack_require__(36);
 var ReactInputSelection = __webpack_require__(104);
 var ReactInstrumentation = __webpack_require__(10);
 var Transaction = __webpack_require__(32);
-var ReactUpdateQueue = __webpack_require__(54);
+var ReactUpdateQueue = __webpack_require__(53);
 
 /**
  * Ensures that, when possible, the selection range (currently selected text
@@ -23224,7 +23224,7 @@ var SyntheticEvent = __webpack_require__(14);
 
 var getActiveElement = __webpack_require__(105);
 var isTextInputElement = __webpack_require__(90);
-var shallowEqual = __webpack_require__(51);
+var shallowEqual = __webpack_require__(50);
 
 var skipSelectionChangeEvent = ExecutionEnvironment.canUseDOM && 'documentMode' in document && document.documentMode <= 11;
 
@@ -23428,7 +23428,7 @@ var SyntheticUIEvent = __webpack_require__(27);
 var SyntheticWheelEvent = __webpack_require__(219);
 
 var emptyFunction = __webpack_require__(9);
-var getEventCharCode = __webpack_require__(56);
+var getEventCharCode = __webpack_require__(55);
 var invariant = __webpack_require__(1);
 
 /**
@@ -23771,9 +23771,9 @@ module.exports = SyntheticFocusEvent;
 
 var SyntheticUIEvent = __webpack_require__(27);
 
-var getEventCharCode = __webpack_require__(56);
+var getEventCharCode = __webpack_require__(55);
 var getEventKey = __webpack_require__(215);
-var getEventModifierState = __webpack_require__(45);
+var getEventModifierState = __webpack_require__(44);
 
 /**
  * @interface KeyboardEvent
@@ -23858,7 +23858,7 @@ module.exports = SyntheticKeyboardEvent;
 
 
 
-var getEventCharCode = __webpack_require__(56);
+var getEventCharCode = __webpack_require__(55);
 
 /**
  * Normalization of deprecated HTML5 `key` values
@@ -24018,7 +24018,7 @@ module.exports = SyntheticDragEvent;
 
 var SyntheticUIEvent = __webpack_require__(27);
 
-var getEventModifierState = __webpack_require__(45);
+var getEventModifierState = __webpack_require__(44);
 
 /**
  * @interface TouchEvent
@@ -24166,7 +24166,7 @@ module.exports = SyntheticWheelEvent;
 
 
 
-var validateDOMNesting = __webpack_require__(55);
+var validateDOMNesting = __webpack_require__(54);
 
 var DOC_NODE_TYPE = 9;
 
@@ -24699,7 +24699,7 @@ module.exports = ReactDOMInvalidARIAHook;
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_prop_types__ = __webpack_require__(24);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_prop_types___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_1_prop_types__);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__utils_PropTypes__ = __webpack_require__(109);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__utils_warning__ = __webpack_require__(57);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__utils_warning__ = __webpack_require__(56);
 function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
 
 function _possibleConstructorReturn(self, call) { if (!self) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return call && (typeof call === "object" || typeof call === "function") ? call : self; }
@@ -24792,7 +24792,7 @@ function createProvider() {
 
 var emptyFunction = __webpack_require__(9);
 var invariant = __webpack_require__(1);
-var ReactPropTypesSecret = __webpack_require__(40);
+var ReactPropTypesSecret = __webpack_require__(39);
 
 module.exports = function() {
   function shim(props, propName, componentName, location, propFullName, secret) {
@@ -25174,7 +25174,7 @@ function shallowEqual(objA, objB) {
 /* unused harmony export whenMapDispatchToPropsIsFunction */
 /* unused harmony export whenMapDispatchToPropsIsMissing */
 /* unused harmony export whenMapDispatchToPropsIsObject */
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_redux__ = __webpack_require__(58);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_redux__ = __webpack_require__(57);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__wrapMapToProps__ = __webpack_require__(116);
 
 
@@ -25498,7 +25498,7 @@ function symbolObservablePonyfill(root) {
 "use strict";
 /* WEBPACK VAR INJECTION */(function(process) {/* harmony export (immutable) */ __webpack_exports__["a"] = combineReducers;
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__createStore__ = __webpack_require__(112);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_lodash_es_isPlainObject__ = __webpack_require__(59);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_lodash_es_isPlainObject__ = __webpack_require__(58);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__utils_warning__ = __webpack_require__(114);
 
 
@@ -25940,7 +25940,7 @@ function finalPropsSelectorFactory(dispatch, _ref2) {
 
 "use strict";
 /* harmony export (immutable) */ __webpack_exports__["a"] = verifySubselectors;
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__utils_warning__ = __webpack_require__(57);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__utils_warning__ = __webpack_require__(56);
 
 
 function verify(selector, methodName, displayName) {
@@ -25999,7 +25999,7 @@ Object.defineProperty(exports, "__esModule", {
     value: true
 });
 
-var _redux = __webpack_require__(58);
+var _redux = __webpack_require__(57);
 
 var _frontReducer = __webpack_require__(257);
 
@@ -26086,7 +26086,7 @@ var _axios = __webpack_require__(259);
 
 var _axios2 = _interopRequireDefault(_axios);
 
-var _translate = __webpack_require__(61);
+var _translate = __webpack_require__(60);
 
 var _translate2 = _interopRequireDefault(_translate);
 
@@ -26141,7 +26141,7 @@ module.exports = __webpack_require__(260);
 var utils = __webpack_require__(11);
 var bind = __webpack_require__(118);
 var Axios = __webpack_require__(262);
-var defaults = __webpack_require__(60);
+var defaults = __webpack_require__(59);
 
 /**
  * Create an instance of Axios
@@ -26224,7 +26224,7 @@ function isSlowBuffer (obj) {
 "use strict";
 
 
-var defaults = __webpack_require__(60);
+var defaults = __webpack_require__(59);
 var utils = __webpack_require__(11);
 var InterceptorManager = __webpack_require__(271);
 var dispatchRequest = __webpack_require__(272);
@@ -26756,7 +26756,7 @@ module.exports = InterceptorManager;
 var utils = __webpack_require__(11);
 var transformData = __webpack_require__(273);
 var isCancel = __webpack_require__(121);
-var defaults = __webpack_require__(60);
+var defaults = __webpack_require__(59);
 
 /**
  * Throws a `Cancel` if cancellation has been requested.
@@ -27143,11 +27143,11 @@ var _react = __webpack_require__(7);
 
 var _react2 = _interopRequireDefault(_react);
 
-var _translate = __webpack_require__(61);
+var _translate = __webpack_require__(60);
 
 var _translate2 = _interopRequireDefault(_translate);
 
-var _styles = __webpack_require__(38);
+var _styles = __webpack_require__(61);
 
 var _styles2 = _interopRequireDefault(_styles);
 
@@ -27370,22 +27370,29 @@ var Header = function (_Component) {
                             { onClick: function onClick() {
                                     _this2.setCookie('language', 'ru', { expires: 350 });
                                     _this2.setState({ language: 'ru' });
+                                    console.log("1");
                                 } },
                             _react2.default.createElement("img", { src: _links.FLAG_RU, alt: "ru" })
                         ),
                         _react2.default.createElement(
                             "span",
-                            { onClick: function onClick() {} },
+                            { onClick: function onClick() {
+                                    console.log("2");
+                                } },
                             _react2.default.createElement("img", { src: _links.FLAG_ENG, alt: "eng" })
                         ),
                         _react2.default.createElement(
                             "span",
-                            { onClick: function onClick() {} },
+                            { onClick: function onClick() {
+                                    console.log("3");
+                                } },
                             _react2.default.createElement("img", { src: _links.FLAG_JAP, alt: "japan" })
                         ),
                         _react2.default.createElement(
                             "span",
-                            { onClick: function onClick() {} },
+                            { onClick: function onClick() {
+                                    console.log("4");
+                                } },
                             _react2.default.createElement("img", { src: _links.FLAG_USA, alt: "usa" })
                         )
                     )
@@ -27470,7 +27477,7 @@ var _footer = __webpack_require__(287);
 
 var _footer2 = _interopRequireDefault(_footer);
 
-var _styles = __webpack_require__(38);
+var _styles = __webpack_require__(61);
 
 var _styles2 = _interopRequireDefault(_styles);
 
@@ -28156,7 +28163,7 @@ exports = module.exports = __webpack_require__(22)(undefined);
 
 
 // module
-exports.push([module.i, "@font-face {\n  font-family: 'Brusher';\n  src: url(" + __webpack_require__(62) + "); }\n\n@font-face {\n  font-family: 'HelveticaLight';\n  src: url(" + __webpack_require__(63) + "); }\n\n@font-face {\n  font-family: 'HelveticaBlack';\n  src: url(" + __webpack_require__(64) + "); }\n\n@font-face {\n  font-family: 'HelveticaBold';\n  src: url(" + __webpack_require__(65) + "); }\n\n@font-face {\n  font-family: 'HelveticaHeavy';\n  src: url(" + __webpack_require__(66) + "); }\n\nbody {\n  font-family: HelveticaLight;\n  padding: 0;\n  margin: 0;\n  background: #575757; }\n  body .Main {\n    width: 100%;\n    height: 100%; }\n    body .Main .bg {\n      width: 500px;\n      height: 500px;\n      border-radius: 50%;\n      position: fixed;\n      left: 50%;\n      top: 20%;\n      margin-left: -250px;\n      background-size: cover;\n      opacity: .2; }\n    body .Main .container {\n      width: 100%; }\n      body .Main .container .content h1 {\n        color: #ccac02;\n        margin-left: 15px;\n        letter-spacing: 3px;\n        text-transform: uppercase;\n        text-shadow: 0 0px 15px black; }\n", ""]);
+exports.push([module.i, "@font-face {\n  font-family: 'Brusher';\n  src: url(" + __webpack_require__(62) + "); }\n\n@font-face {\n  font-family: 'HelveticaLight';\n  src: url(" + __webpack_require__(63) + "); }\n\n@font-face {\n  font-family: 'HelveticaBlack';\n  src: url(" + __webpack_require__(64) + "); }\n\n@font-face {\n  font-family: 'HelveticaBold';\n  src: url(" + __webpack_require__(65) + "); }\n\n@font-face {\n  font-family: 'HelveticaHeavy';\n  src: url(" + __webpack_require__(66) + "); }\n\nbody {\n  font-family: HelveticaLight;\n  padding: 0;\n  margin: 0;\n  background: #575757; }\n  body .Main {\n    width: 100%;\n    height: 100%; }\n    body .Main .bg {\n      width: 500px;\n      height: 500px;\n      border-radius: 50%;\n      position: fixed;\n      left: 50%;\n      top: 20%;\n      margin-left: -250px;\n      background-size: cover;\n      opacity: .2; }\n    body .Main .container {\n      width: 100%; }\n      body .Main .container .content h1 {\n        color: #ccac02;\n        margin-left: 15px;\n        letter-spacing: 3px;\n        text-transform: uppercase;\n        text-shadow: 0 0px 15px black;\n        z-index: 10; }\n", ""]);
 
 // exports
 
@@ -28295,7 +28302,7 @@ var _reactDom = __webpack_require__(126);
 
 var _reactRedux = __webpack_require__(108);
 
-var _redux = __webpack_require__(58);
+var _redux = __webpack_require__(57);
 
 var _reduxThunk = __webpack_require__(255);
 
@@ -28380,11 +28387,11 @@ var _react = __webpack_require__(7);
 
 var _react2 = _interopRequireDefault(_react);
 
-var _translate = __webpack_require__(61);
+var _translate = __webpack_require__(60);
 
 var _translate2 = _interopRequireDefault(_translate);
 
-var _styles = __webpack_require__(38);
+var _styles = __webpack_require__(61);
 
 var _styles2 = _interopRequireDefault(_styles);
 
@@ -28529,9 +28536,9 @@ var _Package = __webpack_require__(420);
 
 var _Package2 = _interopRequireDefault(_Package);
 
-var _Calculate = __webpack_require__(421);
+var _Calculator = __webpack_require__(633);
 
-var _Calculate2 = _interopRequireDefault(_Calculate);
+var _Calculator2 = _interopRequireDefault(_Calculator);
 
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
@@ -28585,7 +28592,10 @@ var Container = function (_Component) {
                     )
                 ),
                 _react2.default.createElement(_Package2.default, { packages: pages.packages }),
-                _react2.default.createElement(_Calculate2.default, { calculate: pages.packages[2] })
+                _react2.default.createElement(_Calculator2.default, {
+                    calculate: pages.packages[2],
+                    packages: pages.packages[0]
+                })
             );
         }
     }]);
@@ -28612,7 +28622,7 @@ var _react = __webpack_require__(7);
 
 var _react2 = _interopRequireDefault(_react);
 
-var _styles = __webpack_require__(38);
+var _styles = __webpack_require__(61);
 
 var _styles2 = _interopRequireDefault(_styles);
 
@@ -28635,12 +28645,12 @@ var Package = function (_Component) {
 
     _createClass(Package, [{
         key: "updatePackage",
-        value: function updatePackage(e, cost, type) {
-            var range = eval("this.refs.rangeCoins" + e);
-            var coins = eval("this.refs.valueCoins" + e);
-            var price = eval("this.refs.priceCoins" + e);
+        value: function updatePackage(id, cost, type) {
+            var range = eval("this.refs.rangeCoins" + id);
+            var coins = eval("this.refs.valueCoins" + id);
+            var price = eval("this.refs.priceCoins" + id);
             if (type) {
-                coins.value = range.value;
+                coins.value = +range.value;
                 price.innerHTML = (cost * coins.value).toFixed(2);
             } else {
                 var trueValue = 0;
@@ -28678,7 +28688,13 @@ var Package = function (_Component) {
             var packageContainer = packages[0].map(function (item, index) {
                 return _react2.default.createElement(
                     "div",
-                    { className: "package", key: index },
+                    { className: "package", key: index, onClick: function onClick(_ref) {
+                            var target = _ref.target;
+
+                            if (target.classList[0] === "package") {
+                                window.location.href = "#";
+                            }
+                        } },
                     _react2.default.createElement(
                         "div",
                         { className: "package_logo", style: { color: colors[index] } },
@@ -28707,7 +28723,7 @@ var Package = function (_Component) {
                                 max: item.option.coinsMax,
                                 min: item.option.coinsMin,
                                 id: "valueCoins" + index,
-                                onChange: function onChange() {
+                                onBlur: function onBlur() {
                                     _this2.updatePackage("" + index, item.price, false);
                                 },
                                 step: 25
@@ -28800,189 +28816,7 @@ var Package = function (_Component) {
 exports.default = Package;
 
 /***/ }),
-/* 421 */
-/***/ (function(module, exports, __webpack_require__) {
-
-"use strict";
-
-
-Object.defineProperty(exports, "__esModule", {
-    value: true
-});
-
-var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
-
-var _react = __webpack_require__(7);
-
-var _react2 = _interopRequireDefault(_react);
-
-function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
-
-function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
-
-function _possibleConstructorReturn(self, call) { if (!self) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return call && (typeof call === "object" || typeof call === "function") ? call : self; }
-
-function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
-
-var Calculate = function (_Component) {
-    _inherits(Calculate, _Component);
-
-    function Calculate(props) {
-        _classCallCheck(this, Calculate);
-
-        var _this = _possibleConstructorReturn(this, (Calculate.__proto__ || Object.getPrototypeOf(Calculate)).call(this, props));
-
-        _this.state = {
-            coinPrice: 0.15,
-            valOfRange: 1
-        };
-        return _this;
-    }
-
-    _createClass(Calculate, [{
-        key: "calc",
-        value: function calc() {
-            var _refs = this.refs,
-                give = _refs.give,
-                get = _refs.get,
-                profit = _refs.profit,
-                rangeYear = _refs.rangeYear;
-            var coinPrice = this.state.coinPrice;
-
-            var futureCoinPrice = 10;
-            switch (+rangeYear.value) {
-                case 1:
-                    futureCoinPrice = 9;
-                    break;
-                case 2:
-                    futureCoinPrice = 49;
-                    break;
-                case 3:
-                    futureCoinPrice = 99;
-                    break;
-                case 4:
-                    futureCoinPrice = 149;
-                    break;
-                case 5:
-                    futureCoinPrice = 201;
-                    break;
-
-            }
-            var giveDoll = give.value;
-
-            if (giveDoll > 0) {
-                var getAnsw = give.value / coinPrice;
-                var profitAnsw = getAnsw * futureCoinPrice;
-
-                get.value = getAnsw;
-                profit.value = profitAnsw;
-            }
-            this.setState({
-                valOfRange: +rangeYear.value
-            });
-        }
-    }, {
-        key: "render",
-        value: function render() {
-            var _this2 = this;
-
-            var calculate = this.props.calculate;
-            var valOfRange = this.state.valOfRange;
-
-            return _react2.default.createElement(
-                "div",
-                { className: "calculate-container" },
-                _react2.default.createElement(
-                    "h1",
-                    null,
-                    calculate.title
-                ),
-                _react2.default.createElement(
-                    "p",
-                    null,
-                    calculate.text
-                ),
-                _react2.default.createElement(
-                    "div",
-                    { className: "calculate" },
-                    _react2.default.createElement(
-                        "div",
-                        { className: "top-block" },
-                        _react2.default.createElement(
-                            "label",
-                            { htmlFor: "give" },
-                            _react2.default.createElement("i", { className: "icon-usd" })
-                        ),
-                        _react2.default.createElement("input", {
-                            type: "number",
-                            step: "10",
-                            id: "give",
-                            placeholder: calculate.inputGive,
-                            ref: "give",
-                            onChange: function onChange() {
-                                _this2.calc();
-                            }
-                        }),
-                        _react2.default.createElement("i", { className: "icon-arrow-swap" }),
-                        _react2.default.createElement(
-                            "label",
-                            { htmlFor: "vipcoin" },
-                            _react2.default.createElement("i", { className: "icon-bitcoin-circle" })
-                        ),
-                        _react2.default.createElement("input", {
-                            type: "number",
-                            className: "notActive",
-                            id: "vipcoin",
-                            ref: "get",
-                            disabled: "disabled",
-                            placeholder: calculate.inputGet
-                        }),
-                        _react2.default.createElement("i", { className: "icon-arrow-graph-up-right" }),
-                        _react2.default.createElement(
-                            "label",
-                            { htmlFor: "profit" },
-                            _react2.default.createElement("i", { className: "icon-usd" })
-                        ),
-                        _react2.default.createElement("input", {
-                            type: "number",
-                            className: "notActive",
-                            id: "profit",
-                            ref: "profit",
-                            disabled: "disabled",
-                            placeholder: calculate.inputProfit
-                        })
-                    ),
-                    _react2.default.createElement(
-                        "div",
-                        { className: "bottom" },
-                        _react2.default.createElement("input", {
-                            type: "range",
-                            min: "1",
-                            max: "5",
-                            ref: "rangeYear",
-                            defaultValue: "1",
-                            className: "range-year",
-                            onChange: function onChange() {
-                                _this2.calc();
-                            }
-                        }),
-                        _react2.default.createElement(
-                            "h3",
-                            null,
-                            calculate.inputYear1 + " " + valOfRange + " " + calculate.inputYear2
-                        )
-                    )
-                )
-            );
-        }
-    }]);
-
-    return Calculate;
-}(_react.Component);
-
-exports.default = Calculate;
-
-/***/ }),
+/* 421 */,
 /* 422 */
 /***/ (function(module, exports, __webpack_require__) {
 
@@ -29022,10 +28856,453 @@ exports = module.exports = __webpack_require__(22)(undefined);
 
 
 // module
-exports.push([module.i, ".currency {\n  position: fixed;\n  top: 70px;\n  color: white;\n  padding: 5px;\n  padding-left: 10px;\n  z-index: 101;\n  background-color: rgba(87, 87, 87, 0.7);\n  border-bottom-right-radius: 5px; }\n  .currency div {\n    display: flex;\n    justify-content: flex-start;\n    align-items: center; }\n    .currency div i {\n      font-size: 1.2em;\n      margin: 0 3px; }\n\n.packages {\n  padding-top: 75px;\n  z-index: 10; }\n  .packages h1 {\n    text-align: center;\n    z-index: 10; }\n  .packages .all_packages {\n    display: flex;\n    flex-direction: column;\n    justify-content: center;\n    align-items: center;\n    z-index: 10; }\n    .packages .all_packages .top {\n      display: flex;\n      width: 100%;\n      justify-content: space-around;\n      align-items: center;\n      z-index: 10;\n      margin-bottom: 15px;\n      flex-wrap: wrap; }\n    .packages .all_packages .center {\n      display: flex;\n      width: 100%;\n      justify-content: center;\n      align-items: center;\n      z-index: 10;\n      margin-bottom: 15px; }\n    .packages .all_packages .bottom {\n      display: flex;\n      width: 100%;\n      justify-content: space-around;\n      align-items: center;\n      z-index: 10;\n      flex-wrap: wrap; }\n    .packages .all_packages .package {\n      display: flex;\n      flex-direction: column;\n      align-items: center;\n      font-size: 1.3em;\n      color: #ccac02;\n      padding: 10px 0;\n      box-shadow: rgba(229, 193, 0, 0.15) 0 11px 35px;\n      background-color: rgba(87, 87, 87, 0.9);\n      transition: .25s all;\n      margin-bottom: 15px; }\n      .packages .all_packages .package:hover {\n        transform: scale(1.02);\n        box-shadow: rgba(229, 193, 0, 0.3) 0 15px 50px; }\n      .packages .all_packages .package .package_logo {\n        margin-top: 15px;\n        font-size: 5em;\n        text-shadow: 0 0 10px black; }\n      .packages .all_packages .package h3 {\n        padding: 10px;\n        background-color: #e5c100;\n        color: white;\n        width: 75%;\n        text-align: center;\n        letter-spacing: 3px;\n        text-shadow: 0 0 10px black; }\n      .packages .all_packages .package .options {\n        margin-bottom: 15px; }\n        .packages .all_packages .package .options .getCoins {\n          position: relative;\n          margin-left: 80px;\n          transition: .25s all; }\n          .packages .all_packages .package .options .getCoins label {\n            position: relative; }\n            .packages .all_packages .package .options .getCoins label .icon-bitcoin-circle {\n              position: absolute;\n              top: -16px;\n              font-size: 2em;\n              text-shadow: 0 0 10px black; }\n          .packages .all_packages .package .options .getCoins input {\n            display: inline-block;\n            width: 170px;\n            color: #e5c100;\n            font-size: 32px;\n            font-weight: 500;\n            text-align: left;\n            padding-left: 40px;\n            border-width: initial;\n            border-style: none;\n            border-color: initial;\n            border-image: initial;\n            background: transparent;\n            position: relative;\n            -moz-appearance: textfield; }\n            .packages .all_packages .package .options .getCoins input::-webkit-outer-spin-button, .packages .all_packages .package .options .getCoins input::-webkit-inner-spin-button {\n              -webkit-appearance: none; }\n            .packages .all_packages .package .options .getCoins input:focus {\n              outline: none; }\n      .packages .all_packages .package .summ {\n        display: flex;\n        width: 100%;\n        justify-content: space-between;\n        background: #e5c100;\n        color: white;\n        margin-bottom: 25px; }\n        .packages .all_packages .package .summ div {\n          padding: 0 20px;\n          text-align: center; }\n          .packages .all_packages .package .summ div p {\n            margin: 10px;\n            font-size: .7em;\n            text-transform: uppercase;\n            letter-spacing: 1px; }\n      .packages .all_packages .package .coins-range {\n        -webkit-appearance: none;\n        margin: 7.3px 0;\n        width: 80%;\n        margin-bottom: 15px; }\n        .packages .all_packages .package .coins-range:focus {\n          outline: none; }\n        .packages .all_packages .package .coins-range::-webkit-slider-runnable-track {\n          width: 100%;\n          height: 11.4px;\n          cursor: pointer;\n          box-shadow: 1px 1px 1px #000000, 0px 0px 1px #0d0d0d;\n          background: rgba(174, 174, 174, 0.78);\n          border-radius: 1.3px;\n          border: 0.2px solid #010101; }\n        .packages .all_packages .package .coins-range::-webkit-slider-thumb {\n          box-shadow: 0px 0px 1px #000031, 0px 0px 0px #00004b;\n          border: 1.8px solid rgba(0, 0, 101, 0.56);\n          height: 26px;\n          width: 26px;\n          border-radius: 15px;\n          background: #e5c100;\n          cursor: pointer;\n          -webkit-appearance: none;\n          margin-top: -7.5px; }\n        .packages .all_packages .package .coins-range:focus::-webkit-slider-runnable-track {\n          background: rgba(238, 238, 238, 0.78); }\n        .packages .all_packages .package .coins-range::-moz-range-track {\n          width: 100%;\n          height: 11.4px;\n          cursor: pointer;\n          box-shadow: 1px 1px 1px #000000, 0px 0px 1px #0d0d0d;\n          background: rgba(174, 174, 174, 0.78);\n          border-radius: 1.3px;\n          border: 0.2px solid #010101; }\n        .packages .all_packages .package .coins-range::-moz-range-thumb {\n          box-shadow: 0px 0px 1px #000031, 0px 0px 0px #00004b;\n          border: 1.8px solid rgba(0, 0, 101, 0.56);\n          height: 26px;\n          width: 26px;\n          border-radius: 15px;\n          background: #e5c100;\n          cursor: pointer; }\n        .packages .all_packages .package .coins-range::-ms-track {\n          width: 100%;\n          height: 11.4px;\n          cursor: pointer;\n          background: transparent;\n          border-color: transparent;\n          color: transparent; }\n        .packages .all_packages .package .coins-range::-ms-fill-lower {\n          background: rgba(110, 110, 110, 0.78);\n          border: 0.2px solid #010101;\n          border-radius: 2.6px;\n          box-shadow: 1px 1px 1px #000000, 0px 0px 1px #0d0d0d; }\n        .packages .all_packages .package .coins-range::-ms-fill-upper {\n          background: rgba(174, 174, 174, 0.78);\n          border: 0.2px solid #010101;\n          border-radius: 2.6px;\n          box-shadow: 1px 1px 1px #000000, 0px 0px 1px #0d0d0d; }\n        .packages .all_packages .package .coins-range::-ms-thumb {\n          box-shadow: 0px 0px 1px #000031, 0px 0px 0px #00004b;\n          border: 1.8px solid rgba(0, 0, 101, 0.56);\n          width: 26px;\n          border-radius: 15px;\n          background: #e5c100;\n          cursor: pointer;\n          height: 11.4px; }\n        .packages .all_packages .package .coins-range:focus::-ms-fill-lower {\n          background: rgba(174, 174, 174, 0.78); }\n        .packages .all_packages .package .coins-range:focus::-ms-fill-upper {\n          background: rgba(238, 238, 238, 0.78); }\n\n.calculate-container {\n  display: flex;\n  flex-direction: column;\n  justify-content: center;\n  align-items: center;\n  padding-bottom: 25px; }\n  .calculate-container h1 {\n    margin-bottom: 0; }\n  .calculate-container p {\n    margin-bottom: 25px;\n    color: white;\n    font-size: 1.1em;\n    letter-spacing: 2px; }\n  .calculate-container .calculate {\n    z-index: 2; }\n    .calculate-container .calculate .top-block {\n      color: white;\n      margin-bottom: 15px; }\n      .calculate-container .calculate .top-block label {\n        padding: 15px 0 5px;\n        background: #e5c100;\n        border-bottom-left-radius: 5px;\n        border-top-left-radius: 5px;\n        cursor: pointer; }\n        .calculate-container .calculate .top-block label i {\n          font-size: 1.4em; }\n      .calculate-container .calculate .top-block input {\n        font-size: 1.5em;\n        background-color: rgba(87, 87, 87, 0.8);\n        padding-left: 10px;\n        border: 2px solid;\n        border-color: #e5c100;\n        color: White;\n        z-index: 2;\n        transition: .3s; }\n        .calculate-container .calculate .top-block input:focus {\n          outline: none;\n          box-shadow: 5px 0 10px 1px #e5c100; }\n        .calculate-container .calculate .top-block input::placeholder {\n          color: white;\n          opacity: .8; }\n      .calculate-container .calculate .top-block .notActive {\n        cursor: not-allowed; }\n        .calculate-container .calculate .top-block .notActive:focus {\n          outline: none;\n          box-shadow: none; }\n      .calculate-container .calculate .top-block i {\n        font-size: 1.7em;\n        margin: 0 5px; }\n    .calculate-container .calculate .bottom input[type=range].range-year {\n      -webkit-appearance: none;\n      width: 100%;\n      margin: 14px 0;\n      position: relative; }\n      .calculate-container .calculate .bottom input[type=range].range-year:before, .calculate-container .calculate .bottom input[type=range].range-year:after {\n        position: absolute;\n        color: white;\n        bottom: -1.8em;\n        font-size: 1.7em; }\n      .calculate-container .calculate .bottom input[type=range].range-year:before {\n        content: \"1\";\n        left: 0; }\n      .calculate-container .calculate .bottom input[type=range].range-year:after {\n        content: \"5\";\n        right: 0; }\n    .calculate-container .calculate .bottom input[type=range].range-year:focus {\n      outline: none; }\n    .calculate-container .calculate .bottom input[type=range].range-year::-webkit-slider-runnable-track {\n      width: 100%;\n      height: 8px;\n      cursor: pointer;\n      box-shadow: 1px 1px 1px #000000, 0px 0px 1px #0d0d0d;\n      background: #e5c100;\n      border-radius: 7px;\n      border: 1px solid #010101; }\n    .calculate-container .calculate .bottom input[type=range].range-year::-webkit-slider-thumb {\n      box-shadow: 1px 1px 1px #000000, 0px 0px 1px #0d0d0d;\n      border: 1.2px solid #000000;\n      height: 36px;\n      width: 16px;\n      border-radius: 3px;\n      background: #ffffff;\n      cursor: pointer;\n      -webkit-appearance: none;\n      margin-top: -15px; }\n    .calculate-container .calculate .bottom input[type=range].range-year:focus::-webkit-slider-runnable-track {\n      background: #ffdf32; }\n    .calculate-container .calculate .bottom input[type=range].range-year::-moz-range-track {\n      width: 100%;\n      height: 8px;\n      cursor: pointer;\n      box-shadow: 1px 1px 1px #000000, 0px 0px 1px #0d0d0d;\n      background: #e5c100;\n      border-radius: 7px;\n      border: 1px solid #010101; }\n    .calculate-container .calculate .bottom input[type=range].range-year::-moz-range-thumb {\n      box-shadow: 1px 1px 1px #000000, 0px 0px 1px #0d0d0d;\n      border: 1.2px solid #000000;\n      height: 36px;\n      width: 16px;\n      border-radius: 3px;\n      background: #ffffff;\n      cursor: pointer; }\n    .calculate-container .calculate .bottom input[type=range].range-year::-ms-track {\n      width: 100%;\n      height: 8px;\n      cursor: pointer;\n      background: transparent;\n      border-color: transparent;\n      color: transparent; }\n    .calculate-container .calculate .bottom input[type=range].range-year::-ms-fill-lower {\n      background: #998100;\n      border: 1px solid #010101;\n      border-radius: 14px;\n      box-shadow: 1px 1px 1px #000000, 0px 0px 1px #0d0d0d; }\n    .calculate-container .calculate .bottom input[type=range].range-year::-ms-fill-upper {\n      background: #e5c100;\n      border: 1px solid #010101;\n      border-radius: 14px;\n      box-shadow: 1px 1px 1px #000000, 0px 0px 1px #0d0d0d; }\n    .calculate-container .calculate .bottom input[type=range].range-year::-ms-thumb {\n      box-shadow: 1px 1px 1px #000000, 0px 0px 1px #0d0d0d;\n      border: 1.2px solid #000000;\n      height: 36px;\n      width: 16px;\n      border-radius: 3px;\n      background: #ffffff;\n      cursor: pointer;\n      height: 8px; }\n    .calculate-container .calculate .bottom input[type=range].range-year:focus::-ms-fill-lower {\n      background: #e5c100; }\n    .calculate-container .calculate .bottom input[type=range].range-year:focus::-ms-fill-upper {\n      background: #ffdf32; }\n    .calculate-container .calculate .bottom h3 {\n      text-align: center;\n      font-size: 1.4em;\n      margin-top: 0;\n      color: white; }\n", ""]);
+exports.push([module.i, ".currency {\n  position: fixed;\n  top: 70px;\n  color: white;\n  padding: 5px;\n  padding-left: 10px;\n  z-index: 101;\n  background-color: rgba(87, 87, 87, 0.7);\n  border-bottom-right-radius: 5px; }\n  .currency div {\n    display: flex;\n    justify-content: flex-start;\n    align-items: center; }\n    .currency div i {\n      font-size: 1.2em;\n      margin: 0 3px; }\n\n.packages {\n  padding-top: 75px;\n  z-index: 10; }\n  .packages h1 {\n    text-align: center;\n    z-index: 10; }\n  .packages .all_packages {\n    display: flex;\n    flex-direction: column;\n    justify-content: center;\n    align-items: center;\n    z-index: 10; }\n    .packages .all_packages .top {\n      display: flex;\n      width: 100%;\n      justify-content: space-around;\n      align-items: center;\n      z-index: 10;\n      margin-bottom: 15px;\n      flex-wrap: wrap; }\n    .packages .all_packages .center {\n      display: flex;\n      width: 100%;\n      justify-content: center;\n      align-items: center;\n      z-index: 10;\n      margin-bottom: 15px; }\n    .packages .all_packages .bottom {\n      display: flex;\n      width: 100%;\n      justify-content: space-around;\n      align-items: center;\n      z-index: 10;\n      flex-wrap: wrap; }\n    .packages .all_packages .package {\n      display: flex;\n      flex-direction: column;\n      align-items: center;\n      font-size: 1.3em;\n      color: #ccac02;\n      padding: 10px 0;\n      box-shadow: rgba(229, 193, 0, 0.15) 0 11px 35px;\n      background-color: rgba(87, 87, 87, 0.9);\n      transition: .25s all;\n      margin-bottom: 15px;\n      cursor: pointer; }\n      .packages .all_packages .package:hover {\n        transform: scale(1.02);\n        box-shadow: rgba(229, 193, 0, 0.3) 0 15px 50px; }\n      .packages .all_packages .package .package_logo {\n        margin-top: 15px;\n        font-size: 5em;\n        text-shadow: 0 0 10px black; }\n      .packages .all_packages .package h3 {\n        padding: 10px;\n        background-color: #e5c100;\n        color: white;\n        width: 75%;\n        text-align: center;\n        letter-spacing: 3px;\n        text-shadow: 0 0 10px black; }\n      .packages .all_packages .package .options {\n        margin-bottom: 15px; }\n        .packages .all_packages .package .options .getCoins {\n          position: relative;\n          margin-left: 80px;\n          transition: .25s all; }\n          .packages .all_packages .package .options .getCoins label {\n            position: relative; }\n            .packages .all_packages .package .options .getCoins label .icon-bitcoin-circle {\n              position: absolute;\n              top: -16px;\n              font-size: 2em;\n              text-shadow: 0 0 10px black; }\n          .packages .all_packages .package .options .getCoins input {\n            display: inline-block;\n            width: 170px;\n            color: #e5c100;\n            font-size: 32px;\n            font-weight: 500;\n            text-align: left;\n            padding-left: 40px;\n            border-width: initial;\n            border-style: none;\n            border-color: initial;\n            border-image: initial;\n            background: transparent;\n            position: relative;\n            -moz-appearance: textfield; }\n            .packages .all_packages .package .options .getCoins input::-webkit-outer-spin-button, .packages .all_packages .package .options .getCoins input::-webkit-inner-spin-button {\n              -webkit-appearance: none; }\n            .packages .all_packages .package .options .getCoins input:focus {\n              outline: none; }\n      .packages .all_packages .package .summ {\n        display: flex;\n        width: 100%;\n        justify-content: space-between;\n        background: #e5c100;\n        color: white;\n        margin-bottom: 25px; }\n        .packages .all_packages .package .summ div {\n          padding: 0 20px;\n          text-align: center; }\n          .packages .all_packages .package .summ div p {\n            margin: 10px;\n            font-size: .7em;\n            text-transform: uppercase;\n            letter-spacing: 1px; }\n      .packages .all_packages .package .coins-range {\n        -webkit-appearance: none;\n        margin: 7.3px 0;\n        width: 80%;\n        margin-bottom: 15px; }\n        .packages .all_packages .package .coins-range:focus {\n          outline: none; }\n        .packages .all_packages .package .coins-range::-webkit-slider-runnable-track {\n          width: 100%;\n          height: 11.4px;\n          cursor: pointer;\n          box-shadow: 1px 1px 1px #000000, 0px 0px 1px #0d0d0d;\n          background: rgba(174, 174, 174, 0.78);\n          border-radius: 1.3px;\n          border: 0.2px solid #010101; }\n        .packages .all_packages .package .coins-range::-webkit-slider-thumb {\n          box-shadow: 0px 0px 1px #000031, 0px 0px 0px #00004b;\n          border: 1.8px solid rgba(0, 0, 101, 0.56);\n          height: 26px;\n          width: 26px;\n          border-radius: 15px;\n          background: #e5c100;\n          cursor: pointer;\n          -webkit-appearance: none;\n          margin-top: -7.5px; }\n        .packages .all_packages .package .coins-range:focus::-webkit-slider-runnable-track {\n          background: rgba(238, 238, 238, 0.78); }\n        .packages .all_packages .package .coins-range::-moz-range-track {\n          width: 100%;\n          height: 11.4px;\n          cursor: pointer;\n          box-shadow: 1px 1px 1px #000000, 0px 0px 1px #0d0d0d;\n          background: rgba(174, 174, 174, 0.78);\n          border-radius: 1.3px;\n          border: 0.2px solid #010101; }\n        .packages .all_packages .package .coins-range::-moz-range-thumb {\n          box-shadow: 0px 0px 1px #000031, 0px 0px 0px #00004b;\n          border: 1.8px solid rgba(0, 0, 101, 0.56);\n          height: 26px;\n          width: 26px;\n          border-radius: 15px;\n          background: #e5c100;\n          cursor: pointer; }\n        .packages .all_packages .package .coins-range::-ms-track {\n          width: 100%;\n          height: 11.4px;\n          cursor: pointer;\n          background: transparent;\n          border-color: transparent;\n          color: transparent; }\n        .packages .all_packages .package .coins-range::-ms-fill-lower {\n          background: rgba(110, 110, 110, 0.78);\n          border: 0.2px solid #010101;\n          border-radius: 2.6px;\n          box-shadow: 1px 1px 1px #000000, 0px 0px 1px #0d0d0d; }\n        .packages .all_packages .package .coins-range::-ms-fill-upper {\n          background: rgba(174, 174, 174, 0.78);\n          border: 0.2px solid #010101;\n          border-radius: 2.6px;\n          box-shadow: 1px 1px 1px #000000, 0px 0px 1px #0d0d0d; }\n        .packages .all_packages .package .coins-range::-ms-thumb {\n          box-shadow: 0px 0px 1px #000031, 0px 0px 0px #00004b;\n          border: 1.8px solid rgba(0, 0, 101, 0.56);\n          width: 26px;\n          border-radius: 15px;\n          background: #e5c100;\n          cursor: pointer;\n          height: 11.4px; }\n        .packages .all_packages .package .coins-range:focus::-ms-fill-lower {\n          background: rgba(174, 174, 174, 0.78); }\n        .packages .all_packages .package .coins-range:focus::-ms-fill-upper {\n          background: rgba(238, 238, 238, 0.78); }\n\n.calculator {\n  display: flex;\n  flex-direction: column;\n  justify-content: space-around;\n  align-items: center;\n  margin-bottom: 25px;\n  margin-top: 35px;\n  z-index: 10; }\n  .calculator #alert {\n    display: none;\n    opacity: 0;\n    position: fixed;\n    right: 10px;\n    top: 75px;\n    border: 2px solid #fcf8e3;\n    width: 220px;\n    height: 75px;\n    background-color: #faebcc;\n    z-index: 11;\n    color: #8a6d3b;\n    border-radius: 5px;\n    font-size: 1.3em;\n    flex-direction: column;\n    justify-content: space-around;\n    align-items: center;\n    transition: .25s; }\n  .calculator h1 {\n    margin-bottom: 0; }\n  .calculator p {\n    margin-bottom: 25px;\n    color: white;\n    font-size: 1.1em;\n    letter-spacing: 2px; }\n  .calculator .calculator-body {\n    display: flex;\n    flex-direction: column;\n    justify-content: space-around;\n    align-items: center;\n    margin-bottom: 25px;\n    z-index: 10; }\n  .calculator div {\n    margin-bottom: 15px; }\n  .calculator .calculator-top {\n    display: flex;\n    justify-content: center;\n    align-items: center; }\n    .calculator .calculator-top i {\n      font-size: 3em;\n      color: #e5c100;\n      text-shadow: 0 0 10px black; }\n    .calculator .calculator-top input {\n      outline: none;\n      line-height: 20px;\n      width: 100%;\n      padding: 10px 15px;\n      margin-bottom: 10px;\n      background-color: rgba(255, 255, 255, 0.4);\n      border: 2px solid transparent;\n      border-bottom: 2px solid rgba(255, 255, 255, 0.7);\n      color: rgba(255, 255, 255, 0.9);\n      font-size: 1.2em;\n      transition: .25s all;\n      -moz-appearance: textfield;\n      text-align: center; }\n      .calculator .calculator-top input::-webkit-outer-spin-button, .calculator .calculator-top input::-webkit-inner-spin-button {\n        -webkit-appearance: none; }\n      .calculator .calculator-top input::placeholder {\n        color: rgba(255, 255, 255, 0.7); }\n      .calculator .calculator-top input::-webkit-input-placeholder {\n        text-indent: 0;\n        transition: text-indent 0.3s ease; }\n      .calculator .calculator-top input::-moz-placeholder {\n        text-indent: 0;\n        transition: text-indent 0.3s ease; }\n      .calculator .calculator-top input:-moz-placeholder {\n        text-indent: 0;\n        transition: text-indent 0.3s ease; }\n      .calculator .calculator-top input:-ms-input-placeholder {\n        text-indent: 0;\n        transition: text-indent 0.3s ease; }\n      .calculator .calculator-top input:focus::-webkit-input-placeholder {\n        text-indent: 500px;\n        transition: text-indent 0.3s ease; }\n      .calculator .calculator-top input:focus::-moz-placeholder {\n        text-indent: 500px;\n        transition: text-indent 0.3s ease; }\n      .calculator .calculator-top input:focus:-moz-placeholder {\n        text-indent: 500px;\n        transition: text-indent 0.3s ease; }\n      .calculator .calculator-top input:focus:-ms-input-placeholder {\n        text-indent: 500px;\n        transition: text-indent 0.3s ease; }\n      .calculator .calculator-top input:focus, .calculator .calculator-top input:hover {\n        border: 2px solid rgba(255, 255, 255, 0.5);\n        background-color: transparent; }\n  .calculator .calculator-package {\n    display: flex;\n    align-items: center;\n    font-size: 5em; }\n    .calculator .calculator-package div {\n      margin-bottom: 0;\n      margin-right: 10px;\n      text-shadow: 0 0 10px black;\n      border: 1px solid;\n      padding: 10px 10px 0;\n      cursor: pointer;\n      box-shadow: rgba(229, 193, 0, 0.15) 0 11px 35px;\n      background-color: rgba(242, 176, 30, 0.3);\n      border-radius: 5px;\n      transition: 0.25s all; }\n      .calculator .calculator-package div:last-child {\n        margin-right: 0; }\n      .calculator .calculator-package div.active-package {\n        transform: scale(1.02);\n        box-shadow: rgba(229, 193, 0, 0.5) 0 15px 50px;\n        border-color: #575757; }\n      .calculator .calculator-package div:hover {\n        transform: scale(1.02);\n        box-shadow: rgba(229, 193, 0, 0.3) 0 15px 50px; }\n  .calculator .calculator-years {\n    width: 100%; }\n    .calculator .calculator-years input {\n      width: 100%;\n      -webkit-appearance: none;\n      margin: 7.3px 0;\n      margin-bottom: 15px; }\n      .calculator .calculator-years input:focus {\n        outline: none; }\n      .calculator .calculator-years input::-webkit-slider-runnable-track {\n        width: 100%;\n        height: 11.4px;\n        cursor: pointer;\n        box-shadow: 1px 1px 1px #000000, 0px 0px 1px #0d0d0d;\n        background: rgba(174, 174, 174, 0.78);\n        border-radius: 1.3px;\n        border: 0.2px solid #010101; }\n      .calculator .calculator-years input::-webkit-slider-thumb {\n        box-shadow: 0px 0px 1px #000031, 0px 0px 0px #00004b;\n        border: 1.8px solid rgba(0, 0, 101, 0.56);\n        height: 26px;\n        width: 26px;\n        border-radius: 15px;\n        background: #e5c100;\n        cursor: pointer;\n        -webkit-appearance: none;\n        margin-top: -7.5px; }\n      .calculator .calculator-years input:focus::-webkit-slider-runnable-track {\n        background: rgba(238, 238, 238, 0.78); }\n      .calculator .calculator-years input::-moz-range-track {\n        width: 100%;\n        height: 11.4px;\n        cursor: pointer;\n        box-shadow: 1px 1px 1px #000000, 0px 0px 1px #0d0d0d;\n        background: rgba(174, 174, 174, 0.78);\n        border-radius: 1.3px;\n        border: 0.2px solid #010101; }\n      .calculator .calculator-years input::-moz-range-thumb {\n        box-shadow: 0px 0px 1px #000031, 0px 0px 0px #00004b;\n        border: 1.8px solid rgba(0, 0, 101, 0.56);\n        height: 26px;\n        width: 26px;\n        border-radius: 15px;\n        background: #e5c100;\n        cursor: pointer; }\n      .calculator .calculator-years input::-ms-track {\n        width: 100%;\n        height: 11.4px;\n        cursor: pointer;\n        background: transparent;\n        border-color: transparent;\n        color: transparent; }\n      .calculator .calculator-years input::-ms-fill-lower {\n        background: rgba(110, 110, 110, 0.78);\n        border: 0.2px solid #010101;\n        border-radius: 2.6px;\n        box-shadow: 1px 1px 1px #000000, 0px 0px 1px #0d0d0d; }\n      .calculator .calculator-years input::-ms-fill-upper {\n        background: rgba(174, 174, 174, 0.78);\n        border: 0.2px solid #010101;\n        border-radius: 2.6px;\n        box-shadow: 1px 1px 1px #000000, 0px 0px 1px #0d0d0d; }\n      .calculator .calculator-years input::-ms-thumb {\n        box-shadow: 0px 0px 1px #000031, 0px 0px 0px #00004b;\n        border: 1.8px solid rgba(0, 0, 101, 0.56);\n        width: 26px;\n        border-radius: 15px;\n        background: #e5c100;\n        cursor: pointer;\n        height: 11.4px; }\n      .calculator .calculator-years input:focus::-ms-fill-lower {\n        background: rgba(174, 174, 174, 0.78); }\n      .calculator .calculator-years input:focus::-ms-fill-upper {\n        background: rgba(238, 238, 238, 0.78); }\n  .calculator .calculator-out {\n    width: 100%;\n    display: flex;\n    align-items: center;\n    justify-content: space-between;\n    z-index: 10; }\n    .calculator .calculator-out i.icon-arrow-graph-up-right {\n      font-size: 3em;\n      color: #e5c100;\n      z-index: 10;\n      text-shadow: 0 0 10px black; }\n    .calculator .calculator-out div {\n      min-width: 45%;\n      font-size: 2em;\n      color: white;\n      z-index: 10;\n      position: relative; }\n      .calculator .calculator-out div i {\n        color: #e5c100;\n        z-index: 10;\n        text-shadow: 0 0 10px black; }\n      .calculator .calculator-out div:after {\n        content: \"\";\n        position: absolute;\n        width: 100%;\n        height: 1px;\n        bottom: -3px;\n        border-bottom: 2px solid #e5c100;\n        left: 0;\n        box-shadow: 0 2px 6px rgba(229, 193, 0, 0.75); }\n    .calculator .calculator-out .take {\n      text-align: right; }\n", ""]);
 
 // exports
 
+
+/***/ }),
+/* 424 */,
+/* 425 */,
+/* 426 */,
+/* 427 */,
+/* 428 */,
+/* 429 */,
+/* 430 */,
+/* 431 */,
+/* 432 */,
+/* 433 */,
+/* 434 */,
+/* 435 */,
+/* 436 */,
+/* 437 */,
+/* 438 */,
+/* 439 */,
+/* 440 */,
+/* 441 */,
+/* 442 */,
+/* 443 */,
+/* 444 */,
+/* 445 */,
+/* 446 */,
+/* 447 */,
+/* 448 */,
+/* 449 */,
+/* 450 */,
+/* 451 */,
+/* 452 */,
+/* 453 */,
+/* 454 */,
+/* 455 */,
+/* 456 */,
+/* 457 */,
+/* 458 */,
+/* 459 */,
+/* 460 */,
+/* 461 */,
+/* 462 */,
+/* 463 */,
+/* 464 */,
+/* 465 */,
+/* 466 */,
+/* 467 */,
+/* 468 */,
+/* 469 */,
+/* 470 */,
+/* 471 */,
+/* 472 */,
+/* 473 */,
+/* 474 */,
+/* 475 */,
+/* 476 */,
+/* 477 */,
+/* 478 */,
+/* 479 */,
+/* 480 */,
+/* 481 */,
+/* 482 */,
+/* 483 */,
+/* 484 */,
+/* 485 */,
+/* 486 */,
+/* 487 */,
+/* 488 */,
+/* 489 */,
+/* 490 */,
+/* 491 */,
+/* 492 */,
+/* 493 */,
+/* 494 */,
+/* 495 */,
+/* 496 */,
+/* 497 */,
+/* 498 */,
+/* 499 */,
+/* 500 */,
+/* 501 */,
+/* 502 */,
+/* 503 */,
+/* 504 */,
+/* 505 */,
+/* 506 */,
+/* 507 */,
+/* 508 */,
+/* 509 */,
+/* 510 */,
+/* 511 */,
+/* 512 */,
+/* 513 */,
+/* 514 */,
+/* 515 */,
+/* 516 */,
+/* 517 */,
+/* 518 */,
+/* 519 */,
+/* 520 */,
+/* 521 */,
+/* 522 */,
+/* 523 */,
+/* 524 */,
+/* 525 */,
+/* 526 */,
+/* 527 */,
+/* 528 */,
+/* 529 */,
+/* 530 */,
+/* 531 */,
+/* 532 */,
+/* 533 */,
+/* 534 */,
+/* 535 */,
+/* 536 */,
+/* 537 */,
+/* 538 */,
+/* 539 */,
+/* 540 */,
+/* 541 */,
+/* 542 */,
+/* 543 */,
+/* 544 */,
+/* 545 */,
+/* 546 */,
+/* 547 */,
+/* 548 */,
+/* 549 */,
+/* 550 */,
+/* 551 */,
+/* 552 */,
+/* 553 */,
+/* 554 */,
+/* 555 */,
+/* 556 */,
+/* 557 */,
+/* 558 */,
+/* 559 */,
+/* 560 */,
+/* 561 */,
+/* 562 */,
+/* 563 */,
+/* 564 */,
+/* 565 */,
+/* 566 */,
+/* 567 */,
+/* 568 */,
+/* 569 */,
+/* 570 */,
+/* 571 */,
+/* 572 */,
+/* 573 */,
+/* 574 */,
+/* 575 */,
+/* 576 */,
+/* 577 */,
+/* 578 */,
+/* 579 */,
+/* 580 */,
+/* 581 */,
+/* 582 */,
+/* 583 */,
+/* 584 */,
+/* 585 */,
+/* 586 */,
+/* 587 */,
+/* 588 */,
+/* 589 */,
+/* 590 */,
+/* 591 */,
+/* 592 */,
+/* 593 */,
+/* 594 */,
+/* 595 */,
+/* 596 */,
+/* 597 */,
+/* 598 */,
+/* 599 */,
+/* 600 */,
+/* 601 */,
+/* 602 */,
+/* 603 */,
+/* 604 */,
+/* 605 */,
+/* 606 */,
+/* 607 */,
+/* 608 */,
+/* 609 */,
+/* 610 */,
+/* 611 */,
+/* 612 */,
+/* 613 */,
+/* 614 */,
+/* 615 */,
+/* 616 */,
+/* 617 */,
+/* 618 */,
+/* 619 */,
+/* 620 */,
+/* 621 */,
+/* 622 */,
+/* 623 */,
+/* 624 */,
+/* 625 */,
+/* 626 */,
+/* 627 */,
+/* 628 */,
+/* 629 */,
+/* 630 */,
+/* 631 */,
+/* 632 */,
+/* 633 */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+
+
+Object.defineProperty(exports, "__esModule", {
+    value: true
+});
+
+var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
+
+var _react = __webpack_require__(7);
+
+var _react2 = _interopRequireDefault(_react);
+
+function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
+
+function _possibleConstructorReturn(self, call) { if (!self) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return call && (typeof call === "object" || typeof call === "function") ? call : self; }
+
+function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
+
+var Calculator = function (_Component) {
+    _inherits(Calculator, _Component);
+
+    function Calculator() {
+        _classCallCheck(this, Calculator);
+
+        return _possibleConstructorReturn(this, (Calculator.__proto__ || Object.getPrototypeOf(Calculator)).apply(this, arguments));
+    }
+
+    _createClass(Calculator, [{
+        key: "highlightPackage",
+        value: function highlightPackage(target) {
+            var selected = document.getElementsByClassName("active-package")[0];
+            if (target.classList[0] === "check-package") {
+                if (selected) {
+                    selected.classList.remove('active-package');
+                }
+                target.classList.add('active-package');
+            }
+            if (target.tagName === 'I') {
+                var new_target = target.parentNode;
+                if (selected) {
+                    selected.classList.remove('active-package');
+                }
+                new_target.classList.add('active-package');
+            }
+
+            this.calculate();
+        }
+    }, {
+        key: "calculate",
+        value: function calculate() {
+            var selected = document.getElementsByClassName("active-package")[0];
+            var data = selected.dataset;
+            var min = data.min,
+                max = data.max,
+                cost = data.cost;
+            var _refs = this.refs,
+                input_coins = _refs.input_coins,
+                range_year = _refs.range_year;
+
+            var give = document.getElementById('give-value');
+            var take = document.getElementById('take-value');
+            var sale = 0;
+
+            if (+input_coins.value > +max) {
+                input_coins.value = max;
+                this.alerts("to high");
+                // console.log("to high");
+            }
+            if (+input_coins.value < +min) {
+                input_coins.value = min;
+                this.alerts("to low");
+                // console.log("");
+            }
+
+            switch (+range_year.value) {
+                case 1:
+                    sale = 864;
+                    break;
+                case 2:
+                    sale = 1257;
+                    break;
+                case 3:
+                    sale = 1634;
+                    break;
+                case 4:
+                    sale = 1934;
+                    break;
+                case 5:
+                    sale = 2149;
+                    break;
+            }
+
+            var bought = (+input_coins.value * cost).toFixed(2);
+            var sold = (+input_coins.value * sale).toFixed(2);
+
+            give.innerHTML = bought;
+            take.innerHTML = sold;
+        }
+    }, {
+        key: "alerts",
+        value: function alerts(text) {
+            var alert_container = document.getElementById("alert");
+            alert_container.innerHTML = text;
+            alert_container.style.display = "flex";
+            alert_container.style.opacity = 1;
+            setTimeout(function () {
+                alert_container.style.opacity = 0;
+                setTimeout(function () {
+                    alert_container.style.display = "none";
+                }, 500);
+            }, 1800);
+        }
+    }, {
+        key: "render",
+        value: function render() {
+            var _this2 = this;
+
+            var _props = this.props,
+                calculate = _props.calculate,
+                packages = _props.packages;
+
+            var colors = ['#f2b01e', '#ccc2c2', '#f2b01e', '#e5c100', '#b9f2ff'];
+            var logo = ["icon-star", "icon-ribbon-a", "icon-trophy", "icon-crown-king-1", "icon-diamond"];
+            var packageContainer = packages.map(function (item, index) {
+                return _react2.default.createElement(
+                    "div",
+                    {
+                        id: "logo" + index,
+                        key: index,
+                        style: { color: colors[index] },
+                        className: index === 0 ? "check-package active-package" : "check-package",
+                        "data-min": item.option.coinsMin,
+                        "data-max": item.option.coinsMax,
+                        "data-cost": item.price
+                    },
+                    _react2.default.createElement("i", { className: logo[index] })
+                );
+            });
+            return _react2.default.createElement(
+                "div",
+                { className: "calculator" },
+                _react2.default.createElement(
+                    "div",
+                    { id: "alert" },
+                    "asdas"
+                ),
+                _react2.default.createElement(
+                    "h1",
+                    null,
+                    calculate.title
+                ),
+                _react2.default.createElement(
+                    "p",
+                    null,
+                    calculate.text
+                ),
+                _react2.default.createElement(
+                    "div",
+                    { className: "calculator-body" },
+                    _react2.default.createElement(
+                        "div",
+                        { className: "calculator-top" },
+                        _react2.default.createElement("i", { className: "icon-bitcoin-circle" }),
+                        _react2.default.createElement("input", {
+                            type: "number",
+                            ref: "input_coins",
+                            onBlur: this.calculate.bind(this),
+                            placeholder: calculate.inputCoins
+                        }),
+                        _react2.default.createElement("i", { className: "icon-bitcoin-circle" })
+                    ),
+                    _react2.default.createElement(
+                        "div",
+                        { className: "calculator-package", onClick: function onClick(_ref) {
+                                var target = _ref.target;
+
+                                _this2.highlightPackage(target);
+                            } },
+                        packageContainer
+                    ),
+                    _react2.default.createElement(
+                        "div",
+                        { className: "calculator-years" },
+                        _react2.default.createElement("input", {
+                            type: "range",
+                            min: 1,
+                            max: 5,
+                            ref: "range_year",
+                            onChange: this.calculate.bind(this),
+                            defaultValue: "2"
+                        })
+                    ),
+                    _react2.default.createElement(
+                        "div",
+                        { className: "calculator-out" },
+                        _react2.default.createElement(
+                            "div",
+                            { className: "give" },
+                            _react2.default.createElement("i", { className: "icon-usd" }),
+                            _react2.default.createElement(
+                                "span",
+                                { id: "give-value" },
+                                "0"
+                            )
+                        ),
+                        _react2.default.createElement("i", { className: "icon-arrow-graph-up-right" }),
+                        _react2.default.createElement(
+                            "div",
+                            { className: "take" },
+                            _react2.default.createElement("i", { className: "icon-usd" }),
+                            _react2.default.createElement(
+                                "span",
+                                { id: "take-value" },
+                                "0"
+                            )
+                        )
+                    )
+                )
+            );
+        }
+    }]);
+
+    return Calculator;
+}(_react.Component);
+
+exports.default = Calculator;
 
 /***/ })
 /******/ ]);

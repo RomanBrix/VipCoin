@@ -2,12 +2,12 @@ import React, {Component} from 'react';
 import FooterIcons from "../../public/src/Fonts/FontsIcons/styles.css";
 
 export default class Package extends Component {
-    updatePackage(e, cost, type){
-        const range = eval("this.refs.rangeCoins"+e);
-        const coins = eval("this.refs.valueCoins"+e);
-        const price = eval("this.refs.priceCoins"+e);
+    updatePackage(id, cost, type){
+        const range = eval("this.refs.rangeCoins"+id);
+        const coins = eval("this.refs.valueCoins"+id);
+        const price = eval("this.refs.priceCoins"+id);
         if(type){
-            coins.value = range.value;
+            coins.value = +range.value;
             price.innerHTML = (cost * coins.value).toFixed(2);
         }else{
             let trueValue = 0;
@@ -39,7 +39,11 @@ export default class Package extends Component {
         const colors = ['#f2b01e','#ccc2c2','#f2b01e','#e5c100','#b9f2ff'];
         const logo = ["icon-star", "icon-ribbon-a", "icon-trophy","icon-crown-king-1","icon-diamond"];
         const packageContainer = packages[0].map((item, index)=>{
-            return <div className="package" key={ index }>
+            return <div className="package" key={ index } onClick={({target})=>{
+                     if(target.classList[0] === "package"){
+                         window.location.href = "#";
+                     }
+            }}>
                     <div className="package_logo" style={{color: colors[index]}}>
                         <i className={logo[index]}/>
                     </div>
@@ -56,7 +60,7 @@ export default class Package extends Component {
                                max={item.option.coinsMax}
                                min={item.option.coinsMin }
                                id={`valueCoins${index}`}
-                               onChange={()=>{ this.updatePackage(`${index}`, item.price, false)}}
+                               onBlur={()=>{ this.updatePackage(`${index}`, item.price, false)}}
                                step={25}
                            />
                         </span>

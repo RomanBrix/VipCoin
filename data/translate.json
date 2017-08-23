@@ -67,11 +67,7 @@
           ],
           {
             "title": "Калькулятор выгоды",
-            "inputGive": "Затрата",
-            "inputGet": "VipCoin",
-            "inputProfit": "Прибыль",
-            "inputYear1": "на",
-            "inputYear2": "год(а)",
+            "inputCoins": "VipCoin",
             "text": "Подсчитайте свою прибыль с учетом прогнозов курса VipCoin на последующие года"
           }
         ]
