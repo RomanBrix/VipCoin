@@ -40,8 +40,25 @@
           //color:black;
           color: white;
           text-decoration: none;
+          position: relative;
           &:hover{
             color: $LightGold;
+
+          }
+          &:before{
+            content: "";
+            position: absolute;
+            width: 0px;
+            height: 1px;
+            //border-bottom: 2px solid $LightGold;
+            bottom: -4px;
+            left: 0px;
+            transition: .25s all;
+            //margin-left: calc(-90%/2);
+          }
+          &:hover:before{
+            width: 30px;
+            border-bottom: 2px solid $LightGold;
           }
         }
         &:last-child{
@@ -52,7 +69,7 @@
           position: absolute;
           width: 90%;
           height: 1px;
-          border-bottom: 1px solid $LightGold;
+          border-bottom: 2px solid $LightGold;
           bottom: -3px;
           left: 50%;
           margin-left: calc(-90%/2);

@@ -98,3 +98,18 @@
 .icon-arrow-swap:before {
   content: "\e013";
 }
+.icon-star:before {
+  content: "\e014";
+}
+.icon-crown-king-1:before {
+  content: "\e015";
+}
+.icon-diamond:before {
+  content: "\e016";
+}
+.icon-trophy:before {
+  content: "\e017";
+}
+.icon-ribbon-a:before {
+  content: "\e018";
+}

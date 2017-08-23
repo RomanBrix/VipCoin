@@ -92,3 +92,9 @@
 .icon-youtube-square:before {
   content: "\e011";
 }
+.icon-arrow-graph-up-right:before {
+  content: "\e012";
+}
+.icon-arrow-swap:before {
+  content: "\e013";
+}

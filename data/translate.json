@@ -20,45 +20,43 @@
         "packages":[
           [
             {
-              "title": "Минимальный",
-              "price": 99.99,
+              "title": "Standart",
+              "price": 0.15,
               "option":{
-                "coins": 1000
+                "coinsMin": 1,
+                "coinsMax": 999
               }
             },
             {
-              "title": "Средний",
-              "price": 149.99,
+              "title": "Medium",
+              "price": 0.14,
               "option":{
-                "coins": 2000
+                "coinsMin": 1000,
+                "coinsMax": 4999
               }
             },
             {
-              "title": "Максимальный",
-              "price": 219.99,
+              "title": "Full",
+              "price": 0.13,
               "option":{
-                "coins": 3399
+                "coinsMin": 5000,
+                "coinsMax": 9999
               }
             },
             {
-              "title": "Топовый",
-              "price": 299.99,
+              "title": "Premium",
+              "price": 0.12,
               "option":{
-                "coins": 4499
+                "coinsMin": 10000,
+                "coinsMax": 14999
               }
             },
             {
-              "title": "Оптимальный",
-              "price": 299.99,
+              "title": "VIP",
+              "price": 0.10,
               "option":{
-                "coins": 4499
-              }
-            },
-            {
-              "title": "Каой-то",
-              "price": 1500,
-              "option":{
-                "coins": 4499
+                "coinsMin": 15000,
+                "coinsMax": 10000000
               }
             }
           ],
@@ -85,7 +83,15 @@
 
       "contacts":{
         "top":{
-          "head": "Обращайтесь по телефону, почте или в соц. сети"
+          "head": "Контакты"
+        },
+        "feedback": {
+          "head": "центр поддержки клиентов",
+          "inputName":"Имя",
+          "inputLName":"Фамилия",
+          "inputEmail":"E-mail",
+          "inputMsg": "Ваше сообщение",
+          "btnSend":"Отправить"
         }
       }
     },

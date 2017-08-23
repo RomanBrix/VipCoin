@@ -1,7 +1,7 @@
 const InitialState = {
     request: false,
     language: "",
-    vipcoinCost: 0.10,
+    vipcoinCost: 0.15,
     bitcoinCost: 0,
 }
 
@@ -32,7 +32,6 @@ const frontReducers = (state = InitialState, action) => {
 
             };
         case 'GET_COST_BITCOIN':
-            console.log(action.bitcoinCost);
             return {
                 request: false,
                 language: state.language,

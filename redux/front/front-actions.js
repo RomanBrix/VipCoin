@@ -29,9 +29,6 @@ export function getBitcoinCost () {
         axios.get(""+url+"")
             .then(function(res) {
                 let cost = +res.data.query.results.rate.Rate;
-                // console.log(cost.toFixed(2));
-
-
                 dispatch({type: 'GET_COST_BITCOIN',bitcoinCost: cost.toFixed(2)})
             })
             .catch((error) => {

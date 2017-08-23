@@ -6,6 +6,14 @@ export default class Top extends Component {
         const { top } = this.props;
         return(
             <div className="services">
+                <h1>{top.head}</h1>
+                <div className="right">
+                        <a href={CONTACTS.FACEBOOK}><i className="icon-facebook-alt"/></a>
+                        <a href={CONTACTS.YOUTUBE}><i className="icon-youtube"/></a>
+                        <a href={CONTACTS.INSTA}><i className="icon-instagrem"/></a>
+                        <a href={CONTACTS.TWITTER}><i className="icon-twitter-square"/></a>
+                </div>
+
                 <div className="left">
                     <a href={`tel:${CONTACTS.TELEPHONE}`}>
                         <i className="icon-phone-square"/>
@@ -20,19 +28,7 @@ export default class Top extends Component {
                         StetcukRoman@gmail.com
                     </a>
                 </div>
-                <div className="center">
-                    <h2>{ top.head }</h2>
-                </div>
-                <div className="right">
-                    <div className="right-top">
-                        <a href={CONTACTS.FACEBOOK}><i className="icon-facebook-alt"/></a>
-                        <a href={CONTACTS.YOUTUBE}><i className="icon-youtube"/></a>
-                    </div>
-                    <div className="right-bottom">
-                        <a href={CONTACTS.INSTA}><i className="icon-instagrem"/></a>
-                        <a href={CONTACTS.TWITTER}><i className="icon-twitter-square"/></a>
-                    </div>
-                </div>
+
             </div>
         )
     }

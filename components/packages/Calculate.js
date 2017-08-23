@@ -4,7 +4,7 @@ export default class Calculate extends Component {
     constructor(props){
         super(props);
         this.state = {
-            coinPrice: 0.1,
+            coinPrice: 0.15,
             valOfRange: 1,
         }
     }

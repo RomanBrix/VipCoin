@@ -1,6 +1,6 @@
 import React, {Component} from 'react';
-import FeedBack from './FeedBack';
 import Top from './Top';
+import GMap from "./GMap";
 
 export default class Container extends Component {
     render(){
@@ -9,7 +9,7 @@ export default class Container extends Component {
         return(
             <div className="content">
                 <Top top={ pages.top } />
-                <FeedBack/>
+                <GMap feedback={ pages.feedback}/>
             </div>
         )
     }

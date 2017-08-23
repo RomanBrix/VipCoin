@@ -27,8 +27,6 @@ export default class App extends Component {
     render(){
         const { setLanguage, bitcoinCost, vipcoinCost} = this.props;
         const { language, auth } = this.state;
-        console.log(bitcoinCost);
-        // console.log(this.props);
 
         const lang = translate.filter(item =>{
             return item.language === language;
