@@ -96,7 +96,8 @@
             "btnMain": "главная",
             "btnInfo": "информация",
             "btnRefill": "пополнить счет",
-            "btnSettings": "Настройки"
+            "btnSettings": "Настройки",
+            "btnExit": "выход"
           }
         },
         "info":{

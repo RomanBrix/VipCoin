@@ -25780,7 +25780,7 @@ var Header = function (_Component) {
 
         _this.setCookie('language', 'ru', { expires: 350 });
         _this.state = {
-            language: _this.getCookie("language") || "ru"
+            language: App.getCookie("language") || "ru"
         };
         props.setLanguage(_this.state.language);
         return _this;

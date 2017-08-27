@@ -15,6 +15,7 @@ import {
 export default class Header extends Component {
     constructor(props){
         super(props);
+        console.log("ads");
         this.setCookie('language', 'ru',{expires: 350});
         this.state = {
             language: this.getCookie("language") || "ru"
@@ -134,8 +135,10 @@ export default class Header extends Component {
                 <div className="login" onClick={()=>{
                     const user = this.getCookie('user');
                     console.log(user);
-                    if(user.length > 15) {
-                        window.location.href = 'profile/me.html';
+                    if(user !== undefined) {
+                        if(user.length > 15) {
+                            window.location.href = 'profile/me.html';
+                        }
                     }else{
                         toggleAuth(true)
                     }

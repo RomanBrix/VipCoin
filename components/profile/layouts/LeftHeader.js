@@ -3,9 +3,10 @@ import { PROFILE_PAGES,LOGO } from "../../../data/links";
 
 export default class LeftHeader extends Component {
 
-    render(){
-        const { head } = this.props;
-        return(
+
+    render() {
+        const {head} = this.props;
+        return (
             <div className="left-header">
                 <div className="logo">
                     <img src={`.${LOGO}`} alt="logo"/>
@@ -24,7 +25,16 @@ export default class LeftHeader extends Component {
                         {head.btnSettings}
                     </a>
                 </div>
+                <div className="exit" onClick={()=>{
+                    document.cookie= "user=1; expires=Thu, 01 Jan 1970 00:00:00 UTC; path=/";
+                    setTimeout(()=>{
+                        window.location.href = '../index.html';
+                    },200)
+
+                }}>
+                    <i className="icon-power"/> {head.btnExit}
+                </div>
             </div>
         )
     }
-}
+};

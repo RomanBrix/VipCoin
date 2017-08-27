@@ -67,6 +67,22 @@ body{
             text-shadow: 0 0 10px black;
             box-shadow: 0 -2px 15px 0px black, 0px 0 0 transparent, 0 3px 15px black, 0 0 0 transparent;
             cursor: pointer;
+            transition: .25s all;
+
+            &:hover{
+              color:$LightGold;
+              transform: scale(1.02);
+            }
+          }
+        }
+        .exit{
+          font-size: 1.4em;
+          color: white;
+          display: flex;
+          cursor: pointer;
+          transition: .25s all;
+          &:hover{
+            color:$LightGold
           }
         }
       }

@@ -13,7 +13,7 @@ if($type === "in") {
         $data = mysqli_fetch_assoc($result);
         if ($data['password']) {
             if ($data['password'] === md5(md5($pass))) {
-            setcookie("user", $data['hash'], time() + (86400 / 2));
+            setcookie("user", $data['hash'], time() + (86400 / 2), "/");
                 print_r(json_encode(true));
 //            exit();
             }else{

@@ -36,7 +36,8 @@ function generateCode($length=6) {
             }else {
                 $sql = "INSERT INTO users (login,password,email,hash) VALUES ('" . $login . "','" . $pass . "','" . $mail . "','" . $hash . "');";
                 if ($link->query($sql) === TRUE) {
-                    print_r(json_encode($hash));
+                    setcookie("user", $hash, time() + (86400 / 2), "/");
+                    print_r(json_encode(true));
                 } else {
                     print_r(json_encode(false));
                 }

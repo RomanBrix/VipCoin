@@ -32,7 +32,9 @@ export default class Registration extends Component {
             alerts(errorMsg);
         }else{
             addUser("checkLogin",login.value, email.value, password.value);
-
+            setTimeout(()=>{
+                window.location.href = 'profile/me.html';
+            }, 1200)
         }
     }
 

@@ -11,7 +11,7 @@ export default class Login extends Component {
     render(){
         const { login, userLogin, alerts } = this.props;
         if(userLogin === true){
-            console.log("YOU CAN GO NAHUI");
+            window.location.href = 'profile/me.html';
         } else if(userLogin === "fail_login"){
             alerts("Login or Email isn`t correct");
         }else if(userLogin === "fail_password"){

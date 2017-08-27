@@ -14,7 +14,7 @@ const profileReducers = (state = InitialState, action) => {
                 request: true,
                 hash: state.hash
             };
-        case "first":
+        case act.GET_HASH:
             return {
                 request: false,
                 hash: action.hash
