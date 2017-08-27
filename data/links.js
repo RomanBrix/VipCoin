@@ -22,6 +22,15 @@ export const PAGES = {
     CONTRACT_OFFER: "#",
 };
 
+
+export const PROFILE_PAGES = {
+    MAIN: "../index.html",
+    INFO: "me.html",
+    REFILL: "#",
+    SETTINGS: "#"
+
+};
+
 export const CONTACTS = {
     TELEPHONE: 380730070032,
     SKYPE: 'roma4Rock',

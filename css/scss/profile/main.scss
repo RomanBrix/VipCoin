@@ -1,0 +1,90 @@
+@import 'vars';
+@import "Fonts";
+
+body{
+  font-family: HelveticaLight;
+  padding: 0;
+  margin: 0;
+  background: $Main;
+  .Main{
+    width: 100%;
+    height: 100%;
+
+    .bg {
+      width: 500px;
+      height: 500px;
+      border-radius: 50%;
+      position: fixed;
+      left: 50%;
+      top: 20%;
+      margin-left: -250px;
+      background-size: cover;
+      opacity: .2;
+      z-index: -1;
+    }
+
+    .container {
+      //height: 1000px;
+      display: flex;
+      flex-direction: row;
+      width: 100%;
+      .left-header{
+        min-height: 100vh;
+        position: fixed;
+        left: 20px;
+        max-width: 350px;
+        top: 0;
+        background: #575757;
+        padding: 15px 10px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        box-shadow: 0 0 15px 2px #191919;
+        .logo{
+          padding: 10px;
+          margin-bottom: 75px;
+          img{
+            max-width: 300px;
+          }
+        }
+        .menu{
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+          justify-content: space-around;
+          width: 100%;
+          a{
+            padding: 10px;
+            width: 100%;
+            text-align: center;
+            font-size: 1.5em;
+            color: white;
+            text-decoration: none;
+            border-bottom: 1px solid;
+            border-top: 1px solid;
+            margin-bottom: 15px;
+            text-transform: uppercase;
+            text-shadow: 0 0 10px black;
+            box-shadow: 0 -2px 15px 0px black, 0px 0 0 transparent, 0 3px 15px black, 0 0 0 transparent;
+            cursor: pointer;
+          }
+        }
+      }
+      .right-container{
+        margin-left: 400px;
+        width: 100%;
+      }
+      h1 {
+        color: $BrightGold;
+        margin-left: 15px;
+        letter-spacing:3px;
+        text-transform: uppercase;
+        text-shadow: 0 0px 15px black;
+        z-index: 10;
+      }
+      .content {
+
+      }
+    }
+  }
+}

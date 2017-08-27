@@ -89,6 +89,19 @@
           "inputMsg": "Ваше сообщение",
           "btnSend":"Отправить"
         }
+      },
+      "profile":{
+        "layouts":{
+          "leftHeader":{
+            "btnMain": "главная",
+            "btnInfo": "информация",
+            "btnRefill": "пополнить счет",
+            "btnSettings": "Настройки"
+          }
+        },
+        "info":{
+
+        }
       }
     },
     "layouts":{
@@ -118,7 +131,7 @@
           "btnForgotPass": "Забыли пароль?"
         },
         "login":{
-          "inputLogin": "Логин",
+          "inputLogin": "Логин или E-mail",
           "inputPassword": "Пароль",
           "btnEnter": "Войти"
         },
@@ -127,6 +140,7 @@
           "inputEmail": "E-Mail",
           "inputPassword": "Пароль",
           "inputRepeatPassword": "Повторите пароль",
+          "checkLegal": "Согласен с правилами сайта",
           "btnRegistration": "Регестрация"
         },
         "forgot": {

@@ -258,7 +258,7 @@ export default class GMap extends Component {
     handleMapLoad(map) {
         this._mapComponent = map;
         if (map) {
-            console.log(map.getZoom());
+            // console.log(map.getZoom());
         }
     }
 

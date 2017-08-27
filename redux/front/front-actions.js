@@ -1,6 +1,5 @@
 import axios from 'axios';
-import translate from "../../data/translate.json";
-
+import { GLOB_URL, act } from "./actionsAndUrl";
 
 // export function getNews () {
 //     return dispatch =>{
@@ -19,9 +18,10 @@ import translate from "../../data/translate.json";
 
 export function setLanguage (lang) {
     return dispatch => {
-        dispatch({type: 'SET_LANGUAGE', lang});
+        dispatch({type: act.SET_LANGUAGE, lang});
     }
 }
+
 export function getBitcoinCost () {
     return dispatch => {
         // const url = "https://api.cryptonator.com/api/full/btc-usd";
@@ -29,10 +29,48 @@ export function getBitcoinCost () {
         axios.get(""+url+"")
             .then(function(res) {
                 let cost = +res.data.query.results.rate.Rate;
-                dispatch({type: 'GET_COST_BITCOIN',bitcoinCost: cost.toFixed(2)})
+                dispatch({type: act.BITCOIN_COST,bitcoinCost: cost.toFixed(2)})
             })
             .catch((error) => {
                 console.log(error);
             });
+    }
+}
+
+
+export function addUser (type,login, mail, pass) {
+    return dispatch => {
+        dispatch({type: 'REQUEST'});
+
+
+        axios.post(`${GLOB_URL}registration.php`, {
+            type,
+            login,
+            mail,
+            pass,
+        })
+            .then(function(res) {
+                // console.log( type ,res.data);
+                    dispatch({type: act.USER_CHECK_LOGIN, userState: res.data})
+
+            })
+            .catch((error) => {
+                console.log(error);
+            });
+    }
+}
+
+export function loginUser(type, log, pass) {
+    return dispatch => {
+        dispatch({type: 'REQUEST'});
+
+        axios.get(`${GLOB_URL}login.php`, {params: {type, log, pass}})
+            .then((res) => {
+                console.log(res);
+                dispatch({type: act.USER_LOGIN, userLogin: res.data});
+            })
+            .catch((error) => {
+                console.log(error);
+            })
     }
 }

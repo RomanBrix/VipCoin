@@ -1,7 +1,9 @@
 import React, {Component} from 'react';
 import { connect } from 'react-redux';
 import {
-    setLanguage
+    setLanguage,
+    addUser,
+    loginUser
 } from '../../redux/front/front-actions.js';
 import App from './App';
 
@@ -12,6 +14,7 @@ const mapStateToProps = ( state ) => {
 export default connect(
     mapStateToProps,
     {
-        setLanguage
-
+        setLanguage,
+        addUser,
+        loginUser
     })(App);

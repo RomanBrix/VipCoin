@@ -131,7 +131,15 @@ export default class Header extends Component {
                         </li>
                     </ul>
                 </div>
-                <div className="login" onClick={()=>{ toggleAuth(true) }}>
+                <div className="login" onClick={()=>{
+                    const user = this.getCookie('user');
+                    console.log(user);
+                    if(user.length > 15) {
+                        window.location.href = 'profile/me.html';
+                    }else{
+                        toggleAuth(true)
+                    }
+                }}>
                     <div className="registration">
                         <span className="icon-sign-in"/> {layouts.header.login.log}
                     </div>

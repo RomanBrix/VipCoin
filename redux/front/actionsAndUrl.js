@@ -1,0 +1,10 @@
+export const GLOB_URL = "http://localhost:8888/vipcoin/";
+
+export const act = {
+    REQUEST: "REQUEST",
+    SET_LANGUAGE: "SET_LANGUAGE",
+    GET_VIPCOIN_COST: "GET_COST_VIPCOIN",
+    BITCOIN_COST: "GET_COST_BITCOIN",
+    USER_CHECK_LOGIN: "CHECK_LOGIN",
+    USER_LOGIN: "LOGIN_REQUEST"
+};

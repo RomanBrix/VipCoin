@@ -1,7 +1,6 @@
 import React, {Component} from 'react';
 import translate from "../../data/translate.json";
 import FooterIcons from "../../public/src/Fonts/FontsIcons/styles.css";
-// import FontBitCoin from "../../public/src/main/FontBitcoin/styles.css";
 import { BG_COIN } from '../../data/links';
 import Header from '../layouts/Header';
 import Footer from '../layouts/Footer';
@@ -25,7 +24,16 @@ export default class App extends Component {
     }
 
     render(){
-        const { setLanguage, bitcoinCost, vipcoinCost} = this.props;
+        const {
+            setLanguage,
+            bitcoinCost,
+            vipcoinCost,
+            addUser,
+            loginUser,
+            userState,
+            userLogin,
+            request
+        } = this.props;
         const { language, auth } = this.state;
 
         const lang = translate.filter(item =>{
@@ -60,6 +68,11 @@ export default class App extends Component {
                     auth={ layouts.auth }
                     toggleAuth={ this.toggleAuth.bind(this) }
                     style={ style }
+                    addUser={ addUser }
+                    userState={ userState }
+                    request={ request }
+                    loginUser={ loginUser }
+                    userLogin={ userLogin }
                 />
                 <Header
                     packages={true}

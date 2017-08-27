@@ -17,6 +17,27 @@
     cursor: pointer;
     color: $LightGold;
   }
+  .alerts{
+    display: none;
+    opacity: 0;
+    position: fixed;
+    right: 10px;
+    top: 15px;
+    border: 2px solid #fcf8e3;
+    min-width: 220px;
+    max-width: 300px;
+    padding: 10px;
+    min-height: 75px;
+    background-color: #e5c100;
+    z-index: 10000000000;
+    color: #8a6d3b;
+    border-radius: 5px;
+    font-size: 1.3em;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    transition: .25s;
+  }
   .auth-container{
     position: relative;
     min-width: 400px;
