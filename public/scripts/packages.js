@@ -12503,7 +12503,8 @@ var act = exports.act = {
     GET_VIPCOIN_COST: "GET_COST_VIPCOIN",
     BITCOIN_COST: "GET_COST_BITCOIN",
     USER_CHECK_LOGIN: "CHECK_LOGIN",
-    USER_LOGIN: "LOGIN_REQUEST"
+    USER_LOGIN: "LOGIN_REQUEST",
+    PACKAGES: "GET_PACKAGES"
 };
 
 /***/ }),
@@ -12516,10 +12517,12 @@ var act = exports.act = {
 Object.defineProperty(exports, "__esModule", {
     value: true
 });
-var GLOB_URL = exports.GLOB_URL = "http://localhost:8888/vipcoin/profile";
+var GLOB_URL = exports.GLOB_URL = "http://localhost:8888/vipcoin/profile/";
 
 var act = exports.act = {
-    GET_HASH: "GET_HASH"
+    GET_HASH: "GET_HASH",
+    PACKAGES: "GET_PACKAGES",
+    USER: "GET_USER_INFO"
 };
 
 /***/ }),
@@ -12604,6 +12607,7 @@ exports.setLanguage = setLanguage;
 exports.getBitcoinCost = getBitcoinCost;
 exports.addUser = addUser;
 exports.loginUser = loginUser;
+exports.getPackages = getPackages;
 
 var _axios = __webpack_require__(109);
 
@@ -12657,7 +12661,6 @@ function addUser(type, login, mail, pass) {
             mail: mail,
             pass: pass
         }).then(function (res) {
-            // console.log( type ,res.data);
             dispatch({ type: _actionsAndUrl.act.USER_CHECK_LOGIN, userState: res.data });
         }).catch(function (error) {
             console.log(error);
@@ -12670,8 +12673,19 @@ function loginUser(type, log, pass) {
         dispatch({ type: 'REQUEST' });
 
         _axios2.default.get(_actionsAndUrl.GLOB_URL + "login.php", { params: { type: type, log: log, pass: pass } }).then(function (res) {
-            console.log(res);
             dispatch({ type: _actionsAndUrl.act.USER_LOGIN, userLogin: res.data });
+        }).catch(function (error) {
+            console.log(error);
+        });
+    };
+}
+
+function getPackages(type) {
+    return function (dispatch) {
+        dispatch({ type: 'REQUEST' });
+
+        _axios2.default.get(_actionsAndUrl.GLOB_URL + "packages.php", { params: { type: type } }).then(function (res) {
+            dispatch({ type: _actionsAndUrl.act.PACKAGES, packages: res.data });
         }).catch(function (error) {
             console.log(error);
         });
@@ -12682,7 +12696,7 @@ function loginUser(type, log, pass) {
 /* 123 */
 /***/ (function(module, exports) {
 
-module.exports = [{"language":"ru","pages":{"main":{"top":{"head":"Ваш шедевр готов!","text":"С другой стороны консультация с широким активом способствует подготовки и реализации модели развития. Задача организации, в особенности же консультация с широким активом в значительной степени обуславливает создание системы обучения кадров, соответствует насущным потребностям. Задача организации, в особенности же постоянный количественный рост и сфера нашей активности обеспечивает широкому кругу"},"progress":{"head":"ЦЕЛЬ Vip Coin","title":"Официальный запуск сети после продажи "}},"help":{},"packages":{"packages":[[{"title":"Standart","price":0.15,"option":{"coinsMin":1,"coinsMax":999}},{"title":"Medium","price":0.14,"option":{"coinsMin":1000,"coinsMax":4999}},{"title":"Full","price":0.13,"option":{"coinsMin":5000,"coinsMax":9999}},{"title":"Premium","price":0.12,"option":{"coinsMin":10000,"coinsMax":14999}},{"title":"VIP","price":0.1,"option":{"coinsMin":15000,"coinsMax":10000000}}],[{"title":"ПАКЕТЫ"}],{"title":"Калькулятор выгоды","inputCoins":"VipCoin","text":"Подсчитайте свою прибыль с учетом прогнозов курса VipCoin на последующие года"}]},"FAQ":{},"news":{},"contacts":{"top":{"head":"Контакты"},"feedback":{"head":"центр поддержки клиентов","inputName":"Имя","inputLName":"Фамилия","inputEmail":"E-mail","inputMsg":"Ваше сообщение","btnSend":"Отправить"}},"profile":{"layouts":{"leftHeader":{"btnMain":"главная","btnInfo":"информация","btnRefill":"пополнить счет","btnSettings":"Настройки","btnExit":"выход"}},"info":{}}},"layouts":{"header":{"btnMain":"ГЛАВНАЯ","btnAbout":"О НАС","btnPackages":"ПАКЕТЫ","btnFAQ":"Помощь","btnNews":"Новости","btnContacts":"Контакты","login":{"log":"Личный кабинет"}},"footer":{"pages":{"whitePage":"Белая Бумага","legalPage":"Юридические Страницы","contractOffer":"Предложение по Контракту"},"feedback":"Обратная связь"},"auth":{"header":{"btnLogin":"Войти","btnRegistration":"Регестрация","btnForgotPass":"Забыли пароль?"},"login":{"inputLogin":"Логин или E-mail","inputPassword":"Пароль","btnEnter":"Войти"},"registration":{"inputLogin":"Логин","inputEmail":"E-Mail","inputPassword":"Пароль","inputRepeatPassword":"Повторите пароль","checkLegal":"Согласен с правилами сайта","btnRegistration":"Регестрация"},"forgot":{"text":"Отправить пароль на почту","inputEmail":"E-Mail","btnSend":"Отправить","success":"E-mail отправлен!","error":"E-mail не найден"}}}}]
+module.exports = [{"language":"ru","pages":{"main":{"top":{"head":"Ваш шедевр готов!","text":"С другой стороны консультация с широким активом способствует подготовки и реализации модели развития. Задача организации, в особенности же консультация с широким активом в значительной степени обуславливает создание системы обучения кадров, соответствует насущным потребностям. Задача организации, в особенности же постоянный количественный рост и сфера нашей активности обеспечивает широкому кругу"},"progress":{"head":"ЦЕЛЬ Vip Coin","title":"Официальный запуск сети после продажи "}},"help":{},"packages":{"packages":[{"title":"ПАКЕТЫ"},{"title":"Калькулятор выгоды","inputCoins":"VipCoin","text":"Подсчитайте свою прибыль с учетом прогнозов курса VipCoin на последующие года"}]},"FAQ":{},"news":{},"contacts":{"top":{"head":"Контакты"},"feedback":{"head":"центр поддержки клиентов","inputName":"Имя","inputLName":"Фамилия","inputEmail":"E-mail","inputMsg":"Ваше сообщение","btnSend":"Отправить"}},"profile":{"layouts":{"leftHeader":{"btnMain":"главная","btnInfo":"информация","btnRefill":"пополнить счет","btnSettings":"Настройки","btnExit":"выход"}},"info":{}}},"layouts":{"header":{"btnMain":"ГЛАВНАЯ","btnAbout":"О НАС","btnPackages":"ПАКЕТЫ","btnFAQ":"Помощь","btnNews":"Новости","btnContacts":"Контакты","login":{"log":"Личный кабинет"}},"footer":{"pages":{"whitePage":"Белая Бумага","legalPage":"Юридические Страницы","contractOffer":"Предложение по Контракту"},"feedback":"Обратная связь"},"auth":{"header":{"btnLogin":"Войти","btnRegistration":"Регестрация","btnForgotPass":"Забыли пароль?"},"login":{"inputLogin":"Логин или E-mail","inputPassword":"Пароль","btnEnter":"Войти"},"registration":{"inputLogin":"Логин","inputEmail":"E-Mail","inputPassword":"Пароль","inputRepeatPassword":"Повторите пароль","checkLegal":"Согласен с правилами сайта","btnRegistration":"Регестрация"},"forgot":{"text":"Отправить пароль на почту","inputEmail":"E-Mail","btnSend":"Отправить","success":"E-mail отправлен!","error":"E-mail не найден"}}}}]
 
 /***/ }),
 /* 124 */,
@@ -13618,6 +13632,8 @@ Object.defineProperty(exports, "__esModule", {
     value: true
 });
 exports.getHash = getHash;
+exports.getPackages = getPackages;
+exports.getUserInfo = getUserInfo;
 
 var _axios = __webpack_require__(109);
 
@@ -13630,6 +13646,30 @@ function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { de
 function getHash(hash) {
     return function (dispatch) {
         dispatch({ type: _actionsAndUrl.act.GET_HASH, hash: hash });
+    };
+}
+
+function getPackages(type) {
+    return function (dispatch) {
+        dispatch({ type: 'REQUEST' });
+
+        _axios2.default.get(_actionsAndUrl.GLOB_URL + 'packages.php', { params: { type: type } }).then(function (res) {
+            dispatch({ type: _actionsAndUrl.act.PACKAGES, packages: res.data });
+        }).catch(function (error) {
+            console.log(error);
+        });
+    };
+}
+
+function getUserInfo(type, hash) {
+    return function (dispatch) {
+        dispatch({ type: 'REQUEST' });
+
+        _axios2.default.get(_actionsAndUrl.GLOB_URL + 'userInfo.php', { params: { type: type, hash: hash } }).then(function (res) {
+            dispatch({ type: _actionsAndUrl.act.USER, user: res.data });
+        }).catch(function (error) {
+            console.log(error);
+        });
     };
 }
 
@@ -26199,7 +26239,8 @@ var InitialState = {
     vipcoinCost: 0.15,
     bitcoinCost: 0,
     userState: 'a',
-    userLogin: false
+    userLogin: false,
+    packages: []
 };
 
 var frontReducers = function frontReducers() {
@@ -26215,8 +26256,11 @@ var frontReducers = function frontReducers() {
                 vipcoinCost: state.vipcoinCost,
                 bitcoinCost: state.bitcoinCost,
                 userState: state.userState,
-                userLogin: state.userLogin
+                userLogin: state.userLogin,
+                packages: state.packages
+
             };
+
         case _actionsAndUrl.act.SET_LANGUAGE:
             return {
                 request: false,
@@ -26224,9 +26268,10 @@ var frontReducers = function frontReducers() {
                 vipcoinCost: state.vipcoinCost,
                 bitcoinCost: state.bitcoinCost,
                 userState: state.userState,
-                userLogin: state.userLogin
-
+                userLogin: state.userLogin,
+                packages: state.packages
             };
+
         case _actionsAndUrl.act.GET_VIPCOIN_COST:
             return {
                 request: false,
@@ -26234,7 +26279,8 @@ var frontReducers = function frontReducers() {
                 vipcoinCost: action.vipcoinCost,
                 bitcoinCost: state.bitcoinCost,
                 userState: state.userState,
-                userLogin: state.userLogin
+                userLogin: state.userLogin,
+                packages: state.packages
 
             };
         case _actionsAndUrl.act.BITCOIN_COST:
@@ -26244,7 +26290,8 @@ var frontReducers = function frontReducers() {
                 vipcoinCost: state.vipcoinCost,
                 bitcoinCost: action.bitcoinCost,
                 userState: state.userState,
-                userLogin: state.userLogin
+                userLogin: state.userLogin,
+                packages: state.packages
 
             };
 
@@ -26255,7 +26302,9 @@ var frontReducers = function frontReducers() {
                 vipcoinCost: state.vipcoinCost,
                 bitcoinCost: state.bitcoinCost,
                 userState: action.userState,
-                userLogin: state.userLogin
+                userLogin: state.userLogin,
+                packages: state.packages
+
             };
         case _actionsAndUrl.act.USER_LOGIN:
             return {
@@ -26264,7 +26313,19 @@ var frontReducers = function frontReducers() {
                 vipcoinCost: state.vipcoinCost,
                 bitcoinCost: state.bitcoinCost,
                 userState: state.userState,
-                userLogin: action.userLogin
+                userLogin: action.userLogin,
+                packages: state.packages
+
+            };
+        case _actionsAndUrl.act.PACKAGES:
+            return {
+                request: false,
+                language: state.language,
+                vipcoinCost: state.vipcoinCost,
+                bitcoinCost: state.bitcoinCost,
+                userState: state.userState,
+                userLogin: state.userLogin,
+                packages: action.packages
             };
 
         default:
@@ -27159,7 +27220,10 @@ var _actionsAndUrl = __webpack_require__(116);
 
 var InitialState = {
     request: false,
-    hash: false
+    hash: false,
+    vipcoinCost: 0.15,
+    packages: [],
+    user: []
 };
 
 var profileReducers = function profileReducers() {
@@ -27171,15 +27235,41 @@ var profileReducers = function profileReducers() {
         case _actionsAndUrl.act.REQUEST:
             return {
                 request: true,
-                hash: state.hash
+                hash: state.hash,
+                vipcoinCost: state.vipcoinCost,
+                packages: state.packages,
+                user: state.user
+
             };
         case _actionsAndUrl.act.GET_HASH:
             return {
                 request: false,
-                hash: action.hash
+                hash: action.hash,
+                vipcoinCost: state.vipcoinCost,
+                packages: state.packages,
+                user: state.user
+
+            };
+        case _actionsAndUrl.act.PACKAGES:
+            return {
+                request: false,
+                hash: state.hash,
+                vipcoinCost: state.vipcoinCost,
+                packages: action.packages,
+                user: state.user
+
+            };
+        case _actionsAndUrl.act.USER:
+            return {
+                request: false,
+                hash: state.hash,
+                vipcoinCost: state.vipcoinCost,
+                packages: state.packages,
+                user: action.user
             };
         default:
             return state;
+
     }
 };
 
@@ -27364,7 +27454,6 @@ var Header = function (_Component) {
 
         var _this = _possibleConstructorReturn(this, (Header.__proto__ || Object.getPrototypeOf(Header)).call(this, props));
 
-        console.log("ads");
         _this.setCookie('language', 'ru', { expires: 350 });
         _this.state = {
             language: _this.getCookie("language") || "ru"
@@ -28824,7 +28913,8 @@ exports.default = (0, _reactRedux.connect)(mapStateToProps, {
     setLanguage: _frontActions.setLanguage,
     getBitcoinCost: _frontActions.getBitcoinCost,
     addUser: _frontActions.addUser,
-    loginUser: _frontActions.loginUser
+    loginUser: _frontActions.loginUser,
+    getPackages: _frontActions.getPackages
 
 })(_App2.default);
 
@@ -28888,6 +28978,7 @@ var App = function (_Component) {
         var _this = _possibleConstructorReturn(this, (App.__proto__ || Object.getPrototypeOf(App)).call(this, props));
 
         props.getBitcoinCost();
+        props.getPackages("package");
         _this.state = {
             language: props.language || "ru",
             auth: false
@@ -28913,11 +29004,13 @@ var App = function (_Component) {
                 loginUser = _props.loginUser,
                 userState = _props.userState,
                 userLogin = _props.userLogin,
-                request = _props.request;
+                request = _props.request,
+                packages = _props.packages;
             var _state = this.state,
                 language = _state.language,
                 auth = _state.auth;
 
+            console.log(packages);
 
             var lang = _translate2.default.filter(function (item) {
                 return item.language === language;
@@ -28968,7 +29061,8 @@ var App = function (_Component) {
                     _react2.default.createElement(_Container2.default, {
                         pages: pages.packages,
                         vipcoinCost: vipcoinCost,
-                        bitcoinCost: bitcoinCost
+                        bitcoinCost: bitcoinCost,
+                        packages: packages
                     })
                 ),
                 _react2.default.createElement(_Footer2.default, { footer: layouts.footer })
@@ -29029,7 +29123,8 @@ var Container = function (_Component) {
             var _props = this.props,
                 pages = _props.pages,
                 vipcoinCost = _props.vipcoinCost,
-                bitcoinCost = _props.bitcoinCost;
+                bitcoinCost = _props.bitcoinCost,
+                packages = _props.packages;
 
 
             return _react2.default.createElement(
@@ -29057,10 +29152,11 @@ var Container = function (_Component) {
                         bitcoinCost
                     )
                 ),
-                _react2.default.createElement(_Package2.default, { packages: pages.packages }),
+                _react2.default.createElement(_Package2.default, { package_title: pages.packages[0], packages: packages }),
                 _react2.default.createElement(_Calculator2.default, {
-                    calculate: pages.packages[2],
-                    packages: pages.packages[0]
+                    calculate_title: pages.packages[1]
+                    // packages={ pages.packages[0]}
+                    , packages: packages
                 })
             );
         }
@@ -29147,11 +29243,15 @@ var Package = function (_Component) {
         value: function render() {
             var _this2 = this;
 
-            var packages = this.props.packages;
+            var _props = this.props,
+                packages = _props.packages,
+                package_title = _props.package_title;
 
             var colors = ['#f2b01e', '#ccc2c2', '#f2b01e', '#e5c100', '#b9f2ff'];
             var logo = ["icon-star", "icon-ribbon-a", "icon-trophy", "icon-crown-king-1", "icon-diamond"];
-            var packageContainer = packages[0].map(function (item, index) {
+            var packageContainer = packages.map(function (item, index) {
+                var minimum = +item.minCoins;
+                var rand = Math.floor(Math.random() * 600) + 100;
                 return _react2.default.createElement(
                     "div",
                     { className: "package", key: index, onClick: function onClick(_ref) {
@@ -29169,7 +29269,7 @@ var Package = function (_Component) {
                     _react2.default.createElement(
                         "h3",
                         null,
-                        item.title
+                        item.name
                     ),
                     _react2.default.createElement(
                         "div",
@@ -29185,12 +29285,12 @@ var Package = function (_Component) {
                             _react2.default.createElement("input", {
                                 type: "number",
                                 ref: "valueCoins" + index,
-                                defaultValue: item.option.coinsMin + 250,
-                                max: item.option.coinsMax,
-                                min: item.option.coinsMin,
+                                defaultValue: minimum + rand,
+                                max: item.maxCoins,
+                                min: item.minCoins,
                                 id: "valueCoins" + index,
                                 onBlur: function onBlur() {
-                                    _this2.updatePackage("" + index, item.price, false);
+                                    _this2.updatePackage("" + index, item.oneCoinCost, false);
                                 },
                                 step: 25
                             })
@@ -29208,7 +29308,7 @@ var Package = function (_Component) {
                                 "for 1 VipCoin"
                             ),
                             _react2.default.createElement("i", { className: "icon-usd" }),
-                            item.price
+                            item.oneCoinCost
                         ),
                         _react2.default.createElement(
                             "div",
@@ -29222,19 +29322,19 @@ var Package = function (_Component) {
                             _react2.default.createElement(
                                 "span",
                                 { className: "price", ref: "priceCoins" + index },
-                                (item.price * (item.option.coinsMin + 250)).toFixed(2)
+                                (item.oneCoinCost * (minimum + rand)).toFixed(2)
                             )
                         )
                     ),
                     index !== 4 ? _react2.default.createElement("input", {
                         type: "range",
-                        min: item.option.coinsMin,
-                        max: item.option.coinsMax,
+                        min: item.minCoins,
+                        max: item.maxCoins,
                         ref: "rangeCoins" + index,
-                        defaultValue: item.option.coinsMin + 250,
+                        defaultValue: minimum + rand,
                         className: "coins-range",
                         onChange: function onChange() {
-                            _this2.updatePackage("" + index, item.price, true);
+                            _this2.updatePackage("" + index, item.oneCoinCost, true);
                         }
                     }) : _react2.default.createElement(
                         "p",
@@ -29249,7 +29349,7 @@ var Package = function (_Component) {
                 _react2.default.createElement(
                     "h1",
                     null,
-                    packages[1][0].title
+                    package_title.title
                 ),
                 _react2.default.createElement(
                     "div",
@@ -29350,7 +29450,6 @@ var Calculator = function (_Component) {
             var give = document.getElementById('give-value');
             var take = document.getElementById('take-value');
             var sale = 0;
-
             if (+input_coins.value > +max) {
                 input_coins.value = max;
                 this.alerts("to high");
@@ -29364,19 +29463,19 @@ var Calculator = function (_Component) {
 
             switch (+range_year.value) {
                 case 1:
-                    sale = 864;
+                    sale = 86;
                     break;
                 case 2:
-                    sale = 1257;
+                    sale = 268;
                     break;
                 case 3:
-                    sale = 1634;
+                    sale = 421;
                     break;
                 case 4:
-                    sale = 1934;
+                    sale = 836;
                     break;
                 case 5:
-                    sale = 2149;
+                    sale = 1048;
                     break;
             }
 
@@ -29406,8 +29505,9 @@ var Calculator = function (_Component) {
             var _this2 = this;
 
             var _props = this.props,
-                calculate = _props.calculate,
+                calculate_title = _props.calculate_title,
                 packages = _props.packages;
+
 
             var colors = ['#f2b01e', '#ccc2c2', '#f2b01e', '#e5c100', '#b9f2ff'];
             var logo = ["icon-star", "icon-ribbon-a", "icon-trophy", "icon-crown-king-1", "icon-diamond"];
@@ -29419,9 +29519,9 @@ var Calculator = function (_Component) {
                         key: index,
                         style: { color: colors[index] },
                         className: index === 0 ? "check-package active-package" : "check-package",
-                        "data-min": item.option.coinsMin,
-                        "data-max": item.option.coinsMax,
-                        "data-cost": item.price
+                        "data-min": +item.minCoins,
+                        "data-max": +item.maxCoins,
+                        "data-cost": +item.oneCoinCost
                     },
                     _react2.default.createElement("i", { className: logo[index] })
                 );
@@ -29437,12 +29537,12 @@ var Calculator = function (_Component) {
                 _react2.default.createElement(
                     "h1",
                     null,
-                    calculate.title
+                    calculate_title.title
                 ),
                 _react2.default.createElement(
                     "p",
                     null,
-                    calculate.text
+                    calculate_title.text
                 ),
                 _react2.default.createElement(
                     "div",
@@ -29455,7 +29555,7 @@ var Calculator = function (_Component) {
                             type: "number",
                             ref: "input_coins",
                             onBlur: this.calculate.bind(this),
-                            placeholder: calculate.inputCoins
+                            placeholder: calculate_title.inputCoins
                         }),
                         _react2.default.createElement("i", { className: "icon-bitcoin-circle" })
                     ),
@@ -29555,7 +29655,7 @@ exports = module.exports = __webpack_require__(22)(undefined);
 
 
 // module
-exports.push([module.i, ".currency {\n  position: fixed;\n  top: 70px;\n  color: white;\n  padding: 5px;\n  padding-left: 10px;\n  z-index: 101;\n  background-color: rgba(87, 87, 87, 0.7);\n  border-bottom-right-radius: 5px; }\n  .currency div {\n    display: flex;\n    justify-content: flex-start;\n    align-items: center; }\n    .currency div i {\n      font-size: 1.2em;\n      margin: 0 3px; }\n\n.packages {\n  padding-top: 75px;\n  z-index: 10; }\n  .packages h1 {\n    text-align: center;\n    z-index: 10; }\n  .packages .all_packages {\n    display: flex;\n    flex-direction: column;\n    justify-content: center;\n    align-items: center;\n    z-index: 10; }\n    .packages .all_packages .top {\n      display: flex;\n      width: 100%;\n      justify-content: space-around;\n      align-items: center;\n      z-index: 10;\n      margin-bottom: 15px;\n      flex-wrap: wrap; }\n    .packages .all_packages .center {\n      display: flex;\n      width: 100%;\n      justify-content: center;\n      align-items: center;\n      z-index: 10;\n      margin-bottom: 15px; }\n    .packages .all_packages .bottom {\n      display: flex;\n      width: 100%;\n      justify-content: space-around;\n      align-items: center;\n      z-index: 10;\n      flex-wrap: wrap; }\n    .packages .all_packages .package {\n      display: flex;\n      flex-direction: column;\n      align-items: center;\n      font-size: 1.3em;\n      color: #ccac02;\n      padding: 10px 0;\n      box-shadow: rgba(229, 193, 0, 0.15) 0 11px 35px;\n      background-color: rgba(87, 87, 87, 0.9);\n      transition: .25s all;\n      margin-bottom: 15px;\n      cursor: pointer; }\n      .packages .all_packages .package:hover {\n        transform: scale(1.02);\n        box-shadow: rgba(229, 193, 0, 0.3) 0 15px 50px; }\n      .packages .all_packages .package .package_logo {\n        margin-top: 15px;\n        font-size: 5em;\n        text-shadow: 0 0 10px black; }\n      .packages .all_packages .package h3 {\n        padding: 10px;\n        background-color: #e5c100;\n        color: white;\n        width: 75%;\n        text-align: center;\n        letter-spacing: 3px;\n        text-shadow: 0 0 10px black; }\n      .packages .all_packages .package .options {\n        margin-bottom: 15px; }\n        .packages .all_packages .package .options .getCoins {\n          position: relative;\n          margin-left: 80px;\n          transition: .25s all; }\n          .packages .all_packages .package .options .getCoins label {\n            position: relative; }\n            .packages .all_packages .package .options .getCoins label .icon-bitcoin-circle {\n              position: absolute;\n              top: -16px;\n              font-size: 2em;\n              text-shadow: 0 0 10px black; }\n          .packages .all_packages .package .options .getCoins input {\n            display: inline-block;\n            width: 170px;\n            color: #e5c100;\n            font-size: 32px;\n            font-weight: 500;\n            text-align: left;\n            padding-left: 40px;\n            border-width: initial;\n            border-style: none;\n            border-color: initial;\n            border-image: initial;\n            background: transparent;\n            position: relative;\n            -moz-appearance: textfield; }\n            .packages .all_packages .package .options .getCoins input::-webkit-outer-spin-button, .packages .all_packages .package .options .getCoins input::-webkit-inner-spin-button {\n              -webkit-appearance: none; }\n            .packages .all_packages .package .options .getCoins input:focus {\n              outline: none; }\n      .packages .all_packages .package .summ {\n        display: flex;\n        width: 100%;\n        justify-content: space-between;\n        background: #e5c100;\n        color: white;\n        margin-bottom: 25px; }\n        .packages .all_packages .package .summ div {\n          padding: 0 20px;\n          text-align: center; }\n          .packages .all_packages .package .summ div p {\n            margin: 10px;\n            font-size: .7em;\n            text-transform: uppercase;\n            letter-spacing: 1px; }\n      .packages .all_packages .package .coins-range {\n        -webkit-appearance: none;\n        margin: 7.3px 0;\n        width: 80%;\n        margin-bottom: 15px; }\n        .packages .all_packages .package .coins-range:focus {\n          outline: none; }\n        .packages .all_packages .package .coins-range::-webkit-slider-runnable-track {\n          width: 100%;\n          height: 11.4px;\n          cursor: pointer;\n          box-shadow: 1px 1px 1px #000000, 0px 0px 1px #0d0d0d;\n          background: rgba(174, 174, 174, 0.78);\n          border-radius: 1.3px;\n          border: 0.2px solid #010101; }\n        .packages .all_packages .package .coins-range::-webkit-slider-thumb {\n          box-shadow: 0px 0px 1px #000031, 0px 0px 0px #00004b;\n          border: 1.8px solid rgba(0, 0, 101, 0.56);\n          height: 26px;\n          width: 26px;\n          border-radius: 15px;\n          background: #e5c100;\n          cursor: pointer;\n          -webkit-appearance: none;\n          margin-top: -7.5px; }\n        .packages .all_packages .package .coins-range:focus::-webkit-slider-runnable-track {\n          background: rgba(238, 238, 238, 0.78); }\n        .packages .all_packages .package .coins-range::-moz-range-track {\n          width: 100%;\n          height: 11.4px;\n          cursor: pointer;\n          box-shadow: 1px 1px 1px #000000, 0px 0px 1px #0d0d0d;\n          background: rgba(174, 174, 174, 0.78);\n          border-radius: 1.3px;\n          border: 0.2px solid #010101; }\n        .packages .all_packages .package .coins-range::-moz-range-thumb {\n          box-shadow: 0px 0px 1px #000031, 0px 0px 0px #00004b;\n          border: 1.8px solid rgba(0, 0, 101, 0.56);\n          height: 26px;\n          width: 26px;\n          border-radius: 15px;\n          background: #e5c100;\n          cursor: pointer; }\n        .packages .all_packages .package .coins-range::-ms-track {\n          width: 100%;\n          height: 11.4px;\n          cursor: pointer;\n          background: transparent;\n          border-color: transparent;\n          color: transparent; }\n        .packages .all_packages .package .coins-range::-ms-fill-lower {\n          background: rgba(110, 110, 110, 0.78);\n          border: 0.2px solid #010101;\n          border-radius: 2.6px;\n          box-shadow: 1px 1px 1px #000000, 0px 0px 1px #0d0d0d; }\n        .packages .all_packages .package .coins-range::-ms-fill-upper {\n          background: rgba(174, 174, 174, 0.78);\n          border: 0.2px solid #010101;\n          border-radius: 2.6px;\n          box-shadow: 1px 1px 1px #000000, 0px 0px 1px #0d0d0d; }\n        .packages .all_packages .package .coins-range::-ms-thumb {\n          box-shadow: 0px 0px 1px #000031, 0px 0px 0px #00004b;\n          border: 1.8px solid rgba(0, 0, 101, 0.56);\n          width: 26px;\n          border-radius: 15px;\n          background: #e5c100;\n          cursor: pointer;\n          height: 11.4px; }\n        .packages .all_packages .package .coins-range:focus::-ms-fill-lower {\n          background: rgba(174, 174, 174, 0.78); }\n        .packages .all_packages .package .coins-range:focus::-ms-fill-upper {\n          background: rgba(238, 238, 238, 0.78); }\n\n.calculator {\n  display: flex;\n  flex-direction: column;\n  justify-content: space-around;\n  align-items: center;\n  margin-bottom: 25px;\n  margin-top: 35px;\n  z-index: 10; }\n  .calculator #alert {\n    display: none;\n    opacity: 0;\n    position: fixed;\n    right: 10px;\n    top: 75px;\n    border: 2px solid #fcf8e3;\n    width: 220px;\n    height: 75px;\n    background-color: #faebcc;\n    z-index: 11;\n    color: #8a6d3b;\n    border-radius: 5px;\n    font-size: 1.3em;\n    flex-direction: column;\n    justify-content: space-around;\n    align-items: center;\n    transition: .25s; }\n  .calculator h1 {\n    margin-bottom: 0; }\n  .calculator p {\n    margin-bottom: 25px;\n    color: white;\n    font-size: 1.1em;\n    letter-spacing: 2px; }\n  .calculator .calculator-body {\n    display: flex;\n    flex-direction: column;\n    justify-content: space-around;\n    align-items: center;\n    margin-bottom: 25px;\n    z-index: 10; }\n  .calculator div {\n    margin-bottom: 15px; }\n  .calculator .calculator-top {\n    display: flex;\n    justify-content: center;\n    align-items: center; }\n    .calculator .calculator-top i {\n      font-size: 3em;\n      color: #e5c100;\n      text-shadow: 0 0 10px black; }\n    .calculator .calculator-top input {\n      outline: none;\n      line-height: 20px;\n      width: 100%;\n      padding: 10px 15px;\n      margin-bottom: 10px;\n      background-color: rgba(255, 255, 255, 0.4);\n      border: 2px solid transparent;\n      border-bottom: 2px solid rgba(255, 255, 255, 0.7);\n      color: rgba(255, 255, 255, 0.9);\n      font-size: 1.2em;\n      transition: .25s all;\n      -moz-appearance: textfield;\n      text-align: center; }\n      .calculator .calculator-top input::-webkit-outer-spin-button, .calculator .calculator-top input::-webkit-inner-spin-button {\n        -webkit-appearance: none; }\n      .calculator .calculator-top input::placeholder {\n        color: rgba(255, 255, 255, 0.7); }\n      .calculator .calculator-top input::-webkit-input-placeholder {\n        text-indent: 0;\n        transition: text-indent 0.3s ease; }\n      .calculator .calculator-top input::-moz-placeholder {\n        text-indent: 0;\n        transition: text-indent 0.3s ease; }\n      .calculator .calculator-top input:-moz-placeholder {\n        text-indent: 0;\n        transition: text-indent 0.3s ease; }\n      .calculator .calculator-top input:-ms-input-placeholder {\n        text-indent: 0;\n        transition: text-indent 0.3s ease; }\n      .calculator .calculator-top input:focus::-webkit-input-placeholder {\n        text-indent: 500px;\n        transition: text-indent 0.3s ease; }\n      .calculator .calculator-top input:focus::-moz-placeholder {\n        text-indent: 500px;\n        transition: text-indent 0.3s ease; }\n      .calculator .calculator-top input:focus:-moz-placeholder {\n        text-indent: 500px;\n        transition: text-indent 0.3s ease; }\n      .calculator .calculator-top input:focus:-ms-input-placeholder {\n        text-indent: 500px;\n        transition: text-indent 0.3s ease; }\n      .calculator .calculator-top input:focus, .calculator .calculator-top input:hover {\n        border: 2px solid rgba(255, 255, 255, 0.5);\n        background-color: transparent; }\n  .calculator .calculator-package {\n    display: flex;\n    align-items: center;\n    font-size: 5em; }\n    .calculator .calculator-package div {\n      margin-bottom: 0;\n      margin-right: 10px;\n      text-shadow: 0 0 10px black;\n      border: 1px solid;\n      padding: 10px 10px 0;\n      cursor: pointer;\n      box-shadow: rgba(229, 193, 0, 0.15) 0 11px 35px;\n      background-color: rgba(242, 176, 30, 0.3);\n      border-radius: 5px;\n      transition: 0.25s all; }\n      .calculator .calculator-package div:last-child {\n        margin-right: 0; }\n      .calculator .calculator-package div.active-package {\n        transform: scale(1.02);\n        box-shadow: rgba(229, 193, 0, 0.5) 0 15px 50px;\n        border-color: #575757; }\n      .calculator .calculator-package div:hover {\n        transform: scale(1.02);\n        box-shadow: rgba(229, 193, 0, 0.3) 0 15px 50px; }\n  .calculator .calculator-years {\n    width: 100%; }\n    .calculator .calculator-years input {\n      width: 100%;\n      -webkit-appearance: none;\n      margin: 7.3px 0;\n      margin-bottom: 15px; }\n      .calculator .calculator-years input:focus {\n        outline: none; }\n      .calculator .calculator-years input::-webkit-slider-runnable-track {\n        width: 100%;\n        height: 11.4px;\n        cursor: pointer;\n        box-shadow: 1px 1px 1px #000000, 0px 0px 1px #0d0d0d;\n        background: rgba(174, 174, 174, 0.78);\n        border-radius: 1.3px;\n        border: 0.2px solid #010101; }\n      .calculator .calculator-years input::-webkit-slider-thumb {\n        box-shadow: 0px 0px 1px #000031, 0px 0px 0px #00004b;\n        border: 1.8px solid rgba(0, 0, 101, 0.56);\n        height: 26px;\n        width: 26px;\n        border-radius: 15px;\n        background: #e5c100;\n        cursor: pointer;\n        -webkit-appearance: none;\n        margin-top: -7.5px; }\n      .calculator .calculator-years input:focus::-webkit-slider-runnable-track {\n        background: rgba(238, 238, 238, 0.78); }\n      .calculator .calculator-years input::-moz-range-track {\n        width: 100%;\n        height: 11.4px;\n        cursor: pointer;\n        box-shadow: 1px 1px 1px #000000, 0px 0px 1px #0d0d0d;\n        background: rgba(174, 174, 174, 0.78);\n        border-radius: 1.3px;\n        border: 0.2px solid #010101; }\n      .calculator .calculator-years input::-moz-range-thumb {\n        box-shadow: 0px 0px 1px #000031, 0px 0px 0px #00004b;\n        border: 1.8px solid rgba(0, 0, 101, 0.56);\n        height: 26px;\n        width: 26px;\n        border-radius: 15px;\n        background: #e5c100;\n        cursor: pointer; }\n      .calculator .calculator-years input::-ms-track {\n        width: 100%;\n        height: 11.4px;\n        cursor: pointer;\n        background: transparent;\n        border-color: transparent;\n        color: transparent; }\n      .calculator .calculator-years input::-ms-fill-lower {\n        background: rgba(110, 110, 110, 0.78);\n        border: 0.2px solid #010101;\n        border-radius: 2.6px;\n        box-shadow: 1px 1px 1px #000000, 0px 0px 1px #0d0d0d; }\n      .calculator .calculator-years input::-ms-fill-upper {\n        background: rgba(174, 174, 174, 0.78);\n        border: 0.2px solid #010101;\n        border-radius: 2.6px;\n        box-shadow: 1px 1px 1px #000000, 0px 0px 1px #0d0d0d; }\n      .calculator .calculator-years input::-ms-thumb {\n        box-shadow: 0px 0px 1px #000031, 0px 0px 0px #00004b;\n        border: 1.8px solid rgba(0, 0, 101, 0.56);\n        width: 26px;\n        border-radius: 15px;\n        background: #e5c100;\n        cursor: pointer;\n        height: 11.4px; }\n      .calculator .calculator-years input:focus::-ms-fill-lower {\n        background: rgba(174, 174, 174, 0.78); }\n      .calculator .calculator-years input:focus::-ms-fill-upper {\n        background: rgba(238, 238, 238, 0.78); }\n  .calculator .calculator-out {\n    width: 100%;\n    display: flex;\n    align-items: center;\n    justify-content: space-between;\n    z-index: 10; }\n    .calculator .calculator-out i.icon-arrow-graph-up-right {\n      font-size: 3em;\n      color: #e5c100;\n      z-index: 10;\n      text-shadow: 0 0 10px black; }\n    .calculator .calculator-out div {\n      min-width: 45%;\n      font-size: 2em;\n      color: white;\n      z-index: 10;\n      position: relative; }\n      .calculator .calculator-out div i {\n        color: #e5c100;\n        z-index: 10;\n        text-shadow: 0 0 10px black; }\n      .calculator .calculator-out div:after {\n        content: \"\";\n        position: absolute;\n        width: 100%;\n        height: 1px;\n        bottom: -3px;\n        border-bottom: 2px solid #e5c100;\n        left: 0;\n        box-shadow: 0 2px 6px rgba(229, 193, 0, 0.75); }\n    .calculator .calculator-out .take {\n      text-align: right; }\n", ""]);
+exports.push([module.i, ".currency {\n  position: fixed;\n  top: 70px;\n  color: white;\n  padding: 5px;\n  padding-left: 10px;\n  z-index: 101;\n  background-color: rgba(87, 87, 87, 0.7);\n  border-bottom-right-radius: 5px; }\n  .currency div {\n    display: flex;\n    justify-content: flex-start;\n    align-items: center; }\n    .currency div i {\n      font-size: 1.2em;\n      margin: 0 3px; }\n\n.packages {\n  padding-top: 75px;\n  z-index: 10; }\n  .packages h1 {\n    text-align: center;\n    z-index: 10; }\n  .packages .all_packages {\n    display: flex;\n    flex-direction: column;\n    justify-content: center;\n    align-items: center;\n    z-index: 10; }\n    .packages .all_packages .top {\n      display: flex;\n      width: 100%;\n      justify-content: space-around;\n      align-items: center;\n      z-index: 10;\n      margin-bottom: 15px;\n      flex-wrap: wrap; }\n    .packages .all_packages .center {\n      display: flex;\n      width: 100%;\n      justify-content: center;\n      align-items: center;\n      z-index: 10;\n      margin-bottom: 15px; }\n    .packages .all_packages .bottom {\n      display: flex;\n      width: 100%;\n      justify-content: space-around;\n      align-items: center;\n      z-index: 10;\n      flex-wrap: wrap; }\n    .packages .all_packages .package {\n      display: flex;\n      flex-direction: column;\n      align-items: center;\n      font-size: 1.3em;\n      color: #ccac02;\n      padding: 10px 0;\n      box-shadow: rgba(229, 193, 0, 0.15) 0 11px 35px;\n      background-color: rgba(87, 87, 87, 0.9);\n      transition: .25s all;\n      margin-bottom: 15px;\n      cursor: pointer;\n      border-radius: 10px; }\n      .packages .all_packages .package:hover {\n        transform: scale(1.02);\n        box-shadow: rgba(229, 193, 0, 0.3) 0 15px 50px; }\n      .packages .all_packages .package .package_logo {\n        margin-top: 15px;\n        font-size: 5em;\n        text-shadow: 0 0 10px black; }\n      .packages .all_packages .package h3 {\n        padding: 10px;\n        background-color: #e5c100;\n        color: white;\n        width: 75%;\n        text-align: center;\n        letter-spacing: 3px;\n        text-shadow: 0 0 10px black; }\n      .packages .all_packages .package .options {\n        margin-bottom: 15px; }\n        .packages .all_packages .package .options .getCoins {\n          position: relative;\n          margin-left: 80px;\n          transition: .25s all; }\n          .packages .all_packages .package .options .getCoins label {\n            position: relative; }\n            .packages .all_packages .package .options .getCoins label .icon-bitcoin-circle {\n              position: absolute;\n              top: -16px;\n              font-size: 2em;\n              text-shadow: 0 0 10px black; }\n          .packages .all_packages .package .options .getCoins input {\n            display: inline-block;\n            width: 170px;\n            color: #e5c100;\n            font-size: 32px;\n            font-weight: 500;\n            text-align: left;\n            padding-left: 40px;\n            border-width: initial;\n            border-style: none;\n            border-color: initial;\n            border-image: initial;\n            background: transparent;\n            position: relative;\n            -moz-appearance: textfield; }\n            .packages .all_packages .package .options .getCoins input::-webkit-outer-spin-button, .packages .all_packages .package .options .getCoins input::-webkit-inner-spin-button {\n              -webkit-appearance: none; }\n            .packages .all_packages .package .options .getCoins input:focus {\n              outline: none; }\n      .packages .all_packages .package .summ {\n        display: flex;\n        width: 100%;\n        justify-content: space-between;\n        background: #e5c100;\n        color: white;\n        margin-bottom: 25px; }\n        .packages .all_packages .package .summ div {\n          padding: 0 20px;\n          text-align: center; }\n          .packages .all_packages .package .summ div p {\n            margin: 10px;\n            font-size: .7em;\n            text-transform: uppercase;\n            letter-spacing: 1px; }\n      .packages .all_packages .package .coins-range {\n        -webkit-appearance: none;\n        margin: 7.3px 0;\n        width: 80%;\n        margin-bottom: 15px; }\n        .packages .all_packages .package .coins-range:focus {\n          outline: none; }\n        .packages .all_packages .package .coins-range::-webkit-slider-runnable-track {\n          width: 100%;\n          height: 11.4px;\n          cursor: pointer;\n          box-shadow: 1px 1px 1px #000000, 0px 0px 1px #0d0d0d;\n          background: rgba(174, 174, 174, 0.78);\n          border-radius: 1.3px;\n          border: 0.2px solid #010101; }\n        .packages .all_packages .package .coins-range::-webkit-slider-thumb {\n          box-shadow: 0px 0px 1px #000031, 0px 0px 0px #00004b;\n          border: 1.8px solid rgba(0, 0, 101, 0.56);\n          height: 26px;\n          width: 26px;\n          border-radius: 15px;\n          background: #e5c100;\n          cursor: pointer;\n          -webkit-appearance: none;\n          margin-top: -7.5px; }\n        .packages .all_packages .package .coins-range:focus::-webkit-slider-runnable-track {\n          background: rgba(238, 238, 238, 0.78); }\n        .packages .all_packages .package .coins-range::-moz-range-track {\n          width: 100%;\n          height: 11.4px;\n          cursor: pointer;\n          box-shadow: 1px 1px 1px #000000, 0px 0px 1px #0d0d0d;\n          background: rgba(174, 174, 174, 0.78);\n          border-radius: 1.3px;\n          border: 0.2px solid #010101; }\n        .packages .all_packages .package .coins-range::-moz-range-thumb {\n          box-shadow: 0px 0px 1px #000031, 0px 0px 0px #00004b;\n          border: 1.8px solid rgba(0, 0, 101, 0.56);\n          height: 26px;\n          width: 26px;\n          border-radius: 15px;\n          background: #e5c100;\n          cursor: pointer; }\n        .packages .all_packages .package .coins-range::-ms-track {\n          width: 100%;\n          height: 11.4px;\n          cursor: pointer;\n          background: transparent;\n          border-color: transparent;\n          color: transparent; }\n        .packages .all_packages .package .coins-range::-ms-fill-lower {\n          background: rgba(110, 110, 110, 0.78);\n          border: 0.2px solid #010101;\n          border-radius: 2.6px;\n          box-shadow: 1px 1px 1px #000000, 0px 0px 1px #0d0d0d; }\n        .packages .all_packages .package .coins-range::-ms-fill-upper {\n          background: rgba(174, 174, 174, 0.78);\n          border: 0.2px solid #010101;\n          border-radius: 2.6px;\n          box-shadow: 1px 1px 1px #000000, 0px 0px 1px #0d0d0d; }\n        .packages .all_packages .package .coins-range::-ms-thumb {\n          box-shadow: 0px 0px 1px #000031, 0px 0px 0px #00004b;\n          border: 1.8px solid rgba(0, 0, 101, 0.56);\n          width: 26px;\n          border-radius: 15px;\n          background: #e5c100;\n          cursor: pointer;\n          height: 11.4px; }\n        .packages .all_packages .package .coins-range:focus::-ms-fill-lower {\n          background: rgba(174, 174, 174, 0.78); }\n        .packages .all_packages .package .coins-range:focus::-ms-fill-upper {\n          background: rgba(238, 238, 238, 0.78); }\n\n.calculator {\n  display: flex;\n  flex-direction: column;\n  justify-content: space-around;\n  align-items: center;\n  margin-bottom: 25px;\n  margin-top: 35px;\n  z-index: 10; }\n  .calculator #alert {\n    display: none;\n    opacity: 0;\n    position: fixed;\n    right: 10px;\n    top: 75px;\n    border: 2px solid #fcf8e3;\n    width: 220px;\n    height: 75px;\n    background-color: #faebcc;\n    z-index: 11;\n    color: #8a6d3b;\n    border-radius: 5px;\n    font-size: 1.3em;\n    flex-direction: column;\n    justify-content: space-around;\n    align-items: center;\n    transition: .25s; }\n  .calculator h1 {\n    margin-bottom: 0; }\n  .calculator p {\n    margin-bottom: 25px;\n    color: white;\n    font-size: 1.1em;\n    letter-spacing: 2px; }\n  .calculator .calculator-body {\n    display: flex;\n    flex-direction: column;\n    justify-content: space-around;\n    align-items: center;\n    margin-bottom: 25px;\n    z-index: 10; }\n  .calculator div {\n    margin-bottom: 15px; }\n  .calculator .calculator-top {\n    display: flex;\n    justify-content: center;\n    align-items: center; }\n    .calculator .calculator-top i {\n      font-size: 3em;\n      color: #e5c100;\n      text-shadow: 0 0 10px black; }\n    .calculator .calculator-top input {\n      outline: none;\n      line-height: 20px;\n      width: 100%;\n      padding: 10px 15px;\n      margin-bottom: 10px;\n      background-color: rgba(255, 255, 255, 0.4);\n      border: 2px solid transparent;\n      border-bottom: 2px solid rgba(255, 255, 255, 0.7);\n      color: rgba(255, 255, 255, 0.9);\n      font-size: 1.2em;\n      transition: .25s all;\n      -moz-appearance: textfield;\n      text-align: center; }\n      .calculator .calculator-top input::-webkit-outer-spin-button, .calculator .calculator-top input::-webkit-inner-spin-button {\n        -webkit-appearance: none; }\n      .calculator .calculator-top input::placeholder {\n        color: rgba(255, 255, 255, 0.7); }\n      .calculator .calculator-top input::-webkit-input-placeholder {\n        text-indent: 0;\n        transition: text-indent 0.3s ease; }\n      .calculator .calculator-top input::-moz-placeholder {\n        text-indent: 0;\n        transition: text-indent 0.3s ease; }\n      .calculator .calculator-top input:-moz-placeholder {\n        text-indent: 0;\n        transition: text-indent 0.3s ease; }\n      .calculator .calculator-top input:-ms-input-placeholder {\n        text-indent: 0;\n        transition: text-indent 0.3s ease; }\n      .calculator .calculator-top input:focus::-webkit-input-placeholder {\n        text-indent: 500px;\n        transition: text-indent 0.3s ease; }\n      .calculator .calculator-top input:focus::-moz-placeholder {\n        text-indent: 500px;\n        transition: text-indent 0.3s ease; }\n      .calculator .calculator-top input:focus:-moz-placeholder {\n        text-indent: 500px;\n        transition: text-indent 0.3s ease; }\n      .calculator .calculator-top input:focus:-ms-input-placeholder {\n        text-indent: 500px;\n        transition: text-indent 0.3s ease; }\n      .calculator .calculator-top input:focus, .calculator .calculator-top input:hover {\n        border: 2px solid rgba(255, 255, 255, 0.5);\n        background-color: transparent; }\n  .calculator .calculator-package {\n    display: flex;\n    align-items: center;\n    font-size: 5em; }\n    .calculator .calculator-package div {\n      margin-bottom: 0;\n      margin-right: 10px;\n      text-shadow: 0 0 10px black;\n      border: 1px solid;\n      padding: 10px 10px 0;\n      cursor: pointer;\n      box-shadow: rgba(229, 193, 0, 0.15) 0 11px 35px;\n      background-color: rgba(242, 176, 30, 0.3);\n      border-radius: 5px;\n      transition: 0.25s all; }\n      .calculator .calculator-package div:last-child {\n        margin-right: 0; }\n      .calculator .calculator-package div.active-package {\n        transform: scale(1.02);\n        box-shadow: rgba(229, 193, 0, 0.5) 0 15px 50px;\n        border-color: #575757; }\n      .calculator .calculator-package div:hover {\n        transform: scale(1.02);\n        box-shadow: rgba(229, 193, 0, 0.3) 0 15px 50px; }\n  .calculator .calculator-years {\n    width: 100%; }\n    .calculator .calculator-years input {\n      width: 100%;\n      -webkit-appearance: none;\n      margin: 7.3px 0;\n      margin-bottom: 15px; }\n      .calculator .calculator-years input:focus {\n        outline: none; }\n      .calculator .calculator-years input::-webkit-slider-runnable-track {\n        width: 100%;\n        height: 11.4px;\n        cursor: pointer;\n        box-shadow: 1px 1px 1px #000000, 0px 0px 1px #0d0d0d;\n        background: rgba(174, 174, 174, 0.78);\n        border-radius: 1.3px;\n        border: 0.2px solid #010101; }\n      .calculator .calculator-years input::-webkit-slider-thumb {\n        box-shadow: 0px 0px 1px #000031, 0px 0px 0px #00004b;\n        border: 1.8px solid rgba(0, 0, 101, 0.56);\n        height: 26px;\n        width: 26px;\n        border-radius: 15px;\n        background: #e5c100;\n        cursor: pointer;\n        -webkit-appearance: none;\n        margin-top: -7.5px; }\n      .calculator .calculator-years input:focus::-webkit-slider-runnable-track {\n        background: rgba(238, 238, 238, 0.78); }\n      .calculator .calculator-years input::-moz-range-track {\n        width: 100%;\n        height: 11.4px;\n        cursor: pointer;\n        box-shadow: 1px 1px 1px #000000, 0px 0px 1px #0d0d0d;\n        background: rgba(174, 174, 174, 0.78);\n        border-radius: 1.3px;\n        border: 0.2px solid #010101; }\n      .calculator .calculator-years input::-moz-range-thumb {\n        box-shadow: 0px 0px 1px #000031, 0px 0px 0px #00004b;\n        border: 1.8px solid rgba(0, 0, 101, 0.56);\n        height: 26px;\n        width: 26px;\n        border-radius: 15px;\n        background: #e5c100;\n        cursor: pointer; }\n      .calculator .calculator-years input::-ms-track {\n        width: 100%;\n        height: 11.4px;\n        cursor: pointer;\n        background: transparent;\n        border-color: transparent;\n        color: transparent; }\n      .calculator .calculator-years input::-ms-fill-lower {\n        background: rgba(110, 110, 110, 0.78);\n        border: 0.2px solid #010101;\n        border-radius: 2.6px;\n        box-shadow: 1px 1px 1px #000000, 0px 0px 1px #0d0d0d; }\n      .calculator .calculator-years input::-ms-fill-upper {\n        background: rgba(174, 174, 174, 0.78);\n        border: 0.2px solid #010101;\n        border-radius: 2.6px;\n        box-shadow: 1px 1px 1px #000000, 0px 0px 1px #0d0d0d; }\n      .calculator .calculator-years input::-ms-thumb {\n        box-shadow: 0px 0px 1px #000031, 0px 0px 0px #00004b;\n        border: 1.8px solid rgba(0, 0, 101, 0.56);\n        width: 26px;\n        border-radius: 15px;\n        background: #e5c100;\n        cursor: pointer;\n        height: 11.4px; }\n      .calculator .calculator-years input:focus::-ms-fill-lower {\n        background: rgba(174, 174, 174, 0.78); }\n      .calculator .calculator-years input:focus::-ms-fill-upper {\n        background: rgba(238, 238, 238, 0.78); }\n  .calculator .calculator-out {\n    width: 100%;\n    display: flex;\n    align-items: center;\n    justify-content: space-between;\n    z-index: 10; }\n    .calculator .calculator-out i.icon-arrow-graph-up-right {\n      font-size: 3em;\n      color: #e5c100;\n      z-index: 10;\n      text-shadow: 0 0 10px black; }\n    .calculator .calculator-out div {\n      min-width: 45%;\n      font-size: 2em;\n      color: white;\n      z-index: 10;\n      position: relative; }\n      .calculator .calculator-out div i {\n        color: #e5c100;\n        z-index: 10;\n        text-shadow: 0 0 10px black; }\n      .calculator .calculator-out div:after {\n        content: \"\";\n        position: absolute;\n        width: 100%;\n        height: 1px;\n        bottom: -3px;\n        border-bottom: 2px solid #e5c100;\n        left: 0;\n        box-shadow: 0 2px 6px rgba(229, 193, 0, 0.75); }\n    .calculator .calculator-out .take {\n      text-align: right; }\n", ""]);
 
 // exports
 

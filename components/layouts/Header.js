@@ -15,7 +15,6 @@ import {
 export default class Header extends Component {
     constructor(props){
         super(props);
-        console.log("ads");
         this.setCookie('language', 'ru',{expires: 350});
         this.state = {
             language: this.getCookie("language") || "ru"

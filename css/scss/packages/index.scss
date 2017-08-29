@@ -102,7 +102,6 @@
 
     }
     .package {
-      //width: 370px;
       display: flex;
       flex-direction: column;
       align-items: center;
@@ -111,12 +110,10 @@
       padding: 10px 0;
       box-shadow: rgba(229, 193, 0, .15) 0 11px 35px;
       background-color: rgba(87, 87, 87, .9);
-      //background-image: url("../../../public/src/packages/p6.png");
-      //background-repeat: no-repeat;
-      //background-position: center top / 50px;
       transition: .25s all;
       margin-bottom: 15px;
       cursor: pointer;
+      border-radius: 10px;
       &:hover{
         transform: scale(1.02);
         box-shadow: rgba(229, 193, 0, .3) 0 15px 50px;

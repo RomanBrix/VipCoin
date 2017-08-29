@@ -4,7 +4,7 @@ import Calculator from './Calculator';
 
 export default class Container extends Component {
     render(){
-        const { pages, vipcoinCost, bitcoinCost } = this.props;
+        const { pages, vipcoinCost, bitcoinCost, packages } = this.props;
 
         return(
             <div className="content">
@@ -25,10 +25,11 @@ export default class Container extends Component {
 
                     </div>
                 </div>
-                <Package packages={ pages.packages}/>
+                <Package package_title={ pages.packages[0]} packages={ packages }/>
                 <Calculator
-                    calculate={ pages.packages[2]}
-                    packages={ pages.packages[0]}
+                    calculate_title={ pages.packages[1]}
+                    // packages={ pages.packages[0]}
+                    packages={ packages }
                 />
             </div>
         )

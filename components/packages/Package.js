@@ -35,10 +35,12 @@ export default class Package extends Component {
 
     }
     render(){
-        const { packages } = this.props;
+        const { packages, package_title } = this.props;
         const colors = ['#f2b01e','#ccc2c2','#f2b01e','#e5c100','#b9f2ff'];
         const logo = ["icon-star", "icon-ribbon-a", "icon-trophy","icon-crown-king-1","icon-diamond"];
-        const packageContainer = packages[0].map((item, index)=>{
+        const packageContainer = packages.map((item, index)=>{
+            const minimum = +item.minCoins;
+            const rand = Math.floor(Math.random() * 600) + 100
             return <div className="package" key={ index } onClick={({target})=>{
                      if(target.classList[0] === "package"){
                          window.location.href = "#";
@@ -47,7 +49,7 @@ export default class Package extends Component {
                     <div className="package_logo" style={{color: colors[index]}}>
                         <i className={logo[index]}/>
                     </div>
-                    <h3>{item.title}</h3>
+                    <h3>{item.name}</h3>
                     <div className="options">
                        <span className="getCoins">
                            <label htmlFor={`valueCoins${index}`}>
@@ -56,11 +58,11 @@ export default class Package extends Component {
                            <input
                                type="number"
                                ref={`valueCoins${index}`}
-                               defaultValue={item.option.coinsMin + 250}
-                               max={item.option.coinsMax}
-                               min={item.option.coinsMin }
+                               defaultValue={minimum + rand}
+                               max={item.maxCoins}
+                               min={item.minCoins}
                                id={`valueCoins${index}`}
-                               onBlur={()=>{ this.updatePackage(`${index}`, item.price, false)}}
+                               onBlur={()=>{ this.updatePackage(`${index}`, item.oneCoinCost, false)}}
                                step={25}
                            />
                         </span>
@@ -69,30 +71,30 @@ export default class Package extends Component {
                         <div className="one-price">
                             <p>for 1 VipCoin</p>
                             <i className="icon-usd"/>
-                            { item.price }
+                            { item.oneCoinCost }
                         </div>
                         <div className="all_price">
                             <p>for all VipCoins</p>
                             <i className="icon-usd"/>
                             <span className="price" ref={`priceCoins${index}`}>
-                                {(item.price*(item.option.coinsMin + 250)).toFixed(2)}
+                                {(item.oneCoinCost *(minimum + rand)).toFixed(2)}
                             </span>
                         </div>
                     </div>
                 {index !== 4 ? <input
                     type="range"
-                    min={item.option.coinsMin}
-                    max={item.option.coinsMax}
+                    min={item.minCoins}
+                    max={item.maxCoins}
                     ref={`rangeCoins${index}`}
-                    defaultValue={item.option.coinsMin + 250}
+                    defaultValue={minimum + rand}
                     className="coins-range"
-                    onChange={()=>{ this.updatePackage(`${index}`, item.price, true)}}
+                    onChange={()=>{ this.updatePackage(`${index}`, item.oneCoinCost, true)}}
                 />: <p>unlimited</p>}
                 </div>
         });
         return(
             <div className="packages">
-                <h1>{packages[1][0].title}</h1>
+                <h1>{package_title.title}</h1>
                 <div className="all_packages">
                     <div className="top">
                         { packageContainer[0] }

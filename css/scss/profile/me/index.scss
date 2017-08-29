@@ -1,0 +1,52 @@
+@import "../vars";
+@import "Fonts";
+
+.coins-info{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  text-align: center;
+  //border-bottom: 1px solid;
+  font-size: 1.4em;
+  color: $LightGold;
+  font-family: HelveticaBold;
+  text-shadow: 0 0 10px black;
+  box-shadow: 0 0 10px 1px black;
+  div{
+    width: 100%;
+    //border-right: 1px solid;
+    padding: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 3px -1px 7px black;
+    &:last-child{
+      border-right: none;
+      box-shadow: none;
+    }
+  }
+}
+
+.refill{
+  h1{}
+  .refill-container{
+    .packages{
+      display: flex;
+      flex-direction: row;
+      width: 100%;
+      justify-content: space-between;
+      text-align: center;
+      font-size: 1.6em;
+      div{
+        width: 100%;
+        margin-right: 2px;
+        i{
+          font-size: 2em;
+        }
+        p{
+          margin: 2px 0;
+        }
+      }
+    }
+  }
+}

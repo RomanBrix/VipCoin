@@ -1,7 +1,9 @@
 import React from 'react';
 import { connect } from 'react-redux';
 import {
-    getHash
+    getHash,
+    getPackages,
+    getUserInfo
 } from '../../../redux/profile/profile-actions.js';
 import App from './App';
 
@@ -12,6 +14,8 @@ const mapStateToProps = ( state ) => {
 export default connect(
     mapStateToProps,
     {
-        getHash
+        getHash,
+        getPackages,
+        getUserInfo
 
     })(App);

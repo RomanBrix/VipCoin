@@ -11,6 +11,7 @@ export default class App extends Component {
     constructor(props){
         super(props);
         props.getBitcoinCost();
+        props.getPackages("package");
         this.state = {
             language: props.language || "ru",
             auth: false,
@@ -32,9 +33,11 @@ export default class App extends Component {
             loginUser,
             userState,
             userLogin,
-            request
+            request,
+            packages
         } = this.props;
         const { language, auth } = this.state;
+        console.log(packages);
 
         const lang = translate.filter(item =>{
             return item.language === language;
@@ -85,6 +88,7 @@ export default class App extends Component {
                         pages={ pages.packages }
                         vipcoinCost={ vipcoinCost }
                         bitcoinCost={ bitcoinCost }
+                        packages={ packages }
                     />
                 </div>
                 <Footer footer={ layouts.footer } />

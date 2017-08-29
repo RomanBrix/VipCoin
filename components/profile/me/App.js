@@ -5,7 +5,7 @@ import { BG_COIN } from '../../../data/links';
 import LeftHeader from '../layouts/LeftHeader';
 // import Footer from '../layouts/Footer';
 // import Auth from '../layouts/auth'
-// import Container from './Container';
+import Container from './Container';
 
 export default class App extends Component {
     constructor(props){
@@ -19,8 +19,10 @@ export default class App extends Component {
             window.location.href = '../index.html';
         }else if(this.state.user.length < 15){
             window.location.href = '../index.html';
-
         }
+
+        props.getPackages("package");
+        props.getUserInfo("infooo", this.state.user);
     }
 
     getCookie(name){
@@ -31,24 +33,21 @@ export default class App extends Component {
     }
 
     render(){
-        const { language, user } = this.state;
-        const { hash } = this.props;
+        const { language } = this.state;
+        const { hash, packages, user } = this.props;
 
         const lang = translate.filter(item =>{
             return item.language === language;
         });
         const { pages } = lang[0];
 
-        console.log(user);
         return (
             <div className="Main">
                 <div className="bg" style={{backgroundImage: `url(../${BG_COIN})`}}/>
                 <div className="container">
-                    <LeftHeader head={pages.profile.layouts.leftHeader}/>
+                    <LeftHeader head={pages.profile.layouts.leftHeader} user={ user }/>
                     <div className="right-container">
-                        <h1 onClick={()=>{ console.log(this.props.hash)}}>
-                            Hello
-                        </h1>
+                        <Container profile={pages.profile} packages={ packages } user={ user }/>
                     </div>
                 </div>
             </div>

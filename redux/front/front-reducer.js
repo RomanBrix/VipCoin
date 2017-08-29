@@ -8,6 +8,7 @@ const InitialState = {
     bitcoinCost: 0,
     userState: 'a',
     userLogin: false,
+    packages: [],
 };
 
 const frontReducers = (state = InitialState, action) => {
@@ -20,8 +21,11 @@ const frontReducers = (state = InitialState, action) => {
                 vipcoinCost: state.vipcoinCost,
                 bitcoinCost: state.bitcoinCost,
                 userState: state.userState,
-                userLogin: state.userLogin
+                userLogin: state.userLogin,
+                packages: state.packages,
+
             };
+
         case act.SET_LANGUAGE:
             return {
                 request: false,
@@ -29,11 +33,10 @@ const frontReducers = (state = InitialState, action) => {
                 vipcoinCost: state.vipcoinCost,
                 bitcoinCost: state.bitcoinCost,
                 userState: state.userState,
-                userLogin: state.userLogin
-
-
-
+                userLogin: state.userLogin,
+                packages: state.packages,
             };
+
         case act.GET_VIPCOIN_COST:
             return {
                 request: false,
@@ -41,9 +44,8 @@ const frontReducers = (state = InitialState, action) => {
                 vipcoinCost: action.vipcoinCost,
                 bitcoinCost: state.bitcoinCost,
                 userState: state.userState,
-                userLogin: state.userLogin
-
-
+                userLogin: state.userLogin,
+                packages: state.packages,
 
             };
         case act.BITCOIN_COST:
@@ -53,7 +55,8 @@ const frontReducers = (state = InitialState, action) => {
                 vipcoinCost: state.vipcoinCost,
                 bitcoinCost: action.bitcoinCost,
                 userState: state.userState,
-                userLogin: state.userLogin
+                userLogin: state.userLogin,
+                packages: state.packages,
 
             };
 
@@ -64,7 +67,9 @@ const frontReducers = (state = InitialState, action) => {
                 vipcoinCost: state.vipcoinCost,
                 bitcoinCost: state.bitcoinCost,
                 userState: action.userState,
-                userLogin: state.userLogin
+                userLogin: state.userLogin,
+                packages: state.packages,
+
             };
         case act.USER_LOGIN:
             return{
@@ -73,7 +78,19 @@ const frontReducers = (state = InitialState, action) => {
                 vipcoinCost: state.vipcoinCost,
                 bitcoinCost: state.bitcoinCost,
                 userState: state.userState,
-                userLogin: action.userLogin
+                userLogin: action.userLogin,
+                packages: state.packages,
+
+            };
+        case act.PACKAGES:
+            return{
+                request: false,
+                language: state.language,
+                vipcoinCost: state.vipcoinCost,
+                bitcoinCost: state.bitcoinCost,
+                userState: state.userState,
+                userLogin: state.userLogin,
+                packages: action.packages,
             };
 
         default: return state;

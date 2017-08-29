@@ -12503,7 +12503,8 @@ var act = exports.act = {
     GET_VIPCOIN_COST: "GET_COST_VIPCOIN",
     BITCOIN_COST: "GET_COST_BITCOIN",
     USER_CHECK_LOGIN: "CHECK_LOGIN",
-    USER_LOGIN: "LOGIN_REQUEST"
+    USER_LOGIN: "LOGIN_REQUEST",
+    PACKAGES: "GET_PACKAGES"
 };
 
 /***/ }),
@@ -12516,10 +12517,12 @@ var act = exports.act = {
 Object.defineProperty(exports, "__esModule", {
     value: true
 });
-var GLOB_URL = exports.GLOB_URL = "http://localhost:8888/vipcoin/profile";
+var GLOB_URL = exports.GLOB_URL = "http://localhost:8888/vipcoin/profile/";
 
 var act = exports.act = {
-    GET_HASH: "GET_HASH"
+    GET_HASH: "GET_HASH",
+    PACKAGES: "GET_PACKAGES",
+    USER: "GET_USER_INFO"
 };
 
 /***/ }),
@@ -12604,6 +12607,7 @@ exports.setLanguage = setLanguage;
 exports.getBitcoinCost = getBitcoinCost;
 exports.addUser = addUser;
 exports.loginUser = loginUser;
+exports.getPackages = getPackages;
 
 var _axios = __webpack_require__(109);
 
@@ -12657,7 +12661,6 @@ function addUser(type, login, mail, pass) {
             mail: mail,
             pass: pass
         }).then(function (res) {
-            // console.log( type ,res.data);
             dispatch({ type: _actionsAndUrl.act.USER_CHECK_LOGIN, userState: res.data });
         }).catch(function (error) {
             console.log(error);
@@ -12670,8 +12673,19 @@ function loginUser(type, log, pass) {
         dispatch({ type: 'REQUEST' });
 
         _axios2.default.get(_actionsAndUrl.GLOB_URL + "login.php", { params: { type: type, log: log, pass: pass } }).then(function (res) {
-            console.log(res);
             dispatch({ type: _actionsAndUrl.act.USER_LOGIN, userLogin: res.data });
+        }).catch(function (error) {
+            console.log(error);
+        });
+    };
+}
+
+function getPackages(type) {
+    return function (dispatch) {
+        dispatch({ type: 'REQUEST' });
+
+        _axios2.default.get(_actionsAndUrl.GLOB_URL + "packages.php", { params: { type: type } }).then(function (res) {
+            dispatch({ type: _actionsAndUrl.act.PACKAGES, packages: res.data });
         }).catch(function (error) {
             console.log(error);
         });
@@ -12682,7 +12696,7 @@ function loginUser(type, log, pass) {
 /* 123 */
 /***/ (function(module, exports) {
 
-module.exports = [{"language":"ru","pages":{"main":{"top":{"head":"Ваш шедевр готов!","text":"С другой стороны консультация с широким активом способствует подготовки и реализации модели развития. Задача организации, в особенности же консультация с широким активом в значительной степени обуславливает создание системы обучения кадров, соответствует насущным потребностям. Задача организации, в особенности же постоянный количественный рост и сфера нашей активности обеспечивает широкому кругу"},"progress":{"head":"ЦЕЛЬ Vip Coin","title":"Официальный запуск сети после продажи "}},"help":{},"packages":{"packages":[[{"title":"Standart","price":0.15,"option":{"coinsMin":1,"coinsMax":999}},{"title":"Medium","price":0.14,"option":{"coinsMin":1000,"coinsMax":4999}},{"title":"Full","price":0.13,"option":{"coinsMin":5000,"coinsMax":9999}},{"title":"Premium","price":0.12,"option":{"coinsMin":10000,"coinsMax":14999}},{"title":"VIP","price":0.1,"option":{"coinsMin":15000,"coinsMax":10000000}}],[{"title":"ПАКЕТЫ"}],{"title":"Калькулятор выгоды","inputCoins":"VipCoin","text":"Подсчитайте свою прибыль с учетом прогнозов курса VipCoin на последующие года"}]},"FAQ":{},"news":{},"contacts":{"top":{"head":"Контакты"},"feedback":{"head":"центр поддержки клиентов","inputName":"Имя","inputLName":"Фамилия","inputEmail":"E-mail","inputMsg":"Ваше сообщение","btnSend":"Отправить"}},"profile":{"layouts":{"leftHeader":{"btnMain":"главная","btnInfo":"информация","btnRefill":"пополнить счет","btnSettings":"Настройки","btnExit":"выход"}},"info":{}}},"layouts":{"header":{"btnMain":"ГЛАВНАЯ","btnAbout":"О НАС","btnPackages":"ПАКЕТЫ","btnFAQ":"Помощь","btnNews":"Новости","btnContacts":"Контакты","login":{"log":"Личный кабинет"}},"footer":{"pages":{"whitePage":"Белая Бумага","legalPage":"Юридические Страницы","contractOffer":"Предложение по Контракту"},"feedback":"Обратная связь"},"auth":{"header":{"btnLogin":"Войти","btnRegistration":"Регестрация","btnForgotPass":"Забыли пароль?"},"login":{"inputLogin":"Логин или E-mail","inputPassword":"Пароль","btnEnter":"Войти"},"registration":{"inputLogin":"Логин","inputEmail":"E-Mail","inputPassword":"Пароль","inputRepeatPassword":"Повторите пароль","checkLegal":"Согласен с правилами сайта","btnRegistration":"Регестрация"},"forgot":{"text":"Отправить пароль на почту","inputEmail":"E-Mail","btnSend":"Отправить","success":"E-mail отправлен!","error":"E-mail не найден"}}}}]
+module.exports = [{"language":"ru","pages":{"main":{"top":{"head":"Ваш шедевр готов!","text":"С другой стороны консультация с широким активом способствует подготовки и реализации модели развития. Задача организации, в особенности же консультация с широким активом в значительной степени обуславливает создание системы обучения кадров, соответствует насущным потребностям. Задача организации, в особенности же постоянный количественный рост и сфера нашей активности обеспечивает широкому кругу"},"progress":{"head":"ЦЕЛЬ Vip Coin","title":"Официальный запуск сети после продажи "}},"help":{},"packages":{"packages":[{"title":"ПАКЕТЫ"},{"title":"Калькулятор выгоды","inputCoins":"VipCoin","text":"Подсчитайте свою прибыль с учетом прогнозов курса VipCoin на последующие года"}]},"FAQ":{},"news":{},"contacts":{"top":{"head":"Контакты"},"feedback":{"head":"центр поддержки клиентов","inputName":"Имя","inputLName":"Фамилия","inputEmail":"E-mail","inputMsg":"Ваше сообщение","btnSend":"Отправить"}},"profile":{"layouts":{"leftHeader":{"btnMain":"главная","btnInfo":"информация","btnRefill":"пополнить счет","btnSettings":"Настройки","btnExit":"выход"}},"info":{}}},"layouts":{"header":{"btnMain":"ГЛАВНАЯ","btnAbout":"О НАС","btnPackages":"ПАКЕТЫ","btnFAQ":"Помощь","btnNews":"Новости","btnContacts":"Контакты","login":{"log":"Личный кабинет"}},"footer":{"pages":{"whitePage":"Белая Бумага","legalPage":"Юридические Страницы","contractOffer":"Предложение по Контракту"},"feedback":"Обратная связь"},"auth":{"header":{"btnLogin":"Войти","btnRegistration":"Регестрация","btnForgotPass":"Забыли пароль?"},"login":{"inputLogin":"Логин или E-mail","inputPassword":"Пароль","btnEnter":"Войти"},"registration":{"inputLogin":"Логин","inputEmail":"E-Mail","inputPassword":"Пароль","inputRepeatPassword":"Повторите пароль","checkLegal":"Согласен с правилами сайта","btnRegistration":"Регестрация"},"forgot":{"text":"Отправить пароль на почту","inputEmail":"E-Mail","btnSend":"Отправить","success":"E-mail отправлен!","error":"E-mail не найден"}}}}]
 
 /***/ }),
 /* 124 */,
@@ -13618,6 +13632,8 @@ Object.defineProperty(exports, "__esModule", {
     value: true
 });
 exports.getHash = getHash;
+exports.getPackages = getPackages;
+exports.getUserInfo = getUserInfo;
 
 var _axios = __webpack_require__(109);
 
@@ -13630,6 +13646,30 @@ function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { de
 function getHash(hash) {
     return function (dispatch) {
         dispatch({ type: _actionsAndUrl.act.GET_HASH, hash: hash });
+    };
+}
+
+function getPackages(type) {
+    return function (dispatch) {
+        dispatch({ type: 'REQUEST' });
+
+        _axios2.default.get(_actionsAndUrl.GLOB_URL + 'packages.php', { params: { type: type } }).then(function (res) {
+            dispatch({ type: _actionsAndUrl.act.PACKAGES, packages: res.data });
+        }).catch(function (error) {
+            console.log(error);
+        });
+    };
+}
+
+function getUserInfo(type, hash) {
+    return function (dispatch) {
+        dispatch({ type: 'REQUEST' });
+
+        _axios2.default.get(_actionsAndUrl.GLOB_URL + 'userInfo.php', { params: { type: type, hash: hash } }).then(function (res) {
+            dispatch({ type: _actionsAndUrl.act.USER, user: res.data });
+        }).catch(function (error) {
+            console.log(error);
+        });
     };
 }
 
@@ -26199,7 +26239,8 @@ var InitialState = {
     vipcoinCost: 0.15,
     bitcoinCost: 0,
     userState: 'a',
-    userLogin: false
+    userLogin: false,
+    packages: []
 };
 
 var frontReducers = function frontReducers() {
@@ -26215,8 +26256,11 @@ var frontReducers = function frontReducers() {
                 vipcoinCost: state.vipcoinCost,
                 bitcoinCost: state.bitcoinCost,
                 userState: state.userState,
-                userLogin: state.userLogin
+                userLogin: state.userLogin,
+                packages: state.packages
+
             };
+
         case _actionsAndUrl.act.SET_LANGUAGE:
             return {
                 request: false,
@@ -26224,9 +26268,10 @@ var frontReducers = function frontReducers() {
                 vipcoinCost: state.vipcoinCost,
                 bitcoinCost: state.bitcoinCost,
                 userState: state.userState,
-                userLogin: state.userLogin
-
+                userLogin: state.userLogin,
+                packages: state.packages
             };
+
         case _actionsAndUrl.act.GET_VIPCOIN_COST:
             return {
                 request: false,
@@ -26234,7 +26279,8 @@ var frontReducers = function frontReducers() {
                 vipcoinCost: action.vipcoinCost,
                 bitcoinCost: state.bitcoinCost,
                 userState: state.userState,
-                userLogin: state.userLogin
+                userLogin: state.userLogin,
+                packages: state.packages
 
             };
         case _actionsAndUrl.act.BITCOIN_COST:
@@ -26244,7 +26290,8 @@ var frontReducers = function frontReducers() {
                 vipcoinCost: state.vipcoinCost,
                 bitcoinCost: action.bitcoinCost,
                 userState: state.userState,
-                userLogin: state.userLogin
+                userLogin: state.userLogin,
+                packages: state.packages
 
             };
 
@@ -26255,7 +26302,9 @@ var frontReducers = function frontReducers() {
                 vipcoinCost: state.vipcoinCost,
                 bitcoinCost: state.bitcoinCost,
                 userState: action.userState,
-                userLogin: state.userLogin
+                userLogin: state.userLogin,
+                packages: state.packages
+
             };
         case _actionsAndUrl.act.USER_LOGIN:
             return {
@@ -26264,7 +26313,19 @@ var frontReducers = function frontReducers() {
                 vipcoinCost: state.vipcoinCost,
                 bitcoinCost: state.bitcoinCost,
                 userState: state.userState,
-                userLogin: action.userLogin
+                userLogin: action.userLogin,
+                packages: state.packages
+
+            };
+        case _actionsAndUrl.act.PACKAGES:
+            return {
+                request: false,
+                language: state.language,
+                vipcoinCost: state.vipcoinCost,
+                bitcoinCost: state.bitcoinCost,
+                userState: state.userState,
+                userLogin: state.userLogin,
+                packages: action.packages
             };
 
         default:
@@ -27159,7 +27220,10 @@ var _actionsAndUrl = __webpack_require__(116);
 
 var InitialState = {
     request: false,
-    hash: false
+    hash: false,
+    vipcoinCost: 0.15,
+    packages: [],
+    user: []
 };
 
 var profileReducers = function profileReducers() {
@@ -27171,15 +27235,41 @@ var profileReducers = function profileReducers() {
         case _actionsAndUrl.act.REQUEST:
             return {
                 request: true,
-                hash: state.hash
+                hash: state.hash,
+                vipcoinCost: state.vipcoinCost,
+                packages: state.packages,
+                user: state.user
+
             };
         case _actionsAndUrl.act.GET_HASH:
             return {
                 request: false,
-                hash: action.hash
+                hash: action.hash,
+                vipcoinCost: state.vipcoinCost,
+                packages: state.packages,
+                user: state.user
+
+            };
+        case _actionsAndUrl.act.PACKAGES:
+            return {
+                request: false,
+                hash: state.hash,
+                vipcoinCost: state.vipcoinCost,
+                packages: action.packages,
+                user: state.user
+
+            };
+        case _actionsAndUrl.act.USER:
+            return {
+                request: false,
+                hash: state.hash,
+                vipcoinCost: state.vipcoinCost,
+                packages: state.packages,
+                user: action.user
             };
         default:
             return state;
+
     }
 };
 
@@ -27364,7 +27454,6 @@ var Header = function (_Component) {
 
         var _this = _possibleConstructorReturn(this, (Header.__proto__ || Object.getPrototypeOf(Header)).call(this, props));
 
-        console.log("ads");
         _this.setCookie('language', 'ru', { expires: 350 });
         _this.state = {
             language: _this.getCookie("language") || "ru"

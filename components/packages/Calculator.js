@@ -28,7 +28,6 @@ export default class Calculator extends Component {
         const give = document.getElementById('give-value');
         const take = document.getElementById('take-value');
         let sale = 0;
-
         if(+input_coins.value > +max){
             input_coins.value = max;
             this.alerts("to high");
@@ -42,19 +41,19 @@ export default class Calculator extends Component {
 
         switch (+range_year.value){
             case 1:
-                sale = 864;
+                sale = 86;
                 break;
             case 2:
-                sale = 1257;
+                sale = 268;
                 break;
             case 3:
-                sale = 1634 ;
+                sale = 421 ;
                 break;
             case 4:
-                sale = 1934;
+                sale = 836;
                 break;
             case 5:
-                sale = 2149;
+                sale = 1048;
                 break;
         }
 
@@ -79,7 +78,8 @@ export default class Calculator extends Component {
     }
     render(){
 
-        const { calculate, packages } = this.props;
+        const { calculate_title, packages } = this.props;
+
         const colors = ['#f2b01e','#ccc2c2','#f2b01e','#e5c100','#b9f2ff'];
         const logo = ["icon-star", "icon-ribbon-a", "icon-trophy","icon-crown-king-1","icon-diamond"];
         const packageContainer = packages.map((item, index)=>{
@@ -89,9 +89,9 @@ export default class Calculator extends Component {
                     key={index}
                     style={{color: colors[index]}}
                     className={index === 0 ? "check-package active-package": "check-package"}
-                    data-min={item.option.coinsMin}
-                    data-max={item.option.coinsMax}
-                    data-cost={item.price}
+                    data-min={+item.minCoins}
+                    data-max={+item.maxCoins}
+                    data-cost={+item.oneCoinCost}
                 >
 
                     <i className={logo[index]}/>
@@ -101,8 +101,8 @@ export default class Calculator extends Component {
         return(
         <div className="calculator">
             <div id="alert">asdas</div>
-                <h1>{calculate.title}</h1>
-                <p>{calculate.text}</p>
+                <h1>{calculate_title.title}</h1>
+                <p>{calculate_title.text}</p>
                 <div className="calculator-body">
                     <div className="calculator-top">
                         <i className="icon-bitcoin-circle"/>
@@ -110,7 +110,7 @@ export default class Calculator extends Component {
                             type="number"
                             ref="input_coins"
                             onBlur={this.calculate.bind(this)}
-                            placeholder={calculate.inputCoins}
+                            placeholder={calculate_title.inputCoins}
                         />
                         <i className="icon-bitcoin-circle"/>
                     </div>

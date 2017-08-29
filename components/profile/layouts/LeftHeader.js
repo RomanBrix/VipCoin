@@ -5,12 +5,22 @@ export default class LeftHeader extends Component {
 
 
     render() {
-        const {head} = this.props;
+        const { head, user } = this.props;
+        console.log(user );
+
+        const login = user.map((item,index) =>{
+            console.log(item);
+            return <div className="hello" key={index}>
+                Hello, {item.login}
+            </div>
+        });
+        console.log(login);
         return (
             <div className="left-header">
                 <div className="logo">
                     <img src={`.${LOGO}`} alt="logo"/>
                 </div>
+                {login}
                 <div className="menu">
                     <a href={PROFILE_PAGES.MAIN}>
                         {head.btnMain}
@@ -33,6 +43,13 @@ export default class LeftHeader extends Component {
 
                 }}>
                     <i className="icon-power"/> {head.btnExit}
+                </div>
+
+                <div className="socials">
+                    <i className="icon-youtube"/>
+                    <i className="icon-twitter-square"/>
+                    <i className="icon-instagrem"/>
+                    <i className="icon-facebook-alt"/>
                 </div>
             </div>
         )

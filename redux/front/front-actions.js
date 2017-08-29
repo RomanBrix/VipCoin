@@ -50,7 +50,6 @@ export function addUser (type,login, mail, pass) {
             pass,
         })
             .then(function(res) {
-                // console.log( type ,res.data);
                     dispatch({type: act.USER_CHECK_LOGIN, userState: res.data})
 
             })
@@ -66,8 +65,21 @@ export function loginUser(type, log, pass) {
 
         axios.get(`${GLOB_URL}login.php`, {params: {type, log, pass}})
             .then((res) => {
-                console.log(res);
                 dispatch({type: act.USER_LOGIN, userLogin: res.data});
+            })
+            .catch((error) => {
+                console.log(error);
+            })
+    }
+}
+
+export function getPackages (type) {
+    return dispatch => {
+        dispatch({type: 'REQUEST'});
+
+        axios.get(`${GLOB_URL}packages.php`, {params: {type}})
+            .then((res) => {
+                dispatch({type: act.PACKAGES, packages: res.data});
             })
             .catch((error) => {
                 console.log(error);

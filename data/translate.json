@@ -18,58 +18,14 @@
 
       "packages":{
         "packages":[
-          [
-            {
-              "title": "Standart",
-              "price": 0.15,
-              "option":{
-                "coinsMin": 1,
-                "coinsMax": 999
-              }
-            },
-            {
-              "title": "Medium",
-              "price": 0.14,
-              "option":{
-                "coinsMin": 1000,
-                "coinsMax": 4999
-              }
-            },
-            {
-              "title": "Full",
-              "price": 0.13,
-              "option":{
-                "coinsMin": 5000,
-                "coinsMax": 9999
-              }
-            },
-            {
-              "title": "Premium",
-              "price": 0.12,
-              "option":{
-                "coinsMin": 10000,
-                "coinsMax": 14999
-              }
-            },
-            {
-              "title": "VIP",
-              "price": 0.10,
-              "option":{
-                "coinsMin": 15000,
-                "coinsMax": 10000000
-              }
-            }
-          ],
-          [
             {
               "title": "ПАКЕТЫ"
+            },
+            {
+              "title": "Калькулятор выгоды",
+              "inputCoins": "VipCoin",
+              "text": "Подсчитайте свою прибыль с учетом прогнозов курса VipCoin на последующие года"
             }
-          ],
-          {
-            "title": "Калькулятор выгоды",
-            "inputCoins": "VipCoin",
-            "text": "Подсчитайте свою прибыль с учетом прогнозов курса VipCoin на последующие года"
-          }
         ]
       },
 

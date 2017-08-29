@@ -42,10 +42,15 @@ body{
         box-shadow: 0 0 15px 2px #191919;
         .logo{
           padding: 10px;
-          margin-bottom: 75px;
+          margin-bottom: 35px;
           img{
             max-width: 300px;
           }
+        }
+        .hello{
+          font-size: 2em;
+          color: white;
+          margin-bottom: 15px;
         }
         .menu{
           display: flex;
@@ -81,13 +86,32 @@ body{
           display: flex;
           cursor: pointer;
           transition: .25s all;
+          margin: 20px 0;
           &:hover{
             color:$LightGold
           }
         }
+        .socials{
+          font-size: 2em;
+          color: white;
+          min-height: 100%;
+          position: relative;
+          width: 100%;
+          display: flex;
+          justify-content: space-around;
+          cursor: pointer;
+          i{
+            transition: .25s all;
+            text-shadow: 0 0 10px black;
+            &:hover{
+              color:$LightGold;
+              transform: scale(1.02);
+            }
+          }
+        }
       }
       .right-container{
-        margin-left: 400px;
+        margin-left: 360px;
         width: 100%;
       }
       h1 {

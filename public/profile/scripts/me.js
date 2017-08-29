@@ -12503,7 +12503,8 @@ var act = exports.act = {
     GET_VIPCOIN_COST: "GET_COST_VIPCOIN",
     BITCOIN_COST: "GET_COST_BITCOIN",
     USER_CHECK_LOGIN: "CHECK_LOGIN",
-    USER_LOGIN: "LOGIN_REQUEST"
+    USER_LOGIN: "LOGIN_REQUEST",
+    PACKAGES: "GET_PACKAGES"
 };
 
 /***/ }),
@@ -12516,10 +12517,12 @@ var act = exports.act = {
 Object.defineProperty(exports, "__esModule", {
     value: true
 });
-var GLOB_URL = exports.GLOB_URL = "http://localhost:8888/vipcoin/profile";
+var GLOB_URL = exports.GLOB_URL = "http://localhost:8888/vipcoin/profile/";
 
 var act = exports.act = {
-    GET_HASH: "GET_HASH"
+    GET_HASH: "GET_HASH",
+    PACKAGES: "GET_PACKAGES",
+    USER: "GET_USER_INFO"
 };
 
 /***/ }),
@@ -12604,6 +12607,7 @@ exports.setLanguage = setLanguage;
 exports.getBitcoinCost = getBitcoinCost;
 exports.addUser = addUser;
 exports.loginUser = loginUser;
+exports.getPackages = getPackages;
 
 var _axios = __webpack_require__(109);
 
@@ -12657,7 +12661,6 @@ function addUser(type, login, mail, pass) {
             mail: mail,
             pass: pass
         }).then(function (res) {
-            // console.log( type ,res.data);
             dispatch({ type: _actionsAndUrl.act.USER_CHECK_LOGIN, userState: res.data });
         }).catch(function (error) {
             console.log(error);
@@ -12670,8 +12673,19 @@ function loginUser(type, log, pass) {
         dispatch({ type: 'REQUEST' });
 
         _axios2.default.get(_actionsAndUrl.GLOB_URL + "login.php", { params: { type: type, log: log, pass: pass } }).then(function (res) {
-            console.log(res);
             dispatch({ type: _actionsAndUrl.act.USER_LOGIN, userLogin: res.data });
+        }).catch(function (error) {
+            console.log(error);
+        });
+    };
+}
+
+function getPackages(type) {
+    return function (dispatch) {
+        dispatch({ type: 'REQUEST' });
+
+        _axios2.default.get(_actionsAndUrl.GLOB_URL + "packages.php", { params: { type: type } }).then(function (res) {
+            dispatch({ type: _actionsAndUrl.act.PACKAGES, packages: res.data });
         }).catch(function (error) {
             console.log(error);
         });
@@ -12682,7 +12696,7 @@ function loginUser(type, log, pass) {
 /* 123 */
 /***/ (function(module, exports) {
 
-module.exports = [{"language":"ru","pages":{"main":{"top":{"head":"Ваш шедевр готов!","text":"С другой стороны консультация с широким активом способствует подготовки и реализации модели развития. Задача организации, в особенности же консультация с широким активом в значительной степени обуславливает создание системы обучения кадров, соответствует насущным потребностям. Задача организации, в особенности же постоянный количественный рост и сфера нашей активности обеспечивает широкому кругу"},"progress":{"head":"ЦЕЛЬ Vip Coin","title":"Официальный запуск сети после продажи "}},"help":{},"packages":{"packages":[[{"title":"Standart","price":0.15,"option":{"coinsMin":1,"coinsMax":999}},{"title":"Medium","price":0.14,"option":{"coinsMin":1000,"coinsMax":4999}},{"title":"Full","price":0.13,"option":{"coinsMin":5000,"coinsMax":9999}},{"title":"Premium","price":0.12,"option":{"coinsMin":10000,"coinsMax":14999}},{"title":"VIP","price":0.1,"option":{"coinsMin":15000,"coinsMax":10000000}}],[{"title":"ПАКЕТЫ"}],{"title":"Калькулятор выгоды","inputCoins":"VipCoin","text":"Подсчитайте свою прибыль с учетом прогнозов курса VipCoin на последующие года"}]},"FAQ":{},"news":{},"contacts":{"top":{"head":"Контакты"},"feedback":{"head":"центр поддержки клиентов","inputName":"Имя","inputLName":"Фамилия","inputEmail":"E-mail","inputMsg":"Ваше сообщение","btnSend":"Отправить"}},"profile":{"layouts":{"leftHeader":{"btnMain":"главная","btnInfo":"информация","btnRefill":"пополнить счет","btnSettings":"Настройки","btnExit":"выход"}},"info":{}}},"layouts":{"header":{"btnMain":"ГЛАВНАЯ","btnAbout":"О НАС","btnPackages":"ПАКЕТЫ","btnFAQ":"Помощь","btnNews":"Новости","btnContacts":"Контакты","login":{"log":"Личный кабинет"}},"footer":{"pages":{"whitePage":"Белая Бумага","legalPage":"Юридические Страницы","contractOffer":"Предложение по Контракту"},"feedback":"Обратная связь"},"auth":{"header":{"btnLogin":"Войти","btnRegistration":"Регестрация","btnForgotPass":"Забыли пароль?"},"login":{"inputLogin":"Логин или E-mail","inputPassword":"Пароль","btnEnter":"Войти"},"registration":{"inputLogin":"Логин","inputEmail":"E-Mail","inputPassword":"Пароль","inputRepeatPassword":"Повторите пароль","checkLegal":"Согласен с правилами сайта","btnRegistration":"Регестрация"},"forgot":{"text":"Отправить пароль на почту","inputEmail":"E-Mail","btnSend":"Отправить","success":"E-mail отправлен!","error":"E-mail не найден"}}}}]
+module.exports = [{"language":"ru","pages":{"main":{"top":{"head":"Ваш шедевр готов!","text":"С другой стороны консультация с широким активом способствует подготовки и реализации модели развития. Задача организации, в особенности же консультация с широким активом в значительной степени обуславливает создание системы обучения кадров, соответствует насущным потребностям. Задача организации, в особенности же постоянный количественный рост и сфера нашей активности обеспечивает широкому кругу"},"progress":{"head":"ЦЕЛЬ Vip Coin","title":"Официальный запуск сети после продажи "}},"help":{},"packages":{"packages":[{"title":"ПАКЕТЫ"},{"title":"Калькулятор выгоды","inputCoins":"VipCoin","text":"Подсчитайте свою прибыль с учетом прогнозов курса VipCoin на последующие года"}]},"FAQ":{},"news":{},"contacts":{"top":{"head":"Контакты"},"feedback":{"head":"центр поддержки клиентов","inputName":"Имя","inputLName":"Фамилия","inputEmail":"E-mail","inputMsg":"Ваше сообщение","btnSend":"Отправить"}},"profile":{"layouts":{"leftHeader":{"btnMain":"главная","btnInfo":"информация","btnRefill":"пополнить счет","btnSettings":"Настройки","btnExit":"выход"}},"info":{}}},"layouts":{"header":{"btnMain":"ГЛАВНАЯ","btnAbout":"О НАС","btnPackages":"ПАКЕТЫ","btnFAQ":"Помощь","btnNews":"Новости","btnContacts":"Контакты","login":{"log":"Личный кабинет"}},"footer":{"pages":{"whitePage":"Белая Бумага","legalPage":"Юридические Страницы","contractOffer":"Предложение по Контракту"},"feedback":"Обратная связь"},"auth":{"header":{"btnLogin":"Войти","btnRegistration":"Регестрация","btnForgotPass":"Забыли пароль?"},"login":{"inputLogin":"Логин или E-mail","inputPassword":"Пароль","btnEnter":"Войти"},"registration":{"inputLogin":"Логин","inputEmail":"E-Mail","inputPassword":"Пароль","inputRepeatPassword":"Повторите пароль","checkLegal":"Согласен с правилами сайта","btnRegistration":"Регестрация"},"forgot":{"text":"Отправить пароль на почту","inputEmail":"E-Mail","btnSend":"Отправить","success":"E-mail отправлен!","error":"E-mail не найден"}}}}]
 
 /***/ }),
 /* 124 */,
@@ -13618,6 +13632,8 @@ Object.defineProperty(exports, "__esModule", {
     value: true
 });
 exports.getHash = getHash;
+exports.getPackages = getPackages;
+exports.getUserInfo = getUserInfo;
 
 var _axios = __webpack_require__(109);
 
@@ -13630,6 +13646,30 @@ function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { de
 function getHash(hash) {
     return function (dispatch) {
         dispatch({ type: _actionsAndUrl.act.GET_HASH, hash: hash });
+    };
+}
+
+function getPackages(type) {
+    return function (dispatch) {
+        dispatch({ type: 'REQUEST' });
+
+        _axios2.default.get(_actionsAndUrl.GLOB_URL + 'packages.php', { params: { type: type } }).then(function (res) {
+            dispatch({ type: _actionsAndUrl.act.PACKAGES, packages: res.data });
+        }).catch(function (error) {
+            console.log(error);
+        });
+    };
+}
+
+function getUserInfo(type, hash) {
+    return function (dispatch) {
+        dispatch({ type: 'REQUEST' });
+
+        _axios2.default.get(_actionsAndUrl.GLOB_URL + 'userInfo.php', { params: { type: type, hash: hash } }).then(function (res) {
+            dispatch({ type: _actionsAndUrl.act.USER, user: res.data });
+        }).catch(function (error) {
+            console.log(error);
+        });
     };
 }
 
@@ -26199,7 +26239,8 @@ var InitialState = {
     vipcoinCost: 0.15,
     bitcoinCost: 0,
     userState: 'a',
-    userLogin: false
+    userLogin: false,
+    packages: []
 };
 
 var frontReducers = function frontReducers() {
@@ -26215,8 +26256,11 @@ var frontReducers = function frontReducers() {
                 vipcoinCost: state.vipcoinCost,
                 bitcoinCost: state.bitcoinCost,
                 userState: state.userState,
-                userLogin: state.userLogin
+                userLogin: state.userLogin,
+                packages: state.packages
+
             };
+
         case _actionsAndUrl.act.SET_LANGUAGE:
             return {
                 request: false,
@@ -26224,9 +26268,10 @@ var frontReducers = function frontReducers() {
                 vipcoinCost: state.vipcoinCost,
                 bitcoinCost: state.bitcoinCost,
                 userState: state.userState,
-                userLogin: state.userLogin
-
+                userLogin: state.userLogin,
+                packages: state.packages
             };
+
         case _actionsAndUrl.act.GET_VIPCOIN_COST:
             return {
                 request: false,
@@ -26234,7 +26279,8 @@ var frontReducers = function frontReducers() {
                 vipcoinCost: action.vipcoinCost,
                 bitcoinCost: state.bitcoinCost,
                 userState: state.userState,
-                userLogin: state.userLogin
+                userLogin: state.userLogin,
+                packages: state.packages
 
             };
         case _actionsAndUrl.act.BITCOIN_COST:
@@ -26244,7 +26290,8 @@ var frontReducers = function frontReducers() {
                 vipcoinCost: state.vipcoinCost,
                 bitcoinCost: action.bitcoinCost,
                 userState: state.userState,
-                userLogin: state.userLogin
+                userLogin: state.userLogin,
+                packages: state.packages
 
             };
 
@@ -26255,7 +26302,9 @@ var frontReducers = function frontReducers() {
                 vipcoinCost: state.vipcoinCost,
                 bitcoinCost: state.bitcoinCost,
                 userState: action.userState,
-                userLogin: state.userLogin
+                userLogin: state.userLogin,
+                packages: state.packages
+
             };
         case _actionsAndUrl.act.USER_LOGIN:
             return {
@@ -26264,7 +26313,19 @@ var frontReducers = function frontReducers() {
                 vipcoinCost: state.vipcoinCost,
                 bitcoinCost: state.bitcoinCost,
                 userState: state.userState,
-                userLogin: action.userLogin
+                userLogin: action.userLogin,
+                packages: state.packages
+
+            };
+        case _actionsAndUrl.act.PACKAGES:
+            return {
+                request: false,
+                language: state.language,
+                vipcoinCost: state.vipcoinCost,
+                bitcoinCost: state.bitcoinCost,
+                userState: state.userState,
+                userLogin: state.userLogin,
+                packages: action.packages
             };
 
         default:
@@ -27159,7 +27220,10 @@ var _actionsAndUrl = __webpack_require__(116);
 
 var InitialState = {
     request: false,
-    hash: false
+    hash: false,
+    vipcoinCost: 0.15,
+    packages: [],
+    user: []
 };
 
 var profileReducers = function profileReducers() {
@@ -27171,15 +27235,41 @@ var profileReducers = function profileReducers() {
         case _actionsAndUrl.act.REQUEST:
             return {
                 request: true,
-                hash: state.hash
+                hash: state.hash,
+                vipcoinCost: state.vipcoinCost,
+                packages: state.packages,
+                user: state.user
+
             };
         case _actionsAndUrl.act.GET_HASH:
             return {
                 request: false,
-                hash: action.hash
+                hash: action.hash,
+                vipcoinCost: state.vipcoinCost,
+                packages: state.packages,
+                user: state.user
+
+            };
+        case _actionsAndUrl.act.PACKAGES:
+            return {
+                request: false,
+                hash: state.hash,
+                vipcoinCost: state.vipcoinCost,
+                packages: action.packages,
+                user: state.user
+
+            };
+        case _actionsAndUrl.act.USER:
+            return {
+                request: false,
+                hash: state.hash,
+                vipcoinCost: state.vipcoinCost,
+                packages: state.packages,
+                user: action.user
             };
         default:
             return state;
+
     }
 };
 
@@ -27743,7 +27833,9 @@ var mapStateToProps = function mapStateToProps(state) {
 };
 
 exports.default = (0, _reactRedux.connect)(mapStateToProps, {
-    getHash: _profileActions.getHash
+    getHash: _profileActions.getHash,
+    getPackages: _profileActions.getPackages,
+    getUserInfo: _profileActions.getUserInfo
 
 })(_App2.default);
 
@@ -27778,6 +27870,10 @@ var _LeftHeader = __webpack_require__(640);
 
 var _LeftHeader2 = _interopRequireDefault(_LeftHeader);
 
+var _Container = __webpack_require__(645);
+
+var _Container2 = _interopRequireDefault(_Container);
+
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
 function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
@@ -27785,10 +27881,9 @@ function _classCallCheck(instance, Constructor) { if (!(instance instanceof Cons
 function _possibleConstructorReturn(self, call) { if (!self) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return call && (typeof call === "object" || typeof call === "function") ? call : self; }
 
 function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
-
 // import Footer from '../layouts/Footer';
 // import Auth from '../layouts/auth'
-// import Container from './Container';
+
 
 var App = function (_Component) {
     _inherits(App, _Component);
@@ -27808,6 +27903,9 @@ var App = function (_Component) {
         } else if (_this.state.user.length < 15) {
             window.location.href = '../index.html';
         }
+
+        props.getPackages("package");
+        props.getUserInfo("infooo", _this.state.user);
         return _this;
     }
 
@@ -27820,12 +27918,11 @@ var App = function (_Component) {
     }, {
         key: "render",
         value: function render() {
-            var _this2 = this;
-
-            var _state = this.state,
-                language = _state.language,
-                user = _state.user;
-            var hash = this.props.hash;
+            var language = this.state.language;
+            var _props = this.props,
+                hash = _props.hash,
+                packages = _props.packages,
+                user = _props.user;
 
 
             var lang = _translate2.default.filter(function (item) {
@@ -27834,7 +27931,6 @@ var App = function (_Component) {
             var pages = lang[0].pages;
 
 
-            console.log(user);
             return _react2.default.createElement(
                 "div",
                 { className: "Main" },
@@ -27842,17 +27938,11 @@ var App = function (_Component) {
                 _react2.default.createElement(
                     "div",
                     { className: "container" },
-                    _react2.default.createElement(_LeftHeader2.default, { head: pages.profile.layouts.leftHeader }),
+                    _react2.default.createElement(_LeftHeader2.default, { head: pages.profile.layouts.leftHeader, user: user }),
                     _react2.default.createElement(
                         "div",
                         { className: "right-container" },
-                        _react2.default.createElement(
-                            "h1",
-                            { onClick: function onClick() {
-                                    console.log(_this2.props.hash);
-                                } },
-                            "Hello"
-                        )
+                        _react2.default.createElement(_Container2.default, { profile: pages.profile, packages: packages, user: user })
                     )
                 )
             );
@@ -27903,8 +27993,22 @@ var LeftHeader = function (_Component) {
     _createClass(LeftHeader, [{
         key: "render",
         value: function render() {
-            var head = this.props.head;
+            var _props = this.props,
+                head = _props.head,
+                user = _props.user;
 
+            console.log(user);
+
+            var login = user.map(function (item, index) {
+                console.log(item);
+                return _react2.default.createElement(
+                    "div",
+                    { className: "hello", key: index },
+                    "Hello, ",
+                    item.login
+                );
+            });
+            console.log(login);
             return _react2.default.createElement(
                 "div",
                 { className: "left-header" },
@@ -27913,6 +28017,7 @@ var LeftHeader = function (_Component) {
                     { className: "logo" },
                     _react2.default.createElement("img", { src: "." + _links.LOGO, alt: "logo" })
                 ),
+                login,
                 _react2.default.createElement(
                     "div",
                     { className: "menu" },
@@ -27948,6 +28053,14 @@ var LeftHeader = function (_Component) {
                     _react2.default.createElement("i", { className: "icon-power" }),
                     " ",
                     head.btnExit
+                ),
+                _react2.default.createElement(
+                    "div",
+                    { className: "socials" },
+                    _react2.default.createElement("i", { className: "icon-youtube" }),
+                    _react2.default.createElement("i", { className: "icon-twitter-square" }),
+                    _react2.default.createElement("i", { className: "icon-instagrem" }),
+                    _react2.default.createElement("i", { className: "icon-facebook-alt" })
                 )
             );
         }
@@ -27999,7 +28112,7 @@ exports = module.exports = __webpack_require__(22)(undefined);
 
 
 // module
-exports.push([module.i, "@font-face {\n  font-family: 'Brusher';\n  src: url(" + __webpack_require__(61) + "); }\n\n@font-face {\n  font-family: 'HelveticaLight';\n  src: url(" + __webpack_require__(62) + "); }\n\n@font-face {\n  font-family: 'HelveticaBlack';\n  src: url(" + __webpack_require__(63) + "); }\n\n@font-face {\n  font-family: 'HelveticaBold';\n  src: url(" + __webpack_require__(64) + "); }\n\n@font-face {\n  font-family: 'HelveticaHeavy';\n  src: url(" + __webpack_require__(65) + "); }\n\nbody {\n  font-family: HelveticaLight;\n  padding: 0;\n  margin: 0;\n  background: #575757; }\n  body .Main {\n    width: 100%;\n    height: 100%; }\n    body .Main .bg {\n      width: 500px;\n      height: 500px;\n      border-radius: 50%;\n      position: fixed;\n      left: 50%;\n      top: 20%;\n      margin-left: -250px;\n      background-size: cover;\n      opacity: .2;\n      z-index: -1; }\n    body .Main .container {\n      display: flex;\n      flex-direction: row;\n      width: 100%; }\n      body .Main .container .left-header {\n        min-height: 100vh;\n        position: fixed;\n        left: 20px;\n        max-width: 350px;\n        top: 0;\n        background: #575757;\n        padding: 15px 10px;\n        display: flex;\n        flex-direction: column;\n        align-items: center;\n        box-shadow: 0 0 15px 2px #191919; }\n        body .Main .container .left-header .logo {\n          padding: 10px;\n          margin-bottom: 75px; }\n          body .Main .container .left-header .logo img {\n            max-width: 300px; }\n        body .Main .container .left-header .menu {\n          display: flex;\n          flex-direction: column;\n          align-items: center;\n          justify-content: space-around;\n          width: 100%; }\n          body .Main .container .left-header .menu a {\n            padding: 10px;\n            width: 100%;\n            text-align: center;\n            font-size: 1.5em;\n            color: white;\n            text-decoration: none;\n            border-bottom: 1px solid;\n            border-top: 1px solid;\n            margin-bottom: 15px;\n            text-transform: uppercase;\n            text-shadow: 0 0 10px black;\n            box-shadow: 0 -2px 15px 0px black, 0px 0 0 transparent, 0 3px 15px black, 0 0 0 transparent;\n            cursor: pointer;\n            transition: .25s all; }\n            body .Main .container .left-header .menu a:hover {\n              color: #e5c100;\n              transform: scale(1.02); }\n        body .Main .container .left-header .exit {\n          font-size: 1.4em;\n          color: white;\n          display: flex;\n          cursor: pointer;\n          transition: .25s all; }\n          body .Main .container .left-header .exit:hover {\n            color: #e5c100; }\n      body .Main .container .right-container {\n        margin-left: 400px;\n        width: 100%; }\n      body .Main .container h1 {\n        color: #ccac02;\n        margin-left: 15px;\n        letter-spacing: 3px;\n        text-transform: uppercase;\n        text-shadow: 0 0px 15px black;\n        z-index: 10; }\n", ""]);
+exports.push([module.i, "@font-face {\n  font-family: 'Brusher';\n  src: url(" + __webpack_require__(61) + "); }\n\n@font-face {\n  font-family: 'HelveticaLight';\n  src: url(" + __webpack_require__(62) + "); }\n\n@font-face {\n  font-family: 'HelveticaBlack';\n  src: url(" + __webpack_require__(63) + "); }\n\n@font-face {\n  font-family: 'HelveticaBold';\n  src: url(" + __webpack_require__(64) + "); }\n\n@font-face {\n  font-family: 'HelveticaHeavy';\n  src: url(" + __webpack_require__(65) + "); }\n\nbody {\n  font-family: HelveticaLight;\n  padding: 0;\n  margin: 0;\n  background: #575757; }\n  body .Main {\n    width: 100%;\n    height: 100%; }\n    body .Main .bg {\n      width: 500px;\n      height: 500px;\n      border-radius: 50%;\n      position: fixed;\n      left: 50%;\n      top: 20%;\n      margin-left: -250px;\n      background-size: cover;\n      opacity: .2;\n      z-index: -1; }\n    body .Main .container {\n      display: flex;\n      flex-direction: row;\n      width: 100%; }\n      body .Main .container .left-header {\n        min-height: 100vh;\n        position: fixed;\n        left: 20px;\n        max-width: 350px;\n        top: 0;\n        background: #575757;\n        padding: 15px 10px;\n        display: flex;\n        flex-direction: column;\n        align-items: center;\n        box-shadow: 0 0 15px 2px #191919; }\n        body .Main .container .left-header .logo {\n          padding: 10px;\n          margin-bottom: 35px; }\n          body .Main .container .left-header .logo img {\n            max-width: 300px; }\n        body .Main .container .left-header .hello {\n          font-size: 2em;\n          color: white;\n          margin-bottom: 15px; }\n        body .Main .container .left-header .menu {\n          display: flex;\n          flex-direction: column;\n          align-items: center;\n          justify-content: space-around;\n          width: 100%; }\n          body .Main .container .left-header .menu a {\n            padding: 10px;\n            width: 100%;\n            text-align: center;\n            font-size: 1.5em;\n            color: white;\n            text-decoration: none;\n            border-bottom: 1px solid;\n            border-top: 1px solid;\n            margin-bottom: 15px;\n            text-transform: uppercase;\n            text-shadow: 0 0 10px black;\n            box-shadow: 0 -2px 15px 0px black, 0px 0 0 transparent, 0 3px 15px black, 0 0 0 transparent;\n            cursor: pointer;\n            transition: .25s all; }\n            body .Main .container .left-header .menu a:hover {\n              color: #e5c100;\n              transform: scale(1.02); }\n        body .Main .container .left-header .exit {\n          font-size: 1.4em;\n          color: white;\n          display: flex;\n          cursor: pointer;\n          transition: .25s all;\n          margin: 20px 0; }\n          body .Main .container .left-header .exit:hover {\n            color: #e5c100; }\n        body .Main .container .left-header .socials {\n          font-size: 2em;\n          color: white;\n          min-height: 100%;\n          position: relative;\n          width: 100%;\n          display: flex;\n          justify-content: space-around;\n          cursor: pointer; }\n          body .Main .container .left-header .socials i {\n            transition: .25s all;\n            text-shadow: 0 0 10px black; }\n            body .Main .container .left-header .socials i:hover {\n              color: #e5c100;\n              transform: scale(1.02); }\n      body .Main .container .right-container {\n        margin-left: 360px;\n        width: 100%; }\n      body .Main .container h1 {\n        color: #ccac02;\n        margin-left: 15px;\n        letter-spacing: 3px;\n        text-transform: uppercase;\n        text-shadow: 0 0px 15px black;\n        z-index: 10; }\n", ""]);
 
 // exports
 
@@ -28044,10 +28157,224 @@ exports = module.exports = __webpack_require__(22)(undefined);
 
 
 // module
-exports.push([module.i, "", ""]);
+exports.push([module.i, "@font-face {\n  font-family: 'Brusher';\n  src: url(" + __webpack_require__(61) + "); }\n\n@font-face {\n  font-family: 'HelveticaLight';\n  src: url(" + __webpack_require__(62) + "); }\n\n@font-face {\n  font-family: 'HelveticaBlack';\n  src: url(" + __webpack_require__(63) + "); }\n\n@font-face {\n  font-family: 'HelveticaBold';\n  src: url(" + __webpack_require__(64) + "); }\n\n@font-face {\n  font-family: 'HelveticaHeavy';\n  src: url(" + __webpack_require__(65) + "); }\n\n.coins-info {\n  display: flex;\n  justify-content: space-between;\n  align-items: center;\n  text-align: center;\n  font-size: 1.4em;\n  color: #e5c100;\n  font-family: HelveticaBold;\n  text-shadow: 0 0 10px black;\n  box-shadow: 0 0 10px 1px black; }\n  .coins-info div {\n    width: 100%;\n    padding: 10px;\n    display: flex;\n    align-items: center;\n    justify-content: center;\n    box-shadow: 3px -1px 7px black; }\n    .coins-info div:last-child {\n      border-right: none;\n      box-shadow: none; }\n\n.refill .refill-container .packages {\n  display: flex;\n  flex-direction: row;\n  width: 100%;\n  justify-content: space-between;\n  text-align: center;\n  font-size: 1.6em; }\n  .refill .refill-container .packages div {\n    width: 100%;\n    margin-right: 2px; }\n    .refill .refill-container .packages div i {\n      font-size: 2em; }\n    .refill .refill-container .packages div p {\n      margin: 2px 0; }\n", ""]);
 
 // exports
 
+
+/***/ }),
+/* 645 */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+
+
+Object.defineProperty(exports, "__esModule", {
+    value: true
+});
+
+var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
+
+var _react = __webpack_require__(7);
+
+var _react2 = _interopRequireDefault(_react);
+
+var _CoinsInfo = __webpack_require__(646);
+
+var _CoinsInfo2 = _interopRequireDefault(_CoinsInfo);
+
+var _Refill = __webpack_require__(647);
+
+var _Refill2 = _interopRequireDefault(_Refill);
+
+function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
+
+function _possibleConstructorReturn(self, call) { if (!self) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return call && (typeof call === "object" || typeof call === "function") ? call : self; }
+
+function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
+
+var Container = function (_Component) {
+    _inherits(Container, _Component);
+
+    function Container() {
+        _classCallCheck(this, Container);
+
+        return _possibleConstructorReturn(this, (Container.__proto__ || Object.getPrototypeOf(Container)).apply(this, arguments));
+    }
+
+    _createClass(Container, [{
+        key: 'render',
+        value: function render() {
+            var _props = this.props,
+                packages = _props.packages,
+                user = _props.user;
+
+            return _react2.default.createElement(
+                'div',
+                { className: 'content' },
+                _react2.default.createElement(_CoinsInfo2.default, { user: user }),
+                _react2.default.createElement(_Refill2.default, { packages: packages })
+            );
+        }
+    }]);
+
+    return Container;
+}(_react.Component);
+
+exports.default = Container;
+
+/***/ }),
+/* 646 */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+
+
+Object.defineProperty(exports, "__esModule", {
+    value: true
+});
+
+var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
+
+var _react = __webpack_require__(7);
+
+var _react2 = _interopRequireDefault(_react);
+
+function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
+
+function _possibleConstructorReturn(self, call) { if (!self) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return call && (typeof call === "object" || typeof call === "function") ? call : self; }
+
+function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
+
+var CoinsInfo = function (_Component) {
+    _inherits(CoinsInfo, _Component);
+
+    function CoinsInfo() {
+        _classCallCheck(this, CoinsInfo);
+
+        return _possibleConstructorReturn(this, (CoinsInfo.__proto__ || Object.getPrototypeOf(CoinsInfo)).apply(this, arguments));
+    }
+
+    _createClass(CoinsInfo, [{
+        key: "render",
+        value: function render() {
+            return _react2.default.createElement(
+                "div",
+                { className: "coins-info" },
+                _react2.default.createElement(
+                    "div",
+                    { className: "coinsHave" },
+                    _react2.default.createElement("i", { className: "icon-bitcoin-circle" }),
+                    "1234"
+                ),
+                _react2.default.createElement(
+                    "div",
+                    { className: "profit" },
+                    _react2.default.createElement("i", { className: "icon-usd" }),
+                    "432324"
+                )
+            );
+        }
+    }]);
+
+    return CoinsInfo;
+}(_react.Component);
+
+exports.default = CoinsInfo;
+
+/***/ }),
+/* 647 */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+
+
+Object.defineProperty(exports, "__esModule", {
+    value: true
+});
+
+var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
+
+var _react = __webpack_require__(7);
+
+var _react2 = _interopRequireDefault(_react);
+
+function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
+
+function _possibleConstructorReturn(self, call) { if (!self) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return call && (typeof call === "object" || typeof call === "function") ? call : self; }
+
+function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
+
+var Refill = function (_Component) {
+    _inherits(Refill, _Component);
+
+    function Refill() {
+        _classCallCheck(this, Refill);
+
+        return _possibleConstructorReturn(this, (Refill.__proto__ || Object.getPrototypeOf(Refill)).apply(this, arguments));
+    }
+
+    _createClass(Refill, [{
+        key: 'render',
+        value: function render() {
+            var packages = this.props.packages;
+
+            console.log(packages);
+
+            var colors = ['#f2b01e', '#ccc2c2', '#f2b01e', '#e5c100', '#b9f2ff'];
+            var logo = ["icon-star", "icon-ribbon-a", "icon-trophy", "icon-crown-king-1", "icon-diamond"];
+            var packageContainer = packages.map(function (item, index) {
+                return _react2.default.createElement(
+                    'div',
+                    {
+                        id: 'logo' + index,
+                        key: index,
+                        style: { color: colors[index] },
+                        className: index === 0 ? "check-package active-package" : "check-package",
+                        'data-min': +item.minCoins,
+                        'data-max': +item.maxCoins,
+                        'data-cost': +item.oneCoinCost
+                    },
+                    _react2.default.createElement('i', { className: logo[index] }),
+                    _react2.default.createElement(
+                        'p',
+                        null,
+                        item.name
+                    )
+                );
+            });
+
+            return _react2.default.createElement(
+                'div',
+                { className: 'refill' },
+                _react2.default.createElement(
+                    'h1',
+                    null,
+                    '\u041A\u0423\u041F\u0418\u0422\u042C'
+                ),
+                _react2.default.createElement(
+                    'div',
+                    { className: 'refill-container' },
+                    _react2.default.createElement(
+                        'div',
+                        { className: 'packages' },
+                        packageContainer
+                    )
+                )
+            );
+        }
+    }]);
+
+    return Refill;
+}(_react.Component);
+
+exports.default = Refill;
 
 /***/ })
 /******/ ]);
