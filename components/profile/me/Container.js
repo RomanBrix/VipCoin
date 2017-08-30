@@ -8,7 +8,7 @@ export default class Container extends Component {
         return(
             <div className="content">
                 <CoinsInfo user={ user }/>
-                <Refill packages={ packages }/>
+                <Refill packages={ packages } user={ user }/>
             </div>
         )
     }

@@ -2,9 +2,7 @@ import React, {Component} from 'react';
 import translate from "../../../data/translate.json";
 import FooterIcons from "../../../public/src/Fonts/FontsIcons/styles.css";
 import { BG_COIN } from '../../../data/links';
-import LeftHeader from '../layouts/LeftHeader';
-// import Footer from '../layouts/Footer';
-// import Auth from '../layouts/auth'
+import ProfileHeader from '../layouts/ProfileHeader';
 import Container from './Container';
 
 export default class App extends Component {
@@ -45,7 +43,7 @@ export default class App extends Component {
             <div className="Main">
                 <div className="bg" style={{backgroundImage: `url(../${BG_COIN})`}}/>
                 <div className="container">
-                    <LeftHeader head={pages.profile.layouts.leftHeader} user={ user }/>
+                    <ProfileHeader head={pages.profile.layouts.leftHeader} user={ user }/>
                     <div className="right-container">
                         <Container profile={pages.profile} packages={ packages } user={ user }/>
                     </div>

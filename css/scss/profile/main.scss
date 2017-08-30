@@ -25,60 +25,47 @@ body{
 
     .container {
       //height: 1000px;
-      display: flex;
-      flex-direction: row;
+      //display: flex;
+      //flex-direction: row;
       width: 100%;
       .left-header{
-        min-height: 100vh;
-        position: fixed;
-        left: 20px;
-        max-width: 350px;
-        top: 0;
         background: #575757;
-        padding: 15px 10px;
         display: flex;
-        flex-direction: column;
+        justify-content: space-between;
         align-items: center;
         box-shadow: 0 0 15px 2px #191919;
+        min-height: 45px;
         .logo{
-          padding: 10px;
-          margin-bottom: 35px;
-          img{
-            max-width: 300px;
+          margin-left: 20px;
+          img {
+            max-width: 150px;
           }
-        }
-        .hello{
-          font-size: 2em;
-          color: white;
-          margin-bottom: 15px;
         }
         .menu{
           display: flex;
-          flex-direction: column;
           align-items: center;
           justify-content: space-around;
-          width: 100%;
           a{
-            padding: 10px;
-            width: 100%;
+            padding: 10px 20px 4px;
             text-align: center;
-            font-size: 1.5em;
+            font-size: 1em;
             color: white;
             text-decoration: none;
-            border-bottom: 1px solid;
-            border-top: 1px solid;
-            margin-bottom: 15px;
             text-transform: uppercase;
-            text-shadow: 0 0 10px black;
-            box-shadow: 0 -2px 15px 0px black, 0px 0 0 transparent, 0 3px 15px black, 0 0 0 transparent;
             cursor: pointer;
             transition: .25s all;
-
             &:hover{
-              color:$LightGold;
-              transform: scale(1.02);
+              color: $LightGold;
             }
           }
+        }
+        .hello{
+          font-size: 1.4em;
+          color: white;
+          display: flex;
+          cursor: pointer;
+          transition: .25s all;
+          //margin: 20px 0;
         }
         .exit{
           font-size: 1.4em;
@@ -86,32 +73,14 @@ body{
           display: flex;
           cursor: pointer;
           transition: .25s all;
-          margin: 20px 0;
+          margin-right: 35px;
           &:hover{
-            color:$LightGold
-          }
-        }
-        .socials{
-          font-size: 2em;
-          color: white;
-          min-height: 100%;
-          position: relative;
-          width: 100%;
-          display: flex;
-          justify-content: space-around;
-          cursor: pointer;
-          i{
-            transition: .25s all;
-            text-shadow: 0 0 10px black;
-            &:hover{
-              color:$LightGold;
-              transform: scale(1.02);
-            }
+            color: $LightGold;
           }
         }
       }
       .right-container{
-        margin-left: 360px;
+        //margin-left: 360px;
         width: 100%;
       }
       h1 {

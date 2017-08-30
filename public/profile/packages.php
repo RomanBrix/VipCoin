@@ -5,7 +5,7 @@ if($type === "package") {
     $link = mysqli_connect($host, $user, $password, $database)
     or die("Ошибка " . mysqli_error($link));
     if($link) {
-        $result = mysqli_query($link, "SELECT * FROM packages");
+        $result = mysqli_query($link, "SELECT * FROM packages ORDER BY minCoins ASC;");
         $albums_arr = [];
         while($row = $result->fetch_assoc()) {
             $obj = (object) $row;
