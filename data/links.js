@@ -26,8 +26,7 @@ export const PAGES = {
 export const PROFILE_PAGES = {
     MAIN: "../index.html",
     INFO: "me.html",
-    REFILL: "#",
-    SETTINGS: "#"
+    SETTINGS: "settings.html"
 
 };
 

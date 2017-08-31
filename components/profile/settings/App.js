@@ -19,10 +19,7 @@ export default class App extends Component {
             window.location.href = '../index.html';
         }
 
-        props.getPackages("package");
         props.getUserInfo("infooo", this.state.user);
-        props.getCrypto();
-
     }
 
     getCookie(name){
@@ -32,9 +29,10 @@ export default class App extends Component {
         return matches ? decodeURIComponent(matches[1])  : undefined;
     }
 
+
     render(){
         const { language } = this.state;
-        const { hash, packages, user, crypto } = this.props;
+        const { hash, user, updateSettings, updated } = this.props;
 
         const lang = translate.filter(item =>{
             return item.language === language;
@@ -48,10 +46,10 @@ export default class App extends Component {
                     <ProfileHeader head={pages.profile.layouts.leftHeader} user={ user }/>
                     <div className="right-container">
                         <Container
-                            profile={pages.profile}
-                            packages={ packages }
-                            user={ user }
-                            crypto={ crypto }
+                            settings={pages.profile.settings}
+                            updateSettings={ updateSettings }
+                            updated={ updated }
+                            hash={ hash }
                         />
                     </div>
                 </div>

@@ -22,9 +22,6 @@ export default class ProfileHeader extends Component {
                         {head.btnMain}
                     </a>
                     <a href={PROFILE_PAGES.INFO}>
-                        {head.btnInfo}
-                    </a>
-                    <a href={PROFILE_PAGES.REFILL}>
                         {head.btnRefill}
                     </a>
                     <a href={PROFILE_PAGES.SETTINGS}>

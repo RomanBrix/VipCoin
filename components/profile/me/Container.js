@@ -4,11 +4,11 @@ import Refill from './Refill';
 
 export default class Container extends Component {
     render(){
-        const { packages, user } = this.props;
+        const { packages, user, crypto } = this.props;
         return(
             <div className="content">
                 <CoinsInfo user={ user }/>
-                <Refill packages={ packages } user={ user }/>
+                <Refill packages={ packages } user={ user } crypto={ crypto }/>
             </div>
         )
     }

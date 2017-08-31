@@ -6,7 +6,10 @@ const InitialState = {
     hash: false,
     vipcoinCost: 0.15,
     packages: [],
-    user: []
+    user: [],
+    crypto:[],
+    updated: "",
+
 };
 
 const profileReducers = (state = InitialState, action) => {
@@ -18,7 +21,10 @@ const profileReducers = (state = InitialState, action) => {
                 hash: state.hash,
                 vipcoinCost: state.vipcoinCost,
                 packages: state.packages,
-                user: state.user
+                user: state.user,
+                crypto: state.crypto,
+                updated: state.updated
+
 
             };
         case act.GET_HASH:
@@ -27,7 +33,10 @@ const profileReducers = (state = InitialState, action) => {
                 hash: action.hash,
                 vipcoinCost: state.vipcoinCost,
                 packages: state.packages,
-                user: state.user
+                user: state.user,
+                crypto: state.crypto,
+                updated: state.updated
+
 
             };
         case act.PACKAGES:
@@ -36,7 +45,10 @@ const profileReducers = (state = InitialState, action) => {
                 hash: state.hash,
                 vipcoinCost: state.vipcoinCost,
                 packages: action.packages,
-                user: state.user
+                user: state.user,
+                crypto: state.crypto,
+                updated: state.updated
+
 
             };
         case act.USER:
@@ -45,7 +57,31 @@ const profileReducers = (state = InitialState, action) => {
                 hash: state.hash,
                 vipcoinCost: state.vipcoinCost,
                 packages: state.packages,
-                user: action.user
+                user: action.user,
+                crypto: state.crypto,
+                updated: state.updated
+
+            };
+        case act.GET_CRYPTO:
+            return{
+                request: false,
+                hash: state.hash,
+                vipcoinCost: state.vipcoinCost,
+                packages: state.packages,
+                user: state.user,
+                crypto: [action.btc, action.ltc, action.eth],
+                updated: state.updated
+
+            };
+        case act.UPDATED:
+            return{
+                request: false,
+                hash: state.hash,
+                vipcoinCost: state.vipcoinCost,
+                packages: state.packages,
+                user: state.user,
+                crypto: state.crypto,
+                updated: action.updated
             };
         default: return state;
 

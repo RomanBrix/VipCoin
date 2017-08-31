@@ -68,6 +68,9 @@ export default class Refill extends Component {
     }
 
     calculateCost(finalPrice){
+        this.setState({
+            payment: false
+        });
         const { coins } = this.refs;
         const totalCost = document.getElementById('cost');
 
@@ -80,7 +83,7 @@ export default class Refill extends Component {
         if(+coins.value < +coins.min) coins.value = coins.min;
         if(+coins.value > +coins.max) coins.value = coins.max;
         // console.log(finalPrice);
-        totalCost.innerHTML = (+coins.value * finalPrice);
+        totalCost.innerHTML = (+coins.value * finalPrice).toFixed(2);
 
 
     }
@@ -113,10 +116,33 @@ export default class Refill extends Component {
                 "_" + coins.value +
                 "_" + cost.innerHTML;
 
-
+            this.toCrypto();
             commentCode.value = b64EncodeUnicode(hash +"&"+getCode);
 
         },75);
+
+    }
+
+    toCrypto(){
+        const {crypto} = this.props;
+        const [btc, ltc, eth] = crypto;
+        // const btc  = crypto[0];
+        // const ltc = crypto[1];
+        // const eth = crypto[2];
+
+        const totalCost = document.getElementById('cost');
+        const bitcoin = document.getElementById('bitcoin');
+        const litecoin = document.getElementById('litecoin');
+        const etherium = document.getElementById('etherium');
+
+        const inBtc = +totalCost.innerHTML * btc;
+        const inLtc = +totalCost.innerHTML * ltc;
+        const inEth = +totalCost.innerHTML * eth;
+        bitcoin.innerHTML = inBtc;
+        litecoin.innerHTML = inLtc;
+        etherium.innerHTML = inEth;
+
+
 
     }
     render(){
@@ -125,6 +151,7 @@ export default class Refill extends Component {
         const colors = ['#f2b01e','#ccc2c2','#f2b01e','#e5c100','#b9f2ff'];
         const logo = ["icon-star", "icon-ribbon-a", "icon-trophy","icon-crown-king-1","icon-diamond"];
         const packageContainer = packages.map((item, index)=>{
+            // console.log(crypto);
             return (
                 <div
                     id={`logo${index}`}
@@ -158,7 +185,7 @@ export default class Refill extends Component {
                                     this.calculateCost(finalPrice.innerHTML);
                                 }}/>
                             </div>
-                            <div>
+                            <div className="finalCost">
                                 <i className="icon-usd"/>
                                 <span id="cost">0</span>
                             </div>
@@ -170,21 +197,29 @@ export default class Refill extends Component {
                     { payment ?
                         <div className="payment">
                             <div className="wallets">
-                                <div className="bitcoin">
+                                <div className="cryptocash" >
+                                    <span id="bitcoin">0</span>
                                     Bitcoin
                                 </div>
-                                <div className="currChange">
+                                <div className="cryptocash">
+                                    <span id="litecoin">0</span>
+                                    Litecoin
+                                </div>
+                                <div className="cryptocash">
+                                    <span id="etherium">0</span>
+                                    Etherium
+                                </div>
+                                <div className="cryptocash swift">
+                                    swift-платеж
+                                </div>
+                                <div className="cryptocash currChange">
                                     Обменка
                                 </div>
                             </div>
                             <div className="codes">
                                 <div className="comment-code">
                                     ваш код для комментария:<br/>
-                                    <input type="text" ref="commentCode"
-                                           style={{
-                                               width: '100%',
-                                               textAlign: 'center'
-                                           }}/>
+                                    <input type="text" ref="commentCode"/>
                                 </div>
                                 <div className="walletUrl">
                                     Кошелек:<br/>

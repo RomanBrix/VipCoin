@@ -8,7 +8,9 @@ module.exports= {
         'scripts/packages': './points/Packages.js',
         'scripts/faq': './points/Faq.js',
         'scripts/contacts': './points/contacts.js',
-        'profile/scripts/me': './points/profile/me.js'
+        'profile/scripts/me': './points/profile/me.js',
+        'profile/scripts/settings': './points/profile/settings.js'
+
     },
     output: {
         path: path.join(__dirname, 'public'),

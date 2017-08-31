@@ -35,3 +35,61 @@ export function getUserInfo (type, hash) {
             })
     }
 }
+
+export function getCrypto () {
+    return dispatch => {
+        dispatch({type: 'REQUEST'});
+
+        axios.get("https://api.cryptonator.com/api/ticker/usd-ltc")
+            .then((res) => {
+            const ltc = res.data.ticker.price;
+
+                axios.get("https://api.cryptonator.com/api/ticker/usd-btc")
+                    .then((res) => {
+                        const btc = res.data.ticker.price;
+
+                        axios.get("https://api.cryptonator.com/api/ticker/usd-eth")
+                            .then((res) => {
+                                const eth = res.data.ticker.price;
+
+                                dispatch({type: act.GET_CRYPTO,btc: btc, ltc: ltc, eth: eth})
+
+                            })
+                            .catch((error) => {
+                                console.log(error);
+                            });
+
+                    })
+                    .catch((error) => {
+                        console.log(error);
+                    });
+
+            })
+            .catch((error) => {
+                console.log(error);
+            });
+
+
+
+    }
+}
+
+export function updateSettings (type, hash,currPassword, newItem) {
+    return dispatch => {
+        dispatch({type: 'REQUEST'});
+
+        axios.post(`${GLOB_URL}settings.php`, {
+            type,
+            hash,
+            currPassword,
+            newItem
+        })
+            .then((res) => {
+                dispatch({type: act.UPDATED, updated: res.data});
+            })
+            .catch((error) => {
+                console.log(error);
+            })
+    }
+}
+

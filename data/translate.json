@@ -50,14 +50,34 @@
         "layouts":{
           "leftHeader":{
             "btnMain": "главная",
-            "btnInfo": "информация",
-            "btnRefill": "пополнить счет",
+            "btnRefill": "Купить",
             "btnSettings": "Настройки",
             "btnExit": "выход"
           }
         },
         "info":{
 
+        },
+        "settings":{
+          "password" : {
+            "head": "Сменить пароль",
+            "CurPass": "Текущий пароль",
+            "new":"Новый пароль",
+            "repass": "Повторите пароль",
+            "save": "Сохранить",
+            "error":"Неверный пароль",
+            "accept":"Изминения сохранены"
+          },
+          "email":{
+            "head": "Сменить E-mail",
+            "CurPass": "Текущий пароль",
+            "new": "Новый E-mail",
+            "save": "Сохранить",
+            "error":"Неверный пароль",
+            "secondError": "Такой E-mail уже есть!",
+            "accept":"Изминения сохранены"
+
+          }
         }
       }
     },

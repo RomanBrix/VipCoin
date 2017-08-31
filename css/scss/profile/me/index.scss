@@ -39,11 +39,148 @@
       div{
         width: 100%;
         margin-right: 2px;
+        margin-bottom: 0;
+        //margin-right: 10px;
+        text-shadow: 0 0 10px black;
+        border: 1px solid;
+        padding: 10px 10px 0;
+        cursor: pointer;
+        //box-shadow: rgba(229, 193, 0, 0.15) 0 11px 35px;
+        background-color: rgba(242, 176, 30, 0.3);
+        border-radius: 5px;
+        transition: 0.25s all;
+        &:hover{
+          transform: scale(1.02);
+          background-color: rgba(242, 176, 30, 0.7);
+        }
         i{
           font-size: 2em;
         }
         p{
           margin: 2px 0;
+        }
+      }
+    }
+    .options{
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      font-size: 1.3em;
+      color: white;
+      margin-top: 20px;
+      .specCost{
+        margin-bottom: 15px;
+        #specialPrice{
+          background: $LightGold;
+          border-radius: 5px;
+          padding: 4px
+        }
+      }
+      #howMuch{
+        margin-bottom: 15px;
+        font-size: 1.2em;
+        input{
+          outline: none;
+          line-height: 20px;
+          min-width: 200px;
+          padding: 0px 10px 0 15px;
+          text-align: center;
+          margin-bottom: 10px;
+          background-color: rgba(255,255,255,.1);
+          border: 2px solid transparent;
+          border-bottom: 2px solid rgba(255,255,255,.7);
+          color: rgba(255,255,255,.9);
+          //font-size: 13px;
+          font-size: 2.2em;
+          transition: .25s all;
+          &:focus, &:hover{
+            border: 2px solid rgba(255,255,255,.5);
+            background-color: transparent;
+          }
+          &::placeholder{
+            color: rgba(255, 255, 255, .7);
+          }
+        }
+      }
+      .finalCost{
+        display: flex;
+        align-items: center;
+        margin-bottom: 15px;
+        #cost{
+          background: $LightGold;
+          padding: 4px;
+          border-radius: 5px;
+        }
+      }
+      .btn-buy{
+        //padding: 6px 20px 4px;
+        //border: 1px solid $LightGold;
+        //border-radius: 5px;
+        //background: rgba(87, 87, 87, .7);
+        //display: inline-block;
+        //float: right;
+        font-size: 1.1em;
+        color: #fff;
+        background: $LightGold;
+        cursor: pointer;
+        border: none;
+        outline: none;
+        padding: 10px 25px;
+        text-transform: uppercase;
+        line-height: 19px;
+        box-shadow: 0 0 5px 1px $BrightGold;
+        margin: 10px 25px;
+        transition: .25s all;
+        &:hover{
+          box-shadow: 0 0 10px 1px $BrightGold;
+        }
+      }
+    }
+
+    .payment{
+      display: flex;
+      width: 100%;
+      .wallets{
+        width: 30%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-around;
+        .cryptocash{
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+          padding: 4px 10px;
+          border: 1px solid;
+          border-radius: 5px;
+          color: white;
+          margin-bottom: 15px;
+          span{
+            margin: 5px;
+          }
+        }
+      }
+      .codes{
+        width: 70%;
+        padding: 0 20px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-around;
+        color: white;
+        .comment-code{
+          width: 100%;
+          input{
+            width: 100%;
+            text-align: center;
+          }
+        }
+        .walletUrl{
+          width: 100%;
+          input{
+            width: 100%;
+            text-align: center;
+          }
         }
       }
     }
