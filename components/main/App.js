@@ -14,7 +14,8 @@ export default class App extends Component {
         this.state = {
             language: props.language || "ru",
             auth: false,
-        }
+        };
+        props.getCoinsInfo("coinsInfo");
     }
 
     toggleAuth(auth){
@@ -31,6 +32,8 @@ export default class App extends Component {
             userState,
             request,
             userLogin,
+            soldCoins,
+            maxCoins
         } = this.props;
         const { language, auth } = this.state;
 
@@ -79,7 +82,11 @@ export default class App extends Component {
                 />
                 <div className="bg" style={ {backgroundImage: `url(${BG_COIN})`} }/>
                 <div className="container">
-                    <Container pages={pages.main}/>
+                    <Container
+                        pages={ pages.main }
+                        soldCoins={ soldCoins }
+                        maxCoins={ maxCoins }
+                    />
                 </div>
                 <Footer footer={ layouts.footer } />
             </div>

@@ -1,0 +1,110 @@
+@import "./Fonts";
+
+.header{
+  background-color: #17252e ;
+  font-family: HelveticaLight;
+  color: white;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  //position: relative;
+  align-items: center;
+  text-align: center;
+  width: 100%;
+  position: fixed;
+  top:0;
+  left: 0;
+  .head{
+    padding-right: 2.5%;
+    //box-shadow: inset -5px 0 5px black;
+    box-shadow: inset -10px 0 10px -7px black;
+    margin-right: 3.5%;
+    margin-left: -10%;
+  }
+  .menu{
+    display: flex;
+    justify-content: space-around;
+
+    div{
+      cursor: pointer;
+      margin-right: 20px;
+      padding: 10px;
+      text-align: center;
+      background-color: #1e3543;
+      border-radius: 5px;
+      box-shadow: 0 0 15px black;
+      transition: .2s;
+
+      &:last-child{
+        margin-right: 0;
+      }
+      &:hover{
+        background-color: #1e3d4b;
+        box-shadow: 0 0 35px black;
+
+      }
+    }
+  }
+  .user{
+    position: absolute;
+    right: 5%;
+    margin-right: 130px;
+    justify-content: center;
+    display: flex;
+    align-items: center;
+    flex-direction: row-reverse;
+    font-family: HelveticaBold;
+    .user_icon{
+      width: 50px;
+      margin-left: 15px;
+    }
+  }
+  .enter {
+    position: absolute;
+    right: 5%;
+    display: flex;
+
+    .login {
+      cursor: pointer;
+      //margin-right: 25px;
+      padding: 10px 20px;
+      border-radius: 5px;
+      background-color: #151f24;
+      box-shadow: inset 0 0 4px black;
+      transition: .2s;
+      display: flex;
+      align-items: center;
+
+      i {
+        font-size: 1.5em;
+        margin-right: 5px;
+      }
+      &:hover {
+        background-color: #1b2429;
+        box-shadow: inset 0 0 1px black;
+      }
+    }
+  }
+
+  .exit{
+    cursor: pointer;
+    padding: 10px 20px;
+    border-radius: 5px;
+    background-color: #151f24;
+    box-shadow: inset 0 0 4px black;
+    transition: .2s;
+    &:hover{
+      background-color: #1b2429;
+      box-shadow: inset 0 0 1px black;
+
+    }
+  }
+}
+
+
+
+
+
+
+
+

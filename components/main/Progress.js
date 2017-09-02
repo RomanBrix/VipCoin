@@ -1,19 +1,11 @@
 import React, {Component} from 'react';
 
 export default class Progress extends Component {
-    constructor(props){
-        super(props);
-        this.state = {
-            maxCoins: 10000000,
-            soldCoins: 234567
-        }
-    }
+
     render(){
-        const { pages } = this.props;
-        const {maxCoins, soldCoins } = this.state;
+        const { pages, maxCoins, soldCoins } = this.props;
 
         let coinsLeft = ((maxCoins*30)/100)-soldCoins;
-        // console.log(coinsLeft);
             if(coinsLeft <= 0 ){
                 coinsLeft = "FINISH";
             };

@@ -60,7 +60,7 @@
 /******/ 	__webpack_require__.p = "";
 /******/
 /******/ 	// Load entry module and return exports
-/******/ 	return __webpack_require__(__webpack_require__.s = 642);
+/******/ 	return __webpack_require__(__webpack_require__.s = 658);
 /******/ })
 /************************************************************************/
 /******/ ([
@@ -7609,55 +7609,7 @@ module.exports = defaults;
 /* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(0)))
 
 /***/ }),
-/* 59 */
-/***/ (function(module, exports, __webpack_require__) {
-
-"use strict";
-
-
-Object.defineProperty(exports, "__esModule", {
-    value: true
-});
-var LOGO = exports.LOGO = './src/logo.png';
-
-var FLAG_RU = exports.FLAG_RU = "./src/header/ru.svg";
-var FLAG_ENG = exports.FLAG_ENG = "./src/header/eng.svg";
-var FLAG_JAP = exports.FLAG_JAP = "./src/header/japan.svg";
-var FLAG_USA = exports.FLAG_USA = "./src/header/usa.svg";
-
-var BG_COIN = exports.BG_COIN = "./src/vipcoin.png";
-var MAIN_TOP_VIDEO = exports.MAIN_TOP_VIDEO = "https://www.youtube.com/embed/FRTOlFwpMX8";
-
-var PAGES = exports.PAGES = {
-    MAIN: "index.html",
-    ABOUT_US: "#",
-    PACKAGES: "packages.html",
-    FAQ: "faq.html",
-    NEWS: "#",
-    CONTACT_US: "contacts.html",
-    WHITE_PAGE: "#",
-    LEGAL_PAGE: "#",
-    CONTRACT_OFFER: "#"
-};
-
-var PROFILE_PAGES = exports.PROFILE_PAGES = {
-    MAIN: "../index.html",
-    INFO: "me.html",
-    SETTINGS: "settings.html"
-
-};
-
-var CONTACTS = exports.CONTACTS = {
-    TELEPHONE: 380730070032,
-    SKYPE: 'roma4Rock',
-    MAIL: 'stetcukroman@gmail.com',
-    FACEBOOK: "#",
-    TWITTER: "#",
-    INSTA: "#",
-    YOUTUBE: "#"
-};
-
-/***/ }),
+/* 59 */,
 /* 60 */
 /***/ (function(module, exports) {
 
@@ -12860,12 +12812,7 @@ function updateSettings(type, hash, currPassword, newItem) {
 }
 
 /***/ }),
-/* 122 */
-/***/ (function(module, exports) {
-
-module.exports = [{"language":"ru","pages":{"main":{"top":{"head":"Ваш шедевр готов!","text":"С другой стороны консультация с широким активом способствует подготовки и реализации модели развития. Задача организации, в особенности же консультация с широким активом в значительной степени обуславливает создание системы обучения кадров, соответствует насущным потребностям. Задача организации, в особенности же постоянный количественный рост и сфера нашей активности обеспечивает широкому кругу"},"progress":{"head":"ЦЕЛЬ Vip Coin","title":"Официальный запуск сети после продажи "}},"help":{},"packages":{"packages":[{"title":"ПАКЕТЫ"},{"title":"Калькулятор выгоды","inputCoins":"VipCoin","text":"Подсчитайте свою прибыль с учетом прогнозов курса VipCoin на последующие года"}]},"FAQ":{},"news":{},"contacts":{"top":{"head":"Контакты"},"feedback":{"head":"центр поддержки клиентов","inputName":"Имя","inputLName":"Фамилия","inputEmail":"E-mail","inputMsg":"Ваше сообщение","btnSend":"Отправить"}},"profile":{"layouts":{"leftHeader":{"btnMain":"главная","btnRefill":"Купить","btnSettings":"Настройки","btnExit":"выход"}},"info":{},"settings":{"password":{"head":"Сменить пароль","CurPass":"Текущий пароль","new":"Новый пароль","repass":"Повторите пароль","save":"Сохранить","error":"Неверный пароль","accept":"Изминения сохранены"},"email":{"head":"Сменить E-mail","CurPass":"Текущий пароль","new":"Новый E-mail","save":"Сохранить","error":"Неверный пароль","secondError":"Такой E-mail уже есть!","accept":"Изминения сохранены"}}}},"layouts":{"header":{"btnMain":"ГЛАВНАЯ","btnAbout":"О НАС","btnPackages":"ПАКЕТЫ","btnFAQ":"Помощь","btnNews":"Новости","btnContacts":"Контакты","login":{"log":"Личный кабинет"}},"footer":{"pages":{"whitePage":"Белая Бумага","legalPage":"Юридические Страницы","contractOffer":"Предложение по Контракту"},"feedback":"Обратная связь"},"auth":{"header":{"btnLogin":"Войти","btnRegistration":"Регестрация","btnForgotPass":"Забыли пароль?"},"login":{"inputLogin":"Логин или E-mail","inputPassword":"Пароль","btnEnter":"Войти"},"registration":{"inputLogin":"Логин","inputEmail":"E-Mail","inputPassword":"Пароль","inputRepeatPassword":"Повторите пароль","checkLegal":"Согласен с правилами сайта","btnRegistration":"Регестрация"},"forgot":{"text":"Отправить пароль на почту","inputEmail":"E-Mail","btnSend":"Отправить","success":"E-mail отправлен!","error":"E-mail не найден"}}}}]
-
-/***/ }),
+/* 122 */,
 /* 123 */,
 /* 124 */
 /***/ (function(module, exports, __webpack_require__) {
@@ -27696,153 +27643,9 @@ module.exports = "data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBzdGFuZGFs
 /* 361 */,
 /* 362 */,
 /* 363 */,
-/* 364 */
-/***/ (function(module, exports, __webpack_require__) {
-
-"use strict";
-
-
-Object.defineProperty(exports, "__esModule", {
-    value: true
-});
-
-var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
-
-var _react = __webpack_require__(8);
-
-var _react2 = _interopRequireDefault(_react);
-
-var _links = __webpack_require__(59);
-
-function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
-
-function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
-
-function _possibleConstructorReturn(self, call) { if (!self) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return call && (typeof call === "object" || typeof call === "function") ? call : self; }
-
-function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
-
-var ProfileHeader = function (_Component) {
-    _inherits(ProfileHeader, _Component);
-
-    function ProfileHeader() {
-        _classCallCheck(this, ProfileHeader);
-
-        return _possibleConstructorReturn(this, (ProfileHeader.__proto__ || Object.getPrototypeOf(ProfileHeader)).apply(this, arguments));
-    }
-
-    _createClass(ProfileHeader, [{
-        key: "render",
-        value: function render() {
-            var _props = this.props,
-                head = _props.head,
-                user = _props.user;
-
-
-            var login = user.map(function (item, index) {
-                return _react2.default.createElement(
-                    "div",
-                    { className: "hello", key: index },
-                    _react2.default.createElement("i", { className: "icon-user" }),
-                    item.login
-                );
-            });
-            return _react2.default.createElement(
-                "div",
-                { className: "left-header" },
-                _react2.default.createElement(
-                    "div",
-                    { className: "logo" },
-                    _react2.default.createElement("img", { src: "." + _links.LOGO, alt: "logo" })
-                ),
-                _react2.default.createElement(
-                    "div",
-                    { className: "menu" },
-                    _react2.default.createElement(
-                        "a",
-                        { href: _links.PROFILE_PAGES.MAIN },
-                        head.btnMain
-                    ),
-                    _react2.default.createElement(
-                        "a",
-                        { href: _links.PROFILE_PAGES.INFO },
-                        head.btnRefill
-                    ),
-                    _react2.default.createElement(
-                        "a",
-                        { href: _links.PROFILE_PAGES.SETTINGS },
-                        head.btnSettings
-                    )
-                ),
-                login,
-                _react2.default.createElement(
-                    "div",
-                    { className: "exit", onClick: function onClick() {
-                            document.cookie = "user=1; expires=Thu, 01 Jan 1970 00:00:00 UTC; path=/";
-                            setTimeout(function () {
-                                window.location.href = '../index.html';
-                            }, 200);
-                        } },
-                    _react2.default.createElement("i", { className: "icon-power" }),
-                    " ",
-                    head.btnExit
-                )
-            );
-        }
-    }]);
-
-    return ProfileHeader;
-}(_react.Component);
-
-exports.default = ProfileHeader;
-;
-
-/***/ }),
-/* 365 */
-/***/ (function(module, exports, __webpack_require__) {
-
-// style-loader: Adds some css to the DOM by adding a <style> tag
-
-// load the styles
-var content = __webpack_require__(366);
-if(typeof content === 'string') content = [[module.i, content, '']];
-// Prepare cssTransformation
-var transform;
-
-var options = {}
-options.transform = transform
-// add the styles to the DOM
-var update = __webpack_require__(27)(content, options);
-if(content.locals) module.exports = content.locals;
-// Hot Module Replacement
-if(false) {
-	// When the styles change, update the <style> tags
-	if(!content.locals) {
-		module.hot.accept("!!../../../node_modules/css-loader/index.js!../../../node_modules/sass-loader/lib/loader.js!./main.scss", function() {
-			var newContent = require("!!../../../node_modules/css-loader/index.js!../../../node_modules/sass-loader/lib/loader.js!./main.scss");
-			if(typeof newContent === 'string') newContent = [[module.id, newContent, '']];
-			update(newContent);
-		});
-	}
-	// When the module is disposed, remove the <style> tags
-	module.hot.dispose(function() { update(); });
-}
-
-/***/ }),
-/* 366 */
-/***/ (function(module, exports, __webpack_require__) {
-
-exports = module.exports = __webpack_require__(26)(undefined);
-// imports
-
-
-// module
-exports.push([module.i, "@font-face {\n  font-family: 'Brusher';\n  src: url(" + __webpack_require__(61) + "); }\n\n@font-face {\n  font-family: 'HelveticaLight';\n  src: url(" + __webpack_require__(62) + "); }\n\n@font-face {\n  font-family: 'HelveticaBlack';\n  src: url(" + __webpack_require__(63) + "); }\n\n@font-face {\n  font-family: 'HelveticaBold';\n  src: url(" + __webpack_require__(64) + "); }\n\n@font-face {\n  font-family: 'HelveticaHeavy';\n  src: url(" + __webpack_require__(65) + "); }\n\nbody {\n  font-family: HelveticaLight;\n  padding: 0;\n  margin: 0;\n  background: #575757; }\n  body .Main {\n    width: 100%;\n    height: 100%; }\n    body .Main .bg {\n      width: 500px;\n      height: 500px;\n      border-radius: 50%;\n      position: fixed;\n      left: 50%;\n      top: 20%;\n      margin-left: -250px;\n      background-size: cover;\n      opacity: .2;\n      z-index: -1; }\n    body .Main .container {\n      width: 100%; }\n      body .Main .container .left-header {\n        background: #575757;\n        display: flex;\n        justify-content: space-between;\n        align-items: center;\n        box-shadow: 0 0 15px 2px #191919;\n        min-height: 45px; }\n        body .Main .container .left-header .logo {\n          margin-left: 20px; }\n          body .Main .container .left-header .logo img {\n            max-width: 150px; }\n        body .Main .container .left-header .menu {\n          display: flex;\n          align-items: center;\n          justify-content: space-around; }\n          body .Main .container .left-header .menu a {\n            padding: 10px 20px 4px;\n            text-align: center;\n            font-size: 1em;\n            color: white;\n            text-decoration: none;\n            text-transform: uppercase;\n            cursor: pointer;\n            transition: .25s all; }\n            body .Main .container .left-header .menu a:hover {\n              color: #e5c100; }\n        body .Main .container .left-header .hello {\n          font-size: 1.4em;\n          color: white;\n          display: flex;\n          cursor: pointer;\n          transition: .25s all; }\n        body .Main .container .left-header .exit {\n          font-size: 1.4em;\n          color: white;\n          display: flex;\n          cursor: pointer;\n          transition: .25s all;\n          margin-right: 35px; }\n          body .Main .container .left-header .exit:hover {\n            color: #e5c100; }\n      body .Main .container .right-container {\n        width: 100%; }\n      body .Main .container h1 {\n        color: #ccac02;\n        margin-left: 15px;\n        letter-spacing: 3px;\n        text-transform: uppercase;\n        text-shadow: 0 0px 15px black;\n        z-index: 10; }\n", ""]);
-
-// exports
-
-
-/***/ }),
+/* 364 */,
+/* 365 */,
+/* 366 */,
 /* 367 */,
 /* 368 */,
 /* 369 */,
@@ -28118,7 +27921,23 @@ exports.push([module.i, "@font-face {\n  font-family: 'Brusher';\n  src: url(" +
 /* 639 */,
 /* 640 */,
 /* 641 */,
-/* 642 */
+/* 642 */,
+/* 643 */,
+/* 644 */,
+/* 645 */,
+/* 646 */,
+/* 647 */,
+/* 648 */,
+/* 649 */,
+/* 650 */,
+/* 651 */,
+/* 652 */,
+/* 653 */,
+/* 654 */,
+/* 655 */,
+/* 656 */,
+/* 657 */,
+/* 658 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -28142,15 +27961,15 @@ var _reducers = __webpack_require__(252);
 
 var _reducers2 = _interopRequireDefault(_reducers);
 
-var _me = __webpack_require__(643);
+var _generally = __webpack_require__(659);
 
-var _me2 = _interopRequireDefault(_me);
+var _generally2 = _interopRequireDefault(_generally);
 
-var _main = __webpack_require__(365);
+var _main = __webpack_require__(660);
 
 var _main2 = _interopRequireDefault(_main);
 
-var _index = __webpack_require__(648);
+var _index = __webpack_require__(662);
 
 var _index2 = _interopRequireDefault(_index);
 
@@ -28162,11 +27981,11 @@ var store = (0, _redux.createStore)(_reducers2.default, (0, _redux.applyMiddlewa
 (0, _reactDom.render)(_react2.default.createElement(
     _reactRedux.Provider,
     { store: store },
-    _react2.default.createElement(_me2.default, null)
+    _react2.default.createElement(_generally2.default, null)
 ), init);
 
 /***/ }),
-/* 643 */
+/* 659 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -28182,637 +28001,73 @@ var _react2 = _interopRequireDefault(_react);
 
 var _reactRedux = __webpack_require__(115);
 
-var _profileActions = __webpack_require__(121);
+__webpack_require__(664);
 
-var _App = __webpack_require__(644);
+var _App = __webpack_require__(665);
 
 var _App2 = _interopRequireDefault(_App);
 
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
 var mapStateToProps = function mapStateToProps(state) {
-    return state.profile;
+    return state.front;
 };
 
-exports.default = (0, _reactRedux.connect)(mapStateToProps, {
-    getHash: _profileActions.getHash,
-    getPackages: _profileActions.getPackages,
-    getUserInfo: _profileActions.getUserInfo,
-    getCrypto: _profileActions.getCrypto
-
-})(_App2.default);
+exports.default = (0, _reactRedux.connect)(mapStateToProps, {})(_App2.default);
 
 /***/ }),
-/* 644 */
-/***/ (function(module, exports, __webpack_require__) {
-
-"use strict";
-
-
-Object.defineProperty(exports, "__esModule", {
-    value: true
-});
-
-var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
-
-var _react = __webpack_require__(8);
-
-var _react2 = _interopRequireDefault(_react);
-
-var _translate = __webpack_require__(122);
-
-var _translate2 = _interopRequireDefault(_translate);
-
-var _styles = __webpack_require__(114);
-
-var _styles2 = _interopRequireDefault(_styles);
-
-var _links = __webpack_require__(59);
-
-var _ProfileHeader = __webpack_require__(364);
-
-var _ProfileHeader2 = _interopRequireDefault(_ProfileHeader);
-
-var _Container = __webpack_require__(645);
-
-var _Container2 = _interopRequireDefault(_Container);
-
-function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
-
-function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
-
-function _possibleConstructorReturn(self, call) { if (!self) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return call && (typeof call === "object" || typeof call === "function") ? call : self; }
-
-function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
-
-var App = function (_Component) {
-    _inherits(App, _Component);
-
-    function App(props) {
-        _classCallCheck(this, App);
-
-        var _this = _possibleConstructorReturn(this, (App.__proto__ || Object.getPrototypeOf(App)).call(this, props));
-
-        props.getHash(_this.getCookie("user"));
-        _this.state = {
-            language: _this.getCookie("language") || "ru",
-            user: _this.getCookie("user")
-        };
-        if (_this.state.user === undefined) {
-            window.location.href = '../index.html';
-        } else if (_this.state.user.length < 15) {
-            window.location.href = '../index.html';
-        }
-
-        props.getPackages("package");
-        props.getUserInfo("infooo", _this.state.user);
-        props.getCrypto();
-
-        return _this;
-    }
-
-    _createClass(App, [{
-        key: "getCookie",
-        value: function getCookie(name) {
-            var matches = document.cookie.match(new RegExp("(?:^|; )" + name.replace(/([\.$?*|{}\(\)\[\]\\\/\+^])/g, '\\$1') + "=([^;]*)"));
-            return matches ? decodeURIComponent(matches[1]) : undefined;
-        }
-    }, {
-        key: "render",
-        value: function render() {
-            var language = this.state.language;
-            var _props = this.props,
-                hash = _props.hash,
-                packages = _props.packages,
-                user = _props.user,
-                crypto = _props.crypto;
-
-
-            var lang = _translate2.default.filter(function (item) {
-                return item.language === language;
-            });
-            var pages = lang[0].pages;
-
-
-            return _react2.default.createElement(
-                "div",
-                { className: "Main" },
-                _react2.default.createElement("div", { className: "bg", style: { backgroundImage: "url(../" + _links.BG_COIN + ")" } }),
-                _react2.default.createElement(
-                    "div",
-                    { className: "container" },
-                    _react2.default.createElement(_ProfileHeader2.default, { head: pages.profile.layouts.leftHeader, user: user }),
-                    _react2.default.createElement(
-                        "div",
-                        { className: "right-container" },
-                        _react2.default.createElement(_Container2.default, {
-                            profile: pages.profile,
-                            packages: packages,
-                            user: user,
-                            crypto: crypto
-                        })
-                    )
-                )
-            );
-        }
-    }]);
-
-    return App;
-}(_react.Component);
-
-exports.default = App;
-
-/***/ }),
-/* 645 */
-/***/ (function(module, exports, __webpack_require__) {
-
-"use strict";
-
-
-Object.defineProperty(exports, "__esModule", {
-    value: true
-});
-
-var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
-
-var _react = __webpack_require__(8);
-
-var _react2 = _interopRequireDefault(_react);
-
-var _CoinsInfo = __webpack_require__(646);
-
-var _CoinsInfo2 = _interopRequireDefault(_CoinsInfo);
-
-var _Refill = __webpack_require__(647);
-
-var _Refill2 = _interopRequireDefault(_Refill);
-
-function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
-
-function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
-
-function _possibleConstructorReturn(self, call) { if (!self) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return call && (typeof call === "object" || typeof call === "function") ? call : self; }
-
-function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
-
-var Container = function (_Component) {
-    _inherits(Container, _Component);
-
-    function Container() {
-        _classCallCheck(this, Container);
-
-        return _possibleConstructorReturn(this, (Container.__proto__ || Object.getPrototypeOf(Container)).apply(this, arguments));
-    }
-
-    _createClass(Container, [{
-        key: 'render',
-        value: function render() {
-            var _props = this.props,
-                packages = _props.packages,
-                user = _props.user,
-                crypto = _props.crypto;
-
-            return _react2.default.createElement(
-                'div',
-                { className: 'content' },
-                _react2.default.createElement(_CoinsInfo2.default, { user: user }),
-                _react2.default.createElement(_Refill2.default, { packages: packages, user: user, crypto: crypto })
-            );
-        }
-    }]);
-
-    return Container;
-}(_react.Component);
-
-exports.default = Container;
-
-/***/ }),
-/* 646 */
-/***/ (function(module, exports, __webpack_require__) {
-
-"use strict";
-
-
-Object.defineProperty(exports, "__esModule", {
-    value: true
-});
-
-var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
-
-var _react = __webpack_require__(8);
-
-var _react2 = _interopRequireDefault(_react);
-
-function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
-
-function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
-
-function _possibleConstructorReturn(self, call) { if (!self) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return call && (typeof call === "object" || typeof call === "function") ? call : self; }
-
-function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
-
-var CoinsInfo = function (_Component) {
-    _inherits(CoinsInfo, _Component);
-
-    function CoinsInfo() {
-        _classCallCheck(this, CoinsInfo);
-
-        return _possibleConstructorReturn(this, (CoinsInfo.__proto__ || Object.getPrototypeOf(CoinsInfo)).apply(this, arguments));
-    }
-
-    _createClass(CoinsInfo, [{
-        key: "render",
-        value: function render() {
-            var user = this.props.user;
-            var _ref = ["", ""],
-                status = _ref.status,
-                coinsHave = _ref.coinsHave;
-
-            user.map(function (item) {
-                status = item.status;
-                coinsHave = item.vipcoins_value;
-            });
-            return _react2.default.createElement(
-                "div",
-                { className: "coins-info" },
-                _react2.default.createElement(
-                    "div",
-                    { className: "status" },
-                    status
-                ),
-                _react2.default.createElement(
-                    "div",
-                    { className: "coinsHave" },
-                    _react2.default.createElement("i", { className: "icon-bitcoin-circle" }),
-                    coinsHave
-                ),
-                _react2.default.createElement(
-                    "div",
-                    { className: "profit" },
-                    _react2.default.createElement("i", { className: "icon-usd" }),
-                    (coinsHave * 0.15).toFixed(2)
-                )
-            );
-        }
-    }]);
-
-    return CoinsInfo;
-}(_react.Component);
-
-exports.default = CoinsInfo;
-
-/***/ }),
-/* 647 */
-/***/ (function(module, exports, __webpack_require__) {
-
-"use strict";
-
-
-Object.defineProperty(exports, "__esModule", {
-    value: true
-});
-
-var _slicedToArray = function () { function sliceIterator(arr, i) { var _arr = []; var _n = true; var _d = false; var _e = undefined; try { for (var _i = arr[Symbol.iterator](), _s; !(_n = (_s = _i.next()).done); _n = true) { _arr.push(_s.value); if (i && _arr.length === i) break; } } catch (err) { _d = true; _e = err; } finally { try { if (!_n && _i["return"]) _i["return"](); } finally { if (_d) throw _e; } } return _arr; } return function (arr, i) { if (Array.isArray(arr)) { return arr; } else if (Symbol.iterator in Object(arr)) { return sliceIterator(arr, i); } else { throw new TypeError("Invalid attempt to destructure non-iterable instance"); } }; }();
-
-var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
-
-var _react = __webpack_require__(8);
-
-var _react2 = _interopRequireDefault(_react);
-
-function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
-
-function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
-
-function _possibleConstructorReturn(self, call) { if (!self) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return call && (typeof call === "object" || typeof call === "function") ? call : self; }
-
-function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
-
-var Refill = function (_Component) {
-    _inherits(Refill, _Component);
-
-    function Refill(props) {
-        _classCallCheck(this, Refill);
-
-        var _this = _possibleConstructorReturn(this, (Refill.__proto__ || Object.getPrototypeOf(Refill)).call(this, props));
-
-        _this.state = {
-            options: false,
-            packageSelected: false,
-            payment: false
-        };
-        return _this;
-    }
-
-    _createClass(Refill, [{
-        key: 'specialPrice',
-        value: function specialPrice(minCoins, maxCoins, name) {
-            var _this2 = this;
-
-            this.setState({
-                options: true,
-                packageSelected: name
-            });
-            setTimeout(function () {
-                var _props = _this2.props,
-                    packages = _props.packages,
-                    user = _props.user;
-                var coins = _this2.refs.coins;
-
-                var special = document.getElementById('specialPrice');
-                coins.value = minCoins;
-                coins.min = minCoins;
-                coins.max = maxCoins;
-
-                var statusPrice = 0;
-                var indexStatusPrice = 0;
-                var selectedPrice = 0;
-                var indexSelectedPrice = 0;
-
-                packages.map(function (item, index) {
-                    if (item.name.toUpperCase() === user[0].status.toUpperCase()) {
-                        // console.group("statusPrice");
-                        // console.log(index);
-                        // console.log(item.oneCoinCost);
-                        // console.groupEnd("statusPrice");
-
-                        indexStatusPrice = index;
-                        statusPrice = +item.oneCoinCost;
-                    }
-                    if (item.name.toUpperCase() === name.toUpperCase()) {
-                        // console.group("selected");
-                        // console.log(index);
-                        // console.log(item.oneCoinCost);
-                        // console.groupEnd("selected");
-
-                        indexSelectedPrice = index;
-                        selectedPrice = item.oneCoinCost;
-                    }
-                });
-                var finalPrice = statusPrice;
-                if (statusPrice > selectedPrice) {
-                    finalPrice = selectedPrice;
-                }
-                // console.group("final Price");
-                // console.log(finalPrice);
-                // console.groupEnd("final Price");
-
-
-                special.innerHTML = finalPrice;
-                _this2.calculateCost(finalPrice);
-            }, 75);
-        }
-    }, {
-        key: 'calculateCost',
-        value: function calculateCost(finalPrice) {
-            this.setState({
-                payment: false
-            });
-            var coins = this.refs.coins;
-
-            var totalCost = document.getElementById('cost');
-
-            // console.group('min and max');
-            // console.log(coins.min, coins.max);
-            // console.groupEnd('min and max');
-            // console.log(+coins.value < +coins.min);
-            // console.log(+coins.value > +coins.max);
-
-            if (+coins.value < +coins.min) coins.value = coins.min;
-            if (+coins.value > +coins.max) coins.value = coins.max;
-            // console.log(finalPrice);
-            totalCost.innerHTML = (+coins.value * finalPrice).toFixed(2);
-        }
-    }, {
-        key: 'generateCode',
-        value: function generateCode() {
-            var _this3 = this;
-
-            var user = this.props.user;
-            var _state = this.state,
-                packageSelected = _state.packageSelected,
-                payment = _state.payment;
-
-            this.setState({
-                payment: true
-            });
-
-            setTimeout(function () {
-                var _refs = _this3.refs,
-                    coins = _refs.coins,
-                    commentCode = _refs.commentCode;
-                var hash = user[0].hash;
-
-                var specialPrice = document.getElementById('specialPrice');
-                var cost = document.getElementById('cost');
-
-                function b64EncodeUnicode(str) {
-                    return btoa(encodeURIComponent(str).replace(/%([0-9A-F]{2})/g, function toSolidBytes(match, p1) {
-                        return String.fromCharCode('0x' + p1);
-                    }));
-                };
-
-                var getCode = "" + packageSelected + "_" + specialPrice.innerHTML + "_" + coins.value + "_" + cost.innerHTML;
-
-                _this3.toCrypto();
-                commentCode.value = b64EncodeUnicode(hash + "&" + getCode);
-            }, 75);
-        }
-    }, {
-        key: 'toCrypto',
-        value: function toCrypto() {
-            var crypto = this.props.crypto;
-
-            var _crypto = _slicedToArray(crypto, 3),
-                btc = _crypto[0],
-                ltc = _crypto[1],
-                eth = _crypto[2];
-            // const btc  = crypto[0];
-            // const ltc = crypto[1];
-            // const eth = crypto[2];
-
-            var totalCost = document.getElementById('cost');
-            var bitcoin = document.getElementById('bitcoin');
-            var litecoin = document.getElementById('litecoin');
-            var etherium = document.getElementById('etherium');
-
-            var inBtc = +totalCost.innerHTML * btc;
-            var inLtc = +totalCost.innerHTML * ltc;
-            var inEth = +totalCost.innerHTML * eth;
-            bitcoin.innerHTML = inBtc;
-            litecoin.innerHTML = inLtc;
-            etherium.innerHTML = inEth;
-        }
-    }, {
-        key: 'render',
-        value: function render() {
-            var _this4 = this;
-
-            var packages = this.props.packages;
-            var _state2 = this.state,
-                options = _state2.options,
-                payment = _state2.payment;
-
-            var colors = ['#f2b01e', '#ccc2c2', '#f2b01e', '#e5c100', '#b9f2ff'];
-            var logo = ["icon-star", "icon-ribbon-a", "icon-trophy", "icon-crown-king-1", "icon-diamond"];
-            var packageContainer = packages.map(function (item, index) {
-                // console.log(crypto);
-                return _react2.default.createElement(
-                    'div',
-                    {
-                        id: 'logo' + index,
-                        key: index,
-                        style: { color: colors[index] },
-                        onClick: function onClick() {
-                            _this4.specialPrice(+item.minCoins, +item.maxCoins, item.name);
-                        }
-                    },
-                    _react2.default.createElement('i', { className: logo[index] }),
-                    _react2.default.createElement(
-                        'p',
-                        null,
-                        item.name
-                    )
-                );
-            });
-
-            return _react2.default.createElement(
-                'div',
-                { className: 'refill' },
-                _react2.default.createElement(
-                    'h1',
-                    null,
-                    '\u041A\u0423\u041F\u0418\u0422\u042C'
-                ),
-                _react2.default.createElement(
-                    'div',
-                    { className: 'refill-container' },
-                    _react2.default.createElement(
-                        'div',
-                        { className: 'packages' },
-                        packageContainer
-                    ),
-                    options ? _react2.default.createElement(
-                        'div',
-                        { className: 'options' },
-                        _react2.default.createElement(
-                            'div',
-                            { className: 'specCost' },
-                            'Ur special price: ',
-                            _react2.default.createElement(
-                                'span',
-                                { id: 'specialPrice' },
-                                '0'
-                            )
-                        ),
-                        _react2.default.createElement(
-                            'div',
-                            { id: 'howMuch' },
-                            _react2.default.createElement('input', { type: 'number', id: 'coins', ref: 'coins', onBlur: function onBlur() {
-                                    var finalPrice = document.getElementById('specialPrice');
-                                    _this4.calculateCost(finalPrice.innerHTML);
-                                } })
-                        ),
-                        _react2.default.createElement(
-                            'div',
-                            { className: 'finalCost' },
-                            _react2.default.createElement('i', { className: 'icon-usd' }),
-                            _react2.default.createElement(
-                                'span',
-                                { id: 'cost' },
-                                '0'
-                            )
-                        ),
-                        _react2.default.createElement(
-                            'div',
-                            { className: 'btn-buy', onClick: this.generateCode.bind(this) },
-                            '\u041A\u0443\u043F\u0438\u0442\u044C'
-                        )
-                    ) : "",
-                    payment ? _react2.default.createElement(
-                        'div',
-                        { className: 'payment' },
-                        _react2.default.createElement(
-                            'div',
-                            { className: 'wallets' },
-                            _react2.default.createElement(
-                                'div',
-                                { className: 'cryptocash' },
-                                _react2.default.createElement(
-                                    'span',
-                                    { id: 'bitcoin' },
-                                    '0'
-                                ),
-                                'Bitcoin'
-                            ),
-                            _react2.default.createElement(
-                                'div',
-                                { className: 'cryptocash' },
-                                _react2.default.createElement(
-                                    'span',
-                                    { id: 'litecoin' },
-                                    '0'
-                                ),
-                                'Litecoin'
-                            ),
-                            _react2.default.createElement(
-                                'div',
-                                { className: 'cryptocash' },
-                                _react2.default.createElement(
-                                    'span',
-                                    { id: 'etherium' },
-                                    '0'
-                                ),
-                                'Etherium'
-                            ),
-                            _react2.default.createElement(
-                                'div',
-                                { className: 'cryptocash swift' },
-                                'swift-\u043F\u043B\u0430\u0442\u0435\u0436'
-                            ),
-                            _react2.default.createElement(
-                                'div',
-                                { className: 'cryptocash currChange' },
-                                '\u041E\u0431\u043C\u0435\u043D\u043A\u0430'
-                            )
-                        ),
-                        _react2.default.createElement(
-                            'div',
-                            { className: 'codes' },
-                            _react2.default.createElement(
-                                'div',
-                                { className: 'comment-code' },
-                                '\u0432\u0430\u0448 \u043A\u043E\u0434 \u0434\u043B\u044F \u043A\u043E\u043C\u043C\u0435\u043D\u0442\u0430\u0440\u0438\u044F:',
-                                _react2.default.createElement('br', null),
-                                _react2.default.createElement('input', { type: 'text', ref: 'commentCode' })
-                            ),
-                            _react2.default.createElement(
-                                'div',
-                                { className: 'walletUrl' },
-                                '\u041A\u043E\u0448\u0435\u043B\u0435\u043A:',
-                                _react2.default.createElement('br', null),
-                                _react2.default.createElement('input', { type: 'text', ref: 'walletUrl' })
-                            )
-                        )
-                    ) : ""
-                )
-            );
-        }
-    }]);
-
-    return Refill;
-}(_react.Component);
-
-exports.default = Refill;
-
-/***/ }),
-/* 648 */
+/* 660 */
 /***/ (function(module, exports, __webpack_require__) {
 
 // style-loader: Adds some css to the DOM by adding a <style> tag
 
 // load the styles
-var content = __webpack_require__(649);
+var content = __webpack_require__(661);
+if(typeof content === 'string') content = [[module.i, content, '']];
+// Prepare cssTransformation
+var transform;
+
+var options = {}
+options.transform = transform
+// add the styles to the DOM
+var update = __webpack_require__(27)(content, options);
+if(content.locals) module.exports = content.locals;
+// Hot Module Replacement
+if(false) {
+	// When the styles change, update the <style> tags
+	if(!content.locals) {
+		module.hot.accept("!!../../../node_modules/css-loader/index.js!../../../node_modules/sass-loader/lib/loader.js!./main.scss", function() {
+			var newContent = require("!!../../../node_modules/css-loader/index.js!../../../node_modules/sass-loader/lib/loader.js!./main.scss");
+			if(typeof newContent === 'string') newContent = [[module.id, newContent, '']];
+			update(newContent);
+		});
+	}
+	// When the module is disposed, remove the <style> tags
+	module.hot.dispose(function() { update(); });
+}
+
+/***/ }),
+/* 661 */
+/***/ (function(module, exports, __webpack_require__) {
+
+exports = module.exports = __webpack_require__(26)(undefined);
+// imports
+
+
+// module
+exports.push([module.i, "body {\n  background-color: #f2f5f6;\n  margin: 0; }\n  body .admin {\n    font-family: HelveticaLight; }\n    body .admin .container {\n      width: 100%;\n      height: 100%;\n      background-color: #f2f5f6;\n      display: flex;\n      justify-content: center;\n      padding-top: 85px; }\n      body .admin .container .load {\n        background-color: rgba(242, 245, 246, 0.8);\n        color: #c7cfd1;\n        position: absolute;\n        left: 8px;\n        width: 98.8%;\n        height: calc(100% - 75px);\n        font-size: 5em;\n        display: flex;\n        align-items: center;\n        justify-content: center; }\n      body .admin .container .content {\n        min-height: 80vh;\n        width: 80%;\n        background-color: white;\n        margin-bottom: 25px;\n        margin-top: 15px; }\n        body .admin .container .content h1 {\n          margin-left: 30px; }\n", ""]);
+
+// exports
+
+
+/***/ }),
+/* 662 */
+/***/ (function(module, exports, __webpack_require__) {
+
+// style-loader: Adds some css to the DOM by adding a <style> tag
+
+// load the styles
+var content = __webpack_require__(663);
 if(typeof content === 'string') content = [[module.i, content, '']];
 // Prepare cssTransformation
 var transform;
@@ -28837,7 +28092,7 @@ if(false) {
 }
 
 /***/ }),
-/* 649 */
+/* 663 */
 /***/ (function(module, exports, __webpack_require__) {
 
 exports = module.exports = __webpack_require__(26)(undefined);
@@ -28845,11 +28100,392 @@ exports = module.exports = __webpack_require__(26)(undefined);
 
 
 // module
-exports.push([module.i, "@font-face {\n  font-family: 'Brusher';\n  src: url(" + __webpack_require__(61) + "); }\n\n@font-face {\n  font-family: 'HelveticaLight';\n  src: url(" + __webpack_require__(62) + "); }\n\n@font-face {\n  font-family: 'HelveticaBlack';\n  src: url(" + __webpack_require__(63) + "); }\n\n@font-face {\n  font-family: 'HelveticaBold';\n  src: url(" + __webpack_require__(64) + "); }\n\n@font-face {\n  font-family: 'HelveticaHeavy';\n  src: url(" + __webpack_require__(65) + "); }\n\n.coins-info {\n  display: flex;\n  justify-content: space-between;\n  align-items: center;\n  text-align: center;\n  font-size: 1.4em;\n  color: #e5c100;\n  font-family: HelveticaBold;\n  text-shadow: 0 0 10px black; }\n  .coins-info div {\n    width: 100%;\n    padding: 10px;\n    display: flex;\n    align-items: center;\n    justify-content: center;\n    text-transform: uppercase; }\n    .coins-info div:last-child {\n      box-shadow: none; }\n\n.refill .refill-container .packages {\n  display: flex;\n  flex-direction: row;\n  width: 100%;\n  justify-content: space-between;\n  text-align: center;\n  font-size: 1.6em; }\n  .refill .refill-container .packages div {\n    width: 100%;\n    margin-right: 2px;\n    margin-bottom: 0;\n    text-shadow: 0 0 10px black;\n    border: 1px solid;\n    padding: 10px 10px 0;\n    cursor: pointer;\n    background-color: rgba(242, 176, 30, 0.3);\n    border-radius: 5px;\n    transition: 0.25s all; }\n    .refill .refill-container .packages div:hover {\n      transform: scale(1.02);\n      background-color: rgba(242, 176, 30, 0.7); }\n    .refill .refill-container .packages div i {\n      font-size: 2em; }\n    .refill .refill-container .packages div p {\n      margin: 2px 0; }\n\n.refill .refill-container .options {\n  display: flex;\n  flex-direction: column;\n  align-items: center;\n  font-size: 1.3em;\n  color: white;\n  margin-top: 20px; }\n  .refill .refill-container .options .specCost {\n    margin-bottom: 15px; }\n    .refill .refill-container .options .specCost #specialPrice {\n      background: #e5c100;\n      border-radius: 5px;\n      padding: 4px; }\n  .refill .refill-container .options #howMuch {\n    margin-bottom: 15px;\n    font-size: 1.2em; }\n    .refill .refill-container .options #howMuch input {\n      outline: none;\n      line-height: 20px;\n      min-width: 200px;\n      padding: 0px 10px 0 15px;\n      text-align: center;\n      margin-bottom: 10px;\n      background-color: rgba(255, 255, 255, 0.1);\n      border: 2px solid transparent;\n      border-bottom: 2px solid rgba(255, 255, 255, 0.7);\n      color: rgba(255, 255, 255, 0.9);\n      font-size: 2.2em;\n      transition: .25s all; }\n      .refill .refill-container .options #howMuch input:focus, .refill .refill-container .options #howMuch input:hover {\n        border: 2px solid rgba(255, 255, 255, 0.5);\n        background-color: transparent; }\n      .refill .refill-container .options #howMuch input::placeholder {\n        color: rgba(255, 255, 255, 0.7); }\n  .refill .refill-container .options .finalCost {\n    display: flex;\n    align-items: center;\n    margin-bottom: 15px; }\n    .refill .refill-container .options .finalCost #cost {\n      background: #e5c100;\n      padding: 4px;\n      border-radius: 5px; }\n  .refill .refill-container .options .btn-buy {\n    font-size: 1.1em;\n    color: #fff;\n    background: #e5c100;\n    cursor: pointer;\n    border: none;\n    outline: none;\n    padding: 10px 25px;\n    text-transform: uppercase;\n    line-height: 19px;\n    box-shadow: 0 0 5px 1px #ccac02;\n    margin: 10px 25px;\n    transition: .25s all; }\n    .refill .refill-container .options .btn-buy:hover {\n      box-shadow: 0 0 10px 1px #ccac02; }\n\n.refill .refill-container .payment {\n  display: flex;\n  width: 100%; }\n  .refill .refill-container .payment .wallets {\n    width: 30%;\n    display: flex;\n    flex-direction: column;\n    align-items: center;\n    justify-content: space-around; }\n    .refill .refill-container .payment .wallets .cryptocash {\n      display: flex;\n      flex-direction: column;\n      align-items: center;\n      padding: 4px 10px;\n      border: 1px solid;\n      border-radius: 5px;\n      color: white;\n      margin-bottom: 15px; }\n      .refill .refill-container .payment .wallets .cryptocash span {\n        margin: 5px; }\n  .refill .refill-container .payment .codes {\n    width: 70%;\n    padding: 0 20px;\n    display: flex;\n    flex-direction: column;\n    align-items: center;\n    justify-content: space-around;\n    color: white; }\n    .refill .refill-container .payment .codes .comment-code {\n      width: 100%; }\n      .refill .refill-container .payment .codes .comment-code input {\n        width: 100%;\n        text-align: center; }\n    .refill .refill-container .payment .codes .walletUrl {\n      width: 100%; }\n      .refill .refill-container .payment .codes .walletUrl input {\n        width: 100%;\n        text-align: center; }\n", ""]);
+exports.push([module.i, ".options-container {\n  min-height: 60vh;\n  display: flex;\n  flex-direction: column;\n  justify-content: space-between; }\n  .options-container .option {\n    display: flex;\n    width: 100%;\n    justify-content: space-between;\n    align-items: center;\n    flex-wrap: nowrap;\n    margin-bottom: 15px; }\n    .options-container .option label {\n      margin-left: 15px;\n      border-bottom: 2px solid #1e3d4b;\n      background-color: rgba(30, 61, 75, 0.1);\n      padding: 5px;\n      cursor: pointer;\n      line-height: 20px; }\n    .options-container .option input {\n      width: 50%;\n      outline: none;\n      line-height: 20px;\n      padding: 5px;\n      background-color: rgba(30, 61, 75, 0.1);\n      border: 2px solid transparent;\n      border-bottom: 2px solid #1e3d4b;\n      color: #1e3d4b;\n      font-size: 1em;\n      transition: .25s all; }\n      .options-container .option input:focus {\n        border: 2px solid rgba(28, 61, 75, 0.6);\n        background-color: transparent; }\n      .options-container .option input#oneCost {\n        margin-left: 10px; }\n      .options-container .option input#allCoins {\n        margin-left: -8px; }\n    .options-container .option .btn {\n      margin-right: 15px;\n      color: #fff;\n      background: #1c3d4b;\n      cursor: pointer;\n      border: none;\n      outline: none;\n      padding: 5px 15px;\n      text-transform: uppercase;\n      line-height: 19px;\n      box-shadow: 0 0 5px 1px #1c3d4b;\n      transition: .25s all; }\n      .options-container .option .btn:hover {\n        box-shadow: 0 0 10px 1px #1c3d4b; }\n    .options-container .option .reload {\n      margin-right: 0; }\n  .options-container #alert {\n    width: 100%;\n    text-align: center;\n    padding: 5px 0;\n    background: greenyellow;\n    color: black;\n    position: fixed;\n    top: 75px;\n    left: 0;\n    display: none;\n    transition: 2s; }\n", ""]);
 
 // exports
 
 
+/***/ }),
+/* 664 */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+
+
+/***/ }),
+/* 665 */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+
+
+Object.defineProperty(exports, "__esModule", {
+    value: true
+});
+
+var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
+
+var _react = __webpack_require__(8);
+
+var _react2 = _interopRequireDefault(_react);
+
+var _styles = __webpack_require__(114);
+
+var _styles2 = _interopRequireDefault(_styles);
+
+var _Header = __webpack_require__(666);
+
+var _Header2 = _interopRequireDefault(_Header);
+
+var _Container = __webpack_require__(669);
+
+var _Container2 = _interopRequireDefault(_Container);
+
+function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
+
+function _possibleConstructorReturn(self, call) { if (!self) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return call && (typeof call === "object" || typeof call === "function") ? call : self; }
+
+function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
+
+var App = function (_Component) {
+    _inherits(App, _Component);
+
+    function App(props) {
+        _classCallCheck(this, App);
+
+        var _this = _possibleConstructorReturn(this, (App.__proto__ || Object.getPrototypeOf(App)).call(this, props));
+
+        _this.state = {
+            user: _this.getCookie("user")
+        };
+        // if(this.state.user === undefined){
+        //     window.location.href = '../index.html';
+        // }else if(this.state.user.length < 15){
+        //     window.location.href = '../index.html';
+        // }
+
+        return _this;
+    }
+
+    _createClass(App, [{
+        key: 'getCookie',
+        value: function getCookie(name) {
+            var matches = document.cookie.match(new RegExp("(?:^|; )" + name.replace(/([\.$?*|{}\(\)\[\]\\\/\+^])/g, '\\$1') + "=([^;]*)"));
+            return matches ? decodeURIComponent(matches[1]) : undefined;
+        }
+    }, {
+        key: 'render',
+        value: function render() {
+            var hash = this.props.hash;
+
+
+            return _react2.default.createElement(
+                'div',
+                { className: 'admin' },
+                _react2.default.createElement(_Header2.default, null),
+                _react2.default.createElement(_Container2.default, null)
+            );
+        }
+    }]);
+
+    return App;
+}(_react.Component);
+
+exports.default = App;
+;
+
+/***/ }),
+/* 666 */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+
+
+Object.defineProperty(exports, "__esModule", {
+    value: true
+});
+
+var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
+
+var _react = __webpack_require__(8);
+
+var _react2 = _interopRequireDefault(_react);
+
+var _header = __webpack_require__(667);
+
+var _header2 = _interopRequireDefault(_header);
+
+function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
+
+function _possibleConstructorReturn(self, call) { if (!self) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return call && (typeof call === "object" || typeof call === "function") ? call : self; }
+
+function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
+
+var Header = function (_Component) {
+    _inherits(Header, _Component);
+
+    function Header() {
+        _classCallCheck(this, Header);
+
+        return _possibleConstructorReturn(this, (Header.__proto__ || Object.getPrototypeOf(Header)).apply(this, arguments));
+    }
+
+    _createClass(Header, [{
+        key: 'render',
+        value: function render() {
+            return _react2.default.createElement(
+                'div',
+                { className: 'header' },
+                _react2.default.createElement(
+                    'div',
+                    { className: 'head' },
+                    _react2.default.createElement(
+                        'h1',
+                        null,
+                        'Admin Panel'
+                    )
+                ),
+                _react2.default.createElement(
+                    'div',
+                    { className: 'menu' },
+                    _react2.default.createElement(
+                        'div',
+                        { className: 'news' },
+                        '\u041F\u043E\u043B\u044C\u0437\u043E\u0432\u0430\u0442\u0435\u043B\u0438'
+                    ),
+                    _react2.default.createElement(
+                        'div',
+                        { className: 'news' },
+                        '\u041F\u0430\u043A\u0435\u0442\u044B'
+                    ),
+                    _react2.default.createElement(
+                        'div',
+                        { className: 'gallery' },
+                        '\u041E\u0441\u043D\u043E\u0432\u043D\u043E\u0435'
+                    ),
+                    _react2.default.createElement(
+                        'div',
+                        { className: '' },
+                        '\u041D\u043E\u0432\u043E\u0441\u0442\u0438'
+                    )
+                ),
+                _react2.default.createElement(
+                    'div',
+                    { className: 'enter' },
+                    _react2.default.createElement(
+                        'div',
+                        { className: 'login', onClick: function onClick() {
+                                document.cookie = 'hash=;expires=Thu, 01 Jan 1970 00:00:01 GMT;';
+                                document.cookie = 'name=;expires=Thu, 01 Jan 1970 00:00:01 GMT;';
+                                document.cookie = 'id=;expires=Thu, 01 Jan 1970 00:00:01 GMT;';
+                                // window.location.href = 'index.html';
+                            } },
+                        _react2.default.createElement('i', { className: 'icon-power' }),
+                        '\u0412\u044B\u0439\u0442\u0438'
+                    )
+                )
+            );
+        }
+    }]);
+
+    return Header;
+}(_react.Component);
+
+exports.default = Header;
+
+/***/ }),
+/* 667 */
+/***/ (function(module, exports, __webpack_require__) {
+
+// style-loader: Adds some css to the DOM by adding a <style> tag
+
+// load the styles
+var content = __webpack_require__(668);
+if(typeof content === 'string') content = [[module.i, content, '']];
+// Prepare cssTransformation
+var transform;
+
+var options = {}
+options.transform = transform
+// add the styles to the DOM
+var update = __webpack_require__(27)(content, options);
+if(content.locals) module.exports = content.locals;
+// Hot Module Replacement
+if(false) {
+	// When the styles change, update the <style> tags
+	if(!content.locals) {
+		module.hot.accept("!!../../../node_modules/css-loader/index.js!../../../node_modules/sass-loader/lib/loader.js!./header.scss", function() {
+			var newContent = require("!!../../../node_modules/css-loader/index.js!../../../node_modules/sass-loader/lib/loader.js!./header.scss");
+			if(typeof newContent === 'string') newContent = [[module.id, newContent, '']];
+			update(newContent);
+		});
+	}
+	// When the module is disposed, remove the <style> tags
+	module.hot.dispose(function() { update(); });
+}
+
+/***/ }),
+/* 668 */
+/***/ (function(module, exports, __webpack_require__) {
+
+exports = module.exports = __webpack_require__(26)(undefined);
+// imports
+
+
+// module
+exports.push([module.i, "@font-face {\n  font-family: 'Brusher';\n  src: url(" + __webpack_require__(61) + "); }\n\n@font-face {\n  font-family: 'HelveticaLight';\n  src: url(" + __webpack_require__(62) + "); }\n\n@font-face {\n  font-family: 'HelveticaBlack';\n  src: url(" + __webpack_require__(63) + "); }\n\n@font-face {\n  font-family: 'HelveticaBold';\n  src: url(" + __webpack_require__(64) + "); }\n\n@font-face {\n  font-family: 'HelveticaHeavy';\n  src: url(" + __webpack_require__(65) + "); }\n\n.header {\n  background-color: #17252e;\n  font-family: HelveticaLight;\n  color: white;\n  display: flex;\n  flex-direction: row;\n  justify-content: center;\n  align-items: center;\n  text-align: center;\n  width: 100%;\n  position: fixed;\n  top: 0;\n  left: 0; }\n  .header .head {\n    padding-right: 2.5%;\n    box-shadow: inset -10px 0 10px -7px black;\n    margin-right: 3.5%;\n    margin-left: -10%; }\n  .header .menu {\n    display: flex;\n    justify-content: space-around; }\n    .header .menu div {\n      cursor: pointer;\n      margin-right: 20px;\n      padding: 10px;\n      text-align: center;\n      background-color: #1e3543;\n      border-radius: 5px;\n      box-shadow: 0 0 15px black;\n      transition: .2s; }\n      .header .menu div:last-child {\n        margin-right: 0; }\n      .header .menu div:hover {\n        background-color: #1e3d4b;\n        box-shadow: 0 0 35px black; }\n  .header .user {\n    position: absolute;\n    right: 5%;\n    margin-right: 130px;\n    justify-content: center;\n    display: flex;\n    align-items: center;\n    flex-direction: row-reverse;\n    font-family: HelveticaBold; }\n    .header .user .user_icon {\n      width: 50px;\n      margin-left: 15px; }\n  .header .enter {\n    position: absolute;\n    right: 5%;\n    display: flex; }\n    .header .enter .login {\n      cursor: pointer;\n      padding: 10px 20px;\n      border-radius: 5px;\n      background-color: #151f24;\n      box-shadow: inset 0 0 4px black;\n      transition: .2s;\n      display: flex;\n      align-items: center; }\n      .header .enter .login i {\n        font-size: 1.5em;\n        margin-right: 5px; }\n      .header .enter .login:hover {\n        background-color: #1b2429;\n        box-shadow: inset 0 0 1px black; }\n  .header .exit {\n    cursor: pointer;\n    padding: 10px 20px;\n    border-radius: 5px;\n    background-color: #151f24;\n    box-shadow: inset 0 0 4px black;\n    transition: .2s; }\n    .header .exit:hover {\n      background-color: #1b2429;\n      box-shadow: inset 0 0 1px black; }\n", ""]);
+
+// exports
+
+
+/***/ }),
+/* 669 */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+
+
+Object.defineProperty(exports, "__esModule", {
+    value: true
+});
+
+var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
+
+var _react = __webpack_require__(8);
+
+var _react2 = _interopRequireDefault(_react);
+
+function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
+
+function _possibleConstructorReturn(self, call) { if (!self) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return call && (typeof call === "object" || typeof call === "function") ? call : self; }
+
+function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
+
+var Container = function (_Component) {
+    _inherits(Container, _Component);
+
+    function Container() {
+        _classCallCheck(this, Container);
+
+        return _possibleConstructorReturn(this, (Container.__proto__ || Object.getPrototypeOf(Container)).apply(this, arguments));
+    }
+
+    _createClass(Container, [{
+        key: "goAlert",
+        value: function goAlert(text, isOk) {
+            var pushAlert = document.getElementById("alert");
+            pushAlert.innerHTML = text;
+            if (isOk) {
+                pushAlert.style.backgroundColor = "greenyellow";
+            } else {
+                pushAlert.style.backgroundColor = "red";
+            }
+
+            pushAlert.style.display = "block";
+            pushAlert.style.opacity = 1;
+
+            setTimeout(function () {
+                pushAlert.style.opacity = 0;
+            }, 300);
+            setTimeout(function () {
+                pushAlert.style.display = "none";
+            }, 1700);
+        }
+    }, {
+        key: "render",
+        value: function render() {
+            var _this2 = this;
+
+            return _react2.default.createElement(
+                "div",
+                { className: "container" },
+                _react2.default.createElement(
+                    "div",
+                    { className: "content" },
+                    _react2.default.createElement(
+                        "h1",
+                        null,
+                        " \u041E\u0441\u043D\u043E\u0432\u043D\u043E\u0435 "
+                    ),
+                    _react2.default.createElement(
+                        "div",
+                        { className: "options-container" },
+                        _react2.default.createElement(
+                            "div",
+                            { className: "option one\u0421oin" },
+                            _react2.default.createElement(
+                                "label",
+                                { htmlFor: "oneCost" },
+                                "\u0426\u0435\u043D\u0430 \u0437\u0430 \u043E\u0434\u043D\u0443 \u043C\u043E\u043D\u0435\u0442\u0443"
+                            ),
+                            _react2.default.createElement("input", { type: "number", id: "oneCost", ref: "oneCost" }),
+                            _react2.default.createElement(
+                                "div",
+                                { className: "btn btn-save" },
+                                "\u0421\u043E\u0445\u0440\u0430\u043D\u0438\u0442\u044C"
+                            )
+                        ),
+                        _react2.default.createElement(
+                            "div",
+                            { className: "option allCoins" },
+                            _react2.default.createElement(
+                                "label",
+                                { htmlFor: "allCoins" },
+                                "\u0412\u0441\u0435\u0433\u043E \u043C\u043E\u043D\u0435\u0442 \u0432 \u043D\u0430\u043B\u0438\u0447\u0438\u0438"
+                            ),
+                            _react2.default.createElement("input", { type: "number", id: "allCoins", ref: "allCoins" }),
+                            _react2.default.createElement(
+                                "div",
+                                { className: "btn btn-save" },
+                                "\u0421\u043E\u0445\u0440\u0430\u043D\u0438\u0442\u044C"
+                            )
+                        ),
+                        _react2.default.createElement(
+                            "div",
+                            { className: "option sold" },
+                            _react2.default.createElement(
+                                "label",
+                                { htmlFor: "totalSold" },
+                                "\u0412\u0441\u0435\u0433\u043E \u043C\u043E\u043D\u0435\u0442 \u041F\u0440\u043E\u0434\u0430\u043D\u043E"
+                            ),
+                            _react2.default.createElement("input", { type: "number", id: "totalSold", ref: "totalSold" }),
+                            _react2.default.createElement(
+                                "div",
+                                { className: "btn reload", onClick: function onClick() {
+                                        _this2.goAlert("FAAALSE", false);
+                                    } },
+                                "\u041E\u0431\u043D\u043E\u0432\u0438\u0442\u044C"
+                            ),
+                            _react2.default.createElement(
+                                "div",
+                                { className: "btn btn-save", onClick: function onClick() {
+                                        _this2.goAlert("OKay", true);
+                                    } },
+                                "\u0421\u043E\u0445\u0440\u0430\u043D\u0438\u0442\u044C"
+                            )
+                        ),
+                        _react2.default.createElement(
+                            "div",
+                            { id: "alert" },
+                            "\u0421\u043E\u0445\u0440\u0430\u043D\u0435\u043D\u043E!"
+                        )
+                    )
+                )
+            );
+        }
+    }]);
+
+    return Container;
+}(_react.Component);
+
+exports.default = Container;
+
 /***/ })
 /******/ ]);
-//# sourceMappingURL=me.js.map
+//# sourceMappingURL=generally.js.map

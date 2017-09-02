@@ -3,7 +3,8 @@ import { connect } from 'react-redux';
 import {
     setLanguage,
     addUser,
-    loginUser
+    loginUser,
+    getCoinsInfo
 } from '../../redux/front/front-actions.js';
 import App from './App';
 
@@ -16,5 +17,6 @@ export default connect(
     {
         setLanguage,
         addUser,
-        loginUser
+        loginUser,
+        getCoinsInfo
     })(App);

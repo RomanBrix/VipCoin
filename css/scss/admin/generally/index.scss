@@ -1,0 +1,76 @@
+.options-container{
+  min-height: 60vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  .option{
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: nowrap;
+    margin-bottom:15px;
+    label{
+      margin-left: 15px;
+      border-bottom: 2px solid #1e3d4b;
+      background-color: rgba(30, 61, 75, 0.1);
+      padding: 5px;
+      cursor: pointer;
+      line-height: 20px;
+    }
+    input{
+      width:  50%;
+      outline: none;
+      line-height: 20px;
+      padding: 5px;
+      background-color: rgba(30, 61, 75, 0.1);
+      border: 2px solid transparent;
+      border-bottom: 2px solid #1e3d4b;
+      color: #1e3d4b;
+      font-size: 1em;
+      transition: .25s all;
+      &:focus{
+        border: 2px solid rgba(28, 61, 75, .6);
+        background-color: transparent;
+      }
+
+      &#oneCost{
+        margin-left: 10px;
+      }
+      &#allCoins{
+        margin-left: -8px;
+      }
+    }
+    .btn{
+      margin-right:15px;
+      color: #fff;
+      background: rgba(28, 61, 75, 1);
+      cursor: pointer;
+      border: none;
+      outline: none;
+      padding: 5px 15px;
+      text-transform: uppercase;
+      line-height: 19px;
+      box-shadow: 0 0 5px 1px rgba(28, 61, 75, 1);
+      transition: .25s all;
+      &:hover{
+        box-shadow: 0 0 10px 1px rgba(28, 61, 75, 1);
+      }
+    }
+    .reload{
+      margin-right:0;
+    }
+  }
+  #alert{
+    width: 100%;
+    text-align: center;
+    padding: 5px 0;
+    background: greenyellow;
+    color: black;
+    position: fixed;
+    top: 75px;
+    left: 0;
+    display: none;
+    transition: 2s;
+  }
+}

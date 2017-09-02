@@ -5,7 +5,8 @@ import {
     getBitcoinCost,
     addUser,
     loginUser,
-    getPackages
+    getPackages,
+    getCoinCost
 } from '../../redux/front/front-actions.js';
 import App from './App';
 
@@ -20,6 +21,7 @@ export default connect(
         getBitcoinCost,
         addUser,
         loginUser,
-        getPackages
+        getPackages,
+        getCoinCost
 
     })(App);

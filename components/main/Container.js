@@ -5,13 +5,16 @@ import Progress from './Progress';
 
 export default class Container extends Component {
     render(){
-        const { pages } = this.props;
+        const { pages, maxCoins, soldCoins } = this.props;
 
         return(
             <div className="content">
                 <Top pages={ pages.top }/>
-                <Progress pages={ pages.progress }/>
-                {/*<Package packages={ pages.packages}/>*/}
+                <Progress
+                    pages={ pages.progress }
+                    maxCoins={ maxCoins }
+                    soldCoins={ soldCoins }
+                />
             </div>
         )
     }

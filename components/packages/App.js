@@ -15,7 +15,8 @@ export default class App extends Component {
         this.state = {
             language: props.language || "ru",
             auth: false,
-        }
+        };
+        props.getCoinCost("coinCost");
     }
 
     toggleAuth(auth){

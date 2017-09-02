@@ -9,7 +9,8 @@ module.exports= {
         'scripts/faq': './points/Faq.js',
         'scripts/contacts': './points/contacts.js',
         'profile/scripts/me': './points/profile/me.js',
-        'profile/scripts/settings': './points/profile/settings.js'
+        'profile/scripts/settings': './points/profile/settings.js',
+        'admin/scripts/generally': './points/admin/generally.js',
 
     },
     output: {
