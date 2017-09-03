@@ -15,6 +15,7 @@ export default class App extends Component {
         //     window.location.href = '../index.html';
         // }
 
+        props.getGenInfo("getInfo");
     }
 
     getCookie(name){
@@ -25,13 +26,17 @@ export default class App extends Component {
     }
 
     render(){
-        const { hash} = this.props;
-
+        const { hash, generallyInfo, setGenerally, updated, getGenInfo} = this.props;
 
         return (
             <div className="admin">
                 <Header />
-                <Container />
+                <Container
+                    generallyInfo={ generallyInfo }
+                    setGenerally={ setGenerally }
+                    updated={ updated }
+                    getGenInfo={ getGenInfo }
+                />
             </div>
         );
     }

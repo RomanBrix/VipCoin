@@ -1,6 +1,7 @@
 import React, {Component} from 'react';
 
 export default class Container extends Component {
+
     goAlert(text,isOk){
         const pushAlert = document.getElementById("alert");
         pushAlert.innerHTML = text;
@@ -22,7 +23,25 @@ export default class Container extends Component {
 
     }
 
+    componentWillReceiveProps(nextProps){
+
+        const { generallyInfo } = nextProps;
+        const { oneCost, allCoins, totalSold  } = this.refs;
+
+        oneCost.value = generallyInfo.costOfOneCoin;
+        allCoins.value = generallyInfo.maxCoinsHave;
+        totalSold.value = generallyInfo.totalSold;
+
+    }
     render() {
+        const { setGenerally, updated, getGenInfo} = this.props;
+
+        if(updated ==="newCostOk" || updated === "newTotalSoldOk" || updated === "newCoinsCountOk"){
+            this.goAlert("СОХРАНЕНО",true);
+        }else if(updated ===false){
+            this.goAlert("НЕ СОХРАНЕНО", false);
+        }
+
         return (
             <div className="container">
                 <div className="content">
@@ -30,22 +49,60 @@ export default class Container extends Component {
                     <div className="options-container">
                         <div className="option oneСoin">
                             <label htmlFor="oneCost">Цена за одну монету</label>
-                            <input type="number" id="oneCost" ref="oneCost"/>
-                            <div className="btn btn-save">Сохранить</div>
+                            <input
+                                type="number"
+                                id="oneCost"
+                                ref="oneCost"
+                            />
+                            <div
+                                className="btn btn-save"
+                                onClick={()=>{
+                                    const { oneCost } = this.refs;
+                                    setGenerally("OneCost", oneCost.value);
+                                    setTimeout(()=>{
+                                        getGenInfo("getInfo");
+                                    }, 100);
+
+                                }}
+                            >Сохранить</div>
                         </div>
                         <div className="option allCoins">
                             <label htmlFor="allCoins">Всего монет в наличии</label>
-                            <input type="number" id="allCoins" ref="allCoins"/>
-                            <div className="btn btn-save">Сохранить</div>
+                            <input
+                                type="number"
+                                id="allCoins"
+                                ref="allCoins"
+                                // defaultValue={ generallyInfo.maxCoinsHave }
+                            />
+                            <div className="btn btn-save" onClick={()=>{
+                                const { allCoins } = this.refs;
+                                setGenerally("AllCoins", allCoins.value);
+                                setTimeout(()=>{
+                                    getGenInfo("getInfo");
+                                }, 100);
+                            }}>Сохранить</div>
                         </div>
                         <div className="option sold">
                             <label htmlFor="totalSold">Всего монет Продано</label>
-                            <input type="number" id="totalSold" ref="totalSold"/>
+                            <input
+                                type="number"
+                                id="totalSold"
+                                ref="totalSold"
+                            />
                             <div className="btn reload" onClick={()=>{
-                                this.goAlert("FAAALSE", false);
+                                if(confirm('Подсчитать точное значение?')) {
+                                    setGenerally("RefreshTotalSold", 1);
+                                    setTimeout(() => {
+                                        getGenInfo("getInfo");
+                                    }, 100);
+                                }
                             }}>Обновить</div>
                             <div className="btn btn-save" onClick={()=>{
-                                this.goAlert("OKay", true);
+                                const { totalSold } = this.refs;
+                                setGenerally("TotalSold", totalSold.value);
+                                setTimeout(()=>{
+                                    getGenInfo("getInfo");
+                                }, 100);
                             }}>Сохранить</div>
                         </div>
                         <div id="alert">
