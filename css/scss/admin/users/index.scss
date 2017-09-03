@@ -1,0 +1,19 @@
+.search{
+  margin-bottom: 45px;
+  .form-group{
+    input[type="text"]{
+      margin-bottom: 15px;
+    }
+    .radios{
+      display: flex;
+      justify-content: center;
+    label{
+      margin-right: 35px;
+    }
+    }
+  }
+}
+.paga{
+  display: flex;
+  justify-content: center;
+}

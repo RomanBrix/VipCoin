@@ -20,14 +20,24 @@
     box-shadow: inset -10px 0 10px -7px black;
     margin-right: 3.5%;
     margin-left: -10%;
+    h1{
+      font-size: 36px;
+      margin-top: 20px;
+      margin-bottom: 10px;
+      font-weight: 500;
+      line-height: 1.1;
+      color: inherit;
+    }
   }
   .menu{
     display: flex;
     justify-content: space-around;
-
-    div{
+  a {
+    text-decoration: none;
+    margin-right: 20px;
+    color: white;
+    div {
       cursor: pointer;
-      margin-right: 20px;
       padding: 10px;
       text-align: center;
       background-color: #1e3543;
@@ -35,15 +45,17 @@
       box-shadow: 0 0 15px black;
       transition: .2s;
 
-      &:last-child{
-        margin-right: 0;
-      }
-      &:hover{
+      &:hover {
         background-color: #1e3d4b;
         box-shadow: 0 0 35px black;
 
       }
     }
+    &:last-child {
+      margin-right: 0;
+      color: #b7b7b7;
+    }
+  }
   }
   .user{
     position: absolute;

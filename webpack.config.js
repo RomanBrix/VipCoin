@@ -11,6 +11,7 @@ module.exports= {
         'profile/scripts/me': './points/profile/me.js',
         'profile/scripts/settings': './points/profile/settings.js',
         'admin/scripts/generally': './points/admin/generally.js',
+        'admin/scripts/users': './points/admin/users.js',
 
     },
     output: {

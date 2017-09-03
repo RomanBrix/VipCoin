@@ -7,18 +7,24 @@ export default class Header extends Component {
             <div className="header">
                 <div className="head"><h1>Admin Panel</h1></div>
                 <div className="menu">
-                    <div className="news" >
-                         Пользователи
-                    </div>
-                    <div className="news" >
-                         Пакеты
-                    </div>
-                    <div className="gallery">
+                    <a href="users.html">
+                        <div className="">Пользователи</div>
+                    </a>
+                    <a href="#">
+                        <div className="" >
+                             Пакеты
+                        </div>
+                    </a>
+                    <a href="generally.html">
+                        <div className="">
                          Основное
-                    </div>
-                    <div className="">
-                        Новости
-                    </div>
+                        </div>
+                    </a>
+                    <a href="#">
+                        <div className="">
+                            Новости
+                        </div>
+                    </a>
                 </div>
 
 
