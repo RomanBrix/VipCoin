@@ -60,7 +60,7 @@
 /******/ 	__webpack_require__.p = "";
 /******/
 /******/ 	// Load entry module and return exports
-/******/ 	return __webpack_require__(__webpack_require__.s = 734);
+/******/ 	return __webpack_require__(__webpack_require__.s = 735);
 /******/ })
 /************************************************************************/
 /******/ ([
@@ -12837,7 +12837,8 @@ var GLOB_URL = exports.GLOB_URL = "http://localhost:8888/vipcoin/admin/";
 var act = exports.act = {
     REQUEST: "REQUEST",
     GET_GEN_INFO: "GET_GENERALLY_INFO",
-    SET_GEN_INFO: "SET_GENERALLY_INFO"
+    SET_GEN_INFO: "SET_GENERALLY_INFO",
+    GET_USERS_INFO: "GET_USERS_INFO"
 
 };
 
@@ -27421,7 +27422,8 @@ var InitialState = {
     generallyInfo: {
         costOfOneCoin: 0,
         maxCoinsHave: 0,
-        totalSold: 0
+        totalSold: 0,
+        users: []
     },
     updated: ""
 };
@@ -27436,21 +27438,32 @@ var adminReducers = function adminReducers() {
             return {
                 request: true,
                 generallyInfo: state.generallyInfo,
-                updated: state.updated
+                updated: state.updated,
+                users: state.users
+
             };
 
         case _actionsAndUrl.act.GET_GEN_INFO:
             return {
                 request: false,
                 generallyInfo: action.info,
-                updated: state.updated
+                updated: state.updated,
+                users: state.users
 
             };
         case _actionsAndUrl.act.SET_GEN_INFO:
             return {
                 request: false,
                 generallyInfo: state.generallyInfo,
-                updated: action.updated
+                updated: action.updated,
+                users: state.users
+            };
+        case _actionsAndUrl.act.GET_USERS_INFO:
+            return {
+                request: false,
+                generallyInfo: state.generallyInfo,
+                updated: state.updated,
+                users: action.users
             };
 
         default:
@@ -27759,6 +27772,7 @@ Object.defineProperty(exports, "__esModule", {
 });
 exports.getGenInfo = getGenInfo;
 exports.setGenerally = setGenerally;
+exports.getUsers = getUsers;
 
 var _axios = __webpack_require__(68);
 
@@ -27792,6 +27806,19 @@ function setGenerally(type, newValue) {
             newValue: newValue
         }).then(function (res) {
             dispatch({ type: _actionsAndUrl.act.SET_GEN_INFO, updated: res.data });
+        }).catch(function (error) {
+            console.log(error);
+        });
+    };
+}
+
+function getUsers(type) {
+    return function (dispatch) {
+        dispatch({ type: 'REQUEST' });
+
+        _axios2.default.get(_actionsAndUrl.GLOB_URL + 'getUsers.php', { params: { type: type } }).then(function (res) {
+            // console.log(res);
+            dispatch({ type: _actionsAndUrl.act.GET_USERS_INFO, users: res.data });
         }).catch(function (error) {
             console.log(error);
         });
@@ -27955,7 +27982,7 @@ exports = module.exports = __webpack_require__(34)(undefined);
 
 
 // module
-exports.push([module.i, "@font-face {\n  font-family: 'Brusher';\n  src: url(" + __webpack_require__(69) + "); }\n\n@font-face {\n  font-family: 'HelveticaLight';\n  src: url(" + __webpack_require__(70) + "); }\n\n@font-face {\n  font-family: 'HelveticaBlack';\n  src: url(" + __webpack_require__(71) + "); }\n\n@font-face {\n  font-family: 'HelveticaBold';\n  src: url(" + __webpack_require__(72) + "); }\n\n@font-face {\n  font-family: 'HelveticaHeavy';\n  src: url(" + __webpack_require__(73) + "); }\n\n.header {\n  background-color: #17252e;\n  font-family: HelveticaLight;\n  color: white;\n  display: flex;\n  flex-direction: row;\n  justify-content: center;\n  align-items: center;\n  text-align: center;\n  width: 100%;\n  position: fixed;\n  top: 0;\n  left: 0; }\n  .header .head {\n    padding-right: 2.5%;\n    box-shadow: inset -10px 0 10px -7px black;\n    margin-right: 3.5%;\n    margin-left: -10%; }\n    .header .head h1 {\n      font-size: 36px;\n      margin-top: 20px;\n      margin-bottom: 10px;\n      font-weight: 500;\n      line-height: 1.1;\n      color: inherit; }\n  .header .menu {\n    display: flex;\n    justify-content: space-around; }\n    .header .menu a {\n      text-decoration: none;\n      margin-right: 20px;\n      color: white; }\n      .header .menu a div {\n        cursor: pointer;\n        padding: 10px;\n        text-align: center;\n        background-color: #1e3543;\n        border-radius: 5px;\n        box-shadow: 0 0 15px black;\n        transition: .2s; }\n        .header .menu a div:hover {\n          background-color: #1e3d4b;\n          box-shadow: 0 0 35px black; }\n      .header .menu a:last-child {\n        margin-right: 0;\n        color: #b7b7b7; }\n  .header .user {\n    position: absolute;\n    right: 5%;\n    margin-right: 130px;\n    justify-content: center;\n    display: flex;\n    align-items: center;\n    flex-direction: row-reverse;\n    font-family: HelveticaBold; }\n    .header .user .user_icon {\n      width: 50px;\n      margin-left: 15px; }\n  .header .enter {\n    position: absolute;\n    right: 5%;\n    display: flex; }\n    .header .enter .login {\n      cursor: pointer;\n      padding: 10px 20px;\n      border-radius: 5px;\n      background-color: #151f24;\n      box-shadow: inset 0 0 4px black;\n      transition: .2s;\n      display: flex;\n      align-items: center; }\n      .header .enter .login i {\n        font-size: 1.5em;\n        margin-right: 5px; }\n      .header .enter .login:hover {\n        background-color: #1b2429;\n        box-shadow: inset 0 0 1px black; }\n  .header .exit {\n    cursor: pointer;\n    padding: 10px 20px;\n    border-radius: 5px;\n    background-color: #151f24;\n    box-shadow: inset 0 0 4px black;\n    transition: .2s; }\n    .header .exit:hover {\n      background-color: #1b2429;\n      box-shadow: inset 0 0 1px black; }\n", ""]);
+exports.push([module.i, "@font-face {\n  font-family: 'Brusher';\n  src: url(" + __webpack_require__(69) + "); }\n\n@font-face {\n  font-family: 'HelveticaLight';\n  src: url(" + __webpack_require__(70) + "); }\n\n@font-face {\n  font-family: 'HelveticaBlack';\n  src: url(" + __webpack_require__(71) + "); }\n\n@font-face {\n  font-family: 'HelveticaBold';\n  src: url(" + __webpack_require__(72) + "); }\n\n@font-face {\n  font-family: 'HelveticaHeavy';\n  src: url(" + __webpack_require__(73) + "); }\n\n.header {\n  background-color: #17252e;\n  font-family: HelveticaLight;\n  color: white;\n  display: flex;\n  flex-direction: row;\n  justify-content: center;\n  align-items: center;\n  text-align: center;\n  width: 100%;\n  position: fixed;\n  top: 0;\n  left: 0;\n  z-index: 100; }\n  .header .head {\n    padding-right: 2.5%;\n    box-shadow: inset -10px 0 10px -7px black;\n    margin-right: 3.5%;\n    margin-left: -10%; }\n    .header .head h1 {\n      font-size: 36px;\n      margin-top: 20px;\n      margin-bottom: 10px;\n      font-weight: 500;\n      line-height: 1.1;\n      color: inherit; }\n  .header .menu {\n    display: flex;\n    justify-content: space-around; }\n    .header .menu a {\n      text-decoration: none;\n      margin-right: 20px;\n      color: white; }\n      .header .menu a div {\n        cursor: pointer;\n        padding: 10px;\n        text-align: center;\n        background-color: #1e3543;\n        border-radius: 5px;\n        box-shadow: 0 0 15px black;\n        transition: .2s; }\n        .header .menu a div:hover {\n          background-color: #1e3d4b;\n          box-shadow: 0 0 35px black; }\n      .header .menu a:last-child {\n        margin-right: 0;\n        color: #b7b7b7; }\n  .header .user {\n    position: absolute;\n    right: 5%;\n    margin-right: 130px;\n    justify-content: center;\n    display: flex;\n    align-items: center;\n    flex-direction: row-reverse;\n    font-family: HelveticaBold; }\n    .header .user .user_icon {\n      width: 50px;\n      margin-left: 15px; }\n  .header .enter {\n    position: absolute;\n    right: 5%;\n    display: flex; }\n    .header .enter .login {\n      cursor: pointer;\n      padding: 10px 20px;\n      border-radius: 5px;\n      background-color: #151f24;\n      box-shadow: inset 0 0 4px black;\n      transition: .2s;\n      display: flex;\n      align-items: center; }\n      .header .enter .login i {\n        font-size: 1.5em;\n        margin-right: 5px; }\n      .header .enter .login:hover {\n        background-color: #1b2429;\n        box-shadow: inset 0 0 1px black; }\n  .header .exit {\n    cursor: pointer;\n    padding: 10px 20px;\n    border-radius: 5px;\n    background-color: #151f24;\n    box-shadow: inset 0 0 4px black;\n    transition: .2s; }\n    .header .exit:hover {\n      background-color: #1b2429;\n      box-shadow: inset 0 0 1px black; }\n", ""]);
 
 // exports
 
@@ -28284,7 +28311,8 @@ exports.push([module.i, "body {\n  background-color: #f2f5f6;\n  margin: 0; }\n 
 /* 731 */,
 /* 732 */,
 /* 733 */,
-/* 734 */
+/* 734 */,
+/* 735 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -28308,7 +28336,7 @@ var _reducers = __webpack_require__(264);
 
 var _reducers2 = _interopRequireDefault(_reducers);
 
-var _generally = __webpack_require__(735);
+var _generally = __webpack_require__(736);
 
 var _generally2 = _interopRequireDefault(_generally);
 
@@ -28316,7 +28344,7 @@ var _main = __webpack_require__(454);
 
 var _main2 = _interopRequireDefault(_main);
 
-var _index = __webpack_require__(738);
+var _index = __webpack_require__(739);
 
 var _index2 = _interopRequireDefault(_index);
 
@@ -28332,7 +28360,7 @@ var store = (0, _redux.createStore)(_reducers2.default, (0, _redux.applyMiddlewa
 ), init);
 
 /***/ }),
-/* 735 */
+/* 736 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -28350,7 +28378,7 @@ var _reactRedux = __webpack_require__(108);
 
 var _adminActions = __webpack_require__(450);
 
-var _App = __webpack_require__(736);
+var _App = __webpack_require__(737);
 
 var _App2 = _interopRequireDefault(_App);
 
@@ -28367,7 +28395,7 @@ exports.default = (0, _reactRedux.connect)(mapStateToProps, {
 })(_App2.default);
 
 /***/ }),
-/* 736 */
+/* 737 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -28391,7 +28419,7 @@ var _Header = __webpack_require__(451);
 
 var _Header2 = _interopRequireDefault(_Header);
 
-var _Container = __webpack_require__(737);
+var _Container = __webpack_require__(738);
 
 var _Container2 = _interopRequireDefault(_Container);
 
@@ -28462,7 +28490,7 @@ exports.default = App;
 ;
 
 /***/ }),
-/* 737 */
+/* 738 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -28672,13 +28700,13 @@ var Container = function (_Component) {
 exports.default = Container;
 
 /***/ }),
-/* 738 */
+/* 739 */
 /***/ (function(module, exports, __webpack_require__) {
 
 // style-loader: Adds some css to the DOM by adding a <style> tag
 
 // load the styles
-var content = __webpack_require__(739);
+var content = __webpack_require__(740);
 if(typeof content === 'string') content = [[module.i, content, '']];
 // Prepare cssTransformation
 var transform;
@@ -28703,7 +28731,7 @@ if(false) {
 }
 
 /***/ }),
-/* 739 */
+/* 740 */
 /***/ (function(module, exports, __webpack_require__) {
 
 exports = module.exports = __webpack_require__(34)(undefined);

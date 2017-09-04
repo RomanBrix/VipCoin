@@ -60,7 +60,7 @@
 /******/ 	__webpack_require__.p = "";
 /******/
 /******/ 	// Load entry module and return exports
-/******/ 	return __webpack_require__(__webpack_require__.s = 550);
+/******/ 	return __webpack_require__(__webpack_require__.s = 551);
 /******/ })
 /************************************************************************/
 /******/ ([
@@ -12885,7 +12885,8 @@ var GLOB_URL = exports.GLOB_URL = "http://localhost:8888/vipcoin/admin/";
 var act = exports.act = {
     REQUEST: "REQUEST",
     GET_GEN_INFO: "GET_GENERALLY_INFO",
-    SET_GEN_INFO: "SET_GENERALLY_INFO"
+    SET_GEN_INFO: "SET_GENERALLY_INFO",
+    GET_USERS_INFO: "GET_USERS_INFO"
 
 };
 
@@ -27469,7 +27470,8 @@ var InitialState = {
     generallyInfo: {
         costOfOneCoin: 0,
         maxCoinsHave: 0,
-        totalSold: 0
+        totalSold: 0,
+        users: []
     },
     updated: ""
 };
@@ -27484,21 +27486,32 @@ var adminReducers = function adminReducers() {
             return {
                 request: true,
                 generallyInfo: state.generallyInfo,
-                updated: state.updated
+                updated: state.updated,
+                users: state.users
+
             };
 
         case _actionsAndUrl.act.GET_GEN_INFO:
             return {
                 request: false,
                 generallyInfo: action.info,
-                updated: state.updated
+                updated: state.updated,
+                users: state.users
 
             };
         case _actionsAndUrl.act.SET_GEN_INFO:
             return {
                 request: false,
                 generallyInfo: state.generallyInfo,
-                updated: action.updated
+                updated: action.updated,
+                users: state.users
+            };
+        case _actionsAndUrl.act.GET_USERS_INFO:
+            return {
+                request: false,
+                generallyInfo: state.generallyInfo,
+                updated: state.updated,
+                users: action.users
             };
 
         default:
@@ -29195,7 +29208,8 @@ exports.push([module.i, "@font-face {\n  font-family: 'Brusher';\n  src: url(" +
 /* 547 */,
 /* 548 */,
 /* 549 */,
-/* 550 */
+/* 550 */,
+/* 551 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -29219,7 +29233,7 @@ var _reducers = __webpack_require__(264);
 
 var _reducers2 = _interopRequireDefault(_reducers);
 
-var _packages = __webpack_require__(551);
+var _packages = __webpack_require__(552);
 
 var _packages2 = _interopRequireDefault(_packages);
 
@@ -29227,7 +29241,7 @@ var _main = __webpack_require__(327);
 
 var _main2 = _interopRequireDefault(_main);
 
-var _index = __webpack_require__(556);
+var _index = __webpack_require__(557);
 
 var _index2 = _interopRequireDefault(_index);
 
@@ -29243,7 +29257,7 @@ var store = (0, _redux.createStore)(_reducers2.default, (0, _redux.applyMiddlewa
 ), init);
 
 /***/ }),
-/* 551 */
+/* 552 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -29261,7 +29275,7 @@ var _reactRedux = __webpack_require__(108);
 
 var _frontActions = __webpack_require__(129);
 
-var _App = __webpack_require__(552);
+var _App = __webpack_require__(553);
 
 var _App2 = _interopRequireDefault(_App);
 
@@ -29282,7 +29296,7 @@ exports.default = (0, _reactRedux.connect)(mapStateToProps, {
 })(_App2.default);
 
 /***/ }),
-/* 552 */
+/* 553 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -29320,7 +29334,7 @@ var _auth = __webpack_require__(321);
 
 var _auth2 = _interopRequireDefault(_auth);
 
-var _Container = __webpack_require__(553);
+var _Container = __webpack_require__(554);
 
 var _Container2 = _interopRequireDefault(_Container);
 
@@ -29440,7 +29454,7 @@ var App = function (_Component) {
 exports.default = App;
 
 /***/ }),
-/* 553 */
+/* 554 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -29456,11 +29470,11 @@ var _react = __webpack_require__(4);
 
 var _react2 = _interopRequireDefault(_react);
 
-var _Package = __webpack_require__(554);
+var _Package = __webpack_require__(555);
 
 var _Package2 = _interopRequireDefault(_Package);
 
-var _Calculator = __webpack_require__(555);
+var _Calculator = __webpack_require__(556);
 
 var _Calculator2 = _interopRequireDefault(_Calculator);
 
@@ -29532,7 +29546,7 @@ var Container = function (_Component) {
 exports.default = Container;
 
 /***/ }),
-/* 554 */
+/* 555 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -29746,7 +29760,7 @@ var Package = function (_Component) {
 exports.default = Package;
 
 /***/ }),
-/* 555 */
+/* 556 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -29980,13 +29994,13 @@ var Calculator = function (_Component) {
 exports.default = Calculator;
 
 /***/ }),
-/* 556 */
+/* 557 */
 /***/ (function(module, exports, __webpack_require__) {
 
 // style-loader: Adds some css to the DOM by adding a <style> tag
 
 // load the styles
-var content = __webpack_require__(557);
+var content = __webpack_require__(558);
 if(typeof content === 'string') content = [[module.i, content, '']];
 // Prepare cssTransformation
 var transform;
@@ -30011,7 +30025,7 @@ if(false) {
 }
 
 /***/ }),
-/* 557 */
+/* 558 */
 /***/ (function(module, exports, __webpack_require__) {
 
 exports = module.exports = __webpack_require__(34)(undefined);

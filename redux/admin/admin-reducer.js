@@ -5,7 +5,8 @@ const InitialState = {
     generallyInfo: {
         costOfOneCoin: 0,
         maxCoinsHave: 0,
-        totalSold: 0
+        totalSold: 0,
+        users: []
     },
     updated: ""
 };
@@ -17,22 +18,33 @@ const adminReducers = (state = InitialState, action) => {
             return{
                 request: true,
                 generallyInfo: state.generallyInfo,
-                updated: state.updated
+                updated: state.updated,
+                users: state.users
+
             };
 
         case act.GET_GEN_INFO:
             return {
                 request: false,
                 generallyInfo: action.info,
-                updated: state.updated
+                updated: state.updated,
+                users: state.users
 
             };
         case act.SET_GEN_INFO:
             return {
                 request: false,
                 generallyInfo: state.generallyInfo,
-                updated: action.updated
+                updated: action.updated,
+                users: state.users
             };
+        case act.GET_USERS_INFO:
+            return{
+                request: false,
+                generallyInfo: state.generallyInfo,
+                updated: state.updated,
+                users: action.users
+            }
 
         default: return state;
 

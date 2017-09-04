@@ -14,6 +14,7 @@ export default class App extends Component {
         // }else if(this.state.user.length < 15){
         //     window.location.href = '../index.html';
         // }
+        props.getUsers("getUsersInfo");
 
     }
 
@@ -25,12 +26,13 @@ export default class App extends Component {
     }
 
     render(){
-        const { hash,} = this.props;
+        const { hash, users} = this.props;
 
         return (
             <div className="admin">
                 <Header />
                 <Container
+                    users={ users }
                 />
             </div>
         );

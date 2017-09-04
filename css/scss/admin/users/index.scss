@@ -17,3 +17,9 @@
   display: flex;
   justify-content: center;
 }
+tr{
+  cursor: pointer;
+  td:last-child{
+    cursor: wait;
+  }
+}

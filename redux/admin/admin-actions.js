@@ -37,3 +37,20 @@ export function setGenerally (type, newValue) {
             });
     }
 }
+
+export function getUsers (type) {
+    return dispatch => {
+        dispatch({type: 'REQUEST'});
+
+
+        axios.get(`${GLOB_URL}getUsers.php`, {params: {type}})
+            .then(function(res) {
+                // console.log(res);
+                dispatch({type: act.GET_USERS_INFO, users: res.data})
+
+            })
+            .catch((error) => {
+                console.log(error);
+            });
+    }
+}

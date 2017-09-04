@@ -60,7 +60,7 @@
 /******/ 	__webpack_require__.p = "";
 /******/
 /******/ 	// Load entry module and return exports
-/******/ 	return __webpack_require__(__webpack_require__.s = 726);
+/******/ 	return __webpack_require__(__webpack_require__.s = 727);
 /******/ })
 /************************************************************************/
 /******/ ([
@@ -12885,7 +12885,8 @@ var GLOB_URL = exports.GLOB_URL = "http://localhost:8888/vipcoin/admin/";
 var act = exports.act = {
     REQUEST: "REQUEST",
     GET_GEN_INFO: "GET_GENERALLY_INFO",
-    SET_GEN_INFO: "SET_GENERALLY_INFO"
+    SET_GEN_INFO: "SET_GENERALLY_INFO",
+    GET_USERS_INFO: "GET_USERS_INFO"
 
 };
 
@@ -27469,7 +27470,8 @@ var InitialState = {
     generallyInfo: {
         costOfOneCoin: 0,
         maxCoinsHave: 0,
-        totalSold: 0
+        totalSold: 0,
+        users: []
     },
     updated: ""
 };
@@ -27484,21 +27486,32 @@ var adminReducers = function adminReducers() {
             return {
                 request: true,
                 generallyInfo: state.generallyInfo,
-                updated: state.updated
+                updated: state.updated,
+                users: state.users
+
             };
 
         case _actionsAndUrl.act.GET_GEN_INFO:
             return {
                 request: false,
                 generallyInfo: action.info,
-                updated: state.updated
+                updated: state.updated,
+                users: state.users
 
             };
         case _actionsAndUrl.act.SET_GEN_INFO:
             return {
                 request: false,
                 generallyInfo: state.generallyInfo,
-                updated: action.updated
+                updated: action.updated,
+                users: state.users
+            };
+        case _actionsAndUrl.act.GET_USERS_INFO:
+            return {
+                request: false,
+                generallyInfo: state.generallyInfo,
+                updated: state.updated,
+                users: action.users
             };
 
         default:
@@ -28221,7 +28234,8 @@ exports.push([module.i, "@font-face {\n  font-family: 'Brusher';\n  src: url(" +
 /* 723 */,
 /* 724 */,
 /* 725 */,
-/* 726 */
+/* 726 */,
+/* 727 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -28245,7 +28259,7 @@ var _reducers = __webpack_require__(264);
 
 var _reducers2 = _interopRequireDefault(_reducers);
 
-var _settings = __webpack_require__(727);
+var _settings = __webpack_require__(728);
 
 var _settings2 = _interopRequireDefault(_settings);
 
@@ -28253,7 +28267,7 @@ var _main = __webpack_require__(448);
 
 var _main2 = _interopRequireDefault(_main);
 
-var _index = __webpack_require__(732);
+var _index = __webpack_require__(733);
 
 var _index2 = _interopRequireDefault(_index);
 
@@ -28269,7 +28283,7 @@ var store = (0, _redux.createStore)(_reducers2.default, (0, _redux.applyMiddlewa
 ), init);
 
 /***/ }),
-/* 727 */
+/* 728 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -28287,7 +28301,7 @@ var _reactRedux = __webpack_require__(108);
 
 var _profileActions = __webpack_require__(132);
 
-var _App = __webpack_require__(728);
+var _App = __webpack_require__(729);
 
 var _App2 = _interopRequireDefault(_App);
 
@@ -28305,7 +28319,7 @@ exports.default = (0, _reactRedux.connect)(mapStateToProps, {
 })(_App2.default);
 
 /***/ }),
-/* 728 */
+/* 729 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -28335,7 +28349,7 @@ var _ProfileHeader = __webpack_require__(447);
 
 var _ProfileHeader2 = _interopRequireDefault(_ProfileHeader);
 
-var _Container = __webpack_require__(729);
+var _Container = __webpack_require__(730);
 
 var _Container2 = _interopRequireDefault(_Container);
 
@@ -28422,7 +28436,7 @@ var App = function (_Component) {
 exports.default = App;
 
 /***/ }),
-/* 729 */
+/* 730 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -28438,11 +28452,11 @@ var _react = __webpack_require__(4);
 
 var _react2 = _interopRequireDefault(_react);
 
-var _ChangePassword = __webpack_require__(730);
+var _ChangePassword = __webpack_require__(731);
 
 var _ChangePassword2 = _interopRequireDefault(_ChangePassword);
 
-var _ChangeEmail = __webpack_require__(731);
+var _ChangeEmail = __webpack_require__(732);
 
 var _ChangeEmail2 = _interopRequireDefault(_ChangeEmail);
 
@@ -28497,7 +28511,7 @@ var Container = function (_Component) {
 exports.default = Container;
 
 /***/ }),
-/* 730 */
+/* 731 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -28624,7 +28638,7 @@ var ChangePassword = function (_Component) {
 exports.default = ChangePassword;
 
 /***/ }),
-/* 731 */
+/* 732 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -28742,13 +28756,13 @@ var ChangeEmail = function (_Component) {
 exports.default = ChangeEmail;
 
 /***/ }),
-/* 732 */
+/* 733 */
 /***/ (function(module, exports, __webpack_require__) {
 
 // style-loader: Adds some css to the DOM by adding a <style> tag
 
 // load the styles
-var content = __webpack_require__(733);
+var content = __webpack_require__(734);
 if(typeof content === 'string') content = [[module.i, content, '']];
 // Prepare cssTransformation
 var transform;
@@ -28773,7 +28787,7 @@ if(false) {
 }
 
 /***/ }),
-/* 733 */
+/* 734 */
 /***/ (function(module, exports, __webpack_require__) {
 
 exports = module.exports = __webpack_require__(34)(undefined);
