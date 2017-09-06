@@ -37,6 +37,8 @@
     text-decoration: none;
     margin-right: 20px;
     color: white;
+    transition: .2s;
+
     div {
       cursor: pointer;
       padding: 10px;
@@ -52,9 +54,11 @@
 
       }
     }
+    &:hover{
+      color: #b7b7b7;
+    }
     &:last-child {
       margin-right: 0;
-      color: #b7b7b7;
     }
   }
   }

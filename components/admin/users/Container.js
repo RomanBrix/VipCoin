@@ -3,12 +3,13 @@ import TableItems from "./TableItems";
 import SearchInput from "./SearchInput";
 import SearchPagination from "./SearchPagination";
 
-export default class NAME extends Component {
+export default class Container extends Component {
     constructor(props){
         super(props);
         this.state={
             data: [],
             activePage: 1,
+            step: 5
         }
     }
     componentWillReceiveProps(nextProps){
@@ -18,6 +19,13 @@ export default class NAME extends Component {
                 data: users
             });
         }
+    }
+
+    showNusers(num){
+
+        this.setState({
+            step: num
+        })
     }
 
     find(value, type){
@@ -54,18 +62,19 @@ export default class NAME extends Component {
 
     }
     render(){
-        const { activePage, data } = this.state;
+        const { activePage, data, step } = this.state;
 
         return(
             <div className="container">
                 <div className="content">
                     <h1>Users</h1>
-                    <SearchInput find={ this.find.bind(this) }/>
-                    <TableItems data={data} activePage={ activePage }/>
+                    <SearchInput find={ this.find.bind(this) } showNusers={ this.showNusers.bind(this) } />
+                    <TableItems data={data} activePage={ activePage } step={step}/>
                     <SearchPagination
                         activePage={activePage}
                         activatingPage={this.activatingPage.bind(this)}
                         data={data}
+                        step={step}
                     />
                 </div>
             </div>

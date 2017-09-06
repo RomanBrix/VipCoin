@@ -96,7 +96,12 @@ export default class Header extends Component {
         const { layouts } = lang[0];
         return (
             <div className="header">
-                <div className="logo"><img src={LOGO} alt="Logo"/></div>
+                <a href={PAGES.MAIN} id="logo">
+                    <div className="logo">
+                        <img src={LOGO} alt="Logo"/>
+                        <span className="bold">VIP</span>Coin
+                    </div>
+                </a>
                 <div className="menu">
                     <ul>
                         <li>
@@ -142,11 +147,16 @@ export default class Header extends Component {
                         toggleAuth(true)
                     }
                 }}>
-                    <div className="registration">
-                        <span className="icon-sign-in"/> {layouts.header.login.log}
-                    </div>
+                    {layouts.header.login.log}
                 </div>
-                <div className="lang dropdown">
+
+            </div>
+        );
+    }
+}
+
+/*
+<div className="lang dropdown">
                     <span id="active_lang">
                         <img src={`./src/header/${this.state.language}.svg`} alt="active_lang"/>
                     </span>
@@ -168,11 +178,4 @@ export default class Header extends Component {
                         </span>
                     </div>
                 </div>
-            </div>
-        );
-    }
-}
-
-/*
-<div className="login"> {layouts.header.login.login }</div>
  */

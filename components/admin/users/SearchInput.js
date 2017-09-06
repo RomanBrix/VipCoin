@@ -3,7 +3,7 @@ import { FormGroup, FormControl, Radio } from  "react-bootstrap";
 
 export default class SearchInput extends Component {
     render(){
-        const { find } = this.props;
+        const { find, showNusers } = this.props;
         return(
             <div className="search">
                 <FormGroup>
@@ -34,6 +34,13 @@ export default class SearchInput extends Component {
                         <Radio name="radioGroup" inline ref="email">
                             E-mail
                         </Radio>
+                        <input
+                            placeholder="Показать 'n' пользователей"
+                            type="number"
+                            onChange={({target})=>{
+                                showNusers(+target.value);
+                            }}
+                        />
                     </div>
                 </FormGroup>
             </div>

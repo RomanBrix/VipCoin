@@ -1,11 +1,11 @@
 import React, {Component} from 'react';
-import { MAIN_TOP_VIDEO } from '../../data/links';
+import { MAIN_TOP_VIDEO, BG_OPACITY_COIN } from '../../data/links';
 
 export default class Top extends Component {
     render(){
         const { pages } = this.props;
         return(
-            <div className="top">
+            <div className="top" style={ {backgroundImage: `url(${BG_OPACITY_COIN})`} }>
                 <div className="right">
                     <div className="text">
                         <h1>{pages.head}</h1>

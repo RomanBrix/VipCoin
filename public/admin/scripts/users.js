@@ -31464,7 +31464,7 @@ exports = module.exports = __webpack_require__(34)(undefined);
 
 
 // module
-exports.push([module.i, "@font-face {\n  font-family: 'Brusher';\n  src: url(" + __webpack_require__(69) + "); }\n\n@font-face {\n  font-family: 'HelveticaLight';\n  src: url(" + __webpack_require__(70) + "); }\n\n@font-face {\n  font-family: 'HelveticaBlack';\n  src: url(" + __webpack_require__(71) + "); }\n\n@font-face {\n  font-family: 'HelveticaBold';\n  src: url(" + __webpack_require__(72) + "); }\n\n@font-face {\n  font-family: 'HelveticaHeavy';\n  src: url(" + __webpack_require__(73) + "); }\n\n.header {\n  background-color: #17252e;\n  font-family: HelveticaLight;\n  color: white;\n  display: flex;\n  flex-direction: row;\n  justify-content: center;\n  align-items: center;\n  text-align: center;\n  width: 100%;\n  position: fixed;\n  top: 0;\n  left: 0;\n  z-index: 100; }\n  .header .head {\n    padding-right: 2.5%;\n    box-shadow: inset -10px 0 10px -7px black;\n    margin-right: 3.5%;\n    margin-left: -10%; }\n    .header .head h1 {\n      font-size: 36px;\n      margin-top: 20px;\n      margin-bottom: 10px;\n      font-weight: 500;\n      line-height: 1.1;\n      color: inherit; }\n  .header .menu {\n    display: flex;\n    justify-content: space-around; }\n    .header .menu a {\n      text-decoration: none;\n      margin-right: 20px;\n      color: white; }\n      .header .menu a div {\n        cursor: pointer;\n        padding: 10px;\n        text-align: center;\n        background-color: #1e3543;\n        border-radius: 5px;\n        box-shadow: 0 0 15px black;\n        transition: .2s; }\n        .header .menu a div:hover {\n          background-color: #1e3d4b;\n          box-shadow: 0 0 35px black; }\n      .header .menu a:last-child {\n        margin-right: 0;\n        color: #b7b7b7; }\n  .header .user {\n    position: absolute;\n    right: 5%;\n    margin-right: 130px;\n    justify-content: center;\n    display: flex;\n    align-items: center;\n    flex-direction: row-reverse;\n    font-family: HelveticaBold; }\n    .header .user .user_icon {\n      width: 50px;\n      margin-left: 15px; }\n  .header .enter {\n    position: absolute;\n    right: 5%;\n    display: flex; }\n    .header .enter .login {\n      cursor: pointer;\n      padding: 10px 20px;\n      border-radius: 5px;\n      background-color: #151f24;\n      box-shadow: inset 0 0 4px black;\n      transition: .2s;\n      display: flex;\n      align-items: center; }\n      .header .enter .login i {\n        font-size: 1.5em;\n        margin-right: 5px; }\n      .header .enter .login:hover {\n        background-color: #1b2429;\n        box-shadow: inset 0 0 1px black; }\n  .header .exit {\n    cursor: pointer;\n    padding: 10px 20px;\n    border-radius: 5px;\n    background-color: #151f24;\n    box-shadow: inset 0 0 4px black;\n    transition: .2s; }\n    .header .exit:hover {\n      background-color: #1b2429;\n      box-shadow: inset 0 0 1px black; }\n", ""]);
+exports.push([module.i, "@font-face {\n  font-family: 'Brusher';\n  src: url(" + __webpack_require__(69) + "); }\n\n@font-face {\n  font-family: 'HelveticaLight';\n  src: url(" + __webpack_require__(70) + "); }\n\n@font-face {\n  font-family: 'HelveticaBlack';\n  src: url(" + __webpack_require__(71) + "); }\n\n@font-face {\n  font-family: 'HelveticaBold';\n  src: url(" + __webpack_require__(72) + "); }\n\n@font-face {\n  font-family: 'HelveticaHeavy';\n  src: url(" + __webpack_require__(73) + "); }\n\n.header {\n  background-color: #17252e;\n  font-family: HelveticaLight;\n  color: white;\n  display: flex;\n  flex-direction: row;\n  justify-content: center;\n  align-items: center;\n  text-align: center;\n  width: 100%;\n  position: fixed;\n  top: 0;\n  left: 0;\n  z-index: 100; }\n  .header .head {\n    padding-right: 2.5%;\n    box-shadow: inset -10px 0 10px -7px black;\n    margin-right: 3.5%;\n    margin-left: -10%; }\n    .header .head h1 {\n      font-size: 36px;\n      margin-top: 20px;\n      margin-bottom: 10px;\n      font-weight: 500;\n      line-height: 1.1;\n      color: inherit; }\n  .header .menu {\n    display: flex;\n    justify-content: space-around; }\n    .header .menu a {\n      text-decoration: none;\n      margin-right: 20px;\n      color: white;\n      transition: .2s; }\n      .header .menu a div {\n        cursor: pointer;\n        padding: 10px;\n        text-align: center;\n        background-color: #1e3543;\n        border-radius: 5px;\n        box-shadow: 0 0 15px black;\n        transition: .2s; }\n        .header .menu a div:hover {\n          background-color: #1e3d4b;\n          box-shadow: 0 0 35px black; }\n      .header .menu a:hover {\n        color: #b7b7b7; }\n      .header .menu a:last-child {\n        margin-right: 0; }\n  .header .user {\n    position: absolute;\n    right: 5%;\n    margin-right: 130px;\n    justify-content: center;\n    display: flex;\n    align-items: center;\n    flex-direction: row-reverse;\n    font-family: HelveticaBold; }\n    .header .user .user_icon {\n      width: 50px;\n      margin-left: 15px; }\n  .header .enter {\n    position: absolute;\n    right: 5%;\n    display: flex; }\n    .header .enter .login {\n      cursor: pointer;\n      padding: 10px 20px;\n      border-radius: 5px;\n      background-color: #151f24;\n      box-shadow: inset 0 0 4px black;\n      transition: .2s;\n      display: flex;\n      align-items: center; }\n      .header .enter .login i {\n        font-size: 1.5em;\n        margin-right: 5px; }\n      .header .enter .login:hover {\n        background-color: #1b2429;\n        box-shadow: inset 0 0 1px black; }\n  .header .exit {\n    cursor: pointer;\n    padding: 10px 20px;\n    border-radius: 5px;\n    background-color: #151f24;\n    box-shadow: inset 0 0 4px black;\n    transition: .2s; }\n    .header .exit:hover {\n      background-color: #1b2429;\n      box-shadow: inset 0 0 1px black; }\n", ""]);
 
 // exports
 
@@ -37150,22 +37150,23 @@ function _possibleConstructorReturn(self, call) { if (!self) { throw new Referen
 
 function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
 
-var NAME = function (_Component) {
-    _inherits(NAME, _Component);
+var Container = function (_Component) {
+    _inherits(Container, _Component);
 
-    function NAME(props) {
-        _classCallCheck(this, NAME);
+    function Container(props) {
+        _classCallCheck(this, Container);
 
-        var _this = _possibleConstructorReturn(this, (NAME.__proto__ || Object.getPrototypeOf(NAME)).call(this, props));
+        var _this = _possibleConstructorReturn(this, (Container.__proto__ || Object.getPrototypeOf(Container)).call(this, props));
 
         _this.state = {
             data: [],
-            activePage: 1
+            activePage: 1,
+            step: 5
         };
         return _this;
     }
 
-    _createClass(NAME, [{
+    _createClass(Container, [{
         key: "componentWillReceiveProps",
         value: function componentWillReceiveProps(nextProps) {
             var users = nextProps.users;
@@ -37175,6 +37176,14 @@ var NAME = function (_Component) {
                     data: users
                 });
             }
+        }
+    }, {
+        key: "showNusers",
+        value: function showNusers(num) {
+
+            this.setState({
+                step: num
+            });
         }
     }, {
         key: "find",
@@ -37216,7 +37225,8 @@ var NAME = function (_Component) {
         value: function render() {
             var _state = this.state,
                 activePage = _state.activePage,
-                data = _state.data;
+                data = _state.data,
+                step = _state.step;
 
 
             return _react2.default.createElement(
@@ -37230,22 +37240,23 @@ var NAME = function (_Component) {
                         null,
                         "Users"
                     ),
-                    _react2.default.createElement(_SearchInput2.default, { find: this.find.bind(this) }),
-                    _react2.default.createElement(_TableItems2.default, { data: data, activePage: activePage }),
+                    _react2.default.createElement(_SearchInput2.default, { find: this.find.bind(this), showNusers: this.showNusers.bind(this) }),
+                    _react2.default.createElement(_TableItems2.default, { data: data, activePage: activePage, step: step }),
                     _react2.default.createElement(_SearchPagination2.default, {
                         activePage: activePage,
                         activatingPage: this.activatingPage.bind(this),
-                        data: data
+                        data: data,
+                        step: step
                     })
                 )
             );
         }
     }]);
 
-    return NAME;
+    return Container;
 }(_react.Component);
 
-exports.default = NAME;
+exports.default = Container;
 
 /***/ }),
 /* 745 */
@@ -37277,22 +37288,46 @@ function _inherits(subClass, superClass) { if (typeof superClass !== "function" 
 var TableItems = function (_Component) {
     _inherits(TableItems, _Component);
 
-    function TableItems() {
+    function TableItems(props) {
         _classCallCheck(this, TableItems);
 
-        return _possibleConstructorReturn(this, (TableItems.__proto__ || Object.getPrototypeOf(TableItems)).apply(this, arguments));
+        var _this = _possibleConstructorReturn(this, (TableItems.__proto__ || Object.getPrototypeOf(TableItems)).call(this, props));
+
+        _this.state = {
+            sorted: true
+        };
+        return _this;
     }
 
     _createClass(TableItems, [{
+        key: "compareNumericTrue",
+        value: function compareNumericTrue(a, b) {
+            if (+a.vipcoins_value > +b.vipcoins_value) return -1;
+            if (+a.vipcoins_value < +b.vipcoins_value) return 1;
+        }
+    }, {
+        key: "compareNumericFalse",
+        value: function compareNumericFalse(a, b) {
+            if (+a.vipcoins_value > +b.vipcoins_value) return 1;
+            if (+a.vipcoins_value < +b.vipcoins_value) return -1;
+        }
+    }, {
         key: "render",
         value: function render() {
+            var _this2 = this;
+
             var _props = this.props,
                 data = _props.data,
-                activePage = _props.activePage;
+                activePage = _props.activePage,
+                step = _props.step;
+            var sorted = this.state.sorted;
+            // console.log(sorted);
 
-            var paginationContainer = data.filter(function (item, index) {
-                var end = 10 * activePage;
-                var start = end - 10;
+            var sortedData = [];
+            sorted ? sortedData = data.sort(this.compareNumericTrue) : sortedData = data.sort(this.compareNumericFalse);
+            var paginationContainer = sortedData.filter(function (item, index) {
+                var end = step * activePage;
+                var start = end - step;
                 return index >= start && index < end;
             });
             var TRcontainer = paginationContainer.map(function (item, index) {
@@ -37365,7 +37400,13 @@ var TableItems = function (_Component) {
                         ),
                         _react2.default.createElement(
                             "th",
-                            null,
+                            { onClick: function onClick() {
+                                    var sorted = _this2.state.sorted;
+
+                                    _this2.setState({
+                                        sorted: !sorted
+                                    });
+                                } },
                             "VipCoins"
                         )
                     )
@@ -47466,7 +47507,9 @@ var SearchInput = function (_Component) {
     _createClass(SearchInput, [{
         key: "render",
         value: function render() {
-            var find = this.props.find;
+            var _props = this.props,
+                find = _props.find,
+                showNusers = _props.showNusers;
 
             return _react2.default.createElement(
                 "div",
@@ -47509,7 +47552,16 @@ var SearchInput = function (_Component) {
                             _reactBootstrap.Radio,
                             { name: "radioGroup", inline: true, ref: "email" },
                             "E-mail"
-                        )
+                        ),
+                        _react2.default.createElement("input", {
+                            placeholder: "\u041F\u043E\u043A\u0430\u0437\u0430\u0442\u044C 'n' \u043F\u043E\u043B\u044C\u0437\u043E\u0432\u0430\u0442\u0435\u043B\u0435\u0439",
+                            type: "number",
+                            onChange: function onChange(_ref2) {
+                                var target = _ref2.target;
+
+                                showNusers(+target.value);
+                            }
+                        })
                     )
                 )
             );
@@ -47554,18 +47606,13 @@ var SearchPagination = function (_Component) {
     function SearchPagination(props) {
         _classCallCheck(this, SearchPagination);
 
-        var _this = _possibleConstructorReturn(this, (SearchPagination.__proto__ || Object.getPrototypeOf(SearchPagination)).call(this, props));
-
-        _this.state = {
-            step: 10
-        };
-        return _this;
+        return _possibleConstructorReturn(this, (SearchPagination.__proto__ || Object.getPrototypeOf(SearchPagination)).call(this, props));
     }
 
     _createClass(SearchPagination, [{
         key: 'handleSelect',
         value: function handleSelect(eventKey) {
-            var step = this.state.step;
+            var step = this.props.step;
             var activatingPage = this.props.activatingPage;
 
             activatingPage(eventKey, step);
@@ -47573,10 +47620,12 @@ var SearchPagination = function (_Component) {
     }, {
         key: 'render',
         value: function render() {
-            var step = this.state.step;
+
+            // const { step } = this.state;
             var _props = this.props,
                 data = _props.data,
-                activePage = _props.activePage;
+                activePage = _props.activePage,
+                step = _props.step;
 
             var item = Math.ceil(data.length / step);
             return _react2.default.createElement(
@@ -47643,7 +47692,7 @@ exports = module.exports = __webpack_require__(34)(undefined);
 
 
 // module
-exports.push([module.i, ".search {\n  margin-bottom: 45px; }\n  .search .form-group input[type=\"text\"] {\n    margin-bottom: 15px; }\n  .search .form-group .radios {\n    display: flex;\n    justify-content: center; }\n    .search .form-group .radios label {\n      margin-right: 35px; }\n\n.paga {\n  display: flex;\n  justify-content: center; }\n\ntr {\n  cursor: pointer; }\n  tr td:last-child {\n    cursor: wait; }\n", ""]);
+exports.push([module.i, ".search {\n  margin-bottom: 45px; }\n  .search .form-group input[type=\"text\"] {\n    margin-bottom: 15px; }\n  .search .form-group .radios {\n    display: flex;\n    justify-content: center;\n    position: relative; }\n    .search .form-group .radios label {\n      margin-right: 35px; }\n    .search .form-group .radios input[type=\"number\"] {\n      position: absolute;\n      right: 0; }\n\n.paga {\n  display: flex;\n  justify-content: center; }\n\nthead tr th:last-child {\n  cursor: pointer; }\n\ntbody tr {\n  cursor: pointer; }\n  tbody tr td:last-child {\n    cursor: wait; }\n", ""]);
 
 // exports
 

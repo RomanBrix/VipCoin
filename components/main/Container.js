@@ -9,7 +9,7 @@ export default class Container extends Component {
 
         return(
             <div className="content">
-                <Top pages={ pages.top }/>
+                <Top pages={ pages.top } />
                 <Progress
                     pages={ pages.progress }
                     maxCoins={ maxCoins }

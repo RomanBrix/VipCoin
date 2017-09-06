@@ -7,9 +7,14 @@
     .radios{
       display: flex;
       justify-content: center;
+      position: relative;
     label{
       margin-right: 35px;
     }
+      input[type="number"]{
+        position: absolute;
+        right: 0;
+      }
     }
   }
 }
@@ -17,9 +22,18 @@
   display: flex;
   justify-content: center;
 }
-tr{
-  cursor: pointer;
-  td:last-child{
-    cursor: wait;
+thead{
+  tr{
+    th:last-child{
+      cursor: pointer;
+    }
+  }
+}
+tbody {
+  tr {
+    cursor: pointer;
+    td:last-child {
+      cursor: wait;
+    }
   }
 }

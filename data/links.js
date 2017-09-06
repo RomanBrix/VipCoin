@@ -1,4 +1,4 @@
-export const LOGO = './src/logo.png';
+export const LOGO = './src/VipCoin.png';
 
 
 export const FLAG_RU = "./src/header/ru.svg";
@@ -7,7 +7,9 @@ export const FLAG_JAP = "./src/header/japan.svg";
 export const FLAG_USA = "./src/header/usa.svg";
 
 
-export const BG_COIN = "./src/vipcoin.png";
+export const BG_COIN = "./src/afterBg.png";
+export const BG_OPACITY_COIN = './src/VipCoinOpacity.png';
+
 export const MAIN_TOP_VIDEO = "https://www.youtube.com/embed/FRTOlFwpMX8";
 
 export const PAGES = {

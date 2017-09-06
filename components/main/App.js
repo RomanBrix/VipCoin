@@ -1,8 +1,8 @@
 import React, {Component} from 'react';
 import translate from "../../data/translate.json";
 import FooterIcons from "../../public/src/Fonts/FontsIcons/styles.css";
-// import FontBitCoin from "../../public/src/main/FontBitcoin/styles.css";
-import { BG_COIN } from '../../data/links';
+import {BG_COIN} from "../../data/links";
+
 import Header from '../layouts/Header';
 import Footer from '../layouts/Footer';
 import Auth from '../layouts/auth'
@@ -61,7 +61,8 @@ export default class App extends Component {
 
             }
         }
-
+        const mount = document.getElementById("mountNode");
+        mount.style.backgroundImage = `url(${BG_COIN})`;
 
         return (
             <div className="Main">
@@ -80,7 +81,6 @@ export default class App extends Component {
                     setLanguage={ setLanguage }
                     toggleAuth={ this.toggleAuth.bind(this) }
                 />
-                <div className="bg" style={ {backgroundImage: `url(${BG_COIN})`} }/>
                 <div className="container">
                     <Container
                         pages={ pages.main }
