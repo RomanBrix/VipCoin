@@ -1,7 +1,7 @@
 @import "../vars";
 .header{
   display: flex;
-  justify-content: space-around;
+  justify-content: space-between;
   align-items: center;
   margin-top: 50px;
   width: 80%;
@@ -61,7 +61,9 @@
           margin-right: 0;
         }
         &.active {
-          color: $LightGold;
+          a{
+            color: $LightGold;
+          }
         }
       }
     }

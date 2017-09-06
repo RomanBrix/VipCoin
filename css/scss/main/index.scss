@@ -1,3 +1,4 @@
+@import "../vars";
 .top{
   background-size: 400px;
   background-repeat: no-repeat;
@@ -5,9 +6,182 @@
   width: 80%;
   min-height: 420px;
   background-position-y: 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  .text{
+    h1{
+      font-size: 38px;
+    }
+    p{
+      line-height: 1.2em;
+      padding: 0 70px 0 0;
+      color: white;
+      max-width: 360px;
+    }
+    .btn-buy {
+      border-radius: 7px;
+      background-color: $BrightGold;
+      box-shadow: inset 0 1px 7.74px 1.26px rgba(0, 0, 0, 0.35);
+      width: 145px;
+      height: 40px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      font-size: 24px;
+      color: white;
+      cursor:pointer;
+      transition: .25s;
+
+      &:hover{
+        box-shadow: inset 0 1px 7.74px 1.26px rgba(0, 0, 0, 1);
+        //transform: scale(1.02);
+      }
+    }
+
+  }
+  .video{
+    min-width: 450px;
+    min-height: 250px;
+    border: 5px solid rgb(66, 80, 103);
+    border-radius: 6px;
+    position: relative;
+    iframe{
+      width: 100%;
+      height: 250px;
+      margin: 0;
+      padding: 0;
+      position: absolute;
+    }
+  }
+
 }
+
 
 .progress{
   width: 100%;
-  background: white;
+  background: $MainBlue;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  min-height: 350px;
+  position: relative;
+  h1{
+    font-size: 24px;
+    position: absolute;
+    background: #0c324e;
+    top: 0;
+    margin: 0;
+    padding: 3px 15px;
+    left: calc(50% - 125px);
+  }
+  h2{
+    margin-top: 75px;
+    font-size: 30px;
+  }
+  .coins_left{
+    font-size: 4em;
+    display: flex;
+    align-items: center;
+    img{
+      max-height: 90px;
+      margin-right: 15px;
+      margin-top: -10px;
+    }
+  }
+}
+
+progress {
+  width: 60%;
+  margin: 2em auto;
+  margin-bottom: 0;
+  display: block;
+  border-radius: 14px;
+  padding: 0;
+  border: 4px solid rgb(204, 195, 195);
+  text-align: center;
+  height: 25px;
+  box-shadow: inset 0px 0px 5.1px 0.9px rgba(0, 0, 0, 0.6);
+  overflow: hidden;
+  transition: .3s;
+  z-index: 2;
+  cursor: none;
+  background: #2f4f76;
+  position: relative;
+  &:before {
+    content: "";
+    height: 100%;
+    width: 3px;
+    background: rgb(254, 175, 0);
+    position: absolute;
+    left: 30%;
+    //padding: 0 5px;
+    line-height: 1.3em;
+  }
+  &::-moz-progress-bar {
+    box-shadow: inset 0px 0px 5.1px 0.9px rgba(0, 0, 0, .61);
+    background:  rgb(254, 175, 0);
+
+    //border-radius: 14px;
+  }
+
+  &::-webkit-progress-bar {
+    background: #2f4f76;
+    //box-shadow: 0 0 10px gold;
+    box-shadow: inset 0px 0px 5.1px 0.9px rgba(0, 0, 0, 0.61);
+    transition: .3s;
+
+    &:hover {
+      //box-shadow: 0 0 20px gold;
+      box-shadow: inset 0px 0px 5.1px 0.9px rgba(0, 0, 0, 0.61);
+
+    }
+  }
+
+
+  &::-webkit-progress-value {
+    background: #ffaf00;
+    box-shadow: inset 0px 0px 5.1px 0.9px rgba(0, 0, 0, 0.61);
+    //border-radius: 3px;
+
+  }
+
+  &:hover {
+    //box-shadow: 0 0 10px #ffaf00;
+    box-shadow: inset 0px 0px 5.1px 0.9px rgba(0, 0, 0, 0.4);
+    border-radius: 0;
+  }
+}
+.afterProgress {
+  margin-top: 5px;
+  color: #464646;
+  position: relative;
+  width: 60%;
+  .left, .right, ._30_percentages {
+    position: absolute;
+  }
+  .left {
+    //left: -10px;
+    margin-left: -4%;
+  }
+  ._30_percentages{
+    top: -53px;
+    left: 29%;
+
+    &:before{
+      content: "";
+      height: 2em;
+      width: 3px;
+      background-color: #feaf00;
+      position: absolute;
+      bottom: -28.7px;
+      right: calc(50% + 4px);
+      z-index: 10;
+      border-top-left-radius: 50px;
+    }
+  }
+  .right {
+    right: -10px;
+  }
 }

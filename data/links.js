@@ -10,7 +10,7 @@ export const FLAG_USA = "./src/header/usa.svg";
 export const BG_COIN = "./src/afterBg.png";
 export const BG_OPACITY_COIN = './src/VipCoinOpacity.png';
 
-export const MAIN_TOP_VIDEO = "https://www.youtube.com/embed/FRTOlFwpMX8";
+export const MAIN_TOP_VIDEO = "https://www.youtube.com/embed/SoTaS9t3Po4?rel=0";
 
 export const PAGES = {
     MAIN: "index.html",

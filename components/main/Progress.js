@@ -1,5 +1,5 @@
 import React, {Component} from 'react';
-
+import { LOGO } from '../../data/links';
 export default class Progress extends Component {
 
     render(){
@@ -14,10 +14,11 @@ export default class Progress extends Component {
             <div className="progress">
                 <h1> {pages.head}</h1>
                 <h2> {pages.title}</h2>
-                <div className="coins_left">{ coinsLeft } <i className="icon-bitcoin-circle"/></div>
+                <div className="coins_left"> <img src={LOGO} alt="Logo"/>{ coinsLeft }</div>
                 <progress className="progressBar" value={ soldCoins } max={ maxCoins }/>
                 <div className="afterProgress">
                     <span className="left" style={{left: `${width}%`}}>{soldCoins}</span>
+                    <span className="_30_percentages">30%</span>
                     <span className="right">{maxCoins}</span>
                 </div>
             </div>

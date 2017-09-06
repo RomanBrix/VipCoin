@@ -1,6 +1,5 @@
 import React, {Component} from 'react';
 import translate from "../../data/translate.json";
-// import FontEnter from "../../public/src/header/FontEnter/styles.css";
 import FooterIcons from "../../public/src/Fonts/FontsIcons/styles.css";
 import css from '../../css/scss/layouts/header.scss';
 import {

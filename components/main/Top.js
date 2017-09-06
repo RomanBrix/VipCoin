@@ -6,16 +6,15 @@ export default class Top extends Component {
         const { pages } = this.props;
         return(
             <div className="top" style={ {backgroundImage: `url(${BG_OPACITY_COIN})`} }>
-                <div className="right">
                     <div className="text">
                         <h1>{pages.head}</h1>
                         <p>{pages.text}</p>
+                        <div className="btn-buy">{ pages.btn }</div>
                     </div>
                     <div className="video">
-                        {/*<iframe  src="https://www.youtube.com/embed/RuZ80TPUF_A" height="100%" width="100%" frameBorder="0" allowFullScreen/>*/}
-                        <iframe width="100%" height="100%" src={MAIN_TOP_VIDEO} frameBorder="0" allowFullScreen/>
+                        <iframe width="100%" height="250px" src={MAIN_TOP_VIDEO} frameBorder="0" allowFullScreen/>
                     </div>
-                </div>
+
             </div>
         )
     }
