@@ -12,7 +12,7 @@ export default class Top extends Component {
                         <div className="btn-buy">{ pages.btn }</div>
                     </div>
                     <div className="video">
-                        <iframe width="100%" height="250px" src={MAIN_TOP_VIDEO} frameBorder="0" allowFullScreen/>
+                        <iframe width="100%" height="100%" src={MAIN_TOP_VIDEO} frameBorder="0" allowFullScreen/>
                     </div>
 
             </div>

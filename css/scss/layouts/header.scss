@@ -90,3 +90,15 @@
       //height: 24px;
   }
 }
+
+@media (max-width: 1030px) {
+  .header {
+    .menu {
+      font-size: .9em;
+    }
+    .login {
+      font-size: .9em;
+    }
+  }
+}
+

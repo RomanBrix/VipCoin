@@ -2,13 +2,15 @@ import React, {Component} from 'react';
 import css from '../../css/scss/layouts/footer.scss';
 import FooterIcons from "../../public/src/Fonts/FontsIcons/styles.css";
 import { CONTACTS, PAGES } from '../../data/links';
+import { FOOTER_BG } from '../../data/links';
+
 
 
 export default class Footer extends Component {
     render(){
         const { footer } = this.props;
         return(
-            <div className="footer">
+            <div className="footer" style={{ backgroundImage: `url(${FOOTER_BG})`} }>
                 <div className="cont">
                     <div className="PP">
                        <ul>
