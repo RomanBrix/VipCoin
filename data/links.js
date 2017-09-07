@@ -22,6 +22,9 @@ export const PAGES = {
     WHITE_PAGE: "#",
     LEGAL_PAGE: "#",
     CONTRACT_OFFER: "#",
+    confidentiality: "#",
+    CONFIDENTIALITY: "#"
+
 };
 
 

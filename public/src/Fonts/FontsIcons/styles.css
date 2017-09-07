@@ -47,9 +47,6 @@
 .icon-facebook-alt:before {
   content: "\e003";
 }
-.icon-instagrem:before {
-  content: "\e004";
-}
 .icon-twitter-square:before {
   content: "\e005";
 }
@@ -115,4 +112,19 @@
 }
 .icon-power:before {
   content: "\e019";
+}
+.icon-mail:before {
+  content: "\e01a";
+}
+.icon-call-phone:before {
+  content: "\e01b";
+}
+.icon-facebook:before {
+  content: "\e01c";
+}
+.icon-twitter:before {
+  content: "\e01d";
+}
+.icon-instagram:before {
+  content: "\e004";
 }

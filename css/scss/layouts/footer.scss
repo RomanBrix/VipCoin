@@ -1,28 +1,146 @@
+@import "../vars";
+
 .footer{
   height: 200px;
   background-repeat: no-repeat;
-  background-size: 100%;
   background-position-x: 50%;
-  .cont{
+  background-size: cover;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  width: 100%;
+  position: relative;
+
+  .cont {
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 100%;
+    font-size: .8em;
+    position: relative;
+    margin-bottom: 20px;
 
-    .PP{
-
-      ul{
+    .PP {
+      margin-right: 50px;
+      ul {
         list-style: none;
         padding: 0;
         margin: 0;
 
-        li{
-          a{
+        li {
+          margin-bottom: 15px;
+          cursor: pointer;
+          transition: .25s all;
+          a {
             text-decoration: none;
             color: white;
+            transition: .25s all;
+
+          }
+
+          &:hover {
+            a {
+              color: $LightGold;
+            }
+          }
+          &:last-child {
+            margin-bottom: 0;
           }
         }
       }
+    }
+
+    .feedback {
+      margin-right: 50px;
+      display: flex;
+      flex-direction: column;
+
+      a {
+        color: white;
+        text-decoration: none;
+        display: flex;
+        align-items: center;
+        transition: .25s all;
+        margin-bottom: 5px;
+
+        i {
+          font-size: 1.6em;
+          margin-right: 5px;
+        }
+        &:hover {
+          color: $LightGold;
+        }
+
+        &:last-child {
+          margin-bottom: 0;
+        }
+      }
+    }
+
+    .contacts {
+      display: flex;
+      flex-direction: column;
+
+      a {
+        color: white;
+        text-decoration: none;
+        display: flex;
+        align-items: center;
+        transition: .25s all;
+        margin-bottom: 5px;
+
+        i {
+          font-size: 1.6em;
+          margin-right: 5px;
+        }
+        &:hover {
+          color: $LightGold;
+        }
+
+        &:last-child {
+          margin-bottom: 0;
+        }
+      }
+    }
+
+    &:after {
+      content: "";
+      position: absolute;
+      width: 100%;
+      height: 1px;
+      bottom: -10px;
+      background-color: rgb(255, 255, 255);
+      opacity: 0.188;
+    }
+  }
+
+  .socials{
+    width: 15%;
+    font-size: 1.5em;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    a {
+      color: white;
+      text-decoration: none;
+      transition: .25s all;
+
+      &:hover{
+        color: $LightGold;
+      }
+    }
+  }
+
+  #author{
+    position: absolute;
+    bottom: 0;
+    font-size: .8em;
+    text-decoration: none;
+    color: white;
+    transition: .25s all;
+
+    &:hover{
+      color: $LightGold;
     }
   }
 }
