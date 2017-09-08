@@ -60,7 +60,7 @@
 /******/ 	__webpack_require__.p = "";
 /******/
 /******/ 	// Load entry module and return exports
-/******/ 	return __webpack_require__(__webpack_require__.s = 719);
+/******/ 	return __webpack_require__(__webpack_require__.s = 720);
 /******/ })
 /************************************************************************/
 /******/ ([
@@ -27531,7 +27531,7 @@ exports.default = adminReducers;
 /* 286 */
 /***/ (function(module, exports) {
 
-module.exports = [{"language":"ru","pages":{"main":{"top":{"head":"Ваш шедевр готов!","text":"С другой стороны консультация с широким активом способствует подготовки и реализации модели развития. Задача организации, в особенности же консультация с широким активом в значительной степени.","btn":"купить"},"progress":{"head":"какая наша цель?","title":"Официальный запуск сети после продажи:"}},"help":{},"packages":{"packages":[{"title":"ПАКЕТЫ"},{"title":"Калькулятор выгоды","inputCoins":"VipCoin","text":"Подсчитайте свою прибыль с учетом прогнозов курса VipCoin на последующие года"}]},"FAQ":{},"news":{},"contacts":{"top":{"head":"Контакты"},"feedback":{"head":"центр поддержки клиентов","inputName":"Имя","inputLName":"Фамилия","inputEmail":"E-mail","inputMsg":"Ваше сообщение","btnSend":"Отправить"}},"profile":{"layouts":{"leftHeader":{"btnMain":"главная","btnRefill":"Купить","btnSettings":"Настройки","btnExit":"выход"}},"info":{},"settings":{"password":{"head":"Сменить пароль","CurPass":"Текущий пароль","new":"Новый пароль","repass":"Повторите пароль","save":"Сохранить","error":"Неверный пароль","accept":"Изминения сохранены"},"email":{"head":"Сменить E-mail","CurPass":"Текущий пароль","new":"Новый E-mail","save":"Сохранить","error":"Неверный пароль","secondError":"Такой E-mail уже есть!","accept":"Изминения сохранены"}}}},"layouts":{"header":{"btnMain":"ГЛАВНАЯ","btnAbout":"О НАС","btnPackages":"ПАКЕТЫ","btnFAQ":"Помощь","btnNews":"Новости","btnContacts":"Контакты","login":{"log":"Регистрация/Вход"}},"footer":{"pages":{"whitePage":"Белая Бумага","legalPage":"Юридические Информация","contractOffer":"Пользовательское Соглашение","confidentiality":"Политика Конфиденциальности"},"feedback":"Обратная связь"},"auth":{"header":{"btnLogin":"Войти","btnRegistration":"Регестрация","btnForgotPass":"Забыли пароль?"},"login":{"inputLogin":"Логин или E-mail","inputPassword":"Пароль","btnEnter":"Войти"},"registration":{"inputLogin":"Логин","inputEmail":"E-Mail","inputPassword":"Пароль","inputRepeatPassword":"Повторите пароль","checkLegal":"Согласен с правилами сайта","btnRegistration":"Регестрация"},"forgot":{"text":"Отправить пароль на почту","inputEmail":"E-Mail","btnSend":"Отправить","success":"E-mail отправлен!","error":"E-mail не найден"}}}}]
+module.exports = [{"language":"ru","pages":{"main":{"top":{"head":"Ваш шедевр готов!","text":"С другой стороны консультация с широким активом способствует подготовки и реализации модели развития. Задача организации, в особенности же консультация с широким активом в значительной степени.","btn":"купить"},"progress":{"head":"какая наша цель?","title":"Официальный запуск сети после продажи:"},"table":{"head":{"header":"Сплиты","number":"#","cost":"Цена","value":"Количество монет","summ":"Сумма"},"foot":{"allSumm":"Итог сбора суммы: 306.900.000","future":"При выходе на крипто-биржу цена за 1 монету","coinCost":"50$"},"split":[{"cost":0.1,"value":"3.000.000","summ":"300.000"},{"cost":0.2,"value":"3.000.000","summ":"600.000"},{"cost":0.4,"value":"3.000.000","summ":"1.200.000"},{"cost":0.8,"value":"3.000.000","summ":"2.400.000"},{"cost":1.6,"value":"3.000.000","summ":"4.800.000"},{"cost":3.2,"value":"3.000.000","summ":"9.600.000"},{"cost":6.4,"value":"3.000.000","summ":"19.200.000"},{"cost":12.8,"value":"3.000.000","summ":"38.400.000"},{"cost":25.6,"value":"3.000.000","summ":"76.800.000"},{"cost":51.2,"value":"3.000.000","summ":"153.600.000"}]}},"help":{},"packages":{"packages":[{"title":"ПАКЕТЫ"},{"title":"Калькулятор выгоды","inputCoins":"VipCoin","text":"Подсчитайте свою прибыль с учетом прогнозов курса VipCoin на последующие года"}]},"FAQ":{},"news":{},"contacts":{"top":{"head":"Контакты"},"feedback":{"head":"центр поддержки клиентов","inputName":"Имя","inputLName":"Фамилия","inputEmail":"E-mail","inputMsg":"Ваше сообщение","btnSend":"Отправить"}},"profile":{"layouts":{"leftHeader":{"btnMain":"главная","btnRefill":"Купить","btnSettings":"Настройки","btnExit":"выход"}},"info":{},"settings":{"password":{"head":"Сменить пароль","CurPass":"Текущий пароль","new":"Новый пароль","repass":"Повторите пароль","save":"Сохранить","error":"Неверный пароль","accept":"Изминения сохранены"},"email":{"head":"Сменить E-mail","CurPass":"Текущий пароль","new":"Новый E-mail","save":"Сохранить","error":"Неверный пароль","secondError":"Такой E-mail уже есть!","accept":"Изминения сохранены"}}}},"layouts":{"header":{"btnMain":"ГЛАВНАЯ","btnAbout":"О НАС","btnPackages":"ПАКЕТЫ","btnFAQ":"Помощь","btnNews":"Новости","btnContacts":"Контакты","login":{"log":"Регистрация/Вход"}},"footer":{"pages":{"whitePage":"Белая Бумага","legalPage":"Юридические Информация","contractOffer":"Пользовательское Соглашение","confidentiality":"Политика Конфиденциальности"},"feedback":"Обратная связь"},"auth":{"header":{"btnLogin":"Войти","btnRegistration":"Регестрация","btnForgotPass":"Забыли пароль?"},"login":{"inputLogin":"Логин или E-mail","inputPassword":"Пароль","btnEnter":"Войти"},"registration":{"inputLogin":"Логин","inputEmail":"E-Mail","inputPassword":"Пароль","inputRepeatPassword":"Повторите пароль","checkLegal":"Согласен с правилами сайта","btnRegistration":"Регестрация"},"forgot":{"text":"Отправить пароль на почту","inputEmail":"E-Mail","btnSend":"Отправить","success":"E-mail отправлен!","error":"E-mail не найден"}}}}]
 
 /***/ }),
 /* 287 */
@@ -28232,7 +28232,8 @@ exports.push([module.i, "@font-face {\n  font-family: 'Brusher';\n  src: url(" +
 /* 716 */,
 /* 717 */,
 /* 718 */,
-/* 719 */
+/* 719 */,
+/* 720 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -28256,7 +28257,7 @@ var _reducers = __webpack_require__(264);
 
 var _reducers2 = _interopRequireDefault(_reducers);
 
-var _me = __webpack_require__(720);
+var _me = __webpack_require__(721);
 
 var _me2 = _interopRequireDefault(_me);
 
@@ -28264,7 +28265,7 @@ var _main = __webpack_require__(448);
 
 var _main2 = _interopRequireDefault(_main);
 
-var _index = __webpack_require__(725);
+var _index = __webpack_require__(726);
 
 var _index2 = _interopRequireDefault(_index);
 
@@ -28280,7 +28281,7 @@ var store = (0, _redux.createStore)(_reducers2.default, (0, _redux.applyMiddlewa
 ), init);
 
 /***/ }),
-/* 720 */
+/* 721 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -28298,7 +28299,7 @@ var _reactRedux = __webpack_require__(104);
 
 var _profileActions = __webpack_require__(127);
 
-var _App = __webpack_require__(721);
+var _App = __webpack_require__(722);
 
 var _App2 = _interopRequireDefault(_App);
 
@@ -28317,7 +28318,7 @@ exports.default = (0, _reactRedux.connect)(mapStateToProps, {
 })(_App2.default);
 
 /***/ }),
-/* 721 */
+/* 722 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -28347,7 +28348,7 @@ var _ProfileHeader = __webpack_require__(447);
 
 var _ProfileHeader2 = _interopRequireDefault(_ProfileHeader);
 
-var _Container = __webpack_require__(722);
+var _Container = __webpack_require__(723);
 
 var _Container2 = _interopRequireDefault(_Container);
 
@@ -28437,7 +28438,7 @@ var App = function (_Component) {
 exports.default = App;
 
 /***/ }),
-/* 722 */
+/* 723 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -28453,11 +28454,11 @@ var _react = __webpack_require__(4);
 
 var _react2 = _interopRequireDefault(_react);
 
-var _CoinsInfo = __webpack_require__(723);
+var _CoinsInfo = __webpack_require__(724);
 
 var _CoinsInfo2 = _interopRequireDefault(_CoinsInfo);
 
-var _Refill = __webpack_require__(724);
+var _Refill = __webpack_require__(725);
 
 var _Refill2 = _interopRequireDefault(_Refill);
 
@@ -28501,7 +28502,7 @@ var Container = function (_Component) {
 exports.default = Container;
 
 /***/ }),
-/* 723 */
+/* 724 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -28576,7 +28577,7 @@ var CoinsInfo = function (_Component) {
 exports.default = CoinsInfo;
 
 /***/ }),
-/* 724 */
+/* 725 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -28920,13 +28921,13 @@ var Refill = function (_Component) {
 exports.default = Refill;
 
 /***/ }),
-/* 725 */
+/* 726 */
 /***/ (function(module, exports, __webpack_require__) {
 
 // style-loader: Adds some css to the DOM by adding a <style> tag
 
 // load the styles
-var content = __webpack_require__(726);
+var content = __webpack_require__(727);
 if(typeof content === 'string') content = [[module.i, content, '']];
 // Prepare cssTransformation
 var transform;
@@ -28951,7 +28952,7 @@ if(false) {
 }
 
 /***/ }),
-/* 726 */
+/* 727 */
 /***/ (function(module, exports, __webpack_require__) {
 
 exports = module.exports = __webpack_require__(34)(undefined);

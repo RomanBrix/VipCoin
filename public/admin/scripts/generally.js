@@ -60,7 +60,7 @@
 /******/ 	__webpack_require__.p = "";
 /******/
 /******/ 	// Load entry module and return exports
-/******/ 	return __webpack_require__(__webpack_require__.s = 735);
+/******/ 	return __webpack_require__(__webpack_require__.s = 736);
 /******/ })
 /************************************************************************/
 /******/ ([
@@ -28312,7 +28312,8 @@ exports.push([module.i, "body {\n  background-color: #f2f5f6;\n  margin: 0; }\n 
 /* 732 */,
 /* 733 */,
 /* 734 */,
-/* 735 */
+/* 735 */,
+/* 736 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -28336,7 +28337,7 @@ var _reducers = __webpack_require__(264);
 
 var _reducers2 = _interopRequireDefault(_reducers);
 
-var _generally = __webpack_require__(736);
+var _generally = __webpack_require__(737);
 
 var _generally2 = _interopRequireDefault(_generally);
 
@@ -28344,7 +28345,7 @@ var _main = __webpack_require__(454);
 
 var _main2 = _interopRequireDefault(_main);
 
-var _index = __webpack_require__(739);
+var _index = __webpack_require__(740);
 
 var _index2 = _interopRequireDefault(_index);
 
@@ -28360,7 +28361,7 @@ var store = (0, _redux.createStore)(_reducers2.default, (0, _redux.applyMiddlewa
 ), init);
 
 /***/ }),
-/* 736 */
+/* 737 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -28378,7 +28379,7 @@ var _reactRedux = __webpack_require__(104);
 
 var _adminActions = __webpack_require__(450);
 
-var _App = __webpack_require__(737);
+var _App = __webpack_require__(738);
 
 var _App2 = _interopRequireDefault(_App);
 
@@ -28395,7 +28396,7 @@ exports.default = (0, _reactRedux.connect)(mapStateToProps, {
 })(_App2.default);
 
 /***/ }),
-/* 737 */
+/* 738 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -28419,7 +28420,7 @@ var _Header = __webpack_require__(451);
 
 var _Header2 = _interopRequireDefault(_Header);
 
-var _Container = __webpack_require__(738);
+var _Container = __webpack_require__(739);
 
 var _Container2 = _interopRequireDefault(_Container);
 
@@ -28490,7 +28491,7 @@ exports.default = App;
 ;
 
 /***/ }),
-/* 738 */
+/* 739 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -28700,13 +28701,13 @@ var Container = function (_Component) {
 exports.default = Container;
 
 /***/ }),
-/* 739 */
+/* 740 */
 /***/ (function(module, exports, __webpack_require__) {
 
 // style-loader: Adds some css to the DOM by adding a <style> tag
 
 // load the styles
-var content = __webpack_require__(740);
+var content = __webpack_require__(741);
 if(typeof content === 'string') content = [[module.i, content, '']];
 // Prepare cssTransformation
 var transform;
@@ -28731,7 +28732,7 @@ if(false) {
 }
 
 /***/ }),
-/* 740 */
+/* 741 */
 /***/ (function(module, exports, __webpack_require__) {
 
 exports = module.exports = __webpack_require__(34)(undefined);

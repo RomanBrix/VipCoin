@@ -1,7 +1,8 @@
 import React, {Component} from 'react';
 import Top from './Top';
 import Progress from './Progress';
-// import Package from "./Package";
+import TableSplits from "./TableSplits";
+
 
 export default class Container extends Component {
     render(){
@@ -15,6 +16,7 @@ export default class Container extends Component {
                     maxCoins={ maxCoins }
                     soldCoins={ soldCoins }
                 />
+                <TableSplits info={ pages.table }/>
             </div>
         )
     }

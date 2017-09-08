@@ -60,7 +60,7 @@
 /******/ 	__webpack_require__.p = "";
 /******/
 /******/ 	// Load entry module and return exports
-/******/ 	return __webpack_require__(__webpack_require__.s = 551);
+/******/ 	return __webpack_require__(__webpack_require__.s = 552);
 /******/ })
 /************************************************************************/
 /******/ ([
@@ -27531,7 +27531,7 @@ exports.default = adminReducers;
 /* 286 */
 /***/ (function(module, exports) {
 
-module.exports = [{"language":"ru","pages":{"main":{"top":{"head":"Ваш шедевр готов!","text":"С другой стороны консультация с широким активом способствует подготовки и реализации модели развития. Задача организации, в особенности же консультация с широким активом в значительной степени.","btn":"купить"},"progress":{"head":"какая наша цель?","title":"Официальный запуск сети после продажи:"}},"help":{},"packages":{"packages":[{"title":"ПАКЕТЫ"},{"title":"Калькулятор выгоды","inputCoins":"VipCoin","text":"Подсчитайте свою прибыль с учетом прогнозов курса VipCoin на последующие года"}]},"FAQ":{},"news":{},"contacts":{"top":{"head":"Контакты"},"feedback":{"head":"центр поддержки клиентов","inputName":"Имя","inputLName":"Фамилия","inputEmail":"E-mail","inputMsg":"Ваше сообщение","btnSend":"Отправить"}},"profile":{"layouts":{"leftHeader":{"btnMain":"главная","btnRefill":"Купить","btnSettings":"Настройки","btnExit":"выход"}},"info":{},"settings":{"password":{"head":"Сменить пароль","CurPass":"Текущий пароль","new":"Новый пароль","repass":"Повторите пароль","save":"Сохранить","error":"Неверный пароль","accept":"Изминения сохранены"},"email":{"head":"Сменить E-mail","CurPass":"Текущий пароль","new":"Новый E-mail","save":"Сохранить","error":"Неверный пароль","secondError":"Такой E-mail уже есть!","accept":"Изминения сохранены"}}}},"layouts":{"header":{"btnMain":"ГЛАВНАЯ","btnAbout":"О НАС","btnPackages":"ПАКЕТЫ","btnFAQ":"Помощь","btnNews":"Новости","btnContacts":"Контакты","login":{"log":"Регистрация/Вход"}},"footer":{"pages":{"whitePage":"Белая Бумага","legalPage":"Юридические Информация","contractOffer":"Пользовательское Соглашение","confidentiality":"Политика Конфиденциальности"},"feedback":"Обратная связь"},"auth":{"header":{"btnLogin":"Войти","btnRegistration":"Регестрация","btnForgotPass":"Забыли пароль?"},"login":{"inputLogin":"Логин или E-mail","inputPassword":"Пароль","btnEnter":"Войти"},"registration":{"inputLogin":"Логин","inputEmail":"E-Mail","inputPassword":"Пароль","inputRepeatPassword":"Повторите пароль","checkLegal":"Согласен с правилами сайта","btnRegistration":"Регестрация"},"forgot":{"text":"Отправить пароль на почту","inputEmail":"E-Mail","btnSend":"Отправить","success":"E-mail отправлен!","error":"E-mail не найден"}}}}]
+module.exports = [{"language":"ru","pages":{"main":{"top":{"head":"Ваш шедевр готов!","text":"С другой стороны консультация с широким активом способствует подготовки и реализации модели развития. Задача организации, в особенности же консультация с широким активом в значительной степени.","btn":"купить"},"progress":{"head":"какая наша цель?","title":"Официальный запуск сети после продажи:"},"table":{"head":{"header":"Сплиты","number":"#","cost":"Цена","value":"Количество монет","summ":"Сумма"},"foot":{"allSumm":"Итог сбора суммы: 306.900.000","future":"При выходе на крипто-биржу цена за 1 монету","coinCost":"50$"},"split":[{"cost":0.1,"value":"3.000.000","summ":"300.000"},{"cost":0.2,"value":"3.000.000","summ":"600.000"},{"cost":0.4,"value":"3.000.000","summ":"1.200.000"},{"cost":0.8,"value":"3.000.000","summ":"2.400.000"},{"cost":1.6,"value":"3.000.000","summ":"4.800.000"},{"cost":3.2,"value":"3.000.000","summ":"9.600.000"},{"cost":6.4,"value":"3.000.000","summ":"19.200.000"},{"cost":12.8,"value":"3.000.000","summ":"38.400.000"},{"cost":25.6,"value":"3.000.000","summ":"76.800.000"},{"cost":51.2,"value":"3.000.000","summ":"153.600.000"}]}},"help":{},"packages":{"packages":[{"title":"ПАКЕТЫ"},{"title":"Калькулятор выгоды","inputCoins":"VipCoin","text":"Подсчитайте свою прибыль с учетом прогнозов курса VipCoin на последующие года"}]},"FAQ":{},"news":{},"contacts":{"top":{"head":"Контакты"},"feedback":{"head":"центр поддержки клиентов","inputName":"Имя","inputLName":"Фамилия","inputEmail":"E-mail","inputMsg":"Ваше сообщение","btnSend":"Отправить"}},"profile":{"layouts":{"leftHeader":{"btnMain":"главная","btnRefill":"Купить","btnSettings":"Настройки","btnExit":"выход"}},"info":{},"settings":{"password":{"head":"Сменить пароль","CurPass":"Текущий пароль","new":"Новый пароль","repass":"Повторите пароль","save":"Сохранить","error":"Неверный пароль","accept":"Изминения сохранены"},"email":{"head":"Сменить E-mail","CurPass":"Текущий пароль","new":"Новый E-mail","save":"Сохранить","error":"Неверный пароль","secondError":"Такой E-mail уже есть!","accept":"Изминения сохранены"}}}},"layouts":{"header":{"btnMain":"ГЛАВНАЯ","btnAbout":"О НАС","btnPackages":"ПАКЕТЫ","btnFAQ":"Помощь","btnNews":"Новости","btnContacts":"Контакты","login":{"log":"Регистрация/Вход"}},"footer":{"pages":{"whitePage":"Белая Бумага","legalPage":"Юридические Информация","contractOffer":"Пользовательское Соглашение","confidentiality":"Политика Конфиденциальности"},"feedback":"Обратная связь"},"auth":{"header":{"btnLogin":"Войти","btnRegistration":"Регестрация","btnForgotPass":"Забыли пароль?"},"login":{"inputLogin":"Логин или E-mail","inputPassword":"Пароль","btnEnter":"Войти"},"registration":{"inputLogin":"Логин","inputEmail":"E-Mail","inputPassword":"Пароль","inputRepeatPassword":"Повторите пароль","checkLegal":"Согласен с правилами сайта","btnRegistration":"Регестрация"},"forgot":{"text":"Отправить пароль на почту","inputEmail":"E-Mail","btnSend":"Отправить","success":"E-mail отправлен!","error":"E-mail не найден"}}}}]
 
 /***/ }),
 /* 287 */
@@ -28919,7 +28919,7 @@ exports = module.exports = __webpack_require__(34)(undefined);
 
 
 // module
-exports.push([module.i, ".auth {\n  position: fixed;\n  z-index: 101;\n  width: 100%;\n  height: 100%;\n  background: rgba(242, 242, 242, 0.9);\n  display: flex;\n  flex-direction: column;\n  justify-content: center;\n  align-items: center; }\n  .auth .close {\n    position: absolute;\n    right: -60px;\n    top: -60px;\n    font-size: 4em;\n    cursor: pointer;\n    color: #ffc02d; }\n  .auth .alerts {\n    display: none;\n    opacity: 0;\n    position: fixed;\n    right: 10px;\n    top: 15px;\n    border: 2px solid #fcf8e3;\n    min-width: 220px;\n    max-width: 300px;\n    padding: 10px;\n    min-height: 75px;\n    background-color: #e5c100;\n    z-index: 10000000000;\n    color: #8a6d3b;\n    border-radius: 5px;\n    font-size: 1.3em;\n    flex-direction: column;\n    justify-content: space-around;\n    align-items: center;\n    transition: .25s; }\n  .auth .auth-container {\n    position: relative;\n    min-width: 400px;\n    padding-bottom: 50px;\n    display: flex;\n    flex-direction: column;\n    align-items: center;\n    background: #f2f2f2;\n    color: white;\n    box-shadow: 0 0 10px black; }\n    .auth .auth-container .auth-head {\n      width: 100%;\n      /* padding: 9px 0; */\n      border-bottom: 2px solid #ffc02d;\n      box-shadow: 0 2px 10px black;\n      display: flex;\n      justify-content: space-between;\n      background: #d8d8d8;\n      font-size: 1.3em;\n      margin-bottom: 50px; }\n      .auth .auth-container .auth-head .btn {\n        padding: 10px 15px;\n        min-height: 100%;\n        cursor: pointer;\n        color: black;\n        -webkit-user-select: none;\n        -moz-user-select: none;\n        -ms-user-select: none;\n        user-select: none;\n        transition: .3s; }\n        .auth .auth-container .auth-head .btn:hover {\n          background-color: #ffc02d;\n          color: white; }\n      .auth .auth-container .auth-head .btn-active {\n        background: #ffc02d;\n        color: white; }\n      .auth .auth-container .auth-head .btn-login.btn-active {\n        box-shadow: 7px 0 8px 0 #aaa; }\n      .auth .auth-container .auth-head .btn-forgotPass.btn-active {\n        box-shadow: -7px 0 8px 0 #aaa; }\n      .auth .auth-container .auth-head .btn-registration.btn-active {\n        box-shadow: 0 0 0 0 transparent, 0 0 0 0 transparent, 7px 0 8px 0 #aaa, -7px 0 8px 0px #aaa; }\n    .auth .auth-container .auth-body {\n      color: black;\n      width: 100%;\n      min-height: calc(100% - 45px);\n      display: flex;\n      align-items: center;\n      justify-content: center; }\n      .auth .auth-container .auth-body .rendered-container {\n        width: 100%;\n        display: flex;\n        flex-direction: column;\n        align-items: center;\n        justify-content: center; }\n        .auth .auth-container .auth-body .rendered-container .text {\n          font-size: 1.3em;\n          margin-bottom: 30px;\n          letter-spacing: 2px; }\n        .auth .auth-container .auth-body .rendered-container .inputs {\n          display: flex;\n          width: 100%;\n          align-items: center;\n          justify-content: center; }\n          .auth .auth-container .auth-body .rendered-container .inputs:not(:last-child) {\n            margin-bottom: 25px; }\n          .auth .auth-container .auth-body .rendered-container .inputs label {\n            font-size: 1.3em;\n            padding: 0 5px;\n            color: #e5c100;\n            max-height: 28px;\n            margin-bottom: -15px;\n            margin-right: 5px;\n            cursor: pointer; }\n          .auth .auth-container .auth-body .rendered-container .inputs input {\n            height: 25px;\n            width: 80%;\n            border: none;\n            border-bottom: 2px solid #ffc02d;\n            background-color: #f2f2f2;\n            transition: .2s ease;\n            font-size: 1.2em;\n            padding-left: 4px; }\n            .auth .auth-container .auth-body .rendered-container .inputs input:focus {\n              outline: none;\n              border-bottom-color: #287685;\n              box-shadow: 0 4px 2px -2px grey; }\n        .auth .auth-container .auth-body .rendered-container .btn-ok {\n          text-transform: uppercase;\n          cursor: pointer;\n          padding: 7px 15px 2px;\n          border-radius: 5px;\n          background-color: #feaf00;\n          box-shadow: inset 0 0 4px black;\n          transition: .3s;\n          color: white; }\n          .auth .auth-container .auth-body .rendered-container .btn-ok:hover {\n            background-color: #ffc02d;\n            box-shadow: inset 0 0 2px black; }\n", ""]);
+exports.push([module.i, ".auth {\n  position: fixed;\n  z-index: 101;\n  width: 100%;\n  height: 100%;\n  background: rgba(242, 242, 242, 0.9);\n  display: flex;\n  flex-direction: column;\n  justify-content: center;\n  align-items: center; }\n  .auth .close {\n    position: absolute;\n    right: -60px;\n    top: -60px;\n    font-size: 4em;\n    cursor: pointer;\n    color: #ffc02d; }\n  .auth .alerts {\n    display: none;\n    opacity: 0;\n    position: fixed;\n    right: 10px;\n    top: 15px;\n    border: 2px solid #fcf8e3;\n    min-width: 220px;\n    max-width: 300px;\n    padding: 10px;\n    min-height: 75px;\n    background-color: #e5c100;\n    z-index: 10000000000;\n    color: #8a6d3b;\n    border-radius: 5px;\n    font-size: 1.3em;\n    flex-direction: column;\n    justify-content: space-around;\n    align-items: center;\n    transition: .25s; }\n  .auth .auth-container {\n    position: relative;\n    min-width: 400px;\n    padding-bottom: 50px;\n    display: flex;\n    flex-direction: column;\n    align-items: center;\n    background: #f2f2f2;\n    color: white;\n    box-shadow: 0 0 10px black; }\n    .auth .auth-container .auth-head {\n      width: 100%;\n      /* padding: 9px 0; */\n      border-bottom: 2px solid #ffc02d;\n      box-shadow: 0 2px 10px black;\n      display: flex;\n      justify-content: space-between;\n      background: #d8d8d8;\n      font-size: 1.3em;\n      margin-bottom: 50px; }\n      .auth .auth-container .auth-head .btn {\n        padding: 10px 15px;\n        min-height: 100%;\n        cursor: pointer;\n        color: black;\n        -webkit-user-select: none;\n        -moz-user-select: none;\n        -ms-user-select: none;\n        user-select: none;\n        transition: .3s; }\n        .auth .auth-container .auth-head .btn:hover {\n          background-color: #ffc02d;\n          color: white; }\n      .auth .auth-container .auth-head .btn-active {\n        background: #ffc02d;\n        color: white; }\n      .auth .auth-container .auth-head .btn-login.btn-active {\n        box-shadow: 7px 0 8px 0 #aaa; }\n      .auth .auth-container .auth-head .btn-forgotPass.btn-active {\n        box-shadow: -7px 0 8px 0 #aaa; }\n      .auth .auth-container .auth-head .btn-registration.btn-active {\n        box-shadow: 0 0 0 0 transparent, 0 0 0 0 transparent, 7px 0 8px 0 #aaa, -7px 0 8px 0px #aaa; }\n    .auth .auth-container .auth-body {\n      color: black;\n      width: 100%;\n      min-height: calc(100% - 45px);\n      display: flex;\n      align-items: center;\n      justify-content: center; }\n      .auth .auth-container .auth-body .rendered-container {\n        width: 100%;\n        display: flex;\n        flex-direction: column;\n        align-items: center;\n        justify-content: center; }\n        .auth .auth-container .auth-body .rendered-container .text {\n          font-size: 1.3em;\n          margin-bottom: 30px;\n          letter-spacing: 2px; }\n        .auth .auth-container .auth-body .rendered-container .inputs {\n          display: flex;\n          width: 100%;\n          align-items: center;\n          justify-content: center; }\n          .auth .auth-container .auth-body .rendered-container .inputs:not(:last-child) {\n            margin-bottom: 25px; }\n          .auth .auth-container .auth-body .rendered-container .inputs label {\n            font-size: 1.3em;\n            padding: 0 5px;\n            color: #e5c100;\n            max-height: 28px;\n            margin-bottom: -15px;\n            margin-right: 5px;\n            cursor: pointer; }\n          .auth .auth-container .auth-body .rendered-container .inputs input {\n            height: 25px;\n            width: 80%;\n            border: none;\n            border-bottom: 2px solid #ffc02d;\n            background-color: #f2f2f2;\n            transition: .2s ease;\n            font-size: 1.2em;\n            padding-left: 4px; }\n            .auth .auth-container .auth-body .rendered-container .inputs input:focus {\n              outline: none;\n              border-bottom-color: #287685;\n              box-shadow: 0 4px 2px -2px grey; }\n        .auth .auth-container .auth-body .rendered-container .check {\n          margin-bottom: 15px; }\n        .auth .auth-container .auth-body .rendered-container .btn-ok {\n          text-transform: uppercase;\n          cursor: pointer;\n          padding: 7px 15px 2px;\n          border-radius: 5px;\n          background-color: #feaf00;\n          box-shadow: inset 0 0 4px black;\n          transition: .3s;\n          color: white; }\n          .auth .auth-container .auth-body .rendered-container .btn-ok:hover {\n            background-color: #ffc02d;\n            box-shadow: inset 0 0 2px black; }\n", ""]);
 
 // exports
 
@@ -29192,7 +29192,8 @@ exports.push([module.i, "@font-face {\n  font-family: 'Brusher';\n  src: url(" +
 /* 548 */,
 /* 549 */,
 /* 550 */,
-/* 551 */
+/* 551 */,
+/* 552 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -29216,7 +29217,7 @@ var _reducers = __webpack_require__(264);
 
 var _reducers2 = _interopRequireDefault(_reducers);
 
-var _packages = __webpack_require__(552);
+var _packages = __webpack_require__(553);
 
 var _packages2 = _interopRequireDefault(_packages);
 
@@ -29224,7 +29225,7 @@ var _main = __webpack_require__(327);
 
 var _main2 = _interopRequireDefault(_main);
 
-var _index = __webpack_require__(557);
+var _index = __webpack_require__(558);
 
 var _index2 = _interopRequireDefault(_index);
 
@@ -29240,7 +29241,7 @@ var store = (0, _redux.createStore)(_reducers2.default, (0, _redux.applyMiddlewa
 ), init);
 
 /***/ }),
-/* 552 */
+/* 553 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -29258,7 +29259,7 @@ var _reactRedux = __webpack_require__(104);
 
 var _frontActions = __webpack_require__(124);
 
-var _App = __webpack_require__(553);
+var _App = __webpack_require__(554);
 
 var _App2 = _interopRequireDefault(_App);
 
@@ -29279,7 +29280,7 @@ exports.default = (0, _reactRedux.connect)(mapStateToProps, {
 })(_App2.default);
 
 /***/ }),
-/* 553 */
+/* 554 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -29317,7 +29318,7 @@ var _auth = __webpack_require__(321);
 
 var _auth2 = _interopRequireDefault(_auth);
 
-var _Container = __webpack_require__(554);
+var _Container = __webpack_require__(555);
 
 var _Container2 = _interopRequireDefault(_Container);
 
@@ -29437,7 +29438,7 @@ var App = function (_Component) {
 exports.default = App;
 
 /***/ }),
-/* 554 */
+/* 555 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -29453,11 +29454,11 @@ var _react = __webpack_require__(4);
 
 var _react2 = _interopRequireDefault(_react);
 
-var _Package = __webpack_require__(555);
+var _Package = __webpack_require__(556);
 
 var _Package2 = _interopRequireDefault(_Package);
 
-var _Calculator = __webpack_require__(556);
+var _Calculator = __webpack_require__(557);
 
 var _Calculator2 = _interopRequireDefault(_Calculator);
 
@@ -29529,7 +29530,7 @@ var Container = function (_Component) {
 exports.default = Container;
 
 /***/ }),
-/* 555 */
+/* 556 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -29743,7 +29744,7 @@ var Package = function (_Component) {
 exports.default = Package;
 
 /***/ }),
-/* 556 */
+/* 557 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -29977,13 +29978,13 @@ var Calculator = function (_Component) {
 exports.default = Calculator;
 
 /***/ }),
-/* 557 */
+/* 558 */
 /***/ (function(module, exports, __webpack_require__) {
 
 // style-loader: Adds some css to the DOM by adding a <style> tag
 
 // load the styles
-var content = __webpack_require__(558);
+var content = __webpack_require__(559);
 if(typeof content === 'string') content = [[module.i, content, '']];
 // Prepare cssTransformation
 var transform;
@@ -30008,7 +30009,7 @@ if(false) {
 }
 
 /***/ }),
-/* 558 */
+/* 559 */
 /***/ (function(module, exports, __webpack_require__) {
 
 exports = module.exports = __webpack_require__(34)(undefined);

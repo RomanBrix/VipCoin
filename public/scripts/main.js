@@ -27531,7 +27531,7 @@ exports.default = adminReducers;
 /* 286 */
 /***/ (function(module, exports) {
 
-module.exports = [{"language":"ru","pages":{"main":{"top":{"head":"Ваш шедевр готов!","text":"С другой стороны консультация с широким активом способствует подготовки и реализации модели развития. Задача организации, в особенности же консультация с широким активом в значительной степени.","btn":"купить"},"progress":{"head":"какая наша цель?","title":"Официальный запуск сети после продажи:"}},"help":{},"packages":{"packages":[{"title":"ПАКЕТЫ"},{"title":"Калькулятор выгоды","inputCoins":"VipCoin","text":"Подсчитайте свою прибыль с учетом прогнозов курса VipCoin на последующие года"}]},"FAQ":{},"news":{},"contacts":{"top":{"head":"Контакты"},"feedback":{"head":"центр поддержки клиентов","inputName":"Имя","inputLName":"Фамилия","inputEmail":"E-mail","inputMsg":"Ваше сообщение","btnSend":"Отправить"}},"profile":{"layouts":{"leftHeader":{"btnMain":"главная","btnRefill":"Купить","btnSettings":"Настройки","btnExit":"выход"}},"info":{},"settings":{"password":{"head":"Сменить пароль","CurPass":"Текущий пароль","new":"Новый пароль","repass":"Повторите пароль","save":"Сохранить","error":"Неверный пароль","accept":"Изминения сохранены"},"email":{"head":"Сменить E-mail","CurPass":"Текущий пароль","new":"Новый E-mail","save":"Сохранить","error":"Неверный пароль","secondError":"Такой E-mail уже есть!","accept":"Изминения сохранены"}}}},"layouts":{"header":{"btnMain":"ГЛАВНАЯ","btnAbout":"О НАС","btnPackages":"ПАКЕТЫ","btnFAQ":"Помощь","btnNews":"Новости","btnContacts":"Контакты","login":{"log":"Регистрация/Вход"}},"footer":{"pages":{"whitePage":"Белая Бумага","legalPage":"Юридические Информация","contractOffer":"Пользовательское Соглашение","confidentiality":"Политика Конфиденциальности"},"feedback":"Обратная связь"},"auth":{"header":{"btnLogin":"Войти","btnRegistration":"Регестрация","btnForgotPass":"Забыли пароль?"},"login":{"inputLogin":"Логин или E-mail","inputPassword":"Пароль","btnEnter":"Войти"},"registration":{"inputLogin":"Логин","inputEmail":"E-Mail","inputPassword":"Пароль","inputRepeatPassword":"Повторите пароль","checkLegal":"Согласен с правилами сайта","btnRegistration":"Регестрация"},"forgot":{"text":"Отправить пароль на почту","inputEmail":"E-Mail","btnSend":"Отправить","success":"E-mail отправлен!","error":"E-mail не найден"}}}}]
+module.exports = [{"language":"ru","pages":{"main":{"top":{"head":"Ваш шедевр готов!","text":"С другой стороны консультация с широким активом способствует подготовки и реализации модели развития. Задача организации, в особенности же консультация с широким активом в значительной степени.","btn":"купить"},"progress":{"head":"какая наша цель?","title":"Официальный запуск сети после продажи:"},"table":{"head":{"header":"Сплиты","number":"#","cost":"Цена","value":"Количество монет","summ":"Сумма"},"foot":{"allSumm":"Итог сбора суммы: 306.900.000","future":"При выходе на крипто-биржу цена за 1 монету","coinCost":"50$"},"split":[{"cost":0.1,"value":"3.000.000","summ":"300.000"},{"cost":0.2,"value":"3.000.000","summ":"600.000"},{"cost":0.4,"value":"3.000.000","summ":"1.200.000"},{"cost":0.8,"value":"3.000.000","summ":"2.400.000"},{"cost":1.6,"value":"3.000.000","summ":"4.800.000"},{"cost":3.2,"value":"3.000.000","summ":"9.600.000"},{"cost":6.4,"value":"3.000.000","summ":"19.200.000"},{"cost":12.8,"value":"3.000.000","summ":"38.400.000"},{"cost":25.6,"value":"3.000.000","summ":"76.800.000"},{"cost":51.2,"value":"3.000.000","summ":"153.600.000"}]}},"help":{},"packages":{"packages":[{"title":"ПАКЕТЫ"},{"title":"Калькулятор выгоды","inputCoins":"VipCoin","text":"Подсчитайте свою прибыль с учетом прогнозов курса VipCoin на последующие года"}]},"FAQ":{},"news":{},"contacts":{"top":{"head":"Контакты"},"feedback":{"head":"центр поддержки клиентов","inputName":"Имя","inputLName":"Фамилия","inputEmail":"E-mail","inputMsg":"Ваше сообщение","btnSend":"Отправить"}},"profile":{"layouts":{"leftHeader":{"btnMain":"главная","btnRefill":"Купить","btnSettings":"Настройки","btnExit":"выход"}},"info":{},"settings":{"password":{"head":"Сменить пароль","CurPass":"Текущий пароль","new":"Новый пароль","repass":"Повторите пароль","save":"Сохранить","error":"Неверный пароль","accept":"Изминения сохранены"},"email":{"head":"Сменить E-mail","CurPass":"Текущий пароль","new":"Новый E-mail","save":"Сохранить","error":"Неверный пароль","secondError":"Такой E-mail уже есть!","accept":"Изминения сохранены"}}}},"layouts":{"header":{"btnMain":"ГЛАВНАЯ","btnAbout":"О НАС","btnPackages":"ПАКЕТЫ","btnFAQ":"Помощь","btnNews":"Новости","btnContacts":"Контакты","login":{"log":"Регистрация/Вход"}},"footer":{"pages":{"whitePage":"Белая Бумага","legalPage":"Юридические Информация","contractOffer":"Пользовательское Соглашение","confidentiality":"Политика Конфиденциальности"},"feedback":"Обратная связь"},"auth":{"header":{"btnLogin":"Войти","btnRegistration":"Регестрация","btnForgotPass":"Забыли пароль?"},"login":{"inputLogin":"Логин или E-mail","inputPassword":"Пароль","btnEnter":"Войти"},"registration":{"inputLogin":"Логин","inputEmail":"E-Mail","inputPassword":"Пароль","inputRepeatPassword":"Повторите пароль","checkLegal":"Согласен с правилами сайта","btnRegistration":"Регестрация"},"forgot":{"text":"Отправить пароль на почту","inputEmail":"E-Mail","btnSend":"Отправить","success":"E-mail отправлен!","error":"E-mail не найден"}}}}]
 
 /***/ }),
 /* 287 */
@@ -28919,7 +28919,7 @@ exports = module.exports = __webpack_require__(34)(undefined);
 
 
 // module
-exports.push([module.i, ".auth {\n  position: fixed;\n  z-index: 101;\n  width: 100%;\n  height: 100%;\n  background: rgba(242, 242, 242, 0.9);\n  display: flex;\n  flex-direction: column;\n  justify-content: center;\n  align-items: center; }\n  .auth .close {\n    position: absolute;\n    right: -60px;\n    top: -60px;\n    font-size: 4em;\n    cursor: pointer;\n    color: #ffc02d; }\n  .auth .alerts {\n    display: none;\n    opacity: 0;\n    position: fixed;\n    right: 10px;\n    top: 15px;\n    border: 2px solid #fcf8e3;\n    min-width: 220px;\n    max-width: 300px;\n    padding: 10px;\n    min-height: 75px;\n    background-color: #e5c100;\n    z-index: 10000000000;\n    color: #8a6d3b;\n    border-radius: 5px;\n    font-size: 1.3em;\n    flex-direction: column;\n    justify-content: space-around;\n    align-items: center;\n    transition: .25s; }\n  .auth .auth-container {\n    position: relative;\n    min-width: 400px;\n    padding-bottom: 50px;\n    display: flex;\n    flex-direction: column;\n    align-items: center;\n    background: #f2f2f2;\n    color: white;\n    box-shadow: 0 0 10px black; }\n    .auth .auth-container .auth-head {\n      width: 100%;\n      /* padding: 9px 0; */\n      border-bottom: 2px solid #ffc02d;\n      box-shadow: 0 2px 10px black;\n      display: flex;\n      justify-content: space-between;\n      background: #d8d8d8;\n      font-size: 1.3em;\n      margin-bottom: 50px; }\n      .auth .auth-container .auth-head .btn {\n        padding: 10px 15px;\n        min-height: 100%;\n        cursor: pointer;\n        color: black;\n        -webkit-user-select: none;\n        -moz-user-select: none;\n        -ms-user-select: none;\n        user-select: none;\n        transition: .3s; }\n        .auth .auth-container .auth-head .btn:hover {\n          background-color: #ffc02d;\n          color: white; }\n      .auth .auth-container .auth-head .btn-active {\n        background: #ffc02d;\n        color: white; }\n      .auth .auth-container .auth-head .btn-login.btn-active {\n        box-shadow: 7px 0 8px 0 #aaa; }\n      .auth .auth-container .auth-head .btn-forgotPass.btn-active {\n        box-shadow: -7px 0 8px 0 #aaa; }\n      .auth .auth-container .auth-head .btn-registration.btn-active {\n        box-shadow: 0 0 0 0 transparent, 0 0 0 0 transparent, 7px 0 8px 0 #aaa, -7px 0 8px 0px #aaa; }\n    .auth .auth-container .auth-body {\n      color: black;\n      width: 100%;\n      min-height: calc(100% - 45px);\n      display: flex;\n      align-items: center;\n      justify-content: center; }\n      .auth .auth-container .auth-body .rendered-container {\n        width: 100%;\n        display: flex;\n        flex-direction: column;\n        align-items: center;\n        justify-content: center; }\n        .auth .auth-container .auth-body .rendered-container .text {\n          font-size: 1.3em;\n          margin-bottom: 30px;\n          letter-spacing: 2px; }\n        .auth .auth-container .auth-body .rendered-container .inputs {\n          display: flex;\n          width: 100%;\n          align-items: center;\n          justify-content: center; }\n          .auth .auth-container .auth-body .rendered-container .inputs:not(:last-child) {\n            margin-bottom: 25px; }\n          .auth .auth-container .auth-body .rendered-container .inputs label {\n            font-size: 1.3em;\n            padding: 0 5px;\n            color: #e5c100;\n            max-height: 28px;\n            margin-bottom: -15px;\n            margin-right: 5px;\n            cursor: pointer; }\n          .auth .auth-container .auth-body .rendered-container .inputs input {\n            height: 25px;\n            width: 80%;\n            border: none;\n            border-bottom: 2px solid #ffc02d;\n            background-color: #f2f2f2;\n            transition: .2s ease;\n            font-size: 1.2em;\n            padding-left: 4px; }\n            .auth .auth-container .auth-body .rendered-container .inputs input:focus {\n              outline: none;\n              border-bottom-color: #287685;\n              box-shadow: 0 4px 2px -2px grey; }\n        .auth .auth-container .auth-body .rendered-container .btn-ok {\n          text-transform: uppercase;\n          cursor: pointer;\n          padding: 7px 15px 2px;\n          border-radius: 5px;\n          background-color: #feaf00;\n          box-shadow: inset 0 0 4px black;\n          transition: .3s;\n          color: white; }\n          .auth .auth-container .auth-body .rendered-container .btn-ok:hover {\n            background-color: #ffc02d;\n            box-shadow: inset 0 0 2px black; }\n", ""]);
+exports.push([module.i, ".auth {\n  position: fixed;\n  z-index: 101;\n  width: 100%;\n  height: 100%;\n  background: rgba(242, 242, 242, 0.9);\n  display: flex;\n  flex-direction: column;\n  justify-content: center;\n  align-items: center; }\n  .auth .close {\n    position: absolute;\n    right: -60px;\n    top: -60px;\n    font-size: 4em;\n    cursor: pointer;\n    color: #ffc02d; }\n  .auth .alerts {\n    display: none;\n    opacity: 0;\n    position: fixed;\n    right: 10px;\n    top: 15px;\n    border: 2px solid #fcf8e3;\n    min-width: 220px;\n    max-width: 300px;\n    padding: 10px;\n    min-height: 75px;\n    background-color: #e5c100;\n    z-index: 10000000000;\n    color: #8a6d3b;\n    border-radius: 5px;\n    font-size: 1.3em;\n    flex-direction: column;\n    justify-content: space-around;\n    align-items: center;\n    transition: .25s; }\n  .auth .auth-container {\n    position: relative;\n    min-width: 400px;\n    padding-bottom: 50px;\n    display: flex;\n    flex-direction: column;\n    align-items: center;\n    background: #f2f2f2;\n    color: white;\n    box-shadow: 0 0 10px black; }\n    .auth .auth-container .auth-head {\n      width: 100%;\n      /* padding: 9px 0; */\n      border-bottom: 2px solid #ffc02d;\n      box-shadow: 0 2px 10px black;\n      display: flex;\n      justify-content: space-between;\n      background: #d8d8d8;\n      font-size: 1.3em;\n      margin-bottom: 50px; }\n      .auth .auth-container .auth-head .btn {\n        padding: 10px 15px;\n        min-height: 100%;\n        cursor: pointer;\n        color: black;\n        -webkit-user-select: none;\n        -moz-user-select: none;\n        -ms-user-select: none;\n        user-select: none;\n        transition: .3s; }\n        .auth .auth-container .auth-head .btn:hover {\n          background-color: #ffc02d;\n          color: white; }\n      .auth .auth-container .auth-head .btn-active {\n        background: #ffc02d;\n        color: white; }\n      .auth .auth-container .auth-head .btn-login.btn-active {\n        box-shadow: 7px 0 8px 0 #aaa; }\n      .auth .auth-container .auth-head .btn-forgotPass.btn-active {\n        box-shadow: -7px 0 8px 0 #aaa; }\n      .auth .auth-container .auth-head .btn-registration.btn-active {\n        box-shadow: 0 0 0 0 transparent, 0 0 0 0 transparent, 7px 0 8px 0 #aaa, -7px 0 8px 0px #aaa; }\n    .auth .auth-container .auth-body {\n      color: black;\n      width: 100%;\n      min-height: calc(100% - 45px);\n      display: flex;\n      align-items: center;\n      justify-content: center; }\n      .auth .auth-container .auth-body .rendered-container {\n        width: 100%;\n        display: flex;\n        flex-direction: column;\n        align-items: center;\n        justify-content: center; }\n        .auth .auth-container .auth-body .rendered-container .text {\n          font-size: 1.3em;\n          margin-bottom: 30px;\n          letter-spacing: 2px; }\n        .auth .auth-container .auth-body .rendered-container .inputs {\n          display: flex;\n          width: 100%;\n          align-items: center;\n          justify-content: center; }\n          .auth .auth-container .auth-body .rendered-container .inputs:not(:last-child) {\n            margin-bottom: 25px; }\n          .auth .auth-container .auth-body .rendered-container .inputs label {\n            font-size: 1.3em;\n            padding: 0 5px;\n            color: #e5c100;\n            max-height: 28px;\n            margin-bottom: -15px;\n            margin-right: 5px;\n            cursor: pointer; }\n          .auth .auth-container .auth-body .rendered-container .inputs input {\n            height: 25px;\n            width: 80%;\n            border: none;\n            border-bottom: 2px solid #ffc02d;\n            background-color: #f2f2f2;\n            transition: .2s ease;\n            font-size: 1.2em;\n            padding-left: 4px; }\n            .auth .auth-container .auth-body .rendered-container .inputs input:focus {\n              outline: none;\n              border-bottom-color: #287685;\n              box-shadow: 0 4px 2px -2px grey; }\n        .auth .auth-container .auth-body .rendered-container .check {\n          margin-bottom: 15px; }\n        .auth .auth-container .auth-body .rendered-container .btn-ok {\n          text-transform: uppercase;\n          cursor: pointer;\n          padding: 7px 15px 2px;\n          border-radius: 5px;\n          background-color: #feaf00;\n          box-shadow: inset 0 0 4px black;\n          transition: .3s;\n          color: white; }\n          .auth .auth-container .auth-body .rendered-container .btn-ok:hover {\n            background-color: #ffc02d;\n            box-shadow: inset 0 0 2px black; }\n", ""]);
 
 // exports
 
@@ -29216,7 +29216,7 @@ var _main3 = __webpack_require__(327);
 
 var _main4 = _interopRequireDefault(_main3);
 
-var _index = __webpack_require__(549);
+var _index = __webpack_require__(550);
 
 var _index2 = _interopRequireDefault(_index);
 
@@ -29446,6 +29446,10 @@ var _Progress = __webpack_require__(548);
 
 var _Progress2 = _interopRequireDefault(_Progress);
 
+var _TableSplits = __webpack_require__(549);
+
+var _TableSplits2 = _interopRequireDefault(_TableSplits);
+
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
 function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
@@ -29453,8 +29457,6 @@ function _classCallCheck(instance, Constructor) { if (!(instance instanceof Cons
 function _possibleConstructorReturn(self, call) { if (!self) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return call && (typeof call === "object" || typeof call === "function") ? call : self; }
 
 function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
-
-// import Package from "./Package";
 
 var Container = function (_Component) {
     _inherits(Container, _Component);
@@ -29482,7 +29484,8 @@ var Container = function (_Component) {
                     pages: pages.progress,
                     maxCoins: maxCoins,
                     soldCoins: soldCoins
-                })
+                }),
+                _react2.default.createElement(_TableSplits2.default, { info: pages.table })
             );
         }
     }]);
@@ -29674,10 +29677,153 @@ exports.default = Progress;
 /* 549 */
 /***/ (function(module, exports, __webpack_require__) {
 
+"use strict";
+
+
+Object.defineProperty(exports, "__esModule", {
+    value: true
+});
+
+var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
+
+var _react = __webpack_require__(4);
+
+var _react2 = _interopRequireDefault(_react);
+
+var _links = __webpack_require__(71);
+
+function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
+
+function _possibleConstructorReturn(self, call) { if (!self) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return call && (typeof call === "object" || typeof call === "function") ? call : self; }
+
+function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
+
+var TableSplits = function (_Component) {
+    _inherits(TableSplits, _Component);
+
+    function TableSplits() {
+        _classCallCheck(this, TableSplits);
+
+        return _possibleConstructorReturn(this, (TableSplits.__proto__ || Object.getPrototypeOf(TableSplits)).apply(this, arguments));
+    }
+
+    _createClass(TableSplits, [{
+        key: 'render',
+        value: function render() {
+            var info = this.props.info;
+            var head = info.head,
+                foot = info.foot,
+                split = info.split;
+
+            var cont = split.map(function (item, index) {
+                console.log(item);
+                return _react2.default.createElement(
+                    'tr',
+                    { key: index + 1 },
+                    _react2.default.createElement(
+                        'td',
+                        null,
+                        index + 1
+                    ),
+                    _react2.default.createElement(
+                        'td',
+                        null,
+                        item.cost
+                    ),
+                    _react2.default.createElement(
+                        'td',
+                        null,
+                        item.value
+                    ),
+                    _react2.default.createElement(
+                        'td',
+                        null,
+                        item.summ
+                    )
+                );
+            });
+            return _react2.default.createElement(
+                'div',
+                { className: 'tableSplit' },
+                _react2.default.createElement(
+                    'h2',
+                    null,
+                    head.header
+                ),
+                _react2.default.createElement(
+                    'table',
+                    null,
+                    _react2.default.createElement(
+                        'thead',
+                        null,
+                        _react2.default.createElement(
+                            'tr',
+                            null,
+                            _react2.default.createElement(
+                                'th',
+                                null,
+                                head.number
+                            ),
+                            _react2.default.createElement(
+                                'th',
+                                null,
+                                head.cost
+                            ),
+                            _react2.default.createElement(
+                                'th',
+                                null,
+                                head.value
+                            ),
+                            _react2.default.createElement(
+                                'th',
+                                null,
+                                head.summ
+                            )
+                        )
+                    ),
+                    _react2.default.createElement(
+                        'tbody',
+                        null,
+                        cont
+                    )
+                ),
+                _react2.default.createElement(
+                    'div',
+                    { className: 'end' },
+                    _react2.default.createElement(
+                        'div',
+                        { className: 'allSumm' },
+                        foot.allSumm
+                    ),
+                    _react2.default.createElement(
+                        'div',
+                        { className: 'future' },
+                        foot.future,
+                        ' ',
+                        _react2.default.createElement('img', { src: _links.LOGO, alt: '' }),
+                        ' ',
+                        foot.coinCost
+                    )
+                )
+            );
+        }
+    }]);
+
+    return TableSplits;
+}(_react.Component);
+
+exports.default = TableSplits;
+
+/***/ }),
+/* 550 */
+/***/ (function(module, exports, __webpack_require__) {
+
 // style-loader: Adds some css to the DOM by adding a <style> tag
 
 // load the styles
-var content = __webpack_require__(550);
+var content = __webpack_require__(551);
 if(typeof content === 'string') content = [[module.i, content, '']];
 // Prepare cssTransformation
 var transform;
@@ -29702,7 +29848,7 @@ if(false) {
 }
 
 /***/ }),
-/* 550 */
+/* 551 */
 /***/ (function(module, exports, __webpack_require__) {
 
 exports = module.exports = __webpack_require__(34)(undefined);
@@ -29710,7 +29856,7 @@ exports = module.exports = __webpack_require__(34)(undefined);
 
 
 // module
-exports.push([module.i, ".top {\n  background-size: 400px;\n  background-repeat: no-repeat;\n  background-position-x: 50%;\n  width: 80%;\n  min-height: 420px;\n  background-position-y: 20px;\n  display: flex;\n  justify-content: space-between;\n  align-items: center; }\n  .top .text h1 {\n    font-size: 38px; }\n  .top .text p {\n    line-height: 1.3em;\n    padding: 0 70px 0 0;\n    color: white;\n    max-width: 360px; }\n  .top .text .btn-buy {\n    border-radius: 7px;\n    background-color: #feaf00;\n    box-shadow: inset 0 1px 7.74px 1.26px rgba(0, 0, 0, 0.35);\n    width: 145px;\n    height: 40px;\n    display: flex;\n    justify-content: center;\n    align-items: center;\n    font-size: 24px;\n    color: white;\n    cursor: pointer;\n    transition: .25s; }\n    .top .text .btn-buy:hover {\n      box-shadow: inset 0 1px 7.74px 1.26px black; }\n  .top .video {\n    min-width: 450px;\n    min-height: 250px;\n    border: 5px solid #425067;\n    border-radius: 6px;\n    position: relative; }\n    .top .video iframe {\n      width: 100%;\n      height: 100%;\n      margin: 0;\n      padding: 0;\n      position: absolute; }\n\n.progress {\n  width: 100%;\n  background: #f6fbfe;\n  display: flex;\n  flex-direction: column;\n  align-items: center;\n  min-height: 350px;\n  position: relative; }\n  .progress h1 {\n    font-size: 24px;\n    position: absolute;\n    background: #0c324e;\n    top: 0;\n    margin: 0;\n    padding: 3px 15px;\n    left: calc(50% - 125px); }\n  .progress h2 {\n    margin-top: 75px;\n    font-size: 30px; }\n  .progress .coins_left {\n    font-size: 4em;\n    display: flex;\n    align-items: center; }\n    .progress .coins_left img {\n      max-height: 90px;\n      margin-right: 15px;\n      margin-top: -10px; }\n\nprogress {\n  width: 60%;\n  margin: 2em auto;\n  margin-bottom: 0;\n  display: block;\n  border-radius: 14px;\n  padding: 0;\n  border: 4px solid #ccc3c3;\n  text-align: center;\n  height: 25px;\n  box-shadow: inset 0px 0px 5.1px 0.9px rgba(0, 0, 0, 0.6);\n  overflow: hidden;\n  transition: .3s;\n  z-index: 2;\n  cursor: none;\n  background: #2f4f76;\n  position: relative; }\n  progress:before {\n    content: \"\";\n    height: 100%;\n    width: 3px;\n    background: #feaf00;\n    position: absolute;\n    left: 30%;\n    line-height: 1.3em; }\n  progress::-moz-progress-bar {\n    box-shadow: inset 0px 0px 5.1px 0.9px rgba(0, 0, 0, 0.61);\n    background: #feaf00; }\n  progress::-webkit-progress-bar {\n    background: #2f4f76;\n    box-shadow: inset 0px 0px 5.1px 0.9px rgba(0, 0, 0, 0.61);\n    transition: .3s; }\n    progress::-webkit-progress-bar:hover {\n      box-shadow: inset 0px 0px 5.1px 0.9px rgba(0, 0, 0, 0.61); }\n  progress::-webkit-progress-value {\n    background: #ffaf00;\n    box-shadow: inset 0px 0px 5.1px 0.9px rgba(0, 0, 0, 0.61); }\n  progress:hover {\n    box-shadow: inset 0px 0px 5.1px 0.9px rgba(0, 0, 0, 0.4);\n    border-radius: 0; }\n\n.afterProgress {\n  margin-top: 5px;\n  color: #464646;\n  position: relative;\n  width: 60%; }\n  .afterProgress .left, .afterProgress .right, .afterProgress ._30_percentages {\n    position: absolute; }\n  .afterProgress .left {\n    margin-left: -4%; }\n  .afterProgress ._30_percentages {\n    top: -53px;\n    left: 29%; }\n    .afterProgress ._30_percentages:before {\n      content: \"\";\n      height: 2em;\n      width: 3px;\n      background-color: #feaf00;\n      position: absolute;\n      bottom: -28.7px;\n      right: calc(50% + 4px);\n      z-index: 10;\n      border-top-left-radius: 50px; }\n  .afterProgress .right {\n    right: -10px; }\n\n@media (max-width: 1279px) {\n  .top {\n    min-height: 325px;\n    background-size: 300px; }\n    .top .text {\n      max-width: 350px; }\n      .top .text h1 {\n        font-size: 28px; }\n      .top .text p {\n        padding: 0 35px 0 0;\n        font-size: .92em; }\n    .top .video {\n      min-width: 375px;\n      min-height: 220px; } }\n", ""]);
+exports.push([module.i, ".top {\n  background-size: 400px;\n  background-repeat: no-repeat;\n  background-position-x: 50%;\n  width: 80%;\n  min-height: 420px;\n  background-position-y: 20px;\n  display: flex;\n  justify-content: space-between;\n  align-items: center; }\n  .top .text h1 {\n    font-size: 38px; }\n  .top .text p {\n    line-height: 1.3em;\n    padding: 0 70px 0 0;\n    color: white;\n    max-width: 360px; }\n  .top .text .btn-buy {\n    border-radius: 7px;\n    background-color: #feaf00;\n    box-shadow: inset 0 1px 7.74px 1.26px rgba(0, 0, 0, 0.35);\n    width: 145px;\n    height: 40px;\n    display: flex;\n    justify-content: center;\n    align-items: center;\n    font-size: 24px;\n    color: white;\n    cursor: pointer;\n    transition: .25s; }\n    .top .text .btn-buy:hover {\n      box-shadow: inset 0 1px 7.74px 1.26px black; }\n  .top .video {\n    min-width: 450px;\n    min-height: 250px;\n    border: 5px solid #425067;\n    border-radius: 6px;\n    position: relative; }\n    .top .video iframe {\n      width: 100%;\n      height: 100%;\n      margin: 0;\n      padding: 0;\n      position: absolute; }\n\n.progress {\n  width: 100%;\n  background: #f6fbfe;\n  display: flex;\n  flex-direction: column;\n  align-items: center;\n  min-height: 350px;\n  position: relative; }\n  .progress h1 {\n    font-size: 24px;\n    position: absolute;\n    background: #0c324e;\n    top: 0;\n    margin: 0;\n    padding: 3px 15px;\n    left: calc(50% - 125px); }\n  .progress h2 {\n    margin-top: 75px;\n    font-size: 30px; }\n  .progress .coins_left {\n    font-size: 4em;\n    display: flex;\n    align-items: center; }\n    .progress .coins_left img {\n      max-height: 90px;\n      margin-right: 15px;\n      margin-top: -10px; }\n\nprogress {\n  width: 60%;\n  margin: 2em auto;\n  margin-bottom: 0;\n  display: block;\n  border-radius: 14px;\n  padding: 0;\n  border: 4px solid #ccc3c3;\n  text-align: center;\n  height: 25px;\n  box-shadow: inset 0px 0px 5.1px 0.9px rgba(0, 0, 0, 0.6);\n  overflow: hidden;\n  transition: .3s;\n  z-index: 2;\n  cursor: none;\n  background: #2f4f76;\n  position: relative; }\n  progress:before {\n    content: \"\";\n    height: 100%;\n    width: 3px;\n    background: #feaf00;\n    position: absolute;\n    left: 30%;\n    line-height: 1.3em; }\n  progress::-moz-progress-bar {\n    box-shadow: inset 0px 0px 5.1px 0.9px rgba(0, 0, 0, 0.61);\n    background: #feaf00; }\n  progress::-webkit-progress-bar {\n    background: #2f4f76;\n    box-shadow: inset 0px 0px 5.1px 0.9px rgba(0, 0, 0, 0.61);\n    transition: .3s; }\n    progress::-webkit-progress-bar:hover {\n      box-shadow: inset 0px 0px 5.1px 0.9px rgba(0, 0, 0, 0.61); }\n  progress::-webkit-progress-value {\n    background: #ffaf00;\n    box-shadow: inset 0px 0px 5.1px 0.9px rgba(0, 0, 0, 0.61); }\n  progress:hover {\n    box-shadow: inset 0px 0px 5.1px 0.9px rgba(0, 0, 0, 0.4);\n    border-radius: 0; }\n\n.afterProgress {\n  margin-top: 5px;\n  color: #464646;\n  position: relative;\n  width: 60%; }\n  .afterProgress .left, .afterProgress .right, .afterProgress ._30_percentages {\n    position: absolute; }\n  .afterProgress .left {\n    margin-left: -4%; }\n  .afterProgress ._30_percentages {\n    top: -53px;\n    left: 29%; }\n    .afterProgress ._30_percentages:before {\n      content: \"\";\n      height: 2em;\n      width: 3px;\n      background-color: #feaf00;\n      position: absolute;\n      bottom: -28.7px;\n      right: calc(50% + 4px);\n      z-index: 10;\n      border-top-left-radius: 50px; }\n  .afterProgress .right {\n    right: -10px; }\n\n.tableSplit {\n  width: 100%;\n  background: #ffffff;\n  display: flex;\n  flex-direction: column;\n  align-items: center;\n  padding: 40px 0; }\n  .tableSplit h2 {\n    margin-top: 0; }\n  .tableSplit table {\n    width: 800px;\n    border: 1px solid #f8f8f8;\n    box-shadow: 0 0 16px 0 rgba(0, 0, 0, 0.05);\n    font-size: 17px;\n    text-align: center;\n    border-spacing: 0;\n    margin-bottom: 25px; }\n    .tableSplit table thead tr {\n      background: #eaeaea; }\n      .tableSplit table thead tr th {\n        padding: 20px 0;\n        font-family: HelveticaBold; }\n        .tableSplit table thead tr th:first-child {\n          width: 125px; }\n        .tableSplit table thead tr th:nth-child(2) {\n          width: 150px; }\n    .tableSplit table tbody tr {\n      transition: .25s; }\n      .tableSplit table tbody tr td {\n        padding: 20px 0; }\n        .tableSplit table tbody tr td:nth-child(even) {\n          color: #ffae00; }\n      .tableSplit table tbody tr:nth-child(even) {\n        background: #f8f8f8; }\n      .tableSplit table tbody tr:hover {\n        background: rgba(234, 234, 234, 0.6); }\n  .tableSplit .end .future img {\n    max-width: 30px; }\n\n@media (max-width: 1279px) {\n  .top {\n    min-height: 325px;\n    background-size: 300px; }\n    .top .text {\n      max-width: 350px; }\n      .top .text h1 {\n        font-size: 28px; }\n      .top .text p {\n        padding: 0 35px 0 0;\n        font-size: .92em; }\n    .top .video {\n      min-width: 375px;\n      min-height: 220px; } }\n", ""]);
 
 // exports
 
