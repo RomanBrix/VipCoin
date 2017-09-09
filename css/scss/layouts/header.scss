@@ -89,6 +89,104 @@
       //width: 127px;
       //height: 24px;
   }
+
+
+
+  .lookAtTopOfHisHead{
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    top: 10px;
+    width: 100%;
+    left: 0;
+    background: #061b31;
+    font-size: 11px;
+    .topContent{
+      display: flex;
+      color: white;
+      width: 80%;
+      justify-content: space-between;
+      height: 28px;
+      align-items: center;
+      .currencys {
+        display: flex;
+        padding-left: 50px;
+        .cryptoCurrency {
+          margin-right: 40px;
+          cursor: pointer;
+          &:last-child {
+            margin-right: 0;
+          }
+        }
+      }
+
+      .dropdown {
+        cursor: pointer;
+        position: relative;
+        display: inline-block;
+        //margin-right: 35px;
+        img{
+          width: 23px;
+
+        }
+        #active_lang{
+          img{
+            width: 24px;
+            margin-bottom: -3px;
+          }
+        }
+        &:hover .dropdown-content {
+          transition: .3s;
+          visibility: visible;
+          opacity: 1;
+          transform: translateY(0em);
+          //display: block;
+        }
+        .dropdown-content {
+          cursor: default;
+          font-size: 0.9em;
+          transform: translateY(2em);
+          transition: all 0.3s ease-in-out 0s, visibility 0s linear 0.3s, z-index 0s linear 0.01s;
+
+          visibility: hidden;
+          opacity: 0;
+          position: absolute;
+          background-color: rgba(6, 27, 49, .8);
+          box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+          z-index: 1;
+          color: #b6b4b5;
+
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+          justify-content: space-around;
+          min-height: 100px;
+          padding: 5px;
+          top: 114%;
+          width: 60px;
+          left: -20px;
+
+          span {
+            margin: 12px 16px;
+            cursor: pointer;
+            display: block;
+            img{
+              border: 2px solid rgba(6, 27, 49, .8);
+              border-radius: 50%;
+              transition: .2s
+            }
+            &:hover{
+              color: white;
+              img{
+                //width: 27px;
+                border-color: white;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
 }
 
 @media (max-width: 1030px) {

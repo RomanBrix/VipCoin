@@ -1,4 +1,5 @@
 import React, {Component} from 'react';
+import axios from 'axios';
 import translate from "../../data/translate.json";
 import FooterIcons from "../../public/src/Fonts/FontsIcons/styles.css";
 import css from '../../css/scss/layouts/header.scss';
@@ -16,9 +17,14 @@ export default class Header extends Component {
         super(props);
         this.setCookie('language', 'ru',{expires: 350});
         this.state = {
-            language: this.getCookie("language") || "ru"
+            language: this.getCookie("language") || "ru",
+            ltc: 0,
+            btc: 0,
+            eth: 0
         };
         props.setLanguage(this.state.language);
+        this.getUserAccount();
+
     }
     componentDidMount(){
         const {main, about, packages, faq, news, contacts} = this.props;
@@ -87,14 +93,78 @@ export default class Header extends Component {
         return matches ? decodeURIComponent(matches[1])  : undefined;
     }
 
+
+    getUserAccount() {
+        const that = this;
+        axios.all([this.getLTC(), this.getBTC(),this.getETH()])
+            .then(axios.spread(function (ltc, btc, eth) {
+                // console.log("LTC: ", ltc);
+                // console.log("BTC: " , btc);
+                // console.log( "ETH: ", eth);
+                console.log("that: " ,that);
+                that.setState({
+                    ltc: ltc.data.ticker.price,
+                    btc: btc.data.ticker.price,
+                    eth: eth.data.ticker.price,
+
+                })
+            }));
+    }
+    getLTC() {
+        return axios.get('https://api.cryptonator.com/api/ticker/ltc-usd');
+    }
+
+    getBTC() {
+        return axios.get('https://api.cryptonator.com/api/ticker/btc-usd');
+    }
+    getETH(){
+        return axios.get('https://api.cryptonator.com/api/ticker/eth-usd');
+    }
+
     render(){
         const { toggleAuth } = this.props;
         const lang = translate.filter(item =>{
            return item.language === this.state.language;
         });
         const { layouts } = lang[0];
+        const { ltc, btc, eth } = this.state;
+        console.log(ltc, btc, eth);
         return (
             <div className="header">
+                <div className="lookAtTopOfHisHead">
+                    <div className="topContent">
+                        <div className="currencys" onClick={()=>{
+                            this.getUserAccount();
+                        }}>
+                            <div className="cryptoCurrency">BTC/USD: <span>{btc}</span></div>
+                            <div className="cryptoCurrency">LTC/USD: <span>{ltc}</span></div>
+                            <div className="cryptoCurrency">ETH/USD: <span>{eth}</span></div>
+                        </div>
+
+                        <div className="lang dropdown">
+                            <span id="active_lang">
+                                <img src={`./src/header/${this.state.language}.svg`} alt="active_lang"/>
+                            </span>
+                                    <div className="dropdown-content dropdown-main">
+                                <span onClick={() => {
+                                    this.setCookie('language', 'ru', {expires: 350});
+                                    this.setState({language: 'ru'});
+                                    console.log("1")
+                                }}><img src={FLAG_RU} alt="ru"/>
+                                </span>
+                                        <span onClick={() => { console.log("2") }}>
+                                    <img src={FLAG_ENG} alt="eng"/>
+                                </span>
+                                        <span onClick={() => { console.log("3") }}>
+                                    <img src={FLAG_JAP} alt="japan"/>
+                                </span>
+                                        <span onClick={() => { console.log("4") }}>
+                                    <img src={FLAG_USA} alt="usa"/>
+                                </span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
                 <a href={PAGES.MAIN} id="logo">
                     <div className="logo">
                         <img src={LOGO} alt="Logo"/>

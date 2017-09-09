@@ -7,7 +7,6 @@ export default class TableSplits extends Component {
         const { info } = this.props;
         const { head, foot, split } = info;
         const cont = split.map((item, index) =>{
-            console.log(item);
             return (
                 <tr key={ index + 1}>
                     <td>
@@ -42,8 +41,8 @@ export default class TableSplits extends Component {
                     </tbody>
                 </table>
                 <div className="end">
-                    <div className="allSumm">{ foot.allSumm }</div>
-                    <div className="future">{ foot.future } <img src={LOGO} alt=""/> { foot.coinCost}</div>
+                    <div className="allSumm">{ foot.allSumm } <span>306.900.000</span></div>
+                    <div className="future">{ foot.future } <img src={LOGO} alt=""/> <span>= { foot.coinCost} </span></div>
                 </div>
             </div>
         )

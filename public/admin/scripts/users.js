@@ -8067,7 +8067,8 @@ module.exports = exports['default'];
 module.exports = __webpack_require__(266);
 
 /***/ }),
-/* 69 */
+/* 69 */,
+/* 70 */
 /***/ (function(module, exports) {
 
 var g;
@@ -8094,7 +8095,7 @@ module.exports = g;
 
 
 /***/ }),
-/* 70 */
+/* 71 */
 /***/ (function(module, exports, __webpack_require__) {
 
 // style-loader: Adds some css to the DOM by adding a <style> tag
@@ -8125,7 +8126,6 @@ if(false) {
 }
 
 /***/ }),
-/* 71 */,
 /* 72 */
 /***/ (function(module, exports, __webpack_require__) {
 
@@ -26167,7 +26167,7 @@ var freeGlobal = typeof global == 'object' && global && global.Object === Object
 
 /* harmony default export */ __webpack_exports__["a"] = (freeGlobal);
 
-/* WEBPACK VAR INJECTION */}.call(__webpack_exports__, __webpack_require__(69)))
+/* WEBPACK VAR INJECTION */}.call(__webpack_exports__, __webpack_require__(70)))
 
 /***/ }),
 /* 248 */
@@ -26365,7 +26365,7 @@ if (typeof self !== 'undefined') {
 
 var result = (0, _ponyfill2['default'])(root);
 exports['default'] = result;
-/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(69), __webpack_require__(126)(module)))
+/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(70), __webpack_require__(126)(module)))
 
 /***/ }),
 /* 255 */
@@ -37042,7 +37042,7 @@ var _react = __webpack_require__(4);
 
 var _react2 = _interopRequireDefault(_react);
 
-var _styles = __webpack_require__(70);
+var _styles = __webpack_require__(71);
 
 var _styles2 = _interopRequireDefault(_styles);
 
