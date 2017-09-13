@@ -4,8 +4,6 @@ export default class Login extends Component {
     logIn(){
         const { login_log, login_pass } = this.refs;
         const { loginUser } = this.props;
-        console.log(this.props);
-        console.log(login_log.value, login_pass.value);
         loginUser("in", login_log.value, login_pass.value);
     }
     render(){
@@ -40,7 +38,7 @@ export default class Login extends Component {
                     />
                 </div>
                 <div className="btn-ok" onClick={()=>{
-                    console.log("ok");
+                    // console.log("ok");
                     this.logIn();
                 }}>{login.btnEnter}</div>
             </div>

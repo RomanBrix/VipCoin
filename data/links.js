@@ -14,7 +14,7 @@ export const MAIN_TOP_VIDEO = "https://www.youtube.com/embed/SoTaS9t3Po4?rel=0";
 
 export const PAGES = {
     MAIN: "index.html",
-    ABOUT_US: "#",
+    ABOUT_US: "about.html",
     PACKAGES: "packages.html",
     FAQ: "faq.html",
     NEWS: "#",

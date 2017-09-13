@@ -1,0 +1,65 @@
+.top{
+  background-size: 400px;
+  background-repeat: no-repeat;
+  background-position-x: 50%;
+  width: 80%;
+  min-height: 420px;
+  background-position-y: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  .text{
+    width: 80%;
+    text-align: center;
+    h1{
+      font-size: 38px;
+    }
+    p{
+      line-height: 1.5em;
+      color: white;
+      letter-spacing: 1px;
+    }
+  }
+}
+
+.pluses{
+  display: flex;
+  justify-content: center;
+  background: rgba(246, 251, 254, 1);
+  .pluses-container{
+    width: 80%;
+    background: white;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    padding: 55px 0;
+
+    .systems{
+      max-width: 40%;
+      display: flex;
+      align-items: flex-start;
+      margin-bottom: 55px;
+
+      .logo{
+        margin-right: 55px;
+      }
+      .text{
+        h3{
+          margin: 0;
+          font-family: HelveticaBold;
+        }
+        p{
+          margin-top: 10px;
+          font-size: 14px;
+          word-spacing: 1px;
+          line-height: 1.3em;
+          color: rgba(70, 70, 70, 1);
+        }
+      }
+    }
+    .deposit, .money{
+      margin-bottom:0;
+    }
+  }
+}

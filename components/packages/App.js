@@ -10,13 +10,13 @@ import Container from './Container';
 export default class App extends Component {
     constructor(props){
         super(props);
-        props.getBitcoinCost();
+        // props.getBitcoinCost();
         props.getPackages("package");
         this.state = {
             language: props.language || "ru",
             auth: false,
         };
-        props.getCoinCost("coinCost");
+        // props.getCoinCost("coinCost");
     }
 
     toggleAuth(auth){
@@ -28,8 +28,6 @@ export default class App extends Component {
     render(){
         const {
             setLanguage,
-            bitcoinCost,
-            vipcoinCost,
             addUser,
             loginUser,
             userState,
@@ -83,13 +81,11 @@ export default class App extends Component {
                     setLanguage={ setLanguage }
                     toggleAuth={ this.toggleAuth.bind(this) }
                 />
-                <div className="bg" style={ {backgroundImage: `url(${BG_COIN})`} }/>
                 <div className="container" >
                     <Container
                         pages={ pages.packages }
-                        vipcoinCost={ vipcoinCost }
-                        bitcoinCost={ bitcoinCost }
                         packages={ packages }
+                        toggleAuth={ this.toggleAuth.bind(this) }
                     />
                 </div>
                 <Footer footer={ layouts.footer } />

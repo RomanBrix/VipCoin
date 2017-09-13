@@ -1,111 +1,116 @@
 import React, {Component} from 'react';
-import FooterIcons from "../../public/src/Fonts/FontsIcons/styles.css";
 
 export default class Package extends Component {
-    updatePackage(id, cost, type){
-        const range = eval("this.refs.rangeCoins"+id);
-        const coins = eval("this.refs.valueCoins"+id);
-        const price = eval("this.refs.priceCoins"+id);
-        if(type){
-            coins.value = +range.value;
-            price.innerHTML = (cost * coins.value).toFixed(2);
-        }else{
-            let trueValue = 0;
-            if(+coins.max < 100000 ) {
-                +coins.value > +coins.max ? trueValue = coins.max : trueValue = coins.value;
-                range.value = trueValue;
-                coins.value = trueValue;
-                +coins.value < +coins.min ? coins.value = coins.min : coins.value;
-                if(coins.value % 10 === 0) {
-                    price.innerHTML = (cost * coins.value).toFixed(0);
-                }else{
-                    price.innerHTML = (cost * coins.value).toFixed(2);
-                }
-            }else{
-                +coins.value > +coins.max ? trueValue = coins.max : trueValue = coins.value;
-                coins.value = trueValue;
-                +coins.value < +coins.min ? coins.value = coins.min : coins.value;
-                if(coins.value % 10 === 0) {
-                    price.innerHTML = (cost * coins.value).toFixed(0);
-                }else{
-                    price.innerHTML = (cost * coins.value).toFixed(1);
-                }
-            }
+
+    inputBlur(target, cost, coins, id){
+
+        console.log(target.value, cost);
+        if(+target.value > +coins){
+            target.value = coins;
         }
+        const costCont = document.getElementById(id);
+        let end = 0;
+        (+target.value * cost) % 2 === 0 ? end = (+target.value * cost) : end = (+target.value * cost).toFixed(2);
+        costCont.innerHTML =  end + " $";
+
 
     }
+
+    getCookie(name){
+        const matches = document.cookie.match(new RegExp(
+            "(?:^|; )" + name.replace(/([\.$?*|{}\(\)\[\]\\\/\+^])/g, '\\$1') + "=([^;]*)"
+        ));
+        return matches ? decodeURIComponent(matches[1])  : undefined;
+    }
+
     render(){
-        const { packages, package_title } = this.props;
-        const colors = ['#f2b01e','#ccc2c2','#f2b01e','#e5c100','#b9f2ff'];
-        const logo = ["icon-star", "icon-ribbon-a", "icon-trophy","icon-crown-king-1","icon-diamond"];
-        const packageContainer = packages.map((item, index)=>{
-            const minimum = +item.minCoins;
-            const rand = Math.floor(Math.random() * 600) + 100
-            return <div className="package" key={ index } onClick={({target})=>{
-                     if(target.classList[0] === "package"){
-                         window.location.href = "#";
-                     }
-            }}>
-                    <div className="package_logo" style={{color: colors[index]}}>
-                        <i className={logo[index]}/>
+        const { packages, package_title, toggleAuth } = this.props;
+        const user = this.getCookie("user");
+        console.log(user);
+        const packages_map = packages.map((item, index)=>{
+            let btn = "";
+            if(item.status === "end"){
+                btn = "НЕДОСТУПНО";
+            }else if(item.status === "start"){
+                btn = "КУПИТЬ";
+            }else{
+                btn = "В ОЖИДАНИИ";
+            }
+            const rand = Math.floor(Math.random() * 1200) + 100;
+
+            return(
+                <div className={`package ${item.status}`} key={index}>
+                    <div className="top">
+                        <h3>{item.name}</h3>
+                        <p>$ <span className="cost">{item.cost}</span>/монету</p>
                     </div>
-                    <h3>{item.name}</h3>
-                    <div className="options">
-                       <span className="getCoins">
-                           <label htmlFor={`valueCoins${index}`}>
-                               <i className="icon-bitcoin-circle"/>
-                           </label>
-                           <input
-                               type="number"
-                               ref={`valueCoins${index}`}
-                               defaultValue={minimum + rand}
-                               max={item.maxCoins}
-                               min={item.minCoins}
-                               id={`valueCoins${index}`}
-                               onBlur={()=>{ this.updatePackage(`${index}`, item.oneCoinCost, false)}}
-                               step={25}
-                           />
-                        </span>
-                    </div>
-                    <div className="summ">
-                        <div className="one-price">
-                            <p>for 1 VipCoin</p>
-                            <i className="icon-usd"/>
-                            { item.oneCoinCost }
-                        </div>
-                        <div className="all_price">
-                            <p>for all VipCoins</p>
-                            <i className="icon-usd"/>
-                            <span className="price" ref={`priceCoins${index}`}>
-                                {(item.oneCoinCost *(minimum + rand)).toFixed(2)}
+                    <div className="bottom">
+                        <div className="coins_left">
+                            <p>Доступно монет:</p>
+                            <span id="coins_left">
+                                {item.coins}
                             </span>
                         </div>
+                        <div className="inputCoins">
+                            <p>
+                                Введите количество
+                                монет для покупки:
+                            </p>
+                            { item.status === "end" ?
+                                <input type="number" defaultValue={0} max={item.coins} disabled/>
+                                :
+                                <input
+                                    type="number"
+                                    defaultValue={rand}
+                                    max={item.coins}
+                                    onBlur={({target})=>{
+                                        this.inputBlur(target, item.cost, item.coins, `price${index}`)
+                                    }}
+                                />
+                            }
+                                </div>
+                        <div className="price">
+                            <p>Стоимость:</p>
+                            <span className="spanPrice" id={`price${index}`}>
+                                {
+                                    item.status === "end"
+                                    ? 0
+                                    : (rand * item.cost).toFixed(2)
+                                } $
+                                </span>
+                            {
+                                item.status !== "start"
+                                    ? <div className="btn-buy">
+                                        { btn }
+                                      </div>
+                                    : <div
+                                        className="btn-buy"
+                                        onClick={()=>{
+                                            if(user === undefined || user.length < 15){
+                                                toggleAuth(true);
+                                            } else{
+                                                window.location.href = 'profile/me.html';
+                                            }
+                                        }}>
+                                        { btn }
+                                      </div>
+                            }
+                        </div>
+
+
                     </div>
-                {index !== 4 ? <input
-                    type="range"
-                    min={item.minCoins}
-                    max={item.maxCoins}
-                    ref={`rangeCoins${index}`}
-                    defaultValue={minimum + rand}
-                    className="coins-range"
-                    onChange={()=>{ this.updatePackage(`${index}`, item.oneCoinCost, true)}}
-                />: <p>unlimited</p>}
                 </div>
+            )
         });
         return(
             <div className="packages">
-                <h1>{package_title.title}</h1>
-                <div className="all_packages">
-                    <div className="top">
-                        { packageContainer[0] }
-                        { packageContainer[1] }
-                    </div>
-                    <div className="center">
-                        { packageContainer[4] }
-                    </div>
-                    <div className="bottom">
-                        { packageContainer[2]}
-                        { packageContainer[3] }
+
+                <div className="packages-container">
+                    <h1>{package_title.title}</h1>
+                    <p className="afterHead">Укажите количество монет которые хотите купить
+                        для расчета стоимость</p>
+                    <div className="pack-map">
+                        { packages_map }
                     </div>
                 </div>
             </div>

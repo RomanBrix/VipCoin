@@ -8,6 +8,7 @@ module.exports= {
         'scripts/packages': './points/Packages.js',
         'scripts/faq': './points/Faq.js',
         'scripts/contacts': './points/contacts.js',
+        'scripts/about': './points/about.js',
         'profile/scripts/me': './points/profile/me.js',
         'profile/scripts/settings': './points/profile/settings.js',
         'admin/scripts/generally': './points/admin/generally.js',

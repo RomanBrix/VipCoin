@@ -1,0 +1,11 @@
+.faq{
+  width: 100%;
+  height: 400px;
+  background: #f6fbfe;
+  display: flex;
+  justify-content: center;
+  .faq-container{
+    border: 1px solid;
+    width: 60%;
+  }
+}

@@ -128,3 +128,21 @@
 .icon-instagram:before {
   content: "\e004";
 }
+.icon-lock-locker-streamline:before {
+  content: "\e01e";
+}
+.icon-lock:before {
+  content: "\e01f";
+}
+.icon-lock-1:before {
+  content: "\e020";
+}
+.icon-check-square-o:before {
+  content: "\e021";
+}
+.icon-check-mark-2:before {
+  content: "\e022";
+}
+.icon-check-mark-circle-two:before {
+  content: "\e023";
+}

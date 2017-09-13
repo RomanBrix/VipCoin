@@ -35,8 +35,9 @@ export default class Header extends Component {
                 ask = i;
             }
         }
-        const header = document.getElementsByClassName('header')[0];
-        const listArray = header.children[1].children[0].children;
+
+        const header = document.getElementsByClassName('menu')[0];
+        const listArray = header.children[0].children;
         switch(ask) {
             case 0 :
                 listArray[0].classList.add('active');
@@ -98,10 +99,6 @@ export default class Header extends Component {
         const that = this;
         axios.all([this.getLTC(), this.getBTC(),this.getETH()])
             .then(axios.spread(function (ltc, btc, eth) {
-                // console.log("LTC: ", ltc);
-                // console.log("BTC: " , btc);
-                // console.log( "ETH: ", eth);
-                console.log("that: " ,that);
                 that.setState({
                     ltc: ltc.data.ticker.price,
                     btc: btc.data.ticker.price,
@@ -128,7 +125,6 @@ export default class Header extends Component {
         });
         const { layouts } = lang[0];
         const { ltc, btc, eth } = this.state;
-        console.log(ltc, btc, eth);
         return (
             <div className="header">
                 <div className="lookAtTopOfHisHead">
