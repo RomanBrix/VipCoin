@@ -17,21 +17,25 @@ export default class TableItems extends Component {
         if (+a.vipcoins_value < +b.vipcoins_value) return -1;
     }
     render(){
-        const { data, activePage, step } = this.props;
+        const { data, activePage, step, addCoins } = this.props;
         const { sorted } = this.state;
-        // console.log(sorted);
+
+
         let sortedData = [];
         sorted ? sortedData = data.sort(this.compareNumericTrue) : sortedData = data.sort(this.compareNumericFalse);
+
         const paginationContainer = sortedData.filter((item, index)=>{
             let end = step * activePage;
             let start = end - step;
             return index >= start && index < end;
         });
+
         const TRcontainer = paginationContainer.map((item, index)=>{
             return (
                 <tr key={index} onDoubleClick={()=>{
                     const code = prompt("Введите код с комментария");
-                    console.log(code);
+                    addCoins(item.hash,code);
+                    // console.log(code);
                 }}>
                 <td>{item.id}</td>
                 <td>{item.login}</td>

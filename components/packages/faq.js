@@ -6,7 +6,7 @@ export default class Faq extends Component {
             <div className="faq">
                 <div className="faq-container">
                     <h1>Помощь</h1>
-                    <p>Список наиболее часто задаваемых вопросов и ответы на них</p>
+                    <p className="afterHead">Список наиболее часто задаваемых вопросов и ответы на них</p>
                     <div className="faqs">
                         <div className="one-faq">
                             <h3><i className="icon-check-mark-circle-two"/> Как можно оплатить?</h3>

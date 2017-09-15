@@ -37,3 +37,15 @@ tbody {
     }
   }
 }
+#alert{
+  width: 100%;
+  text-align: center;
+  padding: 5px 0;
+  background: greenyellow;
+  color: black;
+  position: fixed;
+  top: 75px;
+  left: 0;
+  display: none;
+  transition: 2s;
+}

@@ -4,13 +4,14 @@ export default class Package extends Component {
 
     inputBlur(target, cost, coins, id){
 
-        console.log(target.value, cost);
+        // console.log(target.value, cost);
         if(+target.value > +coins){
             target.value = coins;
         }
         const costCont = document.getElementById(id);
         let end = 0;
-        (+target.value * cost) % 2 === 0 ? end = (+target.value * cost) : end = (+target.value * cost).toFixed(2);
+        (+target.value * cost) % 1 === 0 ? end = (+target.value * cost) : end = (+target.value * cost).toFixed(2);
+        console.log(((+target.value * cost) % 1));
         costCont.innerHTML =  end + " $";
 
 

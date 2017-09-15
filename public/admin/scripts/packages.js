@@ -60,7 +60,7 @@
 /******/ 	__webpack_require__.p = "";
 /******/
 /******/ 	// Load entry module and return exports
-/******/ 	return __webpack_require__(__webpack_require__.s = 543);
+/******/ 	return __webpack_require__(__webpack_require__.s = 860);
 /******/ })
 /************************************************************************/
 /******/ ([
@@ -7659,60 +7659,7 @@ module.exports = g;
 
 
 /***/ }),
-/* 69 */
-/***/ (function(module, exports, __webpack_require__) {
-
-"use strict";
-
-
-Object.defineProperty(exports, "__esModule", {
-    value: true
-});
-var LOGO = exports.LOGO = './src/VipCoin.png';
-
-var FLAG_RU = exports.FLAG_RU = "./src/header/ru.svg";
-var FLAG_ENG = exports.FLAG_ENG = "./src/header/eng.svg";
-var FLAG_JAP = exports.FLAG_JAP = "./src/header/japan.svg";
-var FLAG_USA = exports.FLAG_USA = "./src/header/usa.svg";
-
-var BG_COIN = exports.BG_COIN = "./src/afterBg.png";
-var BG_OPACITY_COIN = exports.BG_OPACITY_COIN = './src/VipCoinOpacity.png';
-var FOOTER_BG = exports.FOOTER_BG = "./src/footer.png";
-var MAIN_TOP_VIDEO = exports.MAIN_TOP_VIDEO = "https://www.youtube.com/embed/SoTaS9t3Po4?rel=0";
-
-var PAGES = exports.PAGES = {
-    MAIN: "index.html",
-    ABOUT_US: "about.html",
-    PACKAGES: "packages.html",
-    FAQ: "faq.html",
-    NEWS: "#",
-    CONTACT_US: "contacts.html",
-    WHITE_PAGE: "#",
-    LEGAL_PAGE: "#",
-    CONTRACT_OFFER: "#",
-    confidentiality: "#",
-    CONFIDENTIALITY: "#"
-
-};
-
-var PROFILE_PAGES = exports.PROFILE_PAGES = {
-    MAIN: "../index.html",
-    INFO: "me.html",
-    SETTINGS: "settings.html"
-
-};
-
-var CONTACTS = exports.CONTACTS = {
-    TELEPHONE: 380730070032,
-    SKYPE: 'roma4Rock',
-    MAIL: 'stetcukroman@gmail.com',
-    FACEBOOK: "#",
-    TWITTER: "#",
-    INSTA: "#",
-    YOUTUBE: "#"
-};
-
-/***/ }),
+/* 69 */,
 /* 70 */
 /***/ (function(module, exports, __webpack_require__) {
 
@@ -27665,12 +27612,7 @@ module.exports = function (css) {
 
 
 /***/ }),
-/* 285 */
-/***/ (function(module, exports) {
-
-module.exports = [{"language":"ru","pages":{"main":{"top":{"head":"Ваш шедевр готов!","text":"С другой стороны консультация с широким активом способствует подготовки и реализации модели развития. Задача организации, в особенности же консультация с широким активом в значительной степени.","btn":"купить"},"progress":{"head":"какая наша цель?","title":"Официальный запуск сети после продажи:"},"table":{"head":{"header":"Сплиты","number":"#","cost":"Цена","value":"Количество монет","summ":"Сумма"},"foot":{"allSumm":"Итог сбора суммы: ","future":"При выходе на крипто-биржу цена за 1 монету","coinCost":"50$"},"split":[{"cost":0.1,"value":"3.000.000","summ":"300.000"},{"cost":0.2,"value":"3.000.000","summ":"600.000"},{"cost":0.4,"value":"3.000.000","summ":"1.200.000"},{"cost":0.8,"value":"3.000.000","summ":"2.400.000"},{"cost":1.6,"value":"3.000.000","summ":"4.800.000"},{"cost":3.2,"value":"3.000.000","summ":"9.600.000"},{"cost":6.4,"value":"3.000.000","summ":"19.200.000"},{"cost":12.8,"value":"3.000.000","summ":"38.400.000"},{"cost":25.6,"value":"3.000.000","summ":"76.800.000"},{"cost":51.2,"value":"3.000.000","summ":"153.600.000"}]}},"help":{},"packages":{"packages":[{"title":"ПАКЕТЫ"},{"title":"Калькулятор выгоды","inputCoins":"VipCoin","text":"Подсчитайте свою прибыль с учетом прогнозов курса VipCoin на последующие года"}]},"FAQ":{},"news":{},"contacts":{"top":{"head":"Контакты"},"feedback":{"head":"центр поддержки клиентов","inputName":"Имя","inputLName":"Фамилия","inputEmail":"E-mail","inputTel":"Номер телефона","inputMsg":"Ваше сообщение","btnSend":"Отправить"}},"profile":{"layouts":{"leftHeader":{"btnMain":"главная","btnRefill":"Купить","btnSettings":"Настройки","btnExit":"выход"}},"info":{},"settings":{"password":{"head":"Сменить пароль","CurPass":"Текущий пароль","new":"Новый пароль","repass":"Повторите пароль","save":"Сохранить","error":"Неверный пароль","accept":"Изминения сохранены"},"email":{"head":"Сменить E-mail","CurPass":"Текущий пароль","new":"Новый E-mail","save":"Сохранить","error":"Неверный пароль","secondError":"Такой E-mail уже есть!","accept":"Изминения сохранены"}}}},"layouts":{"header":{"btnMain":"ГЛАВНАЯ","btnAbout":"О НАС","btnPackages":"ПАКЕТЫ","btnFAQ":"Помощь","btnNews":"Новости","btnContacts":"Контакты","login":{"log":"Регистрация/Вход"}},"footer":{"pages":{"whitePage":"Белая Бумага","legalPage":"Юридические Информация","contractOffer":"Пользовательское Соглашение","confidentiality":"Политика Конфиденциальности"},"feedback":"Обратная связь"},"auth":{"header":{"btnLogin":"Войти","btnRegistration":"Регестрация","btnForgotPass":"Забыли пароль?"},"login":{"inputLogin":"Логин или E-mail","inputPassword":"Пароль","btnEnter":"Войти"},"registration":{"inputLogin":"Логин","inputEmail":"E-Mail","inputPassword":"Пароль","inputRepeatPassword":"Повторите пароль","checkLegal":"Согласен с правилами сайта","btnRegistration":"Регестрация"},"forgot":{"text":"Отправить пароль на почту","inputEmail":"E-Mail","btnSend":"Отправить","success":"E-mail отправлен!","error":"E-mail не найден"}}}}]
-
-/***/ }),
+/* 285 */,
 /* 286 */,
 /* 287 */,
 /* 288 */,
@@ -27697,1454 +27639,20 @@ module.exports = [{"language":"ru","pages":{"main":{"top":{"head":"Ваш шед
 /* 309 */,
 /* 310 */,
 /* 311 */,
-/* 312 */
-/***/ (function(module, exports, __webpack_require__) {
-
-"use strict";
-
-
-Object.defineProperty(exports, "__esModule", {
-    value: true
-});
-
-var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
-
-var _react = __webpack_require__(4);
-
-var _react2 = _interopRequireDefault(_react);
-
-var _axios = __webpack_require__(66);
-
-var _axios2 = _interopRequireDefault(_axios);
-
-var _translate = __webpack_require__(285);
-
-var _translate2 = _interopRequireDefault(_translate);
-
-var _styles = __webpack_require__(118);
-
-var _styles2 = _interopRequireDefault(_styles);
-
-var _header = __webpack_require__(313);
-
-var _header2 = _interopRequireDefault(_header);
-
-var _links = __webpack_require__(69);
-
-function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
-
-function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
-
-function _possibleConstructorReturn(self, call) { if (!self) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return call && (typeof call === "object" || typeof call === "function") ? call : self; }
-
-function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
-
-var Header = function (_Component) {
-    _inherits(Header, _Component);
-
-    function Header(props) {
-        _classCallCheck(this, Header);
-
-        var _this = _possibleConstructorReturn(this, (Header.__proto__ || Object.getPrototypeOf(Header)).call(this, props));
-
-        _this.setCookie('language', 'ru', { expires: 350 });
-        _this.state = {
-            language: _this.getCookie("language") || "ru",
-            ltc: 0,
-            btc: 0,
-            eth: 0,
-            NAME: undefined
-        };
-        props.setLanguage(_this.state.language);
-        _this.getCurrVal();
-        var loggedUser = _this.getCookie("user");
-
-        if (loggedUser !== undefined) {
-            _this.getUserName(loggedUser);
-        }
-
-        return _this;
-    }
-
-    _createClass(Header, [{
-        key: 'componentDidMount',
-        value: function componentDidMount() {
-            var _props = this.props,
-                main = _props.main,
-                about = _props.about,
-                packages = _props.packages,
-                faq = _props.faq,
-                news = _props.news,
-                contacts = _props.contacts;
-
-            var arr = [main, about, packages, faq, news, contacts];
-            var ask = 0;
-            for (var i = 0; i < arr.length; i++) {
-                if (arr[i] === true) {
-                    ask = i;
-                }
-            }
-
-            var header = document.getElementsByClassName('menu')[0];
-            var listArray = header.children[0].children;
-            switch (ask) {
-                case 0:
-                    listArray[0].classList.add('active');
-                    break;
-
-                case 1:
-                    listArray[1].classList.add('active');
-                    break;
-                case 2:
-                    listArray[2].classList.add('active');
-                    break;
-                case 3:
-                    listArray[3].classList.add('active');
-                    break;
-                case 4:
-                    listArray[4].classList.add('active');
-                    break;
-                case 5:
-                    listArray[5].classList.add('active');
-                    break;
-
-                default:
-                    console.log('op');break;
-            }
-        }
-    }, {
-        key: 'setCookie',
-        value: function setCookie(name, value, options) {
-            options = options || {};
-
-            var expires = options.expires;
-            if (typeof expires === 'number' && expires) {
-                var date = new Date();
-                date.setTime(date.getTime() + expires * 1000 * 60 * 60);
-                expires = options.expires = date;
-            }
-            if (expires && expires.toUTCString()) {
-                options.expires = expires.toUTCString();
-            }
-            value = encodeURIComponent(value);
-            var updatedCookie = name + "=" + value;
-            for (var propName in options) {
-                updatedCookie += "; " + propName;
-                var propValue = options[propName];
-                if (propValue !== true) {
-                    updatedCookie += "=" + propValue;
-                }
-            }
-            document.cookie = updatedCookie;
-        }
-    }, {
-        key: 'getCookie',
-        value: function getCookie(name) {
-            var matches = document.cookie.match(new RegExp("(?:^|; )" + name.replace(/([\.$?*|{}\(\)\[\]\\\/\+^])/g, '\\$1') + "=([^;]*)"));
-            return matches ? decodeURIComponent(matches[1]) : undefined;
-        }
-    }, {
-        key: 'getUserName',
-        value: function getUserName(loggedUser) {
-            var that = this;
-            _axios2.default.get('http://localhost:8888/vipcoin/profile/userInfo.php', { params: { type: "header", hash: loggedUser } }).then(function (res) {
-                console.log(res);
-                // dispatch({type: act.GET_PACKAGES_INFO, packages: res.data})
-                // NAME = res.data;
-                that.setState({
-                    NAME: res.data
-                });
-            }).catch(function (error) {
-                console.log(error);
-            });
-        }
-    }, {
-        key: 'getCurrVal',
-        value: function getCurrVal() {
-            var that = this;
-            _axios2.default.all([this.getLTC(), this.getBTC(), this.getETH()]).then(_axios2.default.spread(function (ltc, btc, eth) {
-                that.setState({
-                    ltc: ltc.data.ticker.price,
-                    btc: btc.data.ticker.price,
-                    eth: eth.data.ticker.price
-
-                });
-            }));
-        }
-    }, {
-        key: 'getLTC',
-        value: function getLTC() {
-            return _axios2.default.get('https://api.cryptonator.com/api/ticker/ltc-usd');
-        }
-    }, {
-        key: 'getBTC',
-        value: function getBTC() {
-            return _axios2.default.get('https://api.cryptonator.com/api/ticker/btc-usd');
-        }
-    }, {
-        key: 'getETH',
-        value: function getETH() {
-            return _axios2.default.get('https://api.cryptonator.com/api/ticker/eth-usd');
-        }
-    }, {
-        key: 'render',
-        value: function render() {
-            var _this2 = this;
-
-            var toggleAuth = this.props.toggleAuth;
-
-            var lang = _translate2.default.filter(function (item) {
-                return item.language === _this2.state.language;
-            });
-            var layouts = lang[0].layouts;
-            var _state = this.state,
-                ltc = _state.ltc,
-                btc = _state.btc,
-                eth = _state.eth,
-                NAME = _state.NAME;
-
-
-            return _react2.default.createElement(
-                'div',
-                { className: 'header' },
-                _react2.default.createElement(
-                    'div',
-                    { className: 'lookAtTopOfHisHead' },
-                    _react2.default.createElement(
-                        'div',
-                        { className: 'topContent' },
-                        _react2.default.createElement(
-                            'div',
-                            { className: 'currencys', onClick: function onClick() {
-                                    _this2.getUserAccount();
-                                } },
-                            _react2.default.createElement(
-                                'div',
-                                { className: 'cryptoCurrency' },
-                                'BTC/USD: ',
-                                _react2.default.createElement(
-                                    'span',
-                                    null,
-                                    btc
-                                )
-                            ),
-                            _react2.default.createElement(
-                                'div',
-                                { className: 'cryptoCurrency' },
-                                'LTC/USD: ',
-                                _react2.default.createElement(
-                                    'span',
-                                    null,
-                                    ltc
-                                )
-                            ),
-                            _react2.default.createElement(
-                                'div',
-                                { className: 'cryptoCurrency' },
-                                'ETH/USD: ',
-                                _react2.default.createElement(
-                                    'span',
-                                    null,
-                                    eth
-                                )
-                            )
-                        ),
-                        _react2.default.createElement(
-                            'div',
-                            { className: 'lang dropdown' },
-                            _react2.default.createElement(
-                                'span',
-                                { id: 'active_lang' },
-                                _react2.default.createElement('img', { src: './src/header/' + this.state.language + '.svg', alt: 'active_lang' })
-                            ),
-                            _react2.default.createElement(
-                                'div',
-                                { className: 'dropdown-content dropdown-main' },
-                                _react2.default.createElement(
-                                    'span',
-                                    { onClick: function onClick() {
-                                            _this2.setCookie('language', 'ru', { expires: 350 });
-                                            _this2.setState({ language: 'ru' });
-                                            console.log("1");
-                                        } },
-                                    _react2.default.createElement('img', { src: _links.FLAG_RU, alt: 'ru' })
-                                ),
-                                _react2.default.createElement(
-                                    'span',
-                                    { onClick: function onClick() {
-                                            console.log("2");
-                                        } },
-                                    _react2.default.createElement('img', { src: _links.FLAG_ENG, alt: 'eng' })
-                                ),
-                                _react2.default.createElement(
-                                    'span',
-                                    { onClick: function onClick() {
-                                            console.log("3");
-                                        } },
-                                    _react2.default.createElement('img', { src: _links.FLAG_JAP, alt: 'japan' })
-                                ),
-                                _react2.default.createElement(
-                                    'span',
-                                    { onClick: function onClick() {
-                                            console.log("4");
-                                        } },
-                                    _react2.default.createElement('img', { src: _links.FLAG_USA, alt: 'usa' })
-                                )
-                            )
-                        )
-                    )
-                ),
-                _react2.default.createElement(
-                    'a',
-                    { href: _links.PAGES.MAIN, id: 'logo' },
-                    _react2.default.createElement(
-                        'div',
-                        { className: 'logo' },
-                        _react2.default.createElement('img', { src: _links.LOGO, alt: 'Logo' }),
-                        _react2.default.createElement(
-                            'span',
-                            { className: 'bold' },
-                            'VIP'
-                        ),
-                        'Coin'
-                    )
-                ),
-                _react2.default.createElement(
-                    'div',
-                    { className: 'menu' },
-                    _react2.default.createElement(
-                        'ul',
-                        null,
-                        _react2.default.createElement(
-                            'li',
-                            null,
-                            _react2.default.createElement(
-                                'a',
-                                { href: _links.PAGES.MAIN },
-                                layouts.header.btnMain
-                            )
-                        ),
-                        _react2.default.createElement(
-                            'li',
-                            null,
-                            _react2.default.createElement(
-                                'a',
-                                { href: _links.PAGES.ABOUT_US },
-                                layouts.header.btnAbout
-                            )
-                        ),
-                        _react2.default.createElement(
-                            'li',
-                            null,
-                            _react2.default.createElement(
-                                'a',
-                                { href: _links.PAGES.PACKAGES },
-                                layouts.header.btnPackages
-                            )
-                        ),
-                        _react2.default.createElement(
-                            'li',
-                            null,
-                            _react2.default.createElement(
-                                'a',
-                                { href: _links.PAGES.FAQ },
-                                layouts.header.btnFAQ
-                            )
-                        ),
-                        _react2.default.createElement(
-                            'li',
-                            null,
-                            _react2.default.createElement(
-                                'a',
-                                { href: _links.PAGES.NEWS },
-                                layouts.header.btnNews
-                            )
-                        ),
-                        _react2.default.createElement(
-                            'li',
-                            null,
-                            _react2.default.createElement(
-                                'a',
-                                { href: _links.PAGES.CONTACT_US },
-                                layouts.header.btnContacts
-                            )
-                        )
-                    )
-                ),
-                NAME === undefined ? _react2.default.createElement(
-                    'div',
-                    { className: 'login', onClick: function onClick() {
-                            var user = _this2.getCookie('user');
-                            if (user !== undefined) {
-                                if (user.length > 15) {
-                                    window.location.href = 'profile/me.html';
-                                }
-                            } else {
-                                toggleAuth(true);
-                            }
-                        } },
-                    layouts.header.login.log
-                ) : _react2.default.createElement(
-                    'div',
-                    { className: 'logged', onClick: function onClick() {
-                            var user = _this2.getCookie('user');
-                            if (user !== undefined) {
-                                if (user.length > 15) {
-                                    window.location.href = 'profile/me.html';
-                                }
-                            } else {
-                                toggleAuth(true);
-                            }
-                        } },
-                    NAME
-                )
-            );
-        }
-    }]);
-
-    return Header;
-}(_react.Component);
-
-/*
-<div className="lang dropdown">
-                    <span id="active_lang">
-                        <img src={`./src/header/${this.state.language}.svg`} alt="active_lang"/>
-                    </span>
-                    <div className="dropdown-content dropdown-main">
-                        <span onClick={() => {
-                            this.setCookie('language', 'ru', {expires: 350});
-                            this.setState({language: 'ru'});
-                            console.log("1")
-                        }}><img src={FLAG_RU} alt="ru"/>
-                        </span>
-                        <span onClick={() => { console.log("2") }}>
-                            <img src={FLAG_ENG} alt="eng"/>
-                        </span>
-                        <span onClick={() => { console.log("3") }}>
-                            <img src={FLAG_JAP} alt="japan"/>
-                        </span>
-                        <span onClick={() => { console.log("4") }}>
-                            <img src={FLAG_USA} alt="usa"/>
-                        </span>
-                    </div>
-                </div>
- */
-
-
-exports.default = Header;
-
-/***/ }),
-/* 313 */
-/***/ (function(module, exports, __webpack_require__) {
-
-// style-loader: Adds some css to the DOM by adding a <style> tag
-
-// load the styles
-var content = __webpack_require__(314);
-if(typeof content === 'string') content = [[module.i, content, '']];
-// Prepare cssTransformation
-var transform;
-
-var options = {}
-options.transform = transform
-// add the styles to the DOM
-var update = __webpack_require__(35)(content, options);
-if(content.locals) module.exports = content.locals;
-// Hot Module Replacement
-if(false) {
-	// When the styles change, update the <style> tags
-	if(!content.locals) {
-		module.hot.accept("!!../../../node_modules/css-loader/index.js!../../../node_modules/sass-loader/lib/loader.js!./header.scss", function() {
-			var newContent = require("!!../../../node_modules/css-loader/index.js!../../../node_modules/sass-loader/lib/loader.js!./header.scss");
-			if(typeof newContent === 'string') newContent = [[module.id, newContent, '']];
-			update(newContent);
-		});
-	}
-	// When the module is disposed, remove the <style> tags
-	module.hot.dispose(function() { update(); });
-}
-
-/***/ }),
-/* 314 */
-/***/ (function(module, exports, __webpack_require__) {
-
-exports = module.exports = __webpack_require__(34)(undefined);
-// imports
-
-
-// module
-exports.push([module.i, ".header {\n  display: flex;\n  justify-content: space-between;\n  align-items: center;\n  margin-top: 50px;\n  width: 80%; }\n  .header #logo {\n    text-decoration: none;\n    cursor: pointer; }\n    .header #logo .logo {\n      display: flex;\n      align-items: center;\n      font-size: 2em;\n      color: white;\n      font-weight: 100;\n      cursor: pointer; }\n      .header #logo .logo img {\n        max-height: 45px;\n        margin-right: 5px;\n        margin-top: -6px;\n        cursor: pointer; }\n      .header #logo .logo .bold {\n        font-family: HelveticaBold; }\n  .header .menu ul {\n    display: flex;\n    flex-direction: row;\n    flex-wrap: nowrap;\n    justify-content: space-around;\n    list-style: none;\n    padding-left: 0;\n    margin: 0; }\n    .header .menu ul li {\n      margin-right: 15px;\n      position: relative;\n      text-transform: uppercase;\n      cursor: pointer; }\n      .header .menu ul li a {\n        color: white;\n        text-decoration: none;\n        position: relative;\n        cursor: pointer;\n        transition: .25s; }\n        .header .menu ul li a:hover {\n          color: #ffc02d; }\n      .header .menu ul li:last-child {\n        margin-right: 0; }\n      .header .menu ul li.active a {\n        color: #ffc02d; }\n  .header .login {\n    border-width: 1px;\n    border-color: white;\n    border-style: solid;\n    border-radius: 3px;\n    opacity: 0.6;\n    padding: 6px 10px 3px;\n    cursor: pointer;\n    color: white;\n    transition: .25s;\n    margin-top: -7px; }\n    .header .login:hover {\n      opacity: 1; }\n  .header .lookAtTopOfHisHead {\n    position: absolute;\n    display: flex;\n    justify-content: center;\n    top: 10px;\n    width: 100%;\n    left: 0;\n    background: #061b31;\n    font-size: 11px; }\n    .header .lookAtTopOfHisHead .topContent {\n      display: flex;\n      color: white;\n      width: 80%;\n      justify-content: space-between;\n      height: 28px;\n      align-items: center; }\n      .header .lookAtTopOfHisHead .topContent .currencys {\n        display: flex;\n        padding-left: 50px; }\n        .header .lookAtTopOfHisHead .topContent .currencys .cryptoCurrency {\n          margin-right: 40px;\n          cursor: pointer; }\n          .header .lookAtTopOfHisHead .topContent .currencys .cryptoCurrency:last-child {\n            margin-right: 0; }\n      .header .lookAtTopOfHisHead .topContent .dropdown {\n        cursor: pointer;\n        position: relative;\n        display: inline-block; }\n        .header .lookAtTopOfHisHead .topContent .dropdown img {\n          width: 23px; }\n        .header .lookAtTopOfHisHead .topContent .dropdown #active_lang img {\n          width: 24px;\n          margin-bottom: -3px; }\n        .header .lookAtTopOfHisHead .topContent .dropdown:hover .dropdown-content {\n          transition: .3s;\n          visibility: visible;\n          opacity: 1;\n          transform: translateY(0em); }\n        .header .lookAtTopOfHisHead .topContent .dropdown .dropdown-content {\n          cursor: default;\n          font-size: 0.9em;\n          transform: translateY(2em);\n          transition: all 0.3s ease-in-out 0s, visibility 0s linear 0.3s, z-index 0s linear 0.01s;\n          visibility: hidden;\n          opacity: 0;\n          position: absolute;\n          background-color: rgba(6, 27, 49, 0.8);\n          box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);\n          z-index: 1;\n          color: #b6b4b5;\n          display: flex;\n          flex-direction: column;\n          align-items: center;\n          justify-content: space-around;\n          min-height: 100px;\n          padding: 5px;\n          top: 114%;\n          width: 60px;\n          left: -20px; }\n          .header .lookAtTopOfHisHead .topContent .dropdown .dropdown-content span {\n            margin: 12px 16px;\n            cursor: pointer;\n            display: block; }\n            .header .lookAtTopOfHisHead .topContent .dropdown .dropdown-content span img {\n              border: 2px solid rgba(6, 27, 49, 0.8);\n              border-radius: 50%;\n              transition: .2s; }\n            .header .lookAtTopOfHisHead .topContent .dropdown .dropdown-content span:hover {\n              color: white; }\n              .header .lookAtTopOfHisHead .topContent .dropdown .dropdown-content span:hover img {\n                border-color: white; }\n\n@media (max-width: 1030px) {\n  .header .menu {\n    font-size: .9em; }\n  .header .login {\n    font-size: .9em; } }\n", ""]);
-
-// exports
-
-
-/***/ }),
-/* 315 */
-/***/ (function(module, exports, __webpack_require__) {
-
-"use strict";
-
-
-Object.defineProperty(exports, "__esModule", {
-    value: true
-});
-
-var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
-
-var _react = __webpack_require__(4);
-
-var _react2 = _interopRequireDefault(_react);
-
-var _footer = __webpack_require__(316);
-
-var _footer2 = _interopRequireDefault(_footer);
-
-var _styles = __webpack_require__(118);
-
-var _styles2 = _interopRequireDefault(_styles);
-
-var _links = __webpack_require__(69);
-
-function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
-
-function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
-
-function _possibleConstructorReturn(self, call) { if (!self) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return call && (typeof call === "object" || typeof call === "function") ? call : self; }
-
-function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
-
-var Footer = function (_Component) {
-    _inherits(Footer, _Component);
-
-    function Footer() {
-        _classCallCheck(this, Footer);
-
-        return _possibleConstructorReturn(this, (Footer.__proto__ || Object.getPrototypeOf(Footer)).apply(this, arguments));
-    }
-
-    _createClass(Footer, [{
-        key: 'render',
-        value: function render() {
-            var footer = this.props.footer;
-
-            return _react2.default.createElement(
-                'div',
-                { className: 'footer', style: { backgroundImage: 'url(' + _links.FOOTER_BG + ')' } },
-                _react2.default.createElement(
-                    'div',
-                    { className: 'cont' },
-                    _react2.default.createElement(
-                        'div',
-                        { className: 'PP' },
-                        _react2.default.createElement(
-                            'ul',
-                            null,
-                            _react2.default.createElement(
-                                'li',
-                                null,
-                                _react2.default.createElement(
-                                    'a',
-                                    { href: _links.PAGES.WHITE_PAGE },
-                                    footer.pages.whitePage
-                                )
-                            ),
-                            _react2.default.createElement(
-                                'li',
-                                null,
-                                _react2.default.createElement(
-                                    'a',
-                                    { href: _links.PAGES.LEGAL_PAGE },
-                                    footer.pages.legalPage
-                                )
-                            ),
-                            _react2.default.createElement(
-                                'li',
-                                null,
-                                _react2.default.createElement(
-                                    'a',
-                                    { href: _links.PAGES.CONTRACT_OFFER },
-                                    footer.pages.contractOffer
-                                )
-                            ),
-                            _react2.default.createElement(
-                                'li',
-                                null,
-                                _react2.default.createElement(
-                                    'a',
-                                    { href: _links.PAGES.CONFIDENTIALITY },
-                                    footer.pages.confidentiality
-                                )
-                            )
-                        )
-                    ),
-                    _react2.default.createElement(
-                        'div',
-                        { className: 'feedback' },
-                        _react2.default.createElement(
-                            'a',
-                            { href: _links.PAGES.CONTACT_US },
-                            _react2.default.createElement('i', { className: 'icon-mail' }),
-                            footer.feedback
-                        ),
-                        _react2.default.createElement(
-                            'a',
-                            { href: 'mailto:' + _links.CONTACTS.MAIL },
-                            _react2.default.createElement('i', { className: 'icon-mail' }),
-                            'StetcukRoman@gmail.com'
-                        )
-                    ),
-                    _react2.default.createElement(
-                        'div',
-                        { className: 'contacts' },
-                        _react2.default.createElement(
-                            'a',
-                            { href: 'tel:' + _links.CONTACTS.TELEPHONE },
-                            _react2.default.createElement('i', { className: 'icon-call-phone' }),
-                            '+380-73-007-003-2'
-                        ),
-                        _react2.default.createElement(
-                            'a',
-                            { href: 'tel:' + _links.CONTACTS.TELEPHONE },
-                            _react2.default.createElement('i', { className: 'icon-call-phone' }),
-                            '+380-73-007-003-2'
-                        ),
-                        _react2.default.createElement(
-                            'a',
-                            { href: 'skype:' + _links.CONTACTS.SKYPE },
-                            _react2.default.createElement('i', { className: 'icon-skype' }),
-                            'Roma4Rock'
-                        )
-                    )
-                ),
-                _react2.default.createElement(
-                    'div',
-                    { className: 'socials' },
-                    _react2.default.createElement(
-                        'a',
-                        { href: _links.CONTACTS.FACEBOOK },
-                        _react2.default.createElement('i', { className: 'icon-facebook' })
-                    ),
-                    _react2.default.createElement(
-                        'a',
-                        { href: _links.CONTACTS.TWITTER },
-                        _react2.default.createElement('i', { className: 'icon-twitter' })
-                    ),
-                    _react2.default.createElement(
-                        'a',
-                        { href: _links.CONTACTS.INSTA },
-                        _react2.default.createElement('i', { className: 'icon-instagram' })
-                    ),
-                    _react2.default.createElement(
-                        'a',
-                        { href: _links.CONTACTS.YOUTUBE },
-                        _react2.default.createElement('i', { className: 'icon-youtube' })
-                    )
-                ),
-                _react2.default.createElement(
-                    'a',
-                    { href: 'https://www.instagram.com/roman_brix/', id: 'author', target: '_blank' },
-                    '\xA9 Roman_Brix'
-                )
-            );
-        }
-    }]);
-
-    return Footer;
-}(_react.Component);
-
-/*
- <a href="https://www.instagram.com/roman_brix/" target="_blank">
-                            <div className="create">
-                                &#169; Roman Brix
-                            </div>
-                        </a>
- */
-
-
-exports.default = Footer;
-
-/***/ }),
-/* 316 */
-/***/ (function(module, exports, __webpack_require__) {
-
-// style-loader: Adds some css to the DOM by adding a <style> tag
-
-// load the styles
-var content = __webpack_require__(317);
-if(typeof content === 'string') content = [[module.i, content, '']];
-// Prepare cssTransformation
-var transform;
-
-var options = {}
-options.transform = transform
-// add the styles to the DOM
-var update = __webpack_require__(35)(content, options);
-if(content.locals) module.exports = content.locals;
-// Hot Module Replacement
-if(false) {
-	// When the styles change, update the <style> tags
-	if(!content.locals) {
-		module.hot.accept("!!../../../node_modules/css-loader/index.js!../../../node_modules/sass-loader/lib/loader.js!./footer.scss", function() {
-			var newContent = require("!!../../../node_modules/css-loader/index.js!../../../node_modules/sass-loader/lib/loader.js!./footer.scss");
-			if(typeof newContent === 'string') newContent = [[module.id, newContent, '']];
-			update(newContent);
-		});
-	}
-	// When the module is disposed, remove the <style> tags
-	module.hot.dispose(function() { update(); });
-}
-
-/***/ }),
-/* 317 */
-/***/ (function(module, exports, __webpack_require__) {
-
-exports = module.exports = __webpack_require__(34)(undefined);
-// imports
-
-
-// module
-exports.push([module.i, ".footer {\n  height: 200px;\n  background-repeat: no-repeat;\n  background-position-x: 50%;\n  background-size: cover;\n  display: flex;\n  justify-content: center;\n  align-items: center;\n  flex-direction: column;\n  width: 100%;\n  position: relative; }\n  .footer .cont {\n    display: flex;\n    justify-content: center;\n    align-items: center;\n    font-size: .8em;\n    position: relative;\n    margin-bottom: 20px; }\n    .footer .cont .PP {\n      margin-right: 50px; }\n      .footer .cont .PP ul {\n        list-style: none;\n        padding: 0;\n        margin: 0; }\n        .footer .cont .PP ul li {\n          margin-bottom: 15px;\n          cursor: pointer;\n          transition: .25s all; }\n          .footer .cont .PP ul li a {\n            text-decoration: none;\n            color: white;\n            transition: .25s all; }\n          .footer .cont .PP ul li:hover a {\n            color: #ffc02d; }\n          .footer .cont .PP ul li:last-child {\n            margin-bottom: 0; }\n    .footer .cont .feedback {\n      margin-right: 50px;\n      display: flex;\n      flex-direction: column; }\n      .footer .cont .feedback a {\n        color: white;\n        text-decoration: none;\n        display: flex;\n        align-items: center;\n        transition: .25s all;\n        margin-bottom: 5px; }\n        .footer .cont .feedback a i {\n          font-size: 1.6em;\n          margin-right: 5px; }\n        .footer .cont .feedback a:hover {\n          color: #ffc02d; }\n        .footer .cont .feedback a:last-child {\n          margin-bottom: 0; }\n    .footer .cont .contacts {\n      display: flex;\n      flex-direction: column; }\n      .footer .cont .contacts a {\n        color: white;\n        text-decoration: none;\n        display: flex;\n        align-items: center;\n        transition: .25s all;\n        margin-bottom: 5px; }\n        .footer .cont .contacts a i {\n          font-size: 1.6em;\n          margin-right: 5px; }\n        .footer .cont .contacts a:hover {\n          color: #ffc02d; }\n        .footer .cont .contacts a:last-child {\n          margin-bottom: 0; }\n    .footer .cont:after {\n      content: \"\";\n      position: absolute;\n      width: 100%;\n      height: 1px;\n      bottom: -10px;\n      left: 0;\n      background-color: white;\n      opacity: 0.188; }\n  .footer .socials {\n    width: 15%;\n    font-size: 1.5em;\n    display: flex;\n    align-items: center;\n    justify-content: space-around; }\n    .footer .socials a {\n      color: white;\n      text-decoration: none;\n      transition: .25s all; }\n      .footer .socials a:hover {\n        color: #ffc02d; }\n  .footer #author {\n    position: absolute;\n    bottom: 0;\n    right: calc(50% - 41px);\n    font-size: .8em;\n    text-decoration: none;\n    color: white;\n    transition: .25s all; }\n    .footer #author:hover {\n      color: #ffc02d; }\n", ""]);
-
-// exports
-
-
-/***/ }),
-/* 318 */
-/***/ (function(module, exports, __webpack_require__) {
-
-"use strict";
-
-
-Object.defineProperty(exports, "__esModule", {
-    value: true
-});
-
-var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
-
-var _react = __webpack_require__(4);
-
-var _react2 = _interopRequireDefault(_react);
-
-var _login = __webpack_require__(319);
-
-var _login2 = _interopRequireDefault(_login);
-
-var _registration = __webpack_require__(320);
-
-var _registration2 = _interopRequireDefault(_registration);
-
-var _ForgotPass = __webpack_require__(321);
-
-var _ForgotPass2 = _interopRequireDefault(_ForgotPass);
-
-var _auth = __webpack_require__(322);
-
-var _auth2 = _interopRequireDefault(_auth);
-
-function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
-
-function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
-
-function _possibleConstructorReturn(self, call) { if (!self) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return call && (typeof call === "object" || typeof call === "function") ? call : self; }
-
-function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
-// import {addUser} from "../../../redux/front/front-actions";
-
-var Auth = function (_Component) {
-    _inherits(Auth, _Component);
-
-    function Auth(props) {
-        _classCallCheck(this, Auth);
-
-        var _this = _possibleConstructorReturn(this, (Auth.__proto__ || Object.getPrototypeOf(Auth)).call(this, props));
-
-        _this.state = {
-            toggle: 0
-        };
-        return _this;
-    }
-
-    _createClass(Auth, [{
-        key: "highlight",
-        value: function highlight(_ref) {
-            var target = _ref.target;
-
-
-            if (target.classList.contains('auth-head')) return;
-            var last = document.getElementsByClassName('btn-active')[0];
-
-            last.classList.remove('btn-active');
-            target.classList.add('btn-active');
-            var allBtns = document.getElementsByClassName('btn');
-        }
-    }, {
-        key: "alerts",
-        value: function alerts(text) {
-            // const alert_container = document.getElementsByClassName("alert");
-            var alert_container = this.refs.alert_container;
-
-            alert_container.innerHTML = text;
-            alert_container.style.display = "flex";
-            alert_container.style.opacity = 1;
-            setTimeout(function () {
-                alert_container.style.opacity = 0;
-                setTimeout(function () {
-                    alert_container.style.display = "none";
-                }, 500);
-            }, 1800);
-        }
-    }, {
-        key: "render",
-        value: function render() {
-            var _this2 = this;
-
-            var toggle = this.state.toggle;
-            var _props = this.props,
-                auth = _props.auth,
-                style = _props.style,
-                toggleAuth = _props.toggleAuth,
-                addUser = _props.addUser,
-                userState = _props.userState,
-                request = _props.request,
-                loginUser = _props.loginUser,
-                userLogin = _props.userLogin;
-
-            var show = "";
-            switch (toggle) {
-                case 0:
-                    show = _react2.default.createElement(_login2.default, {
-                        login: auth.login,
-                        alerts: this.alerts.bind(this),
-                        loginUser: loginUser,
-                        userLogin: userLogin
-                    });
-                    break;
-                case 1:
-                    show = _react2.default.createElement(_registration2.default, {
-                        registration: auth.registration,
-                        alerts: this.alerts.bind(this),
-                        addUser: addUser,
-                        userState: userState,
-                        request: request
-                    });
-                    break;
-                case 2:
-                    show = _react2.default.createElement(_ForgotPass2.default, { forgot: auth.forgot, alerts: this.alerts.bind(this) });
-                    break;
-            }
-
-            return _react2.default.createElement(
-                "div",
-                { className: "auth", style: style },
-                _react2.default.createElement(
-                    "div",
-                    { className: "auth-container" },
-                    _react2.default.createElement(
-                        "div",
-                        { className: "close", onClick: function onClick() {
-                                toggleAuth(false);
-                            } },
-                        _react2.default.createElement("i", { className: "icon-times-circle" })
-                    ),
-                    _react2.default.createElement("div", { className: "alerts", ref: "alert_container" }),
-                    _react2.default.createElement(
-                        "div",
-                        { className: "auth-head", onClick: this.highlight.bind(this) },
-                        _react2.default.createElement(
-                            "div",
-                            { className: "btn btn-login btn-active", onClick: function onClick() {
-                                    _this2.setState({ toggle: 0 });
-                                } },
-                            auth.header.btnLogin
-                        ),
-                        _react2.default.createElement(
-                            "div",
-                            { className: "btn btn-registration",
-                                onClick: function onClick() {
-                                    _this2.setState({ toggle: 1 });
-                                } },
-                            auth.header.btnRegistration
-                        ),
-                        _react2.default.createElement(
-                            "div",
-                            { className: "btn btn-forgotPass", onClick: function onClick() {
-                                    _this2.setState({ toggle: 2 });
-                                } },
-                            auth.header.btnForgotPass
-                        )
-                    ),
-                    _react2.default.createElement(
-                        "div",
-                        { className: "auth-body" },
-                        show
-                    )
-                )
-            );
-        }
-    }]);
-
-    return Auth;
-}(_react.Component);
-
-exports.default = Auth;
-
-/***/ }),
-/* 319 */
-/***/ (function(module, exports, __webpack_require__) {
-
-"use strict";
-
-
-Object.defineProperty(exports, "__esModule", {
-    value: true
-});
-
-var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
-
-var _react = __webpack_require__(4);
-
-var _react2 = _interopRequireDefault(_react);
-
-function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
-
-function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
-
-function _possibleConstructorReturn(self, call) { if (!self) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return call && (typeof call === "object" || typeof call === "function") ? call : self; }
-
-function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
-
-var Login = function (_Component) {
-    _inherits(Login, _Component);
-
-    function Login() {
-        _classCallCheck(this, Login);
-
-        return _possibleConstructorReturn(this, (Login.__proto__ || Object.getPrototypeOf(Login)).apply(this, arguments));
-    }
-
-    _createClass(Login, [{
-        key: 'logIn',
-        value: function logIn() {
-            var _refs = this.refs,
-                login_log = _refs.login_log,
-                login_pass = _refs.login_pass;
-            var loginUser = this.props.loginUser;
-
-            loginUser("in", login_log.value, login_pass.value);
-        }
-    }, {
-        key: 'render',
-        value: function render() {
-            var _this2 = this;
-
-            var _props = this.props,
-                login = _props.login,
-                userLogin = _props.userLogin,
-                alerts = _props.alerts;
-
-            if (userLogin === true) {
-                window.location.href = 'profile/me.html';
-            } else if (userLogin === "fail_login") {
-                alerts("Login or Email isn`t correct");
-            } else if (userLogin === "fail_password") {
-                alerts("Password isn`t correct");
-            }
-            return _react2.default.createElement(
-                'div',
-                { className: 'rendered-container' },
-                _react2.default.createElement(
-                    'div',
-                    { className: 'inputs' },
-                    _react2.default.createElement(
-                        'label',
-                        { htmlFor: 'login' },
-                        _react2.default.createElement('i', { className: 'icon-user' })
-                    ),
-                    _react2.default.createElement('input', {
-                        type: 'login',
-                        id: 'login',
-                        name: 'login',
-                        placeholder: login.inputLogin,
-                        ref: 'login_log'
-                    })
-                ),
-                _react2.default.createElement(
-                    'div',
-                    { className: 'inputs' },
-                    _react2.default.createElement(
-                        'label',
-                        { htmlFor: 'password' },
-                        _react2.default.createElement('i', { className: 'icon-unlock-alt' })
-                    ),
-                    _react2.default.createElement('input', {
-                        type: 'password',
-                        id: 'password',
-                        name: 'password',
-                        placeholder: login.inputPassword,
-                        ref: 'login_pass'
-                    })
-                ),
-                _react2.default.createElement(
-                    'div',
-                    { className: 'btn-ok', onClick: function onClick() {
-                            // console.log("ok");
-                            _this2.logIn();
-                        } },
-                    login.btnEnter
-                )
-            );
-        }
-    }]);
-
-    return Login;
-}(_react.Component);
-
-exports.default = Login;
-
-/***/ }),
-/* 320 */
-/***/ (function(module, exports, __webpack_require__) {
-
-"use strict";
-
-
-Object.defineProperty(exports, "__esModule", {
-    value: true
-});
-
-var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
-
-var _react = __webpack_require__(4);
-
-var _react2 = _interopRequireDefault(_react);
-
-function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
-
-function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
-
-function _possibleConstructorReturn(self, call) { if (!self) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return call && (typeof call === "object" || typeof call === "function") ? call : self; }
-
-function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
-
-var Registration = function (_Component) {
-    _inherits(Registration, _Component);
-
-    function Registration(props) {
-        _classCallCheck(this, Registration);
-
-        // props.addUser();
-        var _this = _possibleConstructorReturn(this, (Registration.__proto__ || Object.getPrototypeOf(Registration)).call(this, props));
-
-        _this.state = {
-            validate: {
-                login: false,
-                mail: false,
-                password: false,
-                repassword: false
-            }
-        };
-        return _this;
-    }
-
-    _createClass(Registration, [{
-        key: "registatrionFunc",
-        value: function registatrionFunc() {
-            var _refs = this.refs,
-                login = _refs.login,
-                email = _refs.email,
-                password = _refs.password,
-                check_legal = _refs.check_legal;
-            var validate = this.state.validate;
-            var _props = this.props,
-                alerts = _props.alerts,
-                addUser = _props.addUser;
-
-
-            var errorMsg = "You have errors in:";
-            for (var key in validate) {
-                if (validate.hasOwnProperty(key)) {
-                    if (validate[key] === false) {
-                        errorMsg = errorMsg + " " + key + ";";
-                    }
-                }
-            }
-            check_legal.checked === false ? errorMsg = errorMsg + " " + "did you confirm the legal?" : errorMsg;
-
-            if (errorMsg.length > 20) {
-                alerts(errorMsg);
-            } else {
-                addUser("checkLogin", login.value, email.value, password.value);
-                setTimeout(function () {
-                    window.location.href = 'profile/me.html';
-                }, 1200);
-            }
-        }
-    }, {
-        key: "Validate",
-        value: function Validate(type) {
-            var _refs2 = this.refs,
-                login = _refs2.login,
-                loginLabel = _refs2.loginLabel,
-                email = _refs2.email,
-                emailLabel = _refs2.emailLabel,
-                password = _refs2.password,
-                passwordLabel = _refs2.passwordLabel,
-                repassword = _refs2.repassword,
-                repasswordLabel = _refs2.repasswordLabel;
-            var validate = this.state.validate;
-
-
-            switch (type) {
-                case "login":
-                    var usernameRegex = /^[a-zA-Z0-9_]+$/;
-                    if (usernameRegex.test(login.value) && login.value.length > 2) {
-                        loginLabel.style.color = "green";
-                        login.style.borderBottomColor = "green";
-                        validate.login = true;
-                    } else {
-                        loginLabel.style.color = "red";
-                        login.style.borderBottomColor = "red";
-                        validate.login = false;
-                    }
-                    break;
-                case "mail":
-                    var re = /^(([^<>()[\]\\.,;:\s@\"]+(\.[^<>()[\]\\.,;:\s@\"]+)*)|(\".+\"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
-                    if (re.test(email.value)) {
-                        emailLabel.style.color = "green";
-                        email.style.borderBottomColor = "green";
-                        validate.mail = true;
-                    } else {
-                        emailLabel.style.color = "red";
-                        email.style.borderBottomColor = "red";
-                        validate.mail = false;
-                    }
-                    break;
-                case "pass":
-                    if (password.value.length >= 4) {
-                        passwordLabel.style.color = "green";
-                        password.style.borderBottomColor = "green";
-                        validate.password = true;
-                    } else {
-                        passwordLabel.style.color = "red";
-                        password.style.borderBottomColor = "red";
-                        validate.password = false;
-                    }
-                    break;
-                case "repass":
-                    if (repassword.value === password.value) {
-                        repasswordLabel.style.color = "green";
-                        repassword.style.borderBottomColor = "green";
-                        validate.repassword = true;
-                    } else {
-                        repasswordLabel.style.color = "red";
-                        repassword.style.borderBottomColor = "red";
-                        validate.repassword = false;
-                    }
-                    break;
-            }
-            this.setState({ validate: validate });
-        }
-    }, {
-        key: "setCookie",
-        value: function setCookie(name, value, options) {
-            options = options || {};
-
-            var expires = options.expires;
-            if (typeof expires === 'number' && expires) {
-                var date = new Date();
-                date.setTime(date.getTime() + expires * 1000 * 60 * 60);
-                expires = options.expires = date;
-            }
-            if (expires && expires.toUTCString()) {
-                options.expires = expires.toUTCString();
-            }
-            value = encodeURIComponent(value);
-            var updatedCookie = name + "=" + value;
-            for (var propName in options) {
-                updatedCookie += "; " + propName;
-                var propValue = options[propName];
-                if (propValue !== true) {
-                    updatedCookie += "=" + propValue;
-                }
-            }
-            document.cookie = updatedCookie;
-        }
-    }, {
-        key: "render",
-        value: function render() {
-            var _this2 = this;
-
-            var _props2 = this.props,
-                registration = _props2.registration,
-                userState = _props2.userState,
-                request = _props2.request,
-                alerts = _props2.alerts;
-
-            if (userState.length > 15) {
-                this.setCookie("user", userState, { expires: 350 });
-                alerts("all Ok");
-            } else if (userState === false) {
-                alerts("mail or login is using");
-            }
-            return _react2.default.createElement(
-                "div",
-                { className: "rendered-container" },
-                _react2.default.createElement(
-                    "div",
-                    { className: "inputs" },
-                    _react2.default.createElement(
-                        "label",
-                        { htmlFor: "login" },
-                        _react2.default.createElement("i", { className: "icon-user", ref: "loginLabel" })
-                    ),
-                    _react2.default.createElement("input", {
-                        onBlur: this.Validate.bind(this, "login"),
-                        type: "login",
-                        id: "login",
-                        name: "login",
-                        ref: "login",
-                        placeholder: registration.inputLogin })
-                ),
-                _react2.default.createElement(
-                    "div",
-                    { className: "inputs" },
-                    _react2.default.createElement(
-                        "label",
-                        { htmlFor: "email" },
-                        _react2.default.createElement("i", { className: "icon-at", ref: "emailLabel" })
-                    ),
-                    _react2.default.createElement("input", {
-                        onBlur: this.Validate.bind(this, "mail"),
-                        type: "email",
-                        name: "email",
-                        id: "email",
-                        ref: "email",
-                        placeholder: registration.inputEmail })
-                ),
-                _react2.default.createElement(
-                    "div",
-                    { className: "inputs" },
-                    _react2.default.createElement(
-                        "label",
-                        { htmlFor: "password" },
-                        _react2.default.createElement("i", { className: "icon-unlock-alt", ref: "passwordLabel" })
-                    ),
-                    _react2.default.createElement("input", {
-                        onBlur: this.Validate.bind(this, "pass"),
-                        type: "password",
-                        id: "password",
-                        name: "password",
-                        ref: "password",
-                        placeholder: registration.inputPassword })
-                ),
-                _react2.default.createElement(
-                    "div",
-                    { className: "inputs" },
-                    _react2.default.createElement(
-                        "label",
-                        { htmlFor: "repassword" },
-                        _react2.default.createElement("i", { className: "icon-unlock", ref: "repasswordLabel" })
-                    ),
-                    _react2.default.createElement("input", {
-                        onBlur: this.Validate.bind(this, "repass"),
-                        type: "password",
-                        name: "repassword",
-                        id: "repassword",
-                        ref: "repassword",
-                        placeholder: registration.inputRepeatPassword
-                    })
-                ),
-                _react2.default.createElement(
-                    "div",
-                    { className: "check" },
-                    _react2.default.createElement("input", {
-                        type: "checkbox",
-                        ref: "check_legal"
-                    }),
-                    _react2.default.createElement(
-                        "span",
-                        { className: "checkLegal" },
-                        registration.checkLegal
-                    )
-                ),
-                _react2.default.createElement(
-                    "div",
-                    { className: "btn-ok", onClick: function onClick() {
-                            _this2.registatrionFunc();
-                        } },
-                    registration.btnRegistration
-                )
-            );
-        }
-    }]);
-
-    return Registration;
-}(_react.Component);
-
-exports.default = Registration;
-
-/***/ }),
-/* 321 */
-/***/ (function(module, exports, __webpack_require__) {
-
-"use strict";
-
-
-Object.defineProperty(exports, "__esModule", {
-    value: true
-});
-
-var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
-
-var _react = __webpack_require__(4);
-
-var _react2 = _interopRequireDefault(_react);
-
-function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
-
-function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
-
-function _possibleConstructorReturn(self, call) { if (!self) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return call && (typeof call === "object" || typeof call === "function") ? call : self; }
-
-function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
-
-var ForgotPass = function (_Component) {
-    _inherits(ForgotPass, _Component);
-
-    function ForgotPass() {
-        _classCallCheck(this, ForgotPass);
-
-        return _possibleConstructorReturn(this, (ForgotPass.__proto__ || Object.getPrototypeOf(ForgotPass)).apply(this, arguments));
-    }
-
-    _createClass(ForgotPass, [{
-        key: "render",
-        value: function render() {
-            var forgot = this.props.forgot;
-
-            return _react2.default.createElement(
-                "div",
-                { className: "rendered-container" },
-                _react2.default.createElement(
-                    "p",
-                    { className: "text" },
-                    forgot.text
-                ),
-                _react2.default.createElement(
-                    "div",
-                    { className: "inputs" },
-                    _react2.default.createElement(
-                        "label",
-                        { htmlFor: "email" },
-                        _react2.default.createElement("i", { className: "icon-at" })
-                    ),
-                    _react2.default.createElement("input", { type: "email", name: "email", id: "email", placeholder: forgot.inputEmail })
-                ),
-                _react2.default.createElement(
-                    "div",
-                    { className: "btn-ok" },
-                    forgot.btnSend
-                )
-            );
-        }
-    }]);
-
-    return ForgotPass;
-}(_react.Component);
-
-exports.default = ForgotPass;
-
-/***/ }),
-/* 322 */
-/***/ (function(module, exports, __webpack_require__) {
-
-// style-loader: Adds some css to the DOM by adding a <style> tag
-
-// load the styles
-var content = __webpack_require__(323);
-if(typeof content === 'string') content = [[module.i, content, '']];
-// Prepare cssTransformation
-var transform;
-
-var options = {}
-options.transform = transform
-// add the styles to the DOM
-var update = __webpack_require__(35)(content, options);
-if(content.locals) module.exports = content.locals;
-// Hot Module Replacement
-if(false) {
-	// When the styles change, update the <style> tags
-	if(!content.locals) {
-		module.hot.accept("!!../../../node_modules/css-loader/index.js!../../../node_modules/sass-loader/lib/loader.js!./auth.scss", function() {
-			var newContent = require("!!../../../node_modules/css-loader/index.js!../../../node_modules/sass-loader/lib/loader.js!./auth.scss");
-			if(typeof newContent === 'string') newContent = [[module.id, newContent, '']];
-			update(newContent);
-		});
-	}
-	// When the module is disposed, remove the <style> tags
-	module.hot.dispose(function() { update(); });
-}
-
-/***/ }),
-/* 323 */
-/***/ (function(module, exports, __webpack_require__) {
-
-exports = module.exports = __webpack_require__(34)(undefined);
-// imports
-
-
-// module
-exports.push([module.i, ".auth {\n  position: fixed;\n  z-index: 101;\n  width: 100%;\n  height: 100%;\n  background: rgba(242, 242, 242, 0.9);\n  display: flex;\n  flex-direction: column;\n  justify-content: center;\n  align-items: center; }\n  .auth .close {\n    position: absolute;\n    right: -60px;\n    top: -60px;\n    font-size: 4em;\n    cursor: pointer;\n    color: #ffc02d; }\n  .auth .alerts {\n    display: none;\n    opacity: 0;\n    position: fixed;\n    right: 10px;\n    top: 15px;\n    border: 2px solid #fcf8e3;\n    min-width: 220px;\n    max-width: 300px;\n    padding: 10px;\n    min-height: 75px;\n    background-color: #e5c100;\n    z-index: 10000000000;\n    color: #8a6d3b;\n    border-radius: 5px;\n    font-size: 1.3em;\n    flex-direction: column;\n    justify-content: space-around;\n    align-items: center;\n    transition: .25s; }\n  .auth .auth-container {\n    position: relative;\n    min-width: 400px;\n    padding-bottom: 50px;\n    display: flex;\n    flex-direction: column;\n    align-items: center;\n    background: #f2f2f2;\n    color: white;\n    box-shadow: 0 0 10px black; }\n    .auth .auth-container .auth-head {\n      width: 100%;\n      /* padding: 9px 0; */\n      border-bottom: 2px solid #ffc02d;\n      box-shadow: 0 2px 10px black;\n      display: flex;\n      justify-content: space-between;\n      background: #d8d8d8;\n      font-size: 1.3em;\n      margin-bottom: 50px; }\n      .auth .auth-container .auth-head .btn {\n        padding: 10px 15px;\n        min-height: 100%;\n        cursor: pointer;\n        color: black;\n        -webkit-user-select: none;\n        -moz-user-select: none;\n        -ms-user-select: none;\n        user-select: none;\n        transition: .3s; }\n        .auth .auth-container .auth-head .btn:hover {\n          background-color: #ffc02d;\n          color: white; }\n      .auth .auth-container .auth-head .btn-active {\n        background: #ffc02d;\n        color: white; }\n      .auth .auth-container .auth-head .btn-login.btn-active {\n        box-shadow: 7px 0 8px 0 #aaa; }\n      .auth .auth-container .auth-head .btn-forgotPass.btn-active {\n        box-shadow: -7px 0 8px 0 #aaa; }\n      .auth .auth-container .auth-head .btn-registration.btn-active {\n        box-shadow: 0 0 0 0 transparent, 0 0 0 0 transparent, 7px 0 8px 0 #aaa, -7px 0 8px 0px #aaa; }\n    .auth .auth-container .auth-body {\n      color: black;\n      width: 100%;\n      min-height: calc(100% - 45px);\n      display: flex;\n      align-items: center;\n      justify-content: center; }\n      .auth .auth-container .auth-body .rendered-container {\n        width: 100%;\n        display: flex;\n        flex-direction: column;\n        align-items: center;\n        justify-content: center; }\n        .auth .auth-container .auth-body .rendered-container .text {\n          font-size: 1.3em;\n          margin-bottom: 30px;\n          letter-spacing: 2px; }\n        .auth .auth-container .auth-body .rendered-container .inputs {\n          display: flex;\n          width: 100%;\n          align-items: center;\n          justify-content: center; }\n          .auth .auth-container .auth-body .rendered-container .inputs:not(:last-child) {\n            margin-bottom: 25px; }\n          .auth .auth-container .auth-body .rendered-container .inputs label {\n            font-size: 1.3em;\n            padding: 0 5px;\n            color: #e5c100;\n            max-height: 28px;\n            margin-bottom: -15px;\n            margin-right: 5px;\n            cursor: pointer; }\n          .auth .auth-container .auth-body .rendered-container .inputs input {\n            height: 25px;\n            width: 80%;\n            border: none;\n            border-bottom: 2px solid #ffc02d;\n            background-color: #f2f2f2;\n            transition: .2s ease;\n            font-size: 1.2em;\n            padding-left: 4px; }\n            .auth .auth-container .auth-body .rendered-container .inputs input:focus {\n              outline: none;\n              border-bottom-color: #287685;\n              box-shadow: 0 4px 2px -2px grey; }\n        .auth .auth-container .auth-body .rendered-container .check {\n          margin-bottom: 15px; }\n        .auth .auth-container .auth-body .rendered-container .btn-ok {\n          text-transform: uppercase;\n          cursor: pointer;\n          padding: 7px 15px 2px;\n          border-radius: 5px;\n          background-color: #feaf00;\n          box-shadow: inset 0 0 4px black;\n          transition: .3s;\n          color: white; }\n          .auth .auth-container .auth-body .rendered-container .btn-ok:hover {\n            background-color: #ffc02d;\n            box-shadow: inset 0 0 2px black; }\n", ""]);
-
-// exports
-
-
-/***/ }),
-/* 324 */
-/***/ (function(module, exports, __webpack_require__) {
-
-// style-loader: Adds some css to the DOM by adding a <style> tag
-
-// load the styles
-var content = __webpack_require__(325);
-if(typeof content === 'string') content = [[module.i, content, '']];
-// Prepare cssTransformation
-var transform;
-
-var options = {}
-options.transform = transform
-// add the styles to the DOM
-var update = __webpack_require__(35)(content, options);
-if(content.locals) module.exports = content.locals;
-// Hot Module Replacement
-if(false) {
-	// When the styles change, update the <style> tags
-	if(!content.locals) {
-		module.hot.accept("!!../../node_modules/css-loader/index.js!../../node_modules/sass-loader/lib/loader.js!./main.scss", function() {
-			var newContent = require("!!../../node_modules/css-loader/index.js!../../node_modules/sass-loader/lib/loader.js!./main.scss");
-			if(typeof newContent === 'string') newContent = [[module.id, newContent, '']];
-			update(newContent);
-		});
-	}
-	// When the module is disposed, remove the <style> tags
-	module.hot.dispose(function() { update(); });
-}
-
-/***/ }),
-/* 325 */
-/***/ (function(module, exports, __webpack_require__) {
-
-exports = module.exports = __webpack_require__(34)(undefined);
-// imports
-
-
-// module
-exports.push([module.i, "@font-face {\n  font-family: 'Brusher';\n  src: url(" + __webpack_require__(127) + "); }\n\n@font-face {\n  font-family: 'HelveticaLight';\n  src: url(" + __webpack_require__(128) + "); }\n\n@font-face {\n  font-family: 'HelveticaBlack';\n  src: url(" + __webpack_require__(129) + "); }\n\n@font-face {\n  font-family: 'HelveticaBold';\n  src: url(" + __webpack_require__(130) + "); }\n\n@font-face {\n  font-family: 'HelveticaHeavy';\n  src: url(" + __webpack_require__(131) + "); }\n\nhtml {\n  padding: 0;\n  margin: 0; }\n  html body {\n    font-family: HelveticaLight;\n    padding: 0;\n    margin: 0;\n    background: #132a45; }\n    html body #mountNode {\n      display: flex;\n      justify-content: center;\n      background-size: 100%;\n      background-position-y: 40px;\n      background-repeat: no-repeat;\n      background-position-x: 50%; }\n      html body #mountNode .Main {\n        width: 100%;\n        height: 100%;\n        display: flex;\n        flex-direction: column;\n        align-items: center; }\n        html body #mountNode .Main .container {\n          width: 100%; }\n          html body #mountNode .Main .container .content {\n            display: flex;\n            flex-direction: column;\n            align-items: center; }\n            html body #mountNode .Main .container .content h1 {\n              font-family: HelveticaLight;\n              color: white;\n              letter-spacing: 3px;\n              text-transform: uppercase; }\n", ""]);
-
-// exports
-
-
-/***/ }),
+/* 312 */,
+/* 313 */,
+/* 314 */,
+/* 315 */,
+/* 316 */,
+/* 317 */,
+/* 318 */,
+/* 319 */,
+/* 320 */,
+/* 321 */,
+/* 322 */,
+/* 323 */,
+/* 324 */,
+/* 325 */,
 /* 326 */,
 /* 327 */,
 /* 328 */,
@@ -29182,12 +27690,329 @@ exports.push([module.i, "@font-face {\n  font-family: 'Brusher';\n  src: url(" +
 /* 360 */,
 /* 361 */,
 /* 362 */,
-/* 363 */,
-/* 364 */,
-/* 365 */,
-/* 366 */,
-/* 367 */,
-/* 368 */,
+/* 363 */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+
+
+Object.defineProperty(exports, "__esModule", {
+    value: true
+});
+exports.getGenInfo = getGenInfo;
+exports.setGenerally = setGenerally;
+exports.getUsers = getUsers;
+exports.setCoinsToUser = setCoinsToUser;
+exports.getPackages = getPackages;
+exports.setNewPackVal = setNewPackVal;
+
+var _axios = __webpack_require__(66);
+
+var _axios2 = _interopRequireDefault(_axios);
+
+var _actionsAndUrl = __webpack_require__(123);
+
+function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+function getGenInfo(type) {
+    return function (dispatch) {
+        dispatch({ type: 'REQUEST' });
+
+        _axios2.default.get(_actionsAndUrl.GLOB_URL + 'getGenerally.php', { params: { type: type } }).then(function (res) {
+            dispatch({
+                type: _actionsAndUrl.act.GET_GEN_INFO,
+                info: res.data
+            });
+        }).catch(function (error) {
+            console.log(error);
+        });
+    };
+}
+
+function setGenerally(type, newValue) {
+    return function (dispatch) {
+        dispatch({ type: 'REQUEST' });
+
+        _axios2.default.post(_actionsAndUrl.GLOB_URL + 'setGenerally.php', {
+            type: type,
+            newValue: newValue
+        }).then(function (res) {
+            dispatch({ type: _actionsAndUrl.act.SET_GEN_INFO, updated: res.data });
+        }).catch(function (error) {
+            console.log(error);
+        });
+    };
+}
+
+function getUsers(type) {
+    return function (dispatch) {
+        dispatch({ type: 'REQUEST' });
+
+        _axios2.default.get(_actionsAndUrl.GLOB_URL + 'getUsers.php', { params: { type: type } }).then(function (res) {
+            // console.log(res);
+            dispatch({ type: _actionsAndUrl.act.GET_USERS_INFO, users: res.data });
+        }).catch(function (error) {
+            console.log(error);
+        });
+    };
+}
+function setCoinsToUser(type, hash, coins) {
+    return function (dispatch) {
+        dispatch({ type: 'REQUEST' });
+
+        _axios2.default.post(_actionsAndUrl.GLOB_URL + 'setCoinsToUser.php', {
+            type: type,
+            hash: hash,
+            coins: coins
+        }).then(function (res) {
+            console.log(res);
+            dispatch({ type: _actionsAndUrl.act.SET_GEN_INFO, updated: res.data });
+        }).catch(function (error) {
+            console.log(error);
+        });
+    };
+}
+
+function getPackages(type) {
+    return function (dispatch) {
+        dispatch({ type: 'REQUEST' });
+
+        _axios2.default.get(_actionsAndUrl.GLOB_URL + 'getPack.php', { params: { type: type } }).then(function (res) {
+            // console.log(res);
+            dispatch({ type: _actionsAndUrl.act.GET_PACKAGES_INFO, packages: res.data });
+        }).catch(function (error) {
+            console.log(error);
+        });
+    };
+}
+
+function setNewPackVal(type, id, name, cost, status) {
+    return function (dispatch) {
+        dispatch({ type: 'REQUEST' });
+
+        _axios2.default.post(_actionsAndUrl.GLOB_URL + 'setNewPackValue.php', {
+            type: type,
+            id: id,
+            name: name,
+            cost: cost,
+            status: status
+        }).then(function (res) {
+            // console.log(res);
+            dispatch({ type: _actionsAndUrl.act.SET_GEN_INFO, updated: res.data });
+        }).catch(function (error) {
+            console.log(error);
+        });
+    };
+}
+
+/***/ }),
+/* 364 */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+
+
+Object.defineProperty(exports, "__esModule", {
+    value: true
+});
+
+var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
+
+var _react = __webpack_require__(4);
+
+var _react2 = _interopRequireDefault(_react);
+
+var _header = __webpack_require__(365);
+
+var _header2 = _interopRequireDefault(_header);
+
+function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
+
+function _possibleConstructorReturn(self, call) { if (!self) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return call && (typeof call === "object" || typeof call === "function") ? call : self; }
+
+function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
+
+var Header = function (_Component) {
+    _inherits(Header, _Component);
+
+    function Header() {
+        _classCallCheck(this, Header);
+
+        return _possibleConstructorReturn(this, (Header.__proto__ || Object.getPrototypeOf(Header)).apply(this, arguments));
+    }
+
+    _createClass(Header, [{
+        key: 'render',
+        value: function render() {
+            return _react2.default.createElement(
+                'div',
+                { className: 'header' },
+                _react2.default.createElement(
+                    'div',
+                    { className: 'head' },
+                    _react2.default.createElement(
+                        'h1',
+                        null,
+                        'Admin Panel'
+                    )
+                ),
+                _react2.default.createElement(
+                    'div',
+                    { className: 'menu' },
+                    _react2.default.createElement(
+                        'a',
+                        { href: 'users.html' },
+                        _react2.default.createElement(
+                            'div',
+                            { className: '' },
+                            '\u041F\u043E\u043B\u044C\u0437\u043E\u0432\u0430\u0442\u0435\u043B\u0438'
+                        )
+                    ),
+                    _react2.default.createElement(
+                        'a',
+                        { href: 'packages.html' },
+                        _react2.default.createElement(
+                            'div',
+                            { className: '' },
+                            '\u041F\u0430\u043A\u0435\u0442\u044B'
+                        )
+                    ),
+                    _react2.default.createElement(
+                        'a',
+                        { href: 'generally.html' },
+                        _react2.default.createElement(
+                            'div',
+                            { className: '' },
+                            '\u041E\u0441\u043D\u043E\u0432\u043D\u043E\u0435'
+                        )
+                    ),
+                    _react2.default.createElement(
+                        'a',
+                        { href: '' },
+                        _react2.default.createElement(
+                            'div',
+                            { className: '' },
+                            '\u041D\u043E\u0432\u043E\u0441\u0442\u0438'
+                        )
+                    )
+                ),
+                _react2.default.createElement(
+                    'div',
+                    { className: 'enter' },
+                    _react2.default.createElement(
+                        'div',
+                        { className: 'login', onClick: function onClick() {
+                                document.cookie = 'hash=;expires=Thu, 01 Jan 1970 00:00:01 GMT;';
+                                document.cookie = 'name=;expires=Thu, 01 Jan 1970 00:00:01 GMT;';
+                                document.cookie = 'id=;expires=Thu, 01 Jan 1970 00:00:01 GMT;';
+                                // window.location.href = 'index.html';
+                            } },
+                        _react2.default.createElement('i', { className: 'icon-power' }),
+                        '\u0412\u044B\u0439\u0442\u0438'
+                    )
+                )
+            );
+        }
+    }]);
+
+    return Header;
+}(_react.Component);
+
+exports.default = Header;
+
+/***/ }),
+/* 365 */
+/***/ (function(module, exports, __webpack_require__) {
+
+// style-loader: Adds some css to the DOM by adding a <style> tag
+
+// load the styles
+var content = __webpack_require__(366);
+if(typeof content === 'string') content = [[module.i, content, '']];
+// Prepare cssTransformation
+var transform;
+
+var options = {}
+options.transform = transform
+// add the styles to the DOM
+var update = __webpack_require__(35)(content, options);
+if(content.locals) module.exports = content.locals;
+// Hot Module Replacement
+if(false) {
+	// When the styles change, update the <style> tags
+	if(!content.locals) {
+		module.hot.accept("!!../../../node_modules/css-loader/index.js!../../../node_modules/sass-loader/lib/loader.js!./header.scss", function() {
+			var newContent = require("!!../../../node_modules/css-loader/index.js!../../../node_modules/sass-loader/lib/loader.js!./header.scss");
+			if(typeof newContent === 'string') newContent = [[module.id, newContent, '']];
+			update(newContent);
+		});
+	}
+	// When the module is disposed, remove the <style> tags
+	module.hot.dispose(function() { update(); });
+}
+
+/***/ }),
+/* 366 */
+/***/ (function(module, exports, __webpack_require__) {
+
+exports = module.exports = __webpack_require__(34)(undefined);
+// imports
+
+
+// module
+exports.push([module.i, "@font-face {\n  font-family: 'Brusher';\n  src: url(" + __webpack_require__(127) + "); }\n\n@font-face {\n  font-family: 'HelveticaLight';\n  src: url(" + __webpack_require__(128) + "); }\n\n@font-face {\n  font-family: 'HelveticaBlack';\n  src: url(" + __webpack_require__(129) + "); }\n\n@font-face {\n  font-family: 'HelveticaBold';\n  src: url(" + __webpack_require__(130) + "); }\n\n@font-face {\n  font-family: 'HelveticaHeavy';\n  src: url(" + __webpack_require__(131) + "); }\n\n.header {\n  background-color: #17252e;\n  font-family: HelveticaLight;\n  color: white;\n  display: flex;\n  flex-direction: row;\n  justify-content: center;\n  align-items: center;\n  text-align: center;\n  width: 100%;\n  position: fixed;\n  top: 0;\n  left: 0;\n  z-index: 100; }\n  .header .head {\n    padding-right: 2.5%;\n    box-shadow: inset -10px 0 10px -7px black;\n    margin-right: 3.5%;\n    margin-left: -10%; }\n    .header .head h1 {\n      font-size: 36px;\n      margin-top: 20px;\n      margin-bottom: 10px;\n      font-weight: 500;\n      line-height: 1.1;\n      color: inherit; }\n  .header .menu {\n    display: flex;\n    justify-content: space-around; }\n    .header .menu a {\n      text-decoration: none;\n      margin-right: 20px;\n      color: white;\n      transition: .2s; }\n      .header .menu a div {\n        cursor: pointer;\n        padding: 10px;\n        text-align: center;\n        background-color: #1e3543;\n        border-radius: 5px;\n        box-shadow: 0 0 15px black;\n        transition: .2s; }\n        .header .menu a div:hover {\n          background-color: #1e3d4b;\n          box-shadow: 0 0 35px black; }\n      .header .menu a:hover {\n        color: #b7b7b7; }\n      .header .menu a:last-child {\n        margin-right: 0; }\n  .header .user {\n    position: absolute;\n    right: 5%;\n    margin-right: 130px;\n    justify-content: center;\n    display: flex;\n    align-items: center;\n    flex-direction: row-reverse;\n    font-family: HelveticaBold; }\n    .header .user .user_icon {\n      width: 50px;\n      margin-left: 15px; }\n  .header .enter {\n    position: absolute;\n    right: 5%;\n    display: flex; }\n    .header .enter .login {\n      cursor: pointer;\n      padding: 10px 20px;\n      border-radius: 5px;\n      background-color: #151f24;\n      box-shadow: inset 0 0 4px black;\n      transition: .2s;\n      display: flex;\n      align-items: center; }\n      .header .enter .login i {\n        font-size: 1.5em;\n        margin-right: 5px; }\n      .header .enter .login:hover {\n        background-color: #1b2429;\n        box-shadow: inset 0 0 1px black; }\n  .header .exit {\n    cursor: pointer;\n    padding: 10px 20px;\n    border-radius: 5px;\n    background-color: #151f24;\n    box-shadow: inset 0 0 4px black;\n    transition: .2s; }\n    .header .exit:hover {\n      background-color: #1b2429;\n      box-shadow: inset 0 0 1px black; }\n", ""]);
+
+// exports
+
+
+/***/ }),
+/* 367 */
+/***/ (function(module, exports, __webpack_require__) {
+
+// style-loader: Adds some css to the DOM by adding a <style> tag
+
+// load the styles
+var content = __webpack_require__(368);
+if(typeof content === 'string') content = [[module.i, content, '']];
+// Prepare cssTransformation
+var transform;
+
+var options = {}
+options.transform = transform
+// add the styles to the DOM
+var update = __webpack_require__(35)(content, options);
+if(content.locals) module.exports = content.locals;
+// Hot Module Replacement
+if(false) {
+	// When the styles change, update the <style> tags
+	if(!content.locals) {
+		module.hot.accept("!!../../../node_modules/css-loader/index.js!../../../node_modules/sass-loader/lib/loader.js!./main.scss", function() {
+			var newContent = require("!!../../../node_modules/css-loader/index.js!../../../node_modules/sass-loader/lib/loader.js!./main.scss");
+			if(typeof newContent === 'string') newContent = [[module.id, newContent, '']];
+			update(newContent);
+		});
+	}
+	// When the module is disposed, remove the <style> tags
+	module.hot.dispose(function() { update(); });
+}
+
+/***/ }),
+/* 368 */
+/***/ (function(module, exports, __webpack_require__) {
+
+exports = module.exports = __webpack_require__(34)(undefined);
+// imports
+
+
+// module
+exports.push([module.i, "body {\n  background-color: #f2f5f6;\n  margin: 0; }\n  body .admin {\n    font-family: HelveticaLight; }\n    body .admin .container {\n      width: 100%;\n      height: 100%;\n      background-color: #f2f5f6;\n      display: flex;\n      justify-content: center;\n      padding-top: 85px; }\n      body .admin .container .load {\n        background-color: rgba(242, 245, 246, 0.8);\n        color: #c7cfd1;\n        position: absolute;\n        left: 8px;\n        width: 98.8%;\n        height: calc(100% - 75px);\n        font-size: 5em;\n        display: flex;\n        align-items: center;\n        justify-content: center; }\n      body .admin .container .content {\n        min-height: 80vh;\n        width: 80%;\n        background-color: white;\n        margin-bottom: 25px;\n        margin-top: 15px; }\n        body .admin .container .content h1 {\n          margin-left: 30px; }\n", ""]);
+
+// exports
+
+
+/***/ }),
 /* 369 */,
 /* 370 */,
 /* 371 */,
@@ -29362,7 +28187,324 @@ exports.push([module.i, "@font-face {\n  font-family: 'Brusher';\n  src: url(" +
 /* 540 */,
 /* 541 */,
 /* 542 */,
-/* 543 */
+/* 543 */,
+/* 544 */,
+/* 545 */,
+/* 546 */,
+/* 547 */,
+/* 548 */,
+/* 549 */,
+/* 550 */,
+/* 551 */,
+/* 552 */,
+/* 553 */,
+/* 554 */,
+/* 555 */,
+/* 556 */,
+/* 557 */,
+/* 558 */,
+/* 559 */,
+/* 560 */,
+/* 561 */,
+/* 562 */,
+/* 563 */,
+/* 564 */,
+/* 565 */,
+/* 566 */,
+/* 567 */,
+/* 568 */,
+/* 569 */,
+/* 570 */,
+/* 571 */,
+/* 572 */,
+/* 573 */,
+/* 574 */,
+/* 575 */,
+/* 576 */,
+/* 577 */,
+/* 578 */,
+/* 579 */,
+/* 580 */,
+/* 581 */,
+/* 582 */,
+/* 583 */,
+/* 584 */,
+/* 585 */,
+/* 586 */,
+/* 587 */,
+/* 588 */,
+/* 589 */,
+/* 590 */,
+/* 591 */,
+/* 592 */,
+/* 593 */,
+/* 594 */,
+/* 595 */,
+/* 596 */,
+/* 597 */,
+/* 598 */,
+/* 599 */,
+/* 600 */,
+/* 601 */,
+/* 602 */,
+/* 603 */,
+/* 604 */,
+/* 605 */,
+/* 606 */,
+/* 607 */,
+/* 608 */,
+/* 609 */,
+/* 610 */,
+/* 611 */,
+/* 612 */,
+/* 613 */,
+/* 614 */,
+/* 615 */,
+/* 616 */,
+/* 617 */,
+/* 618 */,
+/* 619 */,
+/* 620 */,
+/* 621 */,
+/* 622 */,
+/* 623 */,
+/* 624 */,
+/* 625 */,
+/* 626 */,
+/* 627 */,
+/* 628 */,
+/* 629 */,
+/* 630 */,
+/* 631 */,
+/* 632 */,
+/* 633 */,
+/* 634 */,
+/* 635 */,
+/* 636 */,
+/* 637 */,
+/* 638 */,
+/* 639 */,
+/* 640 */,
+/* 641 */,
+/* 642 */,
+/* 643 */,
+/* 644 */,
+/* 645 */,
+/* 646 */,
+/* 647 */,
+/* 648 */,
+/* 649 */,
+/* 650 */,
+/* 651 */,
+/* 652 */,
+/* 653 */,
+/* 654 */,
+/* 655 */,
+/* 656 */,
+/* 657 */,
+/* 658 */,
+/* 659 */,
+/* 660 */,
+/* 661 */,
+/* 662 */,
+/* 663 */,
+/* 664 */,
+/* 665 */,
+/* 666 */,
+/* 667 */,
+/* 668 */,
+/* 669 */,
+/* 670 */,
+/* 671 */,
+/* 672 */,
+/* 673 */,
+/* 674 */,
+/* 675 */,
+/* 676 */,
+/* 677 */,
+/* 678 */,
+/* 679 */,
+/* 680 */,
+/* 681 */,
+/* 682 */,
+/* 683 */,
+/* 684 */,
+/* 685 */,
+/* 686 */,
+/* 687 */,
+/* 688 */,
+/* 689 */,
+/* 690 */,
+/* 691 */,
+/* 692 */,
+/* 693 */,
+/* 694 */,
+/* 695 */,
+/* 696 */,
+/* 697 */,
+/* 698 */,
+/* 699 */,
+/* 700 */,
+/* 701 */,
+/* 702 */,
+/* 703 */,
+/* 704 */,
+/* 705 */,
+/* 706 */,
+/* 707 */,
+/* 708 */,
+/* 709 */,
+/* 710 */,
+/* 711 */,
+/* 712 */,
+/* 713 */,
+/* 714 */,
+/* 715 */,
+/* 716 */,
+/* 717 */,
+/* 718 */,
+/* 719 */,
+/* 720 */,
+/* 721 */,
+/* 722 */,
+/* 723 */,
+/* 724 */,
+/* 725 */,
+/* 726 */,
+/* 727 */,
+/* 728 */,
+/* 729 */,
+/* 730 */,
+/* 731 */,
+/* 732 */,
+/* 733 */,
+/* 734 */,
+/* 735 */,
+/* 736 */,
+/* 737 */,
+/* 738 */,
+/* 739 */,
+/* 740 */,
+/* 741 */,
+/* 742 */,
+/* 743 */,
+/* 744 */,
+/* 745 */,
+/* 746 */,
+/* 747 */,
+/* 748 */,
+/* 749 */,
+/* 750 */,
+/* 751 */,
+/* 752 */,
+/* 753 */,
+/* 754 */,
+/* 755 */,
+/* 756 */,
+/* 757 */,
+/* 758 */,
+/* 759 */,
+/* 760 */,
+/* 761 */,
+/* 762 */,
+/* 763 */,
+/* 764 */,
+/* 765 */,
+/* 766 */,
+/* 767 */,
+/* 768 */,
+/* 769 */,
+/* 770 */,
+/* 771 */,
+/* 772 */,
+/* 773 */,
+/* 774 */,
+/* 775 */,
+/* 776 */,
+/* 777 */,
+/* 778 */,
+/* 779 */,
+/* 780 */,
+/* 781 */,
+/* 782 */,
+/* 783 */,
+/* 784 */,
+/* 785 */,
+/* 786 */,
+/* 787 */,
+/* 788 */,
+/* 789 */,
+/* 790 */,
+/* 791 */,
+/* 792 */,
+/* 793 */,
+/* 794 */,
+/* 795 */,
+/* 796 */,
+/* 797 */,
+/* 798 */,
+/* 799 */,
+/* 800 */,
+/* 801 */,
+/* 802 */,
+/* 803 */,
+/* 804 */,
+/* 805 */,
+/* 806 */,
+/* 807 */,
+/* 808 */,
+/* 809 */,
+/* 810 */,
+/* 811 */,
+/* 812 */,
+/* 813 */,
+/* 814 */,
+/* 815 */,
+/* 816 */,
+/* 817 */,
+/* 818 */,
+/* 819 */,
+/* 820 */,
+/* 821 */,
+/* 822 */,
+/* 823 */,
+/* 824 */,
+/* 825 */,
+/* 826 */,
+/* 827 */,
+/* 828 */,
+/* 829 */,
+/* 830 */,
+/* 831 */,
+/* 832 */,
+/* 833 */,
+/* 834 */,
+/* 835 */,
+/* 836 */,
+/* 837 */,
+/* 838 */,
+/* 839 */,
+/* 840 */,
+/* 841 */,
+/* 842 */,
+/* 843 */,
+/* 844 */,
+/* 845 */,
+/* 846 */,
+/* 847 */,
+/* 848 */,
+/* 849 */,
+/* 850 */,
+/* 851 */,
+/* 852 */,
+/* 853 */,
+/* 854 */,
+/* 855 */,
+/* 856 */,
+/* 857 */,
+/* 858 */,
+/* 859 */,
+/* 860 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -29386,15 +28528,15 @@ var _reducers = __webpack_require__(258);
 
 var _reducers2 = _interopRequireDefault(_reducers);
 
-var _main = __webpack_require__(544);
+var _packages = __webpack_require__(861);
+
+var _packages2 = _interopRequireDefault(_packages);
+
+var _main = __webpack_require__(367);
 
 var _main2 = _interopRequireDefault(_main);
 
-var _main3 = __webpack_require__(324);
-
-var _main4 = _interopRequireDefault(_main3);
-
-var _index = __webpack_require__(550);
+var _index = __webpack_require__(864);
 
 var _index2 = _interopRequireDefault(_index);
 
@@ -29406,11 +28548,11 @@ var store = (0, _redux.createStore)(_reducers2.default, (0, _redux.applyMiddlewa
 (0, _reactDom.render)(_react2.default.createElement(
     _reactRedux.Provider,
     { store: store },
-    _react2.default.createElement(_main2.default, null)
+    _react2.default.createElement(_packages2.default, null)
 ), init);
 
 /***/ }),
-/* 544 */
+/* 861 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -29426,27 +28568,26 @@ var _react2 = _interopRequireDefault(_react);
 
 var _reactRedux = __webpack_require__(102);
 
-var _frontActions = __webpack_require__(122);
+var _adminActions = __webpack_require__(363);
 
-var _App = __webpack_require__(545);
+var _App = __webpack_require__(862);
 
 var _App2 = _interopRequireDefault(_App);
 
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
 var mapStateToProps = function mapStateToProps(state) {
-    return state.front;
+    return state.admin;
 };
 
 exports.default = (0, _reactRedux.connect)(mapStateToProps, {
-    setLanguage: _frontActions.setLanguage,
-    addUser: _frontActions.addUser,
-    loginUser: _frontActions.loginUser,
-    getCoinsInfo: _frontActions.getCoinsInfo
+    getPackages: _adminActions.getPackages,
+    setNewPackVal: _adminActions.setNewPackVal
+
 })(_App2.default);
 
 /***/ }),
-/* 545 */
+/* 862 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -29462,29 +28603,15 @@ var _react = __webpack_require__(4);
 
 var _react2 = _interopRequireDefault(_react);
 
-var _translate = __webpack_require__(285);
-
-var _translate2 = _interopRequireDefault(_translate);
-
 var _styles = __webpack_require__(118);
 
 var _styles2 = _interopRequireDefault(_styles);
 
-var _links = __webpack_require__(69);
-
-var _Header = __webpack_require__(312);
+var _Header = __webpack_require__(364);
 
 var _Header2 = _interopRequireDefault(_Header);
 
-var _Footer = __webpack_require__(315);
-
-var _Footer2 = _interopRequireDefault(_Footer);
-
-var _auth = __webpack_require__(318);
-
-var _auth2 = _interopRequireDefault(_auth);
-
-var _Container = __webpack_require__(546);
+var _Container = __webpack_require__(863);
 
 var _Container2 = _interopRequireDefault(_Container);
 
@@ -29505,90 +28632,64 @@ var App = function (_Component) {
         var _this = _possibleConstructorReturn(this, (App.__proto__ || Object.getPrototypeOf(App)).call(this, props));
 
         _this.state = {
-            language: props.language || "ru",
-            auth: false
+            user: _this.getCookie("user")
         };
-        props.getCoinsInfo("coinsInfo");
+        // if(this.state.user === undefined){
+        //     window.location.href = '../index.html';
+        // }else if(this.state.user.length < 15){
+        //     window.location.href = '../index.html';
+        // }
+        props.getPackages('getPackInfo');
+
         return _this;
     }
 
     _createClass(App, [{
-        key: "toggleAuth",
-        value: function toggleAuth(auth) {
-            this.setState({
-                auth: auth
-            });
+        key: 'getCookie',
+        value: function getCookie(name) {
+            var matches = document.cookie.match(new RegExp("(?:^|; )" + name.replace(/([\.$?*|{}\(\)\[\]\\\/\+^])/g, '\\$1') + "=([^;]*)"));
+            return matches ? decodeURIComponent(matches[1]) : undefined;
         }
     }, {
-        key: "render",
+        key: 'setNewValueForPackage',
+        value: function setNewValueForPackage(id) {
+            var setNewPackVal = this.props.setNewPackVal;
+
+
+            var packName = document.getElementById('packName' + id);
+            var packCost = document.getElementById('packCost' + id);
+
+            var end = document.getElementById('end' + id);
+            var start = document.getElementById('start' + id);
+            var wait = document.getElementById('wait' + id);
+
+            var status = "";
+            var arr = [end, start, wait];
+            for (var i = 0; i < 3; i++) {
+                if (arr[i].checked === true) {
+                    status = arr[i].value;
+                }
+            }
+
+            setNewPackVal("setNewPackVal", id, packName.value, packCost.value, status);
+        }
+    }, {
+        key: 'render',
         value: function render() {
             var _props = this.props,
-                setLanguage = _props.setLanguage,
-                addUser = _props.addUser,
-                loginUser = _props.loginUser,
-                userState = _props.userState,
-                request = _props.request,
-                userLogin = _props.userLogin,
-                soldCoins = _props.soldCoins,
-                maxCoins = _props.maxCoins;
-            var _state = this.state,
-                language = _state.language,
-                auth = _state.auth;
+                packages = _props.packages,
+                updated = _props.updated;
 
 
-            var lang = _translate2.default.filter(function (item) {
-                return item.language === language;
-            });
-            var pages = lang[0].pages;
-            var layouts = lang[0].layouts;
-
-
-            var body = document.body;
-            var style = {};
-            if (auth) {
-                body.style.overflow = "hidden";
-                style = {
-                    display: "flex",
-                    opacity: 1
-                };
-            } else {
-                body.style.overflow = "auto";
-                style = {
-                    opacity: 0,
-                    display: "none"
-
-                };
-            }
-            var mount = document.getElementById("mountNode");
-            mount.style.backgroundImage = "url(" + _links.BG_COIN + ")";
             return _react2.default.createElement(
-                "div",
-                { className: "Main" },
-                _react2.default.createElement(_auth2.default, {
-                    auth: layouts.auth,
-                    toggleAuth: this.toggleAuth.bind(this),
-                    style: style,
-                    addUser: addUser,
-                    userState: userState,
-                    request: request,
-                    loginUser: loginUser,
-                    userLogin: userLogin
-                }),
-                _react2.default.createElement(_Header2.default, {
-                    main: true,
-                    setLanguage: setLanguage,
-                    toggleAuth: this.toggleAuth.bind(this)
-                }),
-                _react2.default.createElement(
-                    "div",
-                    { className: "container" },
-                    _react2.default.createElement(_Container2.default, {
-                        pages: pages.main,
-                        soldCoins: soldCoins,
-                        maxCoins: maxCoins
-                    })
-                ),
-                _react2.default.createElement(_Footer2.default, { footer: layouts.footer })
+                'div',
+                { className: 'admin' },
+                _react2.default.createElement(_Header2.default, null),
+                _react2.default.createElement(_Container2.default, {
+                    packages: packages,
+                    update: this.setNewValueForPackage.bind(this),
+                    updated: updated
+                })
             );
         }
     }]);
@@ -29597,9 +28698,10 @@ var App = function (_Component) {
 }(_react.Component);
 
 exports.default = App;
+;
 
 /***/ }),
-/* 546 */
+/* 863 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -29614,18 +28716,6 @@ var _createClass = function () { function defineProperties(target, props) { for 
 var _react = __webpack_require__(4);
 
 var _react2 = _interopRequireDefault(_react);
-
-var _Top = __webpack_require__(547);
-
-var _Top2 = _interopRequireDefault(_Top);
-
-var _Progress = __webpack_require__(548);
-
-var _Progress2 = _interopRequireDefault(_Progress);
-
-var _TableSplits = __webpack_require__(549);
-
-var _TableSplits2 = _interopRequireDefault(_TableSplits);
 
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
@@ -29638,31 +28728,146 @@ function _inherits(subClass, superClass) { if (typeof superClass !== "function" 
 var Container = function (_Component) {
     _inherits(Container, _Component);
 
-    function Container() {
+    function Container(props) {
         _classCallCheck(this, Container);
 
-        return _possibleConstructorReturn(this, (Container.__proto__ || Object.getPrototypeOf(Container)).apply(this, arguments));
+        var _this = _possibleConstructorReturn(this, (Container.__proto__ || Object.getPrototypeOf(Container)).call(this, props));
+
+        _this.state = {
+            // packages: []
+        };
+        return _this;
     }
 
     _createClass(Container, [{
-        key: 'render',
+        key: "componentWillReceiveProps",
+        value: function componentWillReceiveProps(nextProps) {
+            // const { users } = nextProps;
+        }
+    }, {
+        key: "goAlert",
+        value: function goAlert(text, isOk) {
+            var pushAlert = document.getElementById("alert");
+            pushAlert.innerHTML = text;
+            if (isOk) {
+                pushAlert.style.backgroundColor = "greenyellow";
+            } else {
+                pushAlert.style.backgroundColor = "red";
+            }
+
+            pushAlert.style.display = "block";
+            pushAlert.style.opacity = 1;
+
+            setTimeout(function () {
+                pushAlert.style.opacity = 0;
+            }, 300);
+            setTimeout(function () {
+                pushAlert.style.display = "none";
+            }, 1700);
+        }
+    }, {
+        key: "render",
         value: function render() {
             var _props = this.props,
-                pages = _props.pages,
-                maxCoins = _props.maxCoins,
-                soldCoins = _props.soldCoins;
+                packages = _props.packages,
+                update = _props.update,
+                updated = _props.updated;
 
 
+            if (updated === "newValOk") {
+                this.goAlert("СОХРАНЕНО", true);
+            } else if (updated === false) {
+                this.goAlert("НЕ СОХРАНЕНО", false);
+            }
+
+            var packContainer = packages.map(function (item, index) {
+                return _react2.default.createElement(
+                    "div",
+                    { className: "newPack", key: index },
+                    _react2.default.createElement(
+                        "span",
+                        { className: "id" },
+                        item.id
+                    ),
+                    _react2.default.createElement("input", { type: "text", defaultValue: item.name, id: "packName" + item.id }),
+                    _react2.default.createElement("input", { type: "number", defaultValue: item.cost, id: "packCost" + item.id }),
+                    _react2.default.createElement("input", { type: "number", defaultValue: item.coins, disabled: true }),
+                    _react2.default.createElement(
+                        "span",
+                        { className: "radios", id: "packStatus" + item.id },
+                        _react2.default.createElement(
+                            "span",
+                            { className: "status" },
+                            "Status:"
+                        ),
+                        _react2.default.createElement("input", {
+                            type: "radio",
+                            id: "end" + item.id,
+                            name: "status" + item.id,
+                            value: "end",
+                            defaultChecked: item.status === "end" ? "checked" : ""
+                        }),
+                        _react2.default.createElement(
+                            "label",
+                            { htmlFor: "end" + item.id },
+                            "End"
+                        ),
+                        _react2.default.createElement("input", {
+                            type: "radio",
+                            id: "start" + item.id,
+                            name: "status" + item.id,
+                            value: "start",
+                            defaultChecked: item.status === "start" ? "checked" : ""
+                        }),
+                        _react2.default.createElement(
+                            "label",
+                            { htmlFor: "start" + item.id },
+                            "Start"
+                        ),
+                        _react2.default.createElement("input", {
+                            type: "radio",
+                            id: "wait" + item.id,
+                            name: "status" + item.id,
+                            value: "wait",
+                            defaultChecked: item.status === "wait" ? "checked" : ""
+                        }),
+                        _react2.default.createElement(
+                            "label",
+                            { htmlFor: "wait" + item.id },
+                            "Wait"
+                        )
+                    ),
+                    _react2.default.createElement(
+                        "div",
+                        { className: "btn-save", onClick: function onClick() {
+                                update(item.id);
+                            } },
+                        "\u0421\u043E\u0445\u0440\u0430\u043D\u0438\u0442\u044C"
+                    )
+                );
+            });
             return _react2.default.createElement(
-                'div',
-                { className: 'content' },
-                _react2.default.createElement(_Top2.default, { pages: pages.top }),
-                _react2.default.createElement(_Progress2.default, {
-                    pages: pages.progress,
-                    maxCoins: maxCoins,
-                    soldCoins: soldCoins
-                }),
-                _react2.default.createElement(_TableSplits2.default, { info: pages.table })
+                "div",
+                { className: "container" },
+                _react2.default.createElement(
+                    "div",
+                    { className: "content" },
+                    _react2.default.createElement(
+                        "h1",
+                        null,
+                        "Packages"
+                    ),
+                    _react2.default.createElement(
+                        "div",
+                        { className: "packages-container" },
+                        packContainer
+                    ),
+                    _react2.default.createElement(
+                        "div",
+                        { id: "alert" },
+                        "\u0421\u043E\u0445\u0440\u0430\u043D\u0435\u043D\u043E!"
+                    )
+                )
             );
         }
     }]);
@@ -29673,345 +28878,13 @@ var Container = function (_Component) {
 exports.default = Container;
 
 /***/ }),
-/* 547 */
-/***/ (function(module, exports, __webpack_require__) {
-
-"use strict";
-
-
-Object.defineProperty(exports, "__esModule", {
-    value: true
-});
-
-var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
-
-var _react = __webpack_require__(4);
-
-var _react2 = _interopRequireDefault(_react);
-
-var _links = __webpack_require__(69);
-
-function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
-
-function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
-
-function _possibleConstructorReturn(self, call) { if (!self) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return call && (typeof call === "object" || typeof call === "function") ? call : self; }
-
-function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
-
-var Top = function (_Component) {
-    _inherits(Top, _Component);
-
-    function Top() {
-        _classCallCheck(this, Top);
-
-        return _possibleConstructorReturn(this, (Top.__proto__ || Object.getPrototypeOf(Top)).apply(this, arguments));
-    }
-
-    _createClass(Top, [{
-        key: 'render',
-        value: function render() {
-            var pages = this.props.pages;
-
-            return _react2.default.createElement(
-                'div',
-                { className: 'top', style: { backgroundImage: 'url(' + _links.BG_OPACITY_COIN + ')' } },
-                _react2.default.createElement(
-                    'div',
-                    { className: 'text' },
-                    _react2.default.createElement(
-                        'h1',
-                        null,
-                        pages.head
-                    ),
-                    _react2.default.createElement(
-                        'p',
-                        null,
-                        pages.text
-                    ),
-                    _react2.default.createElement(
-                        'div',
-                        { className: 'btn-buy' },
-                        pages.btn
-                    )
-                ),
-                _react2.default.createElement(
-                    'div',
-                    { className: 'video' },
-                    _react2.default.createElement('iframe', { width: '100%', height: '100%', src: _links.MAIN_TOP_VIDEO, frameBorder: '0', allowFullScreen: true })
-                )
-            );
-        }
-    }]);
-
-    return Top;
-}(_react.Component);
-
-exports.default = Top;
-
-/***/ }),
-/* 548 */
-/***/ (function(module, exports, __webpack_require__) {
-
-"use strict";
-
-
-Object.defineProperty(exports, "__esModule", {
-    value: true
-});
-
-var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
-
-var _react = __webpack_require__(4);
-
-var _react2 = _interopRequireDefault(_react);
-
-var _links = __webpack_require__(69);
-
-function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
-
-function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
-
-function _possibleConstructorReturn(self, call) { if (!self) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return call && (typeof call === "object" || typeof call === "function") ? call : self; }
-
-function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
-
-var Progress = function (_Component) {
-    _inherits(Progress, _Component);
-
-    function Progress() {
-        _classCallCheck(this, Progress);
-
-        return _possibleConstructorReturn(this, (Progress.__proto__ || Object.getPrototypeOf(Progress)).apply(this, arguments));
-    }
-
-    _createClass(Progress, [{
-        key: 'render',
-        value: function render() {
-            var _props = this.props,
-                pages = _props.pages,
-                maxCoins = _props.maxCoins,
-                soldCoins = _props.soldCoins;
-
-
-            var coinsLeft = maxCoins * 30 / 100 - soldCoins;
-            if (coinsLeft <= 0) {
-                coinsLeft = "FINISH";
-            };
-            var width = (soldCoins * 100 / maxCoins).toFixed(1);
-            return _react2.default.createElement(
-                'div',
-                { className: 'progress' },
-                _react2.default.createElement(
-                    'h1',
-                    null,
-                    ' ',
-                    pages.head
-                ),
-                _react2.default.createElement(
-                    'h2',
-                    null,
-                    ' ',
-                    pages.title
-                ),
-                _react2.default.createElement(
-                    'div',
-                    { className: 'coins_left' },
-                    ' ',
-                    _react2.default.createElement('img', { src: _links.LOGO, alt: 'Logo' }),
-                    coinsLeft
-                ),
-                _react2.default.createElement('progress', { className: 'progressBar', value: soldCoins, max: maxCoins }),
-                _react2.default.createElement(
-                    'div',
-                    { className: 'afterProgress' },
-                    _react2.default.createElement(
-                        'span',
-                        { className: 'left', style: { left: width + '%' } },
-                        soldCoins
-                    ),
-                    _react2.default.createElement(
-                        'span',
-                        { className: '_30_percentages' },
-                        '30%'
-                    ),
-                    _react2.default.createElement(
-                        'span',
-                        { className: 'right' },
-                        maxCoins
-                    )
-                )
-            );
-        }
-    }]);
-
-    return Progress;
-}(_react.Component);
-
-exports.default = Progress;
-
-/***/ }),
-/* 549 */
-/***/ (function(module, exports, __webpack_require__) {
-
-"use strict";
-
-
-Object.defineProperty(exports, "__esModule", {
-    value: true
-});
-
-var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
-
-var _react = __webpack_require__(4);
-
-var _react2 = _interopRequireDefault(_react);
-
-var _links = __webpack_require__(69);
-
-function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
-
-function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
-
-function _possibleConstructorReturn(self, call) { if (!self) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return call && (typeof call === "object" || typeof call === "function") ? call : self; }
-
-function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
-
-var TableSplits = function (_Component) {
-    _inherits(TableSplits, _Component);
-
-    function TableSplits() {
-        _classCallCheck(this, TableSplits);
-
-        return _possibleConstructorReturn(this, (TableSplits.__proto__ || Object.getPrototypeOf(TableSplits)).apply(this, arguments));
-    }
-
-    _createClass(TableSplits, [{
-        key: 'render',
-        value: function render() {
-            var info = this.props.info;
-            var head = info.head,
-                foot = info.foot,
-                split = info.split;
-
-            var cont = split.map(function (item, index) {
-                return _react2.default.createElement(
-                    'tr',
-                    { key: index + 1 },
-                    _react2.default.createElement(
-                        'td',
-                        null,
-                        index + 1
-                    ),
-                    _react2.default.createElement(
-                        'td',
-                        null,
-                        item.cost
-                    ),
-                    _react2.default.createElement(
-                        'td',
-                        null,
-                        item.value
-                    ),
-                    _react2.default.createElement(
-                        'td',
-                        null,
-                        item.summ
-                    )
-                );
-            });
-            return _react2.default.createElement(
-                'div',
-                { className: 'tableSplit' },
-                _react2.default.createElement(
-                    'h2',
-                    null,
-                    head.header
-                ),
-                _react2.default.createElement(
-                    'table',
-                    null,
-                    _react2.default.createElement(
-                        'thead',
-                        null,
-                        _react2.default.createElement(
-                            'tr',
-                            null,
-                            _react2.default.createElement(
-                                'th',
-                                null,
-                                head.number
-                            ),
-                            _react2.default.createElement(
-                                'th',
-                                null,
-                                head.cost
-                            ),
-                            _react2.default.createElement(
-                                'th',
-                                null,
-                                head.value
-                            ),
-                            _react2.default.createElement(
-                                'th',
-                                null,
-                                head.summ
-                            )
-                        )
-                    ),
-                    _react2.default.createElement(
-                        'tbody',
-                        null,
-                        cont
-                    )
-                ),
-                _react2.default.createElement(
-                    'div',
-                    { className: 'end' },
-                    _react2.default.createElement(
-                        'div',
-                        { className: 'allSumm' },
-                        foot.allSumm,
-                        ' ',
-                        _react2.default.createElement(
-                            'span',
-                            null,
-                            '306.900.000'
-                        )
-                    ),
-                    _react2.default.createElement(
-                        'div',
-                        { className: 'future' },
-                        foot.future,
-                        ' ',
-                        _react2.default.createElement('img', { src: _links.LOGO, alt: '' }),
-                        ' ',
-                        _react2.default.createElement(
-                            'span',
-                            null,
-                            '= ',
-                            foot.coinCost,
-                            ' '
-                        )
-                    )
-                )
-            );
-        }
-    }]);
-
-    return TableSplits;
-}(_react.Component);
-
-exports.default = TableSplits;
-
-/***/ }),
-/* 550 */
+/* 864 */
 /***/ (function(module, exports, __webpack_require__) {
 
 // style-loader: Adds some css to the DOM by adding a <style> tag
 
 // load the styles
-var content = __webpack_require__(551);
+var content = __webpack_require__(865);
 if(typeof content === 'string') content = [[module.i, content, '']];
 // Prepare cssTransformation
 var transform;
@@ -30025,8 +28898,8 @@ if(content.locals) module.exports = content.locals;
 if(false) {
 	// When the styles change, update the <style> tags
 	if(!content.locals) {
-		module.hot.accept("!!../../../node_modules/css-loader/index.js!../../../node_modules/sass-loader/lib/loader.js!./index.scss", function() {
-			var newContent = require("!!../../../node_modules/css-loader/index.js!../../../node_modules/sass-loader/lib/loader.js!./index.scss");
+		module.hot.accept("!!../../../../node_modules/css-loader/index.js!../../../../node_modules/sass-loader/lib/loader.js!./index.scss", function() {
+			var newContent = require("!!../../../../node_modules/css-loader/index.js!../../../../node_modules/sass-loader/lib/loader.js!./index.scss");
 			if(typeof newContent === 'string') newContent = [[module.id, newContent, '']];
 			update(newContent);
 		});
@@ -30036,7 +28909,7 @@ if(false) {
 }
 
 /***/ }),
-/* 551 */
+/* 865 */
 /***/ (function(module, exports, __webpack_require__) {
 
 exports = module.exports = __webpack_require__(34)(undefined);
@@ -30044,11 +28917,11 @@ exports = module.exports = __webpack_require__(34)(undefined);
 
 
 // module
-exports.push([module.i, ".top {\n  background-size: 400px;\n  background-repeat: no-repeat;\n  background-position-x: 50%;\n  width: 80%;\n  min-height: 420px;\n  background-position-y: 20px;\n  display: flex;\n  justify-content: space-between;\n  align-items: center; }\n  .top .text h1 {\n    font-size: 38px; }\n  .top .text p {\n    line-height: 1.3em;\n    padding: 0 70px 0 0;\n    color: white;\n    max-width: 360px; }\n  .top .text .btn-buy {\n    border-radius: 7px;\n    background-color: #feaf00;\n    box-shadow: inset 0 1px 7.74px 1.26px rgba(0, 0, 0, 0.35);\n    width: 145px;\n    height: 40px;\n    display: flex;\n    justify-content: center;\n    align-items: center;\n    font-size: 24px;\n    color: white;\n    cursor: pointer;\n    transition: .25s; }\n    .top .text .btn-buy:hover {\n      box-shadow: inset 0 1px 7.74px 1.26px black; }\n  .top .video {\n    min-width: 450px;\n    min-height: 250px;\n    border: 5px solid #425067;\n    border-radius: 6px;\n    position: relative; }\n    .top .video iframe {\n      width: 100%;\n      height: 100%;\n      margin: 0;\n      padding: 0;\n      position: absolute; }\n\n.progress {\n  width: 100%;\n  background: #f6fbfe;\n  display: flex;\n  flex-direction: column;\n  align-items: center;\n  min-height: 350px;\n  position: relative; }\n  .progress h1 {\n    font-size: 24px;\n    position: absolute;\n    background: #0c324e;\n    top: 0;\n    margin: 0;\n    padding: 3px 15px;\n    left: calc(50% - 125px); }\n  .progress h2 {\n    margin-top: 75px;\n    font-size: 30px; }\n  .progress .coins_left {\n    font-size: 4em;\n    display: flex;\n    align-items: center; }\n    .progress .coins_left img {\n      max-height: 90px;\n      margin-right: 15px;\n      margin-top: -10px; }\n\nprogress {\n  width: 60%;\n  margin: 2em auto;\n  margin-bottom: 0;\n  display: block;\n  border-radius: 14px;\n  padding: 0;\n  border: 4px solid #ccc3c3;\n  text-align: center;\n  height: 25px;\n  box-shadow: inset 0px 0px 5.1px 0.9px rgba(0, 0, 0, 0.6);\n  overflow: hidden;\n  transition: .3s;\n  z-index: 2;\n  cursor: none;\n  background: #2f4f76;\n  position: relative; }\n  progress:before {\n    content: \"\";\n    height: 100%;\n    width: 3px;\n    background: #feaf00;\n    position: absolute;\n    left: 30%;\n    line-height: 1.3em; }\n  progress::-moz-progress-bar {\n    box-shadow: inset 0px 0px 5.1px 0.9px rgba(0, 0, 0, 0.61);\n    background: #feaf00; }\n  progress::-webkit-progress-bar {\n    background: #2f4f76;\n    box-shadow: inset 0px 0px 5.1px 0.9px rgba(0, 0, 0, 0.61);\n    transition: .3s; }\n    progress::-webkit-progress-bar:hover {\n      box-shadow: inset 0px 0px 5.1px 0.9px rgba(0, 0, 0, 0.61); }\n  progress::-webkit-progress-value {\n    background: #ffaf00;\n    box-shadow: inset 0px 0px 5.1px 0.9px rgba(0, 0, 0, 0.61); }\n  progress:hover {\n    box-shadow: inset 0px 0px 5.1px 0.9px rgba(0, 0, 0, 0.4);\n    border-radius: 0; }\n\n.afterProgress {\n  margin-top: 5px;\n  color: #464646;\n  position: relative;\n  width: 60%; }\n  .afterProgress .left, .afterProgress .right, .afterProgress ._30_percentages {\n    position: absolute; }\n  .afterProgress .left {\n    margin-left: -4%; }\n  .afterProgress ._30_percentages {\n    top: -53px;\n    left: 29%; }\n    .afterProgress ._30_percentages:before {\n      content: \"\";\n      height: 2em;\n      width: 3px;\n      background-color: #feaf00;\n      position: absolute;\n      bottom: -28.7px;\n      right: calc(50% + 4px);\n      z-index: 10;\n      border-top-left-radius: 50px; }\n  .afterProgress .right {\n    right: -10px; }\n\n.tableSplit {\n  width: 100%;\n  background: #ffffff;\n  display: flex;\n  flex-direction: column;\n  align-items: center;\n  padding: 40px 0; }\n  .tableSplit h2 {\n    margin-top: 0; }\n  .tableSplit table {\n    width: 800px;\n    border: 1px solid #f8f8f8;\n    box-shadow: 0 0 16px 0 rgba(0, 0, 0, 0.05);\n    font-size: 17px;\n    text-align: center;\n    border-spacing: 0;\n    margin-bottom: 25px; }\n    .tableSplit table thead tr {\n      background: #eaeaea; }\n      .tableSplit table thead tr th {\n        padding: 20px 0;\n        font-family: HelveticaBold; }\n        .tableSplit table thead tr th:first-child {\n          width: 125px; }\n        .tableSplit table thead tr th:nth-child(2) {\n          width: 150px; }\n    .tableSplit table tbody tr {\n      transition: .25s; }\n      .tableSplit table tbody tr td {\n        padding: 20px 0; }\n        .tableSplit table tbody tr td:nth-child(even) {\n          color: #ffae00; }\n      .tableSplit table tbody tr:nth-child(even) {\n        background: #f8f8f8; }\n      .tableSplit table tbody tr:hover {\n        background: rgba(234, 234, 234, 0.6); }\n  .tableSplit .end {\n    text-align: center; }\n    .tableSplit .end .allSumm {\n      color: #72727b;\n      font-size: 20px;\n      margin-bottom: 25px; }\n      .tableSplit .end .allSumm span {\n        color: #ffaf00;\n        font-size: 24px; }\n    .tableSplit .end .future {\n      font-size: 22px;\n      display: flex;\n      align-items: center; }\n      .tableSplit .end .future img {\n        max-height: 35px;\n        max-width: 35px;\n        margin: -3px 5px 0; }\n      .tableSplit .end .future span {\n        font-family: HelveticaBold; }\n\n@media (max-width: 1279px) {\n  .top {\n    min-height: 325px;\n    background-size: 300px; }\n    .top .text {\n      max-width: 350px; }\n      .top .text h1 {\n        font-size: 28px; }\n      .top .text p {\n        padding: 0 35px 0 0;\n        font-size: .92em; }\n    .top .video {\n      min-width: 375px;\n      min-height: 220px; } }\n", ""]);
+exports.push([module.i, ".newPack {\n  display: flex;\n  margin-bottom: 15px;\n  justify-content: space-around;\n  border-bottom: 1px solid;\n  padding-bottom: 15px;\n  align-items: center; }\n  .newPack input {\n    outline: none;\n    border: 2px solid transparent;\n    border-bottom: 2px solid rgba(30, 53, 67, 0.7);\n    font-size: 13px;\n    transition: .25s all; }\n    .newPack input:focus, .newPack input:hover {\n      border: 2px solid #151f24;\n      background-color: transparent; }\n  .newPack .radios .status {\n    margin-right: 15px; }\n  .newPack .radios label {\n    margin-right: 8px; }\n  .newPack .btn-save {\n    cursor: pointer;\n    transition: .25s all;\n    background-color: #1e3543;\n    color: white;\n    padding: 7px 10px 5px;\n    border-radius: 5px; }\n    .newPack .btn-save:hover {\n      background-color: #1e3d4b; }\n\n#alert {\n  width: 100%;\n  text-align: center;\n  padding: 5px 0;\n  background: greenyellow;\n  color: black;\n  position: fixed;\n  top: 75px;\n  left: 0;\n  display: none;\n  transition: 2s; }\n", ""]);
 
 // exports
 
 
 /***/ })
 /******/ ]);
-//# sourceMappingURL=main.js.map
+//# sourceMappingURL=packages.js.map

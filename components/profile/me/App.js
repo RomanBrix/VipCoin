@@ -19,7 +19,7 @@ export default class App extends Component {
             window.location.href = '../index.html';
         }
 
-        props.getPackages("package");
+        // props.getPackages("package");
         props.getUserInfo("infooo", this.state.user);
         props.getCrypto();
 
@@ -35,6 +35,7 @@ export default class App extends Component {
     render(){
         const { language } = this.state;
         const { hash, packages, user, crypto } = this.props;
+        // console.log(user);
 
         const lang = translate.filter(item =>{
             return item.language === language;

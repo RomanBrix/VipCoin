@@ -13,6 +13,7 @@ module.exports= {
         'profile/scripts/settings': './points/profile/settings.js',
         'admin/scripts/generally': './points/admin/generally.js',
         'admin/scripts/users': './points/admin/users.js',
+        'admin/scripts/packages': './points/admin/packages.js',
 
     },
     output: {

@@ -37,6 +37,7 @@ export default class App extends Component {
         } = this.props;
         const { language, auth } = this.state;
 
+
         const lang = translate.filter(item =>{
             return item.language === language;
         });
@@ -63,7 +64,6 @@ export default class App extends Component {
         }
         const mount = document.getElementById("mountNode");
         mount.style.backgroundImage = `url(${BG_COIN})`;
-
         return (
             <div className="Main">
                 <Auth

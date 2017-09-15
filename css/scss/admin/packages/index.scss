@@ -1,0 +1,51 @@
+.newPack{
+  display: flex;
+  margin-bottom: 15px;
+  justify-content: space-around;
+  border-bottom: 1px solid;
+  padding-bottom: 15px;
+  align-items: center;
+  input{
+    outline: none;
+    //background-color: rgba(255,255,255,.1);
+    border: 2px solid transparent;
+    border-bottom: 2px solid rgba(30, 53, 67, .7);
+    font-size: 13px;
+    transition: .25s all;
+    &:focus, &:hover{
+      border: 2px solid rgba(21, 31, 36, 1);
+      background-color: transparent;
+    }
+  }
+  .radios{
+    .status{
+      margin-right: 15px;
+    }
+    label{
+      margin-right:8px;
+    }
+  }
+  .btn-save{
+    cursor: pointer;
+    transition: .25s all;
+    background-color: #1e3543;
+    color: white;
+    padding: 7px 10px 5px;
+    border-radius: 5px;
+    &:hover{
+      background-color: #1e3d4b;
+    }
+  }
+}
+#alert{
+  width: 100%;
+  text-align: center;
+  padding: 5px 0;
+  background: greenyellow;
+  color: black;
+  position: fixed;
+  top: 75px;
+  left: 0;
+  display: none;
+  transition: 2s;
+}

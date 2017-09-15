@@ -1,8 +1,8 @@
 import React from 'react';
 import { connect } from 'react-redux';
 import {
-    getUsers,
-    setCoinsToUser
+    getPackages,
+    setNewPackVal
 } from '../../../redux/admin/admin-actions.js';
 import App from './App';
 
@@ -13,7 +13,7 @@ const mapStateToProps = ( state ) => {
 export default connect(
     mapStateToProps,
     {
-        getUsers,
-        setCoinsToUser
+        getPackages,
+        setNewPackVal
 
     })(App);

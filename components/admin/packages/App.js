@@ -14,7 +14,7 @@ export default class App extends Component {
         // }else if(this.state.user.length < 15){
         //     window.location.href = '../index.html';
         // }
-        props.getUsers("getUsersInfo");
+        props.getPackages('getPackInfo');
 
     }
 
@@ -25,17 +25,40 @@ export default class App extends Component {
         return matches ? decodeURIComponent(matches[1])  : undefined;
     }
 
+
+    setNewValueForPackage(id){
+        const { setNewPackVal } =this.props;
+
+        const packName = document.getElementById(`packName${id}`);
+        const packCost = document.getElementById(`packCost${id}`);
+
+
+        const end = document.getElementById(`end${id}`);
+        const start = document.getElementById(`start${id}`);
+        const wait = document.getElementById(`wait${id}`);
+
+
+        let status = "";
+        const arr = [end, start, wait];
+        for(let i = 0; i < 3; i++){
+            if(arr[i].checked === true){
+                status = arr[i].value;
+            }
+        }
+
+        setNewPackVal("setNewPackVal", id, packName.value, packCost.value, status);
+    }
+
     render(){
-        const { hash, users, setCoinsToUser, updated, getUsers} = this.props;
+        const {packages, updated} = this.props;
 
         return (
             <div className="admin">
                 <Header />
                 <Container
-                    users={ users }
-                    setCoinsToUser={ setCoinsToUser }
+                    packages={ packages }
+                    update={ this.setNewValueForPackage.bind(this) }
                     updated={ updated }
-                    getUsers={ getUsers }
                 />
             </div>
         );

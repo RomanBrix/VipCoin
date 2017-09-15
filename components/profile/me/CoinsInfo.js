@@ -8,6 +8,10 @@ export default class CoinsInfo extends Component {
             status = item.status;
             coinsHave = item.vipcoins_value;
         });
+        // console.log(coinsHave);
+        // if(coinsHave === undefined){
+        //     window.location.href = '../index.html';
+        // }
         return(
             <div className="coins-info">
                 <div className="status">

@@ -77,6 +77,7 @@ export default class App extends Component {
                     about={true}
                     setLanguage={ setLanguage }
                     toggleAuth={ this.toggleAuth.bind(this) }
+
                 />
                 <div className="container">
                     <Container

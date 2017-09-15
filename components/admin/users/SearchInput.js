@@ -34,6 +34,9 @@ export default class SearchInput extends Component {
                         <Radio name="radioGroup" inline ref="email">
                             E-mail
                         </Radio>
+                        <Radio name="radioGroup" inline ref="code">
+                            Code
+                        </Radio>
                         <input
                             placeholder="Показать 'n' пользователей"
                             type="number"

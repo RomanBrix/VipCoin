@@ -20,10 +20,16 @@ export default class Header extends Component {
             language: this.getCookie("language") || "ru",
             ltc: 0,
             btc: 0,
-            eth: 0
+            eth: 0,
+            NAME: undefined
         };
         props.setLanguage(this.state.language);
-        this.getUserAccount();
+        this.getCurrVal();
+        const loggedUser = this.getCookie("user");
+
+        if(loggedUser !== undefined){
+            this.getUserName(loggedUser);
+        }
 
     }
     componentDidMount(){
@@ -94,8 +100,23 @@ export default class Header extends Component {
         return matches ? decodeURIComponent(matches[1])  : undefined;
     }
 
+    getUserName(loggedUser){
+        const that = this;
+        axios.get(`http://localhost:8888/vipcoin/profile/userInfo.php`, {params: {type:"header",hash:loggedUser}})
+            .then(function(res) {
+                console.log(res);
+                // dispatch({type: act.GET_PACKAGES_INFO, packages: res.data})
+                // NAME = res.data;
+                that.setState({
+                    NAME: res.data
+                })
+            })
+            .catch((error) => {
+                console.log(error);
+            });
+    }
 
-    getUserAccount() {
+    getCurrVal() {
         const that = this;
         axios.all([this.getLTC(), this.getBTC(),this.getETH()])
             .then(axios.spread(function (ltc, btc, eth) {
@@ -124,7 +145,9 @@ export default class Header extends Component {
            return item.language === this.state.language;
         });
         const { layouts } = lang[0];
-        const { ltc, btc, eth } = this.state;
+        const { ltc, btc, eth, NAME } = this.state;
+
+
         return (
             <div className="header">
                 <div className="lookAtTopOfHisHead">
@@ -201,19 +224,33 @@ export default class Header extends Component {
                         </li>
                     </ul>
                 </div>
-                <div className="login" onClick={()=>{
-                    const user = this.getCookie('user');
-                    console.log(user);
-                    if(user !== undefined) {
-                        if(user.length > 15) {
-                            window.location.href = 'profile/me.html';
+                {NAME === undefined ?
+                    <div className="login" onClick={() => {
+                        const user = this.getCookie('user');
+                        if (user !== undefined) {
+                            if (user.length > 15) {
+                                window.location.href = 'profile/me.html';
+                            }
+                        } else {
+                            toggleAuth(true)
                         }
-                    }else{
-                        toggleAuth(true)
-                    }
-                }}>
-                    {layouts.header.login.log}
-                </div>
+                    }}>
+                        {layouts.header.login.log}
+                    </div>
+                    :
+                    <div className="logged" onClick={() => {
+                        const user = this.getCookie('user');
+                        if (user !== undefined) {
+                            if (user.length > 15) {
+                                window.location.href = 'profile/me.html';
+                            }
+                        } else {
+                            toggleAuth(true)
+                        }
+                    }}>
+                        {NAME}
+                    </div>
+                }
 
             </div>
         );

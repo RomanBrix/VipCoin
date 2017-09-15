@@ -69,6 +69,7 @@
           "inputName":"Имя",
           "inputLName":"Фамилия",
           "inputEmail":"E-mail",
+          "inputTel": "Номер телефона",
           "inputMsg": "Ваше сообщение",
           "btnSend":"Отправить"
         }
