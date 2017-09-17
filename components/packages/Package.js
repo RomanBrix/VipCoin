@@ -25,17 +25,18 @@ export default class Package extends Component {
     }
 
     render(){
-        const { packages, package_title, toggleAuth } = this.props;
+        const { packages, pages, toggleAuth } = this.props;
         const user = this.getCookie("user");
-        console.log(user);
+
+
         const packages_map = packages.map((item, index)=>{
             let btn = "";
             if(item.status === "end"){
-                btn = "НЕДОСТУПНО";
+                btn = pages.btn_end;
             }else if(item.status === "start"){
-                btn = "КУПИТЬ";
+                btn = pages.btn_start;
             }else{
-                btn = "В ОЖИДАНИИ";
+                btn = pages.btn_wait;
             }
             const rand = Math.floor(Math.random() * 1200) + 100;
 
@@ -43,7 +44,7 @@ export default class Package extends Component {
                 <div className={`package ${item.status}`} key={index}>
                     <div className="top">
                         <h3>{item.name}</h3>
-                        <p>$ <span className="cost">{item.cost}</span>/монету</p>
+                        <p>$ <span className="cost">{item.cost}</span>/{ pages.top_p}</p>
                     </div>
                     <div className="bottom">
                         <div className="coins_left">
@@ -53,10 +54,7 @@ export default class Package extends Component {
                             </span>
                         </div>
                         <div className="inputCoins">
-                            <p>
-                                Введите количество
-                                монет для покупки:
-                            </p>
+                            <p>{pages.inputCoins_p}:</p>
                             { item.status === "end" ?
                                 <input type="number" defaultValue={0} max={item.coins} disabled/>
                                 :
@@ -71,7 +69,7 @@ export default class Package extends Component {
                             }
                                 </div>
                         <div className="price">
-                            <p>Стоимость:</p>
+                            <p>{pages.price_p}:</p>
                             <span className="spanPrice" id={`price${index}`}>
                                 {
                                     item.status === "end"
@@ -107,9 +105,8 @@ export default class Package extends Component {
             <div className="packages">
 
                 <div className="packages-container">
-                    <h1>{package_title.title}</h1>
-                    <p className="afterHead">Укажите количество монет которые хотите купить
-                        для расчета стоимость</p>
+                    <h1>{pages.title}</h1>
+                    <p className="afterHead">{ pages.afterHead }</p>
                     <div className="pack-map">
                         { packages_map }
                     </div>

@@ -36,7 +36,7 @@ export default class App extends Component {
             packages
         } = this.props;
         const { language, auth } = this.state;
-        console.log(packages);
+        // console.log(packages);
 
         const lang = translate.filter(item =>{
             return item.language === language;

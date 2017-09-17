@@ -21,12 +21,17 @@ export default class Header extends Component {
             ltc: 0,
             btc: 0,
             eth: 0,
+            vpc: 0,
             NAME: undefined
         };
-        props.setLanguage(this.state.language);
-        this.getCurrVal();
-        const loggedUser = this.getCookie("user");
+        if (!props.profile) {
+            props.setLanguage(this.state.language);
+        }else{
 
+        }
+        this.getCurrVal();
+        this.getVPC();
+        const loggedUser = this.getCookie("user");
         if(loggedUser !== undefined){
             this.getUserName(loggedUser);
         }
@@ -35,7 +40,7 @@ export default class Header extends Component {
     componentDidMount(){
         const {main, about, packages, faq, news, contacts} = this.props;
         const arr = [main, about, packages, faq, news, contacts];
-        let ask = 0;
+        let ask = undefined;
         for (let i = 0; i < arr.length; i++){
             if(arr[i] === true ){
                 ask = i;
@@ -65,7 +70,7 @@ export default class Header extends Component {
                 listArray[5].classList.add('active');
                 break;
 
-            default : console.log('op'); break;
+            default : break;
         }
     }
 
@@ -104,7 +109,7 @@ export default class Header extends Component {
         const that = this;
         axios.get(`http://localhost:8888/vipcoin/profile/userInfo.php`, {params: {type:"header",hash:loggedUser}})
             .then(function(res) {
-                console.log(res);
+                // console.log(res);
                 // dispatch({type: act.GET_PACKAGES_INFO, packages: res.data})
                 // NAME = res.data;
                 that.setState({
@@ -128,6 +133,24 @@ export default class Header extends Component {
                 })
             }));
     }
+
+
+    getVPC() {
+        const that = this;
+        axios.get(`http://localhost:8888/vipcoin/generally.php`, {params: {type:"coinCost"}})
+            .then(function(res) {
+                // console.log(res);
+                // dispatch({type: act.GET_PACKAGES_INFO, packages: res.data})
+                // NAME = res.data;
+                that.setState({
+                    vpc: res.data
+                })
+            })
+            .catch((error) => {
+                console.log(error);
+            });
+    }
+
     getLTC() {
         return axios.get('https://api.cryptonator.com/api/ticker/ltc-usd');
     }
@@ -140,85 +163,129 @@ export default class Header extends Component {
     }
 
     render(){
-        const { toggleAuth } = this.props;
+        const { toggleAuth, profile } = this.props;
         const lang = translate.filter(item =>{
            return item.language === this.state.language;
         });
         const { layouts } = lang[0];
-        const { ltc, btc, eth, NAME } = this.state;
+        const { ltc, btc, eth,vpc, NAME } = this.state;
 
 
+        let LogoUrl = PAGES.MAIN;
+        let LOGO_IMG = LOGO;
+        let AboutUrl = PAGES.ABOUT_US;
+        let PackUrl = PAGES.PACKAGES;
+        let FAQ_Url = PAGES.FAQ;
+        let NewsUrl = PAGES.NEWS;
+        let ContactsUrl= PAGES.CONTACT_US;
+
+        let ICO_lang = {
+            main: `./src/header/${this.state.language}.svg`,
+            ru: FLAG_RU,
+            japan: FLAG_JAP,
+            usa: FLAG_USA,
+            eng: FLAG_ENG,
+        };
+        if(profile){
+            LogoUrl = "../"+ PAGES.MAIN;
+            LOGO_IMG = "../"+ LOGO;
+            AboutUrl = "../"+ PAGES.ABOUT_US;
+            PackUrl = "../"+ PAGES.PACKAGES;
+            FAQ_Url = "../"+ PAGES.FAQ;
+            NewsUrl ="../"+ PAGES.NEWS;
+            ContactsUrl = "../"+ PAGES.CONTACT_US;
+            ICO_lang = {
+                main: `../src/header/${this.state.language}.svg`,
+                ru: "."+FLAG_RU,
+                japan: "."+FLAG_JAP,
+                usa: "."+FLAG_USA,
+                eng: "."+FLAG_ENG,
+            }
+        }
         return (
             <div className="header">
                 <div className="lookAtTopOfHisHead">
                     <div className="topContent">
                         <div className="currencys" onClick={()=>{
-                            this.getUserAccount();
+                            this.getCurrVal();
                         }}>
                             <div className="cryptoCurrency">BTC/USD: <span>{btc}</span></div>
                             <div className="cryptoCurrency">LTC/USD: <span>{ltc}</span></div>
                             <div className="cryptoCurrency">ETH/USD: <span>{eth}</span></div>
+                            <div className="cryptoCurrency">VPC/USD: <span>{vpc}</span></div>
+
                         </div>
 
                         <div className="lang dropdown">
                             <span id="active_lang">
-                                <img src={`./src/header/${this.state.language}.svg`} alt="active_lang"/>
+                                <img src={ICO_lang.main} alt="active_lang"/>
                             </span>
-                                    <div className="dropdown-content dropdown-main">
+                            <div className="dropdown-content dropdown-main">
                                 <span onClick={() => {
                                     this.setCookie('language', 'ru', {expires: 350});
                                     this.setState({language: 'ru'});
                                     console.log("1")
-                                }}><img src={FLAG_RU} alt="ru"/>
+                                }}>
+                                    <img src={ICO_lang.ru} alt="ru"/>
                                 </span>
-                                        <span onClick={() => { console.log("2") }}>
-                                    <img src={FLAG_ENG} alt="eng"/>
+                                <span onClick={() => {
+                                    this.setState({language: 'eng'});
+                                    console.log("2")
+                                }}>
+                                    <img src={ICO_lang.eng} alt="eng"/>
                                 </span>
-                                        <span onClick={() => { console.log("3") }}>
-                                    <img src={FLAG_JAP} alt="japan"/>
+                                <span onClick={() => {
+                                    this.setState({language: 'japan'});
+                                    console.log("3")
+                                }}>
+                                    <img src={ICO_lang.japan} alt="japan"/>
                                 </span>
-                                        <span onClick={() => { console.log("4") }}>
-                                    <img src={FLAG_USA} alt="usa"/>
+                                <span onClick={() => {
+                                    this.setState({language: 'usa'});
+                                    console.log("4")
+                                }}>
+                                    <img src={ICO_lang.usa} alt="usa"/>
                                 </span>
                             </div>
                         </div>
                     </div>
                 </div>
-                <a href={PAGES.MAIN} id="logo">
-                    <div className="logo">
-                        <img src={LOGO} alt="Logo"/>
-                        <span className="bold">VIP</span>Coin
-                    </div>
-                </a>
+                    <a href={LogoUrl} id="logo">
+                        <div className="logo">
+                            <img src={LOGO_IMG} alt="Logo"/>
+                            <span className="bold">VIP</span>Coin
+                        </div>
+                    </a>
+
                 <div className="menu">
                     <ul>
                         <li>
-                            <a href={PAGES.MAIN}>
+                            <a href={LogoUrl}>
                                 {layouts.header.btnMain}
                             </a>
                         </li>
                         <li>
-                            <a href={PAGES.ABOUT_US}>
+                            <a href={AboutUrl}>
                                 {layouts.header.btnAbout}
                             </a>
                         </li>
                         <li>
-                            <a href={PAGES.PACKAGES}>
+                            <a href={PackUrl}>
                                 {layouts.header.btnPackages}
                             </a>
                         </li>
                         <li>
-                            <a href={PAGES.FAQ}>
+                            <a href={FAQ_Url}>
                                 {layouts.header.btnFAQ}
                             </a>
                         </li>
                         <li>
-                            <a href={PAGES.NEWS}>
+                            <a href={NewsUrl}>
                                 {layouts.header.btnNews}
                             </a>
                         </li>
                         <li>
-                            <a href={PAGES.CONTACT_US}>
+                            <a href={ContactsUrl}>
                                 {layouts.header.btnContacts}
                             </a>
                         </li>
@@ -229,7 +296,7 @@ export default class Header extends Component {
                         const user = this.getCookie('user');
                         if (user !== undefined) {
                             if (user.length > 15) {
-                                window.location.href = 'profile/me.html';
+                                window.location.href = 'http://localhost:8888/vipcoin/profile/me.html';
                             }
                         } else {
                             toggleAuth(true)
@@ -238,16 +305,17 @@ export default class Header extends Component {
                         {layouts.header.login.log}
                     </div>
                     :
-                    <div className="logged" onClick={() => {
+                    <div id="logged" onClick={() => {
                         const user = this.getCookie('user');
                         if (user !== undefined) {
                             if (user.length > 15) {
-                                window.location.href = 'profile/me.html';
+                                window.location.href = 'http://localhost:8888/vipcoin/profile/me.html';
                             }
                         } else {
                             toggleAuth(true)
                         }
                     }}>
+                        <i className="icon-user"/>
                         {NAME}
                     </div>
                 }
@@ -256,28 +324,3 @@ export default class Header extends Component {
         );
     }
 }
-
-/*
-<div className="lang dropdown">
-                    <span id="active_lang">
-                        <img src={`./src/header/${this.state.language}.svg`} alt="active_lang"/>
-                    </span>
-                    <div className="dropdown-content dropdown-main">
-                        <span onClick={() => {
-                            this.setCookie('language', 'ru', {expires: 350});
-                            this.setState({language: 'ru'});
-                            console.log("1")
-                        }}><img src={FLAG_RU} alt="ru"/>
-                        </span>
-                        <span onClick={() => { console.log("2") }}>
-                            <img src={FLAG_ENG} alt="eng"/>
-                        </span>
-                        <span onClick={() => { console.log("3") }}>
-                            <img src={FLAG_JAP} alt="japan"/>
-                        </span>
-                        <span onClick={() => { console.log("4") }}>
-                            <img src={FLAG_USA} alt="usa"/>
-                        </span>
-                    </div>
-                </div>
- */

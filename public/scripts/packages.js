@@ -27668,7 +27668,7 @@ module.exports = function (css) {
 /* 285 */
 /***/ (function(module, exports) {
 
-module.exports = [{"language":"ru","pages":{"main":{"top":{"head":"Ваш шедевр готов!","text":"С другой стороны консультация с широким активом способствует подготовки и реализации модели развития. Задача организации, в особенности же консультация с широким активом в значительной степени.","btn":"купить"},"progress":{"head":"какая наша цель?","title":"Официальный запуск сети после продажи:"},"table":{"head":{"header":"Сплиты","number":"#","cost":"Цена","value":"Количество монет","summ":"Сумма"},"foot":{"allSumm":"Итог сбора суммы: ","future":"При выходе на крипто-биржу цена за 1 монету","coinCost":"50$"},"split":[{"cost":0.1,"value":"3.000.000","summ":"300.000"},{"cost":0.2,"value":"3.000.000","summ":"600.000"},{"cost":0.4,"value":"3.000.000","summ":"1.200.000"},{"cost":0.8,"value":"3.000.000","summ":"2.400.000"},{"cost":1.6,"value":"3.000.000","summ":"4.800.000"},{"cost":3.2,"value":"3.000.000","summ":"9.600.000"},{"cost":6.4,"value":"3.000.000","summ":"19.200.000"},{"cost":12.8,"value":"3.000.000","summ":"38.400.000"},{"cost":25.6,"value":"3.000.000","summ":"76.800.000"},{"cost":51.2,"value":"3.000.000","summ":"153.600.000"}]}},"help":{},"packages":{"packages":[{"title":"ПАКЕТЫ"},{"title":"Калькулятор выгоды","inputCoins":"VipCoin","text":"Подсчитайте свою прибыль с учетом прогнозов курса VipCoin на последующие года"}]},"FAQ":{},"news":{},"contacts":{"top":{"head":"Контакты"},"feedback":{"head":"центр поддержки клиентов","inputName":"Имя","inputLName":"Фамилия","inputEmail":"E-mail","inputTel":"Номер телефона","inputMsg":"Ваше сообщение","btnSend":"Отправить"}},"profile":{"layouts":{"leftHeader":{"btnMain":"главная","btnRefill":"Купить","btnSettings":"Настройки","btnExit":"выход"}},"info":{},"settings":{"password":{"head":"Сменить пароль","CurPass":"Текущий пароль","new":"Новый пароль","repass":"Повторите пароль","save":"Сохранить","error":"Неверный пароль","accept":"Изминения сохранены"},"email":{"head":"Сменить E-mail","CurPass":"Текущий пароль","new":"Новый E-mail","save":"Сохранить","error":"Неверный пароль","secondError":"Такой E-mail уже есть!","accept":"Изминения сохранены"}}}},"layouts":{"header":{"btnMain":"ГЛАВНАЯ","btnAbout":"О НАС","btnPackages":"ПАКЕТЫ","btnFAQ":"Помощь","btnNews":"Новости","btnContacts":"Контакты","login":{"log":"Регистрация/Вход"}},"footer":{"pages":{"whitePage":"Белая Бумага","legalPage":"Юридические Информация","contractOffer":"Пользовательское Соглашение","confidentiality":"Политика Конфиденциальности"},"feedback":"Обратная связь"},"auth":{"header":{"btnLogin":"Войти","btnRegistration":"Регестрация","btnForgotPass":"Забыли пароль?"},"login":{"inputLogin":"Логин или E-mail","inputPassword":"Пароль","btnEnter":"Войти"},"registration":{"inputLogin":"Логин","inputEmail":"E-Mail","inputPassword":"Пароль","inputRepeatPassword":"Повторите пароль","checkLegal":"Согласен с правилами сайта","btnRegistration":"Регестрация"},"forgot":{"text":"Отправить пароль на почту","inputEmail":"E-Mail","btnSend":"Отправить","success":"E-mail отправлен!","error":"E-mail не найден"}}}}]
+module.exports = [{"language":"ru","pages":{"main":{"top":{"head":"Ваш шедевр готов!","text":"С другой стороны консультация с широким активом способствует подготовки и реализации модели развития. Задача организации, в особенности же консультация с широким активом в значительной степени.","btn":"купить"},"progress":{"head":"какая наша цель?","title":"Официальный запуск сети после продажи:"},"table":{"head":{"header":"Сплиты","number":"#","cost":"Цена","value":"Количество монет","summ":"Сумма"},"foot":{"allSumm":"Итог сбора суммы: ","future":"При выходе на крипто-биржу цена за 1 монету","coinCost":"50$"},"split":[{"cost":0.1,"value":"3.000.000","summ":"300.000"},{"cost":0.2,"value":"3.000.000","summ":"600.000"},{"cost":0.4,"value":"3.000.000","summ":"1.200.000"},{"cost":0.8,"value":"3.000.000","summ":"2.400.000"},{"cost":1.6,"value":"3.000.000","summ":"4.800.000"},{"cost":3.2,"value":"3.000.000","summ":"9.600.000"},{"cost":6.4,"value":"3.000.000","summ":"19.200.000"},{"cost":12.8,"value":"3.000.000","summ":"38.400.000"},{"cost":25.6,"value":"3.000.000","summ":"76.800.000"},{"cost":51.2,"value":"3.000.000","summ":"153.600.000"}]}},"about":{},"packages":{"packages":{"title":"Пакеты","btn_end":"НЕДОСТУПНО","btn_start":"КУПИТЬ","btn_wait":"В ОЖИДАНИИ","top_p":"монету","coinsLeft_p":"Доступно монет","inputCoins_p":"Введите количество монет для покупки","price_p":"Стоимость","afterHead":"Укажите количество монет которые хотите купить для расчета стоимость"},"faq":{"title":"ПОМОЩЬ","afterHead":"Список наиболее часто задаваемых вопросов и ответы на них","help1":{"title":"Как можно оплатить?","text":"Мы бросаем вызов статус-кво и выходят за рамки сегодняшнего дня, чтобы создать открытое финансовое будущее"},"help2":{"title":"Как обменять криптовалюту?","text":"Мы бросаем вызов статус-кво и выходят за рамки сегодняшнего дня, чтобы создать открытое финансовое будущее"},"help3":{"title":"Как получить монеты?","text":"Мы бросаем вызов статус-кво и выходят за рамки сегодняшнего дня, чтобы создать открытое финансовое будущее"},"help4":{"title":"Как обменять криптовалюту?","text":"Мы бросаем вызов статус-кво и выходят за рамки сегодняшнего дня, чтобы создать открытое финансовое будущее"}}},"FAQ":{"content":{"title":"Содержание","afterHead":"Список наиболее часто задаваемых вопросов и ответы на них","secondTitle":"Ответы"},"faqs":[{"title":"Как зарегистрироваться?","text":"Мы бросаем вызов статус-кво и выходят за рамки сегодняшнего дня, чтобы создать открытое финансовое будущее Мы бросаем вызов статус-кво и выходят за рамки сегодняшнего дня, чтобы создать открытое финансовое будущее"},{"title":"Как можно оплатить?","text":"Мы бросаем вызов статус-кво и выходят за рамки сегодняшнего дня, чтобы создать открытое финансовое будущее Мы бросаем вызов статус-кво и выходят за рамки сегодняшнего дня, чтобы создать открытое финансовое будущее"},{"title":"Как получить монеты?","text":"Мы бросаем вызов статус-кво и выходят за рамки сегодняшнего дня, чтобы создать финансовое будущее Мы бросаем вызов статус-кво и выходят за рамки сегодняшнего дня, чтобы создать открытое финансовое будущее"},{"title":"Как обменять криптовалюту?","text":"Мы бросаем вызов статус-кво и выходят за рамки сегодняшнего дня, чтобы создать финансовое будущее Мы бросаем вызов статус-кво и выходят за рамки сегодняшнего дня, чтобы создать открытое финансовое будущее"},{"title":"Как можно оплатить?","text":"Мы бросаем вызов статус-кво и выходят за рамки сегодняшнего дня, чтобы создать открытое финансовое будущее Мы бросаем вызов статус-кво и выходят за рамки сегодняшнего дня, чтобы создать открытое финансовое будущее"},{"title":"Как получить монеты?","text":"Мы бросаем вызов статус-кво и выходят за рамки сегодняшнего дня, чтобы создать открытое финансовое будущее Мы бросаем вызов статус-кво и выходят за рамки сегодняшнего дня, чтобы создать открытое финансовое будущее"},{"title":"Как зарегистрироваться?","text":"Мы бросаем вызов статус-кво и выходят за рамки сегодняшнего дня, чтобы создать финансовое будущее Мы бросаем вызов статус-кво и выходят за рамки сегодняшнего дня, чтобы создать открытое финансовое будущее"},{"title":"Как обменять криптовалюту?","text":"Мы бросаем вызов статус-кво и выходят за рамки сегодняшнего дня, чтобы создать финансовое будущее Мы бросаем вызов статус-кво и выходят за рамки сегодняшнего дня, чтобы создать открытое финансовое будущее"}]},"news":{},"contacts":{"top":{"head":"Контакты"},"feedback":{"head":"центр поддержки клиентов","inputName":"Имя","inputLName":"Фамилия","inputEmail":"E-mail","inputTel":"Номер телефона","inputMsg":"Ваше сообщение","btnSend":"Отправить"}},"profile":{"layouts":{"leftHeader":{"btnMain":"главная","btnRefill":"Купить","btnSettings":"Настройки","btnExit":"выход"}},"info":{},"settings":{"password":{"head":"Сменить пароль","CurPass":"Текущий пароль","new":"Новый пароль","repass":"Повторите пароль","save":"Сохранить","error":"Неверный пароль","accept":"Изминения сохранены"},"email":{"head":"Сменить E-mail","CurPass":"Текущий пароль","new":"Новый E-mail","save":"Сохранить","error":"Неверный пароль","secondError":"Такой E-mail уже есть!","accept":"Изминения сохранены"}}}},"layouts":{"header":{"btnMain":"ГЛАВНАЯ","btnAbout":"О НАС","btnPackages":"ПАКЕТЫ","btnFAQ":"Помощь","btnNews":"Новости","btnContacts":"Контакты","login":{"log":"Регистрация/Вход"}},"footer":{"pages":{"whitePage":"Белая Бумага","legalPage":"Юридические Информация","contractOffer":"Пользовательское Соглашение","confidentiality":"Политика Конфиденциальности"},"feedback":"Обратная связь"},"auth":{"header":{"btnLogin":"Войти","btnRegistration":"Регестрация","btnForgotPass":"Забыли пароль?"},"login":{"inputLogin":"Логин или E-mail","inputPassword":"Пароль","btnEnter":"Войти"},"registration":{"inputLogin":"Логин","inputEmail":"E-Mail","inputPassword":"Пароль","inputRepeatPassword":"Повторите пароль","checkLegal":"Согласен с правилами сайта","btnRegistration":"Регестрация"},"forgot":{"text":"Отправить пароль на почту","inputEmail":"E-Mail","btnSend":"Отправить","success":"E-mail отправлен!","error":"E-mail не найден"}}}}]
 
 /***/ }),
 /* 286 */,
@@ -27753,12 +27753,15 @@ var Header = function (_Component) {
             ltc: 0,
             btc: 0,
             eth: 0,
+            vpc: 0,
             NAME: undefined
         };
-        props.setLanguage(_this.state.language);
+        if (!props.profile) {
+            props.setLanguage(_this.state.language);
+        } else {}
         _this.getCurrVal();
+        _this.getVPC();
         var loggedUser = _this.getCookie("user");
-
         if (loggedUser !== undefined) {
             _this.getUserName(loggedUser);
         }
@@ -27778,7 +27781,7 @@ var Header = function (_Component) {
                 contacts = _props.contacts;
 
             var arr = [main, about, packages, faq, news, contacts];
-            var ask = 0;
+            var ask = undefined;
             for (var i = 0; i < arr.length; i++) {
                 if (arr[i] === true) {
                     ask = i;
@@ -27809,7 +27812,7 @@ var Header = function (_Component) {
                     break;
 
                 default:
-                    console.log('op');break;
+                    break;
             }
         }
     }, {
@@ -27848,7 +27851,7 @@ var Header = function (_Component) {
         value: function getUserName(loggedUser) {
             var that = this;
             _axios2.default.get('http://localhost:8888/vipcoin/profile/userInfo.php', { params: { type: "header", hash: loggedUser } }).then(function (res) {
-                console.log(res);
+                // console.log(res);
                 // dispatch({type: act.GET_PACKAGES_INFO, packages: res.data})
                 // NAME = res.data;
                 that.setState({
@@ -27872,6 +27875,21 @@ var Header = function (_Component) {
             }));
         }
     }, {
+        key: 'getVPC',
+        value: function getVPC() {
+            var that = this;
+            _axios2.default.get('http://localhost:8888/vipcoin/generally.php', { params: { type: "coinCost" } }).then(function (res) {
+                // console.log(res);
+                // dispatch({type: act.GET_PACKAGES_INFO, packages: res.data})
+                // NAME = res.data;
+                that.setState({
+                    vpc: res.data
+                });
+            }).catch(function (error) {
+                console.log(error);
+            });
+        }
+    }, {
         key: 'getLTC',
         value: function getLTC() {
             return _axios2.default.get('https://api.cryptonator.com/api/ticker/ltc-usd');
@@ -27891,7 +27909,9 @@ var Header = function (_Component) {
         value: function render() {
             var _this2 = this;
 
-            var toggleAuth = this.props.toggleAuth;
+            var _props2 = this.props,
+                toggleAuth = _props2.toggleAuth,
+                profile = _props2.profile;
 
             var lang = _translate2.default.filter(function (item) {
                 return item.language === _this2.state.language;
@@ -27901,9 +27921,41 @@ var Header = function (_Component) {
                 ltc = _state.ltc,
                 btc = _state.btc,
                 eth = _state.eth,
+                vpc = _state.vpc,
                 NAME = _state.NAME;
 
 
+            var LogoUrl = _links.PAGES.MAIN;
+            var LOGO_IMG = _links.LOGO;
+            var AboutUrl = _links.PAGES.ABOUT_US;
+            var PackUrl = _links.PAGES.PACKAGES;
+            var FAQ_Url = _links.PAGES.FAQ;
+            var NewsUrl = _links.PAGES.NEWS;
+            var ContactsUrl = _links.PAGES.CONTACT_US;
+
+            var ICO_lang = {
+                main: './src/header/' + this.state.language + '.svg',
+                ru: _links.FLAG_RU,
+                japan: _links.FLAG_JAP,
+                usa: _links.FLAG_USA,
+                eng: _links.FLAG_ENG
+            };
+            if (profile) {
+                LogoUrl = "../" + _links.PAGES.MAIN;
+                LOGO_IMG = "../" + _links.LOGO;
+                AboutUrl = "../" + _links.PAGES.ABOUT_US;
+                PackUrl = "../" + _links.PAGES.PACKAGES;
+                FAQ_Url = "../" + _links.PAGES.FAQ;
+                NewsUrl = "../" + _links.PAGES.NEWS;
+                ContactsUrl = "../" + _links.PAGES.CONTACT_US;
+                ICO_lang = {
+                    main: '../src/header/' + this.state.language + '.svg',
+                    ru: "." + _links.FLAG_RU,
+                    japan: "." + _links.FLAG_JAP,
+                    usa: "." + _links.FLAG_USA,
+                    eng: "." + _links.FLAG_ENG
+                };
+            }
             return _react2.default.createElement(
                 'div',
                 { className: 'header' },
@@ -27916,7 +27968,7 @@ var Header = function (_Component) {
                         _react2.default.createElement(
                             'div',
                             { className: 'currencys', onClick: function onClick() {
-                                    _this2.getUserAccount();
+                                    _this2.getCurrVal();
                                 } },
                             _react2.default.createElement(
                                 'div',
@@ -27947,6 +27999,16 @@ var Header = function (_Component) {
                                     null,
                                     eth
                                 )
+                            ),
+                            _react2.default.createElement(
+                                'div',
+                                { className: 'cryptoCurrency' },
+                                'VPC/USD: ',
+                                _react2.default.createElement(
+                                    'span',
+                                    null,
+                                    vpc
+                                )
                             )
                         ),
                         _react2.default.createElement(
@@ -27955,7 +28017,7 @@ var Header = function (_Component) {
                             _react2.default.createElement(
                                 'span',
                                 { id: 'active_lang' },
-                                _react2.default.createElement('img', { src: './src/header/' + this.state.language + '.svg', alt: 'active_lang' })
+                                _react2.default.createElement('img', { src: ICO_lang.main, alt: 'active_lang' })
                             ),
                             _react2.default.createElement(
                                 'div',
@@ -27967,28 +28029,31 @@ var Header = function (_Component) {
                                             _this2.setState({ language: 'ru' });
                                             console.log("1");
                                         } },
-                                    _react2.default.createElement('img', { src: _links.FLAG_RU, alt: 'ru' })
+                                    _react2.default.createElement('img', { src: ICO_lang.ru, alt: 'ru' })
                                 ),
                                 _react2.default.createElement(
                                     'span',
                                     { onClick: function onClick() {
+                                            _this2.setState({ language: 'eng' });
                                             console.log("2");
                                         } },
-                                    _react2.default.createElement('img', { src: _links.FLAG_ENG, alt: 'eng' })
+                                    _react2.default.createElement('img', { src: ICO_lang.eng, alt: 'eng' })
                                 ),
                                 _react2.default.createElement(
                                     'span',
                                     { onClick: function onClick() {
+                                            _this2.setState({ language: 'japan' });
                                             console.log("3");
                                         } },
-                                    _react2.default.createElement('img', { src: _links.FLAG_JAP, alt: 'japan' })
+                                    _react2.default.createElement('img', { src: ICO_lang.japan, alt: 'japan' })
                                 ),
                                 _react2.default.createElement(
                                     'span',
                                     { onClick: function onClick() {
+                                            _this2.setState({ language: 'usa' });
                                             console.log("4");
                                         } },
-                                    _react2.default.createElement('img', { src: _links.FLAG_USA, alt: 'usa' })
+                                    _react2.default.createElement('img', { src: ICO_lang.usa, alt: 'usa' })
                                 )
                             )
                         )
@@ -27996,11 +28061,11 @@ var Header = function (_Component) {
                 ),
                 _react2.default.createElement(
                     'a',
-                    { href: _links.PAGES.MAIN, id: 'logo' },
+                    { href: LogoUrl, id: 'logo' },
                     _react2.default.createElement(
                         'div',
                         { className: 'logo' },
-                        _react2.default.createElement('img', { src: _links.LOGO, alt: 'Logo' }),
+                        _react2.default.createElement('img', { src: LOGO_IMG, alt: 'Logo' }),
                         _react2.default.createElement(
                             'span',
                             { className: 'bold' },
@@ -28020,7 +28085,7 @@ var Header = function (_Component) {
                             null,
                             _react2.default.createElement(
                                 'a',
-                                { href: _links.PAGES.MAIN },
+                                { href: LogoUrl },
                                 layouts.header.btnMain
                             )
                         ),
@@ -28029,7 +28094,7 @@ var Header = function (_Component) {
                             null,
                             _react2.default.createElement(
                                 'a',
-                                { href: _links.PAGES.ABOUT_US },
+                                { href: AboutUrl },
                                 layouts.header.btnAbout
                             )
                         ),
@@ -28038,7 +28103,7 @@ var Header = function (_Component) {
                             null,
                             _react2.default.createElement(
                                 'a',
-                                { href: _links.PAGES.PACKAGES },
+                                { href: PackUrl },
                                 layouts.header.btnPackages
                             )
                         ),
@@ -28047,7 +28112,7 @@ var Header = function (_Component) {
                             null,
                             _react2.default.createElement(
                                 'a',
-                                { href: _links.PAGES.FAQ },
+                                { href: FAQ_Url },
                                 layouts.header.btnFAQ
                             )
                         ),
@@ -28056,7 +28121,7 @@ var Header = function (_Component) {
                             null,
                             _react2.default.createElement(
                                 'a',
-                                { href: _links.PAGES.NEWS },
+                                { href: NewsUrl },
                                 layouts.header.btnNews
                             )
                         ),
@@ -28065,7 +28130,7 @@ var Header = function (_Component) {
                             null,
                             _react2.default.createElement(
                                 'a',
-                                { href: _links.PAGES.CONTACT_US },
+                                { href: ContactsUrl },
                                 layouts.header.btnContacts
                             )
                         )
@@ -28077,7 +28142,7 @@ var Header = function (_Component) {
                             var user = _this2.getCookie('user');
                             if (user !== undefined) {
                                 if (user.length > 15) {
-                                    window.location.href = 'profile/me.html';
+                                    window.location.href = 'http://localhost:8888/vipcoin/profile/me.html';
                                 }
                             } else {
                                 toggleAuth(true);
@@ -28086,16 +28151,17 @@ var Header = function (_Component) {
                     layouts.header.login.log
                 ) : _react2.default.createElement(
                     'div',
-                    { className: 'logged', onClick: function onClick() {
+                    { id: 'logged', onClick: function onClick() {
                             var user = _this2.getCookie('user');
                             if (user !== undefined) {
                                 if (user.length > 15) {
-                                    window.location.href = 'profile/me.html';
+                                    window.location.href = 'http://localhost:8888/vipcoin/profile/me.html';
                                 }
                             } else {
                                 toggleAuth(true);
                             }
                         } },
+                    _react2.default.createElement('i', { className: 'icon-user' }),
                     NAME
                 )
             );
@@ -28104,32 +28170,6 @@ var Header = function (_Component) {
 
     return Header;
 }(_react.Component);
-
-/*
-<div className="lang dropdown">
-                    <span id="active_lang">
-                        <img src={`./src/header/${this.state.language}.svg`} alt="active_lang"/>
-                    </span>
-                    <div className="dropdown-content dropdown-main">
-                        <span onClick={() => {
-                            this.setCookie('language', 'ru', {expires: 350});
-                            this.setState({language: 'ru'});
-                            console.log("1")
-                        }}><img src={FLAG_RU} alt="ru"/>
-                        </span>
-                        <span onClick={() => { console.log("2") }}>
-                            <img src={FLAG_ENG} alt="eng"/>
-                        </span>
-                        <span onClick={() => { console.log("3") }}>
-                            <img src={FLAG_JAP} alt="japan"/>
-                        </span>
-                        <span onClick={() => { console.log("4") }}>
-                            <img src={FLAG_USA} alt="usa"/>
-                        </span>
-                    </div>
-                </div>
- */
-
 
 exports.default = Header;
 
@@ -28173,7 +28213,7 @@ exports = module.exports = __webpack_require__(34)(undefined);
 
 
 // module
-exports.push([module.i, ".header {\n  display: flex;\n  justify-content: space-between;\n  align-items: center;\n  margin-top: 50px;\n  width: 80%; }\n  .header #logo {\n    text-decoration: none;\n    cursor: pointer; }\n    .header #logo .logo {\n      display: flex;\n      align-items: center;\n      font-size: 2em;\n      color: white;\n      font-weight: 100;\n      cursor: pointer; }\n      .header #logo .logo img {\n        max-height: 45px;\n        margin-right: 5px;\n        margin-top: -6px;\n        cursor: pointer; }\n      .header #logo .logo .bold {\n        font-family: HelveticaBold; }\n  .header .menu ul {\n    display: flex;\n    flex-direction: row;\n    flex-wrap: nowrap;\n    justify-content: space-around;\n    list-style: none;\n    padding-left: 0;\n    margin: 0; }\n    .header .menu ul li {\n      margin-right: 15px;\n      position: relative;\n      text-transform: uppercase;\n      cursor: pointer; }\n      .header .menu ul li a {\n        color: white;\n        text-decoration: none;\n        position: relative;\n        cursor: pointer;\n        transition: .25s; }\n        .header .menu ul li a:hover {\n          color: #ffc02d; }\n      .header .menu ul li:last-child {\n        margin-right: 0; }\n      .header .menu ul li.active a {\n        color: #ffc02d; }\n  .header .login {\n    border-width: 1px;\n    border-color: white;\n    border-style: solid;\n    border-radius: 3px;\n    opacity: 0.6;\n    padding: 6px 10px 3px;\n    cursor: pointer;\n    color: white;\n    transition: .25s;\n    margin-top: -7px; }\n    .header .login:hover {\n      opacity: 1; }\n  .header .lookAtTopOfHisHead {\n    position: absolute;\n    display: flex;\n    justify-content: center;\n    top: 10px;\n    width: 100%;\n    left: 0;\n    background: #061b31;\n    font-size: 11px; }\n    .header .lookAtTopOfHisHead .topContent {\n      display: flex;\n      color: white;\n      width: 80%;\n      justify-content: space-between;\n      height: 28px;\n      align-items: center; }\n      .header .lookAtTopOfHisHead .topContent .currencys {\n        display: flex;\n        padding-left: 50px; }\n        .header .lookAtTopOfHisHead .topContent .currencys .cryptoCurrency {\n          margin-right: 40px;\n          cursor: pointer; }\n          .header .lookAtTopOfHisHead .topContent .currencys .cryptoCurrency:last-child {\n            margin-right: 0; }\n      .header .lookAtTopOfHisHead .topContent .dropdown {\n        cursor: pointer;\n        position: relative;\n        display: inline-block; }\n        .header .lookAtTopOfHisHead .topContent .dropdown img {\n          width: 23px; }\n        .header .lookAtTopOfHisHead .topContent .dropdown #active_lang img {\n          width: 24px;\n          margin-bottom: -3px; }\n        .header .lookAtTopOfHisHead .topContent .dropdown:hover .dropdown-content {\n          transition: .3s;\n          visibility: visible;\n          opacity: 1;\n          transform: translateY(0em); }\n        .header .lookAtTopOfHisHead .topContent .dropdown .dropdown-content {\n          cursor: default;\n          font-size: 0.9em;\n          transform: translateY(2em);\n          transition: all 0.3s ease-in-out 0s, visibility 0s linear 0.3s, z-index 0s linear 0.01s;\n          visibility: hidden;\n          opacity: 0;\n          position: absolute;\n          background-color: rgba(6, 27, 49, 0.8);\n          box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);\n          z-index: 1;\n          color: #b6b4b5;\n          display: flex;\n          flex-direction: column;\n          align-items: center;\n          justify-content: space-around;\n          min-height: 100px;\n          padding: 5px;\n          top: 114%;\n          width: 60px;\n          left: -20px; }\n          .header .lookAtTopOfHisHead .topContent .dropdown .dropdown-content span {\n            margin: 12px 16px;\n            cursor: pointer;\n            display: block; }\n            .header .lookAtTopOfHisHead .topContent .dropdown .dropdown-content span img {\n              border: 2px solid rgba(6, 27, 49, 0.8);\n              border-radius: 50%;\n              transition: .2s; }\n            .header .lookAtTopOfHisHead .topContent .dropdown .dropdown-content span:hover {\n              color: white; }\n              .header .lookAtTopOfHisHead .topContent .dropdown .dropdown-content span:hover img {\n                border-color: white; }\n\n@media (max-width: 1030px) {\n  .header .menu {\n    font-size: .9em; }\n  .header .login {\n    font-size: .9em; } }\n", ""]);
+exports.push([module.i, ".header {\n  display: flex;\n  justify-content: space-between;\n  align-items: center;\n  margin-top: 50px;\n  width: 80%; }\n  .header #logo {\n    text-decoration: none;\n    cursor: pointer; }\n    .header #logo .logo {\n      display: flex;\n      align-items: center;\n      font-size: 2em;\n      color: white;\n      font-weight: 100;\n      cursor: pointer; }\n      .header #logo .logo img {\n        max-height: 45px;\n        margin-right: 5px;\n        margin-top: -6px;\n        cursor: pointer; }\n      .header #logo .logo .bold {\n        font-family: HelveticaBold; }\n  .header .menu ul {\n    display: flex;\n    flex-direction: row;\n    flex-wrap: nowrap;\n    justify-content: space-around;\n    list-style: none;\n    padding-left: 0;\n    margin: 0; }\n    .header .menu ul li {\n      margin-right: 15px;\n      position: relative;\n      text-transform: uppercase;\n      cursor: pointer; }\n      .header .menu ul li a {\n        color: white;\n        text-decoration: none;\n        position: relative;\n        cursor: pointer;\n        transition: .25s; }\n        .header .menu ul li a:hover {\n          color: #ffc02d; }\n      .header .menu ul li:last-child {\n        margin-right: 0; }\n      .header .menu ul li.active a {\n        color: #ffc02d; }\n  .header .login {\n    border-width: 1px;\n    border-color: white;\n    border-style: solid;\n    border-radius: 3px;\n    opacity: 0.6;\n    padding: 6px 10px 3px;\n    cursor: pointer;\n    color: white;\n    transition: .25s;\n    margin-top: -7px; }\n    .header .login:hover {\n      opacity: 1; }\n  .header #logged {\n    display: flex;\n    align-items: center;\n    text-transform: capitalize;\n    color: white;\n    font-size: 1.4em;\n    transition: .25s;\n    cursor: pointer; }\n    .header #logged i {\n      margin-right: 5px; }\n    .header #logged:hover {\n      color: #ffc02d; }\n  .header .lookAtTopOfHisHead {\n    position: absolute;\n    display: flex;\n    justify-content: center;\n    top: 10px;\n    width: 100%;\n    left: 0;\n    background: #061b31;\n    font-size: 11px; }\n    .header .lookAtTopOfHisHead .topContent {\n      display: flex;\n      color: white;\n      width: 80%;\n      justify-content: space-between;\n      height: 28px;\n      align-items: center; }\n      .header .lookAtTopOfHisHead .topContent .currencys {\n        display: flex;\n        padding-left: 50px; }\n        .header .lookAtTopOfHisHead .topContent .currencys .cryptoCurrency {\n          margin-right: 40px;\n          cursor: pointer; }\n          .header .lookAtTopOfHisHead .topContent .currencys .cryptoCurrency:last-child {\n            margin-right: 0; }\n      .header .lookAtTopOfHisHead .topContent .dropdown {\n        cursor: pointer;\n        position: relative;\n        display: inline-block; }\n        .header .lookAtTopOfHisHead .topContent .dropdown img {\n          width: 23px; }\n        .header .lookAtTopOfHisHead .topContent .dropdown #active_lang img {\n          width: 24px;\n          margin-bottom: -3px; }\n        .header .lookAtTopOfHisHead .topContent .dropdown:hover .dropdown-content {\n          transition: .3s;\n          visibility: visible;\n          opacity: 1;\n          transform: translateY(0em); }\n        .header .lookAtTopOfHisHead .topContent .dropdown .dropdown-content {\n          cursor: default;\n          font-size: 0.9em;\n          transform: translateY(2em);\n          transition: all 0.3s ease-in-out 0s, visibility 0s linear 0.3s, z-index 0s linear 0.01s;\n          visibility: hidden;\n          opacity: 0;\n          position: absolute;\n          background-color: rgba(6, 27, 49, 0.8);\n          box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);\n          z-index: 1;\n          color: #b6b4b5;\n          display: flex;\n          flex-direction: column;\n          align-items: center;\n          justify-content: space-around;\n          min-height: 100px;\n          padding: 5px;\n          top: 114%;\n          width: 60px;\n          left: -20px; }\n          .header .lookAtTopOfHisHead .topContent .dropdown .dropdown-content span {\n            margin: 12px 16px;\n            cursor: pointer;\n            display: block; }\n            .header .lookAtTopOfHisHead .topContent .dropdown .dropdown-content span img {\n              border: 2px solid rgba(6, 27, 49, 0.8);\n              border-radius: 50%;\n              transition: .2s; }\n            .header .lookAtTopOfHisHead .topContent .dropdown .dropdown-content span:hover {\n              color: white; }\n              .header .lookAtTopOfHisHead .topContent .dropdown .dropdown-content span:hover img {\n                border-color: white; }\n\n@media (max-width: 1030px) {\n  .header .menu {\n    font-size: .9em; }\n  .header .login {\n    font-size: .9em; } }\n", ""]);
 
 // exports
 
@@ -28403,7 +28443,7 @@ exports = module.exports = __webpack_require__(34)(undefined);
 
 
 // module
-exports.push([module.i, ".footer {\n  height: 200px;\n  background-repeat: no-repeat;\n  background-position-x: 50%;\n  background-size: cover;\n  display: flex;\n  justify-content: center;\n  align-items: center;\n  flex-direction: column;\n  width: 100%;\n  position: relative; }\n  .footer .cont {\n    display: flex;\n    justify-content: center;\n    align-items: center;\n    font-size: .8em;\n    position: relative;\n    margin-bottom: 20px; }\n    .footer .cont .PP {\n      margin-right: 50px; }\n      .footer .cont .PP ul {\n        list-style: none;\n        padding: 0;\n        margin: 0; }\n        .footer .cont .PP ul li {\n          margin-bottom: 15px;\n          cursor: pointer;\n          transition: .25s all; }\n          .footer .cont .PP ul li a {\n            text-decoration: none;\n            color: white;\n            transition: .25s all; }\n          .footer .cont .PP ul li:hover a {\n            color: #ffc02d; }\n          .footer .cont .PP ul li:last-child {\n            margin-bottom: 0; }\n    .footer .cont .feedback {\n      margin-right: 50px;\n      display: flex;\n      flex-direction: column; }\n      .footer .cont .feedback a {\n        color: white;\n        text-decoration: none;\n        display: flex;\n        align-items: center;\n        transition: .25s all;\n        margin-bottom: 5px; }\n        .footer .cont .feedback a i {\n          font-size: 1.6em;\n          margin-right: 5px; }\n        .footer .cont .feedback a:hover {\n          color: #ffc02d; }\n        .footer .cont .feedback a:last-child {\n          margin-bottom: 0; }\n    .footer .cont .contacts {\n      display: flex;\n      flex-direction: column; }\n      .footer .cont .contacts a {\n        color: white;\n        text-decoration: none;\n        display: flex;\n        align-items: center;\n        transition: .25s all;\n        margin-bottom: 5px; }\n        .footer .cont .contacts a i {\n          font-size: 1.6em;\n          margin-right: 5px; }\n        .footer .cont .contacts a:hover {\n          color: #ffc02d; }\n        .footer .cont .contacts a:last-child {\n          margin-bottom: 0; }\n    .footer .cont:after {\n      content: \"\";\n      position: absolute;\n      width: 100%;\n      height: 1px;\n      bottom: -10px;\n      left: 0;\n      background-color: white;\n      opacity: 0.188; }\n  .footer .socials {\n    width: 15%;\n    font-size: 1.5em;\n    display: flex;\n    align-items: center;\n    justify-content: space-around; }\n    .footer .socials a {\n      color: white;\n      text-decoration: none;\n      transition: .25s all; }\n      .footer .socials a:hover {\n        color: #ffc02d; }\n  .footer #author {\n    position: absolute;\n    bottom: 0;\n    right: calc(50% - 41px);\n    font-size: .8em;\n    text-decoration: none;\n    color: white;\n    transition: .25s all; }\n    .footer #author:hover {\n      color: #ffc02d; }\n", ""]);
+exports.push([module.i, ".footer {\n  height: 200px;\n  background-repeat: no-repeat;\n  background-position-x: 50%;\n  background-size: cover;\n  display: flex;\n  justify-content: center;\n  align-items: center;\n  flex-direction: column;\n  width: 100%;\n  position: relative; }\n  .footer .cont {\n    display: flex;\n    justify-content: center;\n    align-items: center;\n    font-size: .8em;\n    position: relative;\n    margin-bottom: 20px; }\n    .footer .cont .PP {\n      margin-right: 50px; }\n      .footer .cont .PP ul {\n        list-style: none;\n        padding: 0;\n        margin: 0;\n        display: flex;\n        flex-direction: column;\n        align-items: flex-start; }\n        .footer .cont .PP ul li {\n          margin-bottom: 15px;\n          cursor: pointer;\n          transition: .25s all; }\n          .footer .cont .PP ul li a {\n            text-decoration: none;\n            color: white;\n            transition: .25s all; }\n          .footer .cont .PP ul li:hover a {\n            color: #ffc02d; }\n          .footer .cont .PP ul li:last-child {\n            margin-bottom: 0; }\n    .footer .cont .feedback {\n      margin-right: 50px;\n      display: flex;\n      flex-direction: column;\n      align-items: flex-start; }\n      .footer .cont .feedback a {\n        color: white;\n        text-decoration: none;\n        display: flex;\n        align-items: center;\n        transition: .25s all;\n        margin-bottom: 5px; }\n        .footer .cont .feedback a i {\n          font-size: 1.6em;\n          margin-right: 5px; }\n        .footer .cont .feedback a:hover {\n          color: #ffc02d; }\n        .footer .cont .feedback a:last-child {\n          margin-bottom: 0; }\n    .footer .cont .contacts {\n      display: flex;\n      flex-direction: column;\n      align-items: flex-start; }\n      .footer .cont .contacts a {\n        color: white;\n        text-decoration: none;\n        display: flex;\n        align-items: center;\n        transition: .25s all;\n        margin-bottom: 5px; }\n        .footer .cont .contacts a i {\n          font-size: 1.6em;\n          margin-right: 5px; }\n        .footer .cont .contacts a:hover {\n          color: #ffc02d; }\n        .footer .cont .contacts a:last-child {\n          margin-bottom: 0; }\n    .footer .cont:after {\n      content: \"\";\n      position: absolute;\n      width: 100%;\n      height: 1px;\n      bottom: -10px;\n      left: 0;\n      background-color: white;\n      opacity: 0.188; }\n  .footer .socials {\n    width: 15%;\n    font-size: 1.5em;\n    display: flex;\n    align-items: center;\n    justify-content: space-around; }\n    .footer .socials a {\n      color: white;\n      text-decoration: none;\n      transition: .25s all; }\n      .footer .socials a:hover {\n        color: #ffc02d; }\n  .footer #author {\n    position: absolute;\n    bottom: 0;\n    right: calc(50% - 41px);\n    font-size: .8em;\n    text-decoration: none;\n    color: white;\n    transition: .25s all; }\n    .footer #author:hover {\n      color: #ffc02d; }\n", ""]);
 
 // exports
 
@@ -29547,8 +29587,7 @@ var App = function (_Component) {
             var _state = this.state,
                 language = _state.language,
                 auth = _state.auth;
-
-            console.log(packages);
+            // console.log(packages);
 
             var lang = _translate2.default.filter(function (item) {
                 return item.language === language;
@@ -29663,16 +29702,15 @@ var Container = function (_Component) {
                 packages = _props.packages,
                 toggleAuth = _props.toggleAuth;
 
-
             return _react2.default.createElement(
                 'div',
                 { className: 'content' },
                 _react2.default.createElement(_Package2.default, {
-                    package_title: pages.packages[0],
+                    pages: pages.packages,
                     packages: packages,
                     toggleAuth: toggleAuth
                 }),
-                _react2.default.createElement(_Faq2.default, null)
+                _react2.default.createElement(_Faq2.default, { pages: pages.faq })
             );
         }
     }]);
@@ -29743,19 +29781,19 @@ var Package = function (_Component) {
 
             var _props = this.props,
                 packages = _props.packages,
-                package_title = _props.package_title,
+                pages = _props.pages,
                 toggleAuth = _props.toggleAuth;
 
             var user = this.getCookie("user");
-            console.log(user);
+
             var packages_map = packages.map(function (item, index) {
                 var btn = "";
                 if (item.status === "end") {
-                    btn = "НЕДОСТУПНО";
+                    btn = pages.btn_end;
                 } else if (item.status === "start") {
-                    btn = "КУПИТЬ";
+                    btn = pages.btn_start;
                 } else {
-                    btn = "В ОЖИДАНИИ";
+                    btn = pages.btn_wait;
                 }
                 var rand = Math.floor(Math.random() * 1200) + 100;
 
@@ -29779,7 +29817,8 @@ var Package = function (_Component) {
                                 { className: "cost" },
                                 item.cost
                             ),
-                            "/\u043C\u043E\u043D\u0435\u0442\u0443"
+                            "/",
+                            pages.top_p
                         )
                     ),
                     _react2.default.createElement(
@@ -29805,7 +29844,8 @@ var Package = function (_Component) {
                             _react2.default.createElement(
                                 "p",
                                 null,
-                                "\u0412\u0432\u0435\u0434\u0438\u0442\u0435 \u043A\u043E\u043B\u0438\u0447\u0435\u0441\u0442\u0432\u043E \u043C\u043E\u043D\u0435\u0442 \u0434\u043B\u044F \u043F\u043E\u043A\u0443\u043F\u043A\u0438:"
+                                pages.inputCoins_p,
+                                ":"
                             ),
                             item.status === "end" ? _react2.default.createElement("input", { type: "number", defaultValue: 0, max: item.coins, disabled: true }) : _react2.default.createElement("input", {
                                 type: "number",
@@ -29824,7 +29864,8 @@ var Package = function (_Component) {
                             _react2.default.createElement(
                                 "p",
                                 null,
-                                "\u0421\u0442\u043E\u0438\u043C\u043E\u0441\u0442\u044C:"
+                                pages.price_p,
+                                ":"
                             ),
                             _react2.default.createElement(
                                 "span",
@@ -29862,12 +29903,12 @@ var Package = function (_Component) {
                     _react2.default.createElement(
                         "h1",
                         null,
-                        package_title.title
+                        pages.title
                     ),
                     _react2.default.createElement(
                         "p",
                         { className: "afterHead" },
-                        "\u0423\u043A\u0430\u0436\u0438\u0442\u0435 \u043A\u043E\u043B\u0438\u0447\u0435\u0441\u0442\u0432\u043E \u043C\u043E\u043D\u0435\u0442 \u043A\u043E\u0442\u043E\u0440\u044B\u0435 \u0445\u043E\u0442\u0438\u0442\u0435 \u043A\u0443\u043F\u0438\u0442\u044C \u0434\u043B\u044F \u0440\u0430\u0441\u0447\u0435\u0442\u0430 \u0441\u0442\u043E\u0438\u043C\u043E\u0441\u0442\u044C"
+                        pages.afterHead
                     ),
                     _react2.default.createElement(
                         "div",
@@ -29921,6 +29962,8 @@ var Faq = function (_Component) {
     _createClass(Faq, [{
         key: "render",
         value: function render() {
+            var pages = this.props.pages;
+
             return _react2.default.createElement(
                 "div",
                 { className: "faq" },
@@ -29930,12 +29973,12 @@ var Faq = function (_Component) {
                     _react2.default.createElement(
                         "h1",
                         null,
-                        "\u041F\u043E\u043C\u043E\u0449\u044C"
+                        pages.title
                     ),
                     _react2.default.createElement(
                         "p",
                         { className: "afterHead" },
-                        "\u0421\u043F\u0438\u0441\u043E\u043A \u043D\u0430\u0438\u0431\u043E\u043B\u0435\u0435 \u0447\u0430\u0441\u0442\u043E \u0437\u0430\u0434\u0430\u0432\u0430\u0435\u043C\u044B\u0445 \u0432\u043E\u043F\u0440\u043E\u0441\u043E\u0432 \u0438 \u043E\u0442\u0432\u0435\u0442\u044B \u043D\u0430 \u043D\u0438\u0445"
+                        pages.afterHead
                     ),
                     _react2.default.createElement(
                         "div",
@@ -29946,13 +29989,19 @@ var Faq = function (_Component) {
                             _react2.default.createElement(
                                 "h3",
                                 null,
-                                _react2.default.createElement("i", { className: "icon-check-mark-circle-two" }),
-                                " \u041A\u0430\u043A \u043C\u043E\u0436\u043D\u043E \u043E\u043F\u043B\u0430\u0442\u0438\u0442\u044C?"
+                                _react2.default.createElement(
+                                    "a",
+                                    { href: "./faq.html#1" },
+                                    _react2.default.createElement("i", { className: "icon-check-mark-circle-two" }),
+                                    " ",
+                                    pages.help1.title
+                                )
                             ),
                             _react2.default.createElement(
                                 "p",
                                 null,
-                                "\u041C\u044B \u0431\u0440\u043E\u0441\u0430\u0435\u043C \u0432\u044B\u0437\u043E\u0432 \u0441\u0442\u0430\u0442\u0443\u0441-\u043A\u0432\u043E \u0438 \u0432\u044B\u0445\u043E\u0434\u044F\u0442 \u0437\u0430 \u0440\u0430\u043C\u043A\u0438 \u0441\u0435\u0433\u043E\u0434\u043D\u044F\u0448\u043D\u0435\u0433\u043E \u0434\u043D\u044F, \u0447\u0442\u043E\u0431\u044B \u0441\u043E\u0437\u0434\u0430\u0442\u044C \u043E\u0442\u043A\u0440\u044B\u0442\u043E\u0435 \u0444\u0438\u043D\u0430\u043D\u0441\u043E\u0432\u043E\u0435 \u0431\u0443\u0434\u0443\u0449\u0435\u0435 ... "
+                                pages.help1.text,
+                                "... "
                             )
                         ),
                         _react2.default.createElement(
@@ -29961,13 +30010,19 @@ var Faq = function (_Component) {
                             _react2.default.createElement(
                                 "h3",
                                 null,
-                                _react2.default.createElement("i", { className: "icon-check-mark-circle-two" }),
-                                " \u041A\u0430\u043A \u043C\u043E\u0436\u043D\u043E \u043E\u043F\u043B\u0430\u0442\u0438\u0442\u044C?"
+                                _react2.default.createElement(
+                                    "a",
+                                    { href: "./faq.html#3" },
+                                    _react2.default.createElement("i", { className: "icon-check-mark-circle-two" }),
+                                    " ",
+                                    pages.help2.title
+                                )
                             ),
                             _react2.default.createElement(
                                 "p",
                                 null,
-                                "\u041C\u044B \u0431\u0440\u043E\u0441\u0430\u0435\u043C \u0432\u044B\u0437\u043E\u0432 \u0441\u0442\u0430\u0442\u0443\u0441-\u043A\u0432\u043E \u0438 \u0432\u044B\u0445\u043E\u0434\u044F\u0442 \u0437\u0430 \u0440\u0430\u043C\u043A\u0438 \u0441\u0435\u0433\u043E\u0434\u043D\u044F\u0448\u043D\u0435\u0433\u043E \u0434\u043D\u044F, \u0447\u0442\u043E\u0431\u044B \u0441\u043E\u0437\u0434\u0430\u0442\u044C \u043E\u0442\u043A\u0440\u044B\u0442\u043E\u0435 \u0444\u0438\u043D\u0430\u043D\u0441\u043E\u0432\u043E\u0435 \u0431\u0443\u0434\u0443\u0449\u0435\u0435 ... "
+                                pages.help2.text,
+                                "... "
                             )
                         ),
                         _react2.default.createElement(
@@ -29976,13 +30031,19 @@ var Faq = function (_Component) {
                             _react2.default.createElement(
                                 "h3",
                                 null,
-                                _react2.default.createElement("i", { className: "icon-check-mark-circle-two" }),
-                                " \u041A\u0430\u043A \u043C\u043E\u0436\u043D\u043E \u043E\u043F\u043B\u0430\u0442\u0438\u0442\u044C?"
+                                _react2.default.createElement(
+                                    "a",
+                                    { href: "./faq.html#5" },
+                                    _react2.default.createElement("i", { className: "icon-check-mark-circle-two" }),
+                                    " ",
+                                    pages.help3.title
+                                )
                             ),
                             _react2.default.createElement(
                                 "p",
                                 null,
-                                "\u041C\u044B \u0431\u0440\u043E\u0441\u0430\u0435\u043C \u0432\u044B\u0437\u043E\u0432 \u0441\u0442\u0430\u0442\u0443\u0441-\u043A\u0432\u043E \u0438 \u0432\u044B\u0445\u043E\u0434\u044F\u0442 \u0437\u0430 \u0440\u0430\u043C\u043A\u0438 \u0441\u0435\u0433\u043E\u0434\u043D\u044F\u0448\u043D\u0435\u0433\u043E \u0434\u043D\u044F, \u0447\u0442\u043E\u0431\u044B \u0441\u043E\u0437\u0434\u0430\u0442\u044C \u043E\u0442\u043A\u0440\u044B\u0442\u043E\u0435 \u0444\u0438\u043D\u0430\u043D\u0441\u043E\u0432\u043E\u0435 \u0431\u0443\u0434\u0443\u0449\u0435\u0435 ... "
+                                pages.help3.text,
+                                "... "
                             )
                         ),
                         _react2.default.createElement(
@@ -29991,13 +30052,19 @@ var Faq = function (_Component) {
                             _react2.default.createElement(
                                 "h3",
                                 null,
-                                _react2.default.createElement("i", { className: "icon-check-mark-circle-two" }),
-                                " \u041A\u0430\u043A \u043C\u043E\u0436\u043D\u043E \u043E\u043F\u043B\u0430\u0442\u0438\u0442\u044C?"
+                                _react2.default.createElement(
+                                    "a",
+                                    { href: "./faq.html#7" },
+                                    _react2.default.createElement("i", { className: "icon-check-mark-circle-two" }),
+                                    " ",
+                                    pages.help4.title
+                                )
                             ),
                             _react2.default.createElement(
                                 "p",
                                 null,
-                                "\u041C\u044B \u0431\u0440\u043E\u0441\u0430\u0435\u043C \u0432\u044B\u0437\u043E\u0432 \u0441\u0442\u0430\u0442\u0443\u0441-\u043A\u0432\u043E \u0438 \u0432\u044B\u0445\u043E\u0434\u044F\u0442 \u0437\u0430 \u0440\u0430\u043C\u043A\u0438 \u0441\u0435\u0433\u043E\u0434\u043D\u044F\u0448\u043D\u0435\u0433\u043E \u0434\u043D\u044F, \u0447\u0442\u043E\u0431\u044B \u0441\u043E\u0437\u0434\u0430\u0442\u044C \u043E\u0442\u043A\u0440\u044B\u0442\u043E\u0435 \u0444\u0438\u043D\u0430\u043D\u0441\u043E\u0432\u043E\u0435 \u0431\u0443\u0434\u0443\u0449\u0435\u0435 ... "
+                                pages.help4.text,
+                                "... "
                             )
                         )
                     )
@@ -30051,7 +30118,7 @@ exports = module.exports = __webpack_require__(34)(undefined);
 
 
 // module
-exports.push([module.i, ".currency {\n  position: fixed;\n  top: 70px;\n  color: white;\n  padding: 5px;\n  padding-left: 10px;\n  z-index: 101;\n  background-color: rgba(87, 87, 87, 0.7);\n  border-bottom-right-radius: 5px; }\n  .currency div {\n    display: flex;\n    justify-content: flex-start;\n    align-items: center; }\n    .currency div i {\n      font-size: 1.2em;\n      margin: 0 3px; }\n\n/*.packages{\n  padding-top: 75px;\n  z-index: 10;\n  h1{\n    text-align: center;\n    z-index:10;\n\n  }\n  .all_packages{\n    display: flex;\n    flex-direction: column;\n    justify-content: center;\n    align-items: center;\n    z-index: 10;\n    .top{\n      display: flex;\n      width: 100%;\n      justify-content: space-around;\n      align-items: center;\n      z-index:10;\n      margin-bottom: 15px;\n      flex-wrap: wrap;\n\n    }\n    .center{\n      display: flex;\n      width: 100%;\n      justify-content: center;\n      align-items: center;\n      z-index: 10;\n      margin-bottom: 15px;\n\n    }\n    .bottom {\n      display: flex;\n      width: 100%;\n      justify-content: space-around;\n      align-items: center;\n      z-index: 10;\n      flex-wrap: wrap;\n\n    }\n    .package {\n      display: flex;\n      flex-direction: column;\n      align-items: center;\n      font-size: 1.3em;\n      color: $BrightGold;\n      padding: 10px 0;\n      box-shadow: rgba(229, 193, 0, .15) 0 11px 35px;\n      background-color: rgba(87, 87, 87, .9);\n      transition: .25s all;\n      margin-bottom: 15px;\n      cursor: pointer;\n      border-radius: 10px;\n      &:hover{\n        transform: scale(1.02);\n        box-shadow: rgba(229, 193, 0, .3) 0 15px 50px;\n      }\n      .package_logo {\n        margin-top:15px;\n        font-size: 5em;\n        text-shadow: 0 0 10px black;\n\n      }\n      h3 {\n        padding: 10px;\n        background-color: $LightGold;\n        color: white;\n        width: 75%;\n        text-align: center;\n        letter-spacing: 3px;\n        text-shadow: 0 0 10px black;\n      }\n      .options{\n        margin-bottom:15px;\n\n        .getCoins{\n          position: relative;\n          margin-left: 80px;\n          transition: .25s all;\n          label {\n            position: relative;\n            .icon-bitcoin-circle {\n              position: absolute;\n              //top: -16px;\n              //left: 13%;\n              top: -16px;\n              font-size: 2em;\n              text-shadow: 0 0 10px black;\n              }\n            }\n          input{\n            display: inline-block;\n            width: 170px;\n            color: $LightGold;\n            font-size: 32px;\n            font-weight: 500;\n            text-align: left;\n            padding-left: 40px;\n            border-width: initial;\n            border-style: none;\n            border-color: initial;\n            border-image: initial;\n            background: transparent;\n            position: relative;\n            -moz-appearance: textfield;\n            &::-webkit-outer-spin-button,\n            &::-webkit-inner-spin-button {\n              -webkit-appearance: none;\n            }\n            &:focus{\n              outline: none;\n            }\n\n          }\n        }\n      }\n     .summ{\n       display: flex;\n       width: 100%;\n       justify-content: space-between;\n       background: $LightGold;\n       color: white;\n       margin-bottom:25px;\n       div{\n         padding: 0 20px;\n         text-align: center;\n         p{\n           margin: 10px;\n           font-size: .7em;\n           text-transform: uppercase;\n           letter-spacing: 1px;\n         }\n       }\n     }\n      .coins-range {\n        -webkit-appearance: none;\n        margin: 7.3px 0;\n        width: 80%;\n        margin-bottom: 15px;\n\n        &:focus {\n          outline: none;\n        }\n        &::-webkit-slider-runnable-track {\n          width: 100%;\n          height: 11.4px;\n          cursor: pointer;\n          box-shadow: 1px 1px 1px #000000, 0px 0px 1px #0d0d0d;\n          background: rgba(174, 174, 174, 0.78);\n          border-radius: 1.3px;\n          border: 0.2px solid #010101;\n        }\n        &::-webkit-slider-thumb {\n          box-shadow: 0px 0px 1px #000031, 0px 0px 0px #00004b;\n          border: 1.8px solid rgba(0, 0, 101, 0.56);\n          height: 26px;\n          width: 26px;\n          border-radius: 15px;\n          background: #e5c100;\n          cursor: pointer;\n          -webkit-appearance: none;\n          margin-top: -7.5px;\n        }\n        &:focus::-webkit-slider-runnable-track {\n          background: rgba(238, 238, 238, 0.78);\n        }\n        &::-moz-range-track {\n          width: 100%;\n          height: 11.4px;\n          cursor: pointer;\n          box-shadow: 1px 1px 1px #000000, 0px 0px 1px #0d0d0d;\n          background: rgba(174, 174, 174, 0.78);\n          border-radius: 1.3px;\n          border: 0.2px solid #010101;\n        }\n        &::-moz-range-thumb {\n          box-shadow: 0px 0px 1px #000031, 0px 0px 0px #00004b;\n          border: 1.8px solid rgba(0, 0, 101, 0.56);\n          height: 26px;\n          width: 26px;\n          border-radius: 15px;\n          background: #e5c100;\n          cursor: pointer;\n        }\n        &::-ms-track {\n          width: 100%;\n          height: 11.4px;\n          cursor: pointer;\n          background: transparent;\n          border-color: transparent;\n          color: transparent;\n        }\n        &::-ms-fill-lower {\n          background: rgba(110, 110, 110, 0.78);\n          border: 0.2px solid #010101;\n          border-radius: 2.6px;\n          box-shadow: 1px 1px 1px #000000, 0px 0px 1px #0d0d0d;\n        }\n        &::-ms-fill-upper {\n          background: rgba(174, 174, 174, 0.78);\n          border: 0.2px solid #010101;\n          border-radius: 2.6px;\n          box-shadow: 1px 1px 1px #000000, 0px 0px 1px #0d0d0d;\n        }\n        &::-ms-thumb {\n          box-shadow: 0px 0px 1px #000031, 0px 0px 0px #00004b;\n          border: 1.8px solid rgba(0, 0, 101, 0.56);\n          //height: 26px;\n          width: 26px;\n          border-radius: 15px;\n          background: #e5c100;\n          cursor: pointer;\n          height: 11.4px;\n        }\n        &:focus::-ms-fill-lower {\n          background: rgba(174, 174, 174, 0.78);\n        }\n        &:focus::-ms-fill-upper {\n          background: rgba(238, 238, 238, 0.78);\n        }\n      }\n\n\n      //input[type=\"range\"]{\n      //  width: 80%;\n      //  margin-bottom:15px;\n      //\n      //}\n    }\n  }\n}\n*/\n.packages {\n  background-color: #f6fbfe;\n  width: 100%;\n  display: flex;\n  margin-top: 15px;\n  justify-content: center; }\n  .packages .packages-container {\n    background-color: white;\n    background-color: white;\n    width: 80%;\n    padding: 25px;\n    margin-bottom: 30px;\n    display: flex;\n    flex-direction: column;\n    align-items: center; }\n    .packages .packages-container h1 {\n      color: black !important;\n      margin-bottom: 10px; }\n    .packages .packages-container .afterHead {\n      text-align: center;\n      width: 35%;\n      margin-top: 0;\n      margin-bottom: 45px; }\n    .packages .packages-container .pack-map {\n      display: flex; }\n      .packages .packages-container .pack-map .package {\n        max-width: 230px;\n        border: 1px solid;\n        background: white;\n        text-align: center; }\n        .packages .packages-container .pack-map .package .top {\n          padding-bottom: 15px;\n          border-bottom: 1px solid;\n          cursor: default; }\n          .packages .packages-container .pack-map .package .top h3 {\n            margin: 20px;\n            font-size: .85em;\n            font-family: HelveticaBold;\n            cursor: default; }\n          .packages .packages-container .pack-map .package .top p {\n            margin-bottom: 0;\n            display: flex;\n            justify-content: center;\n            align-items: center; }\n            .packages .packages-container .pack-map .package .top p .cost {\n              font-size: 2em;\n              margin: 0 10px;\n              font-family: HelveticaBold;\n              cursor: default; }\n        .packages .packages-container .pack-map .package .bottom .coins_left p {\n          font-size: .8em;\n          text-transform: uppercase;\n          margin-bottom: 2px;\n          cursor: default; }\n        .packages .packages-container .pack-map .package .bottom .coins_left #coins_left {\n          font-size: 2.3em;\n          font-family: HelveticaBold;\n          cursor: default; }\n        .packages .packages-container .pack-map .package .bottom .inputCoins {\n          display: flex;\n          flex-direction: column;\n          align-items: center;\n          cursor: default; }\n          .packages .packages-container .pack-map .package .bottom .inputCoins p {\n            max-width: 60%;\n            text-align: center;\n            text-transform: uppercase;\n            font-size: .65em;\n            margin-bottom: 0;\n            cursor: default; }\n          .packages .packages-container .pack-map .package .bottom .inputCoins input {\n            width: 90%;\n            border: none;\n            text-align: center;\n            font-size: 2.4em;\n            padding: 0;\n            margin: 0;\n            font-family: HelveticaBold;\n            margin-top: 6px;\n            -moz-appearance: textfield;\n            cursor: pointer; }\n            .packages .packages-container .pack-map .package .bottom .inputCoins input::-webkit-outer-spin-button, .packages .packages-container .pack-map .package .bottom .inputCoins input::-webkit-inner-spin-button {\n              -webkit-appearance: none; }\n            .packages .packages-container .pack-map .package .bottom .inputCoins input:focus {\n              outline: none; }\n        .packages .packages-container .pack-map .package .bottom .price {\n          display: flex;\n          flex-direction: column;\n          align-items: center; }\n          .packages .packages-container .pack-map .package .bottom .price p {\n            font-size: .8em;\n            text-transform: uppercase;\n            margin-bottom: 2px;\n            cursor: default; }\n          .packages .packages-container .pack-map .package .bottom .price .spanPrice {\n            font-size: 1.9em;\n            font-family: HelveticaBold; }\n          .packages .packages-container .pack-map .package .bottom .price .btn-buy {\n            border-radius: 3px;\n            background-color: #feaf00;\n            width: 176px;\n            display: flex;\n            justify-content: center;\n            align-items: center;\n            margin-bottom: 15px;\n            margin-top: 15px;\n            cursor: pointer;\n            transition: .25s;\n            color: white;\n            padding: 8px 0 4px; }\n            .packages .packages-container .pack-map .package .bottom .price .btn-buy:hover {\n              border-radius: 0;\n              background-color: #ffbb24; }\n      .packages .packages-container .pack-map .start {\n        transform: scale(1.05);\n        border-width: 3px;\n        border-color: #feaf00;\n        box-shadow: 0px 0px 15.54px 5.46px rgba(0, 0, 0, 0.06); }\n        .packages .packages-container .pack-map .start .top {\n          border-width: 3px;\n          border-color: #feaf00; }\n      .packages .packages-container .pack-map .end {\n        border-width: 2px;\n        border-color: #cbd3dc;\n        color: #8b8b93 !important; }\n        .packages .packages-container .pack-map .end .top {\n          border-width: 2px;\n          border-color: #cbd3dc; }\n        .packages .packages-container .pack-map .end .bottom input {\n          color: #8b8b93 !important; }\n        .packages .packages-container .pack-map .end .bottom .btn-buy {\n          border-width: 1px;\n          border-color: #898683;\n          border-style: solid;\n          border-radius: 3px;\n          background-color: transparent !important;\n          color: #8b8b93 !important;\n          cursor: not-allowed !important; }\n      .packages .packages-container .pack-map .wait {\n        border-width: 2px;\n        border-color: #feaf00;\n        border-style: solid;\n        color: #3a3948 !important; }\n        .packages .packages-container .pack-map .wait .top {\n          border-width: 2px;\n          border-color: #feaf00; }\n        .packages .packages-container .pack-map .wait .bottom input {\n          color: #3a3948 !important; }\n        .packages .packages-container .pack-map .wait .bottom .btn-buy {\n          border-width: 1px;\n          border-color: #898683;\n          border-style: solid;\n          border-radius: 3px;\n          background-color: transparent !important;\n          color: #8b8b93 !important;\n          cursor: not-allowed !important; }\n\n.calculator {\n  display: flex;\n  flex-direction: column;\n  justify-content: space-around;\n  align-items: center;\n  margin-bottom: 25px;\n  margin-top: 35px;\n  z-index: 10; }\n  .calculator #alert {\n    display: none;\n    opacity: 0;\n    position: fixed;\n    right: 10px;\n    top: 75px;\n    border: 2px solid #fcf8e3;\n    width: 220px;\n    height: 75px;\n    background-color: #faebcc;\n    z-index: 11;\n    color: #8a6d3b;\n    border-radius: 5px;\n    font-size: 1.3em;\n    flex-direction: column;\n    justify-content: space-around;\n    align-items: center;\n    transition: .25s; }\n  .calculator h1 {\n    margin-bottom: 0; }\n  .calculator p {\n    margin-bottom: 25px;\n    color: white;\n    font-size: 1.1em;\n    letter-spacing: 2px; }\n  .calculator .calculator-body {\n    display: flex;\n    flex-direction: column;\n    justify-content: space-around;\n    align-items: center;\n    margin-bottom: 25px;\n    z-index: 10; }\n  .calculator div {\n    margin-bottom: 15px; }\n  .calculator .calculator-top {\n    display: flex;\n    justify-content: center;\n    align-items: center; }\n    .calculator .calculator-top i {\n      font-size: 3em;\n      color: #ffc02d;\n      text-shadow: 0 0 10px black; }\n    .calculator .calculator-top input {\n      outline: none;\n      line-height: 20px;\n      width: 100%;\n      padding: 10px 15px;\n      margin-bottom: 10px;\n      background-color: rgba(255, 255, 255, 0.4);\n      border: 2px solid transparent;\n      border-bottom: 2px solid rgba(255, 255, 255, 0.7);\n      color: rgba(255, 255, 255, 0.9);\n      font-size: 1.2em;\n      transition: .25s all;\n      -moz-appearance: textfield;\n      text-align: center; }\n      .calculator .calculator-top input::-webkit-outer-spin-button, .calculator .calculator-top input::-webkit-inner-spin-button {\n        -webkit-appearance: none; }\n      .calculator .calculator-top input::placeholder {\n        color: rgba(255, 255, 255, 0.7); }\n      .calculator .calculator-top input::-webkit-input-placeholder {\n        text-indent: 0;\n        transition: text-indent 0.3s ease; }\n      .calculator .calculator-top input::-moz-placeholder {\n        text-indent: 0;\n        transition: text-indent 0.3s ease; }\n      .calculator .calculator-top input:-moz-placeholder {\n        text-indent: 0;\n        transition: text-indent 0.3s ease; }\n      .calculator .calculator-top input:-ms-input-placeholder {\n        text-indent: 0;\n        transition: text-indent 0.3s ease; }\n      .calculator .calculator-top input:focus::-webkit-input-placeholder {\n        text-indent: 500px;\n        transition: text-indent 0.3s ease; }\n      .calculator .calculator-top input:focus::-moz-placeholder {\n        text-indent: 500px;\n        transition: text-indent 0.3s ease; }\n      .calculator .calculator-top input:focus:-moz-placeholder {\n        text-indent: 500px;\n        transition: text-indent 0.3s ease; }\n      .calculator .calculator-top input:focus:-ms-input-placeholder {\n        text-indent: 500px;\n        transition: text-indent 0.3s ease; }\n      .calculator .calculator-top input:focus, .calculator .calculator-top input:hover {\n        border: 2px solid rgba(255, 255, 255, 0.5);\n        background-color: transparent; }\n  .calculator .calculator-package {\n    display: flex;\n    align-items: center;\n    font-size: 5em; }\n    .calculator .calculator-package div {\n      margin-bottom: 0;\n      margin-right: 10px;\n      text-shadow: 0 0 10px black;\n      border: 1px solid;\n      padding: 10px 10px 0;\n      cursor: pointer;\n      box-shadow: rgba(229, 193, 0, 0.15) 0 11px 35px;\n      background-color: rgba(242, 176, 30, 0.3);\n      border-radius: 5px;\n      transition: 0.25s all; }\n      .calculator .calculator-package div:last-child {\n        margin-right: 0; }\n      .calculator .calculator-package div.active-package {\n        transform: scale(1.02);\n        box-shadow: rgba(229, 193, 0, 0.5) 0 15px 50px;\n        border-color: #132a45; }\n      .calculator .calculator-package div:hover {\n        transform: scale(1.02);\n        box-shadow: rgba(229, 193, 0, 0.3) 0 15px 50px; }\n  .calculator .calculator-years {\n    width: 100%; }\n    .calculator .calculator-years input {\n      width: 100%;\n      -webkit-appearance: none;\n      margin: 7.3px 0;\n      margin-bottom: 15px; }\n      .calculator .calculator-years input:focus {\n        outline: none; }\n      .calculator .calculator-years input::-webkit-slider-runnable-track {\n        width: 100%;\n        height: 11.4px;\n        cursor: pointer;\n        box-shadow: 1px 1px 1px #000000, 0px 0px 1px #0d0d0d;\n        background: rgba(174, 174, 174, 0.78);\n        border-radius: 1.3px;\n        border: 0.2px solid #010101; }\n      .calculator .calculator-years input::-webkit-slider-thumb {\n        box-shadow: 0px 0px 1px #000031, 0px 0px 0px #00004b;\n        border: 1.8px solid rgba(0, 0, 101, 0.56);\n        height: 26px;\n        width: 26px;\n        border-radius: 15px;\n        background: #e5c100;\n        cursor: pointer;\n        -webkit-appearance: none;\n        margin-top: -7.5px; }\n      .calculator .calculator-years input:focus::-webkit-slider-runnable-track {\n        background: rgba(238, 238, 238, 0.78); }\n      .calculator .calculator-years input::-moz-range-track {\n        width: 100%;\n        height: 11.4px;\n        cursor: pointer;\n        box-shadow: 1px 1px 1px #000000, 0px 0px 1px #0d0d0d;\n        background: rgba(174, 174, 174, 0.78);\n        border-radius: 1.3px;\n        border: 0.2px solid #010101; }\n      .calculator .calculator-years input::-moz-range-thumb {\n        box-shadow: 0px 0px 1px #000031, 0px 0px 0px #00004b;\n        border: 1.8px solid rgba(0, 0, 101, 0.56);\n        height: 26px;\n        width: 26px;\n        border-radius: 15px;\n        background: #e5c100;\n        cursor: pointer; }\n      .calculator .calculator-years input::-ms-track {\n        width: 100%;\n        height: 11.4px;\n        cursor: pointer;\n        background: transparent;\n        border-color: transparent;\n        color: transparent; }\n      .calculator .calculator-years input::-ms-fill-lower {\n        background: rgba(110, 110, 110, 0.78);\n        border: 0.2px solid #010101;\n        border-radius: 2.6px;\n        box-shadow: 1px 1px 1px #000000, 0px 0px 1px #0d0d0d; }\n      .calculator .calculator-years input::-ms-fill-upper {\n        background: rgba(174, 174, 174, 0.78);\n        border: 0.2px solid #010101;\n        border-radius: 2.6px;\n        box-shadow: 1px 1px 1px #000000, 0px 0px 1px #0d0d0d; }\n      .calculator .calculator-years input::-ms-thumb {\n        box-shadow: 0px 0px 1px #000031, 0px 0px 0px #00004b;\n        border: 1.8px solid rgba(0, 0, 101, 0.56);\n        width: 26px;\n        border-radius: 15px;\n        background: #e5c100;\n        cursor: pointer;\n        height: 11.4px; }\n      .calculator .calculator-years input:focus::-ms-fill-lower {\n        background: rgba(174, 174, 174, 0.78); }\n      .calculator .calculator-years input:focus::-ms-fill-upper {\n        background: rgba(238, 238, 238, 0.78); }\n  .calculator .calculator-out {\n    width: 100%;\n    display: flex;\n    align-items: center;\n    justify-content: space-between;\n    z-index: 10; }\n    .calculator .calculator-out i.icon-arrow-graph-up-right {\n      font-size: 3em;\n      color: #ffc02d;\n      z-index: 10;\n      text-shadow: 0 0 10px black; }\n    .calculator .calculator-out div {\n      min-width: 45%;\n      font-size: 2em;\n      color: white;\n      z-index: 10;\n      position: relative; }\n      .calculator .calculator-out div i {\n        color: #ffc02d;\n        z-index: 10;\n        text-shadow: 0 0 10px black; }\n      .calculator .calculator-out div:after {\n        content: \"\";\n        position: absolute;\n        width: 100%;\n        height: 1px;\n        bottom: -3px;\n        border-bottom: 2px solid #ffc02d;\n        left: 0;\n        box-shadow: 0 2px 6px rgba(229, 193, 0, 0.75); }\n    .calculator .calculator-out .take {\n      text-align: right; }\n\n.faq {\n  width: 100%;\n  height: 400px;\n  background: #f6fbfe;\n  display: flex;\n  justify-content: center; }\n  .faq .faq-container {\n    width: 60%;\n    display: flex;\n    flex-direction: column;\n    align-items: center; }\n    .faq .faq-container h1 {\n      color: black !important;\n      margin-bottom: 0 !important; }\n    .faq .faq-container .afterHead {\n      margin-top: 5px; }\n    .faq .faq-container .faqs {\n      display: flex;\n      flex-wrap: wrap;\n      justify-content: space-between; }\n      .faq .faq-container .faqs .one-faq {\n        max-width: 42%; }\n        .faq .faq-container .faqs .one-faq h3 {\n          font-family: HelveticaBold;\n          cursor: pointer; }\n          .faq .faq-container .faqs .one-faq h3 i {\n            color: #ffbb24; }\n        .faq .faq-container .faqs .one-faq p {\n          color: #464646; }\n", ""]);
+exports.push([module.i, ".currency {\n  position: fixed;\n  top: 70px;\n  color: white;\n  padding: 5px;\n  padding-left: 10px;\n  z-index: 101;\n  background-color: rgba(87, 87, 87, 0.7);\n  border-bottom-right-radius: 5px; }\n  .currency div {\n    display: flex;\n    justify-content: flex-start;\n    align-items: center; }\n    .currency div i {\n      font-size: 1.2em;\n      margin: 0 3px; }\n\n/*.packages{\n  padding-top: 75px;\n  z-index: 10;\n  h1{\n    text-align: center;\n    z-index:10;\n\n  }\n  .all_packages{\n    display: flex;\n    flex-direction: column;\n    justify-content: center;\n    align-items: center;\n    z-index: 10;\n    .top{\n      display: flex;\n      width: 100%;\n      justify-content: space-around;\n      align-items: center;\n      z-index:10;\n      margin-bottom: 15px;\n      flex-wrap: wrap;\n\n    }\n    .center{\n      display: flex;\n      width: 100%;\n      justify-content: center;\n      align-items: center;\n      z-index: 10;\n      margin-bottom: 15px;\n\n    }\n    .bottom {\n      display: flex;\n      width: 100%;\n      justify-content: space-around;\n      align-items: center;\n      z-index: 10;\n      flex-wrap: wrap;\n\n    }\n    .package {\n      display: flex;\n      flex-direction: column;\n      align-items: center;\n      font-size: 1.3em;\n      color: $BrightGold;\n      padding: 10px 0;\n      box-shadow: rgba(229, 193, 0, .15) 0 11px 35px;\n      background-color: rgba(87, 87, 87, .9);\n      transition: .25s all;\n      margin-bottom: 15px;\n      cursor: pointer;\n      border-radius: 10px;\n      &:hover{\n        transform: scale(1.02);\n        box-shadow: rgba(229, 193, 0, .3) 0 15px 50px;\n      }\n      .package_logo {\n        margin-top:15px;\n        font-size: 5em;\n        text-shadow: 0 0 10px black;\n\n      }\n      h3 {\n        padding: 10px;\n        background-color: $LightGold;\n        color: white;\n        width: 75%;\n        text-align: center;\n        letter-spacing: 3px;\n        text-shadow: 0 0 10px black;\n      }\n      .options{\n        margin-bottom:15px;\n\n        .getCoins{\n          position: relative;\n          margin-left: 80px;\n          transition: .25s all;\n          label {\n            position: relative;\n            .icon-bitcoin-circle {\n              position: absolute;\n              //top: -16px;\n              //left: 13%;\n              top: -16px;\n              font-size: 2em;\n              text-shadow: 0 0 10px black;\n              }\n            }\n          input{\n            display: inline-block;\n            width: 170px;\n            color: $LightGold;\n            font-size: 32px;\n            font-weight: 500;\n            text-align: left;\n            padding-left: 40px;\n            border-width: initial;\n            border-style: none;\n            border-color: initial;\n            border-image: initial;\n            background: transparent;\n            position: relative;\n            -moz-appearance: textfield;\n            &::-webkit-outer-spin-button,\n            &::-webkit-inner-spin-button {\n              -webkit-appearance: none;\n            }\n            &:focus{\n              outline: none;\n            }\n\n          }\n        }\n      }\n     .summ{\n       display: flex;\n       width: 100%;\n       justify-content: space-between;\n       background: $LightGold;\n       color: white;\n       margin-bottom:25px;\n       div{\n         padding: 0 20px;\n         text-align: center;\n         p{\n           margin: 10px;\n           font-size: .7em;\n           text-transform: uppercase;\n           letter-spacing: 1px;\n         }\n       }\n     }\n      .coins-range {\n        -webkit-appearance: none;\n        margin: 7.3px 0;\n        width: 80%;\n        margin-bottom: 15px;\n\n        &:focus {\n          outline: none;\n        }\n        &::-webkit-slider-runnable-track {\n          width: 100%;\n          height: 11.4px;\n          cursor: pointer;\n          box-shadow: 1px 1px 1px #000000, 0px 0px 1px #0d0d0d;\n          background: rgba(174, 174, 174, 0.78);\n          border-radius: 1.3px;\n          border: 0.2px solid #010101;\n        }\n        &::-webkit-slider-thumb {\n          box-shadow: 0px 0px 1px #000031, 0px 0px 0px #00004b;\n          border: 1.8px solid rgba(0, 0, 101, 0.56);\n          height: 26px;\n          width: 26px;\n          border-radius: 15px;\n          background: #e5c100;\n          cursor: pointer;\n          -webkit-appearance: none;\n          margin-top: -7.5px;\n        }\n        &:focus::-webkit-slider-runnable-track {\n          background: rgba(238, 238, 238, 0.78);\n        }\n        &::-moz-range-track {\n          width: 100%;\n          height: 11.4px;\n          cursor: pointer;\n          box-shadow: 1px 1px 1px #000000, 0px 0px 1px #0d0d0d;\n          background: rgba(174, 174, 174, 0.78);\n          border-radius: 1.3px;\n          border: 0.2px solid #010101;\n        }\n        &::-moz-range-thumb {\n          box-shadow: 0px 0px 1px #000031, 0px 0px 0px #00004b;\n          border: 1.8px solid rgba(0, 0, 101, 0.56);\n          height: 26px;\n          width: 26px;\n          border-radius: 15px;\n          background: #e5c100;\n          cursor: pointer;\n        }\n        &::-ms-track {\n          width: 100%;\n          height: 11.4px;\n          cursor: pointer;\n          background: transparent;\n          border-color: transparent;\n          color: transparent;\n        }\n        &::-ms-fill-lower {\n          background: rgba(110, 110, 110, 0.78);\n          border: 0.2px solid #010101;\n          border-radius: 2.6px;\n          box-shadow: 1px 1px 1px #000000, 0px 0px 1px #0d0d0d;\n        }\n        &::-ms-fill-upper {\n          background: rgba(174, 174, 174, 0.78);\n          border: 0.2px solid #010101;\n          border-radius: 2.6px;\n          box-shadow: 1px 1px 1px #000000, 0px 0px 1px #0d0d0d;\n        }\n        &::-ms-thumb {\n          box-shadow: 0px 0px 1px #000031, 0px 0px 0px #00004b;\n          border: 1.8px solid rgba(0, 0, 101, 0.56);\n          //height: 26px;\n          width: 26px;\n          border-radius: 15px;\n          background: #e5c100;\n          cursor: pointer;\n          height: 11.4px;\n        }\n        &:focus::-ms-fill-lower {\n          background: rgba(174, 174, 174, 0.78);\n        }\n        &:focus::-ms-fill-upper {\n          background: rgba(238, 238, 238, 0.78);\n        }\n      }\n\n\n      //input[type=\"range\"]{\n      //  width: 80%;\n      //  margin-bottom:15px;\n      //\n      //}\n    }\n  }\n}\n*/\n.packages {\n  background-color: #f6fbfe;\n  width: 100%;\n  display: flex;\n  margin-top: 15px;\n  justify-content: center; }\n  .packages .packages-container {\n    background-color: white;\n    background-color: white;\n    width: 80%;\n    padding: 25px;\n    margin-bottom: 30px;\n    display: flex;\n    flex-direction: column;\n    align-items: center; }\n    .packages .packages-container h1 {\n      color: black !important;\n      margin-bottom: 10px; }\n    .packages .packages-container .afterHead {\n      text-align: center;\n      width: 35%;\n      margin-top: 0;\n      margin-bottom: 45px; }\n    .packages .packages-container .pack-map {\n      display: flex; }\n      .packages .packages-container .pack-map .package {\n        max-width: 230px;\n        border: 1px solid;\n        background: white;\n        text-align: center; }\n        .packages .packages-container .pack-map .package .top {\n          padding-bottom: 15px;\n          border-bottom: 1px solid;\n          cursor: default; }\n          .packages .packages-container .pack-map .package .top h3 {\n            margin: 20px;\n            font-size: .85em;\n            font-family: HelveticaBold;\n            cursor: default; }\n          .packages .packages-container .pack-map .package .top p {\n            margin-bottom: 0;\n            display: flex;\n            justify-content: center;\n            align-items: center; }\n            .packages .packages-container .pack-map .package .top p .cost {\n              font-size: 2em;\n              margin: 0 10px;\n              font-family: HelveticaBold;\n              cursor: default; }\n        .packages .packages-container .pack-map .package .bottom .coins_left p {\n          font-size: .8em;\n          text-transform: uppercase;\n          margin-bottom: 2px;\n          cursor: default; }\n        .packages .packages-container .pack-map .package .bottom .coins_left #coins_left {\n          font-size: 2.3em;\n          font-family: HelveticaBold;\n          cursor: default; }\n        .packages .packages-container .pack-map .package .bottom .inputCoins {\n          display: flex;\n          flex-direction: column;\n          align-items: center;\n          cursor: default; }\n          .packages .packages-container .pack-map .package .bottom .inputCoins p {\n            max-width: 60%;\n            text-align: center;\n            text-transform: uppercase;\n            font-size: .65em;\n            margin-bottom: 0;\n            cursor: default; }\n          .packages .packages-container .pack-map .package .bottom .inputCoins input {\n            width: 90%;\n            border: none;\n            text-align: center;\n            font-size: 2.4em;\n            padding: 0;\n            margin: 0;\n            font-family: HelveticaBold;\n            margin-top: 6px;\n            -moz-appearance: textfield;\n            cursor: pointer; }\n            .packages .packages-container .pack-map .package .bottom .inputCoins input::-webkit-outer-spin-button, .packages .packages-container .pack-map .package .bottom .inputCoins input::-webkit-inner-spin-button {\n              -webkit-appearance: none; }\n            .packages .packages-container .pack-map .package .bottom .inputCoins input:focus {\n              outline: none; }\n        .packages .packages-container .pack-map .package .bottom .price {\n          display: flex;\n          flex-direction: column;\n          align-items: center; }\n          .packages .packages-container .pack-map .package .bottom .price p {\n            font-size: .8em;\n            text-transform: uppercase;\n            margin-bottom: 2px;\n            cursor: default; }\n          .packages .packages-container .pack-map .package .bottom .price .spanPrice {\n            font-size: 1.9em;\n            font-family: HelveticaBold; }\n          .packages .packages-container .pack-map .package .bottom .price .btn-buy {\n            border-radius: 3px;\n            background-color: #feaf00;\n            width: 176px;\n            display: flex;\n            justify-content: center;\n            align-items: center;\n            margin-bottom: 15px;\n            margin-top: 15px;\n            cursor: pointer;\n            transition: .25s;\n            color: white;\n            padding: 8px 0 4px; }\n            .packages .packages-container .pack-map .package .bottom .price .btn-buy:hover {\n              border-radius: 0;\n              background-color: #ffbb24; }\n      .packages .packages-container .pack-map .start {\n        transform: scale(1.05);\n        border-width: 3px;\n        border-color: #feaf00;\n        box-shadow: 0px 0px 15.54px 5.46px rgba(0, 0, 0, 0.06); }\n        .packages .packages-container .pack-map .start .top {\n          border-width: 3px;\n          border-color: #feaf00; }\n      .packages .packages-container .pack-map .end {\n        border-width: 2px;\n        border-color: #cbd3dc;\n        color: #8b8b93 !important; }\n        .packages .packages-container .pack-map .end .top {\n          border-width: 2px;\n          border-color: #cbd3dc; }\n        .packages .packages-container .pack-map .end .bottom input {\n          color: #8b8b93 !important; }\n        .packages .packages-container .pack-map .end .bottom .btn-buy {\n          border-width: 1px;\n          border-color: #898683;\n          border-style: solid;\n          border-radius: 3px;\n          background-color: transparent !important;\n          color: #8b8b93 !important;\n          cursor: not-allowed !important; }\n      .packages .packages-container .pack-map .wait {\n        border-width: 2px;\n        border-color: #feaf00;\n        border-style: solid;\n        color: #3a3948 !important; }\n        .packages .packages-container .pack-map .wait .top {\n          border-width: 2px;\n          border-color: #feaf00; }\n        .packages .packages-container .pack-map .wait .bottom input {\n          color: #3a3948 !important; }\n        .packages .packages-container .pack-map .wait .bottom .btn-buy {\n          border-width: 1px;\n          border-color: #898683;\n          border-style: solid;\n          border-radius: 3px;\n          background-color: transparent !important;\n          color: #8b8b93 !important;\n          cursor: not-allowed !important; }\n\n.calculator {\n  display: flex;\n  flex-direction: column;\n  justify-content: space-around;\n  align-items: center;\n  margin-bottom: 25px;\n  margin-top: 35px;\n  z-index: 10; }\n  .calculator #alert {\n    display: none;\n    opacity: 0;\n    position: fixed;\n    right: 10px;\n    top: 75px;\n    border: 2px solid #fcf8e3;\n    width: 220px;\n    height: 75px;\n    background-color: #faebcc;\n    z-index: 11;\n    color: #8a6d3b;\n    border-radius: 5px;\n    font-size: 1.3em;\n    flex-direction: column;\n    justify-content: space-around;\n    align-items: center;\n    transition: .25s; }\n  .calculator h1 {\n    margin-bottom: 0; }\n  .calculator p {\n    margin-bottom: 25px;\n    color: white;\n    font-size: 1.1em;\n    letter-spacing: 2px; }\n  .calculator .calculator-body {\n    display: flex;\n    flex-direction: column;\n    justify-content: space-around;\n    align-items: center;\n    margin-bottom: 25px;\n    z-index: 10; }\n  .calculator div {\n    margin-bottom: 15px; }\n  .calculator .calculator-top {\n    display: flex;\n    justify-content: center;\n    align-items: center; }\n    .calculator .calculator-top i {\n      font-size: 3em;\n      color: #ffc02d;\n      text-shadow: 0 0 10px black; }\n    .calculator .calculator-top input {\n      outline: none;\n      line-height: 20px;\n      width: 100%;\n      padding: 10px 15px;\n      margin-bottom: 10px;\n      background-color: rgba(255, 255, 255, 0.4);\n      border: 2px solid transparent;\n      border-bottom: 2px solid rgba(255, 255, 255, 0.7);\n      color: rgba(255, 255, 255, 0.9);\n      font-size: 1.2em;\n      transition: .25s all;\n      -moz-appearance: textfield;\n      text-align: center; }\n      .calculator .calculator-top input::-webkit-outer-spin-button, .calculator .calculator-top input::-webkit-inner-spin-button {\n        -webkit-appearance: none; }\n      .calculator .calculator-top input::placeholder {\n        color: rgba(255, 255, 255, 0.7); }\n      .calculator .calculator-top input::-webkit-input-placeholder {\n        text-indent: 0;\n        transition: text-indent 0.3s ease; }\n      .calculator .calculator-top input::-moz-placeholder {\n        text-indent: 0;\n        transition: text-indent 0.3s ease; }\n      .calculator .calculator-top input:-moz-placeholder {\n        text-indent: 0;\n        transition: text-indent 0.3s ease; }\n      .calculator .calculator-top input:-ms-input-placeholder {\n        text-indent: 0;\n        transition: text-indent 0.3s ease; }\n      .calculator .calculator-top input:focus::-webkit-input-placeholder {\n        text-indent: 500px;\n        transition: text-indent 0.3s ease; }\n      .calculator .calculator-top input:focus::-moz-placeholder {\n        text-indent: 500px;\n        transition: text-indent 0.3s ease; }\n      .calculator .calculator-top input:focus:-moz-placeholder {\n        text-indent: 500px;\n        transition: text-indent 0.3s ease; }\n      .calculator .calculator-top input:focus:-ms-input-placeholder {\n        text-indent: 500px;\n        transition: text-indent 0.3s ease; }\n      .calculator .calculator-top input:focus, .calculator .calculator-top input:hover {\n        border: 2px solid rgba(255, 255, 255, 0.5);\n        background-color: transparent; }\n  .calculator .calculator-package {\n    display: flex;\n    align-items: center;\n    font-size: 5em; }\n    .calculator .calculator-package div {\n      margin-bottom: 0;\n      margin-right: 10px;\n      text-shadow: 0 0 10px black;\n      border: 1px solid;\n      padding: 10px 10px 0;\n      cursor: pointer;\n      box-shadow: rgba(229, 193, 0, 0.15) 0 11px 35px;\n      background-color: rgba(242, 176, 30, 0.3);\n      border-radius: 5px;\n      transition: 0.25s all; }\n      .calculator .calculator-package div:last-child {\n        margin-right: 0; }\n      .calculator .calculator-package div.active-package {\n        transform: scale(1.02);\n        box-shadow: rgba(229, 193, 0, 0.5) 0 15px 50px;\n        border-color: #132a45; }\n      .calculator .calculator-package div:hover {\n        transform: scale(1.02);\n        box-shadow: rgba(229, 193, 0, 0.3) 0 15px 50px; }\n  .calculator .calculator-years {\n    width: 100%; }\n    .calculator .calculator-years input {\n      width: 100%;\n      -webkit-appearance: none;\n      margin: 7.3px 0;\n      margin-bottom: 15px; }\n      .calculator .calculator-years input:focus {\n        outline: none; }\n      .calculator .calculator-years input::-webkit-slider-runnable-track {\n        width: 100%;\n        height: 11.4px;\n        cursor: pointer;\n        box-shadow: 1px 1px 1px #000000, 0px 0px 1px #0d0d0d;\n        background: rgba(174, 174, 174, 0.78);\n        border-radius: 1.3px;\n        border: 0.2px solid #010101; }\n      .calculator .calculator-years input::-webkit-slider-thumb {\n        box-shadow: 0px 0px 1px #000031, 0px 0px 0px #00004b;\n        border: 1.8px solid rgba(0, 0, 101, 0.56);\n        height: 26px;\n        width: 26px;\n        border-radius: 15px;\n        background: #e5c100;\n        cursor: pointer;\n        -webkit-appearance: none;\n        margin-top: -7.5px; }\n      .calculator .calculator-years input:focus::-webkit-slider-runnable-track {\n        background: rgba(238, 238, 238, 0.78); }\n      .calculator .calculator-years input::-moz-range-track {\n        width: 100%;\n        height: 11.4px;\n        cursor: pointer;\n        box-shadow: 1px 1px 1px #000000, 0px 0px 1px #0d0d0d;\n        background: rgba(174, 174, 174, 0.78);\n        border-radius: 1.3px;\n        border: 0.2px solid #010101; }\n      .calculator .calculator-years input::-moz-range-thumb {\n        box-shadow: 0px 0px 1px #000031, 0px 0px 0px #00004b;\n        border: 1.8px solid rgba(0, 0, 101, 0.56);\n        height: 26px;\n        width: 26px;\n        border-radius: 15px;\n        background: #e5c100;\n        cursor: pointer; }\n      .calculator .calculator-years input::-ms-track {\n        width: 100%;\n        height: 11.4px;\n        cursor: pointer;\n        background: transparent;\n        border-color: transparent;\n        color: transparent; }\n      .calculator .calculator-years input::-ms-fill-lower {\n        background: rgba(110, 110, 110, 0.78);\n        border: 0.2px solid #010101;\n        border-radius: 2.6px;\n        box-shadow: 1px 1px 1px #000000, 0px 0px 1px #0d0d0d; }\n      .calculator .calculator-years input::-ms-fill-upper {\n        background: rgba(174, 174, 174, 0.78);\n        border: 0.2px solid #010101;\n        border-radius: 2.6px;\n        box-shadow: 1px 1px 1px #000000, 0px 0px 1px #0d0d0d; }\n      .calculator .calculator-years input::-ms-thumb {\n        box-shadow: 0px 0px 1px #000031, 0px 0px 0px #00004b;\n        border: 1.8px solid rgba(0, 0, 101, 0.56);\n        width: 26px;\n        border-radius: 15px;\n        background: #e5c100;\n        cursor: pointer;\n        height: 11.4px; }\n      .calculator .calculator-years input:focus::-ms-fill-lower {\n        background: rgba(174, 174, 174, 0.78); }\n      .calculator .calculator-years input:focus::-ms-fill-upper {\n        background: rgba(238, 238, 238, 0.78); }\n  .calculator .calculator-out {\n    width: 100%;\n    display: flex;\n    align-items: center;\n    justify-content: space-between;\n    z-index: 10; }\n    .calculator .calculator-out i.icon-arrow-graph-up-right {\n      font-size: 3em;\n      color: #ffc02d;\n      z-index: 10;\n      text-shadow: 0 0 10px black; }\n    .calculator .calculator-out div {\n      min-width: 45%;\n      font-size: 2em;\n      color: white;\n      z-index: 10;\n      position: relative; }\n      .calculator .calculator-out div i {\n        color: #ffc02d;\n        z-index: 10;\n        text-shadow: 0 0 10px black; }\n      .calculator .calculator-out div:after {\n        content: \"\";\n        position: absolute;\n        width: 100%;\n        height: 1px;\n        bottom: -3px;\n        border-bottom: 2px solid #ffc02d;\n        left: 0;\n        box-shadow: 0 2px 6px rgba(229, 193, 0, 0.75); }\n    .calculator .calculator-out .take {\n      text-align: right; }\n\n.faq {\n  width: 100%;\n  height: 400px;\n  background: #f6fbfe;\n  display: flex;\n  justify-content: center; }\n  .faq .faq-container {\n    width: 60%;\n    display: flex;\n    flex-direction: column;\n    align-items: center; }\n    .faq .faq-container h1 {\n      color: black !important;\n      margin-bottom: 0 !important; }\n    .faq .faq-container .afterHead {\n      margin-top: 5px; }\n    .faq .faq-container .faqs {\n      display: flex;\n      flex-wrap: wrap;\n      justify-content: space-between; }\n      .faq .faq-container .faqs .one-faq {\n        max-width: 42%;\n        display: flex;\n        flex-direction: column;\n        align-items: flex-start; }\n        .faq .faq-container .faqs .one-faq h3 {\n          font-family: HelveticaBold;\n          cursor: pointer;\n          margin-bottom: 0; }\n          .faq .faq-container .faqs .one-faq h3 a {\n            color: black;\n            text-decoration: none;\n            display: flex;\n            align-items: center;\n            transition: .20s; }\n            .faq .faq-container .faqs .one-faq h3 a i {\n              color: #ffbb24;\n              margin-right: 5px;\n              margin-bottom: -2px; }\n            .faq .faq-container .faqs .one-faq h3 a:hover {\n              color: #ffbb00; }\n        .faq .faq-container .faqs .one-faq p {\n          color: #464646;\n          margin-left: 4px; }\n", ""]);
 
 // exports
 

@@ -25,11 +25,11 @@
         if($link) {
             $result = mysqli_query($link, "SELECT costOfOneCoin FROM generally");
             $obj = "";
-            while($row = $result->fetch_assoc()) {
-                $obj = (object) $row;
-            }
-
-            print_r(json_encode($obj));
+//            while($row = $result->fetch_assoc()) {
+//                $obj = (object) $row;
+//            }
+            $cost = $result->fetch_assoc();
+            print_r(json_encode($cost['costOfOneCoin']));
             mysqli_close($link);
         }
     }

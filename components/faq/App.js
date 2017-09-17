@@ -66,7 +66,7 @@ export default class App extends Component {
                 />
                 <div className="bg" style={ {backgroundImage: `url(${BG_COIN})`} }/>
                 <div className="container">
-                    <Container pages={pages.packages}/>
+                    <Container pages={pages.FAQ}/>
                 </div>
                 <Footer footer={ layouts.footer } />
             </div>

@@ -27668,7 +27668,7 @@ module.exports = function (css) {
 /* 285 */
 /***/ (function(module, exports) {
 
-module.exports = [{"language":"ru","pages":{"main":{"top":{"head":"Ваш шедевр готов!","text":"С другой стороны консультация с широким активом способствует подготовки и реализации модели развития. Задача организации, в особенности же консультация с широким активом в значительной степени.","btn":"купить"},"progress":{"head":"какая наша цель?","title":"Официальный запуск сети после продажи:"},"table":{"head":{"header":"Сплиты","number":"#","cost":"Цена","value":"Количество монет","summ":"Сумма"},"foot":{"allSumm":"Итог сбора суммы: ","future":"При выходе на крипто-биржу цена за 1 монету","coinCost":"50$"},"split":[{"cost":0.1,"value":"3.000.000","summ":"300.000"},{"cost":0.2,"value":"3.000.000","summ":"600.000"},{"cost":0.4,"value":"3.000.000","summ":"1.200.000"},{"cost":0.8,"value":"3.000.000","summ":"2.400.000"},{"cost":1.6,"value":"3.000.000","summ":"4.800.000"},{"cost":3.2,"value":"3.000.000","summ":"9.600.000"},{"cost":6.4,"value":"3.000.000","summ":"19.200.000"},{"cost":12.8,"value":"3.000.000","summ":"38.400.000"},{"cost":25.6,"value":"3.000.000","summ":"76.800.000"},{"cost":51.2,"value":"3.000.000","summ":"153.600.000"}]}},"help":{},"packages":{"packages":[{"title":"ПАКЕТЫ"},{"title":"Калькулятор выгоды","inputCoins":"VipCoin","text":"Подсчитайте свою прибыль с учетом прогнозов курса VipCoin на последующие года"}]},"FAQ":{},"news":{},"contacts":{"top":{"head":"Контакты"},"feedback":{"head":"центр поддержки клиентов","inputName":"Имя","inputLName":"Фамилия","inputEmail":"E-mail","inputTel":"Номер телефона","inputMsg":"Ваше сообщение","btnSend":"Отправить"}},"profile":{"layouts":{"leftHeader":{"btnMain":"главная","btnRefill":"Купить","btnSettings":"Настройки","btnExit":"выход"}},"info":{},"settings":{"password":{"head":"Сменить пароль","CurPass":"Текущий пароль","new":"Новый пароль","repass":"Повторите пароль","save":"Сохранить","error":"Неверный пароль","accept":"Изминения сохранены"},"email":{"head":"Сменить E-mail","CurPass":"Текущий пароль","new":"Новый E-mail","save":"Сохранить","error":"Неверный пароль","secondError":"Такой E-mail уже есть!","accept":"Изминения сохранены"}}}},"layouts":{"header":{"btnMain":"ГЛАВНАЯ","btnAbout":"О НАС","btnPackages":"ПАКЕТЫ","btnFAQ":"Помощь","btnNews":"Новости","btnContacts":"Контакты","login":{"log":"Регистрация/Вход"}},"footer":{"pages":{"whitePage":"Белая Бумага","legalPage":"Юридические Информация","contractOffer":"Пользовательское Соглашение","confidentiality":"Политика Конфиденциальности"},"feedback":"Обратная связь"},"auth":{"header":{"btnLogin":"Войти","btnRegistration":"Регестрация","btnForgotPass":"Забыли пароль?"},"login":{"inputLogin":"Логин или E-mail","inputPassword":"Пароль","btnEnter":"Войти"},"registration":{"inputLogin":"Логин","inputEmail":"E-Mail","inputPassword":"Пароль","inputRepeatPassword":"Повторите пароль","checkLegal":"Согласен с правилами сайта","btnRegistration":"Регестрация"},"forgot":{"text":"Отправить пароль на почту","inputEmail":"E-Mail","btnSend":"Отправить","success":"E-mail отправлен!","error":"E-mail не найден"}}}}]
+module.exports = [{"language":"ru","pages":{"main":{"top":{"head":"Ваш шедевр готов!","text":"С другой стороны консультация с широким активом способствует подготовки и реализации модели развития. Задача организации, в особенности же консультация с широким активом в значительной степени.","btn":"купить"},"progress":{"head":"какая наша цель?","title":"Официальный запуск сети после продажи:"},"table":{"head":{"header":"Сплиты","number":"#","cost":"Цена","value":"Количество монет","summ":"Сумма"},"foot":{"allSumm":"Итог сбора суммы: ","future":"При выходе на крипто-биржу цена за 1 монету","coinCost":"50$"},"split":[{"cost":0.1,"value":"3.000.000","summ":"300.000"},{"cost":0.2,"value":"3.000.000","summ":"600.000"},{"cost":0.4,"value":"3.000.000","summ":"1.200.000"},{"cost":0.8,"value":"3.000.000","summ":"2.400.000"},{"cost":1.6,"value":"3.000.000","summ":"4.800.000"},{"cost":3.2,"value":"3.000.000","summ":"9.600.000"},{"cost":6.4,"value":"3.000.000","summ":"19.200.000"},{"cost":12.8,"value":"3.000.000","summ":"38.400.000"},{"cost":25.6,"value":"3.000.000","summ":"76.800.000"},{"cost":51.2,"value":"3.000.000","summ":"153.600.000"}]}},"about":{},"packages":{"packages":{"title":"Пакеты","btn_end":"НЕДОСТУПНО","btn_start":"КУПИТЬ","btn_wait":"В ОЖИДАНИИ","top_p":"монету","coinsLeft_p":"Доступно монет","inputCoins_p":"Введите количество монет для покупки","price_p":"Стоимость","afterHead":"Укажите количество монет которые хотите купить для расчета стоимость"},"faq":{"title":"ПОМОЩЬ","afterHead":"Список наиболее часто задаваемых вопросов и ответы на них","help1":{"title":"Как можно оплатить?","text":"Мы бросаем вызов статус-кво и выходят за рамки сегодняшнего дня, чтобы создать открытое финансовое будущее"},"help2":{"title":"Как обменять криптовалюту?","text":"Мы бросаем вызов статус-кво и выходят за рамки сегодняшнего дня, чтобы создать открытое финансовое будущее"},"help3":{"title":"Как получить монеты?","text":"Мы бросаем вызов статус-кво и выходят за рамки сегодняшнего дня, чтобы создать открытое финансовое будущее"},"help4":{"title":"Как обменять криптовалюту?","text":"Мы бросаем вызов статус-кво и выходят за рамки сегодняшнего дня, чтобы создать открытое финансовое будущее"}}},"FAQ":{"content":{"title":"Содержание","afterHead":"Список наиболее часто задаваемых вопросов и ответы на них","secondTitle":"Ответы"},"faqs":[{"title":"Как зарегистрироваться?","text":"Мы бросаем вызов статус-кво и выходят за рамки сегодняшнего дня, чтобы создать открытое финансовое будущее Мы бросаем вызов статус-кво и выходят за рамки сегодняшнего дня, чтобы создать открытое финансовое будущее"},{"title":"Как можно оплатить?","text":"Мы бросаем вызов статус-кво и выходят за рамки сегодняшнего дня, чтобы создать открытое финансовое будущее Мы бросаем вызов статус-кво и выходят за рамки сегодняшнего дня, чтобы создать открытое финансовое будущее"},{"title":"Как получить монеты?","text":"Мы бросаем вызов статус-кво и выходят за рамки сегодняшнего дня, чтобы создать финансовое будущее Мы бросаем вызов статус-кво и выходят за рамки сегодняшнего дня, чтобы создать открытое финансовое будущее"},{"title":"Как обменять криптовалюту?","text":"Мы бросаем вызов статус-кво и выходят за рамки сегодняшнего дня, чтобы создать финансовое будущее Мы бросаем вызов статус-кво и выходят за рамки сегодняшнего дня, чтобы создать открытое финансовое будущее"},{"title":"Как можно оплатить?","text":"Мы бросаем вызов статус-кво и выходят за рамки сегодняшнего дня, чтобы создать открытое финансовое будущее Мы бросаем вызов статус-кво и выходят за рамки сегодняшнего дня, чтобы создать открытое финансовое будущее"},{"title":"Как получить монеты?","text":"Мы бросаем вызов статус-кво и выходят за рамки сегодняшнего дня, чтобы создать открытое финансовое будущее Мы бросаем вызов статус-кво и выходят за рамки сегодняшнего дня, чтобы создать открытое финансовое будущее"},{"title":"Как зарегистрироваться?","text":"Мы бросаем вызов статус-кво и выходят за рамки сегодняшнего дня, чтобы создать финансовое будущее Мы бросаем вызов статус-кво и выходят за рамки сегодняшнего дня, чтобы создать открытое финансовое будущее"},{"title":"Как обменять криптовалюту?","text":"Мы бросаем вызов статус-кво и выходят за рамки сегодняшнего дня, чтобы создать финансовое будущее Мы бросаем вызов статус-кво и выходят за рамки сегодняшнего дня, чтобы создать открытое финансовое будущее"}]},"news":{},"contacts":{"top":{"head":"Контакты"},"feedback":{"head":"центр поддержки клиентов","inputName":"Имя","inputLName":"Фамилия","inputEmail":"E-mail","inputTel":"Номер телефона","inputMsg":"Ваше сообщение","btnSend":"Отправить"}},"profile":{"layouts":{"leftHeader":{"btnMain":"главная","btnRefill":"Купить","btnSettings":"Настройки","btnExit":"выход"}},"info":{},"settings":{"password":{"head":"Сменить пароль","CurPass":"Текущий пароль","new":"Новый пароль","repass":"Повторите пароль","save":"Сохранить","error":"Неверный пароль","accept":"Изминения сохранены"},"email":{"head":"Сменить E-mail","CurPass":"Текущий пароль","new":"Новый E-mail","save":"Сохранить","error":"Неверный пароль","secondError":"Такой E-mail уже есть!","accept":"Изминения сохранены"}}}},"layouts":{"header":{"btnMain":"ГЛАВНАЯ","btnAbout":"О НАС","btnPackages":"ПАКЕТЫ","btnFAQ":"Помощь","btnNews":"Новости","btnContacts":"Контакты","login":{"log":"Регистрация/Вход"}},"footer":{"pages":{"whitePage":"Белая Бумага","legalPage":"Юридические Информация","contractOffer":"Пользовательское Соглашение","confidentiality":"Политика Конфиденциальности"},"feedback":"Обратная связь"},"auth":{"header":{"btnLogin":"Войти","btnRegistration":"Регестрация","btnForgotPass":"Забыли пароль?"},"login":{"inputLogin":"Логин или E-mail","inputPassword":"Пароль","btnEnter":"Войти"},"registration":{"inputLogin":"Логин","inputEmail":"E-Mail","inputPassword":"Пароль","inputRepeatPassword":"Повторите пароль","checkLegal":"Согласен с правилами сайта","btnRegistration":"Регестрация"},"forgot":{"text":"Отправить пароль на почту","inputEmail":"E-Mail","btnSend":"Отправить","success":"E-mail отправлен!","error":"E-mail не найден"}}}}]
 
 /***/ }),
 /* 286 */,
@@ -27697,9 +27697,528 @@ module.exports = [{"language":"ru","pages":{"main":{"top":{"head":"Ваш шед
 /* 309 */,
 /* 310 */,
 /* 311 */,
-/* 312 */,
-/* 313 */,
-/* 314 */,
+/* 312 */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+
+
+Object.defineProperty(exports, "__esModule", {
+    value: true
+});
+
+var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
+
+var _react = __webpack_require__(4);
+
+var _react2 = _interopRequireDefault(_react);
+
+var _axios = __webpack_require__(66);
+
+var _axios2 = _interopRequireDefault(_axios);
+
+var _translate = __webpack_require__(285);
+
+var _translate2 = _interopRequireDefault(_translate);
+
+var _styles = __webpack_require__(118);
+
+var _styles2 = _interopRequireDefault(_styles);
+
+var _header = __webpack_require__(313);
+
+var _header2 = _interopRequireDefault(_header);
+
+var _links = __webpack_require__(69);
+
+function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
+
+function _possibleConstructorReturn(self, call) { if (!self) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return call && (typeof call === "object" || typeof call === "function") ? call : self; }
+
+function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
+
+var Header = function (_Component) {
+    _inherits(Header, _Component);
+
+    function Header(props) {
+        _classCallCheck(this, Header);
+
+        var _this = _possibleConstructorReturn(this, (Header.__proto__ || Object.getPrototypeOf(Header)).call(this, props));
+
+        _this.setCookie('language', 'ru', { expires: 350 });
+        _this.state = {
+            language: _this.getCookie("language") || "ru",
+            ltc: 0,
+            btc: 0,
+            eth: 0,
+            vpc: 0,
+            NAME: undefined
+        };
+        if (!props.profile) {
+            props.setLanguage(_this.state.language);
+        } else {}
+        _this.getCurrVal();
+        _this.getVPC();
+        var loggedUser = _this.getCookie("user");
+        if (loggedUser !== undefined) {
+            _this.getUserName(loggedUser);
+        }
+
+        return _this;
+    }
+
+    _createClass(Header, [{
+        key: 'componentDidMount',
+        value: function componentDidMount() {
+            var _props = this.props,
+                main = _props.main,
+                about = _props.about,
+                packages = _props.packages,
+                faq = _props.faq,
+                news = _props.news,
+                contacts = _props.contacts;
+
+            var arr = [main, about, packages, faq, news, contacts];
+            var ask = undefined;
+            for (var i = 0; i < arr.length; i++) {
+                if (arr[i] === true) {
+                    ask = i;
+                }
+            }
+
+            var header = document.getElementsByClassName('menu')[0];
+            var listArray = header.children[0].children;
+            switch (ask) {
+                case 0:
+                    listArray[0].classList.add('active');
+                    break;
+
+                case 1:
+                    listArray[1].classList.add('active');
+                    break;
+                case 2:
+                    listArray[2].classList.add('active');
+                    break;
+                case 3:
+                    listArray[3].classList.add('active');
+                    break;
+                case 4:
+                    listArray[4].classList.add('active');
+                    break;
+                case 5:
+                    listArray[5].classList.add('active');
+                    break;
+
+                default:
+                    break;
+            }
+        }
+    }, {
+        key: 'setCookie',
+        value: function setCookie(name, value, options) {
+            options = options || {};
+
+            var expires = options.expires;
+            if (typeof expires === 'number' && expires) {
+                var date = new Date();
+                date.setTime(date.getTime() + expires * 1000 * 60 * 60);
+                expires = options.expires = date;
+            }
+            if (expires && expires.toUTCString()) {
+                options.expires = expires.toUTCString();
+            }
+            value = encodeURIComponent(value);
+            var updatedCookie = name + "=" + value;
+            for (var propName in options) {
+                updatedCookie += "; " + propName;
+                var propValue = options[propName];
+                if (propValue !== true) {
+                    updatedCookie += "=" + propValue;
+                }
+            }
+            document.cookie = updatedCookie;
+        }
+    }, {
+        key: 'getCookie',
+        value: function getCookie(name) {
+            var matches = document.cookie.match(new RegExp("(?:^|; )" + name.replace(/([\.$?*|{}\(\)\[\]\\\/\+^])/g, '\\$1') + "=([^;]*)"));
+            return matches ? decodeURIComponent(matches[1]) : undefined;
+        }
+    }, {
+        key: 'getUserName',
+        value: function getUserName(loggedUser) {
+            var that = this;
+            _axios2.default.get('http://localhost:8888/vipcoin/profile/userInfo.php', { params: { type: "header", hash: loggedUser } }).then(function (res) {
+                // console.log(res);
+                // dispatch({type: act.GET_PACKAGES_INFO, packages: res.data})
+                // NAME = res.data;
+                that.setState({
+                    NAME: res.data
+                });
+            }).catch(function (error) {
+                console.log(error);
+            });
+        }
+    }, {
+        key: 'getCurrVal',
+        value: function getCurrVal() {
+            var that = this;
+            _axios2.default.all([this.getLTC(), this.getBTC(), this.getETH()]).then(_axios2.default.spread(function (ltc, btc, eth) {
+                that.setState({
+                    ltc: ltc.data.ticker.price,
+                    btc: btc.data.ticker.price,
+                    eth: eth.data.ticker.price
+
+                });
+            }));
+        }
+    }, {
+        key: 'getVPC',
+        value: function getVPC() {
+            var that = this;
+            _axios2.default.get('http://localhost:8888/vipcoin/generally.php', { params: { type: "coinCost" } }).then(function (res) {
+                // console.log(res);
+                // dispatch({type: act.GET_PACKAGES_INFO, packages: res.data})
+                // NAME = res.data;
+                that.setState({
+                    vpc: res.data
+                });
+            }).catch(function (error) {
+                console.log(error);
+            });
+        }
+    }, {
+        key: 'getLTC',
+        value: function getLTC() {
+            return _axios2.default.get('https://api.cryptonator.com/api/ticker/ltc-usd');
+        }
+    }, {
+        key: 'getBTC',
+        value: function getBTC() {
+            return _axios2.default.get('https://api.cryptonator.com/api/ticker/btc-usd');
+        }
+    }, {
+        key: 'getETH',
+        value: function getETH() {
+            return _axios2.default.get('https://api.cryptonator.com/api/ticker/eth-usd');
+        }
+    }, {
+        key: 'render',
+        value: function render() {
+            var _this2 = this;
+
+            var _props2 = this.props,
+                toggleAuth = _props2.toggleAuth,
+                profile = _props2.profile;
+
+            var lang = _translate2.default.filter(function (item) {
+                return item.language === _this2.state.language;
+            });
+            var layouts = lang[0].layouts;
+            var _state = this.state,
+                ltc = _state.ltc,
+                btc = _state.btc,
+                eth = _state.eth,
+                vpc = _state.vpc,
+                NAME = _state.NAME;
+
+
+            var LogoUrl = _links.PAGES.MAIN;
+            var LOGO_IMG = _links.LOGO;
+            var AboutUrl = _links.PAGES.ABOUT_US;
+            var PackUrl = _links.PAGES.PACKAGES;
+            var FAQ_Url = _links.PAGES.FAQ;
+            var NewsUrl = _links.PAGES.NEWS;
+            var ContactsUrl = _links.PAGES.CONTACT_US;
+
+            var ICO_lang = {
+                main: './src/header/' + this.state.language + '.svg',
+                ru: _links.FLAG_RU,
+                japan: _links.FLAG_JAP,
+                usa: _links.FLAG_USA,
+                eng: _links.FLAG_ENG
+            };
+            if (profile) {
+                LogoUrl = "../" + _links.PAGES.MAIN;
+                LOGO_IMG = "../" + _links.LOGO;
+                AboutUrl = "../" + _links.PAGES.ABOUT_US;
+                PackUrl = "../" + _links.PAGES.PACKAGES;
+                FAQ_Url = "../" + _links.PAGES.FAQ;
+                NewsUrl = "../" + _links.PAGES.NEWS;
+                ContactsUrl = "../" + _links.PAGES.CONTACT_US;
+                ICO_lang = {
+                    main: '../src/header/' + this.state.language + '.svg',
+                    ru: "." + _links.FLAG_RU,
+                    japan: "." + _links.FLAG_JAP,
+                    usa: "." + _links.FLAG_USA,
+                    eng: "." + _links.FLAG_ENG
+                };
+            }
+            return _react2.default.createElement(
+                'div',
+                { className: 'header' },
+                _react2.default.createElement(
+                    'div',
+                    { className: 'lookAtTopOfHisHead' },
+                    _react2.default.createElement(
+                        'div',
+                        { className: 'topContent' },
+                        _react2.default.createElement(
+                            'div',
+                            { className: 'currencys', onClick: function onClick() {
+                                    _this2.getCurrVal();
+                                } },
+                            _react2.default.createElement(
+                                'div',
+                                { className: 'cryptoCurrency' },
+                                'BTC/USD: ',
+                                _react2.default.createElement(
+                                    'span',
+                                    null,
+                                    btc
+                                )
+                            ),
+                            _react2.default.createElement(
+                                'div',
+                                { className: 'cryptoCurrency' },
+                                'LTC/USD: ',
+                                _react2.default.createElement(
+                                    'span',
+                                    null,
+                                    ltc
+                                )
+                            ),
+                            _react2.default.createElement(
+                                'div',
+                                { className: 'cryptoCurrency' },
+                                'ETH/USD: ',
+                                _react2.default.createElement(
+                                    'span',
+                                    null,
+                                    eth
+                                )
+                            ),
+                            _react2.default.createElement(
+                                'div',
+                                { className: 'cryptoCurrency' },
+                                'VPC/USD: ',
+                                _react2.default.createElement(
+                                    'span',
+                                    null,
+                                    vpc
+                                )
+                            )
+                        ),
+                        _react2.default.createElement(
+                            'div',
+                            { className: 'lang dropdown' },
+                            _react2.default.createElement(
+                                'span',
+                                { id: 'active_lang' },
+                                _react2.default.createElement('img', { src: ICO_lang.main, alt: 'active_lang' })
+                            ),
+                            _react2.default.createElement(
+                                'div',
+                                { className: 'dropdown-content dropdown-main' },
+                                _react2.default.createElement(
+                                    'span',
+                                    { onClick: function onClick() {
+                                            _this2.setCookie('language', 'ru', { expires: 350 });
+                                            _this2.setState({ language: 'ru' });
+                                            console.log("1");
+                                        } },
+                                    _react2.default.createElement('img', { src: ICO_lang.ru, alt: 'ru' })
+                                ),
+                                _react2.default.createElement(
+                                    'span',
+                                    { onClick: function onClick() {
+                                            _this2.setState({ language: 'eng' });
+                                            console.log("2");
+                                        } },
+                                    _react2.default.createElement('img', { src: ICO_lang.eng, alt: 'eng' })
+                                ),
+                                _react2.default.createElement(
+                                    'span',
+                                    { onClick: function onClick() {
+                                            _this2.setState({ language: 'japan' });
+                                            console.log("3");
+                                        } },
+                                    _react2.default.createElement('img', { src: ICO_lang.japan, alt: 'japan' })
+                                ),
+                                _react2.default.createElement(
+                                    'span',
+                                    { onClick: function onClick() {
+                                            _this2.setState({ language: 'usa' });
+                                            console.log("4");
+                                        } },
+                                    _react2.default.createElement('img', { src: ICO_lang.usa, alt: 'usa' })
+                                )
+                            )
+                        )
+                    )
+                ),
+                _react2.default.createElement(
+                    'a',
+                    { href: LogoUrl, id: 'logo' },
+                    _react2.default.createElement(
+                        'div',
+                        { className: 'logo' },
+                        _react2.default.createElement('img', { src: LOGO_IMG, alt: 'Logo' }),
+                        _react2.default.createElement(
+                            'span',
+                            { className: 'bold' },
+                            'VIP'
+                        ),
+                        'Coin'
+                    )
+                ),
+                _react2.default.createElement(
+                    'div',
+                    { className: 'menu' },
+                    _react2.default.createElement(
+                        'ul',
+                        null,
+                        _react2.default.createElement(
+                            'li',
+                            null,
+                            _react2.default.createElement(
+                                'a',
+                                { href: LogoUrl },
+                                layouts.header.btnMain
+                            )
+                        ),
+                        _react2.default.createElement(
+                            'li',
+                            null,
+                            _react2.default.createElement(
+                                'a',
+                                { href: AboutUrl },
+                                layouts.header.btnAbout
+                            )
+                        ),
+                        _react2.default.createElement(
+                            'li',
+                            null,
+                            _react2.default.createElement(
+                                'a',
+                                { href: PackUrl },
+                                layouts.header.btnPackages
+                            )
+                        ),
+                        _react2.default.createElement(
+                            'li',
+                            null,
+                            _react2.default.createElement(
+                                'a',
+                                { href: FAQ_Url },
+                                layouts.header.btnFAQ
+                            )
+                        ),
+                        _react2.default.createElement(
+                            'li',
+                            null,
+                            _react2.default.createElement(
+                                'a',
+                                { href: NewsUrl },
+                                layouts.header.btnNews
+                            )
+                        ),
+                        _react2.default.createElement(
+                            'li',
+                            null,
+                            _react2.default.createElement(
+                                'a',
+                                { href: ContactsUrl },
+                                layouts.header.btnContacts
+                            )
+                        )
+                    )
+                ),
+                NAME === undefined ? _react2.default.createElement(
+                    'div',
+                    { className: 'login', onClick: function onClick() {
+                            var user = _this2.getCookie('user');
+                            if (user !== undefined) {
+                                if (user.length > 15) {
+                                    window.location.href = 'http://localhost:8888/vipcoin/profile/me.html';
+                                }
+                            } else {
+                                toggleAuth(true);
+                            }
+                        } },
+                    layouts.header.login.log
+                ) : _react2.default.createElement(
+                    'div',
+                    { id: 'logged', onClick: function onClick() {
+                            var user = _this2.getCookie('user');
+                            if (user !== undefined) {
+                                if (user.length > 15) {
+                                    window.location.href = 'http://localhost:8888/vipcoin/profile/me.html';
+                                }
+                            } else {
+                                toggleAuth(true);
+                            }
+                        } },
+                    _react2.default.createElement('i', { className: 'icon-user' }),
+                    NAME
+                )
+            );
+        }
+    }]);
+
+    return Header;
+}(_react.Component);
+
+exports.default = Header;
+
+/***/ }),
+/* 313 */
+/***/ (function(module, exports, __webpack_require__) {
+
+// style-loader: Adds some css to the DOM by adding a <style> tag
+
+// load the styles
+var content = __webpack_require__(314);
+if(typeof content === 'string') content = [[module.i, content, '']];
+// Prepare cssTransformation
+var transform;
+
+var options = {}
+options.transform = transform
+// add the styles to the DOM
+var update = __webpack_require__(35)(content, options);
+if(content.locals) module.exports = content.locals;
+// Hot Module Replacement
+if(false) {
+	// When the styles change, update the <style> tags
+	if(!content.locals) {
+		module.hot.accept("!!../../../node_modules/css-loader/index.js!../../../node_modules/sass-loader/lib/loader.js!./header.scss", function() {
+			var newContent = require("!!../../../node_modules/css-loader/index.js!../../../node_modules/sass-loader/lib/loader.js!./header.scss");
+			if(typeof newContent === 'string') newContent = [[module.id, newContent, '']];
+			update(newContent);
+		});
+	}
+	// When the module is disposed, remove the <style> tags
+	module.hot.dispose(function() { update(); });
+}
+
+/***/ }),
+/* 314 */
+/***/ (function(module, exports, __webpack_require__) {
+
+exports = module.exports = __webpack_require__(34)(undefined);
+// imports
+
+
+// module
+exports.push([module.i, ".header {\n  display: flex;\n  justify-content: space-between;\n  align-items: center;\n  margin-top: 50px;\n  width: 80%; }\n  .header #logo {\n    text-decoration: none;\n    cursor: pointer; }\n    .header #logo .logo {\n      display: flex;\n      align-items: center;\n      font-size: 2em;\n      color: white;\n      font-weight: 100;\n      cursor: pointer; }\n      .header #logo .logo img {\n        max-height: 45px;\n        margin-right: 5px;\n        margin-top: -6px;\n        cursor: pointer; }\n      .header #logo .logo .bold {\n        font-family: HelveticaBold; }\n  .header .menu ul {\n    display: flex;\n    flex-direction: row;\n    flex-wrap: nowrap;\n    justify-content: space-around;\n    list-style: none;\n    padding-left: 0;\n    margin: 0; }\n    .header .menu ul li {\n      margin-right: 15px;\n      position: relative;\n      text-transform: uppercase;\n      cursor: pointer; }\n      .header .menu ul li a {\n        color: white;\n        text-decoration: none;\n        position: relative;\n        cursor: pointer;\n        transition: .25s; }\n        .header .menu ul li a:hover {\n          color: #ffc02d; }\n      .header .menu ul li:last-child {\n        margin-right: 0; }\n      .header .menu ul li.active a {\n        color: #ffc02d; }\n  .header .login {\n    border-width: 1px;\n    border-color: white;\n    border-style: solid;\n    border-radius: 3px;\n    opacity: 0.6;\n    padding: 6px 10px 3px;\n    cursor: pointer;\n    color: white;\n    transition: .25s;\n    margin-top: -7px; }\n    .header .login:hover {\n      opacity: 1; }\n  .header #logged {\n    display: flex;\n    align-items: center;\n    text-transform: capitalize;\n    color: white;\n    font-size: 1.4em;\n    transition: .25s;\n    cursor: pointer; }\n    .header #logged i {\n      margin-right: 5px; }\n    .header #logged:hover {\n      color: #ffc02d; }\n  .header .lookAtTopOfHisHead {\n    position: absolute;\n    display: flex;\n    justify-content: center;\n    top: 10px;\n    width: 100%;\n    left: 0;\n    background: #061b31;\n    font-size: 11px; }\n    .header .lookAtTopOfHisHead .topContent {\n      display: flex;\n      color: white;\n      width: 80%;\n      justify-content: space-between;\n      height: 28px;\n      align-items: center; }\n      .header .lookAtTopOfHisHead .topContent .currencys {\n        display: flex;\n        padding-left: 50px; }\n        .header .lookAtTopOfHisHead .topContent .currencys .cryptoCurrency {\n          margin-right: 40px;\n          cursor: pointer; }\n          .header .lookAtTopOfHisHead .topContent .currencys .cryptoCurrency:last-child {\n            margin-right: 0; }\n      .header .lookAtTopOfHisHead .topContent .dropdown {\n        cursor: pointer;\n        position: relative;\n        display: inline-block; }\n        .header .lookAtTopOfHisHead .topContent .dropdown img {\n          width: 23px; }\n        .header .lookAtTopOfHisHead .topContent .dropdown #active_lang img {\n          width: 24px;\n          margin-bottom: -3px; }\n        .header .lookAtTopOfHisHead .topContent .dropdown:hover .dropdown-content {\n          transition: .3s;\n          visibility: visible;\n          opacity: 1;\n          transform: translateY(0em); }\n        .header .lookAtTopOfHisHead .topContent .dropdown .dropdown-content {\n          cursor: default;\n          font-size: 0.9em;\n          transform: translateY(2em);\n          transition: all 0.3s ease-in-out 0s, visibility 0s linear 0.3s, z-index 0s linear 0.01s;\n          visibility: hidden;\n          opacity: 0;\n          position: absolute;\n          background-color: rgba(6, 27, 49, 0.8);\n          box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);\n          z-index: 1;\n          color: #b6b4b5;\n          display: flex;\n          flex-direction: column;\n          align-items: center;\n          justify-content: space-around;\n          min-height: 100px;\n          padding: 5px;\n          top: 114%;\n          width: 60px;\n          left: -20px; }\n          .header .lookAtTopOfHisHead .topContent .dropdown .dropdown-content span {\n            margin: 12px 16px;\n            cursor: pointer;\n            display: block; }\n            .header .lookAtTopOfHisHead .topContent .dropdown .dropdown-content span img {\n              border: 2px solid rgba(6, 27, 49, 0.8);\n              border-radius: 50%;\n              transition: .2s; }\n            .header .lookAtTopOfHisHead .topContent .dropdown .dropdown-content span:hover {\n              color: white; }\n              .header .lookAtTopOfHisHead .topContent .dropdown .dropdown-content span:hover img {\n                border-color: white; }\n\n@media (max-width: 1030px) {\n  .header .menu {\n    font-size: .9em; }\n  .header .login {\n    font-size: .9em; } }\n", ""]);
+
+// exports
+
+
+/***/ }),
 /* 315 */,
 /* 316 */,
 /* 317 */,
@@ -27979,7 +28498,7 @@ exports = module.exports = __webpack_require__(34)(undefined);
 
 
 // module
-exports.push([module.i, "@font-face {\n  font-family: 'Brusher';\n  src: url(" + __webpack_require__(127) + "); }\n\n@font-face {\n  font-family: 'HelveticaLight';\n  src: url(" + __webpack_require__(128) + "); }\n\n@font-face {\n  font-family: 'HelveticaBlack';\n  src: url(" + __webpack_require__(129) + "); }\n\n@font-face {\n  font-family: 'HelveticaBold';\n  src: url(" + __webpack_require__(130) + "); }\n\n@font-face {\n  font-family: 'HelveticaHeavy';\n  src: url(" + __webpack_require__(131) + "); }\n\nbody {\n  font-family: HelveticaLight;\n  padding: 0;\n  margin: 0;\n  background: #575757; }\n  body .Main {\n    width: 100%;\n    height: 100%; }\n    body .Main .bg {\n      width: 500px;\n      height: 500px;\n      border-radius: 50%;\n      position: fixed;\n      left: 50%;\n      top: 20%;\n      margin-left: -250px;\n      background-size: cover;\n      opacity: .2;\n      z-index: -1; }\n    body .Main .container {\n      width: 100%; }\n      body .Main .container .left-header {\n        background: #575757;\n        display: flex;\n        justify-content: space-between;\n        align-items: center;\n        box-shadow: 0 0 15px 2px #191919;\n        min-height: 45px; }\n        body .Main .container .left-header .logo {\n          margin-left: 20px; }\n          body .Main .container .left-header .logo img {\n            max-width: 150px; }\n        body .Main .container .left-header .menu {\n          display: flex;\n          align-items: center;\n          justify-content: space-around; }\n          body .Main .container .left-header .menu a {\n            padding: 10px 20px 4px;\n            text-align: center;\n            font-size: 1em;\n            color: white;\n            text-decoration: none;\n            text-transform: uppercase;\n            cursor: pointer;\n            transition: .25s all; }\n            body .Main .container .left-header .menu a:hover {\n              color: #e5c100; }\n        body .Main .container .left-header .hello {\n          font-size: 1.4em;\n          color: white;\n          display: flex;\n          cursor: pointer;\n          transition: .25s all; }\n        body .Main .container .left-header .exit {\n          font-size: 1.4em;\n          color: white;\n          display: flex;\n          cursor: pointer;\n          transition: .25s all;\n          margin-right: 35px; }\n          body .Main .container .left-header .exit:hover {\n            color: #e5c100; }\n      body .Main .container .right-container {\n        width: 100%; }\n      body .Main .container h1 {\n        color: #ccac02;\n        margin-left: 15px;\n        letter-spacing: 3px;\n        text-transform: uppercase;\n        text-shadow: 0 0px 15px black;\n        z-index: 10; }\n", ""]);
+exports.push([module.i, "@font-face {\n  font-family: 'Brusher';\n  src: url(" + __webpack_require__(127) + "); }\n\n@font-face {\n  font-family: 'HelveticaLight';\n  src: url(" + __webpack_require__(128) + "); }\n\n@font-face {\n  font-family: 'HelveticaBlack';\n  src: url(" + __webpack_require__(129) + "); }\n\n@font-face {\n  font-family: 'HelveticaBold';\n  src: url(" + __webpack_require__(130) + "); }\n\n@font-face {\n  font-family: 'HelveticaHeavy';\n  src: url(" + __webpack_require__(131) + "); }\n\nbody {\n  font-family: HelveticaLight;\n  padding: 0;\n  margin: 0;\n  background: #132a45; }\n  body .Main {\n    width: 100%;\n    height: 100%;\n    display: flex;\n    flex-direction: column;\n    align-items: center; }\n    body .Main .container {\n      width: 100%; }\n      body .Main .container .left-header {\n        background: #575757;\n        display: flex;\n        justify-content: space-between;\n        align-items: center;\n        box-shadow: 0 0 15px 2px #191919;\n        min-height: 45px; }\n        body .Main .container .left-header .logo {\n          margin-left: 20px; }\n          body .Main .container .left-header .logo img {\n            max-width: 150px; }\n        body .Main .container .left-header .menu {\n          display: flex;\n          align-items: center;\n          justify-content: space-around; }\n          body .Main .container .left-header .menu a {\n            padding: 10px 20px 4px;\n            text-align: center;\n            font-size: 1em;\n            color: white;\n            text-decoration: none;\n            text-transform: uppercase;\n            cursor: pointer;\n            transition: .25s all; }\n            body .Main .container .left-header .menu a:hover {\n              color: #ffc02d; }\n        body .Main .container .left-header .hello {\n          font-size: 1.4em;\n          color: white;\n          display: flex;\n          cursor: pointer;\n          transition: .25s all; }\n        body .Main .container .left-header .exit {\n          font-size: 1.4em;\n          color: white;\n          display: flex;\n          cursor: pointer;\n          transition: .25s all;\n          margin-right: 35px; }\n          body .Main .container .left-header .exit:hover {\n            color: #ffc02d; }\n      body .Main .container .right-container {\n        width: 100%; }\n      body .Main .container h1 {\n        color: #feaf00;\n        margin-left: 15px;\n        letter-spacing: 3px;\n        text-transform: uppercase;\n        text-shadow: 0 0px 15px black;\n        z-index: 10; }\n", ""]);
 
 // exports
 
@@ -28368,13 +28887,17 @@ var _styles2 = _interopRequireDefault(_styles);
 
 var _links = __webpack_require__(69);
 
-var _ProfileHeader = __webpack_require__(453);
+var _Header = __webpack_require__(312);
 
-var _ProfileHeader2 = _interopRequireDefault(_ProfileHeader);
+var _Header2 = _interopRequireDefault(_Header);
 
 var _Container = __webpack_require__(731);
 
 var _Container2 = _interopRequireDefault(_Container);
+
+var _ProfileHeader = __webpack_require__(453);
+
+var _ProfileHeader2 = _interopRequireDefault(_ProfileHeader);
 
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
@@ -28436,11 +28959,10 @@ var App = function (_Component) {
             return _react2.default.createElement(
                 "div",
                 { className: "Main" },
-                _react2.default.createElement("div", { className: "bg", style: { backgroundImage: "url(../" + _links.BG_COIN + ")" } }),
+                _react2.default.createElement(_Header2.default, { profile: true }),
                 _react2.default.createElement(
                     "div",
                     { className: "container" },
-                    _react2.default.createElement(_ProfileHeader2.default, { head: pages.profile.layouts.leftHeader, user: user }),
                     _react2.default.createElement(
                         "div",
                         { className: "right-container" },
@@ -28988,7 +29510,7 @@ exports = module.exports = __webpack_require__(34)(undefined);
 
 
 // module
-exports.push([module.i, "@font-face {\n  font-family: 'Brusher';\n  src: url(" + __webpack_require__(127) + "); }\n\n@font-face {\n  font-family: 'HelveticaLight';\n  src: url(" + __webpack_require__(128) + "); }\n\n@font-face {\n  font-family: 'HelveticaBlack';\n  src: url(" + __webpack_require__(129) + "); }\n\n@font-face {\n  font-family: 'HelveticaBold';\n  src: url(" + __webpack_require__(130) + "); }\n\n@font-face {\n  font-family: 'HelveticaHeavy';\n  src: url(" + __webpack_require__(131) + "); }\n\n.coins-info {\n  display: flex;\n  justify-content: space-between;\n  align-items: center;\n  text-align: center;\n  font-size: 1.4em;\n  color: #e5c100;\n  font-family: HelveticaBold;\n  text-shadow: 0 0 10px black; }\n  .coins-info div {\n    width: 100%;\n    padding: 10px;\n    display: flex;\n    align-items: center;\n    justify-content: center;\n    text-transform: uppercase; }\n    .coins-info div:last-child {\n      box-shadow: none; }\n\n.refill .refill-container .packages {\n  display: flex;\n  flex-direction: row;\n  width: 100%;\n  justify-content: space-between;\n  text-align: center;\n  font-size: 1.6em; }\n  .refill .refill-container .packages div {\n    width: 100%;\n    margin-right: 2px;\n    margin-bottom: 0;\n    text-shadow: 0 0 10px black;\n    border: 1px solid;\n    padding: 10px 10px 0;\n    cursor: pointer;\n    background-color: rgba(242, 176, 30, 0.3);\n    border-radius: 5px;\n    transition: 0.25s all; }\n    .refill .refill-container .packages div:hover {\n      transform: scale(1.02);\n      background-color: rgba(242, 176, 30, 0.7); }\n    .refill .refill-container .packages div i {\n      font-size: 2em; }\n    .refill .refill-container .packages div p {\n      margin: 2px 0; }\n\n.refill .refill-container .options {\n  display: flex;\n  flex-direction: column;\n  align-items: center;\n  font-size: 1.3em;\n  color: white;\n  margin-top: 20px; }\n  .refill .refill-container .options .specCost {\n    margin-bottom: 15px; }\n    .refill .refill-container .options .specCost #specialPrice {\n      background: #e5c100;\n      border-radius: 5px;\n      padding: 4px; }\n  .refill .refill-container .options #howMuch {\n    margin-bottom: 15px;\n    font-size: 1.2em; }\n    .refill .refill-container .options #howMuch input {\n      outline: none;\n      line-height: 20px;\n      min-width: 200px;\n      padding: 0px 10px 0 15px;\n      text-align: center;\n      margin-bottom: 10px;\n      background-color: rgba(255, 255, 255, 0.1);\n      border: 2px solid transparent;\n      border-bottom: 2px solid rgba(255, 255, 255, 0.7);\n      color: rgba(255, 255, 255, 0.9);\n      font-size: 2.2em;\n      transition: .25s all; }\n      .refill .refill-container .options #howMuch input:focus, .refill .refill-container .options #howMuch input:hover {\n        border: 2px solid rgba(255, 255, 255, 0.5);\n        background-color: transparent; }\n      .refill .refill-container .options #howMuch input::placeholder {\n        color: rgba(255, 255, 255, 0.7); }\n  .refill .refill-container .options .finalCost {\n    display: flex;\n    align-items: center;\n    margin-bottom: 15px; }\n    .refill .refill-container .options .finalCost #cost {\n      background: #e5c100;\n      padding: 4px;\n      border-radius: 5px; }\n  .refill .refill-container .options .btn-buy {\n    font-size: 1.1em;\n    color: #fff;\n    background: #e5c100;\n    cursor: pointer;\n    border: none;\n    outline: none;\n    padding: 10px 25px;\n    text-transform: uppercase;\n    line-height: 19px;\n    box-shadow: 0 0 5px 1px #ccac02;\n    margin: 10px 25px;\n    transition: .25s all; }\n    .refill .refill-container .options .btn-buy:hover {\n      box-shadow: 0 0 10px 1px #ccac02; }\n\n.refill .refill-container .payment {\n  display: flex;\n  width: 100%; }\n  .refill .refill-container .payment .wallets {\n    width: 30%;\n    display: flex;\n    flex-direction: column;\n    align-items: center;\n    justify-content: space-around; }\n    .refill .refill-container .payment .wallets .cryptocash {\n      display: flex;\n      flex-direction: column;\n      align-items: center;\n      padding: 4px 10px;\n      border: 1px solid;\n      border-radius: 5px;\n      color: white;\n      margin-bottom: 15px; }\n      .refill .refill-container .payment .wallets .cryptocash span {\n        margin: 5px; }\n  .refill .refill-container .payment .codes {\n    width: 70%;\n    padding: 0 20px;\n    display: flex;\n    flex-direction: column;\n    align-items: center;\n    justify-content: space-around;\n    color: white; }\n    .refill .refill-container .payment .codes .comment-code {\n      width: 100%; }\n      .refill .refill-container .payment .codes .comment-code input {\n        width: 100%;\n        text-align: center; }\n    .refill .refill-container .payment .codes .walletUrl {\n      width: 100%; }\n      .refill .refill-container .payment .codes .walletUrl input {\n        width: 100%;\n        text-align: center; }\n", ""]);
+exports.push([module.i, "@font-face {\n  font-family: 'Brusher';\n  src: url(" + __webpack_require__(127) + "); }\n\n@font-face {\n  font-family: 'HelveticaLight';\n  src: url(" + __webpack_require__(128) + "); }\n\n@font-face {\n  font-family: 'HelveticaBlack';\n  src: url(" + __webpack_require__(129) + "); }\n\n@font-face {\n  font-family: 'HelveticaBold';\n  src: url(" + __webpack_require__(130) + "); }\n\n@font-face {\n  font-family: 'HelveticaHeavy';\n  src: url(" + __webpack_require__(131) + "); }\n\n.coins-info {\n  display: flex;\n  justify-content: space-between;\n  align-items: center;\n  text-align: center;\n  font-size: 1.4em;\n  color: #ffc02d;\n  font-family: HelveticaBold;\n  text-shadow: 0 0 10px black; }\n  .coins-info div {\n    width: 100%;\n    padding: 10px;\n    display: flex;\n    align-items: center;\n    justify-content: center;\n    text-transform: uppercase; }\n    .coins-info div:last-child {\n      box-shadow: none; }\n\n.refill .refill-container .packages {\n  display: flex;\n  flex-direction: row;\n  width: 100%;\n  justify-content: space-between;\n  text-align: center;\n  font-size: 1.6em; }\n  .refill .refill-container .packages div {\n    width: 100%;\n    margin-right: 2px;\n    margin-bottom: 0;\n    text-shadow: 0 0 10px black;\n    border: 1px solid;\n    padding: 10px 10px 0;\n    cursor: pointer;\n    background-color: rgba(242, 176, 30, 0.3);\n    border-radius: 5px;\n    transition: 0.25s all; }\n    .refill .refill-container .packages div:hover {\n      transform: scale(1.02);\n      background-color: rgba(242, 176, 30, 0.7); }\n    .refill .refill-container .packages div i {\n      font-size: 2em; }\n    .refill .refill-container .packages div p {\n      margin: 2px 0; }\n\n.refill .refill-container .options {\n  display: flex;\n  flex-direction: column;\n  align-items: center;\n  font-size: 1.3em;\n  color: white;\n  margin-top: 20px; }\n  .refill .refill-container .options .specCost {\n    margin-bottom: 15px; }\n    .refill .refill-container .options .specCost #specialPrice {\n      background: #ffc02d;\n      border-radius: 5px;\n      padding: 4px; }\n  .refill .refill-container .options #howMuch {\n    margin-bottom: 15px;\n    font-size: 1.2em; }\n    .refill .refill-container .options #howMuch input {\n      outline: none;\n      line-height: 20px;\n      min-width: 200px;\n      padding: 0px 10px 0 15px;\n      text-align: center;\n      margin-bottom: 10px;\n      background-color: rgba(255, 255, 255, 0.1);\n      border: 2px solid transparent;\n      border-bottom: 2px solid rgba(255, 255, 255, 0.7);\n      color: rgba(255, 255, 255, 0.9);\n      font-size: 2.2em;\n      transition: .25s all; }\n      .refill .refill-container .options #howMuch input:focus, .refill .refill-container .options #howMuch input:hover {\n        border: 2px solid rgba(255, 255, 255, 0.5);\n        background-color: transparent; }\n      .refill .refill-container .options #howMuch input::placeholder {\n        color: rgba(255, 255, 255, 0.7); }\n  .refill .refill-container .options .finalCost {\n    display: flex;\n    align-items: center;\n    margin-bottom: 15px; }\n    .refill .refill-container .options .finalCost #cost {\n      background: #ffc02d;\n      padding: 4px;\n      border-radius: 5px; }\n  .refill .refill-container .options .btn-buy {\n    font-size: 1.1em;\n    color: #fff;\n    background: #ffc02d;\n    cursor: pointer;\n    border: none;\n    outline: none;\n    padding: 10px 25px;\n    text-transform: uppercase;\n    line-height: 19px;\n    box-shadow: 0 0 5px 1px #feaf00;\n    margin: 10px 25px;\n    transition: .25s all; }\n    .refill .refill-container .options .btn-buy:hover {\n      box-shadow: 0 0 10px 1px #feaf00; }\n\n.refill .refill-container .payment {\n  display: flex;\n  width: 100%; }\n  .refill .refill-container .payment .wallets {\n    width: 30%;\n    display: flex;\n    flex-direction: column;\n    align-items: center;\n    justify-content: space-around; }\n    .refill .refill-container .payment .wallets .cryptocash {\n      display: flex;\n      flex-direction: column;\n      align-items: center;\n      padding: 4px 10px;\n      border: 1px solid;\n      border-radius: 5px;\n      color: white;\n      margin-bottom: 15px; }\n      .refill .refill-container .payment .wallets .cryptocash span {\n        margin: 5px; }\n  .refill .refill-container .payment .codes {\n    width: 70%;\n    padding: 0 20px;\n    display: flex;\n    flex-direction: column;\n    align-items: center;\n    justify-content: space-around;\n    color: white; }\n    .refill .refill-container .payment .codes .comment-code {\n      width: 100%; }\n      .refill .refill-container .payment .codes .comment-code input {\n        width: 100%;\n        text-align: center; }\n    .refill .refill-container .payment .codes .walletUrl {\n      width: 100%; }\n      .refill .refill-container .payment .codes .walletUrl input {\n        width: 100%;\n        text-align: center; }\n", ""]);
 
 // exports
 

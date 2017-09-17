@@ -27668,7 +27668,7 @@ module.exports = function (css) {
 /* 285 */
 /***/ (function(module, exports) {
 
-module.exports = [{"language":"ru","pages":{"main":{"top":{"head":"Ваш шедевр готов!","text":"С другой стороны консультация с широким активом способствует подготовки и реализации модели развития. Задача организации, в особенности же консультация с широким активом в значительной степени.","btn":"купить"},"progress":{"head":"какая наша цель?","title":"Официальный запуск сети после продажи:"},"table":{"head":{"header":"Сплиты","number":"#","cost":"Цена","value":"Количество монет","summ":"Сумма"},"foot":{"allSumm":"Итог сбора суммы: ","future":"При выходе на крипто-биржу цена за 1 монету","coinCost":"50$"},"split":[{"cost":0.1,"value":"3.000.000","summ":"300.000"},{"cost":0.2,"value":"3.000.000","summ":"600.000"},{"cost":0.4,"value":"3.000.000","summ":"1.200.000"},{"cost":0.8,"value":"3.000.000","summ":"2.400.000"},{"cost":1.6,"value":"3.000.000","summ":"4.800.000"},{"cost":3.2,"value":"3.000.000","summ":"9.600.000"},{"cost":6.4,"value":"3.000.000","summ":"19.200.000"},{"cost":12.8,"value":"3.000.000","summ":"38.400.000"},{"cost":25.6,"value":"3.000.000","summ":"76.800.000"},{"cost":51.2,"value":"3.000.000","summ":"153.600.000"}]}},"help":{},"packages":{"packages":[{"title":"ПАКЕТЫ"},{"title":"Калькулятор выгоды","inputCoins":"VipCoin","text":"Подсчитайте свою прибыль с учетом прогнозов курса VipCoin на последующие года"}]},"FAQ":{},"news":{},"contacts":{"top":{"head":"Контакты"},"feedback":{"head":"центр поддержки клиентов","inputName":"Имя","inputLName":"Фамилия","inputEmail":"E-mail","inputTel":"Номер телефона","inputMsg":"Ваше сообщение","btnSend":"Отправить"}},"profile":{"layouts":{"leftHeader":{"btnMain":"главная","btnRefill":"Купить","btnSettings":"Настройки","btnExit":"выход"}},"info":{},"settings":{"password":{"head":"Сменить пароль","CurPass":"Текущий пароль","new":"Новый пароль","repass":"Повторите пароль","save":"Сохранить","error":"Неверный пароль","accept":"Изминения сохранены"},"email":{"head":"Сменить E-mail","CurPass":"Текущий пароль","new":"Новый E-mail","save":"Сохранить","error":"Неверный пароль","secondError":"Такой E-mail уже есть!","accept":"Изминения сохранены"}}}},"layouts":{"header":{"btnMain":"ГЛАВНАЯ","btnAbout":"О НАС","btnPackages":"ПАКЕТЫ","btnFAQ":"Помощь","btnNews":"Новости","btnContacts":"Контакты","login":{"log":"Регистрация/Вход"}},"footer":{"pages":{"whitePage":"Белая Бумага","legalPage":"Юридические Информация","contractOffer":"Пользовательское Соглашение","confidentiality":"Политика Конфиденциальности"},"feedback":"Обратная связь"},"auth":{"header":{"btnLogin":"Войти","btnRegistration":"Регестрация","btnForgotPass":"Забыли пароль?"},"login":{"inputLogin":"Логин или E-mail","inputPassword":"Пароль","btnEnter":"Войти"},"registration":{"inputLogin":"Логин","inputEmail":"E-Mail","inputPassword":"Пароль","inputRepeatPassword":"Повторите пароль","checkLegal":"Согласен с правилами сайта","btnRegistration":"Регестрация"},"forgot":{"text":"Отправить пароль на почту","inputEmail":"E-Mail","btnSend":"Отправить","success":"E-mail отправлен!","error":"E-mail не найден"}}}}]
+module.exports = [{"language":"ru","pages":{"main":{"top":{"head":"Ваш шедевр готов!","text":"С другой стороны консультация с широким активом способствует подготовки и реализации модели развития. Задача организации, в особенности же консультация с широким активом в значительной степени.","btn":"купить"},"progress":{"head":"какая наша цель?","title":"Официальный запуск сети после продажи:"},"table":{"head":{"header":"Сплиты","number":"#","cost":"Цена","value":"Количество монет","summ":"Сумма"},"foot":{"allSumm":"Итог сбора суммы: ","future":"При выходе на крипто-биржу цена за 1 монету","coinCost":"50$"},"split":[{"cost":0.1,"value":"3.000.000","summ":"300.000"},{"cost":0.2,"value":"3.000.000","summ":"600.000"},{"cost":0.4,"value":"3.000.000","summ":"1.200.000"},{"cost":0.8,"value":"3.000.000","summ":"2.400.000"},{"cost":1.6,"value":"3.000.000","summ":"4.800.000"},{"cost":3.2,"value":"3.000.000","summ":"9.600.000"},{"cost":6.4,"value":"3.000.000","summ":"19.200.000"},{"cost":12.8,"value":"3.000.000","summ":"38.400.000"},{"cost":25.6,"value":"3.000.000","summ":"76.800.000"},{"cost":51.2,"value":"3.000.000","summ":"153.600.000"}]}},"about":{},"packages":{"packages":{"title":"Пакеты","btn_end":"НЕДОСТУПНО","btn_start":"КУПИТЬ","btn_wait":"В ОЖИДАНИИ","top_p":"монету","coinsLeft_p":"Доступно монет","inputCoins_p":"Введите количество монет для покупки","price_p":"Стоимость","afterHead":"Укажите количество монет которые хотите купить для расчета стоимость"},"faq":{"title":"ПОМОЩЬ","afterHead":"Список наиболее часто задаваемых вопросов и ответы на них","help1":{"title":"Как можно оплатить?","text":"Мы бросаем вызов статус-кво и выходят за рамки сегодняшнего дня, чтобы создать открытое финансовое будущее"},"help2":{"title":"Как обменять криптовалюту?","text":"Мы бросаем вызов статус-кво и выходят за рамки сегодняшнего дня, чтобы создать открытое финансовое будущее"},"help3":{"title":"Как получить монеты?","text":"Мы бросаем вызов статус-кво и выходят за рамки сегодняшнего дня, чтобы создать открытое финансовое будущее"},"help4":{"title":"Как обменять криптовалюту?","text":"Мы бросаем вызов статус-кво и выходят за рамки сегодняшнего дня, чтобы создать открытое финансовое будущее"}}},"FAQ":{"content":{"title":"Содержание","afterHead":"Список наиболее часто задаваемых вопросов и ответы на них","secondTitle":"Ответы"},"faqs":[{"title":"Как зарегистрироваться?","text":"Мы бросаем вызов статус-кво и выходят за рамки сегодняшнего дня, чтобы создать открытое финансовое будущее Мы бросаем вызов статус-кво и выходят за рамки сегодняшнего дня, чтобы создать открытое финансовое будущее"},{"title":"Как можно оплатить?","text":"Мы бросаем вызов статус-кво и выходят за рамки сегодняшнего дня, чтобы создать открытое финансовое будущее Мы бросаем вызов статус-кво и выходят за рамки сегодняшнего дня, чтобы создать открытое финансовое будущее"},{"title":"Как получить монеты?","text":"Мы бросаем вызов статус-кво и выходят за рамки сегодняшнего дня, чтобы создать финансовое будущее Мы бросаем вызов статус-кво и выходят за рамки сегодняшнего дня, чтобы создать открытое финансовое будущее"},{"title":"Как обменять криптовалюту?","text":"Мы бросаем вызов статус-кво и выходят за рамки сегодняшнего дня, чтобы создать финансовое будущее Мы бросаем вызов статус-кво и выходят за рамки сегодняшнего дня, чтобы создать открытое финансовое будущее"},{"title":"Как можно оплатить?","text":"Мы бросаем вызов статус-кво и выходят за рамки сегодняшнего дня, чтобы создать открытое финансовое будущее Мы бросаем вызов статус-кво и выходят за рамки сегодняшнего дня, чтобы создать открытое финансовое будущее"},{"title":"Как получить монеты?","text":"Мы бросаем вызов статус-кво и выходят за рамки сегодняшнего дня, чтобы создать открытое финансовое будущее Мы бросаем вызов статус-кво и выходят за рамки сегодняшнего дня, чтобы создать открытое финансовое будущее"},{"title":"Как зарегистрироваться?","text":"Мы бросаем вызов статус-кво и выходят за рамки сегодняшнего дня, чтобы создать финансовое будущее Мы бросаем вызов статус-кво и выходят за рамки сегодняшнего дня, чтобы создать открытое финансовое будущее"},{"title":"Как обменять криптовалюту?","text":"Мы бросаем вызов статус-кво и выходят за рамки сегодняшнего дня, чтобы создать финансовое будущее Мы бросаем вызов статус-кво и выходят за рамки сегодняшнего дня, чтобы создать открытое финансовое будущее"}]},"news":{},"contacts":{"top":{"head":"Контакты"},"feedback":{"head":"центр поддержки клиентов","inputName":"Имя","inputLName":"Фамилия","inputEmail":"E-mail","inputTel":"Номер телефона","inputMsg":"Ваше сообщение","btnSend":"Отправить"}},"profile":{"layouts":{"leftHeader":{"btnMain":"главная","btnRefill":"Купить","btnSettings":"Настройки","btnExit":"выход"}},"info":{},"settings":{"password":{"head":"Сменить пароль","CurPass":"Текущий пароль","new":"Новый пароль","repass":"Повторите пароль","save":"Сохранить","error":"Неверный пароль","accept":"Изминения сохранены"},"email":{"head":"Сменить E-mail","CurPass":"Текущий пароль","new":"Новый E-mail","save":"Сохранить","error":"Неверный пароль","secondError":"Такой E-mail уже есть!","accept":"Изминения сохранены"}}}},"layouts":{"header":{"btnMain":"ГЛАВНАЯ","btnAbout":"О НАС","btnPackages":"ПАКЕТЫ","btnFAQ":"Помощь","btnNews":"Новости","btnContacts":"Контакты","login":{"log":"Регистрация/Вход"}},"footer":{"pages":{"whitePage":"Белая Бумага","legalPage":"Юридические Информация","contractOffer":"Пользовательское Соглашение","confidentiality":"Политика Конфиденциальности"},"feedback":"Обратная связь"},"auth":{"header":{"btnLogin":"Войти","btnRegistration":"Регестрация","btnForgotPass":"Забыли пароль?"},"login":{"inputLogin":"Логин или E-mail","inputPassword":"Пароль","btnEnter":"Войти"},"registration":{"inputLogin":"Логин","inputEmail":"E-Mail","inputPassword":"Пароль","inputRepeatPassword":"Повторите пароль","checkLegal":"Согласен с правилами сайта","btnRegistration":"Регестрация"},"forgot":{"text":"Отправить пароль на почту","inputEmail":"E-Mail","btnSend":"Отправить","success":"E-mail отправлен!","error":"E-mail не найден"}}}}]
 
 /***/ }),
 /* 286 */,
@@ -27753,12 +27753,15 @@ var Header = function (_Component) {
             ltc: 0,
             btc: 0,
             eth: 0,
+            vpc: 0,
             NAME: undefined
         };
-        props.setLanguage(_this.state.language);
+        if (!props.profile) {
+            props.setLanguage(_this.state.language);
+        } else {}
         _this.getCurrVal();
+        _this.getVPC();
         var loggedUser = _this.getCookie("user");
-
         if (loggedUser !== undefined) {
             _this.getUserName(loggedUser);
         }
@@ -27778,7 +27781,7 @@ var Header = function (_Component) {
                 contacts = _props.contacts;
 
             var arr = [main, about, packages, faq, news, contacts];
-            var ask = 0;
+            var ask = undefined;
             for (var i = 0; i < arr.length; i++) {
                 if (arr[i] === true) {
                     ask = i;
@@ -27809,7 +27812,7 @@ var Header = function (_Component) {
                     break;
 
                 default:
-                    console.log('op');break;
+                    break;
             }
         }
     }, {
@@ -27848,7 +27851,7 @@ var Header = function (_Component) {
         value: function getUserName(loggedUser) {
             var that = this;
             _axios2.default.get('http://localhost:8888/vipcoin/profile/userInfo.php', { params: { type: "header", hash: loggedUser } }).then(function (res) {
-                console.log(res);
+                // console.log(res);
                 // dispatch({type: act.GET_PACKAGES_INFO, packages: res.data})
                 // NAME = res.data;
                 that.setState({
@@ -27872,6 +27875,21 @@ var Header = function (_Component) {
             }));
         }
     }, {
+        key: 'getVPC',
+        value: function getVPC() {
+            var that = this;
+            _axios2.default.get('http://localhost:8888/vipcoin/generally.php', { params: { type: "coinCost" } }).then(function (res) {
+                // console.log(res);
+                // dispatch({type: act.GET_PACKAGES_INFO, packages: res.data})
+                // NAME = res.data;
+                that.setState({
+                    vpc: res.data
+                });
+            }).catch(function (error) {
+                console.log(error);
+            });
+        }
+    }, {
         key: 'getLTC',
         value: function getLTC() {
             return _axios2.default.get('https://api.cryptonator.com/api/ticker/ltc-usd');
@@ -27891,7 +27909,9 @@ var Header = function (_Component) {
         value: function render() {
             var _this2 = this;
 
-            var toggleAuth = this.props.toggleAuth;
+            var _props2 = this.props,
+                toggleAuth = _props2.toggleAuth,
+                profile = _props2.profile;
 
             var lang = _translate2.default.filter(function (item) {
                 return item.language === _this2.state.language;
@@ -27901,9 +27921,41 @@ var Header = function (_Component) {
                 ltc = _state.ltc,
                 btc = _state.btc,
                 eth = _state.eth,
+                vpc = _state.vpc,
                 NAME = _state.NAME;
 
 
+            var LogoUrl = _links.PAGES.MAIN;
+            var LOGO_IMG = _links.LOGO;
+            var AboutUrl = _links.PAGES.ABOUT_US;
+            var PackUrl = _links.PAGES.PACKAGES;
+            var FAQ_Url = _links.PAGES.FAQ;
+            var NewsUrl = _links.PAGES.NEWS;
+            var ContactsUrl = _links.PAGES.CONTACT_US;
+
+            var ICO_lang = {
+                main: './src/header/' + this.state.language + '.svg',
+                ru: _links.FLAG_RU,
+                japan: _links.FLAG_JAP,
+                usa: _links.FLAG_USA,
+                eng: _links.FLAG_ENG
+            };
+            if (profile) {
+                LogoUrl = "../" + _links.PAGES.MAIN;
+                LOGO_IMG = "../" + _links.LOGO;
+                AboutUrl = "../" + _links.PAGES.ABOUT_US;
+                PackUrl = "../" + _links.PAGES.PACKAGES;
+                FAQ_Url = "../" + _links.PAGES.FAQ;
+                NewsUrl = "../" + _links.PAGES.NEWS;
+                ContactsUrl = "../" + _links.PAGES.CONTACT_US;
+                ICO_lang = {
+                    main: '../src/header/' + this.state.language + '.svg',
+                    ru: "." + _links.FLAG_RU,
+                    japan: "." + _links.FLAG_JAP,
+                    usa: "." + _links.FLAG_USA,
+                    eng: "." + _links.FLAG_ENG
+                };
+            }
             return _react2.default.createElement(
                 'div',
                 { className: 'header' },
@@ -27916,7 +27968,7 @@ var Header = function (_Component) {
                         _react2.default.createElement(
                             'div',
                             { className: 'currencys', onClick: function onClick() {
-                                    _this2.getUserAccount();
+                                    _this2.getCurrVal();
                                 } },
                             _react2.default.createElement(
                                 'div',
@@ -27947,6 +27999,16 @@ var Header = function (_Component) {
                                     null,
                                     eth
                                 )
+                            ),
+                            _react2.default.createElement(
+                                'div',
+                                { className: 'cryptoCurrency' },
+                                'VPC/USD: ',
+                                _react2.default.createElement(
+                                    'span',
+                                    null,
+                                    vpc
+                                )
                             )
                         ),
                         _react2.default.createElement(
@@ -27955,7 +28017,7 @@ var Header = function (_Component) {
                             _react2.default.createElement(
                                 'span',
                                 { id: 'active_lang' },
-                                _react2.default.createElement('img', { src: './src/header/' + this.state.language + '.svg', alt: 'active_lang' })
+                                _react2.default.createElement('img', { src: ICO_lang.main, alt: 'active_lang' })
                             ),
                             _react2.default.createElement(
                                 'div',
@@ -27967,28 +28029,31 @@ var Header = function (_Component) {
                                             _this2.setState({ language: 'ru' });
                                             console.log("1");
                                         } },
-                                    _react2.default.createElement('img', { src: _links.FLAG_RU, alt: 'ru' })
+                                    _react2.default.createElement('img', { src: ICO_lang.ru, alt: 'ru' })
                                 ),
                                 _react2.default.createElement(
                                     'span',
                                     { onClick: function onClick() {
+                                            _this2.setState({ language: 'eng' });
                                             console.log("2");
                                         } },
-                                    _react2.default.createElement('img', { src: _links.FLAG_ENG, alt: 'eng' })
+                                    _react2.default.createElement('img', { src: ICO_lang.eng, alt: 'eng' })
                                 ),
                                 _react2.default.createElement(
                                     'span',
                                     { onClick: function onClick() {
+                                            _this2.setState({ language: 'japan' });
                                             console.log("3");
                                         } },
-                                    _react2.default.createElement('img', { src: _links.FLAG_JAP, alt: 'japan' })
+                                    _react2.default.createElement('img', { src: ICO_lang.japan, alt: 'japan' })
                                 ),
                                 _react2.default.createElement(
                                     'span',
                                     { onClick: function onClick() {
+                                            _this2.setState({ language: 'usa' });
                                             console.log("4");
                                         } },
-                                    _react2.default.createElement('img', { src: _links.FLAG_USA, alt: 'usa' })
+                                    _react2.default.createElement('img', { src: ICO_lang.usa, alt: 'usa' })
                                 )
                             )
                         )
@@ -27996,11 +28061,11 @@ var Header = function (_Component) {
                 ),
                 _react2.default.createElement(
                     'a',
-                    { href: _links.PAGES.MAIN, id: 'logo' },
+                    { href: LogoUrl, id: 'logo' },
                     _react2.default.createElement(
                         'div',
                         { className: 'logo' },
-                        _react2.default.createElement('img', { src: _links.LOGO, alt: 'Logo' }),
+                        _react2.default.createElement('img', { src: LOGO_IMG, alt: 'Logo' }),
                         _react2.default.createElement(
                             'span',
                             { className: 'bold' },
@@ -28020,7 +28085,7 @@ var Header = function (_Component) {
                             null,
                             _react2.default.createElement(
                                 'a',
-                                { href: _links.PAGES.MAIN },
+                                { href: LogoUrl },
                                 layouts.header.btnMain
                             )
                         ),
@@ -28029,7 +28094,7 @@ var Header = function (_Component) {
                             null,
                             _react2.default.createElement(
                                 'a',
-                                { href: _links.PAGES.ABOUT_US },
+                                { href: AboutUrl },
                                 layouts.header.btnAbout
                             )
                         ),
@@ -28038,7 +28103,7 @@ var Header = function (_Component) {
                             null,
                             _react2.default.createElement(
                                 'a',
-                                { href: _links.PAGES.PACKAGES },
+                                { href: PackUrl },
                                 layouts.header.btnPackages
                             )
                         ),
@@ -28047,7 +28112,7 @@ var Header = function (_Component) {
                             null,
                             _react2.default.createElement(
                                 'a',
-                                { href: _links.PAGES.FAQ },
+                                { href: FAQ_Url },
                                 layouts.header.btnFAQ
                             )
                         ),
@@ -28056,7 +28121,7 @@ var Header = function (_Component) {
                             null,
                             _react2.default.createElement(
                                 'a',
-                                { href: _links.PAGES.NEWS },
+                                { href: NewsUrl },
                                 layouts.header.btnNews
                             )
                         ),
@@ -28065,7 +28130,7 @@ var Header = function (_Component) {
                             null,
                             _react2.default.createElement(
                                 'a',
-                                { href: _links.PAGES.CONTACT_US },
+                                { href: ContactsUrl },
                                 layouts.header.btnContacts
                             )
                         )
@@ -28077,7 +28142,7 @@ var Header = function (_Component) {
                             var user = _this2.getCookie('user');
                             if (user !== undefined) {
                                 if (user.length > 15) {
-                                    window.location.href = 'profile/me.html';
+                                    window.location.href = 'http://localhost:8888/vipcoin/profile/me.html';
                                 }
                             } else {
                                 toggleAuth(true);
@@ -28086,16 +28151,17 @@ var Header = function (_Component) {
                     layouts.header.login.log
                 ) : _react2.default.createElement(
                     'div',
-                    { className: 'logged', onClick: function onClick() {
+                    { id: 'logged', onClick: function onClick() {
                             var user = _this2.getCookie('user');
                             if (user !== undefined) {
                                 if (user.length > 15) {
-                                    window.location.href = 'profile/me.html';
+                                    window.location.href = 'http://localhost:8888/vipcoin/profile/me.html';
                                 }
                             } else {
                                 toggleAuth(true);
                             }
                         } },
+                    _react2.default.createElement('i', { className: 'icon-user' }),
                     NAME
                 )
             );
@@ -28104,32 +28170,6 @@ var Header = function (_Component) {
 
     return Header;
 }(_react.Component);
-
-/*
-<div className="lang dropdown">
-                    <span id="active_lang">
-                        <img src={`./src/header/${this.state.language}.svg`} alt="active_lang"/>
-                    </span>
-                    <div className="dropdown-content dropdown-main">
-                        <span onClick={() => {
-                            this.setCookie('language', 'ru', {expires: 350});
-                            this.setState({language: 'ru'});
-                            console.log("1")
-                        }}><img src={FLAG_RU} alt="ru"/>
-                        </span>
-                        <span onClick={() => { console.log("2") }}>
-                            <img src={FLAG_ENG} alt="eng"/>
-                        </span>
-                        <span onClick={() => { console.log("3") }}>
-                            <img src={FLAG_JAP} alt="japan"/>
-                        </span>
-                        <span onClick={() => { console.log("4") }}>
-                            <img src={FLAG_USA} alt="usa"/>
-                        </span>
-                    </div>
-                </div>
- */
-
 
 exports.default = Header;
 
@@ -28173,7 +28213,7 @@ exports = module.exports = __webpack_require__(34)(undefined);
 
 
 // module
-exports.push([module.i, ".header {\n  display: flex;\n  justify-content: space-between;\n  align-items: center;\n  margin-top: 50px;\n  width: 80%; }\n  .header #logo {\n    text-decoration: none;\n    cursor: pointer; }\n    .header #logo .logo {\n      display: flex;\n      align-items: center;\n      font-size: 2em;\n      color: white;\n      font-weight: 100;\n      cursor: pointer; }\n      .header #logo .logo img {\n        max-height: 45px;\n        margin-right: 5px;\n        margin-top: -6px;\n        cursor: pointer; }\n      .header #logo .logo .bold {\n        font-family: HelveticaBold; }\n  .header .menu ul {\n    display: flex;\n    flex-direction: row;\n    flex-wrap: nowrap;\n    justify-content: space-around;\n    list-style: none;\n    padding-left: 0;\n    margin: 0; }\n    .header .menu ul li {\n      margin-right: 15px;\n      position: relative;\n      text-transform: uppercase;\n      cursor: pointer; }\n      .header .menu ul li a {\n        color: white;\n        text-decoration: none;\n        position: relative;\n        cursor: pointer;\n        transition: .25s; }\n        .header .menu ul li a:hover {\n          color: #ffc02d; }\n      .header .menu ul li:last-child {\n        margin-right: 0; }\n      .header .menu ul li.active a {\n        color: #ffc02d; }\n  .header .login {\n    border-width: 1px;\n    border-color: white;\n    border-style: solid;\n    border-radius: 3px;\n    opacity: 0.6;\n    padding: 6px 10px 3px;\n    cursor: pointer;\n    color: white;\n    transition: .25s;\n    margin-top: -7px; }\n    .header .login:hover {\n      opacity: 1; }\n  .header .lookAtTopOfHisHead {\n    position: absolute;\n    display: flex;\n    justify-content: center;\n    top: 10px;\n    width: 100%;\n    left: 0;\n    background: #061b31;\n    font-size: 11px; }\n    .header .lookAtTopOfHisHead .topContent {\n      display: flex;\n      color: white;\n      width: 80%;\n      justify-content: space-between;\n      height: 28px;\n      align-items: center; }\n      .header .lookAtTopOfHisHead .topContent .currencys {\n        display: flex;\n        padding-left: 50px; }\n        .header .lookAtTopOfHisHead .topContent .currencys .cryptoCurrency {\n          margin-right: 40px;\n          cursor: pointer; }\n          .header .lookAtTopOfHisHead .topContent .currencys .cryptoCurrency:last-child {\n            margin-right: 0; }\n      .header .lookAtTopOfHisHead .topContent .dropdown {\n        cursor: pointer;\n        position: relative;\n        display: inline-block; }\n        .header .lookAtTopOfHisHead .topContent .dropdown img {\n          width: 23px; }\n        .header .lookAtTopOfHisHead .topContent .dropdown #active_lang img {\n          width: 24px;\n          margin-bottom: -3px; }\n        .header .lookAtTopOfHisHead .topContent .dropdown:hover .dropdown-content {\n          transition: .3s;\n          visibility: visible;\n          opacity: 1;\n          transform: translateY(0em); }\n        .header .lookAtTopOfHisHead .topContent .dropdown .dropdown-content {\n          cursor: default;\n          font-size: 0.9em;\n          transform: translateY(2em);\n          transition: all 0.3s ease-in-out 0s, visibility 0s linear 0.3s, z-index 0s linear 0.01s;\n          visibility: hidden;\n          opacity: 0;\n          position: absolute;\n          background-color: rgba(6, 27, 49, 0.8);\n          box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);\n          z-index: 1;\n          color: #b6b4b5;\n          display: flex;\n          flex-direction: column;\n          align-items: center;\n          justify-content: space-around;\n          min-height: 100px;\n          padding: 5px;\n          top: 114%;\n          width: 60px;\n          left: -20px; }\n          .header .lookAtTopOfHisHead .topContent .dropdown .dropdown-content span {\n            margin: 12px 16px;\n            cursor: pointer;\n            display: block; }\n            .header .lookAtTopOfHisHead .topContent .dropdown .dropdown-content span img {\n              border: 2px solid rgba(6, 27, 49, 0.8);\n              border-radius: 50%;\n              transition: .2s; }\n            .header .lookAtTopOfHisHead .topContent .dropdown .dropdown-content span:hover {\n              color: white; }\n              .header .lookAtTopOfHisHead .topContent .dropdown .dropdown-content span:hover img {\n                border-color: white; }\n\n@media (max-width: 1030px) {\n  .header .menu {\n    font-size: .9em; }\n  .header .login {\n    font-size: .9em; } }\n", ""]);
+exports.push([module.i, ".header {\n  display: flex;\n  justify-content: space-between;\n  align-items: center;\n  margin-top: 50px;\n  width: 80%; }\n  .header #logo {\n    text-decoration: none;\n    cursor: pointer; }\n    .header #logo .logo {\n      display: flex;\n      align-items: center;\n      font-size: 2em;\n      color: white;\n      font-weight: 100;\n      cursor: pointer; }\n      .header #logo .logo img {\n        max-height: 45px;\n        margin-right: 5px;\n        margin-top: -6px;\n        cursor: pointer; }\n      .header #logo .logo .bold {\n        font-family: HelveticaBold; }\n  .header .menu ul {\n    display: flex;\n    flex-direction: row;\n    flex-wrap: nowrap;\n    justify-content: space-around;\n    list-style: none;\n    padding-left: 0;\n    margin: 0; }\n    .header .menu ul li {\n      margin-right: 15px;\n      position: relative;\n      text-transform: uppercase;\n      cursor: pointer; }\n      .header .menu ul li a {\n        color: white;\n        text-decoration: none;\n        position: relative;\n        cursor: pointer;\n        transition: .25s; }\n        .header .menu ul li a:hover {\n          color: #ffc02d; }\n      .header .menu ul li:last-child {\n        margin-right: 0; }\n      .header .menu ul li.active a {\n        color: #ffc02d; }\n  .header .login {\n    border-width: 1px;\n    border-color: white;\n    border-style: solid;\n    border-radius: 3px;\n    opacity: 0.6;\n    padding: 6px 10px 3px;\n    cursor: pointer;\n    color: white;\n    transition: .25s;\n    margin-top: -7px; }\n    .header .login:hover {\n      opacity: 1; }\n  .header #logged {\n    display: flex;\n    align-items: center;\n    text-transform: capitalize;\n    color: white;\n    font-size: 1.4em;\n    transition: .25s;\n    cursor: pointer; }\n    .header #logged i {\n      margin-right: 5px; }\n    .header #logged:hover {\n      color: #ffc02d; }\n  .header .lookAtTopOfHisHead {\n    position: absolute;\n    display: flex;\n    justify-content: center;\n    top: 10px;\n    width: 100%;\n    left: 0;\n    background: #061b31;\n    font-size: 11px; }\n    .header .lookAtTopOfHisHead .topContent {\n      display: flex;\n      color: white;\n      width: 80%;\n      justify-content: space-between;\n      height: 28px;\n      align-items: center; }\n      .header .lookAtTopOfHisHead .topContent .currencys {\n        display: flex;\n        padding-left: 50px; }\n        .header .lookAtTopOfHisHead .topContent .currencys .cryptoCurrency {\n          margin-right: 40px;\n          cursor: pointer; }\n          .header .lookAtTopOfHisHead .topContent .currencys .cryptoCurrency:last-child {\n            margin-right: 0; }\n      .header .lookAtTopOfHisHead .topContent .dropdown {\n        cursor: pointer;\n        position: relative;\n        display: inline-block; }\n        .header .lookAtTopOfHisHead .topContent .dropdown img {\n          width: 23px; }\n        .header .lookAtTopOfHisHead .topContent .dropdown #active_lang img {\n          width: 24px;\n          margin-bottom: -3px; }\n        .header .lookAtTopOfHisHead .topContent .dropdown:hover .dropdown-content {\n          transition: .3s;\n          visibility: visible;\n          opacity: 1;\n          transform: translateY(0em); }\n        .header .lookAtTopOfHisHead .topContent .dropdown .dropdown-content {\n          cursor: default;\n          font-size: 0.9em;\n          transform: translateY(2em);\n          transition: all 0.3s ease-in-out 0s, visibility 0s linear 0.3s, z-index 0s linear 0.01s;\n          visibility: hidden;\n          opacity: 0;\n          position: absolute;\n          background-color: rgba(6, 27, 49, 0.8);\n          box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);\n          z-index: 1;\n          color: #b6b4b5;\n          display: flex;\n          flex-direction: column;\n          align-items: center;\n          justify-content: space-around;\n          min-height: 100px;\n          padding: 5px;\n          top: 114%;\n          width: 60px;\n          left: -20px; }\n          .header .lookAtTopOfHisHead .topContent .dropdown .dropdown-content span {\n            margin: 12px 16px;\n            cursor: pointer;\n            display: block; }\n            .header .lookAtTopOfHisHead .topContent .dropdown .dropdown-content span img {\n              border: 2px solid rgba(6, 27, 49, 0.8);\n              border-radius: 50%;\n              transition: .2s; }\n            .header .lookAtTopOfHisHead .topContent .dropdown .dropdown-content span:hover {\n              color: white; }\n              .header .lookAtTopOfHisHead .topContent .dropdown .dropdown-content span:hover img {\n                border-color: white; }\n\n@media (max-width: 1030px) {\n  .header .menu {\n    font-size: .9em; }\n  .header .login {\n    font-size: .9em; } }\n", ""]);
 
 // exports
 
@@ -28403,7 +28443,7 @@ exports = module.exports = __webpack_require__(34)(undefined);
 
 
 // module
-exports.push([module.i, ".footer {\n  height: 200px;\n  background-repeat: no-repeat;\n  background-position-x: 50%;\n  background-size: cover;\n  display: flex;\n  justify-content: center;\n  align-items: center;\n  flex-direction: column;\n  width: 100%;\n  position: relative; }\n  .footer .cont {\n    display: flex;\n    justify-content: center;\n    align-items: center;\n    font-size: .8em;\n    position: relative;\n    margin-bottom: 20px; }\n    .footer .cont .PP {\n      margin-right: 50px; }\n      .footer .cont .PP ul {\n        list-style: none;\n        padding: 0;\n        margin: 0; }\n        .footer .cont .PP ul li {\n          margin-bottom: 15px;\n          cursor: pointer;\n          transition: .25s all; }\n          .footer .cont .PP ul li a {\n            text-decoration: none;\n            color: white;\n            transition: .25s all; }\n          .footer .cont .PP ul li:hover a {\n            color: #ffc02d; }\n          .footer .cont .PP ul li:last-child {\n            margin-bottom: 0; }\n    .footer .cont .feedback {\n      margin-right: 50px;\n      display: flex;\n      flex-direction: column; }\n      .footer .cont .feedback a {\n        color: white;\n        text-decoration: none;\n        display: flex;\n        align-items: center;\n        transition: .25s all;\n        margin-bottom: 5px; }\n        .footer .cont .feedback a i {\n          font-size: 1.6em;\n          margin-right: 5px; }\n        .footer .cont .feedback a:hover {\n          color: #ffc02d; }\n        .footer .cont .feedback a:last-child {\n          margin-bottom: 0; }\n    .footer .cont .contacts {\n      display: flex;\n      flex-direction: column; }\n      .footer .cont .contacts a {\n        color: white;\n        text-decoration: none;\n        display: flex;\n        align-items: center;\n        transition: .25s all;\n        margin-bottom: 5px; }\n        .footer .cont .contacts a i {\n          font-size: 1.6em;\n          margin-right: 5px; }\n        .footer .cont .contacts a:hover {\n          color: #ffc02d; }\n        .footer .cont .contacts a:last-child {\n          margin-bottom: 0; }\n    .footer .cont:after {\n      content: \"\";\n      position: absolute;\n      width: 100%;\n      height: 1px;\n      bottom: -10px;\n      left: 0;\n      background-color: white;\n      opacity: 0.188; }\n  .footer .socials {\n    width: 15%;\n    font-size: 1.5em;\n    display: flex;\n    align-items: center;\n    justify-content: space-around; }\n    .footer .socials a {\n      color: white;\n      text-decoration: none;\n      transition: .25s all; }\n      .footer .socials a:hover {\n        color: #ffc02d; }\n  .footer #author {\n    position: absolute;\n    bottom: 0;\n    right: calc(50% - 41px);\n    font-size: .8em;\n    text-decoration: none;\n    color: white;\n    transition: .25s all; }\n    .footer #author:hover {\n      color: #ffc02d; }\n", ""]);
+exports.push([module.i, ".footer {\n  height: 200px;\n  background-repeat: no-repeat;\n  background-position-x: 50%;\n  background-size: cover;\n  display: flex;\n  justify-content: center;\n  align-items: center;\n  flex-direction: column;\n  width: 100%;\n  position: relative; }\n  .footer .cont {\n    display: flex;\n    justify-content: center;\n    align-items: center;\n    font-size: .8em;\n    position: relative;\n    margin-bottom: 20px; }\n    .footer .cont .PP {\n      margin-right: 50px; }\n      .footer .cont .PP ul {\n        list-style: none;\n        padding: 0;\n        margin: 0;\n        display: flex;\n        flex-direction: column;\n        align-items: flex-start; }\n        .footer .cont .PP ul li {\n          margin-bottom: 15px;\n          cursor: pointer;\n          transition: .25s all; }\n          .footer .cont .PP ul li a {\n            text-decoration: none;\n            color: white;\n            transition: .25s all; }\n          .footer .cont .PP ul li:hover a {\n            color: #ffc02d; }\n          .footer .cont .PP ul li:last-child {\n            margin-bottom: 0; }\n    .footer .cont .feedback {\n      margin-right: 50px;\n      display: flex;\n      flex-direction: column;\n      align-items: flex-start; }\n      .footer .cont .feedback a {\n        color: white;\n        text-decoration: none;\n        display: flex;\n        align-items: center;\n        transition: .25s all;\n        margin-bottom: 5px; }\n        .footer .cont .feedback a i {\n          font-size: 1.6em;\n          margin-right: 5px; }\n        .footer .cont .feedback a:hover {\n          color: #ffc02d; }\n        .footer .cont .feedback a:last-child {\n          margin-bottom: 0; }\n    .footer .cont .contacts {\n      display: flex;\n      flex-direction: column;\n      align-items: flex-start; }\n      .footer .cont .contacts a {\n        color: white;\n        text-decoration: none;\n        display: flex;\n        align-items: center;\n        transition: .25s all;\n        margin-bottom: 5px; }\n        .footer .cont .contacts a i {\n          font-size: 1.6em;\n          margin-right: 5px; }\n        .footer .cont .contacts a:hover {\n          color: #ffc02d; }\n        .footer .cont .contacts a:last-child {\n          margin-bottom: 0; }\n    .footer .cont:after {\n      content: \"\";\n      position: absolute;\n      width: 100%;\n      height: 1px;\n      bottom: -10px;\n      left: 0;\n      background-color: white;\n      opacity: 0.188; }\n  .footer .socials {\n    width: 15%;\n    font-size: 1.5em;\n    display: flex;\n    align-items: center;\n    justify-content: space-around; }\n    .footer .socials a {\n      color: white;\n      text-decoration: none;\n      transition: .25s all; }\n      .footer .socials a:hover {\n        color: #ffc02d; }\n  .footer #author {\n    position: absolute;\n    bottom: 0;\n    right: calc(50% - 41px);\n    font-size: .8em;\n    text-decoration: none;\n    color: white;\n    transition: .25s all; }\n    .footer #author:hover {\n      color: #ffc02d; }\n", ""]);
 
 // exports
 
@@ -29583,7 +29623,7 @@ var App = function (_Component) {
                 _react2.default.createElement(
                     "div",
                     { className: "container" },
-                    _react2.default.createElement(_Container2.default, { pages: pages.packages })
+                    _react2.default.createElement(_Container2.default, { pages: pages.FAQ })
                 ),
                 _react2.default.createElement(_Footer2.default, { footer: layouts.footer })
             );
@@ -29642,7 +29682,7 @@ var Container = function (_Component) {
             return _react2.default.createElement(
                 'div',
                 { className: 'content' },
-                _react2.default.createElement(_Faq2.default, null)
+                _react2.default.createElement(_Faq2.default, { pages: pages })
             );
         }
     }]);
@@ -29669,6 +29709,14 @@ var _react = __webpack_require__(4);
 
 var _react2 = _interopRequireDefault(_react);
 
+var _Content = __webpack_require__(866);
+
+var _Content2 = _interopRequireDefault(_Content);
+
+var _Answers = __webpack_require__(867);
+
+var _Answers2 = _interopRequireDefault(_Answers);
+
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
 function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
@@ -29687,15 +29735,18 @@ var FAQ = function (_Component) {
     }
 
     _createClass(FAQ, [{
-        key: "render",
+        key: 'render',
         value: function render() {
+            var pages = this.props.pages;
+
             return _react2.default.createElement(
-                "div",
-                { className: "faq" },
+                'div',
+                { className: 'faq-container' },
                 _react2.default.createElement(
-                    "h1",
-                    null,
-                    "FAQ"
+                    'div',
+                    { className: 'faq' },
+                    _react2.default.createElement(_Content2.default, { pages: pages }),
+                    _react2.default.createElement(_Answers2.default, { pages: pages })
                 )
             );
         }
@@ -29746,10 +29797,459 @@ exports = module.exports = __webpack_require__(34)(undefined);
 
 
 // module
-exports.push([module.i, ".faq {\n  padding-top: 75px; }\n", ""]);
+exports.push([module.i, ".faq-container {\n  width: 100%;\n  display: flex;\n  justify-content: center;\n  background-color: #f6fbfe; }\n  .faq-container .faq {\n    width: 80%;\n    background-color: white; }\n    .faq-container .faq .fastContent h1 {\n      color: black !important;\n      text-align: center;\n      margin-top: 40px;\n      margin-bottom: 0; }\n    .faq-container .faq .fastContent .afterHead {\n      margin-top: 5px;\n      text-align: center; }\n    .faq-container .faq .fastContent .fastContent-items {\n      display: flex;\n      flex-direction: column;\n      align-items: center; }\n      .faq-container .faq .fastContent .fastContent-items .urls {\n        display: flex;\n        flex-direction: column;\n        align-items: flex-start; }\n        .faq-container .faq .fastContent .fastContent-items .urls a {\n          margin-bottom: 10px;\n          display: flex;\n          align-items: center;\n          cursor: pointer;\n          transition: .15s all;\n          color: black;\n          text-decoration: none; }\n          .faq-container .faq .fastContent .fastContent-items .urls a i {\n            font-size: 1.5em;\n            color: #ffbb24;\n            margin-right: 10px; }\n          .faq-container .faq .fastContent .fastContent-items .urls a:hover {\n            color: #ffbb24; }\n    .faq-container .faq .answers {\n      margin-top: 50px; }\n      .faq-container .faq .answers .answer {\n        padding: 10px 30px; }\n        .faq-container .faq .answers .answer h2 {\n          display: flex;\n          align-items: center;\n          margin-bottom: 0;\n          font-family: HelveticaBold; }\n          .faq-container .faq .answers .answer h2 i {\n            margin-right: 5px;\n            color: #ffbb24;\n            font-size: 1.3em;\n            margin-bottom: -3px; }\n        .faq-container .faq .answers .answer p {\n          padding-left: 5px;\n          margin-top: 5px;\n          letter-spacing: 1.1px;\n          line-height: 1.4em;\n          color: #464646; }\n        .faq-container .faq .answers .answer:nth-child(odd) {\n          background-color: #f8f8f8; }\n", ""]);
 
 // exports
 
+
+/***/ }),
+/* 567 */,
+/* 568 */,
+/* 569 */,
+/* 570 */,
+/* 571 */,
+/* 572 */,
+/* 573 */,
+/* 574 */,
+/* 575 */,
+/* 576 */,
+/* 577 */,
+/* 578 */,
+/* 579 */,
+/* 580 */,
+/* 581 */,
+/* 582 */,
+/* 583 */,
+/* 584 */,
+/* 585 */,
+/* 586 */,
+/* 587 */,
+/* 588 */,
+/* 589 */,
+/* 590 */,
+/* 591 */,
+/* 592 */,
+/* 593 */,
+/* 594 */,
+/* 595 */,
+/* 596 */,
+/* 597 */,
+/* 598 */,
+/* 599 */,
+/* 600 */,
+/* 601 */,
+/* 602 */,
+/* 603 */,
+/* 604 */,
+/* 605 */,
+/* 606 */,
+/* 607 */,
+/* 608 */,
+/* 609 */,
+/* 610 */,
+/* 611 */,
+/* 612 */,
+/* 613 */,
+/* 614 */,
+/* 615 */,
+/* 616 */,
+/* 617 */,
+/* 618 */,
+/* 619 */,
+/* 620 */,
+/* 621 */,
+/* 622 */,
+/* 623 */,
+/* 624 */,
+/* 625 */,
+/* 626 */,
+/* 627 */,
+/* 628 */,
+/* 629 */,
+/* 630 */,
+/* 631 */,
+/* 632 */,
+/* 633 */,
+/* 634 */,
+/* 635 */,
+/* 636 */,
+/* 637 */,
+/* 638 */,
+/* 639 */,
+/* 640 */,
+/* 641 */,
+/* 642 */,
+/* 643 */,
+/* 644 */,
+/* 645 */,
+/* 646 */,
+/* 647 */,
+/* 648 */,
+/* 649 */,
+/* 650 */,
+/* 651 */,
+/* 652 */,
+/* 653 */,
+/* 654 */,
+/* 655 */,
+/* 656 */,
+/* 657 */,
+/* 658 */,
+/* 659 */,
+/* 660 */,
+/* 661 */,
+/* 662 */,
+/* 663 */,
+/* 664 */,
+/* 665 */,
+/* 666 */,
+/* 667 */,
+/* 668 */,
+/* 669 */,
+/* 670 */,
+/* 671 */,
+/* 672 */,
+/* 673 */,
+/* 674 */,
+/* 675 */,
+/* 676 */,
+/* 677 */,
+/* 678 */,
+/* 679 */,
+/* 680 */,
+/* 681 */,
+/* 682 */,
+/* 683 */,
+/* 684 */,
+/* 685 */,
+/* 686 */,
+/* 687 */,
+/* 688 */,
+/* 689 */,
+/* 690 */,
+/* 691 */,
+/* 692 */,
+/* 693 */,
+/* 694 */,
+/* 695 */,
+/* 696 */,
+/* 697 */,
+/* 698 */,
+/* 699 */,
+/* 700 */,
+/* 701 */,
+/* 702 */,
+/* 703 */,
+/* 704 */,
+/* 705 */,
+/* 706 */,
+/* 707 */,
+/* 708 */,
+/* 709 */,
+/* 710 */,
+/* 711 */,
+/* 712 */,
+/* 713 */,
+/* 714 */,
+/* 715 */,
+/* 716 */,
+/* 717 */,
+/* 718 */,
+/* 719 */,
+/* 720 */,
+/* 721 */,
+/* 722 */,
+/* 723 */,
+/* 724 */,
+/* 725 */,
+/* 726 */,
+/* 727 */,
+/* 728 */,
+/* 729 */,
+/* 730 */,
+/* 731 */,
+/* 732 */,
+/* 733 */,
+/* 734 */,
+/* 735 */,
+/* 736 */,
+/* 737 */,
+/* 738 */,
+/* 739 */,
+/* 740 */,
+/* 741 */,
+/* 742 */,
+/* 743 */,
+/* 744 */,
+/* 745 */,
+/* 746 */,
+/* 747 */,
+/* 748 */,
+/* 749 */,
+/* 750 */,
+/* 751 */,
+/* 752 */,
+/* 753 */,
+/* 754 */,
+/* 755 */,
+/* 756 */,
+/* 757 */,
+/* 758 */,
+/* 759 */,
+/* 760 */,
+/* 761 */,
+/* 762 */,
+/* 763 */,
+/* 764 */,
+/* 765 */,
+/* 766 */,
+/* 767 */,
+/* 768 */,
+/* 769 */,
+/* 770 */,
+/* 771 */,
+/* 772 */,
+/* 773 */,
+/* 774 */,
+/* 775 */,
+/* 776 */,
+/* 777 */,
+/* 778 */,
+/* 779 */,
+/* 780 */,
+/* 781 */,
+/* 782 */,
+/* 783 */,
+/* 784 */,
+/* 785 */,
+/* 786 */,
+/* 787 */,
+/* 788 */,
+/* 789 */,
+/* 790 */,
+/* 791 */,
+/* 792 */,
+/* 793 */,
+/* 794 */,
+/* 795 */,
+/* 796 */,
+/* 797 */,
+/* 798 */,
+/* 799 */,
+/* 800 */,
+/* 801 */,
+/* 802 */,
+/* 803 */,
+/* 804 */,
+/* 805 */,
+/* 806 */,
+/* 807 */,
+/* 808 */,
+/* 809 */,
+/* 810 */,
+/* 811 */,
+/* 812 */,
+/* 813 */,
+/* 814 */,
+/* 815 */,
+/* 816 */,
+/* 817 */,
+/* 818 */,
+/* 819 */,
+/* 820 */,
+/* 821 */,
+/* 822 */,
+/* 823 */,
+/* 824 */,
+/* 825 */,
+/* 826 */,
+/* 827 */,
+/* 828 */,
+/* 829 */,
+/* 830 */,
+/* 831 */,
+/* 832 */,
+/* 833 */,
+/* 834 */,
+/* 835 */,
+/* 836 */,
+/* 837 */,
+/* 838 */,
+/* 839 */,
+/* 840 */,
+/* 841 */,
+/* 842 */,
+/* 843 */,
+/* 844 */,
+/* 845 */,
+/* 846 */,
+/* 847 */,
+/* 848 */,
+/* 849 */,
+/* 850 */,
+/* 851 */,
+/* 852 */,
+/* 853 */,
+/* 854 */,
+/* 855 */,
+/* 856 */,
+/* 857 */,
+/* 858 */,
+/* 859 */,
+/* 860 */,
+/* 861 */,
+/* 862 */,
+/* 863 */,
+/* 864 */,
+/* 865 */,
+/* 866 */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+
+
+Object.defineProperty(exports, "__esModule", {
+    value: true
+});
+
+var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
+
+var _react = __webpack_require__(4);
+
+var _react2 = _interopRequireDefault(_react);
+
+function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
+
+function _possibleConstructorReturn(self, call) { if (!self) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return call && (typeof call === "object" || typeof call === "function") ? call : self; }
+
+function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
+
+var Content = function (_Component) {
+    _inherits(Content, _Component);
+
+    function Content() {
+        _classCallCheck(this, Content);
+
+        return _possibleConstructorReturn(this, (Content.__proto__ || Object.getPrototypeOf(Content)).apply(this, arguments));
+    }
+
+    _createClass(Content, [{
+        key: "render",
+        value: function render() {
+            var pages = this.props.pages;
+
+            var fastContentItems = pages.faqs.map(function (item, index) {
+                return _react2.default.createElement(
+                    "a",
+                    { href: "#" + index, key: index },
+                    _react2.default.createElement("i", { className: "icon-check-mark-circle-two" }),
+                    item.title
+                );
+            });
+            return _react2.default.createElement(
+                "div",
+                { className: "fastContent" },
+                _react2.default.createElement(
+                    "h1",
+                    null,
+                    pages.content.title
+                ),
+                _react2.default.createElement(
+                    "p",
+                    { className: "afterHead" },
+                    pages.content.afterHead
+                ),
+                _react2.default.createElement(
+                    "div",
+                    { className: "fastContent-items" },
+                    _react2.default.createElement(
+                        "div",
+                        { className: "urls" },
+                        fastContentItems
+                    )
+                )
+            );
+        }
+    }]);
+
+    return Content;
+}(_react.Component);
+
+exports.default = Content;
+
+/***/ }),
+/* 867 */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+
+
+Object.defineProperty(exports, "__esModule", {
+    value: true
+});
+
+var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
+
+var _react = __webpack_require__(4);
+
+var _react2 = _interopRequireDefault(_react);
+
+function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
+
+function _possibleConstructorReturn(self, call) { if (!self) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return call && (typeof call === "object" || typeof call === "function") ? call : self; }
+
+function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
+
+var Answers = function (_Component) {
+    _inherits(Answers, _Component);
+
+    function Answers() {
+        _classCallCheck(this, Answers);
+
+        return _possibleConstructorReturn(this, (Answers.__proto__ || Object.getPrototypeOf(Answers)).apply(this, arguments));
+    }
+
+    _createClass(Answers, [{
+        key: "render",
+        value: function render() {
+            var pages = this.props.pages;
+
+
+            var answersItems = pages.faqs.map(function (item, index) {
+                return _react2.default.createElement(
+                    "div",
+                    { className: "answer", key: index, id: index },
+                    _react2.default.createElement(
+                        "h2",
+                        null,
+                        _react2.default.createElement("i", { className: "icon-check-mark-circle-two" }),
+                        " ",
+                        item.title
+                    ),
+                    _react2.default.createElement(
+                        "p",
+                        null,
+                        item.text
+                    )
+                );
+            });
+
+            return _react2.default.createElement(
+                "div",
+                { className: "answers" },
+                answersItems
+            );
+        }
+    }]);
+
+    return Answers;
+}(_react.Component);
+
+exports.default = Answers;
 
 /***/ })
 /******/ ]);
