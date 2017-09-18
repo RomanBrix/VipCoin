@@ -1,10 +1,9 @@
 import React, {Component} from 'react';
 import translate from "../../../data/translate.json";
 import FooterIcons from "../../../public/src/Fonts/FontsIcons/styles.css";
-import { BG_COIN } from '../../../data/links';
 import Header from '../../layouts/Header';
 import Container from './Container';
-import ProfileHeader from '../layouts/ProfileHeader';
+import Footer from "../../layouts/Footer";
 
 export default class App extends Component {
     constructor(props){
@@ -20,7 +19,7 @@ export default class App extends Component {
             window.location.href = '../index.html';
         }
 
-        // props.getPackages("package");
+        props.getPackages("package");
         props.getUserInfo("infooo", this.state.user);
         props.getCrypto();
 
@@ -35,28 +34,31 @@ export default class App extends Component {
 
     render(){
         const { language } = this.state;
-        const { hash, packages, user, crypto } = this.props;
-        // console.log(user);
+        const { hash, coins_value, coin_cost, user, crypto } = this.props;
+        console.log( coin_cost );
 
         const lang = translate.filter(item =>{
             return item.language === language;
         });
         const { pages } = lang[0];
+        const { layouts } = lang[0];
 
         return (
             <div className="Main">
                 <Header profile={true}/>
                 <div className="container">
-                    {/*<ProfileHeader head={pages.profile.layouts.leftHeader} user={ user }/>*/}
-                    <div className="right-container">
                         <Container
                             profile={pages.profile}
-                            packages={ packages }
                             user={ user }
                             crypto={ crypto }
+                            coins_value={ coins_value }
+                            coin_cost={ coin_cost }
                         />
-                    </div>
                 </div>
+                <Footer
+                    profile={true}
+                    footer={ layouts.footer }
+                />
             </div>
         );
     }

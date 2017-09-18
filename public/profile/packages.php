@@ -5,14 +5,14 @@ if($type === "package") {
     $link = mysqli_connect($host, $user, $password, $database)
     or die("Ошибка " . mysqli_error($link));
     if($link) {
-        $result = mysqli_query($link, "SELECT * FROM packages ORDER BY minCoins ASC;");
-        $albums_arr = [];
-        while($row = $result->fetch_assoc()) {
-            $obj = (object) $row;
-            array_push($albums_arr,$obj);
-        }
-
-        print_r(json_encode($albums_arr));
+        $result = mysqli_query($link, "SELECT cost, coins FROM packages WHERE status='start';");
+//        $albums_arr = [];
+//        while($row = $result->fetch_assoc()) {
+//            $obj = (object) $row;
+//            array_push($albums_arr,$obj);
+//        }
+        $row = $result->fetch_assoc();
+        print_r(json_encode([$row['cost'],$row['coins']]));
         mysqli_close($link);
     }
 }

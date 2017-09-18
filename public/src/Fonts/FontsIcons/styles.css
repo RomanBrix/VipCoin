@@ -146,3 +146,39 @@
 .icon-check-mark-circle-two:before {
   content: "\e023";
 }
+.icon-settings:before {
+  content: "\e024";
+}
+.icon-settings-streamline-1:before {
+  content: "\e025";
+}
+.icon-cog:before {
+  content: "\e026";
+}
+.icon-bubble-comment-streamline-talk:before {
+  content: "\e027";
+}
+.icon-comments:before {
+  content: "\e028";
+}
+.icon-bubble-1:before {
+  content: "\e029";
+}
+.icon-bubble-2:before {
+  content: "\e02a";
+}
+.icon-question:before {
+  content: "\e02b";
+}
+.icon-ios-help-outline:before {
+  content: "\e02c";
+}
+.icon-question-1:before {
+  content: "\e02d";
+}
+.icon-question-2:before {
+  content: "\e02e";
+}
+.icon-btc:before {
+  content: "\e02f";
+}

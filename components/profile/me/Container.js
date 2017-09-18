@@ -1,14 +1,18 @@
 import React, {Component} from 'react';
-import CoinsInfo from './CoinsInfo';
-import Refill from './Refill';
+import Menu from "./Menu";
+import Content from "./Content";
 
 export default class Container extends Component {
     render(){
-        const { packages, user, crypto } = this.props;
+        const { coin_cost, coins_value, crypto } = this.props;
         return(
             <div className="content">
-                <CoinsInfo user={ user }/>
-                <Refill packages={ packages } user={ user } crypto={ crypto }/>
+                    <Menu/>
+                    <Content
+                        coins_value={ coins_value }
+                        coin_cost={ coin_cost }
+                        crypto={ crypto }
+                    />
             </div>
         )
     }

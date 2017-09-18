@@ -8,9 +8,13 @@ import { FOOTER_BG } from '../../data/links';
 
 export default class Footer extends Component {
     render(){
-        const { footer } = this.props;
+        const { footer, profile } = this.props;
+        let footBg = FOOTER_BG;
+        if(profile){
+            footBg = '.'+FOOTER_BG;
+        }
         return(
-            <div className="footer" style={{ backgroundImage: `url(${FOOTER_BG})`} }>
+            <div className="footer" style={{ backgroundImage: `url(${footBg})`} }>
                 <div className="cont">
                     <div className="PP">
                        <ul>

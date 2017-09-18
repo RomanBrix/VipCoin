@@ -28,7 +28,7 @@ module.exports= {
     devtool: NODE_ENV === 'dev' ? 'source-map' : false,
     watch: NODE_ENV === 'dev',
     watchOptions:{
-        // aggrigateTimeout: 100
+        aggrigateTimeout: 100
     },
     module: {
 

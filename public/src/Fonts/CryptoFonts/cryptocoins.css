@@ -1,0 +1,69 @@
+/*! Cryptocoins - cryptocurrency icon font | https://github.com/allienworks/cryptocoins */
+
+@font-face {
+  font-family: "cryptocoins";
+  src: url('cryptocoins.woff2') format('woff2'),
+    url('cryptocoins.woff') format('woff'),
+    url('cryptocoins.ttf') format('truetype');
+}
+
+/* .cc:before { */
+.cc::before {
+  font-family: "cryptocoins";
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  font-style: normal;
+  font-variant: normal;
+  font-weight: normal;
+  /* speak: none; only necessary if not using the private unicode range (firstGlyph option) */
+  text-decoration: none;
+  text-transform: none;
+}
+
+.cc.BTC-alt::before {
+  content: "\E024";
+}
+
+.cc.BTC::before {
+  content: "\E025";
+}
+
+.cc.BTCD-alt::before {
+  content: "\E026";
+}
+
+.cc.BTCD::before {
+  content: "\E027";
+}
+
+.cc.ETC-alt::before {
+  content: "\E044";
+}
+
+.cc.ETC::before {
+  content: "\E045";
+}
+
+.cc.ETH-alt::before {
+  content: "\E046";
+}
+
+.cc.ETH::before {
+  content: "\E047";
+}
+
+.cc.LTC-alt::before {
+  content: "\E07C";
+}
+
+.cc.LTC::before {
+  content: "\E07D";
+}
+
+.cc.NVC-alt::before {
+    content: "\E09A";
+}
+
+.cc.NVC::before {
+    content: "\E09B";
+}

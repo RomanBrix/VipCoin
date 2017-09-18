@@ -5,7 +5,7 @@ import { createStore, applyMiddleware } from 'redux';
 import thunk from 'redux-thunk';
 import reducers from '../../redux/reducers';
 
-import  App from '../../components/profile/me';
+import  App from '../../components/profile/Me';
 import MainCSS from '../../css/scss/profile/main.scss';
 import css from '../../css/scss/profile/me/index.scss';
 
