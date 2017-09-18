@@ -15,7 +15,9 @@ export function getPackages (type) {
         axios.get(`${GLOB_URL}packages.php`, {params: {type}})
             .then((res) => {
             console.log(res);
-                dispatch({type: act.PACKAGES,  coin_cost: +res.data[0], coins_value: +res.data[1]});
+                type === "coinCost" ?
+                    dispatch({type: act.COINCOST,  global_coin_cost: +res.data}):
+                    dispatch({type: act.PACKAGES,  coin_cost: +res.data[0], coins_value: +res.data[1]});
             })
             .catch((error) => {
                 console.log(error);

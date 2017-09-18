@@ -19,6 +19,7 @@ export default class App extends Component {
             window.location.href = '../index.html';
         }
 
+        props.getPackages("coinCost");
         props.getPackages("package");
         props.getUserInfo("infooo", this.state.user);
         props.getCrypto();
@@ -34,7 +35,16 @@ export default class App extends Component {
 
     render(){
         const { language } = this.state;
-        const { hash, coins_value, coin_cost, user, crypto } = this.props;
+        const {
+            hash,
+            global_coin_cost,
+            coins_value,
+            coin_cost,
+            user,
+            crypto
+        } = this.props;
+        console.log( global_coin_cost );
+        console.log( coins_value );
         console.log( coin_cost );
 
         const lang = translate.filter(item =>{
@@ -53,6 +63,7 @@ export default class App extends Component {
                             crypto={ crypto }
                             coins_value={ coins_value }
                             coin_cost={ coin_cost }
+                            global_coin_cost={ global_coin_cost }
                         />
                 </div>
                 <Footer

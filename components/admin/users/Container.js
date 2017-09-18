@@ -106,7 +106,8 @@ export default class Container extends Component {
         if(decodeHash.toLowerCase() === hash.toLowerCase()){
             // console.log("ok go forward");
             const options = (decodeed.split("&")[1]).split("_");
-            const [one_cost, all_cost, coins ] = options;
+            const [ one_cost, all_cost, coins ] = options;
+            console.log(options);
             console.log(one_cost, all_cost, coins);
             setCoinsToUser("userGetCoins", hash, coins);
             setTimeout(()=>{

@@ -8,13 +8,13 @@ if($type === "infooo") {
     or die("Ошибка " . mysqli_error($link));
     if($link) {
         $result = mysqli_query($link, "SELECT * FROM users WHERE hash='". $hash ."'");
-        $albums_arr = [];
+        $obj = '';
         while($row = $result->fetch_assoc()) {
             $obj = (object) $row;
-            array_push($albums_arr,$obj);
+//            array_push($albums_arr,$obj);
         }
 
-        print_r(json_encode($albums_arr));
+        print_r(json_encode($obj));
         mysqli_close($link);
     }
 }

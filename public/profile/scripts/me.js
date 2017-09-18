@@ -12516,7 +12516,8 @@ var act = exports.act = {
     PACKAGES: "GET_PACKAGES",
     USER: "GET_USER_INFO",
     GET_CRYPTO: "GET_CRYPTO",
-    UPDATED: "SETTINGS_UPDATING"
+    UPDATED: "SETTINGS_UPDATING",
+    COINCOST: "ONECOINCOST"
 };
 
 /***/ }),
@@ -12810,7 +12811,7 @@ function getPackages(type) {
 
         _axios2.default.get(_actionsAndUrl.GLOB_URL + 'packages.php', { params: { type: type } }).then(function (res) {
             console.log(res);
-            dispatch({ type: _actionsAndUrl.act.PACKAGES, coin_cost: +res.data[0], coins_value: +res.data[1] });
+            type === "coinCost" ? dispatch({ type: _actionsAndUrl.act.COINCOST, global_coin_cost: +res.data }) : dispatch({ type: _actionsAndUrl.act.PACKAGES, coin_cost: +res.data[0], coins_value: +res.data[1] });
         }).catch(function (error) {
             console.log(error);
         });
@@ -27370,6 +27371,7 @@ var InitialState = {
     vipcoinCost: 0.15,
     coin_cost: 0,
     coins_value: 0,
+    global_coin_cost: 0,
     user: [],
     crypto: [],
     updated: ""
@@ -27389,6 +27391,7 @@ var profileReducers = function profileReducers() {
                 vipcoinCost: state.vipcoinCost,
                 coin_cost: state.coin_cost,
                 coins_value: state.coins_value,
+                global_coin_cost: state.global_coin_cost,
                 user: state.user,
                 crypto: state.crypto,
                 updated: state.updated
@@ -27401,10 +27404,23 @@ var profileReducers = function profileReducers() {
                 vipcoinCost: state.vipcoinCost,
                 coin_cost: state.coin_cost,
                 coins_value: state.coins_value,
+                global_coin_cost: state.global_coin_cost,
                 user: state.user,
                 crypto: state.crypto,
                 updated: state.updated
 
+            };
+        case _actionsAndUrl.act.COINCOST:
+            return {
+                request: false,
+                hash: state.hash,
+                vipcoinCost: state.vipcoinCost,
+                coin_cost: state.coin_cost,
+                coins_value: state.coins_value,
+                global_coin_cost: action.global_coin_cost,
+                user: state.user,
+                crypto: state.crypto,
+                updated: state.updated
             };
         case _actionsAndUrl.act.PACKAGES:
             return {
@@ -27413,6 +27429,7 @@ var profileReducers = function profileReducers() {
                 vipcoinCost: state.vipcoinCost,
                 coin_cost: action.coin_cost,
                 coins_value: action.coins_value,
+                global_coin_cost: state.global_coin_cost,
                 user: state.user,
                 crypto: state.crypto,
                 updated: state.updated
@@ -27425,6 +27442,7 @@ var profileReducers = function profileReducers() {
                 vipcoinCost: state.vipcoinCost,
                 coin_cost: state.coin_cost,
                 coins_value: state.coins_value,
+                global_coin_cost: state.global_coin_cost,
                 user: action.user,
                 crypto: state.crypto,
                 updated: state.updated
@@ -27437,6 +27455,7 @@ var profileReducers = function profileReducers() {
                 vipcoinCost: state.vipcoinCost,
                 coin_cost: state.coin_cost,
                 coins_value: state.coins_value,
+                global_coin_cost: state.global_coin_cost,
                 user: state.user,
                 crypto: [action.btc, action.ltc, action.eth],
                 updated: state.updated
@@ -27449,6 +27468,7 @@ var profileReducers = function profileReducers() {
                 vipcoinCost: state.vipcoinCost,
                 coin_cost: state.coin_cost,
                 coins_value: state.coins_value,
+                global_coin_cost: state.global_coin_cost,
                 user: state.user,
                 crypto: state.crypto,
                 updated: action.updated
@@ -29071,6 +29091,7 @@ var App = function (_Component) {
             window.location.href = '../index.html';
         }
 
+        props.getPackages("coinCost");
         props.getPackages("package");
         props.getUserInfo("infooo", _this.state.user);
         props.getCrypto();
@@ -29090,11 +29111,14 @@ var App = function (_Component) {
             var language = this.state.language;
             var _props = this.props,
                 hash = _props.hash,
+                global_coin_cost = _props.global_coin_cost,
                 coins_value = _props.coins_value,
                 coin_cost = _props.coin_cost,
                 user = _props.user,
                 crypto = _props.crypto;
 
+            console.log(global_coin_cost);
+            console.log(coins_value);
             console.log(coin_cost);
 
             var lang = _translate2.default.filter(function (item) {
@@ -29116,7 +29140,8 @@ var App = function (_Component) {
                         user: user,
                         crypto: crypto,
                         coins_value: coins_value,
-                        coin_cost: coin_cost
+                        coin_cost: coin_cost,
+                        global_coin_cost: global_coin_cost
                     })
                 ),
                 _react2.default.createElement(_Footer2.default, {
@@ -29178,18 +29203,25 @@ var Container = function (_Component) {
         key: "render",
         value: function render() {
             var _props = this.props,
+                user = _props.user,
                 coin_cost = _props.coin_cost,
                 coins_value = _props.coins_value,
-                crypto = _props.crypto;
+                crypto = _props.crypto,
+                global_coin_cost = _props.global_coin_cost;
 
+            console.log(user);
             return _react2.default.createElement(
                 "div",
                 { className: "content" },
-                _react2.default.createElement(_Menu2.default, null),
+                _react2.default.createElement(_Menu2.default, {
+                    user: user,
+                    global_coin_cost: global_coin_cost
+                }),
                 _react2.default.createElement(_Content2.default, {
                     coins_value: coins_value,
                     coin_cost: coin_cost,
-                    crypto: crypto
+                    crypto: crypto,
+                    user: user
                 })
             );
         }
@@ -29237,6 +29269,24 @@ var Menu = function (_Component) {
     _createClass(Menu, [{
         key: "render",
         value: function render() {
+            var _props = this.props,
+                user = _props.user,
+                global_coin_cost = _props.global_coin_cost;
+
+            var options = {
+                text: "USD:",
+                style: {
+                    fontSize: "1.4em"
+                }
+            };
+            if (+user.vipcoins_value * +global_coin_cost > 10000000) {
+                options = {
+                    text: "$",
+                    style: {
+                        fontSize: "1em"
+                    }
+                };
+            }
             return _react2.default.createElement(
                 "div",
                 { className: "mini-menu" },
@@ -29258,14 +29308,15 @@ var Menu = function (_Component) {
                         ),
                         _react2.default.createElement(
                             "span",
-                            { className: "bold" },
-                            "124124"
+                            { className: "bold", style: options.style },
+                            user.vipcoins_value
                         ),
-                        " = USD:",
+                        " = ",
+                        options.text,
                         _react2.default.createElement(
                             "span",
-                            { className: "bold" },
-                            "123124"
+                            { className: "bold", style: options.style },
+                            (+user.vipcoins_value * +global_coin_cost).toFixed(2)
                         )
                     )
                 ),
@@ -29337,90 +29388,117 @@ function _inherits(subClass, superClass) { if (typeof superClass !== "function" 
 var Content = function (_Component) {
     _inherits(Content, _Component);
 
-    function Content() {
+    function Content(props) {
         _classCallCheck(this, Content);
 
-        return _possibleConstructorReturn(this, (Content.__proto__ || Object.getPrototypeOf(Content)).apply(this, arguments));
+        var _this = _possibleConstructorReturn(this, (Content.__proto__ || Object.getPrototypeOf(Content)).call(this, props));
+
+        _this.state = {
+            buyIt: false,
+            bitcoinCode: "azxc234sf98xvvs0231s",
+            liteCoinCode: "lk26hjg67gjh4hgj343",
+            ethCode: "53298ccsadfsdSasc34xs",
+            swiftCode: "87vg90ewr239r8fsd87f",
+            tradeCurr: ""
+        };
+        return _this;
     }
 
     _createClass(Content, [{
-        key: "highlight",
-        value: function highlight(type, target) {
-            var selected = document.getElementsByClassName("active")[0];
-            // console.log(target.chil);
-            if (type === "coins") {
-                if (target.classList[0] === "coins") {
-                    if (selected) {
-                        selected.classList.remove('active');
-                    }
-                    target.classList.add('active');
-                    console.log(target);
-                }
-                if (target.classList[0] === "bold" || target.classList[0] === "small") {
-                    var new_target = target.parentNode;
-                    if (selected) {
-                        selected.classList.remove('active');
-                    }
-                    new_target.classList.add('active');
-                    console.log(new_target);
-                }
-            } else {
-                console.log(document.getElementsByClassName("active"));
-                var paymentSelected = document.getElementsByClassName("active");
-                console.log(paymentSelected[0]);
-                var golovaNeRabotaetYje = "";
-                if (paymentSelected[0]) {
-                    if (paymentSelected[0].classList.contains('payment')) {
-                        golovaNeRabotaetYje = paymentSelected[0];
-                        golovaNeRabotaetYje.classList.remove('active');
-                    } else if (paymentSelected[1].classList.contains('payment')) {
-                        golovaNeRabotaetYje = paymentSelected[1];
-                        golovaNeRabotaetYje.classList.remove('active');
-                    }
-                }
+        key: "secretCode",
+        value: function secretCode(str) {
+            return btoa(encodeURIComponent(str).replace(/%([0-9A-F]{2})/g, function toSolidBytes(match, p1) {
+                return String.fromCharCode('0x' + p1);
+            }));
+        }
+    }, {
+        key: "setCodes",
+        value: function setCodes() {
+            var _this2 = this;
 
-                if (target.classList[0] === "payment") {
-                    target.classList.add('active');
-                }
-                if (target.classList[0] === "info" || target.classList[0] === "cc") {
-                    var _new_target = target.parentNode;
+            var curr = document.getElementsByClassName('actived')[0];
+            if (curr) {
+                this.setState({
+                    buyIt: true
+                });
+                var currID = curr.id;
+                var _state = this.state,
+                    bitcoinCode = _state.bitcoinCode,
+                    liteCoinCode = _state.liteCoinCode,
+                    ethCode = _state.ethCode,
+                    swiftCode = _state.swiftCode,
+                    tradeCurr = _state.tradeCurr;
 
-                    _new_target.classList.add('active');
-                }
+                var arr = [bitcoinCode, liteCoinCode, ethCode, swiftCode, tradeCurr];
+                var _props = this.props,
+                    user = _props.user,
+                    coin_cost = _props.coin_cost;
+
+                var totalPrice = document.getElementById("price");
+
+                setTimeout(function () {
+                    var _refs = _this2.refs,
+                        wallet_code = _refs.wallet_code,
+                        exactCoins = _refs.exactCoins,
+                        pay_code = _refs.pay_code;
+
+                    var secondPartOfCode = coin_cost + "_" + totalPrice.innerHTML + "_" + exactCoins.value;
+                    console.log(secondPartOfCode);
+                    var fullSecretCode = _this2.secretCode(user.hash + "&" + secondPartOfCode);
+
+                    wallet_code.value = arr[currID];
+                    pay_code.value = fullSecretCode;
+                }, 150);
             }
         }
     }, {
-        key: "getTotalCost",
-        value: function getTotalCost(type, exactCoins) {
-            var _props = this.props,
-                crypto = _props.crypto,
-                coin_cost = _props.coin_cost;
-            // const { exactCoins } = this.refs;
+        key: "getTotalCostAutomatic",
+        value: function getTotalCostAutomatic(coins) {
+            var exactCoins = this.refs.exactCoins;
 
-            console.log(+coin_cost);
+            exactCoins.value = coins;
+            this.getTotalCost(coins);
+        }
+    }, {
+        key: "getTotalCost",
+        value: function getTotalCost(exactCoins) {
+            var _props2 = this.props,
+                crypto = _props2.crypto,
+                coin_cost = _props2.coin_cost;
+
+
+            var finalPrice = (+exactCoins * +coin_cost).toFixed(2);
+
+            var bitPrice = (finalPrice * +crypto[0]).toFixed(7);
+            var litePrice = (finalPrice * +crypto[1]).toFixed(7);
+            var etPrice = (finalPrice * +crypto[2]).toFixed(7);
+            var swPrice = finalPrice;
+            var totPrice = finalPrice;
+
+            this.insert(bitPrice, litePrice, etPrice, swPrice, totPrice);
+        }
+    }, {
+        key: "insert",
+        value: function insert(bitPrice, litePrice, etPrice, swPrice, totPrice) {
             var bitcoinPrice = document.getElementById('bitcoin');
             var litecoinPrice = document.getElementById('litecoin');
             var etheriumPrice = document.getElementById('etherium');
             var swiftPrice = document.getElementById('swift');
             var totalPrice = document.getElementById('price');
-            var finalPrice = (+exactCoins * +coin_cost).toFixed(2);
-            console.log(finalPrice);
-            console.log(finalPrice * +crypto[0], finalPrice * +crypto[1], finalPrice * +crypto[2]);
 
-            if (type === "manual_input") {
-                bitcoinPrice.innerHTML = (finalPrice * +crypto[0]).toFixed(7);
-                litecoinPrice.innerHTML = (finalPrice * +crypto[1]).toFixed(7);
-                etheriumPrice.innerHTML = (finalPrice * +crypto[2]).toFixed(7);
-                swiftPrice.innerHTML = finalPrice;
-                totalPrice.innerHTML = finalPrice;
-            }
+            totalPrice.innerHTML = totPrice;
+            bitcoinPrice.innerHTML = bitPrice;
+            litecoinPrice.innerHTML = litePrice;
+            etheriumPrice.innerHTML = etPrice;
+            swiftPrice.innerHTML = swPrice;
         }
     }, {
         key: "render",
         value: function render() {
-            var _this2 = this;
+            var _this3 = this;
 
             var coins_value = this.props.coins_value;
+            var buyIt = this.state.buyIt;
 
             return _react2.default.createElement(
                 "div",
@@ -29448,7 +29526,7 @@ var Content = function (_Component) {
                         { className: "selectPack", onClick: function onClick(_ref) {
                                 var target = _ref.target;
 
-                                _this2.highlight('coins', target);
+                                _this3.highlight('coins', target);
                             } },
                         _react2.default.createElement(
                             "div",
@@ -29533,7 +29611,7 @@ var Content = function (_Component) {
                                 var target = _ref2.target;
 
                                 if (+target.value > +target.max) target.value = target.max;
-                                _this2.getTotalCost("manual_input", target.value);
+                                _this3.getTotalCost(target.value);
                             }
                         })
                     )
@@ -29556,12 +29634,11 @@ var Content = function (_Component) {
                         { className: "topPayment", onClick: function onClick(_ref3) {
                                 var target = _ref3.target;
 
-                                console.log("topPayment");
-                                _this2.highlight("payment", target);
+                                _this3.highlight("payment", target);
                             } },
                         _react2.default.createElement(
                             "div",
-                            { className: "payment" },
+                            { className: "payment", id: "0" },
                             _react2.default.createElement("i", { className: "cc BTC-alt" }),
                             _react2.default.createElement(
                                 "div",
@@ -29584,7 +29661,7 @@ var Content = function (_Component) {
                         ),
                         _react2.default.createElement(
                             "div",
-                            { className: "payment" },
+                            { className: "payment", id: "1" },
                             _react2.default.createElement("i", { className: "cc LTC-alt" }),
                             _react2.default.createElement(
                                 "div",
@@ -29607,7 +29684,7 @@ var Content = function (_Component) {
                         ),
                         _react2.default.createElement(
                             "div",
-                            { className: "payment" },
+                            { className: "payment", id: "2" },
                             _react2.default.createElement("i", { className: "cc ETH-alt" }),
                             _react2.default.createElement(
                                 "div",
@@ -29635,11 +29712,11 @@ var Content = function (_Component) {
                                 var target = _ref4.target;
 
                                 console.log("topPayment");
-                                _this2.highlight("payment", target);
+                                _this3.highlight("payment", target);
                             } },
                         _react2.default.createElement(
                             "div",
-                            { className: "payment" },
+                            { className: "payment", id: "3" },
                             _react2.default.createElement("i", { className: "icon-arrow-swap" }),
                             _react2.default.createElement(
                                 "div",
@@ -29663,7 +29740,7 @@ var Content = function (_Component) {
                         ),
                         _react2.default.createElement(
                             "div",
-                            { className: "payment", id: "currChange" },
+                            { className: "payment", id: "4" },
                             _react2.default.createElement("i", { className: "cc NVC" }),
                             "\u041E\u0411\u041C\u0415\u041D\u041A\u0410"
                         )
@@ -29693,17 +29770,26 @@ var Content = function (_Component) {
                     ),
                     _react2.default.createElement(
                         "div",
-                        { id: "btn-buy" },
+                        { id: "btn-buy", onClick: function onClick() {
+                                var totalPrice = document.getElementById("price");
+                                console.log(+totalPrice.innerHTML > 0);
+                                if (+totalPrice.innerHTML > 0) {
+                                    _this3.setCodes();
+                                } else {
+                                    _this3.getTotalCostAutomatic(1000);
+                                    _this3.setCodes.bind(_this3);
+                                }
+                            } },
                         "\u041E\u043F\u043B\u0430\u0442\u0438\u0442\u044C"
                     )
                 ),
-                _react2.default.createElement(
+                buyIt ? _react2.default.createElement(
                     "div",
                     { className: "codes" },
                     _react2.default.createElement(
                         "div",
                         { className: "wallet-code" },
-                        _react2.default.createElement("input", { type: "text", id: "wallet_code" }),
+                        _react2.default.createElement("input", { type: "text", id: "wallet_code", ref: "wallet_code", disabled: true }),
                         _react2.default.createElement(
                             "label",
                             { htmlFor: "wallet_code" },
@@ -29718,7 +29804,7 @@ var Content = function (_Component) {
                     _react2.default.createElement(
                         "div",
                         { className: "pay-code" },
-                        _react2.default.createElement("input", { type: "text", id: "pay_code" }),
+                        _react2.default.createElement("input", { type: "text", id: "pay_code", ref: "pay_code", disabled: true }),
                         _react2.default.createElement(
                             "label",
                             { htmlFor: "pay_code" },
@@ -29730,8 +29816,52 @@ var Content = function (_Component) {
                             "\u043A\u043E\u043F\u0438\u0440\u043E\u0432\u0430\u0442\u044C"
                         )
                     )
-                )
+                ) : ""
             );
+        }
+    }, {
+        key: "highlight",
+        value: function highlight(type, target) {
+
+            if (type === "coins") {
+                var selected = document.getElementsByClassName("active")[0];
+                if (selected) {
+                    selected.classList.remove('active');
+                }
+                if (target.classList[0] === "coins") {
+                    target.classList.add('active');
+                    this.getTotalCostAutomatic(+target.id);
+                }
+                if (target.classList[0] === "bold" || target.classList[0] === "small") {
+                    var new_target = target.parentNode;
+                    new_target.classList.add('active');
+                    this.getTotalCostAutomatic(+new_target.id);
+                }
+            } else {
+                var _selected = document.getElementsByClassName("actived")[0];
+                if (_selected) {
+                    _selected.classList.remove('actived');
+                }
+
+                if (target.classList[0] === "payment") {
+                    target.classList.add('actived');
+                }
+
+                if (target.classList[0] === "info" || target.classList[0] === "cc") {
+                    var _new_target = target.parentNode;
+
+                    _new_target.classList.add('actived');
+                }
+
+                if (target.classList[0] === "top" || target.classList[0] === "bottom") {
+                    var _new_target2 = target.parentNode.parentNode;
+                    _new_target2.classList.add('actived');
+                }
+                if (target.id === "bitcoin" || target.id === "litecoin" || target.id === "etherium" || target.id === "swift") {
+                    var _new_target3 = target.parentNode.parentNode.parentNode;
+                    _new_target3.classList.add('actived');
+                }
+            }
         }
     }]);
 
@@ -29843,7 +29973,7 @@ exports = module.exports = __webpack_require__(30)(undefined);
 
 
 // module
-exports.push([module.i, "@font-face {\n  font-family: 'Brusher';\n  src: url(" + __webpack_require__(124) + "); }\n\n@font-face {\n  font-family: 'HelveticaLight';\n  src: url(" + __webpack_require__(128) + "); }\n\n@font-face {\n  font-family: 'RobotoLightItalic';\n  src: url(" + __webpack_require__(506) + "); }\n\n@font-face {\n  font-family: 'HelveticaBlack';\n  src: url(" + __webpack_require__(129) + "); }\n\n@font-face {\n  font-family: 'HelveticaBold';\n  src: url(" + __webpack_require__(130) + "); }\n\n@font-face {\n  font-family: 'HelveticaHeavy';\n  src: url(" + __webpack_require__(131) + "); }\n\n.mini-menu {\n  background-color: #ebedf0;\n  min-width: 30%; }\n  .mini-menu .my-money .out {\n    display: flex;\n    align-items: center; }\n    .mini-menu .my-money .out .img {\n      max-width: 35px;\n      margin-right: 5px; }\n      .mini-menu .my-money .out .img img {\n        width: 100%;\n        height: 100%; }\n    .mini-menu .my-money .out .bold {\n      font-family: HelveticaBold;\n      font-size: 1.4em;\n      font-weight: bold;\n      margin: 0 5px; }\n  .mini-menu .help {\n    display: flex;\n    flex-direction: column;\n    align-items: flex-start;\n    height: 100%; }\n    .mini-menu .help h2 {\n      margin-bottom: 10px; }\n    .mini-menu .help .settings {\n      margin-bottom: 10px;\n      display: flex;\n      align-items: center;\n      font-size: 1.2em;\n      transition: .25s;\n      cursor: pointer; }\n      .mini-menu .help .settings i {\n        font-size: 1.1em;\n        color: #999999;\n        margin-right: 5px;\n        margin-bottom: -3px;\n        transition: .25s; }\n      .mini-menu .help .settings:hover i {\n        color: #ffbb00; }\n    .mini-menu .help a {\n      margin-bottom: 10px;\n      text-decoration: none;\n      color: black;\n      display: flex;\n      align-items: center;\n      font-size: 1.2em;\n      transition: .25s;\n      cursor: pointer; }\n      .mini-menu .help a i {\n        font-size: 1.1em;\n        color: #999999;\n        margin-right: 5px;\n        margin-bottom: -3px;\n        transition: .25s; }\n      .mini-menu .help a:hover i {\n        color: #ffbb00; }\n\n@font-face {\n  font-family: 'Brusher';\n  src: url(" + __webpack_require__(124) + "); }\n\n@font-face {\n  font-family: 'HelveticaLight';\n  src: url(" + __webpack_require__(128) + "); }\n\n@font-face {\n  font-family: 'RobotoLightItalic';\n  src: url(" + __webpack_require__(506) + "); }\n\n@font-face {\n  font-family: 'HelveticaBlack';\n  src: url(" + __webpack_require__(129) + "); }\n\n@font-face {\n  font-family: 'HelveticaBold';\n  src: url(" + __webpack_require__(130) + "); }\n\n@font-face {\n  font-family: 'HelveticaHeavy';\n  src: url(" + __webpack_require__(131) + "); }\n\n.content-box {\n  width: 100%;\n  padding: 0 30px; }\n  .content-box h1 {\n    font-size: 1.3em;\n    margin-bottom: 0;\n    margin-top: 30px; }\n  .content-box .first-stage h3 {\n    margin-bottom: 20px;\n    font-family: RobotoLightItalic; }\n    .content-box .first-stage h3 .stage {\n      font-family: HelveticaLight;\n      border: 1px solid #7b7f85;\n      border-radius: 50%;\n      padding: 0 6px; }\n  .content-box .first-stage .selectPack {\n    display: flex;\n    justify-content: space-around;\n    margin-bottom: 20px; }\n    .content-box .first-stage .selectPack .coins {\n      border: 2px solid #eaebed;\n      border-radius: 5px;\n      padding: 4px 17px;\n      cursor: pointer;\n      transition: .25s all;\n      display: flex;\n      flex-direction: column;\n      align-items: center;\n      justify-content: center; }\n      .content-box .first-stage .selectPack .coins .bold {\n        font-weight: bold;\n        font-family: HelveticaBold;\n        font-size: 1.1em; }\n      .content-box .first-stage .selectPack .coins .small {\n        font-size: .8em; }\n      .content-box .first-stage .selectPack .coins:hover {\n        border-color: #feaf00; }\n    .content-box .first-stage .selectPack .active {\n      border-color: #feaf00; }\n  .content-box .first-stage .input input {\n    width: 100%;\n    border: 2px solid transparent;\n    border-bottom-color: #dadce1;\n    font-size: 1.19em;\n    padding-left: 5px;\n    -moz-appearance: textfield;\n    transition: .3s; }\n    .content-box .first-stage .input input::-webkit-outer-spin-button, .content-box .first-stage .input input::-webkit-inner-spin-button {\n      -webkit-appearance: none; }\n    .content-box .first-stage .input input:focus {\n      outline: none;\n      border-bottom-color: #feaf00; }\n    .content-box .first-stage .input input::placeholder {\n      color: rgba(123, 127, 133, 0.9); }\n  .content-box .secondStage {\n    margin-top: 45px; }\n    .content-box .secondStage h3 {\n      margin-bottom: 20px;\n      font-family: RobotoLightItalic; }\n      .content-box .secondStage h3 .stage {\n        font-family: HelveticaLight;\n        border: 1px solid #7b7f85;\n        border-radius: 50%;\n        padding: 0 6px; }\n    .content-box .secondStage .topPayment, .content-box .secondStage .bottomPayment {\n      display: flex;\n      justify-content: space-between; }\n      .content-box .secondStage .topPayment .payment, .content-box .secondStage .bottomPayment .payment {\n        border-radius: 5px;\n        background-color: #eaebed;\n        display: flex;\n        align-items: center;\n        justify-content: center;\n        padding: 5px 0;\n        font-size: 1.4em;\n        cursor: pointer;\n        transition: .20s ease all; }\n        .content-box .secondStage .topPayment .payment i, .content-box .secondStage .bottomPayment .payment i {\n          font-size: 2em;\n          color: #334d6d;\n          margin-left: 5px;\n          transition: .20s ease all; }\n        .content-box .secondStage .topPayment .payment .info, .content-box .secondStage .bottomPayment .payment .info {\n          margin: 0 15px 0 5px; }\n          .content-box .secondStage .topPayment .payment .info .top, .content-box .secondStage .bottomPayment .payment .info .top {\n            text-transform: uppercase;\n            font-size: .7em; }\n          .content-box .secondStage .topPayment .payment .info .bottom, .content-box .secondStage .bottomPayment .payment .info .bottom {\n            font-weight: bold;\n            font-family: HelveticaBold; }\n        .content-box .secondStage .topPayment .payment:hover, .content-box .secondStage .bottomPayment .payment:hover {\n          background-color: #ffaf00;\n          color: white !important; }\n          .content-box .secondStage .topPayment .payment:hover i, .content-box .secondStage .bottomPayment .payment:hover i {\n            transform: rotate(15deg);\n            color: white !important; }\n      .content-box .secondStage .topPayment .active, .content-box .secondStage .bottomPayment .active {\n        background-color: #ffaf00;\n        color: white !important; }\n        .content-box .secondStage .topPayment .active i, .content-box .secondStage .bottomPayment .active i {\n          color: white !important; }\n    .content-box .secondStage .topPayment, .content-box .secondStage .bottomPayment {\n      margin-bottom: 15px;\n      flex-wrap: wrap; }\n    .content-box .secondStage .bottomPayment .payment:first-child i {\n      margin-bottom: -15px; }\n    .content-box .secondStage .bottomPayment .payment:last-child {\n      width: 189px; }\n      .content-box .secondStage .bottomPayment .payment:last-child i {\n        margin-left: -10px;\n        margin-right: 10px; }\n  .content-box .third-stage {\n    display: flex;\n    flex-direction: column; }\n    .content-box .third-stage .price {\n      margin-top: 55px;\n      margin-bottom: 10px;\n      display: flex;\n      justify-content: space-between;\n      padding-bottom: 5px;\n      border-bottom: 2px solid;\n      align-items: center;\n      font-family: HelveticaBold;\n      font-weight: bold; }\n      .content-box .third-stage .price .left {\n        color: #424156;\n        font-size: 1.2em; }\n      .content-box .third-stage .price .right {\n        font-size: 1.6em; }\n    .content-box .third-stage #btn-buy {\n      border-radius: 6px;\n      background-color: #3d4e6e;\n      width: 125px;\n      height: 29px;\n      display: flex;\n      justify-content: center;\n      align-items: center;\n      text-transform: uppercase;\n      color: white;\n      align-self: flex-end;\n      margin-bottom: 25px;\n      cursor: pointer;\n      font-family: HelveticaBold;\n      font-weight: bold;\n      transition: .25s all; }\n      .content-box .third-stage #btn-buy:hover {\n        background-color: #ffb000; }\n  .content-box .codes .wallet-code, .content-box .codes .pay-code {\n    margin-bottom: 50px;\n    position: relative;\n    display: flex;\n    align-items: center; }\n    .content-box .codes .wallet-code input, .content-box .codes .pay-code input {\n      width: 300px;\n      box-shadow: inset 0 0 4px 0 rgba(0, 0, 0, 0.24);\n      border: 1px solid rgba(0, 0, 0, 0.24);\n      border-bottom-left-radius: 10px;\n      border-top-left-radius: 10px;\n      height: 23px;\n      padding: 0;\n      margin: 0; }\n    .content-box .codes .wallet-code span, .content-box .codes .pay-code span {\n      height: 25px;\n      background-color: #feaf00;\n      display: flex;\n      align-items: center;\n      padding: 0 10px;\n      text-transform: uppercase;\n      color: white;\n      border-bottom-right-radius: 10px;\n      border-top-right-radius: 10px;\n      margin-left: -2px;\n      cursor: pointer;\n      transition: .25s ease all; }\n      .content-box .codes .wallet-code span:hover, .content-box .codes .pay-code span:hover {\n        background-color: #3d4e6e; }\n    .content-box .codes .wallet-code label, .content-box .codes .pay-code label {\n      position: absolute;\n      top: -23px;\n      left: 3px; }\n", ""]);
+exports.push([module.i, "@font-face {\n  font-family: 'Brusher';\n  src: url(" + __webpack_require__(124) + "); }\n\n@font-face {\n  font-family: 'HelveticaLight';\n  src: url(" + __webpack_require__(128) + "); }\n\n@font-face {\n  font-family: 'RobotoLightItalic';\n  src: url(" + __webpack_require__(506) + "); }\n\n@font-face {\n  font-family: 'HelveticaBlack';\n  src: url(" + __webpack_require__(129) + "); }\n\n@font-face {\n  font-family: 'HelveticaBold';\n  src: url(" + __webpack_require__(130) + "); }\n\n@font-face {\n  font-family: 'HelveticaHeavy';\n  src: url(" + __webpack_require__(131) + "); }\n\n.mini-menu {\n  background-color: #ebedf0;\n  min-width: 30%; }\n  .mini-menu .my-money .out {\n    display: flex;\n    align-items: center; }\n    .mini-menu .my-money .out .img {\n      max-width: 35px;\n      margin-right: 5px; }\n      .mini-menu .my-money .out .img img {\n        width: 100%;\n        height: 100%; }\n    .mini-menu .my-money .out .bold {\n      font-family: HelveticaBold;\n      font-size: 1.4em;\n      font-weight: bold;\n      margin: 0 5px; }\n  .mini-menu .help {\n    display: flex;\n    flex-direction: column;\n    align-items: flex-start;\n    height: 100%; }\n    .mini-menu .help h2 {\n      margin-bottom: 10px; }\n    .mini-menu .help .settings {\n      margin-bottom: 10px;\n      display: flex;\n      align-items: center;\n      font-size: 1.2em;\n      transition: .25s;\n      cursor: pointer; }\n      .mini-menu .help .settings i {\n        font-size: 1.1em;\n        color: #999999;\n        margin-right: 5px;\n        margin-bottom: -3px;\n        transition: .25s; }\n      .mini-menu .help .settings:hover i {\n        color: #ffbb00; }\n    .mini-menu .help a {\n      margin-bottom: 10px;\n      text-decoration: none;\n      color: black;\n      display: flex;\n      align-items: center;\n      font-size: 1.2em;\n      transition: .25s;\n      cursor: pointer; }\n      .mini-menu .help a i {\n        font-size: 1.1em;\n        color: #999999;\n        margin-right: 5px;\n        margin-bottom: -3px;\n        transition: .25s; }\n      .mini-menu .help a:hover i {\n        color: #ffbb00; }\n\n@font-face {\n  font-family: 'Brusher';\n  src: url(" + __webpack_require__(124) + "); }\n\n@font-face {\n  font-family: 'HelveticaLight';\n  src: url(" + __webpack_require__(128) + "); }\n\n@font-face {\n  font-family: 'RobotoLightItalic';\n  src: url(" + __webpack_require__(506) + "); }\n\n@font-face {\n  font-family: 'HelveticaBlack';\n  src: url(" + __webpack_require__(129) + "); }\n\n@font-face {\n  font-family: 'HelveticaBold';\n  src: url(" + __webpack_require__(130) + "); }\n\n@font-face {\n  font-family: 'HelveticaHeavy';\n  src: url(" + __webpack_require__(131) + "); }\n\n.content-box {\n  width: 100%;\n  padding: 0 30px; }\n  .content-box h1 {\n    font-size: 1.3em;\n    margin-bottom: 0;\n    margin-top: 30px; }\n  .content-box .first-stage h3 {\n    margin-bottom: 20px;\n    font-family: RobotoLightItalic; }\n    .content-box .first-stage h3 .stage {\n      font-family: HelveticaLight;\n      border: 1px solid #7b7f85;\n      border-radius: 50%;\n      padding: 0 6px; }\n  .content-box .first-stage .selectPack {\n    display: flex;\n    justify-content: space-around;\n    margin-bottom: 20px; }\n    .content-box .first-stage .selectPack .coins {\n      border: 2px solid #eaebed;\n      border-radius: 5px;\n      padding: 4px 17px;\n      cursor: pointer;\n      transition: .25s all;\n      display: flex;\n      flex-direction: column;\n      align-items: center;\n      justify-content: center; }\n      .content-box .first-stage .selectPack .coins .bold {\n        font-weight: bold;\n        font-family: HelveticaBold;\n        font-size: 1.1em; }\n      .content-box .first-stage .selectPack .coins .small {\n        font-size: .8em; }\n      .content-box .first-stage .selectPack .coins:hover {\n        border-color: #feaf00; }\n    .content-box .first-stage .selectPack .active {\n      border-color: #feaf00; }\n  .content-box .first-stage .input input {\n    width: 100%;\n    border: 2px solid transparent;\n    border-bottom-color: #dadce1;\n    font-size: 1.19em;\n    padding-left: 5px;\n    -moz-appearance: textfield;\n    transition: .3s; }\n    .content-box .first-stage .input input::-webkit-outer-spin-button, .content-box .first-stage .input input::-webkit-inner-spin-button {\n      -webkit-appearance: none; }\n    .content-box .first-stage .input input:focus {\n      outline: none;\n      border-bottom-color: #feaf00; }\n    .content-box .first-stage .input input::placeholder {\n      color: rgba(123, 127, 133, 0.9); }\n  .content-box .secondStage {\n    margin-top: 45px; }\n    .content-box .secondStage h3 {\n      margin-bottom: 20px;\n      font-family: RobotoLightItalic; }\n      .content-box .secondStage h3 .stage {\n        font-family: HelveticaLight;\n        border: 1px solid #7b7f85;\n        border-radius: 50%;\n        padding: 0 6px; }\n    .content-box .secondStage .topPayment, .content-box .secondStage .bottomPayment {\n      display: flex;\n      justify-content: space-between; }\n      .content-box .secondStage .topPayment .payment, .content-box .secondStage .bottomPayment .payment {\n        border-radius: 5px;\n        background-color: #eaebed;\n        display: flex;\n        align-items: center;\n        justify-content: center;\n        padding: 5px 0;\n        font-size: 1.4em;\n        cursor: pointer;\n        transition: .20s ease all; }\n        .content-box .secondStage .topPayment .payment i, .content-box .secondStage .bottomPayment .payment i {\n          font-size: 2em;\n          color: #334d6d;\n          margin-left: 5px;\n          transition: .20s ease all; }\n        .content-box .secondStage .topPayment .payment .info, .content-box .secondStage .bottomPayment .payment .info {\n          margin: 0 15px 0 5px; }\n          .content-box .secondStage .topPayment .payment .info .top, .content-box .secondStage .bottomPayment .payment .info .top {\n            text-transform: uppercase;\n            font-size: .7em; }\n          .content-box .secondStage .topPayment .payment .info .bottom, .content-box .secondStage .bottomPayment .payment .info .bottom {\n            font-weight: bold;\n            font-family: HelveticaBold; }\n        .content-box .secondStage .topPayment .payment:hover, .content-box .secondStage .bottomPayment .payment:hover {\n          background-color: #ffaf00;\n          color: white !important; }\n          .content-box .secondStage .topPayment .payment:hover i, .content-box .secondStage .bottomPayment .payment:hover i {\n            transform: rotate(15deg);\n            color: white !important; }\n      .content-box .secondStage .topPayment .actived, .content-box .secondStage .bottomPayment .actived {\n        background-color: #ffaf00;\n        color: white !important; }\n        .content-box .secondStage .topPayment .actived i, .content-box .secondStage .bottomPayment .actived i {\n          transform: rotate(-15deg);\n          color: white !important; }\n    .content-box .secondStage .topPayment, .content-box .secondStage .bottomPayment {\n      margin-bottom: 15px;\n      flex-wrap: wrap; }\n    .content-box .secondStage .bottomPayment .payment:first-child i {\n      margin-bottom: -15px; }\n    .content-box .secondStage .bottomPayment .payment:last-child {\n      width: 189px; }\n      .content-box .secondStage .bottomPayment .payment:last-child i {\n        margin-left: -10px;\n        margin-right: 10px; }\n  .content-box .third-stage {\n    display: flex;\n    flex-direction: column; }\n    .content-box .third-stage .price {\n      margin-top: 55px;\n      margin-bottom: 10px;\n      display: flex;\n      justify-content: space-between;\n      padding-bottom: 5px;\n      border-bottom: 2px solid;\n      align-items: center;\n      font-family: HelveticaBold;\n      font-weight: bold; }\n      .content-box .third-stage .price .left {\n        color: #424156;\n        font-size: 1.2em; }\n      .content-box .third-stage .price .right {\n        font-size: 1.6em; }\n    .content-box .third-stage #btn-buy {\n      border-radius: 6px;\n      background-color: #3d4e6e;\n      width: 125px;\n      height: 29px;\n      display: flex;\n      justify-content: center;\n      align-items: center;\n      text-transform: uppercase;\n      color: white;\n      align-self: flex-end;\n      margin-bottom: 25px;\n      cursor: pointer;\n      font-family: HelveticaBold;\n      font-weight: bold;\n      transition: .25s all; }\n      .content-box .third-stage #btn-buy:hover {\n        background-color: #ffb000; }\n  .content-box .codes .wallet-code, .content-box .codes .pay-code {\n    margin-bottom: 50px;\n    position: relative;\n    display: flex;\n    align-items: center; }\n    .content-box .codes .wallet-code input, .content-box .codes .pay-code input {\n      box-shadow: inset 0 0 4px 0 rgba(0, 0, 0, 0.24);\n      width: 100%;\n      border: 1px solid rgba(0, 0, 0, 0.24);\n      border-bottom-left-radius: 10px;\n      border-top-left-radius: 10px;\n      height: 23px;\n      padding: 0;\n      margin: 0;\n      padding-left: 4px;\n      -moz-appearance: textfield;\n      cursor: pointer; }\n      .content-box .codes .wallet-code input::-webkit-outer-spin-button, .content-box .codes .wallet-code input::-webkit-inner-spin-button, .content-box .codes .pay-code input::-webkit-outer-spin-button, .content-box .codes .pay-code input::-webkit-inner-spin-button {\n        -webkit-appearance: none; }\n      .content-box .codes .wallet-code input:focus, .content-box .codes .pay-code input:focus {\n        outline: none; }\n    .content-box .codes .wallet-code span, .content-box .codes .pay-code span {\n      height: 25px;\n      background-color: #feaf00;\n      display: flex;\n      align-items: center;\n      padding: 0 10px;\n      text-transform: uppercase;\n      color: white;\n      border-bottom-right-radius: 10px;\n      border-top-right-radius: 10px;\n      margin-left: -2px;\n      cursor: pointer;\n      transition: .25s ease all; }\n      .content-box .codes .wallet-code span:hover, .content-box .codes .pay-code span:hover {\n        background-color: #3d4e6e; }\n    .content-box .codes .wallet-code label, .content-box .codes .pay-code label {\n      position: absolute;\n      top: -23px;\n      left: 3px; }\n", ""]);
 
 // exports
 

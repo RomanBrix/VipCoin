@@ -2,6 +2,21 @@ import React, {Component} from 'react';
 
 export default class Menu extends Component {
     render(){
+        const { user, global_coin_cost } = this.props;
+        let options = {
+            text: "USD:",
+            style: {
+                fontSize: "1.4em"
+            }
+        };
+        if(+user.vipcoins_value * +global_coin_cost > 10000000){
+            options = {
+                text: "$",
+                style:{
+                    fontSize: "1em"
+                }
+            }
+        }
         return(
             <div className="mini-menu">
                 <div className="my-money">
@@ -10,7 +25,12 @@ export default class Menu extends Component {
                         <div className="img">
                             <img src="../src/VipCoin.png" alt="coin"/>
                         </div>
-                        <span className="bold">124124</span> = USD:<span className="bold">123124</span>
+                        <span className="bold" style={options.style}>
+                            { user.vipcoins_value }
+                        </span> = {options.text}
+                        <span className="bold"  style={options.style}>
+                            { (+user.vipcoins_value * +global_coin_cost).toFixed(2) }
+                        </span>
                     </div>
                 </div>
                 <div className="help">

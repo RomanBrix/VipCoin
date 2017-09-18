@@ -12516,7 +12516,8 @@ var act = exports.act = {
     PACKAGES: "GET_PACKAGES",
     USER: "GET_USER_INFO",
     GET_CRYPTO: "GET_CRYPTO",
-    UPDATED: "SETTINGS_UPDATING"
+    UPDATED: "SETTINGS_UPDATING",
+    COINCOST: "ONECOINCOST"
 };
 
 /***/ }),
@@ -12810,7 +12811,7 @@ function getPackages(type) {
 
         _axios2.default.get(_actionsAndUrl.GLOB_URL + 'packages.php', { params: { type: type } }).then(function (res) {
             console.log(res);
-            dispatch({ type: _actionsAndUrl.act.PACKAGES, coin_cost: +res.data[0], coins_value: +res.data[1] });
+            type === "coinCost" ? dispatch({ type: _actionsAndUrl.act.COINCOST, global_coin_cost: +res.data }) : dispatch({ type: _actionsAndUrl.act.PACKAGES, coin_cost: +res.data[0], coins_value: +res.data[1] });
         }).catch(function (error) {
             console.log(error);
         });
@@ -27370,6 +27371,7 @@ var InitialState = {
     vipcoinCost: 0.15,
     coin_cost: 0,
     coins_value: 0,
+    global_coin_cost: 0,
     user: [],
     crypto: [],
     updated: ""
@@ -27389,6 +27391,7 @@ var profileReducers = function profileReducers() {
                 vipcoinCost: state.vipcoinCost,
                 coin_cost: state.coin_cost,
                 coins_value: state.coins_value,
+                global_coin_cost: state.global_coin_cost,
                 user: state.user,
                 crypto: state.crypto,
                 updated: state.updated
@@ -27401,10 +27404,23 @@ var profileReducers = function profileReducers() {
                 vipcoinCost: state.vipcoinCost,
                 coin_cost: state.coin_cost,
                 coins_value: state.coins_value,
+                global_coin_cost: state.global_coin_cost,
                 user: state.user,
                 crypto: state.crypto,
                 updated: state.updated
 
+            };
+        case _actionsAndUrl.act.COINCOST:
+            return {
+                request: false,
+                hash: state.hash,
+                vipcoinCost: state.vipcoinCost,
+                coin_cost: state.coin_cost,
+                coins_value: state.coins_value,
+                global_coin_cost: action.global_coin_cost,
+                user: state.user,
+                crypto: state.crypto,
+                updated: state.updated
             };
         case _actionsAndUrl.act.PACKAGES:
             return {
@@ -27413,6 +27429,7 @@ var profileReducers = function profileReducers() {
                 vipcoinCost: state.vipcoinCost,
                 coin_cost: action.coin_cost,
                 coins_value: action.coins_value,
+                global_coin_cost: state.global_coin_cost,
                 user: state.user,
                 crypto: state.crypto,
                 updated: state.updated
@@ -27425,6 +27442,7 @@ var profileReducers = function profileReducers() {
                 vipcoinCost: state.vipcoinCost,
                 coin_cost: state.coin_cost,
                 coins_value: state.coins_value,
+                global_coin_cost: state.global_coin_cost,
                 user: action.user,
                 crypto: state.crypto,
                 updated: state.updated
@@ -27437,6 +27455,7 @@ var profileReducers = function profileReducers() {
                 vipcoinCost: state.vipcoinCost,
                 coin_cost: state.coin_cost,
                 coins_value: state.coins_value,
+                global_coin_cost: state.global_coin_cost,
                 user: state.user,
                 crypto: [action.btc, action.ltc, action.eth],
                 updated: state.updated
@@ -27449,6 +27468,7 @@ var profileReducers = function profileReducers() {
                 vipcoinCost: state.vipcoinCost,
                 coin_cost: state.coin_cost,
                 coins_value: state.coins_value,
+                global_coin_cost: state.global_coin_cost,
                 user: state.user,
                 crypto: state.crypto,
                 updated: action.updated
