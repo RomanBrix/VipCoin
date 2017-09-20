@@ -63,7 +63,8 @@ export default class App extends Component {
                             coins_value={ coins_value }
                             coin_cost={ coin_cost }
                             global_coin_cost={ global_coin_cost }
-                            settingsPage={pages.profile.settings}
+
+                            languagePage={pages.profile}
                             updateSettings={ updateSettings }
                             updated={ updated }
                             hash={ hash }

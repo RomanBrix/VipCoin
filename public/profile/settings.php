@@ -5,7 +5,9 @@ $type = $in['type'];
 $hash = $in['hash'];
 $currPassword = $in['currPassword'];
 $new = $in['newItem'];
-//print_r(json_encode([$type, $hash, $currPassword, $new]));
+
+//print_r(json_encode([$type]));
+
     if($type === "changePassword") {
 
         require_once 'connection.php';
@@ -25,7 +27,8 @@ $new = $in['newItem'];
             }
 
         }
-    }elseif ($type === "changeEmail"){
+    };
+    if ($type === "changeEmail"){
 
         require_once 'connection.php';
         $link = mysqli_connect($host, $user, $password, $database)
@@ -46,6 +49,35 @@ $new = $in['newItem'];
                 }
             }else{
                 print_r(json_encode("changeEmailPassword"));
+            }
+        }
+    };
+    if ($type === "newName"){
+        require_once 'connection.php';
+        $link = mysqli_connect($host, $user, $password, $database)
+        or die("Ошибка " . mysqli_error($link));
+        if($link) {
+            $result = mysqli_query($link, "UPDATE users SET name='" . $new . "' WHERE hash='" . $hash . "'");
+//            $data = mysqli_fetch_assoc($result);
+            if ($result) {
+                print_r(json_encode("nameChanged"));
+            } else {
+                print_r(json_encode("notUpdate"));
+            }
+        }
+    }
+
+    if ($type === "newTel"){
+        require_once 'connection.php';
+        $link = mysqli_connect($host, $user, $password, $database)
+        or die("Ошибка " . mysqli_error($link));
+        if($link) {
+            $result = mysqli_query($link, "UPDATE users SET tel='" . $new . "' WHERE hash='" . $hash . "'");
+//            $data = mysqli_fetch_assoc($result);
+            if ($result) {
+                print_r(json_encode("telChanged"));
+            } else {
+                print_r(json_encode("notUpdate"));
             }
         }
     }

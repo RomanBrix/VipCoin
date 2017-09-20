@@ -32,21 +32,33 @@ export default class TableItems extends Component {
 
         const TRcontainer = paginationContainer.map((item, index)=>{
             return (
-                <tr key={index} onDoubleClick={()=>{
-                    const code = prompt("Введите код с комментария");
-                    addCoins(item.hash,code);
-                    // console.log(code);
-                }}>
-                <td>{item.id}</td>
-                <td>{item.login}</td>
-                <td>{item.email}</td>
-                <td>{item.hash}</td>
-                <td onDoubleClick={(event)=>{
-                    const value = prompt("Количество монет?");
-                    console.log(value);
-                    event.stopPropagation();
-                }}>{item.vipcoins_value}</td>
-            </tr>
+                <tr key={index}
+                    onDoubleClick={()=>{
+                        const code = prompt("Введите код с комментария");
+                        addCoins(item.hash,code);}}
+                >
+                    <td>{item.id}</td>
+                    <td>{item.login}</td>
+                    <td>{item.email}</td>
+                    <td>{item.hash}</td>
+                    {
+                        item.name === "none" ?
+                            <td>Не указано</td> :
+                            <td>{item.name}</td>
+                    }
+
+                    {
+                        item.tel == 0 ?
+                            <td>Не указано</td> :
+                            <td>{item.tel}</td>
+                    }
+
+                    <td onDoubleClick={(event)=>{
+                        const value = prompt("Количество монет?");
+                        console.log(value);
+                        event.stopPropagation();
+                    }}>{item.vipcoins_value}</td>
+                </tr>
             )
         });
 
@@ -56,9 +68,11 @@ export default class TableItems extends Component {
                 <thead>
                     <tr>
                         <th>id</th>
-                        <th>Имя/login</th>
+                        <th>login</th>
                         <th>E-mail</th>
                         <th>hash</th>
+                        <th>Имя</th>
+                        <th>Телефон</th>
                         <th onClick={()=>{
                             const { sorted } = this.state;
                             this.setState({

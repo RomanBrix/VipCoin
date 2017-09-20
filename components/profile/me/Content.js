@@ -38,7 +38,7 @@ export default class Content extends Component {
             setTimeout(()=>{
                 const {wallet_code, exactCoins, pay_code} = this.refs;
                 const secondPartOfCode = coin_cost + "_" + totalPrice.innerHTML + "_" + exactCoins.value ;
-                console.log(secondPartOfCode);
+                // console.log(secondPartOfCode);
                 const fullSecretCode = this.secretCode(user.hash + "&" + secondPartOfCode);
 
                 wallet_code.value = arr[currID];
@@ -88,43 +88,44 @@ export default class Content extends Component {
         swiftPrice.innerHTML = swPrice;
     }
     render(){
-        const { coins_value } = this.props;
+        const { coins_value, contentPage} = this.props;
         const { buyIt } = this.state;
+        // console.log(contentPage);
         return(
             <div className="content-box">
-                <h1>Купить монеты:</h1>
+                <h1>{contentPage.mainHead}:</h1>
                 <div className="first-stage">
                     <h3>
-                        <span className="stage">1</span> Выберете или укажите нужное количество монет:
+                        <span className="stage">1</span> {contentPage.stageOne}:
                     </h3>
                     <div className="selectPack" onClick={({target})=>{
                         this.highlight('coins', target);
                     }}>
                         <div className="coins" id={1000}>
-                            <span className="small">монет</span>
+                            <span className="small">{contentPage.coins}</span>
                             <span className="bold">1.000</span>
                         </div>
                         <div className="coins" id={5000}>
-                            <span className="small">монет</span>
+                            <span className="small">{contentPage.coins}</span>
                             <span className="bold">5.000</span>
                         </div>
                         <div className="coins" id={10000}>
-                            <span className="small">монет</span>
+                            <span className="small">{contentPage.coins}</span>
                             <span className="bold">10.000</span>
                         </div>
                         <div className="coins" id={15000}>
-                            <span className="small">монет</span>
+                            <span className="small">{contentPage.coins}</span>
                             <span className="bold">15.000</span>
                         </div>
                         <div className="coins" id={20000}>
-                            <span className="small">монет</span>
+                            <span className="small">{contentPage.coins}</span>
                             <span className="bold">20.000</span>
                         </div>
                     </div>
                     <div className="input">
                         <input
                             type="number"
-                            placeholder="Введите желаемое количество монет"
+                            placeholder={contentPage.firstInputHolder}
                             ref="exactCoins"
                             max={coins_value}
                             onChange={({target})=>{
@@ -138,7 +139,7 @@ export default class Content extends Component {
 
                 <div className="secondStage">
                     <h3>
-                        <span className="stage">2</span> Выберете тип платежа:
+                        <span className="stage">2</span> {contentPage.stageTwo}:
                     </h3>
                     <div className="topPayment" onClick={({ target }) =>{
                         this.highlight("payment",target);
@@ -194,7 +195,7 @@ export default class Content extends Component {
                         </div>
                         <div className="payment" id="4">
                             <i className="cc NVC"/>
-                             ОБМЕНКА
+                            {contentPage.tradeCurr}
                         </div>
                     </div>
                 </div>
@@ -203,7 +204,7 @@ export default class Content extends Component {
                 <div className="third-stage">
                     <div className="price">
                         <span className="left">
-                            Стоимость:
+                            {contentPage.cost}:
                         </span>
                         <span className="right">
                             $ <span id="price">0</span>
@@ -211,14 +212,14 @@ export default class Content extends Component {
                     </div>
                     <div id="btn-buy" onClick={()=>{
                         const totalPrice  = document.getElementById("price");
-                        console.log(+totalPrice.innerHTML > 0);
+                        // console.log(+totalPrice.innerHTML > 0);
                         if(+totalPrice.innerHTML > 0){
                             this.setCodes();
                         }else{
                             this.getTotalCostAutomatic(1000);
                             this.setCodes.bind(this);
                         }
-                    }}>Оплатить</div>
+                    }}>{contentPage.buy}</div>
                 </div>
 
 
@@ -228,13 +229,26 @@ export default class Content extends Component {
                     <div className="codes">
                         <div className="wallet-code">
                             <input type="text" id="wallet_code" ref="wallet_code" disabled/>
-                            <label htmlFor="wallet_code">Адресс кошелька:</label>
-                            <span className="copy">копировать</span>
+                            <label htmlFor="wallet_code">{contentPage.walletLink}:</label>
+                            <span className="copy" onClick={()=>{
+                                const {wallet_code} = this.refs;
+                                wallet_code.select();
+
+                                try {
+                                    let successful = document.execCommand('copy');
+                                    let msg = successful ? 'successful' : 'unsuccessful';
+                                    console.log('Copying text command was ' + msg);
+                                    console.log(document.execCommand('copy'));
+                                } catch (err) {
+                                    console.log('Oops, unable to copy');
+                                }
+                                document.execCommand('copy');
+                            }}>{contentPage.copy}</span>
                         </div>
                         <div className="pay-code">
                             <input type="text" id="pay_code" ref="pay_code" disabled/>
-                            <label htmlFor="pay_code">Код коментария (указывать во время оплаты):</label>
-                            <span className="copy">копировать</span>
+                            <label htmlFor="pay_code">{contentPage.payCode}:</label>
+                            <span className="copy">{contentPage.copy}</span>
                         </div>
                     </div>
 

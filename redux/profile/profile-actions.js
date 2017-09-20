@@ -14,7 +14,6 @@ export function getPackages (type) {
 
         axios.get(`${GLOB_URL}packages.php`, {params: {type}})
             .then((res) => {
-            console.log(res);
                 type === "coinCost" ?
                     dispatch({type: act.COINCOST,  global_coin_cost: +res.data}):
                     dispatch({type: act.PACKAGES,  coin_cost: +res.data[0], coins_value: +res.data[1]});
@@ -80,7 +79,6 @@ export function getCrypto () {
 export function updateSettings (type, hash,currPassword, newItem) {
     return dispatch => {
         dispatch({type: 'REQUEST'});
-
         axios.post(`${GLOB_URL}settings.php`, {
             type,
             hash,

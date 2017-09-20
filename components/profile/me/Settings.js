@@ -2,6 +2,7 @@ import React, {Component} from 'react';
 import ChangePassword from "./ChangePassword";
 import ChangeEmail from "./ChangeEmail";
 import ChangeName from "./ChangeName";
+import ChangeTel from "./ChangeTel";
 
 export default class Settings extends Component {
         render(){
@@ -16,6 +17,13 @@ export default class Settings extends Component {
                 <div className="content-box">
                     <ChangeName
                         nameSetting={ settingsPage.name }
+                        updateSettings={updateSettings}
+                        updated={updated}
+                        hash={ hash }
+                        user={ user }
+                    />
+                    <ChangeTel
+                        telSetting={ settingsPage.tel }
                         updateSettings={updateSettings}
                         updated={updated}
                         hash={ hash }

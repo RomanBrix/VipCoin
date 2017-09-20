@@ -60,7 +60,7 @@
 /******/ 	__webpack_require__.p = "";
 /******/
 /******/ 	// Load entry module and return exports
-/******/ 	return __webpack_require__(__webpack_require__.s = 760);
+/******/ 	return __webpack_require__(__webpack_require__.s = 761);
 /******/ })
 /************************************************************************/
 /******/ ([
@@ -12781,7 +12781,6 @@ function getPackages(type) {
         dispatch({ type: 'REQUEST' });
 
         _axios2.default.get(_actionsAndUrl.GLOB_URL + 'packages.php', { params: { type: type } }).then(function (res) {
-            console.log(res);
             type === "coinCost" ? dispatch({ type: _actionsAndUrl.act.COINCOST, global_coin_cost: +res.data }) : dispatch({ type: _actionsAndUrl.act.PACKAGES, coin_cost: +res.data[0], coins_value: +res.data[1] });
         }).catch(function (error) {
             console.log(error);
@@ -12830,7 +12829,6 @@ function getCrypto() {
 function updateSettings(type, hash, currPassword, newItem) {
     return function (dispatch) {
         dispatch({ type: 'REQUEST' });
-
         _axios2.default.post(_actionsAndUrl.GLOB_URL + 'settings.php', {
             type: type,
             hash: hash,
@@ -28432,7 +28430,8 @@ exports.push([module.i, "body {\n  background-color: #f2f5f6;\n  margin: 0; }\n 
 /* 757 */,
 /* 758 */,
 /* 759 */,
-/* 760 */
+/* 760 */,
+/* 761 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -28456,7 +28455,7 @@ var _reducers = __webpack_require__(258);
 
 var _reducers2 = _interopRequireDefault(_reducers);
 
-var _generally = __webpack_require__(761);
+var _generally = __webpack_require__(762);
 
 var _generally2 = _interopRequireDefault(_generally);
 
@@ -28464,7 +28463,7 @@ var _main = __webpack_require__(367);
 
 var _main2 = _interopRequireDefault(_main);
 
-var _index = __webpack_require__(764);
+var _index = __webpack_require__(765);
 
 var _index2 = _interopRequireDefault(_index);
 
@@ -28480,7 +28479,7 @@ var store = (0, _redux.createStore)(_reducers2.default, (0, _redux.applyMiddlewa
 ), init);
 
 /***/ }),
-/* 761 */
+/* 762 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -28498,7 +28497,7 @@ var _reactRedux = __webpack_require__(103);
 
 var _adminActions = __webpack_require__(363);
 
-var _App = __webpack_require__(762);
+var _App = __webpack_require__(763);
 
 var _App2 = _interopRequireDefault(_App);
 
@@ -28515,7 +28514,7 @@ exports.default = (0, _reactRedux.connect)(mapStateToProps, {
 })(_App2.default);
 
 /***/ }),
-/* 762 */
+/* 763 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -28539,7 +28538,7 @@ var _Header = __webpack_require__(364);
 
 var _Header2 = _interopRequireDefault(_Header);
 
-var _Container = __webpack_require__(763);
+var _Container = __webpack_require__(764);
 
 var _Container2 = _interopRequireDefault(_Container);
 
@@ -28610,7 +28609,7 @@ exports.default = App;
 ;
 
 /***/ }),
-/* 763 */
+/* 764 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -28820,13 +28819,13 @@ var Container = function (_Component) {
 exports.default = Container;
 
 /***/ }),
-/* 764 */
+/* 765 */
 /***/ (function(module, exports, __webpack_require__) {
 
 // style-loader: Adds some css to the DOM by adding a <style> tag
 
 // load the styles
-var content = __webpack_require__(765);
+var content = __webpack_require__(766);
 if(typeof content === 'string') content = [[module.i, content, '']];
 // Prepare cssTransformation
 var transform;
@@ -28851,7 +28850,7 @@ if(false) {
 }
 
 /***/ }),
-/* 765 */
+/* 766 */
 /***/ (function(module, exports, __webpack_require__) {
 
 exports = module.exports = __webpack_require__(30)(undefined);

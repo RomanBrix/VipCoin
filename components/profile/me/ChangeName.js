@@ -3,14 +3,14 @@ import React, {Component} from 'react';
 export default class ChangeName extends Component {
 
     sendUpdateData(){
-        const {currentPass, newMail,} = this.refs;
+        const {newName} = this.refs;
         const{ updateSettings, hash } = this.props;
-        updateSettings('', hash, currentPass.value, newMail.value);
+        updateSettings('newName', hash, "noNeed", newName.value);
     }
 
     render(){
         const { updated, nameSetting, user } = this.props;
-console.log(user);
+// console.log(user);
 
         let Place = "";
         if(user.name ==="none"){
@@ -20,24 +20,26 @@ console.log(user);
         }
 
         return(
-            <div className="change-mail">
+            <div className="change-name">
                 <h3>
                     <span className="stage">*</span> {nameSetting.head}:
                 </h3>
                 <div className="change">
                     {
-                        updated === "changeEmailPassword" ?
+                        updated === "notUpdate" ?
                             <div className="error">{nameSetting.error}</div>
                             :
                             ""
                     }
 
-                    <input type="text" placeholder={Place}/>
-                    <div className="save" onClick={this.sendUpdateData.bind(this)}>
+                    <input type="text" placeholder={Place} ref="newName"/>
+                    <div className="save" onClick={()=>{
+                        this.sendUpdateData()
+                    }}>
                         {nameSetting.save}
                     </div>
                     {
-                        updated === "passwordChanged" ?
+                        updated === "nameChanged" ?
                             <div className="accept">{nameSetting.accept}</div>
                             :
                             ""

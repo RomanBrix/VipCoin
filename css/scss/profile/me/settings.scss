@@ -72,3 +72,16 @@ h1{
 .error{
   background: red;
 }
+
+.change-tel{
+  input{
+    -moz-appearance: textfield;
+    &::-webkit-outer-spin-button,
+    &::-webkit-inner-spin-button {
+      -webkit-appearance: none;
+    }
+    &:focus{
+      outline: none;
+    }
+  }
+}

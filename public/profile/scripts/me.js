@@ -12834,7 +12834,6 @@ function getPackages(type) {
         dispatch({ type: 'REQUEST' });
 
         _axios2.default.get(_actionsAndUrl.GLOB_URL + 'packages.php', { params: { type: type } }).then(function (res) {
-            console.log(res);
             type === "coinCost" ? dispatch({ type: _actionsAndUrl.act.COINCOST, global_coin_cost: +res.data }) : dispatch({ type: _actionsAndUrl.act.PACKAGES, coin_cost: +res.data[0], coins_value: +res.data[1] });
         }).catch(function (error) {
             console.log(error);
@@ -12883,7 +12882,6 @@ function getCrypto() {
 function updateSettings(type, hash, currPassword, newItem) {
     return function (dispatch) {
         dispatch({ type: 'REQUEST' });
-
         _axios2.default.post(_actionsAndUrl.GLOB_URL + 'settings.php', {
             type: type,
             hash: hash,
@@ -27569,7 +27567,7 @@ exports.default = adminReducers;
 /* 280 */
 /***/ (function(module, exports) {
 
-module.exports = [{"language":"ru","pages":{"main":{"top":{"head":"Ваш шедевр готов!","text":"С другой стороны консультация с широким активом способствует подготовки и реализации модели развития. Задача организации, в особенности же консультация с широким активом в значительной степени.","btn":"купить"},"progress":{"head":"какая наша цель?","title":"Официальный запуск сети после продажи:"},"table":{"head":{"header":"Сплиты","number":"#","cost":"Цена","value":"Количество монет","summ":"Сумма"},"foot":{"allSumm":"Итог сбора суммы: ","future":"При выходе на крипто-биржу цена за 1 монету","coinCost":"50$"},"split":[{"cost":0.1,"value":"3.000.000","summ":"300.000"},{"cost":0.2,"value":"3.000.000","summ":"600.000"},{"cost":0.4,"value":"3.000.000","summ":"1.200.000"},{"cost":0.8,"value":"3.000.000","summ":"2.400.000"},{"cost":1.6,"value":"3.000.000","summ":"4.800.000"},{"cost":3.2,"value":"3.000.000","summ":"9.600.000"},{"cost":6.4,"value":"3.000.000","summ":"19.200.000"},{"cost":12.8,"value":"3.000.000","summ":"38.400.000"},{"cost":25.6,"value":"3.000.000","summ":"76.800.000"},{"cost":51.2,"value":"3.000.000","summ":"153.600.000"}]}},"about":{},"packages":{"packages":{"title":"Пакеты","btn_end":"НЕДОСТУПНО","btn_start":"КУПИТЬ","btn_wait":"В ОЖИДАНИИ","top_p":"монету","coinsLeft_p":"Доступно монет","inputCoins_p":"Введите количество монет для покупки","price_p":"Стоимость","afterHead":"Укажите количество монет которые хотите купить для расчета стоимость"},"faq":{"title":"ПОМОЩЬ","afterHead":"Список наиболее часто задаваемых вопросов и ответы на них","help1":{"title":"Как можно оплатить?","text":"Мы бросаем вызов статус-кво и выходят за рамки сегодняшнего дня, чтобы создать открытое финансовое будущее"},"help2":{"title":"Как обменять криптовалюту?","text":"Мы бросаем вызов статус-кво и выходят за рамки сегодняшнего дня, чтобы создать открытое финансовое будущее"},"help3":{"title":"Как получить монеты?","text":"Мы бросаем вызов статус-кво и выходят за рамки сегодняшнего дня, чтобы создать открытое финансовое будущее"},"help4":{"title":"Как обменять криптовалюту?","text":"Мы бросаем вызов статус-кво и выходят за рамки сегодняшнего дня, чтобы создать открытое финансовое будущее"}}},"FAQ":{"content":{"title":"Содержание","afterHead":"Список наиболее часто задаваемых вопросов и ответы на них","secondTitle":"Ответы"},"faqs":[{"title":"Как зарегистрироваться?","text":"Мы бросаем вызов статус-кво и выходят за рамки сегодняшнего дня, чтобы создать открытое финансовое будущее Мы бросаем вызов статус-кво и выходят за рамки сегодняшнего дня, чтобы создать открытое финансовое будущее"},{"title":"Как можно оплатить?","text":"Мы бросаем вызов статус-кво и выходят за рамки сегодняшнего дня, чтобы создать открытое финансовое будущее Мы бросаем вызов статус-кво и выходят за рамки сегодняшнего дня, чтобы создать открытое финансовое будущее"},{"title":"Как получить монеты?","text":"Мы бросаем вызов статус-кво и выходят за рамки сегодняшнего дня, чтобы создать финансовое будущее Мы бросаем вызов статус-кво и выходят за рамки сегодняшнего дня, чтобы создать открытое финансовое будущее"},{"title":"Как обменять криптовалюту?","text":"Мы бросаем вызов статус-кво и выходят за рамки сегодняшнего дня, чтобы создать финансовое будущее Мы бросаем вызов статус-кво и выходят за рамки сегодняшнего дня, чтобы создать открытое финансовое будущее"},{"title":"Как можно оплатить?","text":"Мы бросаем вызов статус-кво и выходят за рамки сегодняшнего дня, чтобы создать открытое финансовое будущее Мы бросаем вызов статус-кво и выходят за рамки сегодняшнего дня, чтобы создать открытое финансовое будущее"},{"title":"Как получить монеты?","text":"Мы бросаем вызов статус-кво и выходят за рамки сегодняшнего дня, чтобы создать открытое финансовое будущее Мы бросаем вызов статус-кво и выходят за рамки сегодняшнего дня, чтобы создать открытое финансовое будущее"},{"title":"Как зарегистрироваться?","text":"Мы бросаем вызов статус-кво и выходят за рамки сегодняшнего дня, чтобы создать финансовое будущее Мы бросаем вызов статус-кво и выходят за рамки сегодняшнего дня, чтобы создать открытое финансовое будущее"},{"title":"Как обменять криптовалюту?","text":"Мы бросаем вызов статус-кво и выходят за рамки сегодняшнего дня, чтобы создать финансовое будущее Мы бросаем вызов статус-кво и выходят за рамки сегодняшнего дня, чтобы создать открытое финансовое будущее"}]},"news":{},"contacts":{"top":{"head":"Контакты"},"feedback":{"head":"центр поддержки клиентов","inputName":"Имя","inputLName":"Фамилия","inputEmail":"E-mail","inputTel":"Номер телефона","inputMsg":"Ваше сообщение","btnSend":"Отправить"}},"profile":{"layouts":{"leftHeader":{"btnMain":"главная","btnRefill":"Купить","btnSettings":"Настройки","btnExit":"выход"}},"info":{},"settings":{"password":{"head":"Смените пароль","CurPass":"Текущий пароль","new":"Новый пароль","repass":"Повторите пароль","save":"Сохранить","error":"Неверный пароль","accept":"Изминения сохранены"},"email":{"head":"Смените E-mail","CurPass":"Текущий пароль","new":"Новый E-mail","save":"Сохранить","error":"Неверный пароль","secondError":"Такой E-mail уже есть!","accept":"Изминения сохранены"},"name":{"head":"Укажите/Поменяйте имя","error":"Неверный пароль","accept":"Изминения сохранены","save":"Сохранить","nameInput":"Ваше имя"}}}},"layouts":{"header":{"btnMain":"ГЛАВНАЯ","btnAbout":"О НАС","btnPackages":"ПАКЕТЫ","btnFAQ":"Помощь","btnNews":"Новости","btnContacts":"Контакты","login":{"log":"Регистрация/Вход","btnExit":"Выход"}},"footer":{"pages":{"whitePage":"Белая Бумага","legalPage":"Юридические Информация","contractOffer":"Пользовательское Соглашение","confidentiality":"Политика Конфиденциальности"},"feedback":"Обратная связь"},"auth":{"header":{"btnLogin":"Войти","btnRegistration":"Регестрация","btnForgotPass":"Забыли пароль?"},"login":{"inputLogin":"Логин или E-mail","inputPassword":"Пароль","btnEnter":"Войти"},"registration":{"inputLogin":"Логин","inputEmail":"E-Mail","inputPassword":"Пароль","inputRepeatPassword":"Повторите пароль","checkLegal":"Согласен с правилами сайта","btnRegistration":"Регестрация"},"forgot":{"text":"Отправить пароль на почту","inputEmail":"E-Mail","btnSend":"Отправить","success":"E-mail отправлен!","error":"E-mail не найден"}}}}]
+module.exports = [{"language":"ru","pages":{"main":{"top":{"head":"Ваш шедевр готов!","text":"С другой стороны консультация с широким активом способствует подготовки и реализации модели развития. Задача организации, в особенности же консультация с широким активом в значительной степени.","btn":"купить"},"progress":{"head":"какая наша цель?","title":"Официальный запуск сети после продажи:"},"table":{"head":{"header":"Сплиты","number":"#","cost":"Цена","value":"Количество монет","summ":"Сумма"},"foot":{"allSumm":"Итог сбора суммы: ","future":"При выходе на крипто-биржу цена за 1 монету","coinCost":"50$"},"split":[{"cost":0.1,"value":"3.000.000","summ":"300.000"},{"cost":0.2,"value":"3.000.000","summ":"600.000"},{"cost":0.4,"value":"3.000.000","summ":"1.200.000"},{"cost":0.8,"value":"3.000.000","summ":"2.400.000"},{"cost":1.6,"value":"3.000.000","summ":"4.800.000"},{"cost":3.2,"value":"3.000.000","summ":"9.600.000"},{"cost":6.4,"value":"3.000.000","summ":"19.200.000"},{"cost":12.8,"value":"3.000.000","summ":"38.400.000"},{"cost":25.6,"value":"3.000.000","summ":"76.800.000"},{"cost":51.2,"value":"3.000.000","summ":"153.600.000"}]}},"about":{},"packages":{"packages":{"title":"Пакеты","btn_end":"НЕДОСТУПНО","btn_start":"КУПИТЬ","btn_wait":"В ОЖИДАНИИ","top_p":"монету","coinsLeft_p":"Доступно монет","inputCoins_p":"Введите количество монет для покупки","price_p":"Стоимость","afterHead":"Укажите количество монет которые хотите купить для расчета стоимость"},"faq":{"title":"ПОМОЩЬ","afterHead":"Список наиболее часто задаваемых вопросов и ответы на них","help1":{"title":"Как можно оплатить?","text":"Мы бросаем вызов статус-кво и выходят за рамки сегодняшнего дня, чтобы создать открытое финансовое будущее"},"help2":{"title":"Как обменять криптовалюту?","text":"Мы бросаем вызов статус-кво и выходят за рамки сегодняшнего дня, чтобы создать открытое финансовое будущее"},"help3":{"title":"Как получить монеты?","text":"Мы бросаем вызов статус-кво и выходят за рамки сегодняшнего дня, чтобы создать открытое финансовое будущее"},"help4":{"title":"Как обменять криптовалюту?","text":"Мы бросаем вызов статус-кво и выходят за рамки сегодняшнего дня, чтобы создать открытое финансовое будущее"}}},"FAQ":{"content":{"title":"Содержание","afterHead":"Список наиболее часто задаваемых вопросов и ответы на них","secondTitle":"Ответы"},"faqs":[{"title":"Как зарегистрироваться?","text":"Мы бросаем вызов статус-кво и выходят за рамки сегодняшнего дня, чтобы создать открытое финансовое будущее Мы бросаем вызов статус-кво и выходят за рамки сегодняшнего дня, чтобы создать открытое финансовое будущее"},{"title":"Как можно оплатить?","text":"Мы бросаем вызов статус-кво и выходят за рамки сегодняшнего дня, чтобы создать открытое финансовое будущее Мы бросаем вызов статус-кво и выходят за рамки сегодняшнего дня, чтобы создать открытое финансовое будущее"},{"title":"Как получить монеты?","text":"Мы бросаем вызов статус-кво и выходят за рамки сегодняшнего дня, чтобы создать финансовое будущее Мы бросаем вызов статус-кво и выходят за рамки сегодняшнего дня, чтобы создать открытое финансовое будущее"},{"title":"Как обменять криптовалюту?","text":"Мы бросаем вызов статус-кво и выходят за рамки сегодняшнего дня, чтобы создать финансовое будущее Мы бросаем вызов статус-кво и выходят за рамки сегодняшнего дня, чтобы создать открытое финансовое будущее"},{"title":"Как можно оплатить?","text":"Мы бросаем вызов статус-кво и выходят за рамки сегодняшнего дня, чтобы создать открытое финансовое будущее Мы бросаем вызов статус-кво и выходят за рамки сегодняшнего дня, чтобы создать открытое финансовое будущее"},{"title":"Как получить монеты?","text":"Мы бросаем вызов статус-кво и выходят за рамки сегодняшнего дня, чтобы создать открытое финансовое будущее Мы бросаем вызов статус-кво и выходят за рамки сегодняшнего дня, чтобы создать открытое финансовое будущее"},{"title":"Как зарегистрироваться?","text":"Мы бросаем вызов статус-кво и выходят за рамки сегодняшнего дня, чтобы создать финансовое будущее Мы бросаем вызов статус-кво и выходят за рамки сегодняшнего дня, чтобы создать открытое финансовое будущее"},{"title":"Как обменять криптовалюту?","text":"Мы бросаем вызов статус-кво и выходят за рамки сегодняшнего дня, чтобы создать финансовое будущее Мы бросаем вызов статус-кво и выходят за рамки сегодняшнего дня, чтобы создать открытое финансовое будущее"}]},"news":{},"contacts":{"top":{"head":"Контакты"},"feedback":{"head":"центр поддержки клиентов","inputName":"Имя","inputLName":"Фамилия","inputEmail":"E-mail","inputTel":"Номер телефона","inputMsg":"Ваше сообщение","btnSend":"Отправить"}},"profile":{"layouts":{"leftHeader":{"btnMain":"главная","btnRefill":"Купить","btnSettings":"Настройки","btnExit":"выход"}},"info":{},"content":{"mainHead":"Купить монеты","stageOne":"Выберете или укажите нужное количество монет","stageTwo":"Выберете тип платежа","coins":"монет","firstInputHolder":"Введите желаемое количество монет","tradeCurr":"ОБМЕНКА","cost":"Стоимость","buy":"Оплатить","walletLink":"Адресс кошелька","payCode":"Код коментария (указывать во время оплаты)","copy":"копировать"},"settings":{"password":{"head":"Смените пароль","CurPass":"Текущий пароль","new":"Новый пароль","repass":"Повторите пароль","save":"Сохранить","error":"Неверный пароль","accept":"Изминения сохранены"},"email":{"head":"Смените E-mail","CurPass":"Текущий пароль","new":"Новый E-mail","save":"Сохранить","error":"Неверный пароль","secondError":"Такой E-mail уже есть!","accept":"Изминения сохранены"},"name":{"head":"Укажите/Измените имя","error":"Попробуйте позже","accept":"Изминения сохранены","save":"Сохранить","nameInput":"Ваше имя"},"tel":{"head":"Укажите/Измените телефон","error":"Попробуйте позже","accept":"Изминения сохранены","save":"Сохранить","nameInput":"Укажите номер телефона"}}}},"layouts":{"header":{"btnMain":"ГЛАВНАЯ","btnAbout":"О НАС","btnPackages":"ПАКЕТЫ","btnFAQ":"Помощь","btnNews":"Новости","btnContacts":"Контакты","login":{"log":"Регистрация/Вход","btnExit":"Выход"}},"footer":{"pages":{"whitePage":"Белая Бумага","legalPage":"Юридические Информация","contractOffer":"Пользовательское Соглашение","confidentiality":"Политика Конфиденциальности"},"feedback":"Обратная связь"},"auth":{"header":{"btnLogin":"Войти","btnRegistration":"Регестрация","btnForgotPass":"Забыли пароль?"},"login":{"inputLogin":"Логин или E-mail","inputPassword":"Пароль","btnEnter":"Войти"},"registration":{"inputLogin":"Логин","inputEmail":"E-Mail","inputPassword":"Пароль","inputRepeatPassword":"Повторите пароль","checkLegal":"Согласен с правилами сайта","btnRegistration":"Регестрация"},"forgot":{"text":"Отправить пароль на почту","inputEmail":"E-Mail","btnSend":"Отправить","success":"E-mail отправлен!","error":"E-mail не найден"}}}}]
 
 /***/ }),
 /* 281 */
@@ -28988,7 +28986,7 @@ var _main = __webpack_require__(453);
 
 var _main2 = _interopRequireDefault(_main);
 
-var _index = __webpack_require__(745);
+var _index = __webpack_require__(746);
 
 var _index2 = _interopRequireDefault(_index);
 
@@ -29155,7 +29153,8 @@ var App = function (_Component) {
                         coins_value: coins_value,
                         coin_cost: coin_cost,
                         global_coin_cost: global_coin_cost,
-                        settingsPage: pages.profile.settings,
+
+                        languagePage: pages.profile,
                         updateSettings: updateSettings,
                         updated: updated,
                         hash: hash
@@ -29243,7 +29242,7 @@ var Container = function (_Component) {
                 coins_value = _props.coins_value,
                 crypto = _props.crypto,
                 global_coin_cost = _props.global_coin_cost,
-                settingsPage = _props.settingsPage,
+                languagePage = _props.languagePage,
                 updateSettings = _props.updateSettings,
                 updated = _props.updated,
                 hash = _props.hash;
@@ -29262,9 +29261,10 @@ var Container = function (_Component) {
                     coins_value: coins_value,
                     coin_cost: coin_cost,
                     crypto: crypto,
-                    user: user
+                    user: user,
+                    contentPage: languagePage.content
                 }) : _react2.default.createElement(_Settings2.default, {
-                    settingsPage: settingsPage,
+                    settingsPage: languagePage.settings,
                     updateSettings: updateSettings,
                     updated: updated,
                     hash: hash,
@@ -29491,7 +29491,7 @@ var Content = function (_Component) {
                         pay_code = _refs.pay_code;
 
                     var secondPartOfCode = coin_cost + "_" + totalPrice.innerHTML + "_" + exactCoins.value;
-                    console.log(secondPartOfCode);
+                    // console.log(secondPartOfCode);
                     var fullSecretCode = _this2.secretCode(user.hash + "&" + secondPartOfCode);
 
                     wallet_code.value = arr[currID];
@@ -29545,8 +29545,11 @@ var Content = function (_Component) {
         value: function render() {
             var _this3 = this;
 
-            var coins_value = this.props.coins_value;
+            var _props3 = this.props,
+                coins_value = _props3.coins_value,
+                contentPage = _props3.contentPage;
             var buyIt = this.state.buyIt;
+            // console.log(contentPage);
 
             return _react2.default.createElement(
                 "div",
@@ -29554,7 +29557,8 @@ var Content = function (_Component) {
                 _react2.default.createElement(
                     "h1",
                     null,
-                    "\u041A\u0443\u043F\u0438\u0442\u044C \u043C\u043E\u043D\u0435\u0442\u044B:"
+                    contentPage.mainHead,
+                    ":"
                 ),
                 _react2.default.createElement(
                     "div",
@@ -29567,7 +29571,9 @@ var Content = function (_Component) {
                             { className: "stage" },
                             "1"
                         ),
-                        " \u0412\u044B\u0431\u0435\u0440\u0435\u0442\u0435 \u0438\u043B\u0438 \u0443\u043A\u0430\u0436\u0438\u0442\u0435 \u043D\u0443\u0436\u043D\u043E\u0435 \u043A\u043E\u043B\u0438\u0447\u0435\u0441\u0442\u0432\u043E \u043C\u043E\u043D\u0435\u0442:"
+                        " ",
+                        contentPage.stageOne,
+                        ":"
                     ),
                     _react2.default.createElement(
                         "div",
@@ -29582,7 +29588,7 @@ var Content = function (_Component) {
                             _react2.default.createElement(
                                 "span",
                                 { className: "small" },
-                                "\u043C\u043E\u043D\u0435\u0442"
+                                contentPage.coins
                             ),
                             _react2.default.createElement(
                                 "span",
@@ -29596,7 +29602,7 @@ var Content = function (_Component) {
                             _react2.default.createElement(
                                 "span",
                                 { className: "small" },
-                                "\u043C\u043E\u043D\u0435\u0442"
+                                contentPage.coins
                             ),
                             _react2.default.createElement(
                                 "span",
@@ -29610,7 +29616,7 @@ var Content = function (_Component) {
                             _react2.default.createElement(
                                 "span",
                                 { className: "small" },
-                                "\u043C\u043E\u043D\u0435\u0442"
+                                contentPage.coins
                             ),
                             _react2.default.createElement(
                                 "span",
@@ -29624,7 +29630,7 @@ var Content = function (_Component) {
                             _react2.default.createElement(
                                 "span",
                                 { className: "small" },
-                                "\u043C\u043E\u043D\u0435\u0442"
+                                contentPage.coins
                             ),
                             _react2.default.createElement(
                                 "span",
@@ -29638,7 +29644,7 @@ var Content = function (_Component) {
                             _react2.default.createElement(
                                 "span",
                                 { className: "small" },
-                                "\u043C\u043E\u043D\u0435\u0442"
+                                contentPage.coins
                             ),
                             _react2.default.createElement(
                                 "span",
@@ -29652,7 +29658,7 @@ var Content = function (_Component) {
                         { className: "input" },
                         _react2.default.createElement("input", {
                             type: "number",
-                            placeholder: "\u0412\u0432\u0435\u0434\u0438\u0442\u0435 \u0436\u0435\u043B\u0430\u0435\u043C\u043E\u0435 \u043A\u043E\u043B\u0438\u0447\u0435\u0441\u0442\u0432\u043E \u043C\u043E\u043D\u0435\u0442",
+                            placeholder: contentPage.firstInputHolder,
                             ref: "exactCoins",
                             max: coins_value,
                             onChange: function onChange(_ref2) {
@@ -29675,7 +29681,9 @@ var Content = function (_Component) {
                             { className: "stage" },
                             "2"
                         ),
-                        " \u0412\u044B\u0431\u0435\u0440\u0435\u0442\u0435 \u0442\u0438\u043F \u043F\u043B\u0430\u0442\u0435\u0436\u0430:"
+                        " ",
+                        contentPage.stageTwo,
+                        ":"
                     ),
                     _react2.default.createElement(
                         "div",
@@ -29790,7 +29798,7 @@ var Content = function (_Component) {
                             "div",
                             { className: "payment", id: "4" },
                             _react2.default.createElement("i", { className: "cc NVC" }),
-                            "\u041E\u0411\u041C\u0415\u041D\u041A\u0410"
+                            contentPage.tradeCurr
                         )
                     )
                 ),
@@ -29803,7 +29811,8 @@ var Content = function (_Component) {
                         _react2.default.createElement(
                             "span",
                             { className: "left" },
-                            "\u0421\u0442\u043E\u0438\u043C\u043E\u0441\u0442\u044C:"
+                            contentPage.cost,
+                            ":"
                         ),
                         _react2.default.createElement(
                             "span",
@@ -29820,7 +29829,7 @@ var Content = function (_Component) {
                         "div",
                         { id: "btn-buy", onClick: function onClick() {
                                 var totalPrice = document.getElementById("price");
-                                console.log(+totalPrice.innerHTML > 0);
+                                // console.log(+totalPrice.innerHTML > 0);
                                 if (+totalPrice.innerHTML > 0) {
                                     _this3.setCodes();
                                 } else {
@@ -29828,7 +29837,7 @@ var Content = function (_Component) {
                                     _this3.setCodes.bind(_this3);
                                 }
                             } },
-                        "\u041E\u043F\u043B\u0430\u0442\u0438\u0442\u044C"
+                        contentPage.buy
                     )
                 ),
                 buyIt ? _react2.default.createElement(
@@ -29841,12 +29850,27 @@ var Content = function (_Component) {
                         _react2.default.createElement(
                             "label",
                             { htmlFor: "wallet_code" },
-                            "\u0410\u0434\u0440\u0435\u0441\u0441 \u043A\u043E\u0448\u0435\u043B\u044C\u043A\u0430:"
+                            contentPage.walletLink,
+                            ":"
                         ),
                         _react2.default.createElement(
                             "span",
-                            { className: "copy" },
-                            "\u043A\u043E\u043F\u0438\u0440\u043E\u0432\u0430\u0442\u044C"
+                            { className: "copy", onClick: function onClick() {
+                                    var wallet_code = _this3.refs.wallet_code;
+
+                                    wallet_code.select();
+
+                                    try {
+                                        var successful = document.execCommand('copy');
+                                        var msg = successful ? 'successful' : 'unsuccessful';
+                                        console.log('Copying text command was ' + msg);
+                                        console.log(document.execCommand('copy'));
+                                    } catch (err) {
+                                        console.log('Oops, unable to copy');
+                                    }
+                                    document.execCommand('copy');
+                                } },
+                            contentPage.copy
                         )
                     ),
                     _react2.default.createElement(
@@ -29856,12 +29880,13 @@ var Content = function (_Component) {
                         _react2.default.createElement(
                             "label",
                             { htmlFor: "pay_code" },
-                            "\u041A\u043E\u0434 \u043A\u043E\u043C\u0435\u043D\u0442\u0430\u0440\u0438\u044F (\u0443\u043A\u0430\u0437\u044B\u0432\u0430\u0442\u044C \u0432\u043E \u0432\u0440\u0435\u043C\u044F \u043E\u043F\u043B\u0430\u0442\u044B):"
+                            contentPage.payCode,
+                            ":"
                         ),
                         _react2.default.createElement(
                             "span",
                             { className: "copy" },
-                            "\u043A\u043E\u043F\u0438\u0440\u043E\u0432\u0430\u0442\u044C"
+                            contentPage.copy
                         )
                     )
                 ) : ""
@@ -30010,6 +30035,10 @@ var _ChangeName = __webpack_require__(744);
 
 var _ChangeName2 = _interopRequireDefault(_ChangeName);
 
+var _ChangeTel = __webpack_require__(745);
+
+var _ChangeTel2 = _interopRequireDefault(_ChangeTel);
+
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
 function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
@@ -30042,6 +30071,13 @@ var Settings = function (_Component) {
                 { className: "content-box" },
                 _react2.default.createElement(_ChangeName2.default, {
                     nameSetting: settingsPage.name,
+                    updateSettings: updateSettings,
+                    updated: updated,
+                    hash: hash,
+                    user: user
+                }),
+                _react2.default.createElement(_ChangeTel2.default, {
+                    telSetting: settingsPage.tel,
                     updateSettings: updateSettings,
                     updated: updated,
                     hash: hash,
@@ -30363,24 +30399,23 @@ var ChangeName = function (_Component) {
     _createClass(ChangeName, [{
         key: 'sendUpdateData',
         value: function sendUpdateData() {
-            var _refs = this.refs,
-                currentPass = _refs.currentPass,
-                newMail = _refs.newMail;
+            var newName = this.refs.newName;
             var _props = this.props,
                 updateSettings = _props.updateSettings,
                 hash = _props.hash;
 
-            updateSettings('', hash, currentPass.value, newMail.value);
+            updateSettings('newName', hash, "noNeed", newName.value);
         }
     }, {
         key: 'render',
         value: function render() {
+            var _this2 = this;
+
             var _props2 = this.props,
                 updated = _props2.updated,
                 nameSetting = _props2.nameSetting,
                 user = _props2.user;
-
-            console.log(user);
+            // console.log(user);
 
             var Place = "";
             if (user.name === "none") {
@@ -30391,7 +30426,7 @@ var ChangeName = function (_Component) {
 
             return _react2.default.createElement(
                 'div',
-                { className: 'change-mail' },
+                { className: 'change-name' },
                 _react2.default.createElement(
                     'h3',
                     null,
@@ -30407,18 +30442,20 @@ var ChangeName = function (_Component) {
                 _react2.default.createElement(
                     'div',
                     { className: 'change' },
-                    updated === "changeEmailPassword" ? _react2.default.createElement(
+                    updated === "notUpdate" ? _react2.default.createElement(
                         'div',
                         { className: 'error' },
                         nameSetting.error
                     ) : "",
-                    _react2.default.createElement('input', { type: 'text', placeholder: Place }),
+                    _react2.default.createElement('input', { type: 'text', placeholder: Place, ref: 'newName' }),
                     _react2.default.createElement(
                         'div',
-                        { className: 'save', onClick: this.sendUpdateData.bind(this) },
+                        { className: 'save', onClick: function onClick() {
+                                _this2.sendUpdateData();
+                            } },
                         nameSetting.save
                     ),
-                    updated === "passwordChanged" ? _react2.default.createElement(
+                    updated === "nameChanged" ? _react2.default.createElement(
                         'div',
                         { className: 'accept' },
                         nameSetting.accept
@@ -30437,10 +30474,119 @@ exports.default = ChangeName;
 /* 745 */
 /***/ (function(module, exports, __webpack_require__) {
 
+"use strict";
+
+
+Object.defineProperty(exports, "__esModule", {
+    value: true
+});
+
+var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
+
+var _react = __webpack_require__(4);
+
+var _react2 = _interopRequireDefault(_react);
+
+function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
+
+function _possibleConstructorReturn(self, call) { if (!self) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return call && (typeof call === "object" || typeof call === "function") ? call : self; }
+
+function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
+
+var ChangeTel = function (_Component) {
+    _inherits(ChangeTel, _Component);
+
+    function ChangeTel() {
+        _classCallCheck(this, ChangeTel);
+
+        return _possibleConstructorReturn(this, (ChangeTel.__proto__ || Object.getPrototypeOf(ChangeTel)).apply(this, arguments));
+    }
+
+    _createClass(ChangeTel, [{
+        key: 'sendUpdateData',
+        value: function sendUpdateData() {
+            var newTel = this.refs.newTel;
+            var _props = this.props,
+                updateSettings = _props.updateSettings,
+                hash = _props.hash;
+
+
+            updateSettings('newTel', hash, "noNeed", newTel.value);
+        }
+    }, {
+        key: 'render',
+        value: function render() {
+            var _this2 = this;
+
+            var _props2 = this.props,
+                updated = _props2.updated,
+                telSetting = _props2.telSetting,
+                user = _props2.user;
+
+
+            var Place = "";
+            if (user.tel == 0) {
+                Place = telSetting.nameInput;
+            } else {
+                Place = user.tel;
+            }
+
+            return _react2.default.createElement(
+                'div',
+                { className: 'change-tel' },
+                _react2.default.createElement(
+                    'h3',
+                    null,
+                    _react2.default.createElement(
+                        'span',
+                        { className: 'stage' },
+                        '*'
+                    ),
+                    ' ',
+                    telSetting.head,
+                    ':'
+                ),
+                _react2.default.createElement(
+                    'div',
+                    { className: 'change' },
+                    updated === "notUpdate" ? _react2.default.createElement(
+                        'div',
+                        { className: 'error' },
+                        telSetting.error
+                    ) : "",
+                    _react2.default.createElement('input', { type: 'number', placeholder: Place, ref: 'newTel' }),
+                    _react2.default.createElement(
+                        'div',
+                        { className: 'save', onClick: function onClick() {
+                                _this2.sendUpdateData();
+                            } },
+                        telSetting.save
+                    ),
+                    updated === "telChanged" ? _react2.default.createElement(
+                        'div',
+                        { className: 'accept' },
+                        telSetting.accept
+                    ) : ""
+                )
+            );
+        }
+    }]);
+
+    return ChangeTel;
+}(_react.Component);
+
+exports.default = ChangeTel;
+
+/***/ }),
+/* 746 */
+/***/ (function(module, exports, __webpack_require__) {
+
 // style-loader: Adds some css to the DOM by adding a <style> tag
 
 // load the styles
-var content = __webpack_require__(746);
+var content = __webpack_require__(747);
 if(typeof content === 'string') content = [[module.i, content, '']];
 // Prepare cssTransformation
 var transform;
@@ -30465,7 +30611,7 @@ if(false) {
 }
 
 /***/ }),
-/* 746 */
+/* 747 */
 /***/ (function(module, exports, __webpack_require__) {
 
 exports = module.exports = __webpack_require__(30)(undefined);
@@ -30473,7 +30619,7 @@ exports = module.exports = __webpack_require__(30)(undefined);
 
 
 // module
-exports.push([module.i, "@font-face {\n  font-family: 'Brusher';\n  src: url(" + __webpack_require__(123) + "); }\n\n@font-face {\n  font-family: 'HelveticaLight';\n  src: url(" + __webpack_require__(125) + "); }\n\n@font-face {\n  font-family: 'RobotoLightItalic';\n  src: url(" + __webpack_require__(455) + "); }\n\n@font-face {\n  font-family: 'HelveticaBlack';\n  src: url(" + __webpack_require__(126) + "); }\n\n@font-face {\n  font-family: 'HelveticaBold';\n  src: url(" + __webpack_require__(127) + "); }\n\n@font-face {\n  font-family: 'HelveticaHeavy';\n  src: url(" + __webpack_require__(128) + "); }\n\n.mini-menu {\n  background-color: #ebedf0;\n  min-width: 30%; }\n  .mini-menu .my-money .out {\n    display: flex;\n    align-items: center; }\n    .mini-menu .my-money .out .img {\n      max-width: 35px;\n      margin-right: 5px; }\n      .mini-menu .my-money .out .img img {\n        width: 100%;\n        height: 100%; }\n    .mini-menu .my-money .out .bold {\n      font-family: HelveticaBold;\n      font-size: 1.4em;\n      font-weight: bold;\n      margin: 0 5px; }\n  .mini-menu .help {\n    display: flex;\n    flex-direction: column;\n    align-items: flex-start;\n    height: 100%; }\n    .mini-menu .help h2 {\n      margin-bottom: 10px; }\n    .mini-menu .help .settings {\n      margin-bottom: 10px;\n      display: flex;\n      align-items: center;\n      font-size: 1.2em;\n      transition: .25s;\n      cursor: pointer; }\n      .mini-menu .help .settings i {\n        font-size: 1.1em;\n        color: #999999;\n        margin-right: 5px;\n        margin-bottom: -3px;\n        transition: .25s; }\n      .mini-menu .help .settings:hover i {\n        color: #ffbb00; }\n    .mini-menu .help a {\n      margin-bottom: 10px;\n      text-decoration: none;\n      color: black;\n      display: flex;\n      align-items: center;\n      font-size: 1.2em;\n      transition: .25s;\n      cursor: pointer; }\n      .mini-menu .help a i {\n        font-size: 1.1em;\n        color: #999999;\n        margin-right: 5px;\n        margin-bottom: -3px;\n        transition: .25s; }\n      .mini-menu .help a:hover i {\n        color: #ffbb00; }\n\n@font-face {\n  font-family: 'Brusher';\n  src: url(" + __webpack_require__(123) + "); }\n\n@font-face {\n  font-family: 'HelveticaLight';\n  src: url(" + __webpack_require__(125) + "); }\n\n@font-face {\n  font-family: 'RobotoLightItalic';\n  src: url(" + __webpack_require__(455) + "); }\n\n@font-face {\n  font-family: 'HelveticaBlack';\n  src: url(" + __webpack_require__(126) + "); }\n\n@font-face {\n  font-family: 'HelveticaBold';\n  src: url(" + __webpack_require__(127) + "); }\n\n@font-face {\n  font-family: 'HelveticaHeavy';\n  src: url(" + __webpack_require__(128) + "); }\n\n.content-box {\n  width: 100%;\n  padding: 0 30px; }\n  .content-box h1 {\n    font-size: 1.3em;\n    margin-bottom: 0;\n    margin-top: 30px; }\n  .content-box .first-stage h3 {\n    margin-bottom: 20px;\n    font-family: RobotoLightItalic; }\n    .content-box .first-stage h3 .stage {\n      font-family: HelveticaLight;\n      border: 1px solid #7b7f85;\n      border-radius: 50%;\n      padding: 0 6px; }\n  .content-box .first-stage .selectPack {\n    display: flex;\n    justify-content: space-around;\n    margin-bottom: 20px; }\n    .content-box .first-stage .selectPack .coins {\n      border: 2px solid #eaebed;\n      border-radius: 5px;\n      padding: 4px 17px;\n      cursor: pointer;\n      transition: .25s all;\n      display: flex;\n      flex-direction: column;\n      align-items: center;\n      justify-content: center; }\n      .content-box .first-stage .selectPack .coins .bold {\n        font-weight: bold;\n        font-family: HelveticaBold;\n        font-size: 1.1em; }\n      .content-box .first-stage .selectPack .coins .small {\n        font-size: .8em; }\n      .content-box .first-stage .selectPack .coins:hover {\n        border-color: #feaf00; }\n    .content-box .first-stage .selectPack .active {\n      border-color: #feaf00; }\n  .content-box .first-stage .input input {\n    width: 100%;\n    border: 2px solid transparent;\n    border-bottom-color: #dadce1;\n    font-size: 1.19em;\n    padding-left: 5px;\n    -moz-appearance: textfield;\n    transition: .3s; }\n    .content-box .first-stage .input input::-webkit-outer-spin-button, .content-box .first-stage .input input::-webkit-inner-spin-button {\n      -webkit-appearance: none; }\n    .content-box .first-stage .input input:focus {\n      outline: none;\n      border-bottom-color: #feaf00; }\n    .content-box .first-stage .input input::placeholder {\n      color: rgba(123, 127, 133, 0.9); }\n  .content-box .secondStage {\n    margin-top: 45px; }\n    .content-box .secondStage h3 {\n      margin-bottom: 20px;\n      font-family: RobotoLightItalic; }\n      .content-box .secondStage h3 .stage {\n        font-family: HelveticaLight;\n        border: 1px solid #7b7f85;\n        border-radius: 50%;\n        padding: 0 6px; }\n    .content-box .secondStage .topPayment, .content-box .secondStage .bottomPayment {\n      display: flex;\n      justify-content: space-between; }\n      .content-box .secondStage .topPayment .payment, .content-box .secondStage .bottomPayment .payment {\n        border-radius: 5px;\n        background-color: #eaebed;\n        display: flex;\n        align-items: center;\n        justify-content: center;\n        padding: 5px 0;\n        font-size: 1.4em;\n        cursor: pointer;\n        transition: .20s ease all; }\n        .content-box .secondStage .topPayment .payment i, .content-box .secondStage .bottomPayment .payment i {\n          font-size: 2em;\n          color: #334d6d;\n          margin-left: 5px;\n          transition: .20s ease all; }\n        .content-box .secondStage .topPayment .payment .info, .content-box .secondStage .bottomPayment .payment .info {\n          margin: 0 15px 0 5px; }\n          .content-box .secondStage .topPayment .payment .info .top, .content-box .secondStage .bottomPayment .payment .info .top {\n            text-transform: uppercase;\n            font-size: .7em; }\n          .content-box .secondStage .topPayment .payment .info .bottom, .content-box .secondStage .bottomPayment .payment .info .bottom {\n            font-weight: bold;\n            font-family: HelveticaBold; }\n        .content-box .secondStage .topPayment .payment:hover, .content-box .secondStage .bottomPayment .payment:hover {\n          background-color: #ffaf00;\n          color: white !important; }\n          .content-box .secondStage .topPayment .payment:hover i, .content-box .secondStage .bottomPayment .payment:hover i {\n            transform: rotate(15deg);\n            color: white !important; }\n      .content-box .secondStage .topPayment .actived, .content-box .secondStage .bottomPayment .actived {\n        background-color: #ffaf00;\n        color: white !important; }\n        .content-box .secondStage .topPayment .actived i, .content-box .secondStage .bottomPayment .actived i {\n          transform: rotate(-15deg);\n          color: white !important; }\n    .content-box .secondStage .topPayment, .content-box .secondStage .bottomPayment {\n      margin-bottom: 15px;\n      flex-wrap: wrap; }\n    .content-box .secondStage .bottomPayment .payment:first-child i {\n      margin-bottom: -15px; }\n    .content-box .secondStage .bottomPayment .payment:last-child {\n      width: 189px; }\n      .content-box .secondStage .bottomPayment .payment:last-child i {\n        margin-left: -10px;\n        margin-right: 10px; }\n  .content-box .third-stage {\n    display: flex;\n    flex-direction: column; }\n    .content-box .third-stage .price {\n      margin-top: 55px;\n      margin-bottom: 10px;\n      display: flex;\n      justify-content: space-between;\n      padding-bottom: 5px;\n      border-bottom: 2px solid;\n      align-items: center;\n      font-family: HelveticaBold;\n      font-weight: bold; }\n      .content-box .third-stage .price .left {\n        color: #424156;\n        font-size: 1.2em; }\n      .content-box .third-stage .price .right {\n        font-size: 1.6em; }\n    .content-box .third-stage #btn-buy {\n      border-radius: 6px;\n      background-color: #3d4e6e;\n      width: 125px;\n      height: 29px;\n      display: flex;\n      justify-content: center;\n      align-items: center;\n      text-transform: uppercase;\n      color: white;\n      align-self: flex-end;\n      margin-bottom: 25px;\n      cursor: pointer;\n      font-family: HelveticaBold;\n      font-weight: bold;\n      transition: .25s all; }\n      .content-box .third-stage #btn-buy:hover {\n        background-color: #ffb000; }\n  .content-box .codes .wallet-code, .content-box .codes .pay-code {\n    margin-bottom: 50px;\n    position: relative;\n    display: flex;\n    align-items: center; }\n    .content-box .codes .wallet-code input, .content-box .codes .pay-code input {\n      box-shadow: inset 0 0 4px 0 rgba(0, 0, 0, 0.24);\n      width: 100%;\n      border: 1px solid rgba(0, 0, 0, 0.24);\n      border-bottom-left-radius: 10px;\n      border-top-left-radius: 10px;\n      height: 23px;\n      padding: 0;\n      margin: 0;\n      padding-left: 4px;\n      -moz-appearance: textfield;\n      cursor: pointer; }\n      .content-box .codes .wallet-code input::-webkit-outer-spin-button, .content-box .codes .wallet-code input::-webkit-inner-spin-button, .content-box .codes .pay-code input::-webkit-outer-spin-button, .content-box .codes .pay-code input::-webkit-inner-spin-button {\n        -webkit-appearance: none; }\n      .content-box .codes .wallet-code input:focus, .content-box .codes .pay-code input:focus {\n        outline: none; }\n    .content-box .codes .wallet-code span, .content-box .codes .pay-code span {\n      height: 25px;\n      background-color: #feaf00;\n      display: flex;\n      align-items: center;\n      padding: 0 10px;\n      text-transform: uppercase;\n      color: white;\n      border-bottom-right-radius: 10px;\n      border-top-right-radius: 10px;\n      margin-left: -2px;\n      cursor: pointer;\n      transition: .25s ease all; }\n      .content-box .codes .wallet-code span:hover, .content-box .codes .pay-code span:hover {\n        background-color: #3d4e6e; }\n    .content-box .codes .wallet-code label, .content-box .codes .pay-code label {\n      position: absolute;\n      top: -23px;\n      left: 3px; }\n\n@font-face {\n  font-family: 'Brusher';\n  src: url(" + __webpack_require__(123) + "); }\n\n@font-face {\n  font-family: 'HelveticaLight';\n  src: url(" + __webpack_require__(125) + "); }\n\n@font-face {\n  font-family: 'RobotoLightItalic';\n  src: url(" + __webpack_require__(455) + "); }\n\n@font-face {\n  font-family: 'HelveticaBlack';\n  src: url(" + __webpack_require__(126) + "); }\n\n@font-face {\n  font-family: 'HelveticaBold';\n  src: url(" + __webpack_require__(127) + "); }\n\n@font-face {\n  font-family: 'HelveticaHeavy';\n  src: url(" + __webpack_require__(128) + "); }\n\n.content-box {\n  margin-bottom: 25px; }\n\n.change-password {\n  margin-bottom: 25px; }\n\n.change {\n  display: flex;\n  flex-direction: column; }\n  .change input {\n    border: 2px solid transparent;\n    border-bottom-color: #132a45;\n    width: 100%;\n    font-size: 1.2em;\n    margin-bottom: 20px;\n    transition: .3s all;\n    -moz-appearance: textfield; }\n    .change input::-webkit-outer-spin-button, .change input::-webkit-inner-spin-button {\n      -webkit-appearance: none; }\n    .change input:focus {\n      outline: none;\n      border-bottom-color: #ffb000; }\n  .change .save {\n    border-radius: 6px;\n    background-color: #3d4e6e;\n    width: 125px;\n    height: 29px;\n    display: flex;\n    justify-content: center;\n    align-items: center;\n    text-transform: uppercase;\n    color: white;\n    align-self: flex-end;\n    cursor: pointer;\n    font-family: HelveticaBold;\n    font-weight: bold;\n    transition: .25s all; }\n\nh3 {\n  margin-bottom: 20px;\n  font-family: HelveticaBold;\n  font-weight: bold; }\n  h3 .stage {\n    font-family: HelveticaLight;\n    border: 1px solid #7b7f85;\n    border-radius: 50%;\n    padding: 0 8px;\n    font-size: 1.2em; }\n\nh1 {\n  text-align: center; }\n\n.accept, .error {\n  background: yellowgreen;\n  padding: 4px;\n  width: 100%;\n  text-align: center;\n  text-transform: uppercase;\n  letter-spacing: 2px;\n  border-radius: 5px;\n  margin: 25px 0;\n  color: white; }\n\n.error {\n  background: red; }\n", ""]);
+exports.push([module.i, "@font-face {\n  font-family: 'Brusher';\n  src: url(" + __webpack_require__(123) + "); }\n\n@font-face {\n  font-family: 'HelveticaLight';\n  src: url(" + __webpack_require__(125) + "); }\n\n@font-face {\n  font-family: 'RobotoLightItalic';\n  src: url(" + __webpack_require__(455) + "); }\n\n@font-face {\n  font-family: 'HelveticaBlack';\n  src: url(" + __webpack_require__(126) + "); }\n\n@font-face {\n  font-family: 'HelveticaBold';\n  src: url(" + __webpack_require__(127) + "); }\n\n@font-face {\n  font-family: 'HelveticaHeavy';\n  src: url(" + __webpack_require__(128) + "); }\n\n.mini-menu {\n  background-color: #ebedf0;\n  min-width: 30%; }\n  .mini-menu .my-money .out {\n    display: flex;\n    align-items: center; }\n    .mini-menu .my-money .out .img {\n      max-width: 35px;\n      margin-right: 5px; }\n      .mini-menu .my-money .out .img img {\n        width: 100%;\n        height: 100%; }\n    .mini-menu .my-money .out .bold {\n      font-family: HelveticaBold;\n      font-size: 1.4em;\n      font-weight: bold;\n      margin: 0 5px; }\n  .mini-menu .help {\n    display: flex;\n    flex-direction: column;\n    align-items: flex-start;\n    height: 100%; }\n    .mini-menu .help h2 {\n      margin-bottom: 10px; }\n    .mini-menu .help .settings {\n      margin-bottom: 10px;\n      display: flex;\n      align-items: center;\n      font-size: 1.2em;\n      transition: .25s;\n      cursor: pointer; }\n      .mini-menu .help .settings i {\n        font-size: 1.1em;\n        color: #999999;\n        margin-right: 5px;\n        margin-bottom: -3px;\n        transition: .25s; }\n      .mini-menu .help .settings:hover i {\n        color: #ffbb00; }\n    .mini-menu .help a {\n      margin-bottom: 10px;\n      text-decoration: none;\n      color: black;\n      display: flex;\n      align-items: center;\n      font-size: 1.2em;\n      transition: .25s;\n      cursor: pointer; }\n      .mini-menu .help a i {\n        font-size: 1.1em;\n        color: #999999;\n        margin-right: 5px;\n        margin-bottom: -3px;\n        transition: .25s; }\n      .mini-menu .help a:hover i {\n        color: #ffbb00; }\n\n@font-face {\n  font-family: 'Brusher';\n  src: url(" + __webpack_require__(123) + "); }\n\n@font-face {\n  font-family: 'HelveticaLight';\n  src: url(" + __webpack_require__(125) + "); }\n\n@font-face {\n  font-family: 'RobotoLightItalic';\n  src: url(" + __webpack_require__(455) + "); }\n\n@font-face {\n  font-family: 'HelveticaBlack';\n  src: url(" + __webpack_require__(126) + "); }\n\n@font-face {\n  font-family: 'HelveticaBold';\n  src: url(" + __webpack_require__(127) + "); }\n\n@font-face {\n  font-family: 'HelveticaHeavy';\n  src: url(" + __webpack_require__(128) + "); }\n\n.content-box {\n  width: 100%;\n  padding: 0 30px; }\n  .content-box h1 {\n    font-size: 1.3em;\n    margin-bottom: 0;\n    margin-top: 30px; }\n  .content-box .first-stage h3 {\n    margin-bottom: 20px;\n    font-family: RobotoLightItalic; }\n    .content-box .first-stage h3 .stage {\n      font-family: HelveticaLight;\n      border: 1px solid #7b7f85;\n      border-radius: 50%;\n      padding: 0 6px; }\n  .content-box .first-stage .selectPack {\n    display: flex;\n    justify-content: space-around;\n    margin-bottom: 20px; }\n    .content-box .first-stage .selectPack .coins {\n      border: 2px solid #eaebed;\n      border-radius: 5px;\n      padding: 4px 17px;\n      cursor: pointer;\n      transition: .25s all;\n      display: flex;\n      flex-direction: column;\n      align-items: center;\n      justify-content: center; }\n      .content-box .first-stage .selectPack .coins .bold {\n        font-weight: bold;\n        font-family: HelveticaBold;\n        font-size: 1.1em; }\n      .content-box .first-stage .selectPack .coins .small {\n        font-size: .8em; }\n      .content-box .first-stage .selectPack .coins:hover {\n        border-color: #feaf00; }\n    .content-box .first-stage .selectPack .active {\n      border-color: #feaf00; }\n  .content-box .first-stage .input input {\n    width: 100%;\n    border: 2px solid transparent;\n    border-bottom-color: #dadce1;\n    font-size: 1.19em;\n    padding-left: 5px;\n    -moz-appearance: textfield;\n    transition: .3s; }\n    .content-box .first-stage .input input::-webkit-outer-spin-button, .content-box .first-stage .input input::-webkit-inner-spin-button {\n      -webkit-appearance: none; }\n    .content-box .first-stage .input input:focus {\n      outline: none;\n      border-bottom-color: #feaf00; }\n    .content-box .first-stage .input input::placeholder {\n      color: rgba(123, 127, 133, 0.9); }\n  .content-box .secondStage {\n    margin-top: 45px; }\n    .content-box .secondStage h3 {\n      margin-bottom: 20px;\n      font-family: RobotoLightItalic; }\n      .content-box .secondStage h3 .stage {\n        font-family: HelveticaLight;\n        border: 1px solid #7b7f85;\n        border-radius: 50%;\n        padding: 0 6px; }\n    .content-box .secondStage .topPayment, .content-box .secondStage .bottomPayment {\n      display: flex;\n      justify-content: space-between; }\n      .content-box .secondStage .topPayment .payment, .content-box .secondStage .bottomPayment .payment {\n        border-radius: 5px;\n        background-color: #eaebed;\n        display: flex;\n        align-items: center;\n        justify-content: center;\n        padding: 5px 0;\n        font-size: 1.4em;\n        cursor: pointer;\n        transition: .20s ease all; }\n        .content-box .secondStage .topPayment .payment i, .content-box .secondStage .bottomPayment .payment i {\n          font-size: 2em;\n          color: #334d6d;\n          margin-left: 5px;\n          transition: .20s ease all; }\n        .content-box .secondStage .topPayment .payment .info, .content-box .secondStage .bottomPayment .payment .info {\n          margin: 0 15px 0 5px; }\n          .content-box .secondStage .topPayment .payment .info .top, .content-box .secondStage .bottomPayment .payment .info .top {\n            text-transform: uppercase;\n            font-size: .7em; }\n          .content-box .secondStage .topPayment .payment .info .bottom, .content-box .secondStage .bottomPayment .payment .info .bottom {\n            font-weight: bold;\n            font-family: HelveticaBold; }\n        .content-box .secondStage .topPayment .payment:hover, .content-box .secondStage .bottomPayment .payment:hover {\n          background-color: #ffaf00;\n          color: white !important; }\n          .content-box .secondStage .topPayment .payment:hover i, .content-box .secondStage .bottomPayment .payment:hover i {\n            transform: rotate(15deg);\n            color: white !important; }\n      .content-box .secondStage .topPayment .actived, .content-box .secondStage .bottomPayment .actived {\n        background-color: #ffaf00;\n        color: white !important; }\n        .content-box .secondStage .topPayment .actived i, .content-box .secondStage .bottomPayment .actived i {\n          transform: rotate(-15deg);\n          color: white !important; }\n    .content-box .secondStage .topPayment, .content-box .secondStage .bottomPayment {\n      margin-bottom: 15px;\n      flex-wrap: wrap; }\n    .content-box .secondStage .bottomPayment .payment:first-child i {\n      margin-bottom: -15px; }\n    .content-box .secondStage .bottomPayment .payment:last-child {\n      width: 189px; }\n      .content-box .secondStage .bottomPayment .payment:last-child i {\n        margin-left: -10px;\n        margin-right: 10px; }\n  .content-box .third-stage {\n    display: flex;\n    flex-direction: column; }\n    .content-box .third-stage .price {\n      margin-top: 55px;\n      margin-bottom: 10px;\n      display: flex;\n      justify-content: space-between;\n      padding-bottom: 5px;\n      border-bottom: 2px solid;\n      align-items: center;\n      font-family: HelveticaBold;\n      font-weight: bold; }\n      .content-box .third-stage .price .left {\n        color: #424156;\n        font-size: 1.2em; }\n      .content-box .third-stage .price .right {\n        font-size: 1.6em; }\n    .content-box .third-stage #btn-buy {\n      border-radius: 6px;\n      background-color: #3d4e6e;\n      width: 125px;\n      height: 29px;\n      display: flex;\n      justify-content: center;\n      align-items: center;\n      text-transform: uppercase;\n      color: white;\n      align-self: flex-end;\n      margin-bottom: 25px;\n      cursor: pointer;\n      font-family: HelveticaBold;\n      font-weight: bold;\n      transition: .25s all; }\n      .content-box .third-stage #btn-buy:hover {\n        background-color: #ffb000; }\n  .content-box .codes .wallet-code, .content-box .codes .pay-code {\n    margin-bottom: 50px;\n    position: relative;\n    display: flex;\n    align-items: center; }\n    .content-box .codes .wallet-code input, .content-box .codes .pay-code input {\n      box-shadow: inset 0 0 4px 0 rgba(0, 0, 0, 0.24);\n      width: 100%;\n      border: 1px solid rgba(0, 0, 0, 0.24);\n      border-bottom-left-radius: 10px;\n      border-top-left-radius: 10px;\n      height: 23px;\n      padding: 0;\n      margin: 0;\n      padding-left: 4px;\n      -moz-appearance: textfield;\n      cursor: pointer; }\n      .content-box .codes .wallet-code input::-webkit-outer-spin-button, .content-box .codes .wallet-code input::-webkit-inner-spin-button, .content-box .codes .pay-code input::-webkit-outer-spin-button, .content-box .codes .pay-code input::-webkit-inner-spin-button {\n        -webkit-appearance: none; }\n      .content-box .codes .wallet-code input:focus, .content-box .codes .pay-code input:focus {\n        outline: none; }\n    .content-box .codes .wallet-code span, .content-box .codes .pay-code span {\n      height: 25px;\n      background-color: #feaf00;\n      display: flex;\n      align-items: center;\n      padding: 0 10px;\n      text-transform: uppercase;\n      color: white;\n      border-bottom-right-radius: 10px;\n      border-top-right-radius: 10px;\n      margin-left: -2px;\n      cursor: pointer;\n      transition: .25s ease all; }\n      .content-box .codes .wallet-code span:hover, .content-box .codes .pay-code span:hover {\n        background-color: #3d4e6e; }\n    .content-box .codes .wallet-code label, .content-box .codes .pay-code label {\n      position: absolute;\n      top: -23px;\n      left: 3px; }\n\n@font-face {\n  font-family: 'Brusher';\n  src: url(" + __webpack_require__(123) + "); }\n\n@font-face {\n  font-family: 'HelveticaLight';\n  src: url(" + __webpack_require__(125) + "); }\n\n@font-face {\n  font-family: 'RobotoLightItalic';\n  src: url(" + __webpack_require__(455) + "); }\n\n@font-face {\n  font-family: 'HelveticaBlack';\n  src: url(" + __webpack_require__(126) + "); }\n\n@font-face {\n  font-family: 'HelveticaBold';\n  src: url(" + __webpack_require__(127) + "); }\n\n@font-face {\n  font-family: 'HelveticaHeavy';\n  src: url(" + __webpack_require__(128) + "); }\n\n.content-box {\n  margin-bottom: 25px; }\n\n.change-password {\n  margin-bottom: 25px; }\n\n.change {\n  display: flex;\n  flex-direction: column; }\n  .change input {\n    border: 2px solid transparent;\n    border-bottom-color: #132a45;\n    width: 100%;\n    font-size: 1.2em;\n    margin-bottom: 20px;\n    transition: .3s all;\n    -moz-appearance: textfield; }\n    .change input::-webkit-outer-spin-button, .change input::-webkit-inner-spin-button {\n      -webkit-appearance: none; }\n    .change input:focus {\n      outline: none;\n      border-bottom-color: #ffb000; }\n  .change .save {\n    border-radius: 6px;\n    background-color: #3d4e6e;\n    width: 125px;\n    height: 29px;\n    display: flex;\n    justify-content: center;\n    align-items: center;\n    text-transform: uppercase;\n    color: white;\n    align-self: flex-end;\n    cursor: pointer;\n    font-family: HelveticaBold;\n    font-weight: bold;\n    transition: .25s all; }\n\nh3 {\n  margin-bottom: 20px;\n  font-family: HelveticaBold;\n  font-weight: bold; }\n  h3 .stage {\n    font-family: HelveticaLight;\n    border: 1px solid #7b7f85;\n    border-radius: 50%;\n    padding: 0 8px;\n    font-size: 1.2em; }\n\nh1 {\n  text-align: center; }\n\n.accept, .error {\n  background: yellowgreen;\n  padding: 4px;\n  width: 100%;\n  text-align: center;\n  text-transform: uppercase;\n  letter-spacing: 2px;\n  border-radius: 5px;\n  margin: 25px 0;\n  color: white; }\n\n.error {\n  background: red; }\n\n.change-tel input {\n  -moz-appearance: textfield; }\n  .change-tel input::-webkit-outer-spin-button, .change-tel input::-webkit-inner-spin-button {\n    -webkit-appearance: none; }\n  .change-tel input:focus {\n    outline: none; }\n", ""]);
 
 // exports
 

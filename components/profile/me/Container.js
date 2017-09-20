@@ -26,7 +26,7 @@ export default class Container extends Component {
             global_coin_cost,
 
 
-            settingsPage,
+            languagePage,
             updateSettings,
             updated,
             hash
@@ -46,10 +46,11 @@ export default class Container extends Component {
                         coin_cost={coin_cost}
                         crypto={crypto}
                         user={user}
+                        contentPage={languagePage.content}
                     />
                     :
                     < Settings
-                        settingsPage={ settingsPage }
+                        settingsPage={ languagePage.settings }
                         updateSettings={ updateSettings }
                         updated={ updated }
                         hash={ hash }
