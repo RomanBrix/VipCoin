@@ -25,9 +25,17 @@ if($type === "header"){
     $link = mysqli_connect($host, $user, $password, $database)
     or die("Ошибка " . mysqli_error($link));
     if($link) {
-        $result = mysqli_query($link, "SELECT login FROM users WHERE hash='". $hash ."'");
-        $userName = mysqli_fetch_assoc($result);
-        print_r(json_encode($userName['login']));
+        $firstResult = mysqli_query($link, "SELECT name FROM users WHERE hash='". $hash ."'");
+        $userName = mysqli_fetch_assoc($firstResult);
+
+        if($userName['name'] !== "none"){
+            print_r(json_encode($userName['name']));
+        }else {
+
+            $result = mysqli_query($link, "SELECT login FROM users WHERE hash='" . $hash . "'");
+            $userLogin = mysqli_fetch_assoc($result);
+            print_r(json_encode($userLogin['login']));
+        }
 
         //        $newUserCoins = $userCoins['vipcoins_value'] + $coins;
 //        print_r(json_encode($userName['login']));

@@ -22,7 +22,8 @@ export default class Header extends Component {
             btc: 0,
             eth: 0,
             vpc: 0,
-            NAME: undefined
+            NAME: undefined,
+            exit: false,
         };
         if (!props.profile) {
             props.setLanguage(this.state.language);
@@ -109,9 +110,6 @@ export default class Header extends Component {
         const that = this;
         axios.get(`http://localhost:8888/vipcoin/profile/userInfo.php`, {params: {type:"header",hash:loggedUser}})
             .then(function(res) {
-                // console.log(res);
-                // dispatch({type: act.GET_PACKAGES_INFO, packages: res.data})
-                // NAME = res.data;
                 that.setState({
                     NAME: res.data
                 })
@@ -126,9 +124,9 @@ export default class Header extends Component {
         axios.all([this.getLTC(), this.getBTC(),this.getETH()])
             .then(axios.spread(function (ltc, btc, eth) {
                 that.setState({
-                    ltc: ltc.data.ticker.price,
-                    btc: btc.data.ticker.price,
-                    eth: eth.data.ticker.price,
+                    ltc: parseFloat(ltc.data.ticker.price).toFixed(2),
+                    btc: parseFloat(btc.data.ticker.price).toFixed(2),
+                    eth: parseFloat(eth.data.ticker.price).toFixed(2),
 
                 })
             }));
@@ -168,7 +166,7 @@ export default class Header extends Component {
            return item.language === this.state.language;
         });
         const { layouts } = lang[0];
-        const { ltc, btc, eth,vpc, NAME } = this.state;
+        const { ltc, btc, eth,vpc, NAME, exit } = this.state;
 
 
         let LogoUrl = PAGES.MAIN;
@@ -202,6 +200,7 @@ export default class Header extends Component {
                 eng: "."+FLAG_ENG,
             }
         }
+        // console.log(btc).toFixed(2));
         return (
             <div className="header">
                 <div className="lookAtTopOfHisHead">
@@ -209,7 +208,7 @@ export default class Header extends Component {
                         <div className="currencys" onClick={()=>{
                             this.getCurrVal();
                         }}>
-                            <div className="cryptoCurrency">BTC/USD: <span>{btc}</span></div>
+                            <div className="cryptoCurrency">BTC/USD: <span>{+btc}</span></div>
                             <div className="cryptoCurrency">LTC/USD: <span>{ltc}</span></div>
                             <div className="cryptoCurrency">ETH/USD: <span>{eth}</span></div>
                             <div className="cryptoCurrency">VPC/USD: <span>{vpc}</span></div>
@@ -279,11 +278,11 @@ export default class Header extends Component {
                                 {layouts.header.btnFAQ}
                             </a>
                         </li>
-                        <li>
-                            <a href={NewsUrl}>
-                                {layouts.header.btnNews}
-                            </a>
-                        </li>
+                        {/*<li>*/}
+                            {/*<a href={NewsUrl}>*/}
+                                {/*{layouts.header.btnNews}*/}
+                            {/*</a>*/}
+                        {/*</li>*/}
                         <li>
                             <a href={ContactsUrl}>
                                 {layouts.header.btnContacts}
@@ -317,6 +316,28 @@ export default class Header extends Component {
                     }}>
                         <i className="icon-user"/>
                         {NAME}
+                        {profile ?
+                            <div className="exit">
+                                <i className="icon-chevron-down" onClick={(e)=>{
+                                    this.setState({
+                                        exit: !exit
+                                    });
+                                    e.stopPropagation();
+                                }}/>
+                                {exit ?
+                                    <div className="btn-exit" onClick={(e)=>{
+                                        document.cookie= "user=1; expires=Thu, 01 Jan 1970 00:00:00 UTC; path=/";
+                                        setTimeout(()=>{
+                                            window.location.href = '../index.html';
+                                        },200);
+                                        e.stopPropagation();
+                                    }}>
+                                        <i className="icon-signout"/>
+                                        {layouts.header.login.btnExit}
+                                    </div>
+                                    :""
+                                }
+                            </div>:""}
                     </div>
                 }
 

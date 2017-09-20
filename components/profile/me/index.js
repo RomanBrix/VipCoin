@@ -4,7 +4,8 @@ import {
     getHash,
     getPackages,
     getUserInfo,
-    getCrypto
+    getCrypto,
+    updateSettings
 } from '../../../redux/profile/profile-actions.js';
 import App from './App';
 
@@ -18,6 +19,7 @@ export default connect(
         getHash,
         getPackages,
         getUserInfo,
-        getCrypto
+        getCrypto,
+        updateSettings
 
     })(App);

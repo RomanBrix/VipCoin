@@ -41,11 +41,10 @@ export default class App extends Component {
             coins_value,
             coin_cost,
             user,
-            crypto
+            crypto,
+            updateSettings,
+            updated
         } = this.props;
-        console.log( global_coin_cost );
-        console.log( coins_value );
-        console.log( coin_cost );
 
         const lang = translate.filter(item =>{
             return item.language === language;
@@ -64,6 +63,10 @@ export default class App extends Component {
                             coins_value={ coins_value }
                             coin_cost={ coin_cost }
                             global_coin_cost={ global_coin_cost }
+                            settingsPage={pages.profile.settings}
+                            updateSettings={ updateSettings }
+                            updated={ updated }
+                            hash={ hash }
                         />
                 </div>
                 <Footer

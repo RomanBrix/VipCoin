@@ -2,7 +2,7 @@ import React, {Component} from 'react';
 
 export default class Menu extends Component {
     render(){
-        const { user, global_coin_cost } = this.props;
+        const { user, global_coin_cost, switchSettings } = this.props;
         let options = {
             text: "USD:",
             style: {
@@ -35,7 +35,7 @@ export default class Menu extends Component {
                 </div>
                 <div className="help">
                     <h2>Помощь:</h2>
-                    <div className="settings">
+                    <div className="settings" onClick={switchSettings}>
                         <i className="icon-settings"/>
                         Настройки
                     </div>

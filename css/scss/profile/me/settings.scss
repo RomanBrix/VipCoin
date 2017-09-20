@@ -1,0 +1,74 @@
+@import "Fonts";
+.content-box{
+  margin-bottom: 25px;
+}
+.change-password {
+  margin-bottom: 25px;
+}
+.change {
+  display: flex;
+  flex-direction: column;
+  input {
+    border: 2px solid transparent;
+    border-bottom-color: rgba(19, 42, 69, 1);
+    width: 100%;
+    font-size: 1.2em;
+    margin-bottom: 20px;
+    transition: .3s all;
+    -moz-appearance: textfield;
+    &::-webkit-outer-spin-button,
+    &::-webkit-inner-spin-button {
+      -webkit-appearance: none;
+    }
+    &:focus {
+      outline: none;
+      border-bottom-color: rgba(255, 176, 0, 1);
+    }
+  }
+
+  .save{
+    border-radius: 6px;
+    background-color: #3d4e6e;
+    width: 125px;
+    height: 29px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-transform: uppercase;
+    color: white;
+    align-self: flex-end;
+    cursor: pointer;
+    font-family: HelveticaBold;
+    font-weight: bold;
+    transition: .25s all;
+  }
+}
+h3{
+  margin-bottom: 20px;
+  font-family: HelveticaBold;
+  font-weight: bold;
+  .stage{
+    font-family: HelveticaLight;
+    border: 1px solid rgba(123, 127, 133, 1);
+    border-radius: 50%;
+    padding: 0 8px;
+    font-size: 1.2em;
+  }
+}
+h1{
+  text-align: center;
+}
+.accept, .error{
+  background: yellowgreen;
+  padding: 4px;
+  width: 100%;
+  text-align: center;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  border-radius: 5px;
+  margin: 25px 0;
+  color: white;
+}
+.error{
+  background: red;
+}
