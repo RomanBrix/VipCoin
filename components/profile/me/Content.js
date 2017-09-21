@@ -228,27 +228,22 @@ export default class Content extends Component {
 
                     <div className="codes">
                         <div className="wallet-code">
-                            <input type="text" id="wallet_code" ref="wallet_code" disabled/>
+                            <input type="text" id="wallet_code" ref="wallet_code" readOnly/>
                             <label htmlFor="wallet_code">{contentPage.walletLink}:</label>
                             <span className="copy" onClick={()=>{
                                 const {wallet_code} = this.refs;
                                 wallet_code.select();
-
-                                try {
-                                    let successful = document.execCommand('copy');
-                                    let msg = successful ? 'successful' : 'unsuccessful';
-                                    console.log('Copying text command was ' + msg);
-                                    console.log(document.execCommand('copy'));
-                                } catch (err) {
-                                    console.log('Oops, unable to copy');
-                                }
                                 document.execCommand('copy');
                             }}>{contentPage.copy}</span>
                         </div>
                         <div className="pay-code">
-                            <input type="text" id="pay_code" ref="pay_code" disabled/>
+                            <input type="text" id="pay_code" ref="pay_code" readOnly/>
                             <label htmlFor="pay_code">{contentPage.payCode}:</label>
-                            <span className="copy">{contentPage.copy}</span>
+                            <span className="copy"  onClick={()=>{
+                                const { pay_code } = this.refs;
+                                pay_code.select();
+                                document.execCommand('copy');
+                            }}>{contentPage.copy}</span>
                         </div>
                     </div>
 

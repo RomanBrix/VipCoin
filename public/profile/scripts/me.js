@@ -29846,7 +29846,7 @@ var Content = function (_Component) {
                     _react2.default.createElement(
                         "div",
                         { className: "wallet-code" },
-                        _react2.default.createElement("input", { type: "text", id: "wallet_code", ref: "wallet_code", disabled: true }),
+                        _react2.default.createElement("input", { type: "text", id: "wallet_code", ref: "wallet_code", readOnly: true }),
                         _react2.default.createElement(
                             "label",
                             { htmlFor: "wallet_code" },
@@ -29859,15 +29859,6 @@ var Content = function (_Component) {
                                     var wallet_code = _this3.refs.wallet_code;
 
                                     wallet_code.select();
-
-                                    try {
-                                        var successful = document.execCommand('copy');
-                                        var msg = successful ? 'successful' : 'unsuccessful';
-                                        console.log('Copying text command was ' + msg);
-                                        console.log(document.execCommand('copy'));
-                                    } catch (err) {
-                                        console.log('Oops, unable to copy');
-                                    }
                                     document.execCommand('copy');
                                 } },
                             contentPage.copy
@@ -29876,7 +29867,7 @@ var Content = function (_Component) {
                     _react2.default.createElement(
                         "div",
                         { className: "pay-code" },
-                        _react2.default.createElement("input", { type: "text", id: "pay_code", ref: "pay_code", disabled: true }),
+                        _react2.default.createElement("input", { type: "text", id: "pay_code", ref: "pay_code", readOnly: true }),
                         _react2.default.createElement(
                             "label",
                             { htmlFor: "pay_code" },
@@ -29885,7 +29876,12 @@ var Content = function (_Component) {
                         ),
                         _react2.default.createElement(
                             "span",
-                            { className: "copy" },
+                            { className: "copy", onClick: function onClick() {
+                                    var pay_code = _this3.refs.pay_code;
+
+                                    pay_code.select();
+                                    document.execCommand('copy');
+                                } },
                             contentPage.copy
                         )
                     )
