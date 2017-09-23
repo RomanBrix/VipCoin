@@ -2,7 +2,9 @@ import React from 'react';
 import { connect } from 'react-redux';
 import {
     getGenInfo,
-    setGenerally
+    setGenerally,
+    getAdminUser
+
 } from '../../../redux/admin/admin-actions.js';
 import App from './App';
 
@@ -14,6 +16,8 @@ export default connect(
     mapStateToProps,
     {
         getGenInfo,
-        setGenerally
+        setGenerally,
+        getAdminUser
+
 
     })(App);

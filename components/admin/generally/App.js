@@ -7,7 +7,9 @@ export default class App extends Component {
     constructor(props){
         super(props);
         this.state = {
-            user: this.getCookie("user")
+            user: this.getCookie("user"),
+            adminUser: this.getCookie("admin_user")
+
         };
         // if(this.state.user === undefined){
         //     window.location.href = '../index.html';
@@ -15,6 +17,7 @@ export default class App extends Component {
         //     window.location.href = '../index.html';
         // }
 
+        props.getAdminUser("@secret?Code/For|Admin\\UserCheck@",this.state.adminUser);
         props.getGenInfo("getInfo");
     }
 
@@ -26,17 +29,33 @@ export default class App extends Component {
     }
 
     render(){
-        const { hash, generallyInfo, setGenerally, updated, getGenInfo} = this.props;
+        const { reduxAdminUser, hash, generallyInfo, setGenerally, updated, getGenInfo} = this.props;
+        const {adminUser} = this.state;
 
         return (
             <div className="admin">
                 <Header />
-                <Container
-                    generallyInfo={ generallyInfo }
-                    setGenerally={ setGenerally }
-                    updated={ updated }
-                    getGenInfo={ getGenInfo }
-                />
+                {(adminUser && reduxAdminUser === "HelloAdmin") || (adminUser === reduxAdminUser) ?
+                    <Container
+                        generallyInfo={generallyInfo}
+                        setGenerally={setGenerally}
+                        updated={updated}
+                        getGenInfo={getGenInfo}
+                    />
+                    :
+                    <div className="admin-enter">
+                        <h2>Ввойдите:</h2>
+                        <input type="text" ref="enterLog" placeholder="Login"/>
+                        <input type="password" ref="enterPass"/>
+                        <div className="btn-enter" onClick={() => {
+                            const {enterLog, enterPass} = this.refs;
+                            const {getAdminUser} = this.props;
+                            getAdminUser("@secret?Code/For|Admin\\User@", enterLog.value, enterPass.value);
+                        }}>
+                            Ввойти
+                        </div>
+                    </div>
+                }
             </div>
         );
     }

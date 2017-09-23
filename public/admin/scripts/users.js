@@ -27905,7 +27905,8 @@ var InitialState = {
     },
     packages: [],
     users: [],
-    updated: ""
+    updated: "",
+    reduxAdminUser: ""
 };
 
 var adminReducers = function adminReducers() {
@@ -27920,7 +27921,8 @@ var adminReducers = function adminReducers() {
                 generallyInfo: state.generallyInfo,
                 updated: state.updated,
                 users: state.users,
-                packages: state.packages
+                packages: state.packages,
+                reduxAdminUser: state.reduxAdminUser
 
             };
 
@@ -27930,7 +27932,8 @@ var adminReducers = function adminReducers() {
                 generallyInfo: action.info,
                 updated: state.updated,
                 users: state.users,
-                packages: state.packages
+                packages: state.packages,
+                reduxAdminUser: state.reduxAdminUser
 
             };
         case _actionsAndUrl.act.SET_GEN_INFO:
@@ -27939,7 +27942,9 @@ var adminReducers = function adminReducers() {
                 generallyInfo: state.generallyInfo,
                 updated: action.updated,
                 users: state.users,
-                packages: state.packages
+                packages: state.packages,
+                reduxAdminUser: state.reduxAdminUser
+
             };
         case _actionsAndUrl.act.GET_USERS_INFO:
             return {
@@ -27947,7 +27952,9 @@ var adminReducers = function adminReducers() {
                 generallyInfo: state.generallyInfo,
                 updated: state.updated,
                 users: action.users,
-                packages: state.packages
+                packages: state.packages,
+                reduxAdminUser: state.reduxAdminUser
+
             };
 
         case _actionsAndUrl.act.GET_PACKAGES_INFO:
@@ -27956,7 +27963,19 @@ var adminReducers = function adminReducers() {
                 generallyInfo: state.generallyInfo,
                 updated: state.updated,
                 users: state.users,
-                packages: action.packages
+                packages: action.packages,
+                reduxAdminUser: state.reduxAdminUser
+
+            };
+        case "ADMIN_USER":
+            return {
+                request: false,
+                generallyInfo: state.generallyInfo,
+                updated: state.updated,
+                users: state.users,
+                packages: state.packages,
+                reduxAdminUser: action.reduxAdminUser
+
             };
 
         default:
@@ -29363,6 +29382,7 @@ exports.f = __webpack_require__(294) ? gOPD : function getOwnPropertyDescriptor(
 Object.defineProperty(exports, "__esModule", {
     value: true
 });
+exports.getAdminUser = getAdminUser;
 exports.getGenInfo = getGenInfo;
 exports.setGenerally = setGenerally;
 exports.getUsers = getUsers;
@@ -29377,6 +29397,22 @@ var _axios2 = _interopRequireDefault(_axios);
 var _actionsAndUrl = __webpack_require__(124);
 
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+function getAdminUser(type, login, password) {
+    return function (dispatch) {
+        dispatch({ type: 'REQUEST' });
+
+        _axios2.default.get(_actionsAndUrl.GLOB_URL + 'getAdminUser.php', { params: { type: type, login: login, password: password } }).then(function (res) {
+            console.log(res);
+            dispatch({
+                type: "ADMIN_USER",
+                reduxAdminUser: res.data
+            });
+        }).catch(function (error) {
+            console.log(error);
+        });
+    };
+}
 
 function getGenInfo(type) {
     return function (dispatch) {
@@ -29550,15 +29586,6 @@ var Header = function (_Component) {
                             'div',
                             { className: '' },
                             '\u041E\u0441\u043D\u043E\u0432\u043D\u043E\u0435'
-                        )
-                    ),
-                    _react2.default.createElement(
-                        'a',
-                        { href: '' },
-                        _react2.default.createElement(
-                            'div',
-                            { className: '' },
-                            '\u041D\u043E\u0432\u043E\u0441\u0442\u0438'
                         )
                     )
                 ),
@@ -37140,7 +37167,8 @@ var mapStateToProps = function mapStateToProps(state) {
 
 exports.default = (0, _reactRedux.connect)(mapStateToProps, {
     getUsers: _adminActions.getUsers,
-    setCoinsToUser: _adminActions.setCoinsToUser
+    setCoinsToUser: _adminActions.setCoinsToUser,
+    getAdminUser: _adminActions.getAdminUser
 
 })(_App2.default);
 
@@ -37190,19 +37218,28 @@ var App = function (_Component) {
         var _this = _possibleConstructorReturn(this, (App.__proto__ || Object.getPrototypeOf(App)).call(this, props));
 
         _this.state = {
-            user: _this.getCookie("user")
+            user: _this.getCookie("user"),
+            adminUser: _this.getCookie("admin_user")
         };
         // if(this.state.user === undefined){
         //     window.location.href = '../index.html';
         // }else if(this.state.user.length < 15){
         //     window.location.href = '../index.html';
         // }
+        props.getAdminUser('@secret?Code/For|Admin\\UserCheck@', _this.state.adminUser);
         props.getUsers("getUsersInfo");
 
         return _this;
     }
 
     _createClass(App, [{
+        key: 'componentWillReceiveProps',
+        value: function componentWillReceiveProps(nextProps) {
+            this.setState({
+                adminUser: this.getCookie("admin_user")
+            });
+        }
+    }, {
         key: 'getCookie',
         value: function getCookie(name) {
             var matches = document.cookie.match(new RegExp("(?:^|; )" + name.replace(/([\.$?*|{}\(\)\[\]\\\/\+^])/g, '\\$1') + "=([^;]*)"));
@@ -37211,24 +37248,49 @@ var App = function (_Component) {
     }, {
         key: 'render',
         value: function render() {
+            var _this2 = this;
+
             var _props = this.props,
-                hash = _props.hash,
+                reduxAdminUser = _props.reduxAdminUser,
                 users = _props.users,
                 setCoinsToUser = _props.setCoinsToUser,
                 updated = _props.updated,
                 getUsers = _props.getUsers;
+            var adminUser = this.state.adminUser;
 
 
             return _react2.default.createElement(
                 'div',
                 { className: 'admin' },
                 _react2.default.createElement(_Header2.default, null),
-                _react2.default.createElement(_Container2.default, {
+                adminUser && reduxAdminUser === "HelloAdmin" || adminUser === reduxAdminUser ? _react2.default.createElement(_Container2.default, {
                     users: users,
                     setCoinsToUser: setCoinsToUser,
                     updated: updated,
                     getUsers: getUsers
-                })
+                }) : _react2.default.createElement(
+                    'div',
+                    { className: 'admin-enter' },
+                    _react2.default.createElement(
+                        'h2',
+                        null,
+                        '\u0412\u0432\u043E\u0439\u0434\u0438\u0442\u0435:'
+                    ),
+                    _react2.default.createElement('input', { type: 'text', ref: 'enterLog', placeholder: 'Login' }),
+                    _react2.default.createElement('input', { type: 'password', ref: 'enterPass' }),
+                    _react2.default.createElement(
+                        'div',
+                        { className: 'btn-enter', onClick: function onClick() {
+                                var _refs = _this2.refs,
+                                    enterLog = _refs.enterLog,
+                                    enterPass = _refs.enterPass;
+                                var getAdminUser = _this2.props.getAdminUser;
+
+                                getAdminUser('@secret?Code/For|Admin\\User@', enterLog.value, enterPass.value);
+                            } },
+                        '\u0412\u0432\u043E\u0439\u0442\u0438'
+                    )
+                )
             );
         }
     }]);

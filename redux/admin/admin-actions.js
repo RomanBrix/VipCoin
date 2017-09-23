@@ -1,6 +1,25 @@
 import axios from 'axios';
 import { GLOB_URL, act } from "./actionsAndUrl";
 
+export function getAdminUser (type, login, password) {
+    return dispatch => {
+        dispatch({type: 'REQUEST'});
+
+        axios.get(`${GLOB_URL}getAdminUser.php`, {params: {type, login, password}})
+            .then((res) => {
+              console.log(res);
+                dispatch({
+                    type: "ADMIN_USER",
+                    reduxAdminUser: res.data,
+                });
+            })
+            .catch((error) => {
+                console.log(error);
+            })
+    }
+}
+
+
 export function getGenInfo (type) {
     return dispatch => {
         dispatch({type: 'REQUEST'});

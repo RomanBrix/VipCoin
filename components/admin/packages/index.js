@@ -2,7 +2,8 @@ import React from 'react';
 import { connect } from 'react-redux';
 import {
     getPackages,
-    setNewPackVal
+    setNewPackVal,
+    getAdminUser
 } from '../../../redux/admin/admin-actions.js';
 import App from './App';
 
@@ -14,6 +15,7 @@ export default connect(
     mapStateToProps,
     {
         getPackages,
-        setNewPackVal
+        setNewPackVal,
+        getAdminUser
 
     })(App);

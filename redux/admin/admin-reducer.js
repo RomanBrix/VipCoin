@@ -9,7 +9,8 @@ const InitialState = {
     },
     packages: [],
     users: [],
-    updated: ""
+    updated: "",
+    reduxAdminUser: ""
 };
 
 const adminReducers = (state = InitialState, action) => {
@@ -21,7 +22,8 @@ const adminReducers = (state = InitialState, action) => {
                 generallyInfo: state.generallyInfo,
                 updated: state.updated,
                 users: state.users,
-                packages: state.packages
+                packages: state.packages,
+                reduxAdminUser: state.reduxAdminUser
 
             };
 
@@ -31,7 +33,8 @@ const adminReducers = (state = InitialState, action) => {
                 generallyInfo: action.info,
                 updated: state.updated,
                 users: state.users,
-                packages: state.packages
+                packages: state.packages,
+                reduxAdminUser: state.reduxAdminUser
 
             };
         case act.SET_GEN_INFO:
@@ -40,7 +43,9 @@ const adminReducers = (state = InitialState, action) => {
                 generallyInfo: state.generallyInfo,
                 updated: action.updated,
                 users: state.users,
-                packages: state.packages
+                packages: state.packages,
+                reduxAdminUser: state.reduxAdminUser
+
             };
         case act.GET_USERS_INFO:
             return{
@@ -48,7 +53,9 @@ const adminReducers = (state = InitialState, action) => {
                 generallyInfo: state.generallyInfo,
                 updated: state.updated,
                 users: action.users,
-                packages: state.packages
+                packages: state.packages,
+                reduxAdminUser: state.reduxAdminUser
+
             };
 
         case act.GET_PACKAGES_INFO:
@@ -57,7 +64,19 @@ const adminReducers = (state = InitialState, action) => {
                 generallyInfo: state.generallyInfo,
                 updated: state.updated,
                 users: state.users,
-                packages: action.packages
+                packages: action.packages,
+                reduxAdminUser: state.reduxAdminUser
+
+            };
+        case "ADMIN_USER":
+            return{
+                request: false,
+                generallyInfo: state.generallyInfo,
+                updated: state.updated,
+                users: state.users,
+                packages: state.packages,
+                reduxAdminUser: action.reduxAdminUser
+
             };
 
         default: return state;

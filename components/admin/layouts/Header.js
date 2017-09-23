@@ -20,11 +20,11 @@ export default class Header extends Component {
                          Основное
                         </div>
                     </a>
-                    <a href="">
-                        <div className="">
-                            Новости
-                        </div>
-                    </a>
+                    {/*<a href="">*/}
+                        {/*<div className="">*/}
+                            {/*Новости*/}
+                        {/*</div>*/}
+                    {/*</a>*/}
                 </div>
 
 
