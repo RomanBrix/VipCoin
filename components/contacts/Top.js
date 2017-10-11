@@ -12,15 +12,15 @@ export default class Top extends Component {
                 <div className="top-services">
                     <a href={`tel:${CONTACTS.TELEPHONE}`}>
                         <i className="icon-call-phone"/>
-                        +380-73-007-003-2
+                        +380-11-111-11-11
                     </a>
                     <a href={`skype:${CONTACTS.SKYPE}`}>
                         <i className="icon-skype"/>
-                        Roma4Rock
+                        Skype
                     </a>
                     <a href={`mailto:${CONTACTS.MAIL}`}>
                         <i className="icon-mail"/>
-                        StetcukRoman@gmail.com
+                        test@gmail.com
                     </a>
                 </div>
                 <div className="bottom-services">

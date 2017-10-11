@@ -1,0 +1,88 @@
+.invest{
+  margin-top: 15px;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  background-color: #f6fbfe;
+
+  h1{
+    color: black !important;
+    text-align: center;
+    margin-top: 40px;
+  }
+
+  .table-container{
+    width: 80%;
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+
+    table{
+      width: 800px;
+      border: 1px solid rgb(248, 248, 248);
+      box-shadow: 0 0 16px 0 rgba(0, 0, 0, 0.05);
+      font-size: 17px;
+      text-align: center;
+      border-spacing: 0;
+      margin-bottom: 25px;
+
+      thead {
+        tr {
+          background: #eaeaea;
+          th {
+            padding: 20px 0;
+            font-family: HelveticaBold;
+
+            &:first-child{
+
+            }
+            &:nth-child(2){
+
+            }
+            &:last-child{
+
+            }
+          }
+        }
+      }
+      tbody{
+        tr{
+          transition: .25s;
+          td{
+            padding: 20px 0;
+
+            &:nth-child(even) {
+              color: #ffae00;
+            }
+            &:nth-child(3) {
+              //font-family: HelveticaBold;
+            }
+          }
+
+          .btn-more{
+            color: white;
+            text-transform: uppercase;
+            letter-spacing: 2px;
+            cursor: pointer;
+            background: #404e6c;
+            transition: .25s;
+
+            &:hover{
+              background: #faad31;
+            }
+          }
+
+          &:nth-child(even) {
+            background: #f8f8f8;
+          }
+          &:hover{
+            background: rgba(234, 234, 234, .6);
+          }
+        }
+      }
+    }
+    @import "./MobileTable";
+  }
+}

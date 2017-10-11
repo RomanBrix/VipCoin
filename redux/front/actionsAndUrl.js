@@ -1,4 +1,4 @@
-export const GLOB_URL = "http://localhost:8888/vipcoin/";
+export const GLOB_URL = "http://localhost:8888/vipcoin/"; //https://vipcoin.technology/
 
 export const act = {
     REQUEST: "REQUEST",
@@ -9,5 +9,6 @@ export const act = {
     USER_LOGIN: "LOGIN_REQUEST",
     PACKAGES: "GET_PACKAGES",
     COINS_INFO: "GET_COINS_INFO",
-    COIN_COST: "GET_COIN_COST"
+    COIN_COST: "GET_COIN_COST",
+    TABLE_INVEST: "TABLE_INVEST"
 };

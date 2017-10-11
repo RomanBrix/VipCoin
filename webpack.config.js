@@ -5,6 +5,7 @@ const NODE_ENV = process.env.NODE_ENV || 'dev';
 module.exports= {
     entry: {
         'scripts/main': './points/Main.js',
+        'scripts/investments':'./points/investments',
         'scripts/packages': './points/Packages.js',
         'scripts/faq': './points/Faq.js',
         'scripts/contacts': './points/contacts.js',

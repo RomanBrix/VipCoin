@@ -10,7 +10,7 @@ export default class Header extends Component {
                     <a href="users.html">
                         <div className="">Пользователи</div>
                     </a>
-                    <a href="packages.html">
+                    <a href="index.html">
                         <div className="" >
                              Пакеты
                         </div>

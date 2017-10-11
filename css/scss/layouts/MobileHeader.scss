@@ -1,0 +1,68 @@
+
+@media (max-width: 900px) {
+  .header {
+    justify-content: space-around;
+    width: 100%;
+    #logo{
+      .logo{
+        font-size: 1.5em;
+      }
+    }
+    .menu {
+      font-size: .8em;
+    }
+    #logged{
+      font-size: .9em;
+    }
+    .login {
+      font-size: .9em;
+    }
+  }
+}
+
+
+@media (max-width: 569px) {
+  .header {
+    margin-bottom: 40px;
+   .lookAtTopOfHisHead{
+     .topContent{
+       width: 100%;
+       justify-content: space-around;
+       .currencys{
+         padding-left:0;
+         .cryptoCurrency{
+           margin-right: 20px;
+           display: flex;
+           align-items: center;
+           flex-direction: column;
+         }
+       }
+     }
+   }
+
+    .menu {
+      position: absolute;
+      font-size:.8em;
+      top: 111px;
+      ul{
+        li{
+          margin-right: 10px;
+        }
+      }
+    }
+
+    #logged{
+      font-size: 1.3em;
+    }
+
+  }
+}
+
+
+@media (max-width: 424px) {
+  .header {
+    .menu {
+      font-size: .7em;
+    }
+  }
+}

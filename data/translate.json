@@ -121,6 +121,18 @@
 
       "news":{},
 
+
+      "investments":{
+        "head": "Недавно купили моенты",
+        "table": {
+          "headFirst": "Имя",
+          "headSecond": "Монеты",
+          "headThird": "Дата",
+          "btnMore": "Показать еще",
+          "btnEnd": "Ждём новые покупки"
+        }
+      },
+
       "contacts":{
         "top":{
           "head": "Контакты"
@@ -202,6 +214,7 @@
         "btnMain": "ГЛАВНАЯ",
         "btnAbout": "О НАС",
         "btnPackages": "ПАКЕТЫ",
+        "btninvestments": "Инвестиции",
         "btnFAQ": "Помощь",
         "btnNews": "Новости",
         "btnContacts": "Контакты",
@@ -216,7 +229,6 @@
           "legalPage":"Юридические Информация",
           "contractOffer": "Пользовательское Соглашение",
           "confidentiality": "Политика Конфиденциальности"
-
         },
         "feedback": "Обратная связь"
       },

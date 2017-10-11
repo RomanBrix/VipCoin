@@ -153,4 +153,28 @@
       color: $LightGold;
     }
   }
+
+  .whitePaper{
+    position: fixed;
+    z-index: 101;
+    width: 100%;
+    height: 100%;
+    background: rgba(242, 242, 242, 0.9);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    top: 0;
+    left: 0;
+
+    .close{
+      position: absolute;
+      right: -60px;
+      top: -60px;
+      font-size: 4em;
+      cursor: pointer;
+      color: $LightGold;
+    }
+  }
 }
+@import "./MobileFooter";

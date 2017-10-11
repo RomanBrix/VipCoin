@@ -9,6 +9,8 @@ if($type === "userGetCoins") {
     if ($link) {
         $hash = $data['hash'];
         $coins = $data['coins'];
+
+
         $getCoinsLeftSql ="SELECT coins FROM packages WHERE status='start';";
         $coinsLeft = mysqli_fetch_assoc(mysqli_query($link,$getCoinsLeftSql));
         $newCoinsLeft = $coinsLeft['coins'] - $coins;
@@ -17,7 +19,6 @@ if($type === "userGetCoins") {
         $userCoins = mysqli_fetch_assoc(mysqli_query($link,$getUserCoinsSql));
         $newUserCoins = $userCoins['vipcoins_value'] + $coins;
 
-//        print_r(json_encode($newUserCoins));
         $updatePackSql = "UPDATE packages
                           SET coins='". $newCoinsLeft ."'
                           WHERE status='start'";
@@ -27,7 +28,14 @@ if($type === "userGetCoins") {
                                  WHERE hash='".$hash."';";
 
             if($link->query($addСoinToUserSql) === TRUE){
-                print_r(json_encode("addedOk"));
+
+                $today = date("d.m.y");
+                $lastPurch = "INSERT INTO last_purchase (hash, coins, insert_date) VALUES ('".$hash."',". $coins.",'".
+                    $today."')";
+
+                if($link->query($lastPurch) === TRUE) {
+                    print_r(json_encode("addedOk"));
+                }
             }else{
                 print_r(json_encode("NotAdded"));
 

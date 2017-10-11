@@ -10,7 +10,8 @@ const InitialState = {
     userLogin: false,
     packages: [],
     maxCoins: 1000000,
-    soldCoins: 1
+    soldCoins: 1,
+    tableInvest: []
 };
 
 const frontReducers = (state = InitialState, action) => {
@@ -26,8 +27,8 @@ const frontReducers = (state = InitialState, action) => {
                 userLogin: state.userLogin,
                 packages: state.packages,
                 maxCoins: state.maxCoins,
-                soldCoins: state.soldCoins
-
+                soldCoins: state.soldCoins,
+                tableInvest: state.tableInvest
             };
 
         case act.SET_LANGUAGE:
@@ -40,7 +41,9 @@ const frontReducers = (state = InitialState, action) => {
                 userLogin: state.userLogin,
                 packages: state.packages,
                 maxCoins: state.maxCoins,
-                soldCoins: state.soldCoins
+                soldCoins: state.soldCoins,
+                tableInvest: state.tableInvest
+
             };
 
         case act.GET_VIPCOIN_COST:
@@ -52,6 +55,7 @@ const frontReducers = (state = InitialState, action) => {
                 userState: state.userState,
                 userLogin: state.userLogin,
                 packages: state.packages,
+                tableInvest: state.tableInvest
 
             };
         case act.BITCOIN_COST:
@@ -64,7 +68,8 @@ const frontReducers = (state = InitialState, action) => {
                 userLogin: state.userLogin,
                 packages: state.packages,
                 maxCoins: state.maxCoins,
-                soldCoins: state.soldCoins
+                soldCoins: state.soldCoins,
+                tableInvest: state.tableInvest
 
             };
 
@@ -78,7 +83,8 @@ const frontReducers = (state = InitialState, action) => {
                 userLogin: state.userLogin,
                 packages: state.packages,
                 maxCoins: state.maxCoins,
-                soldCoins: state.soldCoins
+                soldCoins: state.soldCoins,
+                tableInvest: state.tableInvest
 
             };
         case act.USER_LOGIN:
@@ -91,7 +97,8 @@ const frontReducers = (state = InitialState, action) => {
                 userLogin: action.userLogin,
                 packages: state.packages,
                 maxCoins: state.maxCoins,
-                soldCoins: state.soldCoins
+                soldCoins: state.soldCoins,
+                tableInvest: state.tableInvest
 
             };
         case act.PACKAGES:
@@ -104,7 +111,8 @@ const frontReducers = (state = InitialState, action) => {
                 userLogin: state.userLogin,
                 packages: action.packages,
                 maxCoins: state.maxCoins,
-                soldCoins: state.soldCoins
+                soldCoins: state.soldCoins,
+                tableInvest: state.tableInvest
             };
 
         case act.COINS_INFO:
@@ -117,7 +125,8 @@ const frontReducers = (state = InitialState, action) => {
                 userLogin: state.userLogin,
                 packages: state.packages,
                 maxCoins: action.maxCoins,
-                soldCoins: action.soldCoins
+                soldCoins: action.soldCoins,
+                tableInvest: state.tableInvest
             };
         case act.COIN_COST:
             return{
@@ -129,8 +138,24 @@ const frontReducers = (state = InitialState, action) => {
                 userLogin: state.userLogin,
                 packages: state.packages,
                 maxCoins: state.maxCoins,
-                soldCoins: state.soldCoins
+                soldCoins: state.soldCoins,
+                tableInvest: state.tableInvest
             };
+
+        case act.TABLE_INVEST:
+            return{
+                request: false,
+                language: state.language,
+                vipcoinCost: state.costOfOneCoin,
+                bitcoinCost: state.bitcoinCost,
+                userState: state.userState,
+                userLogin: state.userLogin,
+                packages: state.packages,
+                maxCoins: state.maxCoins,
+                soldCoins: state.soldCoins,
+                tableInvest: action.tableInvest
+            };
+
         default: return state;
     }
 };

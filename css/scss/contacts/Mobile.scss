@@ -1,0 +1,49 @@
+
+@media (max-width: 569px) {
+  .container {
+    height:525px !important;
+    padding-bottom: 50px;
+    .content {
+      flex-direction: column !important;
+      bottom: 30px !important;
+      height: auto !important;
+      .left {
+        width: 100%;
+        height: auto;
+
+        .services {
+          .top-services {
+            padding-left: 15px;
+          }
+          .bottom-services {
+            width: 100%;
+            justify-content: space-around;
+          }
+
+        }
+      }
+
+      .right{
+        width: 100%;
+        height: auto;
+
+        .FeedBack{
+          .form-container{
+            padding: 0 15px;
+            input{
+              margin-bottom: 15px;
+              border-radius: 3px;
+            }
+            textarea{
+              margin-bottom: 15px;
+            }
+            .btn-send{
+              margin-bottom: 15px;
+            }
+          }
+        }
+      }
+
+    }
+  }
+}

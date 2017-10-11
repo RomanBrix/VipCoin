@@ -1,4 +1,5 @@
 import React, {Component} from 'react';
+import ManualAddSell from "./ManualAddSell";
 
 export default class Container extends Component {
 
@@ -34,9 +35,14 @@ export default class Container extends Component {
 
     }
     render() {
-        const { setGenerally, updated, getGenInfo} = this.props;
+        const { setGenerally, updated, getGenInfo, setManualSell} = this.props;
 
-        if(updated ==="newCostOk" || updated === "newTotalSoldOk" || updated === "newCoinsCountOk"){
+        if(
+            updated ==="newCostOk" ||
+            updated === "newTotalSoldOk" ||
+            updated === "newCoinsCountOk" ||
+            updated === "addedOk"
+        ){
             this.goAlert("СОХРАНЕНО",true);
         }else if(updated ===false){
             this.goAlert("НЕ СОХРАНЕНО", false);
@@ -108,7 +114,10 @@ export default class Container extends Component {
                         <div id="alert">
                             Сохранено!
                         </div>
+
+                            <ManualAddSell setManualSell={ setManualSell }/>
                     </div>
+
                 </div>
             </div>
         )

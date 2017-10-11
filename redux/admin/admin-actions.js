@@ -135,3 +135,25 @@ export function setNewPackVal (type, id, name, cost, status) {
             });
     }
 }
+
+
+export function setManualSell (type, hash, coins) {
+    return dispatch => {
+        dispatch({type: 'REQUEST'});
+
+
+        axios.post(`${GLOB_URL}manualSetSell.php`, {
+            type,
+            hash,
+            coins
+        })
+            .then(function(res) {
+                // console.log(res);
+                dispatch({type: act.SET_GEN_INFO, updated: res.data})
+
+            })
+            .catch((error) => {
+                console.log(error);
+            });
+    }
+}

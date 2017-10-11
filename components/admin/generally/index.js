@@ -3,7 +3,8 @@ import { connect } from 'react-redux';
 import {
     getGenInfo,
     setGenerally,
-    getAdminUser
+    getAdminUser,
+    setManualSell
 
 } from '../../../redux/admin/admin-actions.js';
 import App from './App';
@@ -17,7 +18,8 @@ export default connect(
     {
         getGenInfo,
         setGenerally,
-        getAdminUser
+        getAdminUser,
+        setManualSell
 
 
     })(App);

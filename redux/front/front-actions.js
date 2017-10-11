@@ -122,3 +122,21 @@ export function getCoinCost (type) {
             })
     }
 }
+
+export function getTableInvest (type) {
+    return dispatch => {
+        dispatch({type: 'REQUEST'});
+
+        axios.get(`${GLOB_URL}getTableInvest.php`, {params: {type}})
+            .then((res) => {
+                console.log(res);
+                dispatch({
+                    type: act.TABLE_INVEST,
+                    tableInvest: res.data,
+                });
+            })
+            .catch((error) => {
+                console.log(error);
+            })
+    }
+}

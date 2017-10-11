@@ -39,8 +39,8 @@ export default class Header extends Component {
 
     }
     componentDidMount(){
-        const {main, about, packages, faq, news, contacts} = this.props;
-        const arr = [main, about, packages, faq, news, contacts];
+        const {main, about, packages, faq, investments, news, contacts} = this.props;
+        const arr = [main, about, packages, faq, investments, news, contacts];
         let ask = undefined;
         for (let i = 0; i < arr.length; i++){
             if(arr[i] === true ){
@@ -68,6 +68,9 @@ export default class Header extends Component {
                 listArray[4].classList.add('active');
                 break;
             case 5:
+                listArray[4].classList.add('active');
+                break;
+            case 6:
                 listArray[5].classList.add('active');
                 break;
 
@@ -176,6 +179,7 @@ export default class Header extends Component {
         let FAQ_Url = PAGES.FAQ;
         let NewsUrl = PAGES.NEWS;
         let ContactsUrl= PAGES.CONTACT_US;
+        let investmentsUrl = PAGES.INVEST;
 
         let ICO_lang = {
             main: `./src/header/${this.state.language}.svg`,
@@ -191,6 +195,7 @@ export default class Header extends Component {
             PackUrl = "../"+ PAGES.PACKAGES;
             FAQ_Url = "../"+ PAGES.FAQ;
             NewsUrl ="../"+ PAGES.NEWS;
+            investmentsUrl = "../"+ PAGES.INVEST;
             ContactsUrl = "../"+ PAGES.CONTACT_US;
             ICO_lang = {
                 main: `../src/header/${this.state.language}.svg`,
@@ -278,11 +283,11 @@ export default class Header extends Component {
                                 {layouts.header.btnFAQ}
                             </a>
                         </li>
-                        {/*<li>*/}
-                            {/*<a href={NewsUrl}>*/}
-                                {/*{layouts.header.btnNews}*/}
-                            {/*</a>*/}
-                        {/*</li>*/}
+                        <li>
+                            <a href={investmentsUrl}>
+                                {layouts.header.btninvestments}
+                            </a>
+                        </li>
                         <li>
                             <a href={ContactsUrl}>
                                 {layouts.header.btnContacts}
@@ -295,7 +300,7 @@ export default class Header extends Component {
                         const user = this.getCookie('user');
                         if (user !== undefined) {
                             if (user.length > 15) {
-                                window.location.href = 'http://localhost:8888/vipcoin/profile/me.html';
+                                window.location.href = './profile/me.html';
                             }
                         } else {
                             toggleAuth(true)

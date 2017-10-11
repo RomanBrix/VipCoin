@@ -23,7 +23,8 @@ export const PAGES = {
     LEGAL_PAGE: "#",
     CONTRACT_OFFER: "#",
     confidentiality: "#",
-    CONFIDENTIALITY: "#"
+    CONFIDENTIALITY: "#",
+    INVEST: "investments.html"
 
 };
 
@@ -36,9 +37,9 @@ export const PROFILE_PAGES = {
 };
 
 export const CONTACTS = {
-    TELEPHONE: 380730070032,
-    SKYPE: 'roma4Rock',
-    MAIL: 'stetcukroman@gmail.com',
+    TELEPHONE: 110111111111,
+    SKYPE: 'Skype',
+    MAIL: 'test@gmail.com',
     FACEBOOK: "#",
     TWITTER: "#",
     INSTA: "#",

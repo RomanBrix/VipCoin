@@ -2,6 +2,7 @@ import React, {Component} from 'react';
 import Top from './Top';
 import Progress from './Progress';
 import TableSplits from "./TableSplits";
+import MiniProgress from "./MiniProgress";
 
 
 export default class Container extends Component {
@@ -16,6 +17,7 @@ export default class Container extends Component {
                     maxCoins={ maxCoins }
                     soldCoins={ soldCoins }
                 />
+                <MiniProgress/>
                 <TableSplits info={ pages.table }/>
             </div>
         )

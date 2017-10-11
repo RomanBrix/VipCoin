@@ -1,0 +1,37 @@
+@media (max-width: 569px) {
+  .packages {
+    .packages-container {
+      padding: 5px;
+      .afterHead {
+        width: 90%;
+      }
+
+      .pack-map{
+        flex-direction: column;
+        .package{
+          margin-bottom: 5px;
+        }
+      }
+    }
+  }
+
+  .faq{
+    height: auto;
+    .faq-container{
+      width: 80%;
+      .afterHead{
+        text-align: center;
+      }
+      .faqs{
+        .one-faq{
+          min-width:100%;
+          max-width: 100%;
+
+          &:last-child{
+            margin-bottom: 25px;
+          }
+        }
+      }
+    }
+  }
+}

@@ -29,7 +29,15 @@ export default class App extends Component {
     }
 
     render(){
-        const { reduxAdminUser, hash, generallyInfo, setGenerally, updated, getGenInfo} = this.props;
+        const {
+            reduxAdminUser,
+            hash,
+            generallyInfo,
+            setGenerally,
+            updated,
+            getGenInfo,
+            setManualSell
+        } = this.props;
         const {adminUser} = this.state;
 
         return (
@@ -41,6 +49,7 @@ export default class App extends Component {
                         setGenerally={setGenerally}
                         updated={updated}
                         getGenInfo={getGenInfo}
+                        setManualSell={setManualSell}
                     />
                     :
                     <div className="admin-enter">

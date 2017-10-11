@@ -10,7 +10,7 @@ const InitialState = {
     packages: [],
     users: [],
     updated: "",
-    reduxAdminUser: ""
+    reduxAdminUser: "",
 };
 
 const adminReducers = (state = InitialState, action) => {
@@ -23,8 +23,7 @@ const adminReducers = (state = InitialState, action) => {
                 updated: state.updated,
                 users: state.users,
                 packages: state.packages,
-                reduxAdminUser: state.reduxAdminUser
-
+                reduxAdminUser: state.reduxAdminUser,
             };
 
         case act.GET_GEN_INFO:

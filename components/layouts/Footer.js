@@ -3,26 +3,52 @@ import css from '../../css/scss/layouts/footer.scss';
 import FooterIcons from "../../public/src/Fonts/FontsIcons/styles.css";
 import { CONTACTS, PAGES } from '../../data/links';
 import { FOOTER_BG } from '../../data/links';
+import WhitePaper from "./WhitePaper";
 
 
 
 export default class Footer extends Component {
+    constructor(props){
+        super(props);
+        this.state = {
+            toggleWhitePaper: false
+        }
+    }
+    closeWhitePaper(){
+        this.setState({
+            toggleWhitePaper: false
+        })
+    }
     render(){
         const { footer, profile } = this.props;
+        const { toggleWhitePaper } = this.state;
+
         let footBg = FOOTER_BG;
         if(profile){
             footBg = '.'+FOOTER_BG;
         }
         return(
             <div className="footer" style={{ backgroundImage: `url(${footBg})`} }>
+
                 <div className="cont">
                     <div className="PP">
                        <ul>
                            <li>
-                               <a href={PAGES.WHITE_PAGE}>
+                               <a onClick={()=>{
+                                   body.style.overflow = "hidden";
+                                    this.setState({
+                                        toggleWhitePaper: true
+                                    });
+                               }}>
                                    {footer.pages.whitePage}
                                </a>
                            </li>
+                           {
+                               toggleWhitePaper ?
+                               <WhitePaper closeWhitePaper={ this.closeWhitePaper.bind(this)}/> :
+                               ""
+                           }
+
                             <li>
 
                                 <a href={PAGES.LEGAL_PAGE}>
@@ -47,22 +73,22 @@ export default class Footer extends Component {
                         </a>
 
                         <a href={`mailto:${CONTACTS.MAIL}`}>
-                            <i className="icon-mail"/>StetcukRoman@gmail.com
+                            <i className="icon-mail"/>test@gmail.com
                         </a>
 
                     </div>
                     <div className="contacts">
                         <a href={`tel:${CONTACTS.TELEPHONE}`}>
                             <i className="icon-call-phone"/>
-                            +380-73-007-003-2
+                            +110-11-111-11-11
                         </a>
                         <a href={`tel:${CONTACTS.TELEPHONE}`}>
                             <i className="icon-call-phone"/>
-                            +380-73-007-003-2
+                            +110-11-111-11-11
                         </a>
                         <a href={`skype:${CONTACTS.SKYPE}`}>
                             <i className="icon-skype"/>
-                            Roma4Rock
+                            Skype
                         </a>
                     </div>
                 </div>
@@ -72,9 +98,6 @@ export default class Footer extends Component {
                     <a href={CONTACTS.INSTA}><i className="icon-instagram"/></a>
                     <a href={CONTACTS.YOUTUBE}><i className="icon-youtube"/></a>
                 </div>
-                <a href="https://www.instagram.com/roman_brix/" id="author" target="_blank">
-                        &#169; Roman_Brix
-                </a>
             </div>
         )
     }

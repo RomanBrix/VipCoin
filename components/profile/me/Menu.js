@@ -9,7 +9,8 @@ export default class Menu extends Component {
                 fontSize: "1.4em"
             }
         };
-        if(+user.vipcoins_value * +global_coin_cost > 10000000){
+
+        if(+user.vipcoins_value > 1000000){
             options = {
                 text: "$",
                 style:{
