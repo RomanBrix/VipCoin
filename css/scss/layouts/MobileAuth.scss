@@ -1,0 +1,57 @@
+@import "../vars";
+@media (max-width: 740px) {
+
+  .auth {
+    .close {
+      top: -75px;
+      right: 0;
+    }
+    .alerts {
+    }
+    .auth-container {
+      min-width: 280px;
+      .auth-head {
+        font-size: 1em;
+        .btn {
+
+          &:hover {
+
+          }
+        }
+        .btn-active {
+
+        }
+
+        .btn-login.btn-active {
+        }
+        .btn-forgotPass.btn-active {
+        }
+        .btn-registration.btn-active {
+        }
+      }
+      .auth-body {
+        .rendered-container {
+          .text {
+          }
+          .inputs {
+            &:not(:last-child) {
+            }
+            label {
+            }
+            input {
+              &:focus {
+              }
+            }
+          }
+          .check {
+          }
+          .btn-ok {
+            padding: 4px 15px 6px;
+            &:hover {
+            }
+          }
+        }
+      }
+    }
+  }
+}

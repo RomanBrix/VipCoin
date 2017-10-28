@@ -1,0 +1,53 @@
+@media (max-width: 569px) {
+  .top {
+    background-size: 300px;
+    background-attachment: fixed;
+    background-position-y: 120px;
+    .text {
+      width: 100%;
+      h1 {
+        letter-spacing: 2px !important;
+        font-size: 28px;
+      }
+      p {
+        font-size: .9em;
+        line-height: 1.7em !important;
+      }
+    }
+  }
+
+  .pluses {
+    .pluses-container {
+      .systems {
+        max-width: 100%;
+        min-width: 60%;
+        margin-bottom: 25px;
+        //margin-left: 30px;
+        padding: 0 15px;
+        .logo {
+          margin-right: 15px;
+        }
+        .text {
+          h3 {
+          }
+          p {
+          }
+        }
+      }
+      .deposit, .money {
+      }
+    }
+  }
+}
+@media (max-width: 1260px) {
+
+  #mountNode {
+    background-size: auto !important;
+  }
+}
+@media (max-width: 1014px) {
+
+  #mountNode {
+    background-size: 0 !important;
+  }
+}

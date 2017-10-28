@@ -32,7 +32,7 @@
 
 
         li {
-          margin-bottom: 15px;
+          margin-bottom: 10px;
           cursor: pointer;
           transition: .25s all;
           a {
@@ -156,25 +156,116 @@
 
   .whitePaper{
     position: fixed;
-    z-index: 101;
+    display: flex;
     width: 100%;
     height: 100%;
-    background: rgba(242, 242, 242, 0.9);
-    display: flex;
+    z-index: 101;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     top: 0;
     left: 0;
+    .exit{
+      width: 100%;
+      height: 100%;
+      background: rgba(242, 242, 242, 0.9);
+      position: absolute;
+      top: 0;
+      left: 0;
+      transition: .25s;
+      cursor: pointer;
+      z-index: 1;
+      &:hover{
+        background: rgba(211, 211, 211, 0.6);
 
+      }
+    }
     .close{
       position: absolute;
-      right: -60px;
-      top: -60px;
+      right: 10px;
+      top: 10px;
       font-size: 4em;
       cursor: pointer;
       color: $LightGold;
     }
+    iframe{
+      width: 80%;
+      height: 90%;
+      z-index: 3;
+    }
+  }
+  .LegalPage{
+    background: rgba(246, 251, 254, .92);
+    .fullscreen{
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      //justify-content: center;
+      padding-left: 40px;
+      width: 100%;
+      height: 100%;
+      padding-top: 25px;
+
+
+      h1{
+        font-size: 3rem;
+        margin-bottom: 0;
+      }
+      h2{
+        margin-bottom: 0;
+        span{
+          font-family: HelveticaBold;
+        }
+      }
+      h3{
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        span{
+          font-family: HelveticaBold;
+          margin-top: 5px;
+          margin-left: 5px;
+        }
+      }
+      .legalPhoto{
+        height: 220px;
+        width: 150px;
+        /* position: absolute; */
+        //right: 35%;
+        margin-top: 25px;
+        cursor: pointer;
+        transition: .25s;
+        img{
+          width: 100%;
+        }
+        &:hover{
+          transform: scale(1.15);
+        }
+      }
+      .back{
+        text-transform: uppercase;
+        font-size: 1.3em;
+        margin-top: 8px;
+        letter-spacing: 2px;
+        transition: .25s;
+        cursor:pointer;
+        font-family: HelveticaBold;
+        &:hover{
+          transform: scale(1.15);
+        }
+
+      }
+    }
+    .showLegal{
+      width: 100%;
+      height: 100%;
+      position: absolute;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+
+    }
+
   }
 }
 @import "./MobileFooter";

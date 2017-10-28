@@ -1,0 +1,102 @@
+#mountNode{
+  //display: flex;
+  //justify-content: center;
+  background-size: 100% 100vh !important;
+  background-position-y: 0 !important;
+  background-repeat: no-repeat;
+  background-position-x: 50%;
+}
+.top{
+
+  background-color: rgba(39, 34, 32, 0.651);
+  background-size: 400px;
+  background-repeat: no-repeat;
+  background-position-x: 51%;
+  width: 100%;
+  background-position-y: 20vh;
+  display: flex;
+  align-items: center;
+  height: 100vh;
+  .text{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    p{
+      color: white;
+      max-width: 60%;
+      line-height: 27px;
+      text-align: center;
+    }
+  }
+  .play{
+    margin-top: 35px;
+    i{
+      font-size: 4em;
+      color: rgba(102, 210, 3, 1);
+      cursor: pointer;
+      display: flex;
+      transition: .25s;
+
+      &:hover{
+        color: rgba(255, 193, 0, 1);
+      }
+    }
+  }
+  .nextStage{
+    position: absolute;
+    top: 90vh;
+    font-size: 3em;
+    color: rgba(255, 255, 255, 0.6);
+    text-shadow: 0 0 2px black;
+    transform: rotate(90deg);
+    transition: .25s;
+    cursor: pointer;
+    text-decoration: none;
+    i{
+      display: flex;
+    }
+    &:hover{
+      text-shadow: 0 0 4px black;
+      color:white;
+      //transform: scale(1.02);
+    }
+  }
+  #fullVideo{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(11, 11, 11, .8);
+    //display: flex;
+    justify-content: center;
+    align-items: center;
+    display: none;
+    z-index: 100000;
+    .video-container{
+      height: 70%;
+      max-height: 500px;
+      width: 100%;
+      max-width: 900px;
+      border: 5px solid rgb(66, 80, 103);
+      border-radius: 6px;
+      position: relative;
+      box-shadow: 0 0 15px 1px black;
+      .video-close{
+        position: absolute;
+        font-size: 1.3em;
+        color: white;
+        right: 0;
+        top: -1.6em;
+        cursor: pointer;
+        i{
+          display: flex;
+        }
+      }
+    }
+  }
+  .video{
+    display: none;
+  }
+}

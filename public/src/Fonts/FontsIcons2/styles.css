@@ -182,3 +182,12 @@
 .icon-btc:before {
   content: "\e02f";
 }
+.icon-chevron-down:before {
+  content: "\e030";
+}
+.icon-signout:before {
+  content: "\e031";
+}
+.icon-logout:before {
+  content: "\e032";
+}

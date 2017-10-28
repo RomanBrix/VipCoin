@@ -1,10 +1,17 @@
 @import "../vars";
 .header{
   display: flex;
-  justify-content: space-between;
-  align-items: center;
+  justify-content: center;
+  /* align-items: center; */
   margin-top: 50px;
-  width: 80%;
+  width: 100%;
+  .bottomHead{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    /* margin-top: 50px; */
+    width: 80%;
+  }
   #logo {
     text-decoration: none;
     cursor: pointer;
@@ -238,6 +245,22 @@
             }
           }
         }
+      }
+    }
+  }
+}
+
+#Main {
+  .header {
+    position: absolute;
+    top: 0;
+    left: 0;
+    .lookAtTopOfHisHead{
+      //display: none !important;
+      top: -40px !important;
+      background: rgba(246, 251, 254, .1) !important;
+      .dropdown-content{
+        background: rgba(246, 251, 254, .1) !important;
       }
     }
   }

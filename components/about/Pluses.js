@@ -2,6 +2,7 @@ import React, {Component} from 'react';
 
 export default class Pluses extends Component {
     render(){
+        const { pages } = this.props;
         return(
             <div className="pluses">
                 <div className="pluses-container">
@@ -10,8 +11,8 @@ export default class Pluses extends Component {
                             <img src="./src/lock.png" alt=""/>
                         </div>
                         <div className="text">
-                            <h3>Закрытость системы:</h3>
-                            <p>Мы бросаем вызов статус-кво и выходят за рамки сегодняшнего дня, чтобы создать открытое финансовое будущее, которое поддерживает широчайший мирового сообщества возможно.</p>
+                            <h3>{pages.secur.head}:</h3>
+                            <p>{pages.secur.body}.</p>
                         </div>
                     </div>
 
@@ -20,8 +21,8 @@ export default class Pluses extends Component {
                             <img src="./src/check-square.png" alt=""/>
                         </div>
                         <div className="text">
-                            <h3>Застрахованость:</h3>
-                            <p>Мы бросаем вызов статус-кво и выходят за рамки сегодняшнего дня, чтобы создать открытое финансовое будущее, которое поддерживает широчайший мирового сообщества возможно.</p>
+                            <h3>{pages.tech.head}:</h3>
+                            <p>{pages.tech.body}.</p>
                         </div>
                     </div>
 
@@ -30,8 +31,8 @@ export default class Pluses extends Component {
                             <img src="./src/deposit.png" alt=""/>
                         </div>
                         <div className="text">
-                            <h3>Личный кошелёк:</h3>
-                            <p>Мы бросаем вызов статус-кво и выходят за рамки сегодняшнего дня, чтобы создать открытое финансовое будущее.</p>
+                            <h3>{pages.ownWallet.head}:</h3>
+                            <p>{pages.ownWallet.body}.</p>
                         </div>
                     </div>
 
@@ -40,8 +41,8 @@ export default class Pluses extends Component {
                             <img src="./src/money.png" alt=""/>
                         </div>
                         <div className="text">
-                            <h3>Способы оплаты:</h3>
-                            <p>Более 10 способов пополнения баланса пользователя</p>
+                            <h3>{pages.payMethod.head}:</h3>
+                            <p>{pages.payMethod.body}.</p>
                         </div>
                     </div>
                 </div>

@@ -16,7 +16,7 @@
       font-size: 38px;
     }
     p{
-      line-height: 1.5em;
+      line-height: 1.2em;
       color: white;
       letter-spacing: 1px;
     }
@@ -63,3 +63,86 @@
     }
   }
 }
+.team{
+  display: flex;
+  justify-content: center;
+  background: rgba(246, 251, 254, 1);
+  width: 100%;
+  .team-container {
+    width: 80%;
+    display: flex;
+    /* flex-wrap: wrap; */
+    justify-content: space-around;
+    padding: 55px 0;
+    position: relative;
+    flex-direction: column;
+    align-items: center;
+    h1{
+      font-size: 24px;
+      position: absolute;
+      background: white;
+      top: 0;
+      margin: 0;
+      color: #0c324e !important;
+      padding: 3px 15px;
+      left: calc(50% - 167px);
+    }
+
+    .people{
+      width: 100%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      margin-top: 25px;
+      flex-wrap: wrap;
+
+      .director, .one-team{
+        width: 80%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        position: relative;
+        min-height: 150px;
+        .team-img{
+          width: 150px;
+          height: 150px;
+          background-size: cover;
+          border-radius: 50%;
+          background-position: center;
+          filter: grayscale(100%);
+          margin-right: 25px;
+          min-width: 150px;
+          background-position-y: -3px;
+          background-repeat: no-repeat;
+          img{
+
+          }
+        }
+        .img-technion{
+          background-position-y: -3px;
+
+        }
+
+        .text{
+          h2{
+            font-family: HelveticaBold;
+            font-weight: bold;
+            font-size: 2.5rem;
+            margin: 0;
+          }
+          h3{
+            margin: 0;
+          }
+        }
+      }
+      .one-team{
+        width: 49%;
+        margin-top: 35px;
+        margin-right: 5px;
+      }
+    }
+
+  }
+}
+
+@import "./Mobile";

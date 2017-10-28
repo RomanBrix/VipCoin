@@ -1,6 +1,7 @@
 import React, {Component} from 'react';
 import Top from './Top';
 import Pluses from './Pluses';
+import Team from "./Team";
 
 
 export default class Container extends Component {
@@ -9,8 +10,9 @@ export default class Container extends Component {
 
         return(
             <div className="content">
-                <Top />
-                <Pluses/>
+                <Top pages={pages.top}/>
+                <Pluses pages={pages.pluses}/>
+                <Team pages={pages.team}/>
             </div>
         )
     }

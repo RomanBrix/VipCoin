@@ -1,0 +1,315 @@
+@import "../vars";
+@media (max-width: 820px) {
+
+  .top {
+    flex-wrap: wrap;
+    background-attachment: fixed;
+    background-position-y: 120px;
+    justify-content: center;
+
+    .text {
+      min-width: 100%;
+      text-align: center;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      margin-bottom: 25px;
+      max-width: 100%;
+      h1 {
+
+      }
+      h3 {
+
+      }
+      p {
+        padding: 0;
+      }
+      .btn-buy {
+
+        &:hover {
+
+        }
+      }
+    }
+    .video {
+      //min-width: 100%;
+      //min-height: 180px;
+      margin-bottom: 9px;
+      iframe {
+
+      }
+    }
+  }
+
+  .tableSplit {
+    h2 {
+    }
+    table {
+      width: 500px;
+      thead {
+        tr {
+          th {
+            &:first-child {
+              //width: auto;
+            }
+            &:nth-child(2) {
+              //width: 70px;
+            }
+          }
+        }
+      }
+      tbody {
+        tr {
+          td {
+            &:nth-child(even) {
+            }
+            &:nth-child(3) {
+            }
+          }
+
+          &:nth-child(even) {
+          }
+          &:hover {
+          }
+        }
+      }
+    }
+    .end {
+      .allSumm {
+        span {
+        }
+      }
+      .future {
+        //font-size: 12px;
+        img {
+        }
+        span {
+        }
+      }
+    }
+  }
+
+}
+
+@media (max-width: 569px) {
+  .top {
+    flex-wrap: wrap;
+    background-attachment: fixed;
+    background-position-y: 120px;
+    .text {
+      min-width: 100%;
+      text-align: center;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      margin-bottom: 25px;
+      max-width: 100%;
+      h1 {
+
+      }
+      h3 {
+
+      }
+      p {
+        padding: 0;
+      }
+      .btn-buy {
+
+        &:hover {
+
+        }
+      }
+
+    }
+    .video {
+      min-width: 100%;
+      min-height: 180px;
+      margin-bottom: 25px;
+      iframe {
+
+      }
+    }
+
+  }
+
+  .progress {
+
+    h1 {
+
+    }
+    h2 {
+      font-size: 1.1em;
+      margin-bottom: 35px;
+    }
+    .coins_left {
+      font-size: 3em;
+      img {
+
+      }
+    }
+  }
+
+  progress {
+    width: 90%;
+    &:before {
+
+    }
+    &::-moz-progress-bar {
+
+    }
+
+    &::-webkit-progress-bar {
+
+      &:hover {
+
+      }
+    }
+
+    &::-webkit-progress-value {
+
+    }
+
+    &:hover {
+
+    }
+  }
+  .afterProgress {
+    width: 90%;
+    .left, .right, ._30_percentages {
+    }
+    .left {
+
+    }
+    ._30_percentages {
+
+      &:before {
+
+      }
+    }
+    .right {
+
+    }
+  }
+
+  .mini-progress {
+    display: none;
+    .progresses {
+
+      h1 {
+
+      }
+      .develop {
+
+        .title {
+
+        }
+
+        .bg {
+
+        }
+
+        .points {
+
+          &:after {
+
+          }
+        }
+        .points:nth-child(odd) {
+
+          &:after {
+          }
+        }
+        .points:nth-child(even) {
+        }
+
+        .points:nth-child(3) {
+        }
+        .points:nth-child(4) {
+        }
+        .points:nth-child(5) {
+        }
+        .points:nth-child(6) {
+        }
+        .points:nth-child(7) {
+        }
+      }
+    }
+  }
+
+  .tableSplit {
+    position: relative;
+    h2 {
+      font-size: 24px;
+      position: absolute;
+      background: #f6fbfe;
+      top: 0;
+      margin: 0;
+      padding: 3px 15px;
+      left: calc(50% - 77px);
+      font-family: HelveticaBold;
+      color: black;
+      letter-spacing: 3px;
+      text-transform: uppercase;
+    }
+    table {
+      width: 300px;
+      thead {
+        tr {
+          th {
+            &:first-child {
+              width: auto;
+            }
+            &:nth-child(2) {
+              width: 70px;
+            }
+          }
+        }
+      }
+      tbody {
+        tr {
+          td {
+            &:nth-child(even) {
+            }
+            &:nth-child(3) {
+            }
+          }
+
+          &:nth-child(even) {
+          }
+          &:hover {
+          }
+        }
+      }
+    }
+    .end {
+      .allSumm {
+        span {
+        }
+      }
+      .future {
+        font-size: 12px;
+        img {
+        }
+        span {
+        }
+      }
+    }
+  }
+
+}
+
+
+
+
+@media (max-width: 1260px) {
+
+  #mountNode {
+    background-size: auto !important;
+  }
+}
+@media (max-width: 740px) {
+
+  #mountNode {
+    background-size: 0 !important;
+  }
+}

@@ -191,3 +191,33 @@
 .icon-logout:before {
   content: "\e032";
 }
+.icon-play-circle-o:before {
+  content: "\e033";
+}
+.icon-play-circle:before {
+  content: "\e035";
+}
+.icon-play-1:before {
+  content: "\e036";
+}
+.icon-play:before {
+  content: "\e034";
+}
+.icon-times:before {
+  content: "\e037";
+}
+.icon-close-round:before {
+  content: "\e038";
+}
+.icon-angle-double-right:before {
+  content: "\e039";
+}
+.icon-angle-right:before {
+  content: "\e03a";
+}
+.icon-chevron-circle-right:before {
+  content: "\e03b";
+}
+.icon-arrow-1-square-down:before {
+  content: "\e03c";
+}

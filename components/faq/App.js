@@ -16,6 +16,14 @@ export default class App extends Component {
         }
     }
 
+    componentWillReceiveProps(nextProps) {
+        if(nextProps.language.length > 1){
+            this.setState({
+                language: nextProps.language
+            })
+        }
+    }
+
     toggleAuth(auth){
         this.setState({
             auth

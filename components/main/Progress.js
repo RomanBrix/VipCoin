@@ -12,7 +12,7 @@ export default class Progress extends Component {
         const width = ((soldCoins*100)/maxCoins).toFixed(1);
         return (
             <div className="progress">
-                <h1> {pages.head}</h1>
+                <h1 id="nextStage"> {pages.head}</h1>
                 <h2> {pages.title}</h2>
                 <div className="coins_left"> <img src={LOGO} alt="Logo"/>{ coinsLeft }</div>
                 <progress className="progressBar" value={ soldCoins } max={ maxCoins }/>

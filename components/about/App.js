@@ -17,6 +17,14 @@ export default class App extends Component {
         };
     }
 
+    componentWillReceiveProps(nextProps) {
+        if(nextProps.language.length > 1){
+            this.setState({
+                language: nextProps.language
+            })
+        }
+    }
+
     toggleAuth(auth){
         this.setState({
             auth
@@ -81,7 +89,7 @@ export default class App extends Component {
                 />
                 <div className="container">
                     <Container
-                        pages={ pages.main }
+                        pages={ pages.about }
                     />
                 </div>
                 <Footer footer={ layouts.footer } />

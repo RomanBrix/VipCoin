@@ -15,7 +15,7 @@ import {
 export default class Header extends Component {
     constructor(props){
         super(props);
-        this.setCookie('language', 'ru',{expires: 350});
+        // this.setCookie('language', 'ru',{expires: 350});
         this.state = {
             language: this.getCookie("language") || "ru",
             ltc: 0,
@@ -28,7 +28,7 @@ export default class Header extends Component {
         if (!props.profile) {
             props.setLanguage(this.state.language);
         }else{
-
+            props.setLanguage(this.state.language);
         }
         this.getCurrVal();
         this.getVPC();
@@ -111,7 +111,7 @@ export default class Header extends Component {
 
     getUserName(loggedUser){
         const that = this;
-        axios.get(`http://localhost:8888/vipcoin/profile/userInfo.php`, {params: {type:"header",hash:loggedUser}})
+        axios.get(`https://vipcoin.technology/profile/userInfo.php`, {params: {type:"header",hash:loggedUser}})
             .then(function(res) {
                 that.setState({
                     NAME: res.data
@@ -138,7 +138,7 @@ export default class Header extends Component {
 
     getVPC() {
         const that = this;
-        axios.get(`http://localhost:8888/vipcoin/generally.php`, {params: {type:"coinCost"}})
+        axios.get(`https://vipcoin.technology/generally.php`, {params: {type:"coinCost"}})
             .then(function(res) {
                 // console.log(res);
                 // dispatch({type: act.GET_PACKAGES_INFO, packages: res.data})
@@ -164,7 +164,7 @@ export default class Header extends Component {
     }
 
     render(){
-        const { toggleAuth, profile } = this.props;
+        const { toggleAuth, profile, setLanguage } = this.props;
         const lang = translate.filter(item =>{
            return item.language === this.state.language;
         });
@@ -216,7 +216,7 @@ export default class Header extends Component {
                             <div className="cryptoCurrency">BTC/USD: <span>{+btc}</span></div>
                             <div className="cryptoCurrency">LTC/USD: <span>{ltc}</span></div>
                             <div className="cryptoCurrency">ETH/USD: <span>{eth}</span></div>
-                            <div className="cryptoCurrency">VPC/USD: <span>{vpc}</span></div>
+                            <div className="cryptoCurrency">VNC/USD: <span>{vpc}</span></div>
 
                         </div>
 
@@ -228,36 +228,31 @@ export default class Header extends Component {
                                 <span onClick={() => {
                                     this.setCookie('language', 'ru', {expires: 350});
                                     this.setState({language: 'ru'});
-                                    console.log("1")
+                                    setLanguage('ru');
+                                    // console.log("1")
                                 }}>
                                     <img src={ICO_lang.ru} alt="ru"/>
                                 </span>
                                 <span onClick={() => {
                                     this.setState({language: 'eng'});
-                                    console.log("2")
+                                    this.setCookie('language', 'eng', {expires: 350});
+                                    // console.log(setLanguage);
+                                    setLanguage('eng');
+                                    // console.log("2");
                                 }}>
                                     <img src={ICO_lang.eng} alt="eng"/>
                                 </span>
-                                <span onClick={() => {
-                                    this.setState({language: 'japan'});
-                                    console.log("3")
-                                }}>
-                                    <img src={ICO_lang.japan} alt="japan"/>
-                                </span>
-                                <span onClick={() => {
-                                    this.setState({language: 'usa'});
-                                    console.log("4")
-                                }}>
-                                    <img src={ICO_lang.usa} alt="usa"/>
-                                </span>
+
+
                             </div>
                         </div>
                     </div>
                 </div>
+                <div className="bottomHead">
                     <a href={LogoUrl} id="logo">
                         <div className="logo">
                             <img src={LOGO_IMG} alt="Logo"/>
-                            <span className="bold">VIP</span>Coin
+                            <span className="bold">VIN</span>Coin
                         </div>
                     </a>
 
@@ -313,7 +308,7 @@ export default class Header extends Component {
                         const user = this.getCookie('user');
                         if (user !== undefined) {
                             if (user.length > 15) {
-                                window.location.href = 'http://localhost:8888/vipcoin/profile/me.html';
+                                window.location.href = 'https://vipcoin.technology/profile/me.html';
                             }
                         } else {
                             toggleAuth(true)
@@ -345,8 +340,25 @@ export default class Header extends Component {
                             </div>:""}
                     </div>
                 }
-
+                </div>
             </div>
         );
     }
 }
+
+
+
+/*
+                                <span onClick={() => {
+                                    this.setState({language: 'japan'});
+                                    console.log("3")
+                                }}>
+                                    <img src={ICO_lang.japan} alt="japan"/>
+                                </span>
+                                <span onClick={() => {
+                                    this.setState({language: 'usa'});
+                                    console.log("4")
+                                }}>
+                                    <img src={ICO_lang.usa} alt="usa"/>
+                                </span>
+*/

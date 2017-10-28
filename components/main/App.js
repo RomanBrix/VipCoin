@@ -17,6 +17,13 @@ export default class App extends Component {
         };
         props.getCoinsInfo("coinsInfo");
     }
+    componentWillReceiveProps(nextProps) {
+        if(nextProps.language.length > 1){
+            this.setState({
+                language: nextProps.language
+            })
+        }
+    }
 
     toggleAuth(auth){
         this.setState({
@@ -25,6 +32,8 @@ export default class App extends Component {
     }
 
     render(){
+        // console.log(this.props);
+        // console.log(this.state);
         const {
             setLanguage,
             addUser,
@@ -63,9 +72,9 @@ export default class App extends Component {
             }
         }
         const mount = document.getElementById("mountNode");
-        mount.style.backgroundImage = `url(${BG_COIN})`;
+        mount.style.backgroundImage = `url(./src/mainPageBg.jpg)`;
         return (
-            <div className="Main">
+            <div className="Main" id="Main">
                 <Auth
                     auth={ layouts.auth }
                     toggleAuth={ this.toggleAuth.bind(this) }
@@ -86,6 +95,7 @@ export default class App extends Component {
                         pages={ pages.main }
                         soldCoins={ soldCoins }
                         maxCoins={ maxCoins }
+                        toggleAuth={ this.toggleAuth.bind(this) }
                     />
                 </div>
                 <Footer footer={ layouts.footer } />

@@ -1,0 +1,294 @@
+[
+  {
+    "language": "en",
+    "pages":{
+
+      "main": {
+        "top": {
+          "head": "VINCOIN",
+          "afterHead": "Новый эра в криптографии",
+          "text": "We've built a full-scale investment system and issue a new crypto currency, which will repeat the bitcoins phenomenon in the near future. VINCoin incorporates all the best features available in modern blockchain-based crypto currencies.",
+          "btn": "buy"
+        },
+        "progress": {
+          "head": "what is our goal?",
+          "title": "Official network's launch after sale:"
+        },
+        "table":{
+          "head": {
+            "header": "Splits",
+            "number": "#",
+            "cost": "Price",
+            "value": "Number of coins",
+            "summ": "Amount"
+          },
+          "foot":{
+            "allSumm": "Total collection: ",
+            "future": "1 coin price on cryptocurrency market",
+            "coinCost": "50$"
+          },
+          "split":[
+            {"cost": 0.10, "value": "3.000.000", "summ": "300.000"},
+            {"cost": 0.20, "value": "3.000.000", "summ": "600.000"},
+            {"cost": 0.40, "value": "3.000.000", "summ": "1.200.000"},
+            {"cost": 0.80, "value": "3.000.000", "summ": "2.400.000"},
+            {"cost": 1.60, "value": "3.000.000", "summ": "4.800.000"},
+            {"cost": 3.20, "value": "3.000.000", "summ": "9.600.000"},
+            {"cost": 6.40, "value": "3.000.000", "summ": "19.200.000"},
+            {"cost": 12.80, "value": "3.000.000", "summ": "38.400.000"},
+            {"cost": 25.60, "value": "3.000.000", "summ": "76.800.000"},
+            {"cost": 51.20, "value": "3.000.000", "summ": "153.600.000"}
+          ]
+        }
+      },
+
+      "about":{
+        "top":{
+          "head": "IT BLOCKCHAIN DEVELOPMENT LLP",
+          "body": "IT BLOCKCHAIN DEVELOPMENT LLP was registered in 2017 with a purpose of  blockchain technologies implementation and development in various sectors of the world economy. Our team consists of the best world specialists and is ready to solve problems of any complexity in the shortest time. Now we are working on a project dedicated to the implementation of blockchain technology and VINCOIN crypto-currencies to work systems of online trading platforms (such as taobao.com, rakuten.com, target.com, walmart.com, aliexpress.com, cultism.com, paytmmall. com, tinydeal.com). Were made preliminary agreements with the top Management of online trading platforms with the purpose of introducing our developments into the online workshop's system. Preliminary and subsequent technical and economic analysis and predictive modeling were also made. Now we are at the final stage. The funds collected by ISO will be used for the development and implementation of the software product in online shops, as well as for advertising, which in the near future will attract great interest to the VINCOIN crypto currency. By investing into innovative developments with IT BLOCKCHAIN DEVELOPMENT - you become a co-owner of our software products, which are displayed at the price of VINCOIN crypto currency."
+        },
+        "pluses":{
+          "secur": {
+            "head": "System security:",
+            "body": "Our system is one of the most reliable and protected system in the world, which was developed by the best developers."
+          },
+          "ownWallet":{
+            "head": "Personal wallet:",
+            "body": "We have developed protected system for your Wallet, so you can be sure of the safety of your funds."
+          },
+          "tech":{
+            "head":"Technologies:",
+            "body":"In the development of Vincoin was used Secure Hash Algorithm SHA-256. It is one of the most protected and effective algorithm in the world."
+          },
+          "payMethod":{
+            "head":"Ways of payment:",
+            "body":"Standard and convenient payment methods protect our clients from all possible negative consequences."
+          }
+        },
+        "team":{
+          "head":"Our team"
+        }
+      },
+
+      "packages":{
+        "packages":{
+          "title": "Packages",
+          "btn_end": "NOT AVAILABLE",
+          "btn_start":"BUY",
+          "btn_wait":"AWAITING",
+          "top_p": "coin",
+          "coinsLeft_p":"Available coins",
+          "inputCoins_p":"Enter the number of coins you want to buy",
+          "price_p": "Cost",
+          "afterHead": "Enter the number of coins you want to buy to calculate the value"
+        },
+        "faq":{
+          "title":"HELP",
+          "afterHead":"List of frequently asked questions and answers to them",
+          "help1":{
+            "title": "How to pay?",
+            "text": "We challenge the status quo and go beyond today to create an open financial future"
+          },
+          "help2":{
+            "title": "How to exchange crypto currency?",
+            "text": "We challenge the status quo and go beyond today to create an open financial future"
+          },
+          "help3":{
+            "title": "How to get coins?",
+            "text": "We challenge the status quo and go beyond today to create an open financial future"
+          },
+          "help4":{
+            "title": "How to exchange crypto currency?",
+            "text": "We challenge the status quo and go beyond today to create an open financial future"
+          }
+        }
+      },
+
+      "FAQ":{
+        "content":{
+          "title": "Content",
+          "afterHead": "List of frequently asked questions and answers to them",
+          "secondTitle": "Answers"
+        },
+        "faqs":[
+          {
+            "title": "What Vincoin is?",
+            "text": "VinCoin is an innovative decentralized crypto currency, which includes the best advanced technologies. It meets the needs of all market participants - users, investors and business owners. This universal payment instrument is different from other crypto-currencies due to a number of developed innovations. At the same time it possesses the qualities of decentralization and anonymity."
+          },
+          {
+            "title": "Where can I use Vincoin?",
+            "text": "How to register?"
+          },
+          {
+            "title": "How to register?",
+            "text": "In the top right corner, find the “Sign-in / Login” button and select the “Registration” tab. Fill all the required fields and read and agree with the User Agreement. Click  “Register”"
+          },
+          {
+            "title": "How to recover the password?",
+            "text": "In the top right corner, find the “Sign-in / Login” button and select the “Forgot your password?” Tab. Enter the E-mail that you specified when registering and click the “send” button. You will find link for password recovery in your e-mail box (message can get into the spam folder)"
+          },
+          {
+            "title": "How to purchase VinCoin?",
+            "text": "Create an account or log in, then select/enter necessary number of coins, select type of payment and press the pay button. Transfer the necessary amount of funds to the wallet (specify the purse in the line: “purse number”) and add a comment to the payment (comment code is in the line: “comment code”)"
+          },
+          {
+            "title": "How to contact us?",
+            "text": "You will find our contacts in the “Contacts” tab. Contact us directly or through the feedback form."
+          }
+        ]
+      },
+
+      "news":{},
+
+
+      "investments":{
+        "head": "Recently bought coins",
+        "table": {
+          "headFirst": "Name",
+          "headSecond": "Coins",
+          "headThird": "Date",
+          "btnMore": "Show more",
+          "btnEnd": "Waiting for new purchases"
+        }
+      },
+
+      "contacts":{
+        "top":{
+          "head": "Contacts"
+        },
+        "feedback": {
+          "head": "Customer support center",
+          "inputName":"Name",
+          "inputLName":"Surname",
+          "inputEmail":"E-mail",
+          "inputTel": "Phone number",
+          "inputMsg": "Your message",
+          "btnSend":"Send"
+        }
+      },
+      "profile":{
+        "layouts":{
+          "leftHeader":{
+            "btnMain": "home",
+            "btnRefill": "Buy",
+            "btnSettings": "Settings",
+            "btnExit": "exit"
+          }
+        },
+        "info":{
+
+        },
+        "content":{
+          "mainHead": "Buy coins",
+          "stageOne": "Choose or specify the required number of coins",
+          "stageTwo": "Choose the type of payment",
+          "coins": "coins",
+          "firstInputHolder": "Enter the required number of coins",
+          "tradeCurr": "EXCHANGE",
+          "cost": "Cost",
+          "buy": "Pay",
+          "walletLink": "Wallet's address",
+          "payCode": "Comment code (specify at the time of payment)",
+          "copy": "copy"
+        },
+        "settings":{
+          "password" : {
+            "head": "Change password",
+            "CurPass": "Current password",
+            "new":"New password",
+            "repass": "Confirm password",
+            "save": "Save",
+            "error":"Incorrect password",
+            "accept":"Changes saved"
+          },
+          "email":{
+            "head": "Change E-mail",
+            "CurPass": "Current password",
+            "new": "New E-mail",
+            "save": "Save",
+            "error":"Incorrect password",
+            "secondError": "This e-mail already exists!",
+            "accept":"Changes saved"
+
+          },
+          "name": {
+            "head": "Enter/Change the name",
+            "error":"Please try later",
+            "accept":"Changes saved",
+            "save": "Save",
+            "nameInput": "Your name"
+          },
+          "tel": {
+            "head": "Specify / Change phone number",
+            "error":"Please try later",
+            "accept":"Changes saved",
+            "save": "Save",
+            "nameInput": "Enter phone number"
+          }
+        }
+      }
+    },
+    "layouts":{
+      "header":{
+        "btnMain": "MAIN",
+        "btnAbout": "ABOUT US",
+        "btnPackages": "PACKAGES",
+        "btninvestments": "Investments",
+        "btnFAQ": "Help",
+        "btnNews": "News",
+        "btnContacts": "Contacts",
+        "login":{
+          "log": "Registration/Login",
+          "btnExit": "Exit"
+        }
+      },
+      "footer":{
+        "pages":{
+          "whitePage":"Whitepaper",
+          "legalPage":"Legal Information",
+          "contractOffer": "Terms and Conditions",
+          "confidentiality": "Privacy Policy",
+          "SellPolicy":"Sale Policy"
+        },
+        "feedback": "Feedback",
+        "legalPage":{
+          "head": "Legal Information",
+          "corp": "Company",
+          "adress": "Legal and mailing address",
+          "back": "back"
+        }
+      },
+      "auth":{
+        "header":{
+          "btnLogin": "Sign in",
+          "btnRegistration": "Registration",
+          "btnForgotPass": "Forgot your password?"
+        },
+        "login":{
+          "inputLogin": "Login or E-mail",
+          "inputPassword": "Password",
+          "btnEnter": "Sign in"
+        },
+        "registration":{
+          "inputLogin": "Login",
+          "inputEmail": "E-Mail",
+          "inputPassword": "Password",
+          "inputRepeatPassword": "Confirm password",
+          "checkLegal": "I agree with the rules",
+          "btnRegistration": "Registration"
+        },
+        "forgot": {
+          "text": "Send password to mail",
+          "inputEmail": "E-Mail",
+          "btnSend": "Send",
+          "success": "E-mail sent!",
+          "error": "E-mail not found"
+        }
+      }
+    }
+  }
+]
+
+
+
+
